@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data & Cache
+data_cache/
+*.cache
+*.pkl
+*.pickle
+
+# Results (keep structure, ignore content)
+results/raw/*.json
+results/plots/*.png
+results/tables/*.csv
+!results/raw/.gitkeep
+!results/plots/.gitkeep
+!results/tables/.gitkeep
+
+# Reports
+reports/*.pdf
+!reports/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Large model files
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# API keys & secrets
+.env
+*.key
+secrets/
