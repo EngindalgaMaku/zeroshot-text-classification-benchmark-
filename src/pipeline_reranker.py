@@ -71,24 +71,29 @@ def predict_reranker(
     # Score all text-label pairs
     all_scores = []
     
-    # Check model's label mapping to find entailment index
+    # Check model's label mapping to find entailment and contradiction indices
     entailment_idx = None
+    contradiction_idx = None
+    
     if hasattr(reranker.model, 'model') and hasattr(reranker.model.model, 'config'):
         config = reranker.model.model.config
         if hasattr(config, 'id2label'):
             id2label = config.id2label
             print(f"Model label mapping: {id2label}")
-            # Find entailment index
+            # Find entailment and contradiction indices
             for idx, label in id2label.items():
-                if 'entail' in label.lower():
+                label_lower = label.lower()
+                if 'entail' in label_lower:
                     entailment_idx = int(idx)
-                    break
+                elif 'contra' in label_lower:
+                    contradiction_idx = int(idx)
     
-    if entailment_idx is None:
-        print("WARNING: Could not find entailment index, assuming index 1")
+    if entailment_idx is None or contradiction_idx is None:
+        print("WARNING: Could not find label indices, assuming standard order")
+        contradiction_idx = 0
         entailment_idx = 1
-    else:
-        print(f"Using entailment index: {entailment_idx}")
+    
+    print(f"Using contradiction index: {contradiction_idx}, entailment index: {entailment_idx}")
     
     if show_progress:
         try:
@@ -101,7 +106,6 @@ def predict_reranker(
     
     for text in iterator:
         # For NLI models, we need to score each (text, hypothesis) pair separately
-        # and extract the entailment probability for each label
         label_scores = []
         
         for label_text in formatted_labels:
@@ -115,18 +119,24 @@ def predict_reranker(
             from scipy.special import softmax
             probs = softmax(scores)
             
-            # Extract entailment probability using detected index
+            # Use entailment - contradiction for better discrimination
+            # This gives a score in range [-1, 1] where:
+            # - High positive = strong entailment
+            # - High negative = strong contradiction
             entailment_prob = probs[entailment_idx]
-            label_scores.append(entailment_prob)
+            contradiction_prob = probs[contradiction_idx]
+            score = entailment_prob - contradiction_prob
+            
+            label_scores.append(score)
         
         all_scores.append(label_scores)
     
     all_scores = np.array(all_scores)  # Shape: (n_texts, n_labels)
     
     print(f"Final all_scores shape: {all_scores.shape}")
-    print(f"Sample entailment probs (first text, first 5 labels): {all_scores[0, :5]}")
+    print(f"Sample scores (first text, first 5 labels): {all_scores[0, :5]}")
     
-    # Get predictions (highest entailment probability)
+    # Get predictions (highest score)
     pred_indices = np.argmax(all_scores, axis=1)  # Shape: (n_texts,)
     print(f"First 10 predictions (indices): {pred_indices[:10]}")
     
@@ -134,8 +144,10 @@ def predict_reranker(
     label_ids_array = np.array(label_ids)
     predictions = label_ids_array[pred_indices].tolist()
     
-    # Get confidence scores (max entailment probability for each text)
-    confidences = np.max(all_scores, axis=1).tolist()
+    # Get confidence scores (max score for each text)
+    # Normalize to [0, 1] range: (score + 1) / 2
+    raw_confidences = np.max(all_scores, axis=1)
+    confidences = ((raw_confidences + 1) / 2).tolist()
     print(f"Sample confidences (first 5): {confidences[:5]}")
     
     return predictions, confidences, all_scores
