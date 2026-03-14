@@ -82,17 +82,25 @@ def predict_reranker(
         scores = reranker.score(text, formatted_labels, batch_size=batch_size)
         all_scores.append(scores)
     
-    all_scores = np.array(all_scores)  # Shape: (n_texts, n_labels)
+    # Convert to numpy array and ensure proper shape
+    all_scores = np.array(all_scores)
+    
+    # If all_scores is 3D (happens with some models), flatten to 2D
+    if all_scores.ndim == 3:
+        all_scores = all_scores.squeeze()
+    
+    # Ensure 2D: (n_texts, n_labels)
+    if all_scores.ndim != 2:
+        raise ValueError(f"Expected 2D scores array, got shape {all_scores.shape}")
+    
+    print(f"Final all_scores shape: {all_scores.shape}")
     
     # Get predictions (highest scoring label)
     pred_indices = np.argmax(all_scores, axis=1)  # Shape: (n_texts,)
     
-    # Map indices to label IDs
-    # Ensure pred_indices is 1D and convert each element properly
-    predictions = []
-    for i in range(len(pred_indices)):
-        idx = int(pred_indices[i])
-        predictions.append(label_ids[idx])
+    # Map indices to label IDs using numpy indexing
+    label_ids_array = np.array(label_ids)
+    predictions = label_ids_array[pred_indices].tolist()
     
     # Get confidence scores (max score for each text)
     confidences = np.max(all_scores, axis=1).tolist()
