@@ -13,7 +13,14 @@ def ensure_dir(path: str):
     Args:
         path: Directory path
     """
-    Path(path).mkdir(parents=True, exist_ok=True)
+    path_obj = Path(path)
+    
+    # If path is a symlink, resolve it first
+    if path_obj.is_symlink():
+        path_obj = path_obj.resolve()
+    
+    # Create directory if it doesn't exist
+    path_obj.mkdir(parents=True, exist_ok=True)
 
 
 def save_metrics(metrics: Dict[str, Any], output_dir: str, experiment_name: str):
