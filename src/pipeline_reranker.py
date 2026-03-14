@@ -71,6 +71,25 @@ def predict_reranker(
     # Score all text-label pairs
     all_scores = []
     
+    # Check model's label mapping to find entailment index
+    entailment_idx = None
+    if hasattr(reranker.model, 'model') and hasattr(reranker.model.model, 'config'):
+        config = reranker.model.model.config
+        if hasattr(config, 'id2label'):
+            id2label = config.id2label
+            print(f"Model label mapping: {id2label}")
+            # Find entailment index
+            for idx, label in id2label.items():
+                if 'entail' in label.lower():
+                    entailment_idx = int(idx)
+                    break
+    
+    if entailment_idx is None:
+        print("WARNING: Could not find entailment index, assuming index 1")
+        entailment_idx = 1
+    else:
+        print(f"Using entailment index: {entailment_idx}")
+    
     if show_progress:
         try:
             from tqdm.auto import tqdm
@@ -96,9 +115,8 @@ def predict_reranker(
             from scipy.special import softmax
             probs = softmax(scores)
             
-            # Extract entailment probability (index 1 for most NLI models)
-            # Check model config to be sure, but typically: [contradiction, entailment, neutral]
-            entailment_prob = probs[1]
+            # Extract entailment probability using detected index
+            entailment_prob = probs[entailment_idx]
             label_scores.append(entailment_prob)
         
         all_scores.append(label_scores)
