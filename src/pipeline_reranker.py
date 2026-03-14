@@ -68,6 +68,9 @@ def predict_reranker(
     # Score all text-label pairs
     all_scores = []
     
+    # Score all text-label pairs
+    all_scores = []
+    
     if show_progress:
         try:
             from tqdm.auto import tqdm
@@ -78,30 +81,34 @@ def predict_reranker(
         iterator = texts
     
     for text in iterator:
-        # Score this text against all labels
-        scores = reranker.score(text, formatted_labels, batch_size=batch_size)
-        all_scores.append(scores)
+        # For NLI models, we need to score each (text, hypothesis) pair separately
+        # and extract the entailment probability for each label
+        label_scores = []
+        
+        for label_text in formatted_labels:
+            # Create (premise, hypothesis) pair
+            pair = (text, label_text)
+            
+            # Get scores: [contradiction, entailment, neutral] or similar
+            scores = reranker.model.predict([pair])[0]  # Shape: (3,)
+            
+            # Apply softmax to get probabilities
+            from scipy.special import softmax
+            probs = softmax(scores)
+            
+            # Extract entailment probability (index 1 for most NLI models)
+            # Check model config to be sure, but typically: [contradiction, entailment, neutral]
+            entailment_prob = probs[1]
+            label_scores.append(entailment_prob)
+        
+        all_scores.append(label_scores)
     
-    # Convert to numpy array
-    all_scores = np.array(all_scores)
-    
-    print(f"Raw scores shape: {all_scores.shape}")
-    
-    # NLI models return 3 scores: [contradiction, entailment, neutral]
-    # For zero-shot classification, use ONLY the entailment scores (index 1)
-    # Do NOT apply softmax - use raw logits
-    if all_scores.ndim == 3 and all_scores.shape[2] == 3:
-        print("NLI model detected - extracting entailment logits (index 1)")
-        all_scores = all_scores[:, :, 1]  # Shape: (n_texts, n_labels)
-        print(f"Sample entailment logits (first text, first 5 labels): {all_scores[0, :5]}")
-    
-    # Ensure 2D: (n_texts, n_labels)
-    if all_scores.ndim != 2:
-        raise ValueError(f"Expected 2D scores array after processing, got shape {all_scores.shape}")
+    all_scores = np.array(all_scores)  # Shape: (n_texts, n_labels)
     
     print(f"Final all_scores shape: {all_scores.shape}")
+    print(f"Sample entailment probs (first text, first 5 labels): {all_scores[0, :5]}")
     
-    # Get predictions (highest entailment score)
+    # Get predictions (highest entailment probability)
     pred_indices = np.argmax(all_scores, axis=1)  # Shape: (n_texts,)
     print(f"First 10 predictions (indices): {pred_indices[:10]}")
     
@@ -109,7 +116,8 @@ def predict_reranker(
     label_ids_array = np.array(label_ids)
     predictions = label_ids_array[pred_indices].tolist()
     
-    # Get confidence scores (max entailment score for each text)
+    # Get confidence scores (max entailment probability for each text)
     confidences = np.max(all_scores, axis=1).tolist()
+    print(f"Sample confidences (first 5): {confidences[:5]}")
     
     return predictions, confidences, all_scores
