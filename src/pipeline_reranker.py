@@ -82,16 +82,20 @@ def predict_reranker(
         scores = reranker.score(text, formatted_labels, batch_size=batch_size)
         all_scores.append(scores)
     
-    # Convert to numpy array and ensure proper shape
+    # Convert to numpy array
     all_scores = np.array(all_scores)
     
-    # If all_scores is 3D (happens with some models), flatten to 2D
-    if all_scores.ndim == 3:
-        all_scores = all_scores.squeeze()
+    print(f"Raw scores shape: {all_scores.shape}")
+    
+    # NLI models return 3 scores: [contradiction, entailment, neutral]
+    # For zero-shot classification, we only care about ENTAILMENT (index 1)
+    if all_scores.ndim == 3 and all_scores.shape[2] == 3:
+        print("NLI model detected - extracting entailment scores (index 1)")
+        all_scores = all_scores[:, :, 1]  # Shape: (n_texts, n_labels)
     
     # Ensure 2D: (n_texts, n_labels)
     if all_scores.ndim != 2:
-        raise ValueError(f"Expected 2D scores array, got shape {all_scores.shape}")
+        raise ValueError(f"Expected 2D scores array after processing, got shape {all_scores.shape}")
     
     print(f"Final all_scores shape: {all_scores.shape}")
     
