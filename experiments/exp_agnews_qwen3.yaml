@@ -21,6 +21,7 @@ models:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
+  batch_size: 8  # Smaller batch for large model
 
 evaluation:
   metrics:

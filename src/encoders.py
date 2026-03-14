@@ -142,8 +142,10 @@ class BiEncoder:
         # -------- Jina backend --------
         elif "jina" in name_lower:
             self.backend = "jina"
-            # Jina v5 requires a task - default to 'classification' for zero-shot
-            self.task = task or "classification"
+            # Jina v5 requires a task
+            # For zero-shot classification (text-label matching), use "text-matching"
+            # Alternative: "retrieval.query" / "retrieval.passage" for asymmetric tasks
+            self.task = task or "text-matching"
             self.model = SentenceTransformer(
                 model_name,
                 device=device,
@@ -241,12 +243,25 @@ class BiEncoder:
 
         # -------- Jina --------
         if self.backend == "jina":
+            # Jina v5 supports different tasks for query vs document
+            # For zero-shot classification:
+            # - texts (queries) should use "text-matching" or "retrieval.query"
+            # - labels (documents) should use "text-matching" or "retrieval.passage"
+            
+            # Use text_type to differentiate
+            if text_type == "label":
+                # Labels are like documents/passages
+                task = "retrieval.passage" if "retrieval" in self.task else self.task
+            else:
+                # Texts are like queries
+                task = "retrieval.query" if "retrieval" in self.task else self.task
+            
             kwargs = dict(
                 batch_size=batch_size,
                 normalize_embeddings=normalize,
                 show_progress_bar=show_progress,
                 convert_to_numpy=True,
-                task=self.task,  # Always pass task (set in __init__)
+                task=task,
             )
             embeddings = self.model.encode(texts, **kwargs)
             return embeddings

@@ -140,6 +140,20 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
             task=biencoder_task,
             allow_gte=allow_gte,
         )
+        
+        # Determine batch size based on model size
+        # Large models (>1B params) need smaller batches to avoid OOM
+        batch_size = cfg["pipeline"].get("batch_size", None)
+        if batch_size is None:
+            # Auto-detect based on model name
+            name_lower = biencoder_name.lower()
+            if any(x in name_lower for x in ["qwen", "8b", "7b", "13b"]):
+                batch_size = 8  # Very large models
+                print(f"⚠️  Large model detected, using batch_size={batch_size}")
+            elif any(x in name_lower for x in ["large", "xl", "xxl"]):
+                batch_size = 16  # Large models
+            else:
+                batch_size = 32  # Default
 
         print("\nRunning biencoder pipeline\n")
         flat_texts, flat_ids = flatten_label_texts(grouped_labels)
@@ -149,6 +163,7 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
             flat_ids,
             encoder,
             normalize=normalize,
+            batch_size=batch_size,
         )
         
         model_name = biencoder_name

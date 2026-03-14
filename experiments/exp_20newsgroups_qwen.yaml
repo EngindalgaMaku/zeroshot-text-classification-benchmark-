@@ -21,6 +21,7 @@ models:
 pipeline:
   mode: "biencoder"
   normalize_embeddings: true
+  batch_size: 4  # Small batch for large model (4B params)
 
 evaluation:
   metrics:
