@@ -26,6 +26,7 @@ class CrossEncoderReranker:
         query: Union[str, List[str]],
         candidates: Union[List[str], List[List[str]]],
         batch_size: int = 32,
+        normalize: bool = True,
     ) -> Union[List[float], List[List[float]]]:
         """Score query-candidate pairs.
         
@@ -33,6 +34,7 @@ class CrossEncoderReranker:
             query: Single query or list of queries
             candidates: List of candidates (single query) or list of lists (multiple queries)
             batch_size: Batch size for scoring
+            normalize: Whether to apply sigmoid normalization to scores
             
         Returns:
             Scores for each query-candidate pair
@@ -41,6 +43,11 @@ class CrossEncoderReranker:
             # Single query, multiple candidates
             pairs = [[query, c] for c in candidates]
             scores = self.model.predict(pairs, batch_size=batch_size)
+            
+            # Normalize scores if requested (convert logits to probabilities)
+            if normalize:
+                scores = 1 / (1 + np.exp(-scores))  # Sigmoid
+            
             return scores.tolist()
         else:
             # Multiple queries, multiple candidates per query
@@ -48,6 +55,11 @@ class CrossEncoderReranker:
             for q, cands in zip(query, candidates):
                 pairs = [[q, c] for c in cands]
                 scores = self.model.predict(pairs, batch_size=batch_size)
+                
+                # Normalize scores if requested
+                if normalize:
+                    scores = 1 / (1 + np.exp(-scores))  # Sigmoid
+                
                 all_scores.append(scores.tolist())
             return all_scores
     
