@@ -16,6 +16,7 @@ models:
   biencoder:
     provider: hf
     name: jinaai/jina-embeddings-v3
+    task: classification  # Required for Jina models!
   reranker: null
 
 pipeline:

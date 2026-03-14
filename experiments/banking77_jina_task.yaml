@@ -1,0 +1,29 @@
+dataset:
+  label_column: label
+  max_samples: 1000
+  name: banking77
+  split: test
+  text_column: text
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+experiment_name: banking77_jina_task
+models:
+  biencoder:
+    name: jinaai/jina-embeddings-v3
+    provider: hf
+    task: classification
+  reranker: null
+output:
+  output_dir: results/raw
+  save_metrics: true
+  save_predictions: true
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+task:
+  label_mode: description
+  language: en
+  type: zero_shot_classification

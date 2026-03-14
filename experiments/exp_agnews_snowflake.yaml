@@ -1,4 +1,4 @@
-experiment_name: agnews_gte_description
+experiment_name: agnews_snowflake_arctic
 
 dataset:
   name: ag_news
@@ -15,7 +15,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: Alibaba-NLP/gte-large-en-v1.5
+    name: Snowflake/snowflake-arctic-embed-m
   reranker: null
 
 pipeline:

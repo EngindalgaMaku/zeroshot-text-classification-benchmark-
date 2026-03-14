@@ -32,7 +32,7 @@ plt.rcParams.update({
 
 def load_results():
     """Load all experiment results"""
-    results_dir = Path('results/raw')
+    results_dir = Path('../results/raw')
     results = []
     
     for json_file in results_dir.glob('*.json'):
@@ -52,6 +52,7 @@ def extract_model_dataset_scores(results):
         'bge': 'BGE-M3',
         'e5': 'E5-large',
         'gte': 'GTE-large',
+        'instructor': 'INSTRUCTOR',
         'jina': 'Jina-v3',
         'mpnet': 'MPNet',
         'qwen': 'Qwen3-4B'
@@ -115,8 +116,8 @@ def extract_model_dataset_scores(results):
     column_order = ['20News', 'AG News', 'Banking77', 'DBPedia', 'Twitter-Fin', 'Yahoo']
     df = df[[col for col in column_order if col in df.columns]]
     
-    # Ensure consistent row order
-    row_order = ['BGE-M3', 'E5-large', 'Jina-v3', 'MPNet', 'Qwen3-4B']
+    # Ensure consistent row order (INSTRUCTOR added!)
+    row_order = ['INSTRUCTOR', 'Qwen3-4B', 'E5-large', 'MPNet', 'Jina-v3', 'BGE-M3']
     df = df.reindex([row for row in row_order if row in df.index])
     
     return df
@@ -314,7 +315,7 @@ def create_statistics_table(fig, df):
 
 def generate_pdf():
     """Generate publication-ready PDF"""
-    output_file = 'reports/F1_HEATMAP_PUBLICATION.pdf'
+    output_file = '../reports/F1_HEATMAP_PUBLICATION.pdf'
     
     print("Loading experiment results...")
     results = load_results()

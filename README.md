@@ -56,6 +56,9 @@ pip install -r requirements.txt
 # Run a single experiment
 python main.py --config experiments/exp_agnews_mpnet.yaml
 
+# Skip if results already exist (useful when adding new models)
+python main.py --config experiments/exp_agnews_new_model.yaml --skip-existing
+
 # Generate visualizations
 python scripts/generate_beautiful_plots.py
 
@@ -80,7 +83,7 @@ zeroshot_nlp__new/
 │   └── exp_twitter_*.yaml
 ├── notebooks/             # Analysis notebooks
 │   ├── MASTER_COLAB_EXPERIMENTS.ipynb
-│   ├── MULTI_DATASET_EXPERIMENTS_CLEAN.ipynb
+│   ├── MULTI_DATASET_EXPERIMENTS.ipynb
 │   └── 03_tables_and_plots_UPDATED.ipynb
 ├── results/              # Experiment results
 │   ├── raw/             # JSON metrics
@@ -212,6 +215,7 @@ If you use this code in your research, please cite:
 ## 📖 Documentation
 
 - **Getting Started**: See `docs/QUICKSTART.md`
+- **Adding New Models**: See `docs/ADDING_NEW_MODELS.md` 🆕
 - **Dataset Information**: See `docs/DATASET_SIZE_INFO.md`
 - **Label Methodology**: See `docs/LABEL_DESCRIPTION_METHODOLOGY.md`
 

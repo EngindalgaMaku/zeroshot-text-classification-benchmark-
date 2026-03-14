@@ -16,6 +16,11 @@ def parse_args():
         required=True,
         help="Path to experiment configuration YAML file",
     )
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Skip experiments if results already exist (useful when adding new models)",
+    )
     return parser.parse_args()
 
 
@@ -27,11 +32,14 @@ def main():
     print("Zero-Shot Text Classification Experiment")
     print("="*70)
     
+    if args.skip_existing:
+        print("📋 Mode: Skip existing results")
+    
     # Load configuration
     cfg = load_config(args.config)
     
     # Run experiment
-    metrics = run_experiment(cfg)
+    metrics = run_experiment(cfg, skip_existing=args.skip_existing)
     
     print("\nAll done!")
     print("="*70 + "\n")

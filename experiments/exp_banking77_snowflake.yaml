@@ -1,7 +1,7 @@
-experiment_name: agnews_jina_description
+experiment_name: banking77_snowflake_arctic
 
 dataset:
-  name: ag_news
+  name: banking77
   split: test
   text_column: text
   label_column: label
@@ -15,7 +15,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: jinaai/jina-embeddings-v3  # Güçlü Jina model
+    name: Snowflake/snowflake-arctic-embed-m
   reranker: null
 
 pipeline:

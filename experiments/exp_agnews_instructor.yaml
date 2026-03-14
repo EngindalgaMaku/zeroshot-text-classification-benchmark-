@@ -1,4 +1,4 @@
-experiment_name: agnews_bge_name_only
+experiment_name: agnews_instructor_large
 
 dataset:
   name: ag_news
@@ -9,13 +9,13 @@ dataset:
 
 task:
   type: zero_shot_classification
-  label_mode: name_only  # Minimal label representation
+  label_mode: description
   language: en
 
 models:
   biencoder:
     provider: hf
-    name: BAAI/bge-m3
+    name: hkunlp/instructor-large
   reranker: null
 
 pipeline:
