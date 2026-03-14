@@ -8,22 +8,24 @@ from src.rerankers import CrossEncoderReranker
 def predict_reranker(
     texts: List[str],
     label_texts: List[str],
+    label_ids: List[int],
     reranker: CrossEncoderReranker,
     batch_size: int = 32,
     show_progress: bool = True,
-) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+) -> Tuple[List[int], List[float], np.ndarray]:
     """Predict labels using cross-encoder reranker.
     
     Args:
         texts: List of input texts to classify
         label_texts: List of label descriptions
+        label_ids: Corresponding label IDs for each label text
         reranker: CrossEncoderReranker instance
         batch_size: Batch size for scoring
         show_progress: Whether to show progress bar
         
     Returns:
         Tuple of (predictions, confidences, all_scores)
-        - predictions: Predicted label indices (n_samples,)
+        - predictions: Predicted label IDs (n_samples,)
         - confidences: Confidence scores for predictions (n_samples,)
         - all_scores: All scores for each text-label pair (n_samples, n_labels)
     """
@@ -52,9 +54,10 @@ def predict_reranker(
     all_scores = np.array(all_scores)  # Shape: (n_texts, n_labels)
     
     # Get predictions (highest scoring label)
-    predictions = np.argmax(all_scores, axis=1)
+    pred_indices = np.argmax(all_scores, axis=1)
+    predictions = [label_ids[i] for i in pred_indices]
     
     # Get confidence scores (max score for each text)
-    confidences = np.max(all_scores, axis=1)
+    confidences = np.max(all_scores, axis=1).tolist()
     
     return predictions, confidences, all_scores

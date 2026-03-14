@@ -121,6 +121,7 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
         y_pred, confidences, _ = predict_reranker(
             texts,
             flat_texts,
+            flat_ids,  # Pass label_ids
             reranker,
         )
         
