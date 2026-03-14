@@ -86,30 +86,28 @@ def predict_reranker(
     all_scores = np.array(all_scores)
     
     print(f"Raw scores shape: {all_scores.shape}")
-    print(f"Sample raw scores (first text, first 3 labels):")
-    print(all_scores[0, :3])
     
     # NLI models return 3 scores: [contradiction, entailment, neutral]
-    # For zero-shot classification, we only care about ENTAILMENT (index 1)
+    # For zero-shot classification, we use: entailment - contradiction
+    # This gives us a relative score that discriminates between labels
     if all_scores.ndim == 3 and all_scores.shape[2] == 3:
-        print("NLI model detected - extracting entailment scores (index 1)")
+        print("NLI model detected - using entailment-contradiction difference")
         
-        # Apply softmax to convert logits to probabilities
-        from scipy.special import softmax
-        all_scores = softmax(all_scores, axis=2)
+        # Extract contradiction (index 0) and entailment (index 1)
+        contradiction_scores = all_scores[:, :, 0]
+        entailment_scores = all_scores[:, :, 1]
         
-        print(f"After softmax - sample scores (first text, first 3 labels):")
-        print(all_scores[0, :3])
+        # Use the difference: entailment - contradiction
+        # Higher difference = more likely to be this label
+        all_scores = entailment_scores - contradiction_scores
         
-        # Extract entailment scores (index 1)
-        all_scores = all_scores[:, :, 1]  # Shape: (n_texts, n_labels)
+        print(f"Sample scores (first text, first 5 labels): {all_scores[0, :5]}")
     
     # Ensure 2D: (n_texts, n_labels)
     if all_scores.ndim != 2:
         raise ValueError(f"Expected 2D scores array after processing, got shape {all_scores.shape}")
     
     print(f"Final all_scores shape: {all_scores.shape}")
-    print(f"Final entailment scores (first text, first 5 labels): {all_scores[0, :5]}")
     
     # Get predictions (highest scoring label)
     pred_indices = np.argmax(all_scores, axis=1)  # Shape: (n_texts,)
@@ -118,7 +116,6 @@ def predict_reranker(
     # Map indices to label IDs using numpy indexing
     label_ids_array = np.array(label_ids)
     predictions = label_ids_array[pred_indices].tolist()
-    print(f"First 10 predictions (label IDs): {predictions[:10]}")
     
     # Get confidence scores (max score for each text)
     confidences = np.max(all_scores, axis=1).tolist()
