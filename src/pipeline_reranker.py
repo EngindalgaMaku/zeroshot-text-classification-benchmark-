@@ -87,10 +87,8 @@ def predict_reranker(
     # Get predictions (highest scoring label)
     pred_indices = np.argmax(all_scores, axis=1)
     
-    # Map indices to label IDs
-    predictions = []
-    for idx in pred_indices:
-        predictions.append(label_ids[int(idx.item())])
+    # Map indices to label IDs - convert to Python list first
+    predictions = [label_ids[idx] for idx in pred_indices.tolist()]
     
     # Get confidence scores (max score for each text)
     confidences = np.max(all_scores, axis=1).tolist()
