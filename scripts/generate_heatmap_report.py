@@ -67,7 +67,9 @@ def extract_model_dataset_scores(results):
         '20_newsgroups': '20News',
         'setfit/20_newsgroups': '20News',
         'twitter_financial': 'Twitter-Fin',
-        'zeroshot_twitter': 'Twitter-Fin'
+        'zeroshot_twitter': 'Twitter-Fin',
+        'go_emotions': 'GoEmotions',
+        'goemotions': 'GoEmotions'
     }
     
     # Initialize score matrix
@@ -113,7 +115,7 @@ def extract_model_dataset_scores(results):
     df = pd.DataFrame(data_dict).T
     
     # Ensure consistent column order
-    column_order = ['20News', 'AG News', 'Banking77', 'DBPedia', 'Twitter-Fin', 'Yahoo']
+    column_order = ['20News', 'AG News', 'Banking77', 'DBPedia', 'GoEmotions', 'Twitter-Fin', 'Yahoo']
     df = df[[col for col in column_order if col in df.columns]]
     
     # Ensure consistent row order (INSTRUCTOR added!)
@@ -263,7 +265,7 @@ def create_statistics_table(fig, df):
             cell.set_linewidth(0.5)
     
     caption = ("Table 1. Performance statistics of sentence embedding models in zero-shot "
-               "text classification across six benchmark datasets.")
+               "text classification across seven benchmark datasets.")
     fig.text(0.5, 0.45, caption, ha='center', va='top', fontsize=9, 
              style='italic', wrap=True)
     
@@ -363,7 +365,7 @@ def generate_pdf():
     print(f"   ✓ Common in: ACL, EMNLP, NeurIPS, ICLR papers")
     print(f"\n📝 Suggested Caption:")
     print(f"   Figure X. Performance comparison of sentence embedding models on")
-    print(f"   zero-shot text classification across six benchmark datasets.")
+    print(f"   zero-shot text classification across seven benchmark datasets.")
     print(f"   Heat map shows Macro F1 scores (%). Darker colors indicate")
     print(f"   better performance.")
     print(f"\n📊 Results:")
