@@ -103,29 +103,56 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
     print(f"Number of classes: {len(grouped_labels)}")
     print(f"Number of texts: {len(texts)}\n")
 
-    # Initialize bi-encoder
-    normalize = cfg["pipeline"].get("normalize_embeddings", True)
-    biencoder_cfg = cfg["models"]["biencoder"]
-    biencoder_name = biencoder_cfg["name"]
-    biencoder_task = biencoder_cfg.get("task")
-    allow_gte = biencoder_cfg.get("allow_gte", False)
+    # Check pipeline mode
+    pipeline_mode = cfg["pipeline"].get("mode", "biencoder")
+    
+    if pipeline_mode == "reranker":
+        # Reranker pipeline
+        from src.rerankers import CrossEncoderReranker
+        from src.pipeline_reranker import predict_reranker
+        
+        reranker_cfg = cfg["models"]["reranker"]
+        reranker_name = reranker_cfg["name"]
+        
+        reranker = CrossEncoderReranker(reranker_name)
+        
+        print("\nRunning reranker pipeline\n")
+        flat_texts, flat_ids = flatten_label_texts(grouped_labels)
+        y_pred, confidences, _ = predict_reranker(
+            texts,
+            flat_texts,
+            reranker,
+        )
+        
+        model_name = reranker_name
+        model_type = "reranker"
+        
+    else:
+        # Bi-encoder pipeline (default)
+        normalize = cfg["pipeline"].get("normalize_embeddings", True)
+        biencoder_cfg = cfg["models"]["biencoder"]
+        biencoder_name = biencoder_cfg["name"]
+        biencoder_task = biencoder_cfg.get("task")
+        allow_gte = biencoder_cfg.get("allow_gte", False)
 
-    encoder = BiEncoder(
-        biencoder_name,
-        task=biencoder_task,
-        allow_gte=allow_gte,
-    )
+        encoder = BiEncoder(
+            biencoder_name,
+            task=biencoder_task,
+            allow_gte=allow_gte,
+        )
 
-    # Run pipeline (biencoder only)
-    print("\nRunning biencoder pipeline\n")
-    flat_texts, flat_ids = flatten_label_texts(grouped_labels)
-    y_pred, confidences, _ = predict_biencoder(
-        texts,
-        flat_texts,
-        flat_ids,
-        encoder,
-        normalize=normalize,
-    )
+        print("\nRunning biencoder pipeline\n")
+        flat_texts, flat_ids = flatten_label_texts(grouped_labels)
+        y_pred, confidences, _ = predict_biencoder(
+            texts,
+            flat_texts,
+            flat_ids,
+            encoder,
+            normalize=normalize,
+        )
+        
+        model_name = biencoder_name
+        model_type = "biencoder"
 
     # Compute metrics
     print("\nComputing metrics...")
@@ -137,10 +164,10 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
     metrics["experiment_name"] = cfg["experiment_name"]
     metrics["dataset"] = ds_name
     metrics["label_mode"] = label_mode
-    metrics["pipeline_mode"] = "biencoder"
+    metrics["pipeline_mode"] = pipeline_mode
     metrics["num_samples"] = len(texts)
-    metrics["biencoder"] = encoder.model_name
-    if biencoder_task is not None:
+    metrics[model_type] = model_name
+    if pipeline_mode == "biencoder" and biencoder_task is not None:
         metrics["biencoder_task"] = biencoder_task
 
     # Add few-shot metadata if enabled
