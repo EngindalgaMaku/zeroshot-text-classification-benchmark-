@@ -80,7 +80,7 @@ def prepare_texts_and_labels(dataset, text_column: str, label_column: str, datas
         dataset: HuggingFace Dataset
         text_column: Name of text column
         label_column: Name of label column
-        dataset_name: Name of dataset (for Turkish label mapping)
+        dataset_name: Name of dataset (for Turkish label mapping and special handling)
         
     Returns:
         Tuple of (texts, labels)
@@ -88,8 +88,25 @@ def prepare_texts_and_labels(dataset, text_column: str, label_column: str, datas
     texts = dataset[text_column]
     labels = dataset[label_column]
     
+    # Special handling for GoEmotions (multi-label dataset)
+    if dataset_name == "go_emotions":
+        print("⚠️  GoEmotions is multi-label - converting to single-label by taking first emotion")
+        converted_labels = []
+        for label_list in labels:
+            if isinstance(label_list, (list, tuple)) and len(label_list) > 0:
+                # Take the first label (most dominant emotion)
+                converted_labels.append(label_list[0])
+            elif isinstance(label_list, (list, tuple)) and len(label_list) == 0:
+                # Empty list - assign neutral (label 27)
+                converted_labels.append(27)
+            else:
+                # Already single label
+                converted_labels.append(label_list)
+        labels = converted_labels
+        print(f"✅ Converted {len(labels)} multi-label examples to single-label")
+    
     # Convert Turkish string labels to integers
-    if dataset_name and dataset_name in TURKISH_LABEL_MAPS:
+    elif dataset_name and dataset_name in TURKISH_LABEL_MAPS:
         label_map = TURKISH_LABEL_MAPS[dataset_name]
         print(f"Converting string labels to integers using mapping: {label_map}")
         converted_labels = []
