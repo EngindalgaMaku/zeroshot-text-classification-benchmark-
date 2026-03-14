@@ -142,18 +142,15 @@ class BiEncoder:
         # -------- Jina backend --------
         elif "jina" in name_lower:
             self.backend = "jina"
+            # Jina v5 requires a task - default to 'classification' for zero-shot
+            self.task = task or "classification"
             self.model = SentenceTransformer(
                 model_name,
                 device=device,
                 trust_remote_code=True,
-                model_kwargs={"default_task": task} if task else None,
+                model_kwargs={"default_task": self.task},
             )
-            print(f"Jina model loaded on device: {self.model.device}")
-            if task is None:
-                print(
-                    "Warning: Jina model loaded without explicit task. "
-                    "Recommended tasks: 'classification' or 'text-matching'."
-                )
+            print(f"Jina model loaded on device: {self.model.device} (task={self.task})")
 
         # -------- Snowflake backend --------
         elif "snowflake" in name_lower and "arctic" in name_lower:
@@ -249,9 +246,8 @@ class BiEncoder:
                 normalize_embeddings=normalize,
                 show_progress_bar=show_progress,
                 convert_to_numpy=True,
+                task=self.task,  # Always pass task (set in __init__)
             )
-            if self.task is not None:
-                kwargs["task"] = self.task
             embeddings = self.model.encode(texts, **kwargs)
             return embeddings
 

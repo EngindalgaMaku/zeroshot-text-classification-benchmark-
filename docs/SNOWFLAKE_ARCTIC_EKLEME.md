@@ -40,6 +40,18 @@ INSTRUCTOR deneyleri zaten mevcuttu:
 - Toplam deney sayısı: 42 (6 dataset × 7 model)
 - **Gereksiz encoder override hücreleri kaldırıldı** - Artık doğrudan `src/encoders.py` kullanılıyor
 
+### 5. Jina v5 Task Hatası Düzeltildi ⚠️
+
+**Sorun**: Jina v5 modeli `task` parametresi olmadan yüklendiğinde hata veriyordu:
+```
+ValueError: Task must be specified before encoding data.
+```
+
+**Çözüm**: `src/encoders.py` güncellendi:
+- Jina modelleri için default task: `"classification"`
+- Task her zaman model yüklenirken ve encode sırasında geçiliyor
+- Artık config dosyalarında task belirtmeye gerek yok
+
 ## 🚀 Kullanım
 
 ### Snowflake Deneylerini Çalıştırma
@@ -58,10 +70,25 @@ Notebook artık doğrudan `src/encoders.py` dosyasını kullanıyor. Gereksiz ko
 2. BGE-M3 (567M)
 3. E5-large (560M, multilingual)
 4. Qwen3 (8B)
-5. Jina v5 nano (33M)
+5. Jina v5 nano (33M) - **Task: classification (default)**
 6. INSTRUCTOR-large (335M)
 7. Snowflake Arctic Embed (109M)
 
+## 🔧 Jina v5 Teknik Detay
+
+```python
+# Jina backend - task otomatik set ediliyor
+elif "jina" in name_lower:
+    self.backend = "jina"
+    self.task = task or "classification"  # Default: classification
+    self.model = SentenceTransformer(
+        model_name,
+        device=device,
+        trust_remote_code=True,
+        model_kwargs={"default_task": self.task},
+    )
+```
+
 ## 🎉 Sonuç
 
-7 model tam entegre edildi. Notebook temizlendi ve artık gereksiz kod override'ı yok - doğrudan `src/encoders.py` kullanılıyor.
+7 model tam entegre edildi. Notebook temizlendi ve artık gereksiz kod override'ı yok - doğrudan `src/encoders.py` kullanılıyor. Jina v5 task hatası düzeltildi.
