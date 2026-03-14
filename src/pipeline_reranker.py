@@ -8,9 +8,7 @@ from src.rerankers import CrossEncoderReranker
 def format_as_nli_hypothesis(label_text: str) -> str:
     """Format label description as NLI hypothesis.
     
-    For zero-shot classification with cross-encoders, we use NLI format:
-    - Premise: the text to classify
-    - Hypothesis: "This text is about {label}"
+    For zero-shot classification with cross-encoders, we use NLI format.
     
     Args:
         label_text: Label description
@@ -18,12 +16,14 @@ def format_as_nli_hypothesis(label_text: str) -> str:
     Returns:
         Formatted hypothesis string
     """
-    # If label_text is already a full sentence (description mode), use it as-is
+    # If label_text is already a full sentence (description mode), use it directly
+    # NLI models work better with natural sentences
     if label_text.startswith("This "):
         return label_text
     
-    # Otherwise, wrap it in NLI hypothesis format
-    return f"This text is about {label_text}."
+    # For short labels, create a simple hypothesis
+    # Don't add extra words - keep it minimal
+    return label_text
 
 
 def predict_reranker(
