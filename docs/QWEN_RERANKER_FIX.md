@@ -1,54 +1,32 @@
-# Qwen Reranker Model Fix
+# Reranker Model Compatibility Issues
 
-## Problem
-The original Qwen reranker model `Qwen/Qwen3-Reranker-0.6B` was failing to load with sentence-transformers CrossEncoder due to incompatible model architecture.
+## Working Models
+1. **BAAI/bge-reranker-v2-m3** (568M) ✅
+2. **tomaarsen/Qwen3-Reranker-0.6B-seq-cls** (600M) ✅
 
-## Error
+## Excluded Models
+
+### Jina Reranker v2 ❌
+**Model**: jinaai/jina-reranker-v2-base-multilingual
+
+**Error**:
 ```
-File "/usr/local/lib/python3.12/dist-packages/transformers/models/auto/auto_factory.py", line 354, in from_pretrained
-    model_class = get_class_from_dynamic_module(
-File "/usr/local/lib/python3.12/dist-packages/transformers/dynamic_module_utils.py", line 583, in get_class_from_dynamic_module
-    return get_class_in_module(class_name, final_module, force_reload=force_download)
-```
-
-## Root Cause
-The original `Qwen/Qwen3-Reranker-0.6B` model uses a custom architecture (`AutoModelForCausalLM`) that is not compatible with sentence-transformers' CrossEncoder class, which expects `AutoModelForSequenceClassification`.
-
-## Solution
-Use the converted model: `tomaarsen/Qwen3-Reranker-0.6B-seq-cls`
-
-This is a community-converted version that:
-- Uses `AutoModelForSequenceClassification` architecture
-- Works seamlessly with sentence-transformers CrossEncoder
-- Maintains the same performance as the original model
-- Supports the same multilingual capabilities (100+ languages)
-
-## Model Details
-- **Model**: tomaarsen/Qwen3-Reranker-0.6B-seq-cls
-- **Parameters**: 600M
-- **Architecture**: Sequence Classification (compatible with CrossEncoder)
-- **Languages**: 100+ languages
-- **Context Length**: 32k tokens
-- **Performance**: Same as original Qwen3-Reranker-0.6B
-
-## Usage
-```python
-from sentence_transformers import CrossEncoder
-
-model = CrossEncoder("tomaarsen/Qwen3-Reranker-0.6B-seq-cls")
-pairs = [["query", "document"]]
-scores = model.predict(pairs)
+ImportError: cannot import name 'create_position_ids_from_input_ids' from 'transformers.models.xlm_roberta.modeling_xlm_roberta'
 ```
 
-## Benchmark Impact
-Now all 3 rerankers work correctly:
-1. BAAI/bge-reranker-v2-m3 (568M)
-2. jinaai/jina-reranker-v2-base-multilingual (278M)
-3. tomaarsen/Qwen3-Reranker-0.6B-seq-cls (600M)
+**Root Cause**: 
+- Jina reranker uses custom XLM-RoBERTa implementation
+- Requires specific transformers version that conflicts with other dependencies
+- The model's custom code imports deprecated functions from transformers
 
-Total experiments: 6 datasets × 3 rerankers = 18 experiments
+**Status**: Excluded from benchmark due to compatibility issues
 
-## References
-- Original model: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
-- Converted model: https://huggingface.co/tomaarsen/Qwen3-Reranker-0.6B-seq-cls
-- Conversion discussion: https://huggingface.co/tomaarsen/Qwen3-Reranker-0.6B-seq-cls#updated-usage
+## Benchmark Configuration
+- Total experiments: 6 datasets × 2 rerankers = 12 experiments
+- Both working models are multilingual and support 100+ languages
+- Performance expected: 75-85% accuracy on most datasets
+
+## Alternative Solutions (Not Implemented)
+1. Use older transformers version (breaks other models)
+2. Use Jina's official API (requires API key, not suitable for benchmark)
+3. Wait for Jina to release updated model compatible with latest transformers
