@@ -86,11 +86,22 @@ def predict_reranker(
     all_scores = np.array(all_scores)
     
     print(f"Raw scores shape: {all_scores.shape}")
+    print(f"Sample raw scores (first text, first 3 labels):")
+    print(all_scores[0, :3])
     
     # NLI models return 3 scores: [contradiction, entailment, neutral]
     # For zero-shot classification, we only care about ENTAILMENT (index 1)
     if all_scores.ndim == 3 and all_scores.shape[2] == 3:
         print("NLI model detected - extracting entailment scores (index 1)")
+        
+        # Apply softmax to convert logits to probabilities
+        from scipy.special import softmax
+        all_scores = softmax(all_scores, axis=2)
+        
+        print(f"After softmax - sample scores (first text, first 3 labels):")
+        print(all_scores[0, :3])
+        
+        # Extract entailment scores (index 1)
         all_scores = all_scores[:, :, 1]  # Shape: (n_texts, n_labels)
     
     # Ensure 2D: (n_texts, n_labels)
@@ -98,13 +109,16 @@ def predict_reranker(
         raise ValueError(f"Expected 2D scores array after processing, got shape {all_scores.shape}")
     
     print(f"Final all_scores shape: {all_scores.shape}")
+    print(f"Final entailment scores (first text, first 5 labels): {all_scores[0, :5]}")
     
     # Get predictions (highest scoring label)
     pred_indices = np.argmax(all_scores, axis=1)  # Shape: (n_texts,)
+    print(f"First 10 predictions (indices): {pred_indices[:10]}")
     
     # Map indices to label IDs using numpy indexing
     label_ids_array = np.array(label_ids)
     predictions = label_ids_array[pred_indices].tolist()
+    print(f"First 10 predictions (label IDs): {predictions[:10]}")
     
     # Get confidence scores (max score for each text)
     confidences = np.max(all_scores, axis=1).tolist()
