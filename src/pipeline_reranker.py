@@ -90,7 +90,7 @@ def predict_reranker(
     # Map indices to label IDs
     predictions = []
     for idx in pred_indices:
-        predictions.append(label_ids[int(idx)])
+        predictions.append(label_ids[int(idx.item())])
     
     # Get confidence scores (max score for each text)
     confidences = np.max(all_scores, axis=1).tolist()
