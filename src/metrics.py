@@ -16,26 +16,37 @@ def compute_metrics(y_true: List[int], y_pred: List[int]) -> Dict[str, Any]:
     """Compute classification metrics.
     
     Args:
-        y_true: True labels
-        y_pred: Predicted labels
+        y_true: True labels (can be multi-label lists or single integers)
+        y_pred: Predicted labels (single integers)
         
     Returns:
         Dictionary of metrics
     """
+    # Check if multi-label (GoEmotions case)
+    is_multilabel = isinstance(y_true[0], (list, tuple, np.ndarray))
+    
+    if is_multilabel:
+        # For multi-label: convert to single label by taking first label
+        # This is a simplification for zero-shot classification
+        y_true_single = [labels[0] if isinstance(labels, (list, tuple, np.ndarray)) and len(labels) > 0 else labels 
+                         for labels in y_true]
+    else:
+        y_true_single = y_true
+    
     metrics = {
-        "accuracy": float(accuracy_score(y_true, y_pred)),
-        "macro_f1": float(f1_score(y_true, y_pred, average="macro")),
-        "weighted_f1": float(f1_score(y_true, y_pred, average="weighted")),
-        "macro_precision": float(precision_score(y_true, y_pred, average="macro", zero_division=0)),
-        "macro_recall": float(recall_score(y_true, y_pred, average="macro", zero_division=0)),
+        "accuracy": float(accuracy_score(y_true_single, y_pred)),
+        "macro_f1": float(f1_score(y_true_single, y_pred, average="macro")),
+        "weighted_f1": float(f1_score(y_true_single, y_pred, average="weighted")),
+        "macro_precision": float(precision_score(y_true_single, y_pred, average="macro", zero_division=0)),
+        "macro_recall": float(recall_score(y_true_single, y_pred, average="macro", zero_division=0)),
     }
     
     # Per-class metrics
-    report = classification_report(y_true, y_pred, output_dict=True, zero_division=0)
+    report = classification_report(y_true_single, y_pred, output_dict=True, zero_division=0)
     metrics["classification_report"] = report
     
     # Confusion matrix
-    cm = confusion_matrix(y_true, y_pred)
+    cm = confusion_matrix(y_true_single, y_pred)
     metrics["confusion_matrix"] = cm.tolist()
     
     return metrics
@@ -49,14 +60,24 @@ def compute_confidence_metrics(
     """Compute confidence-based metrics.
     
     Args:
-        y_true: True labels
+        y_true: True labels (can be multi-label lists or single integers)
         y_pred: Predicted labels
         confidences: Confidence scores
         
     Returns:
         Dictionary of confidence metrics
     """
-    correct = np.array([yt == yp for yt, yp in zip(y_true, y_pred)])
+    # Check if multi-label (GoEmotions case)
+    is_multilabel = isinstance(y_true[0], (list, tuple, np.ndarray))
+    
+    if is_multilabel:
+        # For multi-label: convert to single label by taking first label
+        y_true_single = [labels[0] if isinstance(labels, (list, tuple, np.ndarray)) and len(labels) > 0 else labels 
+                         for labels in y_true]
+    else:
+        y_true_single = y_true
+    
+    correct = np.array([yt == yp for yt, yp in zip(y_true_single, y_pred)])
     confs = np.array(confidences)
     
     metrics = {
@@ -80,7 +101,7 @@ def analyze_errors(
     
     Args:
         texts: Input texts
-        y_true: True labels
+        y_true: True labels (can be multi-label lists or single integers)
         y_pred: Predicted labels
         confidences: Confidence scores
         top_k: Number of top errors to return
@@ -88,9 +109,19 @@ def analyze_errors(
     Returns:
         List of error analysis dictionaries
     """
+    # Check if multi-label (GoEmotions case)
+    is_multilabel = isinstance(y_true[0], (list, tuple, np.ndarray))
+    
+    if is_multilabel:
+        # For multi-label: convert to single label by taking first label
+        y_true_single = [labels[0] if isinstance(labels, (list, tuple, np.ndarray)) and len(labels) > 0 else labels 
+                         for labels in y_true]
+    else:
+        y_true_single = y_true
+    
     errors = []
     
-    for text, yt, yp, conf in zip(texts, y_true, y_pred, confidences):
+    for text, yt, yp, conf in zip(texts, y_true_single, y_pred, confidences):
         if yt != yp:
             errors.append({
                 "text": text[:200],  # Truncate for readability

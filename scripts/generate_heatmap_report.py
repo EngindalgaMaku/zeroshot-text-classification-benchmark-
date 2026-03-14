@@ -55,7 +55,8 @@ def extract_model_dataset_scores(results):
         'instructor': 'INSTRUCTOR',
         'jina': 'Jina-v3',
         'mpnet': 'MPNet',
-        'qwen': 'Qwen3-4B'
+        'qwen': 'Qwen3-4B',
+        'snowflake': 'Snowflake'
     }
     
     # Dataset name mapping (shorter names for readability)
@@ -118,8 +119,8 @@ def extract_model_dataset_scores(results):
     column_order = ['20News', 'AG News', 'Banking77', 'DBPedia', 'GoEmotions', 'Twitter-Fin', 'Yahoo']
     df = df[[col for col in column_order if col in df.columns]]
     
-    # Ensure consistent row order (INSTRUCTOR added!)
-    row_order = ['INSTRUCTOR', 'Qwen3-4B', 'E5-large', 'MPNet', 'Jina-v3', 'BGE-M3']
+    # Ensure consistent row order (INSTRUCTOR + Snowflake added!)
+    row_order = ['INSTRUCTOR', 'Snowflake', 'Qwen3-4B', 'E5-large', 'MPNet', 'Jina-v3', 'BGE-M3']
     df = df.reindex([row for row in row_order if row in df.index])
     
     return df
