@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 """
-Create missing label formulation config files
+Create missing label formulation config files for ALL 9 datasets
+WITH CORRECT SAMPLE SIZES per documentation
 """
 
 import yaml
 from pathlib import Path
 
-# Dataset configurations
+# ALL 9 Dataset configurations WITH CORRECT SAMPLE SIZES
 datasets = [
     ("ag_news", "text", "label", "test", 1000),
+    ("dbpedia_14", "content", "label", "test", 1000),
+    ("yahoo_answers_topics", "best_answer", "topic", "test", 1000),
     ("banking77", "text", "label", "test", 1000),
+    ("zeroshot/twitter-financial-news-sentiment", "text", "label", "validation", 1000),
+    ("SetFit/20_newsgroups", "text", "label", "test", 2000),  # SPECIAL: 2000 samples
     ("go_emotions", "text", "labels", "test", 1000),
+    ("imdb", "text", "label", "test", 1000),
+    ("sst2", "sentence", "label", "validation", 1000),
 ]
 
 # Model configurations
@@ -32,6 +39,7 @@ output_dir = Path("experiments/label_formulation")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 created_count = 0
+updated_count = 0
 skipped_count = 0
 
 for ds_name, text_col, label_col, split, max_samples in datasets:
@@ -43,13 +51,25 @@ for ds_name, text_col, label_col, split, max_samples in datasets:
             exp_name = f"{ds_clean}_{model_short}_{label_mode}"
             config_path = output_dir / f"exp_{exp_name}.yaml"
             
-            # Skip if already exists
+            # Check if exists and has wrong sample size
             if config_path.exists():
-                print(f"⏭️  Skip: {exp_name} (already exists)")
-                skipped_count += 1
-                continue
+                with open(config_path, 'r') as f:
+                    existing_config = yaml.safe_load(f)
+                
+                existing_samples = existing_config.get('dataset', {}).get('max_samples', 0)
+                
+                if existing_samples != max_samples:
+                    print(f"🔄 Update: {exp_name} ({existing_samples} → {max_samples})")
+                    updated_count += 1
+                else:
+                    print(f"⏭️  Skip: {exp_name} (already correct)")
+                    skipped_count += 1
+                    continue
+            else:
+                print(f"✅ Create: {exp_name}")
+                created_count += 1
             
-            # Create config
+            # Create/update config
             config = {
                 "experiment_name": exp_name,
                 "dataset": {
@@ -86,14 +106,15 @@ for ds_name, text_col, label_col, split, max_samples in datasets:
             # Write config
             with open(config_path, "w") as f:
                 yaml.dump(config, f, default_flow_style=False, sort_keys=False)
-            
-            print(f"✅ Created: {exp_name}")
-            created_count += 1
 
 print(f"\n{'='*70}")
 print(f"SUMMARY")
 print(f"{'='*70}")
 print(f"Created: {created_count} new configs")
-print(f"Skipped: {skipped_count} existing configs")
-print(f"Total: {created_count + skipped_count} configs")
-print(f"\n✅ Expected: 42 configs (3 datasets × 7 models × 2 modes)")
+print(f"Updated: {updated_count} configs (corrected sample sizes)")
+print(f"Skipped: {skipped_count} existing configs (already correct)")
+print(f"Total: {created_count + updated_count + skipped_count} configs")
+print(f"\n✅ Expected: 126 configs (9 datasets × 7 models × 2 modes)")
+print(f"\n📊 Sample sizes per documentation:")
+print(f"  • Most datasets: 1,000 samples")
+print(f"  • 20 Newsgroups: 2,000 samples (harder task)")

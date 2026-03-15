@@ -1,0 +1,29 @@
+experiment_name: sst2_mpnet_description
+dataset:
+  name: sst2
+  split: validation
+  text_column: sentence
+  label_column: label
+  max_samples: 1000
+task:
+  type: zero_shot_classification
+  label_mode: description
+  language: en
+models:
+  biencoder:
+    provider: hf
+    name: sentence-transformers/all-mpnet-base-v2
+  reranker: null
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+  batch_size: 16
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+output:
+  save_predictions: true
+  save_metrics: true
+  output_dir: results/raw
