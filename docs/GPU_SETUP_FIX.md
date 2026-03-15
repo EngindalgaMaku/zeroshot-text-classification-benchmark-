@@ -1,47 +1,80 @@
 # 🚀 GPU Setup - RTX 4060 Kullanımı
 
-## Sorun
+## ⚠️ ÖNEMLİ: Python Versiyon Sorunu
 
-PyTorch **CPU-only** versiyonu kurulu (`2.10.0+cpu`), bu yüzden RTX 4060'ınız kullanılmıyor.
+**Python 3.14.3 kullanıyorsunuz** - Bu çok yeni ve PyTorch henüz desteklemiyor!
+
+PyTorch desteklenen Python versiyonları: **3.8, 3.9, 3.10, 3.11, 3.12**
+
+## Çözüm Seçenekleri:
+
+### Seçenek 1: Python 3.12 ile Yeni Sanal Ortam (ÖNERİLEN)
+
+```bash
+# Python 3.12 kur (python.org'dan)
+# Sonra:
+python3.12 -m venv .venv_gpu
+.venv_gpu\Scripts\activate
+pip install -r requirements.txt
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+### Seçenek 2: Conda Kullan (KOLAY)
+
+```bash
+# Conda kur (anaconda.com veya miniconda)
+conda create -n zeroshot python=3.12
+conda activate zeroshot
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install -r requirements.txt
+```
+
+### Seçenek 3: PyTorch Nightly (RİSKLİ)
+
+```bash
+# Python 3.14 için PyTorch nightly build dene (garanti değil)
+pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+```
 
 ## Durum
 
 ✅ **GPU:** NVIDIA GeForce RTX 4060 (8GB VRAM)  
 ✅ **Driver:** 581.83  
 ✅ **CUDA:** 13.0 destekli  
-❌ **PyTorch:** CPU-only (2.10.0+cpu)
+❌ **Python:** 3.14.3 (PyTorch desteklemiyor!)  
+❌ **PyTorch:** 2.10.0+cpu (CPU-only)
 
-## Çözüm - 3 Adım
+## Önerilen Çözüm: Conda ile Kurulum
 
-### 1️⃣ Mevcut PyTorch'u Kaldır
+En kolay ve güvenilir yöntem **Conda**:
 
+### 1️⃣ Miniconda İndir ve Kur
+https://docs.conda.io/en/latest/miniconda.html
+
+### 2️⃣ Yeni Ortam Oluştur
 ```bash
-pip uninstall torch torchvision torchaudio
+conda create -n zeroshot python=3.12 -y
+conda activate zeroshot
 ```
 
-Tüm uyarıları onaylayın (y)
-
-### 2️⃣ CUDA-Enabled PyTorch Kur
-
-**CUDA 12.1 için (önerilen):**
+### 3️⃣ PyTorch + CUDA Kur
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 
-**VEYA CUDA 11.8 için:**
+### 4️⃣ Diğer Paketleri Kur
 ```bash
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
 ```
 
-### 3️⃣ Doğrula
-
+### 5️⃣ Doğrula
 ```bash
-python -c "import torch; print('CUDA available:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0))"
+python -c "import torch; print('CUDA:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A')"
 ```
 
-**Beklenen çıktı:**
+**Beklenen:**
 ```
-CUDA available: True
+CUDA: True
 GPU: NVIDIA GeForce RTX 4060 Laptop GPU
 ```
 
@@ -49,34 +82,37 @@ GPU: NVIDIA GeForce RTX 4060 Laptop GPU
 
 ✅ Artık modeller GPU'da çalışacak  
 ✅ **10-50x daha hızlı** olacak  
-✅ Kod değişikliği **gerekmez** (otomatik GPU kullanılır)  
-✅ Batch size daha büyük kullanılabilir
+✅ Python 3.12 stabil ve PyTorch tam destekliyor  
 
 ## 📊 Performans Karşılaştırması
 
-| İşlem | CPU | RTX 4060 | Hızlanma |
-|-------|-----|----------|----------|
+| İşlem | CPU (Python 3.14) | RTX 4060 (Python 3.12) | Hızlanma |
+|-------|-------------------|------------------------|----------|
 | 1000 text encode (MPNet) | ~30s | ~2s | **15x** |
 | 1000 text encode (Qwen3-8B) | ~5 min | ~20s | **15x** |
 | 20 Newsgroups (2000 samples) | ~10 min | ~1 min | **10x** |
 
 ## ⚠️ Notlar
 
-- CUDA 12.1 PyTorch yeni sürümleri destekler
-- CUDA 11.8 eski GPU'larla daha uyumlu
-- RTX 4060 her ikisiyle de çalışır
-- requirements.txt'i değiştirmeye gerek yok (sadece PyTorch)
+- Python 3.14 çok yeni, birçok paket desteklemiyor
+- Python 3.12 ideal (stabil + modern)
+- Conda PyTorch kurulumu için en kolay yol
+- Mevcut `.venv` silinmeyecek, yeni ortam oluşturacaksınız
 
 ## 🔍 Sorun Giderme
 
-### "CUDA out of memory" hatası alıyorsanız:
-- `batch_size=8` zaten ayarlanmış (label formulation için)
-- Daha da düşürmeniz gerekirse: `batch_size=4`
-- Model boyutlarını kontrol edin (Qwen3-8B çok büyük)
-
-### GPU kullanılmıyor gibi görünüyorsa:
+### Hala CPU kullanıyorsa:
 ```bash
 python scripts/check_gpu_and_fix.py
 ```
 
-Bu script GPU durumunu kontrol eder ve sorunları gösterir.
+### Conda ortamı aktif mi kontrol:
+```bash
+conda env list
+# * işareti aktif ortamı gösterir
+```
+
+### requirements.txt'teki torch conflict:
+```bash
+# requirements.txt'te torch satırını kaldırın veya yorum yapın
+# Conda ile kurulumu sonra requirements.txt'i kurun
