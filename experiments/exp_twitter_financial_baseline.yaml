@@ -1,35 +1,31 @@
 experiment_name: twitter_financial_mpnet_baseline
-
 dataset:
   name: zeroshot/twitter-financial-news-sentiment
+  # Note: Using validation split because test split is not available for this dataset
   split: validation
   text_column: text
   label_column: label
-  max_samples: 2000  # Sample for faster experimentation
-
+  max_samples: 1000
 task:
   type: zero_shot_classification
   label_mode: description
   language: en
-
 models:
   biencoder:
     provider: hf
     name: sentence-transformers/all-mpnet-base-v2
   reranker: null
-
 pipeline:
   mode: biencoder
   normalize_embeddings: true
   few_shot:
     enabled: false
-
+  batch_size: 16
 evaluation:
   metrics:
-    - accuracy
-    - macro_f1
-    - per_class_f1
-
+  - accuracy
+  - macro_f1
+  - per_class_f1
 output:
   save_predictions: true
   save_metrics: true

@@ -1,32 +1,26 @@
 experiment_name: goemotions_qwen3
-
 dataset:
   name: go_emotions
   split: test
   text_column: text
   label_column: labels
   max_samples: 1000
-
 task:
   type: zero_shot_classification
   label_mode: description
   language: en
-
 models:
   biencoder:
     provider: hf
-    name: Alibaba-NLP/gte-Qwen2-1.5B-instruct
-
+    name: Qwen/Qwen3-Embedding-8B
 pipeline:
   normalize_embeddings: true
-  batch_size: 8
-
+  batch_size: 16
 evaluation:
   metrics:
-    - accuracy
-    - macro_f1
-    - per_class_f1
-
+  - accuracy
+  - macro_f1
+  - per_class_f1
 output:
   save_predictions: true
   save_metrics: true

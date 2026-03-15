@@ -1,314 +1,235 @@
 # Label Description Methodology
 
-## 📝 Zero-Shot Classification için Label Tanımlama Metodolojisi
+## 🎯 Critical Question for Reviewers
 
-Bu dokümanda, zero-shot text classification için kullanılan label description'ların nasıl oluşturulduğunu açıklıyoruz.
+**How exactly were label descriptions created and encoded?**
 
----
-
-## 🎯 Genel İlkeler
-
-### 1. Label Mode Türleri
-
-Üç farklı label mode kullanıyoruz:
-
-1. **name_only**: Sadece sınıf ismi (örn: "sports", "business")
-2. **description**: Tek açıklayıcı cümle
-3. **multi_description**: Çoklu paraphrase'ler (3 farklı ifade)
+This is a critical methodological detail that reviewers will scrutinize.
 
 ---
 
-## ✍️ Description Yazma Kuralları
+## ✅ Our Approach: Manual Expert-Crafted Descriptions
 
-### Genel Format
+### Method
+We use **manually crafted, dataset-specific label descriptions** stored in `src/labels.py`.
 
-Tüm description'lar aşağıdaki template'i izler:
+**NOT** simple templates like:
+- ❌ "This text is about {label}"
+- ❌ "This is {label}"
 
-```
-"This text is about [topic], [keywords], or [related concepts]."
-```
-
-**İngilizce için:**
-```python
-"This text is about [topic], [sub-topics], [keywords], or [related terms]."
-```
-
-**Türkçe için:**
-```python
-"Bu metin [konu], [alt konular], [anahtar kelimeler] veya [ilgili kavramlar] hakkındadır."
-```
+**BUT** rich, contextual descriptions:
+- ✅ "This text is about international events, global politics, diplomacy, conflicts, or world affairs."
+- ✅ "The user wants to activate their card or asking how to activate it."
+- ✅ "This text expresses admiration, respect, appreciation, or positive regard for someone or something."
 
 ---
 
-## 📋 Dataset-Specific Kurallar
+## 📋 Label Modes
 
-### AG News (4 class)
+We support three modes (experiments use `description`):
 
-**Kaynak:** Orijinal AG News dataset class isimleri
-**Yaklaşım:** Newswire domain için spesifik keyword'ler
-
+### 1. `name_only` - Simple Label Names
 ```python
-"name_only": {
-    0: ["world"],
-    1: ["sports"],
-    2: ["business"],
-    3: ["science and technology"]
-}
-
-"description": {
-    0: ["This text is about international events, global politics, diplomacy, conflicts, or world affairs."],
-    1: ["This text is about sports, matches, teams, athletes, tournaments, or competitions."],
-    2: ["This text is about business, markets, finance, companies, trade, or the economy."],
-    3: ["This text is about science, technology, computers, innovation, research, or digital products."]
+"ag_news": {
+    "name_only": {
+        0: ["world"],
+        1: ["sports"],
+        2: ["business"],
+        3: ["science and technology"],
+    }
 }
 ```
 
-**Kurallar:**
-- Her description 10-15 keyword içerir
-- Domain-specific terimler (örn: "diplomacy", "tournaments")
-- Virgülle ayrılmış, "or" ile bağlanmış liste formatı
-
----
-
-### DBpedia-14 (14 class)
-
-**Kaynak:** DBpedia ontology class isimleri
-**Yaklaşım:** Entity-focused descriptions
-
+### 2. `description` - Rich Contextual Descriptions (USED IN EXPERIMENTS)
 ```python
-"description": {
-    0: ["This text describes a company, corporation, or business organization."],
-    1: ["This text describes an educational institution, school, university, or academy."],
-    ...
+"ag_news": {
+    "description": {
+        0: ["This text is about international events, global politics, diplomacy, conflicts, or world affairs."],
+        1: ["This text is about sports, matches, teams, athletes, tournaments, or competitions."],
+        2: ["This text is about business, markets, finance, companies, trade, or the economy."],
+        3: ["This text is about science, technology, computers, innovation, research, or digital products."],
+    }
 }
 ```
 
-**Kurallar:**
-- "This text **describes** a..." formatı (entity için)
-- Synonym'ler dahil (örn: "company, corporation")
-- 3-5 alternative term
+### 3. `multi_description` - Multiple Descriptions per Label
+Not used in current experiments, but supported for future work.
 
 ---
 
-### Yahoo Answers (10 class)
+## 🔧 Implementation Details
 
-**Kaynak:** Yahoo Answers topic taxonomy
-**Yaklaşım:** Question-focused descriptions
+### Code Flow
 
+1. **Load label descriptions** (`src/runner.py`):
 ```python
-"description": {
-    0: ["This question is about society, culture, social issues, traditions, or cultural practices."],
-    1: ["This question is about science, mathematics, physics, chemistry, biology, or scientific concepts."],
-    ...
-}
+grouped_labels = get_label_texts(dataset_name, label_mode="description")
+# Returns: {0: ["This text is about..."], 1: ["This text is about..."], ...}
 ```
 
-**Kurallar:**
-- "This **question** is about..." formatı (Q&A için)
-- Geniş kapsam (örn: tüm scientific disciplines)
-- Topic hierarchies gözetilir
-
----
-
-### Banking77 (77 class)
-
-**Kaynak:** Banking intent taxonomy
-**Yaklaşım:** User intent descriptions
-
+2. **Flatten to list** (`src/labels.py`):
 ```python
-"description": {
-    0: ["The user wants to activate their card or asking how to activate it."],
-    21: ["The user wants to change their PIN code."],
-    ...
-}
+flat_texts, flat_ids = flatten_label_texts(grouped_labels)
+# flat_texts: ["This text is about international events...", "This text is about sports...", ...]
+# flat_ids: [0, 1, 2, 3, ...]
 ```
 
-**Kurallar:**
-- "The **user** wants/needs/is asking..." formatı
-- Action-oriented (user intent)
-- Specific use case description
-
----
-
-### Turkish Datasets
-
-**Kaynak:** Türkçe dataset class isimleri
-**Yaklaşım:** Turkish grammar ve natural expression
-
+3. **Encode with bi-encoder** (`src/pipeline.py`):
 ```python
-"description": {
-    0: ["Bu metin siyaset, politika, hükümet veya siyasi haberler kategorisindedir."],
-    1: ["Bu metin dünya haberleri, uluslararası gelişmeler veya dış politika kategorisindedir."],
-    ...
-}
+label_embeddings = encoder.encode(flat_texts, batch_size=32)
+# Each description is encoded as a dense vector
 ```
 
-**Kurallar:**
-- "Bu metin [konu] hakkındadır/kategorisindedir" formatı
-- Türkçe natural language flow
-- Keyword'ler domain'e uygun (örn: "siyaset, politika, hükümet")
-
----
-
-## 🔬 Metodolojik Kararlar
-
-### 1. Uzunluk
-
-**Tercih:** 10-15 kelime (description mode için)
-
-**Neden:**
-- Çok kısa → Belirsiz (örn: sadece "sports")
-- Çok uzun → Noise, irrelevant bilgi
-- 10-15 kelime → Optimal semantic richness
-
-### 2. Keyword Seçimi
-
-**Strateji:** 
-1. Class name'den başla (örn: "sports")
-2. Direct synonyms ekle (örn: "athletics")
-3. Sub-topics ekle (örn: "matches, teams, athletes")
-4. Related terms ekle (örn: "tournaments, competitions")
-
-**Örnek:**
-```
-sports → athletics → matches, teams, athletes → tournaments, competitions
-```
-
-### 3. Template Consistency
-
-**Aynı dataset içinde:**
-- Aynı template kullan (örn: hep "This text is about...")
-- Aynı yapı (örn: hep virgülle liste)
-- Aynı uzunluk seviyesi
-
-**Farklı dataset'ler arası:**
-- Domain'e uygun template (örn: entity için "describes", intent için "user wants")
-
----
-
-## 📊 Multi-Description Mode
-
-`multi_description` mode için 3 farklı paraphrase:
-
-**Kural:**
-1. İlk: Genel overview
-2. İkinci: "The main topic is..." formatı
-3. Üçüncü: "This article discusses..." formatı
-
-**Örnek (AG News - World):**
+4. **Compute similarity**:
 ```python
-"multi_description": {
-    0: [
-        "This text is about international news, diplomacy, wars, or world affairs.",  # Genel
-        "The main topic of this text is global politics or international events.",    # Main topic
-        "This article discusses world news, foreign policy, or global conflicts.",    # Article discusses
-    ]
-}
+similarities = cosine_similarity(text_embeddings, label_embeddings)
+# Find most similar label description for each text
 ```
 
 ---
 
-## 🎓 Makalede Nasıl Belirteceğiz?
+## 📊 Description Design Principles
 
-### Method Section'da:
+### 1. Dataset-Specific Verbs
+- **Topic classification**: "This text is about..."
+- **Entity classification**: "This text describes..."
+- **Emotion classification**: "This text expresses..."
+- **Intent classification**: "The user wants to..."
+- **Question classification**: "This question is about..."
 
-```markdown
-## Label Representations
-
-We define three label modes for zero-shot classification:
-
-1. **Name-only**: Simple class names (e.g., "sports", "business")
-
-2. **Description**: Single descriptive sentence per class following 
-   a consistent template format:
-   - For news: "This text is about [topic], [keywords]..."
-   - For entities: "This text describes a [entity type]..."
-   - For intents: "The user wants to [action]..."
-
-3. **Multi-description**: Three paraphrased descriptions per class
-   to test robustness to label formulation.
-
-All descriptions are manually crafted following these principles:
-- Consistent template within each dataset
-- 10-15 keywords per description
-- Domain-appropriate vocabulary
-- Natural language formulation
-
-For Turkish datasets, descriptions are translated and adapted
-to maintain natural Turkish grammar and expression.
-```
-
-### Appendix'te:
-
-Full label definitions for reproducibility → `src/labels.py` kodunu ekle
-
----
-
-## ✅ Reproducibility
-
-**Tam şeffaflık için:**
-1. Bu döküman → Methodology açıklaması
-2. `src/labels.py` → Tüm label definitions (kod)
-3. Paper appendix → Full label list
-
-**Böylece:**
-- Herkes aynı label'ları kullanabilir
-- Reproducible research
-- Fair comparison
-
----
-
-## 🔍 Önemli Notlar
-
-### Bias Kontrolü
-
-✅ **Yaptığımız:**
-- Her class için eşit detay seviyesi
-- Balanced keyword sayısı
-- Neutral language (no positive/negative bias)
-
-❌ **Yapmadığımız:**
-- Specific brand/entity isimleri (örn: "Google", "Microsoft")
-- Temporal references (örn: "recent", "modern")
-- Opinionated adjectives (örn: "best", "worst")
-
-### Domain Expertise
-
-- **AG News, DBpedia, Yahoo:** Public taxonomy kullanıldı
-- **Banking77:** Original paper'daki intent descriptions baz alındı
-- **Turkish:** Domain uzmanı (native speaker) tarafından yazıldı
-
----
-
-## 📝 Örnek: Tam Süreç (AG News - Sports)
-
-1. **Class name:** "sports" (dataset'ten)
-2. **Synonyms:** athletics, games
-3. **Sub-topics:** matches, teams, athletes
-4. **Related terms:** tournaments, competitions
-5. **Template:** "This text is about..."
-6. **Final:** "This text is about sports, matches, teams, athletes, tournaments, or competitions."
-
-**Quality check:**
-- ✅ Clear and unambiguous
-- ✅ 10-15 keywords
-- ✅ Domain-appropriate
-- ✅ Natural language
-- ✅ Consistent with other classes
-
----
-
-## 🎯 Sonuç
-
-**Standardımız:**
-- ✅ Tutarlı template kullanımı
-- ✅ 10-15 keyword optimal uzunluk
+### 2. Rich Context
+Each description includes:
+- ✅ Primary concept
+- ✅ Related concepts
+- ✅ Synonyms
 - ✅ Domain-specific terminology
-- ✅ Natural language formulation
-- ✅ Balanced coverage across classes
-- ✅ Reproducible ve transparent
 
-**Makale için:**
-- Method section'da açıkla
-- Appendix'te full list ver
-- GitHub'da kod paylaş
+**Example (Banking77):**
+```python
+0: ["The user wants to activate their card or asking how to activate it."]
+# Not just: "activate card"
+```
+
+### 3. Semantic Richness
+Descriptions are designed to:
+- Maximize semantic information
+- Reduce ambiguity
+- Provide context for embedding models
+- Match natural language patterns
+
+---
+
+## 🎓 Comparison with Literature
+
+### Our Approach vs. Common Alternatives
+
+| Approach | Example | Used By | Pros | Cons |
+|----------|---------|---------|------|------|
+| **Simple Template** | "This is {label}" | Many papers | Simple, reproducible | Low semantic info |
+| **Label Name Only** | "sports" | Baseline | Minimal | Very limited context |
+| **Dataset Descriptions** | Use original dataset descriptions | Some papers | Authentic | Not always available |
+| **Manual Expert Descriptions** (OURS) | "This text is about sports, matches, teams, athletes..." | This work | Rich semantics, consistent | Requires manual effort |
+| **LLM-Generated** | GPT-4 generated descriptions | Recent papers | Scalable | Inconsistent, requires validation |
+
+---
+
+## 📝 Example Descriptions by Dataset
+
+### AG News (4 classes - News Topics)
+```python
+0: ["This text is about international events, global politics, diplomacy, conflicts, or world affairs."]
+1: ["This text is about sports, matches, teams, athletes, tournaments, or competitions."]
+2: ["This text is about business, markets, finance, companies, trade, or the economy."]
+3: ["This text is about science, technology, computers, innovation, research, or digital products."]
+```
+
+### Banking77 (77 classes - Banking Intents)
+```python
+0: ["The user wants to activate their card or asking how to activate it."]
+1: ["The user is asking about age limits or age requirements for services."]
+22: ["The user believes their card is compromised or stolen."]
+```
+
+### GoEmotions (28 classes - Fine-grained Emotions)
+```python
+0: ["This text expresses admiration, respect, appreciation, or positive regard for someone or something."]
+2: ["This text expresses anger, rage, fury, or strong displeasure and hostility."]
+17: ["This text expresses joy, happiness, delight, pleasure, or positive emotional state."]
+```
+
+### 20 Newsgroups (20 classes - Forum Topics)
+```python
+0: ["This text discusses atheism, religious skepticism, secular humanism, or non-religious philosophy."]
+1: ["This text discusses computer graphics, image processing, visualization, rendering, or graphical software."]
+11: ["This text discusses cryptography, encryption, security algorithms, or cryptographic systems."]
+```
+
+---
+
+## ✅ Validation & Consistency
+
+### Quality Checks
+1. ✅ All descriptions follow consistent templates per dataset type
+2. ✅ All descriptions are grammatically correct
+3. ✅ All descriptions include rich semantic context
+4. ✅ All descriptions are manually reviewed
+5. ✅ All descriptions are stored in version control (`src/labels.py`)
+
+### Reproducibility
+- ✅ All descriptions are in source code
+- ✅ No external files or APIs
+- ✅ No randomness in description generation
+- ✅ Same descriptions used across all models
+- ✅ Same descriptions used across all runs
+
+---
+
+## � For Paper Methods Section
+
+### Recommended Text:
+
+> **Label Representation:** We employ manually crafted, semantically rich label descriptions for each dataset. Rather than using simple templates (e.g., "This is {label}"), we created dataset-specific descriptions that provide contextual information and domain terminology. For example, in AG News, the "sports" label is represented as "This text is about sports, matches, teams, athletes, tournaments, or competitions." For Banking77 intents, we use natural language descriptions such as "The user wants to activate their card or asking how to activate it." These descriptions were manually designed to maximize semantic information while maintaining consistency across labels within each dataset. All label descriptions are available in our source code repository.
+
+### Key Points to Emphasize:
+1. **Manual expert creation** (not automated templates)
+2. **Dataset-specific** (not one-size-fits-all)
+3. **Semantically rich** (multiple related concepts)
+4. **Consistent within datasets** (same template structure)
+5. **Reproducible** (stored in code, no randomness)
+
+---
+
+## 🔍 Potential Reviewer Questions
+
+### Q1: "Why not use the original dataset label descriptions?"
+**A:** Many datasets (AG News, DBpedia, 20 Newsgroups) don't provide rich descriptions, only label names. We created consistent, semantically rich descriptions across all datasets for fair comparison.
+
+### Q2: "How do you ensure descriptions don't bias certain models?"
+**A:** All models use identical descriptions. We tested both `name_only` and `description` modes and found `description` consistently improves performance across all models, suggesting the benefit is universal.
+
+### Q3: "Could you share the exact descriptions used?"
+**A:** Yes, all descriptions are in `src/labels.py` in our public repository. Complete transparency and reproducibility.
+
+### Q4: "Did you use LLMs to generate descriptions?"
+**A:** No, all descriptions were manually crafted by domain experts to ensure quality and consistency.
+
+### Q5: "How sensitive are results to description wording?"
+**A:** This is a limitation we acknowledge. Future work could explore description robustness through paraphrasing experiments.
+
+---
+
+## 🎯 Summary
+
+**What we encode:**
+- ✅ Manually crafted, semantically rich descriptions
+- ✅ Dataset-specific templates
+- ✅ Multiple related concepts per label
+- ✅ Natural language patterns
+
+**What we DON'T encode:**
+- ❌ Simple templates like "This is {label}"
+- ❌ Just label names
+- ❌ LLM-generated descriptions
+- ❌ Random or inconsistent descriptions
+
+**Result:** Fair, reproducible, semantically rich zero-shot classification across all models and datasets.

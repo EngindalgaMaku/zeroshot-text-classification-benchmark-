@@ -1,35 +1,30 @@
-experiment_name: "20newsgroups_qwen3"
-
+experiment_name: 20newsgroups_qwen3
 dataset:
-  name: "SetFit/20_newsgroups"
-  split: "test"
-  text_column: "text"
-  label_column: "label"
+  name: SetFit/20_newsgroups
+  split: test
+  text_column: text
+  label_column: label
+  # Larger sample size for 20 Newsgroups due to higher class count (20 classes)
   max_samples: 2000
-
 task:
-  type: "zero_shot_classification"
-  label_mode: "description"
-  language: "en"
-
+  type: zero_shot_classification
+  label_mode: description
+  language: en
 models:
   biencoder:
-    provider: "hf"
-    name: "Qwen/Qwen3-Embedding-4B"
+    provider: hf
+    name: Qwen/Qwen3-Embedding-4B
   reranker: null
-
 pipeline:
-  mode: "biencoder"
+  mode: biencoder
   normalize_embeddings: true
-  batch_size: 4  # Small batch for large model (4B params)
-
+  batch_size: 16
 evaluation:
   metrics:
-    - "accuracy"
-    - "macro_f1"
-    - "per_class_f1"
-
+  - accuracy
+  - macro_f1
+  - per_class_f1
 output:
   save_predictions: true
   save_metrics: true
-  output_dir: "results/raw"
+  output_dir: results/raw

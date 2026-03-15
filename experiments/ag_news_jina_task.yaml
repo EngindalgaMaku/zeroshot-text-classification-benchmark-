@@ -23,6 +23,7 @@ output:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
+  batch_size: 16
 task:
   label_mode: description
   language: en

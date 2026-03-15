@@ -55,6 +55,11 @@ def load_text_classification_dataset(cfg: Dict[str, Any]):
         dataset = load_dataset("dbpedia_14", split=split)
     elif ds_name == "yahoo_answers_topics":
         dataset = load_dataset("yahoo_answers_topics", split=split)
+    elif ds_name == "imdb":
+        dataset = load_dataset("imdb", split=split)
+    elif ds_name == "sst2":
+        # SST-2 is part of GLUE benchmark
+        dataset = load_dataset("glue", "sst2", split=split)
     else:
         # Try to load as HuggingFace dataset
         # Some datasets require trust_remote_code for legacy scripts

@@ -304,6 +304,30 @@ LABEL_SETS = {
         },
     },
     
+    # IMDB Movie Reviews - Binary sentiment
+    "imdb": {
+        "name_only": {
+            0: ["negative"],
+            1: ["positive"],
+        },
+        "description": {
+            0: ["This text expresses negative sentiment, criticism, disappointment, or unfavorable opinion about a movie."],
+            1: ["This text expresses positive sentiment, praise, enjoyment, or favorable opinion about a movie."],
+        },
+    },
+    
+    # SST-2 (Stanford Sentiment Treebank) - Binary sentiment
+    "sst2": {
+        "name_only": {
+            0: ["negative"],
+            1: ["positive"],
+        },
+        "description": {
+            0: ["This text expresses negative sentiment, criticism, disappointment, or unfavorable opinion."],
+            1: ["This text expresses positive sentiment, praise, satisfaction, or favorable opinion."],
+        },
+    },
+    
     # GoEmotions - 28 emotion categories (27 + neutral)
     "go_emotions": {
         "name_only": {

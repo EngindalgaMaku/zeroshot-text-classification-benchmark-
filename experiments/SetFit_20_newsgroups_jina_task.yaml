@@ -1,5 +1,6 @@
 dataset:
   label_column: label
+  # Larger sample size for 20 Newsgroups due to higher class count (20 classes)
   max_samples: 2000
   name: SetFit/20_newsgroups
   split: test
@@ -23,6 +24,7 @@ output:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
+  batch_size: 16
 task:
   label_mode: description
   language: en

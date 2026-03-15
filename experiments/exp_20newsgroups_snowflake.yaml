@@ -1,33 +1,29 @@
 experiment_name: 20newsgroups_snowflake_arctic
-
 dataset:
   name: SetFit/20_newsgroups
   split: test
   text_column: text
   label_column: label
-  max_samples: 1000
-
+  # Larger sample size for 20 Newsgroups due to higher class count (20 classes)
+  max_samples: 2000
 task:
   type: zero_shot_classification
   label_mode: description
   language: en
-
 models:
   biencoder:
     provider: hf
     name: Snowflake/snowflake-arctic-embed-m
   reranker: null
-
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-
+  batch_size: 16
 evaluation:
   metrics:
-    - accuracy
-    - macro_f1
-    - per_class_f1
-
+  - accuracy
+  - macro_f1
+  - per_class_f1
 output:
   save_predictions: true
   save_metrics: true

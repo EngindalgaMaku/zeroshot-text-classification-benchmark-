@@ -2,6 +2,7 @@ dataset:
   label_column: label
   max_samples: 1000
   name: zeroshot/twitter-financial-news-sentiment
+  # Note: Using validation split because test split is not available for this dataset
   split: validation
   text_column: text
 evaluation:
@@ -23,6 +24,7 @@ output:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
+  batch_size: 16
 task:
   label_mode: description
   language: en

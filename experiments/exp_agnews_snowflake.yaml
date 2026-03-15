@@ -1,33 +1,28 @@
 experiment_name: agnews_snowflake_arctic
-
 dataset:
   name: ag_news
   split: test
   text_column: text
   label_column: label
   max_samples: 1000
-
 task:
   type: zero_shot_classification
   label_mode: description
   language: en
-
 models:
   biencoder:
     provider: hf
     name: Snowflake/snowflake-arctic-embed-m
   reranker: null
-
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-
+  batch_size: 16
 evaluation:
   metrics:
-    - accuracy
-    - macro_f1
-    - per_class_f1
-
+  - accuracy
+  - macro_f1
+  - per_class_f1
 output:
   save_predictions: true
   save_metrics: true

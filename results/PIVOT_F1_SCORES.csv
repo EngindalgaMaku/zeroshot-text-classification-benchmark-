@@ -1,0 +1,9 @@
+model,20 Newsgroups,AG News,Banking77,DBpedia-14,GoEmotions,Twitter Financial,Yahoo Answers
+BAAI/bge-m3,51.48,77.94,67.13,75.62,20.15,40.82,45.65
+Qwen/Qwen3-Embedding-8B,,78.17,74.43,83.55,21.02,64.61,49.29
+Qwen3,59.39,,,,,,
+Snowflake/snowflake-arctic-embed-m,53.65,76.81,50.29,72.27,4.53,43.43,44.03
+hkunlp/instructor-large,60.41,85.1,61.74,81.9,20.41,64.05,54.4
+intfloat/multilingual-e5-large,50.5,84.29,59.05,81.21,17.42,49.71,47.41
+jinaai/jina-embeddings-v5-text-nano,57.22,79.87,70.73,76.53,22.44,43.43,48.51
+sentence-transformers/all-mpnet-base-v2,56.77,81.44,62.43,77.81,14.76,56.8,49.27

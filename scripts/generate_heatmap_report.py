@@ -32,7 +32,7 @@ plt.rcParams.update({
 
 def load_results():
     """Load all experiment results"""
-    results_dir = Path('../results/raw')
+    results_dir = Path('results/raw')
     results = []
     
     for json_file in results_dir.glob('*.json'):
@@ -318,7 +318,13 @@ def create_statistics_table(fig, df):
 
 def generate_pdf():
     """Generate publication-ready PDF"""
-    output_file = '../reports/F1_HEATMAP_PUBLICATION.pdf'
+    from pathlib import Path
+    
+    # Ensure reports directory exists
+    reports_dir = Path('reports')
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    
+    output_file = 'reports/F1_HEATMAP_PUBLICATION.pdf'
     
     print("Loading experiment results...")
     results = load_results()
