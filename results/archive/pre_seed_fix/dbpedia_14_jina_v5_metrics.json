@@ -1,0 +1,464 @@
+{
+  "accuracy": 0.7784,
+  "macro_f1": 0.7653087346689347,
+  "weighted_f1": 0.7654223558976194,
+  "macro_precision": 0.7995848717395659,
+  "macro_recall": 0.7816977078794362,
+  "classification_report": {
+    "0": {
+      "precision": 0.9668874172185431,
+      "recall": 0.3734015345268542,
+      "f1-score": 0.5387453874538746,
+      "support": 391.0
+    },
+    "1": {
+      "precision": 0.6580882352941176,
+      "recall": 0.988950276243094,
+      "f1-score": 0.7902869757174393,
+      "support": 362.0
+    },
+    "2": {
+      "precision": 0.8558951965065502,
+      "recall": 0.5399449035812672,
+      "f1-score": 0.6621621621621622,
+      "support": 363.0
+    },
+    "3": {
+      "precision": 0.8652849740932642,
+      "recall": 0.9910979228486647,
+      "f1-score": 0.9239280774550485,
+      "support": 337.0
+    },
+    "4": {
+      "precision": 0.8738532110091743,
+      "recall": 0.9071428571428571,
+      "f1-score": 0.8901869158878505,
+      "support": 420.0
+    },
+    "5": {
+      "precision": 0.6181229773462783,
+      "recall": 0.5457142857142857,
+      "f1-score": 0.5796661608497724,
+      "support": 350.0
+    },
+    "6": {
+      "precision": 0.6096256684491979,
+      "recall": 0.6826347305389222,
+      "f1-score": 0.6440677966101694,
+      "support": 334.0
+    },
+    "7": {
+      "precision": 0.9210526315789473,
+      "recall": 0.5865921787709497,
+      "f1-score": 0.7167235494880546,
+      "support": 358.0
+    },
+    "8": {
+      "precision": 0.6815144766146993,
+      "recall": 0.9902912621359223,
+      "f1-score": 0.8073878627968337,
+      "support": 309.0
+    },
+    "9": {
+      "precision": 0.934640522875817,
+      "recall": 0.8242074927953891,
+      "f1-score": 0.8759571209800919,
+      "support": 347.0
+    },
+    "10": {
+      "precision": 0.8690476190476191,
+      "recall": 0.989159891598916,
+      "f1-score": 0.9252217997465145,
+      "support": 369.0
+    },
+    "11": {
+      "precision": 0.6820083682008368,
+      "recall": 0.9939024390243902,
+      "f1-score": 0.8089330024813896,
+      "support": 328.0
+    },
+    "12": {
+      "precision": 0.7991360691144709,
+      "recall": 0.9814323607427056,
+      "f1-score": 0.8809523809523809,
+      "support": 377.0
+    },
+    "13": {
+      "precision": 0.8590308370044053,
+      "recall": 0.5492957746478874,
+      "f1-score": 0.6701030927835051,
+      "support": 355.0
+    },
+    "accuracy": 0.7784,
+    "macro avg": {
+      "precision": 0.7995848717395659,
+      "recall": 0.7816977078794362,
+      "f1-score": 0.7653087346689347,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.8041601832151181,
+      "recall": 0.7784,
+      "f1-score": 0.7654223558976194,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      146,
+      29,
+      9,
+      8,
+      6,
+      76,
+      46,
+      1,
+      2,
+      0,
+      3,
+      38,
+      20,
+      7
+    ],
+    [
+      0,
+      358,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      10,
+      196,
+      10,
+      13,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      91,
+      17,
+      24
+    ],
+    [
+      0,
+      0,
+      1,
+      334,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      27,
+      2,
+      7,
+      381,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      23,
+      0,
+      11,
+      16,
+      191,
+      84,
+      0,
+      1,
+      2,
+      0,
+      3,
+      19,
+      0
+    ],
+    [
+      1,
+      53,
+      4,
+      0,
+      2,
+      9,
+      228,
+      9,
+      23,
+      1,
+      0,
+      0,
+      3,
+      1
+    ],
+    [
+      0,
+      1,
+      1,
+      3,
+      0,
+      25,
+      8,
+      210,
+      107,
+      1,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      306,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      6,
+      3,
+      286,
+      48,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      365,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      326,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4,
+      370,
+      0
+    ],
+    [
+      4,
+      42,
+      14,
+      10,
+      16,
+      5,
+      5,
+      0,
+      6,
+      13,
+      4,
+      13,
+      28,
+      195
+    ]
+  ],
+  "mean_confidence": 0.5740075113296509,
+  "std_confidence": 0.05419946194694678,
+  "mean_confidence_correct": 0.5805434986627359,
+  "mean_confidence_incorrect": 0.5510489709863594,
+  "experiment_name": "dbpedia_14_jina_v5",
+  "dataset": "dbpedia_14",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "jinaai/jina-embeddings-v5-text-nano",
+  "top_errors": [
+    {
+      "text": " gela21 is a non-profit organization located in Talence in the campus of the École nationale supérieure d'architecture et de paysage de Bordeaux France. Created in 2009 this student association works ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7147886157035828
+    },
+    {
+      "text": " The Get Schooled Foundation (also Get Schooled or getschooled.com) is a non-profit organization dedicated to using the power of media technology and popular culture to motivate and inspire young peop",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.711641788482666
+    },
+    {
+      "text": " MonitorLATINO is a singles chart founded in 2003 which ranks songs on chart based on airplay across radio states in Mexico and Hispanic radio stations in the United States utilizing the Radio Trackin",
+      "true_label": 0,
+      "pred_label": 11,
+      "confidence": 0.7101525068283081
+    },
+    {
+      "text": " O Ateneu is a novel written by Brazilian's authors Raul Pompéia in 1888's which is considered one of the most prominent examples of Brazilian Realism and Naturalism. The book narrates in the first pe",
+      "true_label": 13,
+      "pred_label": 1,
+      "confidence": 0.7040165066719055
+    },
+    {
+      "text": " The Education of Robert Nifkin is a 1998 novel written for young adults by United States author Daniel Pinkwater. It is set during the 1950s in Chicago and is written in the format of a college appli",
+      "true_label": 13,
+      "pred_label": 1,
+      "confidence": 0.6969842910766602
+    },
+    {
+      "text": " ArtCrimes was a Cleveland cult underground publication published by Steven B. Smith. The zine was influenced by the beats and was consistent with the style of publications from the days of Kerouac Co",
+      "true_label": 13,
+      "pred_label": 2,
+      "confidence": 0.6962733864784241
+    },
+    {
+      "text": " Malvern House London was founded in 2000. It is an independent college and was accredited by the British Council in 2003. In July 2009 Malvern House merged with AEC Education Group PLC. Malvern House",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.6906551718711853
+    },
+    {
+      "text": " Pearson is an education publishing and assessment service to schools and corporations as well as directly to students. Pearson owns leading educational media brands including Addison–Wesley BBC Activ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.6889038681983948
+    },
+    {
+      "text": " DigSin is a new model record label based in Nashville Tennessee. DigSin was founded in 2011 by author and music industry executive Jay Frank and is modeled on the idea of distributing free music to t",
+      "true_label": 0,
+      "pred_label": 11,
+      "confidence": 0.6859933137893677
+    },
+    {
+      "text": " The Naomi Institute also known as the Rock Bluff School is located in the ghost town of Rock Bluff Nebraska three miles east of Murray. It was one of the earliest higher education institutions in Neb",
+      "true_label": 6,
+      "pred_label": 1,
+      "confidence": 0.6822696924209595
+    },
+    {
+      "text": " Dennis Meadows is serving as Government Senator in the Upper House of the Parliament of Jamaica. He also serves as the Senate Whip.He was born in Waterloo St. Andrew and was educated at New Day All-A",
+      "true_label": 4,
+      "pred_label": 1,
+      "confidence": 0.6805590391159058
+    },
+    {
+      "text": " The World's Greatest Athlete is a 1973 American feature film released by Walt Disney Productions. It starred John Amos Roscoe Lee Browne Tim Conway Dayle Haddon and Jan-Michael Vincent. It is one of ",
+      "true_label": 12,
+      "pred_label": 3,
+      "confidence": 0.6798998713493347
+    },
+    {
+      "text": " World Film Magic was founded on December 12 1998 by Jose R Gonzalez. Is one of the first Mexican American companies to bring Spanish language movies to the American public. Jose R Gonzalez CEO wanted",
+      "true_label": 0,
+      "pred_label": 12,
+      "confidence": 0.679031491279602
+    },
+    {
+      "text": " Summon (formerly InstantCab) is a mobile application that matches customers needing transportation with a taxi driver or a personal driver who is willing to provide a ride. It is part of a group of T",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.6776284575462341
+    },
+    {
+      "text": " Transurban manages and develops urban toll road networks in Australia and North America. It is a Top 50 company on the Australian Securities Exchange (ASX) and has been in business since 1996.In Aust",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.6774200201034546
+    },
+    {
+      "text": " The Shawnee Old Fields Village Site is an archaeological site near Oldtown in Allegany County Maryland. The site contains Late Woodland and Contact period artifacts. An area between the site and the ",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.6760247945785522
+    },
+    {
+      "text": " Coventry Park and Ride is a park and ride system operated under contract to Coventry City Council and Centro in the English city of Coventry. Designed to relieve traffic congestion from the city cent",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.6741421222686768
+    },
+    {
+      "text": " Academia de Talentos is a Portuguese online newspaper dedicated to youth-level football.",
+      "true_label": 13,
+      "pred_label": 1,
+      "confidence": 0.6732387542724609
+    },
+    {
+      "text": " De triumphis ecclesiae is a Latin epic in elegiac metre written c. 1250 by Johannes de Garlandia an English grammarian who taught at the universities of Toulouse and Paris.",
+      "true_label": 13,
+      "pred_label": 1,
+      "confidence": 0.6729792356491089
+    },
+    {
+      "text": " The Union School in Filer Idaho was built in 1914. It was listed on the National Register of Historic Places in 2003.",
+      "true_label": 6,
+      "pred_label": 1,
+      "confidence": 0.6685763001441956
+    }
+  ]
+}

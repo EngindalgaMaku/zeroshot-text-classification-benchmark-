@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.397,
+  "macro_f1": 0.43431191339289366,
+  "weighted_f1": 0.32630717022928457,
+  "macro_precision": 0.5762397643491762,
+  "macro_recall": 0.6362749817308706,
+  "classification_report": {
+    "0": {
+      "precision": 0.5324947589098532,
+      "recall": 0.8382838283828383,
+      "f1-score": 0.6512820512820513,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.2824314306893996,
+      "recall": 0.9477611940298507,
+      "f1-score": 0.4351798972015991,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.9137931034482759,
+      "recall": 0.12277992277992278,
+      "f1-score": 0.21647379169503064,
+      "support": 1295.0
+    },
+    "accuracy": 0.397,
+    "macro avg": {
+      "precision": 0.5762397643491762,
+      "recall": 0.6362749817308706,
+      "f1-score": 0.43431191339289366,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.7291227080261707,
+      "recall": 0.397,
+      "f1-score": 0.32630717022928457,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      254,
+      42,
+      7
+    ],
+    [
+      13,
+      381,
+      8
+    ],
+    [
+      210,
+      926,
+      159
+    ]
+  ],
+  "mean_confidence": 0.6040127077847719,
+  "std_confidence": 0.07151553231384972,
+  "mean_confidence_correct": 0.619039019536912,
+  "mean_confidence_incorrect": 0.5941197628998638,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_jina_v5",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "jinaai/jina-embeddings-v5-text-nano",
+  "top_errors": [
+    {
+      "text": "CLARIDA: DON'T THINK YIELD CURVE REFLECTS U.S. SITUATION\n\nYes, well, thanks to the Fed nothing reflects anything anymore",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7910579442977905
+    },
+    {
+      "text": "Arm yourself with live #marketanalysis, #investmentresearch, and #investingideas. Try Briefing In Play Plus risk-fr… https://t.co/q2bLi8O81t",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7822555899620056
+    },
+    {
+      "text": "The Markets Speak: The Lesson Has Been Harsh. https://t.co/89QRsOfn53 #business #stocks #stockmarket",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.7797280550003052
+    },
+    {
+      "text": "Daily Insider Ratings Round Up 12/2/19. Subscribe to Seeking Alpha for more: https://t.co/5yEVpyN3jt #trading #investing #economy",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.779255747795105
+    },
+    {
+      "text": "News Highlights : Top Global Markets News of the Day #NewsHighlights #economy #MarketScreener… https://t.co/70WlBhNOkd",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7735942602157593
+    },
+    {
+      "text": "Future Land Development : Speech on financial education #FutureLandDevelopment #Stock #MarketScreener… https://t.co/t5Y2rr9cBR",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7729851007461548
+    },
+    {
+      "text": "One Conscious Objector. Follow this and any other stock on Seeking Alpha! https://t.co/HUiIlURifS #business #finance #investing",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7692818641662598
+    },
+    {
+      "text": "Trade war. Possible recession. Presidential election.\n\nHere are the 3 stocks you need heading into 2020. \n\nhttps://t.co/fdcXiqwKpw",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7683897018432617
+    },
+    {
+      "text": "Monday's big rally is premature: financial advisor #economy #MarketScreener https://t.co/Ld6fdzqgQd https://t.co/nqWvTA19gR",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7652006149291992
+    },
+    {
+      "text": "Stock Market Update: Defensive-minded investors",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.7640917897224426
+    },
+    {
+      "text": "With #YFPremium you can get a heatmap view of your portfolio. Examine sector- and company-level contribution to ret… https://t.co/lq5EJGZ3tg",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7600275278091431
+    },
+    {
+      "text": "How likely is it that the U.S. will enter a recession? Our updating tracker will tell you. \n\nSign up to get the lat… https://t.co/5w0lwFHRCF",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.7556598782539368
+    },
+    {
+      "text": "The Bank of England's Term Funding Scheme... #Stock #MarketScreener https://t.co/UYAUVEOvlM https://t.co/SeJVLxIyZA",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7535309791564941
+    },
+    {
+      "text": "$EB - Eventbrite Needs To Find Acquisitions. Get more info on Seeking Alpha: https://t.co/O3GeF4Q2TE #trading #stockmarket #economy",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7533093690872192
+    },
+    {
+      "text": "$MTB - M&T Bank: Too Soon To Call The Turn. Read more and get updates on any stock! https://t.co/Ys82ZwdFPl #business #economy #stocks",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7519400715827942
+    },
+    {
+      "text": "$ACER - Acer Therapeutics: Upcoming Catalysts. https://t.co/vseXJ9e1nH #business #investing #markets",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7495349049568176
+    },
+    {
+      "text": "Get LIVE #analysis of the #equitymarkets featuring sophisticated #investing and #swingtrading ideas. Totally… https://t.co/gbWGLEa611",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7470365762710571
+    },
+    {
+      "text": "$GOOG $GOOGL - Alphabet: Flying Right To $1,700. Read more and get updates on any stock! https://t.co/cdftwzEnYJ #economy #finance #markets",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.745165228843689
+    },
+    {
+      "text": "Stocks making the biggest moves premarket: Fitbit, Xerox, Ford, Five Below, TripAdvisor & more",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7445501089096069
+    },
+    {
+      "text": "$SCHV - SCHV: Volatility Reminds Me To Stay Focused On Value. https://t.co/rTJ55Qtu22 #stockmarket #stocks #business",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.7423489689826965
+    }
+  ]
+}

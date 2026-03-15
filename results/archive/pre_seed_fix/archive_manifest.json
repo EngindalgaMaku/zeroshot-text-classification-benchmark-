@@ -1,0 +1,470 @@
+{
+  "archive_date": "2026-03-15T15:22:44.241859",
+  "total_files": 58,
+  "files": [
+    {
+      "original_path": "results\\raw\\agnews_instructor_large_metrics.json",
+      "filename": "agnews_instructor_large_metrics.json",
+      "size_bytes": 7757,
+      "modified_time": "2026-03-14T14:52:50.282018",
+      "archived_time": "2026-03-15T15:22:43.989716",
+      "archive_path": "results\\archive\\pre_seed_fix\\agnews_instructor_large_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\agnews_nomic_embed_v2_moe_metrics.json",
+      "filename": "agnews_nomic_embed_v2_moe_metrics.json",
+      "size_bytes": 7973,
+      "modified_time": "2026-03-15T14:53:45.154642",
+      "archived_time": "2026-03-15T15:22:43.992239",
+      "archive_path": "results\\archive\\pre_seed_fix\\agnews_nomic_embed_v2_moe_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_bge_metrics.json",
+      "filename": "ag_news_bge_metrics.json",
+      "size_bytes": 7866,
+      "modified_time": "2026-03-14T23:20:05.011683",
+      "archived_time": "2026-03-15T15:22:43.992964",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_e5_metrics.json",
+      "filename": "ag_news_e5_metrics.json",
+      "size_bytes": 7389,
+      "modified_time": "2026-03-14T23:20:05.037004",
+      "archived_time": "2026-03-15T15:22:43.998459",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_instructor_metrics.json",
+      "filename": "ag_news_instructor_metrics.json",
+      "size_bytes": 7281,
+      "modified_time": "2026-03-14T23:20:05.008566",
+      "archived_time": "2026-03-15T15:22:44.003132",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_jina_v5_metrics.json",
+      "filename": "ag_news_jina_v5_metrics.json",
+      "size_bytes": 8060,
+      "modified_time": "2026-03-14T23:20:04.935978",
+      "archived_time": "2026-03-15T15:22:44.008220",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_mpnet_metrics.json",
+      "filename": "ag_news_mpnet_metrics.json",
+      "size_bytes": 7808,
+      "modified_time": "2026-03-14T23:20:04.988614",
+      "archived_time": "2026-03-15T15:22:44.013862",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_qwen3_metrics.json",
+      "filename": "ag_news_qwen3_metrics.json",
+      "size_bytes": 7524,
+      "modified_time": "2026-03-14T23:20:04.928514",
+      "archived_time": "2026-03-15T15:22:44.018723",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\ag_news_snowflake_metrics.json",
+      "filename": "ag_news_snowflake_metrics.json",
+      "size_bytes": 7026,
+      "modified_time": "2026-03-14T23:19:59.547536",
+      "archived_time": "2026-03-15T15:22:44.023102",
+      "archive_path": "results\\archive\\pre_seed_fix\\ag_news_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_bge_metrics.json",
+      "filename": "banking77_bge_metrics.json",
+      "size_bytes": 68885,
+      "modified_time": "2026-03-14T23:20:04.908310",
+      "archived_time": "2026-03-15T15:22:44.027817",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_e5_metrics.json",
+      "filename": "banking77_e5_metrics.json",
+      "size_bytes": 68814,
+      "modified_time": "2026-03-14T23:20:04.901275",
+      "archived_time": "2026-03-15T15:22:44.032872",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_instructor_metrics.json",
+      "filename": "banking77_instructor_metrics.json",
+      "size_bytes": 68838,
+      "modified_time": "2026-03-14T23:20:04.915143",
+      "archived_time": "2026-03-15T15:22:44.037275",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_jina_v5_metrics.json",
+      "filename": "banking77_jina_v5_metrics.json",
+      "size_bytes": 68876,
+      "modified_time": "2026-03-14T23:20:04.880455",
+      "archived_time": "2026-03-15T15:22:44.041792",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_mpnet_metrics.json",
+      "filename": "banking77_mpnet_metrics.json",
+      "size_bytes": 68958,
+      "modified_time": "2026-03-14T23:20:04.876355",
+      "archived_time": "2026-03-15T15:22:44.046427",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_qwen3_metrics.json",
+      "filename": "banking77_qwen3_metrics.json",
+      "size_bytes": 68690,
+      "modified_time": "2026-03-14T23:20:04.870918",
+      "archived_time": "2026-03-15T15:22:44.051023",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\banking77_snowflake_metrics.json",
+      "filename": "banking77_snowflake_metrics.json",
+      "size_bytes": 68776,
+      "modified_time": "2026-03-14T23:19:59.428376",
+      "archived_time": "2026-03-15T15:22:44.056142",
+      "archive_path": "results\\archive\\pre_seed_fix\\banking77_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\bge_full_metrics.json",
+      "filename": "bge_full_metrics.json",
+      "size_bytes": 7911,
+      "modified_time": "2026-03-14T04:33:24.734165",
+      "archived_time": "2026-03-15T15:22:44.061182",
+      "archive_path": "results\\archive\\pre_seed_fix\\bge_full_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_bge_metrics.json",
+      "filename": "dbpedia_14_bge_metrics.json",
+      "size_bytes": 10958,
+      "modified_time": "2026-03-14T23:20:04.866463",
+      "archived_time": "2026-03-15T15:22:44.062831",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_e5_metrics.json",
+      "filename": "dbpedia_14_e5_metrics.json",
+      "size_bytes": 10636,
+      "modified_time": "2026-03-14T23:20:04.860576",
+      "archived_time": "2026-03-15T15:22:44.067122",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_instructor_metrics.json",
+      "filename": "dbpedia_14_instructor_metrics.json",
+      "size_bytes": 9173,
+      "modified_time": "2026-03-14T23:20:04.880455",
+      "archived_time": "2026-03-15T15:22:44.071851",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_jina_v5_metrics.json",
+      "filename": "dbpedia_14_jina_v5_metrics.json",
+      "size_bytes": 11249,
+      "modified_time": "2026-03-14T23:20:04.860576",
+      "archived_time": "2026-03-15T15:22:44.076998",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_mpnet_metrics.json",
+      "filename": "dbpedia_14_mpnet_metrics.json",
+      "size_bytes": 11419,
+      "modified_time": "2026-03-14T23:20:04.873812",
+      "archived_time": "2026-03-15T15:22:44.081651",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_qwen3_metrics.json",
+      "filename": "dbpedia_14_qwen3_metrics.json",
+      "size_bytes": 11180,
+      "modified_time": "2026-03-14T23:20:04.858657",
+      "archived_time": "2026-03-15T15:22:44.086148",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\dbpedia_14_snowflake_metrics.json",
+      "filename": "dbpedia_14_snowflake_metrics.json",
+      "size_bytes": 9701,
+      "modified_time": "2026-03-14T23:19:59.405998",
+      "archived_time": "2026-03-15T15:22:44.091553",
+      "archive_path": "results\\archive\\pre_seed_fix\\dbpedia_14_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\e5_full_metrics.json",
+      "filename": "e5_full_metrics.json",
+      "size_bytes": 7236,
+      "modified_time": "2026-03-14T04:33:24.789178",
+      "archived_time": "2026-03-15T15:22:44.096752",
+      "archive_path": "results\\archive\\pre_seed_fix\\e5_full_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\goemotions_instructor_large_metrics.json",
+      "filename": "goemotions_instructor_large_metrics.json",
+      "size_bytes": 16362,
+      "modified_time": "2026-03-14T23:26:42.211675",
+      "archived_time": "2026-03-15T15:22:44.098727",
+      "archive_path": "results\\archive\\pre_seed_fix\\goemotions_instructor_large_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\goemotions_snowflake_metrics.json",
+      "filename": "goemotions_snowflake_metrics.json",
+      "size_bytes": 16869,
+      "modified_time": "2026-03-14T23:28:38.373429",
+      "archived_time": "2026-03-15T15:22:44.099544",
+      "archive_path": "results\\archive\\pre_seed_fix\\goemotions_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_bge_metrics.json",
+      "filename": "go_emotions_bge_metrics.json",
+      "size_bytes": 15594,
+      "modified_time": "2026-03-14T23:19:59.397292",
+      "archived_time": "2026-03-15T15:22:44.100326",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_e5_metrics.json",
+      "filename": "go_emotions_e5_metrics.json",
+      "size_bytes": 15866,
+      "modified_time": "2026-03-14T23:19:59.384596",
+      "archived_time": "2026-03-15T15:22:44.105797",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_instructor_metrics.json",
+      "filename": "go_emotions_instructor_metrics.json",
+      "size_bytes": 15199,
+      "modified_time": "2026-03-14T23:19:59.370917",
+      "archived_time": "2026-03-15T15:22:44.110970",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_jina_v5_metrics.json",
+      "filename": "go_emotions_jina_v5_metrics.json",
+      "size_bytes": 15905,
+      "modified_time": "2026-03-14T23:19:59.365441",
+      "archived_time": "2026-03-15T15:22:44.116896",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_mpnet_metrics.json",
+      "filename": "go_emotions_mpnet_metrics.json",
+      "size_bytes": 16061,
+      "modified_time": "2026-03-14T23:19:59.353023",
+      "archived_time": "2026-03-15T15:22:44.122833",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_qwen3_metrics.json",
+      "filename": "go_emotions_qwen3_metrics.json",
+      "size_bytes": 15246,
+      "modified_time": "2026-03-14T23:19:59.353023",
+      "archived_time": "2026-03-15T15:22:44.128045",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\go_emotions_snowflake_metrics.json",
+      "filename": "go_emotions_snowflake_metrics.json",
+      "size_bytes": 15709,
+      "modified_time": "2026-03-14T23:19:59.340548",
+      "archived_time": "2026-03-15T15:22:44.133382",
+      "archive_path": "results\\archive\\pre_seed_fix\\go_emotions_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\jina_v5_full_metrics.json",
+      "filename": "jina_v5_full_metrics.json",
+      "size_bytes": 8006,
+      "modified_time": "2026-03-14T04:33:24.712165",
+      "archived_time": "2026-03-15T15:22:44.138349",
+      "archive_path": "results\\archive\\pre_seed_fix\\jina_v5_full_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\mpnet_full_metrics.json",
+      "filename": "mpnet_full_metrics.json",
+      "size_bytes": 7919,
+      "modified_time": "2026-03-14T04:33:24.731282",
+      "archived_time": "2026-03-15T15:22:44.140316",
+      "archive_path": "results\\archive\\pre_seed_fix\\mpnet_full_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\qwen3_full_metrics.json",
+      "filename": "qwen3_full_metrics.json",
+      "size_bytes": 7530,
+      "modified_time": "2026-03-14T04:33:24.714363",
+      "archived_time": "2026-03-15T15:22:44.141986",
+      "archive_path": "results\\archive\\pre_seed_fix\\qwen3_full_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_bge_metrics.json",
+      "filename": "SetFit_20_newsgroups_bge_metrics.json",
+      "size_bytes": 13143,
+      "modified_time": "2026-03-14T23:20:05.062607",
+      "archived_time": "2026-03-15T15:22:44.144031",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_e5_metrics.json",
+      "filename": "SetFit_20_newsgroups_e5_metrics.json",
+      "size_bytes": 12527,
+      "modified_time": "2026-03-14T23:20:05.054316",
+      "archived_time": "2026-03-15T15:22:44.148760",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_instructor_metrics.json",
+      "filename": "SetFit_20_newsgroups_instructor_metrics.json",
+      "size_bytes": 10577,
+      "modified_time": "2026-03-14T23:20:05.453765",
+      "archived_time": "2026-03-15T15:22:44.154077",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_jina_v5_metrics.json",
+      "filename": "SetFit_20_newsgroups_jina_v5_metrics.json",
+      "size_bytes": 13796,
+      "modified_time": "2026-03-14T23:20:05.015040",
+      "archived_time": "2026-03-15T15:22:44.159503",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_mpnet_metrics.json",
+      "filename": "SetFit_20_newsgroups_mpnet_metrics.json",
+      "size_bytes": 13820,
+      "modified_time": "2026-03-14T23:20:05.034936",
+      "archived_time": "2026-03-15T15:22:44.164426",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_qwen3_metrics.json",
+      "filename": "SetFit_20_newsgroups_qwen3_metrics.json",
+      "size_bytes": 3880,
+      "modified_time": "2026-03-14T12:37:06.420624",
+      "archived_time": "2026-03-15T15:22:44.169231",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\SetFit_20_newsgroups_snowflake_metrics.json",
+      "filename": "SetFit_20_newsgroups_snowflake_metrics.json",
+      "size_bytes": 11818,
+      "modified_time": "2026-03-14T23:19:59.566731",
+      "archived_time": "2026-03-15T15:22:44.170167",
+      "archive_path": "results\\archive\\pre_seed_fix\\SetFit_20_newsgroups_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_bge_metrics.json",
+      "filename": "yahoo_answers_topics_bge_metrics.json",
+      "size_bytes": 8008,
+      "modified_time": "2026-03-14T23:20:04.846779",
+      "archived_time": "2026-03-15T15:22:44.175209",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_e5_metrics.json",
+      "filename": "yahoo_answers_topics_e5_metrics.json",
+      "size_bytes": 8245,
+      "modified_time": "2026-03-14T23:20:04.833593",
+      "archived_time": "2026-03-15T15:22:44.180348",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_instructor_metrics.json",
+      "filename": "yahoo_answers_topics_instructor_metrics.json",
+      "size_bytes": 6177,
+      "modified_time": "2026-03-14T23:20:04.853181",
+      "archived_time": "2026-03-15T15:22:44.185071",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_jina_v5_metrics.json",
+      "filename": "yahoo_answers_topics_jina_v5_metrics.json",
+      "size_bytes": 8837,
+      "modified_time": "2026-03-14T23:20:04.838858",
+      "archived_time": "2026-03-15T15:22:44.189655",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_mpnet_metrics.json",
+      "filename": "yahoo_answers_topics_mpnet_metrics.json",
+      "size_bytes": 7840,
+      "modified_time": "2026-03-14T23:20:04.838858",
+      "archived_time": "2026-03-15T15:22:44.194794",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_qwen3_metrics.json",
+      "filename": "yahoo_answers_topics_qwen3_metrics.json",
+      "size_bytes": 6484,
+      "modified_time": "2026-03-14T23:20:04.845768",
+      "archived_time": "2026-03-15T15:22:44.199796",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\yahoo_answers_topics_snowflake_metrics.json",
+      "filename": "yahoo_answers_topics_snowflake_metrics.json",
+      "size_bytes": 7400,
+      "modified_time": "2026-03-14T23:19:59.319751",
+      "archived_time": "2026-03-15T15:22:44.203864",
+      "archive_path": "results\\archive\\pre_seed_fix\\yahoo_answers_topics_snowflake_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_bge_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_bge_metrics.json",
+      "size_bytes": 6273,
+      "modified_time": "2026-03-14T23:20:04.846779",
+      "archived_time": "2026-03-15T15:22:44.208632",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_bge_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_e5_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_e5_metrics.json",
+      "size_bytes": 5998,
+      "modified_time": "2026-03-14T23:20:04.835539",
+      "archived_time": "2026-03-15T15:22:44.213307",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_e5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_instructor_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_instructor_metrics.json",
+      "size_bytes": 5298,
+      "modified_time": "2026-03-14T23:20:04.855915",
+      "archived_time": "2026-03-15T15:22:44.217764",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_instructor_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_jina_v5_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_jina_v5_metrics.json",
+      "size_bytes": 6386,
+      "modified_time": "2026-03-14T23:20:04.828247",
+      "archived_time": "2026-03-15T15:22:44.222665",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_jina_v5_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_mpnet_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_mpnet_metrics.json",
+      "size_bytes": 6238,
+      "modified_time": "2026-03-14T23:20:04.822915",
+      "archived_time": "2026-03-15T15:22:44.227604",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_mpnet_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_qwen3_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_qwen3_metrics.json",
+      "size_bytes": 5384,
+      "modified_time": "2026-03-14T23:20:04.825439",
+      "archived_time": "2026-03-15T15:22:44.232085",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_qwen3_metrics.json"
+    },
+    {
+      "original_path": "results\\raw\\zeroshot_twitter_financial_news_sentiment_snowflake_metrics.json",
+      "filename": "zeroshot_twitter_financial_news_sentiment_snowflake_metrics.json",
+      "size_bytes": 5483,
+      "modified_time": "2026-03-14T23:19:59.330824",
+      "archived_time": "2026-03-15T15:22:44.237065",
+      "archive_path": "results\\archive\\pre_seed_fix\\zeroshot_twitter_financial_news_sentiment_snowflake_metrics.json"
+    }
+  ]
+}

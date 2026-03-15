@@ -1,0 +1,336 @@
+{
+  "accuracy": 0.4756,
+  "macro_f1": 0.45647343495125536,
+  "weighted_f1": 0.45663063521438096,
+  "macro_precision": 0.4910960722149243,
+  "macro_recall": 0.4764029913625173,
+  "classification_report": {
+    "0": {
+      "precision": 0.3973509933774834,
+      "recall": 0.11450381679389313,
+      "f1-score": 0.17777777777777778,
+      "support": 524.0
+    },
+    "1": {
+      "precision": 0.6559139784946236,
+      "recall": 0.37044534412955465,
+      "f1-score": 0.47347994825355755,
+      "support": 494.0
+    },
+    "2": {
+      "precision": 0.5560975609756098,
+      "recall": 0.6758893280632411,
+      "f1-score": 0.6101694915254238,
+      "support": 506.0
+    },
+    "3": {
+      "precision": 0.48497854077253216,
+      "recall": 0.23251028806584362,
+      "f1-score": 0.3143254520166898,
+      "support": 486.0
+    },
+    "4": {
+      "precision": 0.6549295774647887,
+      "recall": 0.7322834645669292,
+      "f1-score": 0.6914498141263941,
+      "support": 508.0
+    },
+    "5": {
+      "precision": 0.34545454545454546,
+      "recall": 0.7520833333333333,
+      "f1-score": 0.4734426229508197,
+      "support": 480.0
+    },
+    "6": {
+      "precision": 0.4241645244215938,
+      "recall": 0.3340080971659919,
+      "f1-score": 0.3737259343148358,
+      "support": 494.0
+    },
+    "7": {
+      "precision": 0.5012048192771085,
+      "recall": 0.4168336673346693,
+      "f1-score": 0.4551422319474836,
+      "support": 499.0
+    },
+    "8": {
+      "precision": 0.3717948717948718,
+      "recall": 0.5381443298969072,
+      "f1-score": 0.43976411120471776,
+      "support": 485.0
+    },
+    "9": {
+      "precision": 0.5190713101160862,
+      "recall": 0.5973282442748091,
+      "f1-score": 0.5554569653948536,
+      "support": 524.0
+    },
+    "accuracy": 0.4756,
+    "macro avg": {
+      "precision": 0.4910960722149243,
+      "recall": 0.4764029913625173,
+      "f1-score": 0.45647343495125536,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.4919586257900871,
+      "recall": 0.4756,
+      "f1-score": 0.45663063521438096,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      60,
+      33,
+      36,
+      29,
+      13,
+      72,
+      27,
+      39,
+      139,
+      76
+    ],
+    [
+      6,
+      183,
+      86,
+      14,
+      31,
+      90,
+      26,
+      13,
+      23,
+      22
+    ],
+    [
+      5,
+      4,
+      342,
+      7,
+      6,
+      79,
+      9,
+      9,
+      36,
+      9
+    ],
+    [
+      29,
+      37,
+      38,
+      113,
+      34,
+      85,
+      30,
+      24,
+      41,
+      55
+    ],
+    [
+      3,
+      3,
+      5,
+      10,
+      372,
+      40,
+      28,
+      21,
+      15,
+      11
+    ],
+    [
+      8,
+      1,
+      4,
+      6,
+      18,
+      361,
+      23,
+      21,
+      18,
+      20
+    ],
+    [
+      14,
+      9,
+      48,
+      22,
+      43,
+      65,
+      165,
+      19,
+      65,
+      44
+    ],
+    [
+      7,
+      5,
+      21,
+      5,
+      34,
+      104,
+      15,
+      208,
+      69,
+      31
+    ],
+    [
+      7,
+      1,
+      23,
+      13,
+      5,
+      97,
+      14,
+      42,
+      261,
+      22
+    ],
+    [
+      12,
+      3,
+      12,
+      14,
+      12,
+      52,
+      52,
+      19,
+      35,
+      313
+    ]
+  ],
+  "mean_confidence": 0.4897082795739174,
+  "std_confidence": 0.050524657417362256,
+  "mean_confidence_correct": 0.49405995844741946,
+  "mean_confidence_incorrect": 0.48576156242624846,
+  "experiment_name": "yahoo_answers_topics_bge",
+  "dataset": "yahoo_answers_topics",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "BAAI/bge-m3",
+  "top_errors": [
+    {
+      "text": "money.",
+      "true_label": 4,
+      "pred_label": 6,
+      "confidence": 0.6570758819580078
+    },
+    {
+      "text": "its all a culture thing -",
+      "true_label": 8,
+      "pred_label": 0,
+      "confidence": 0.6479909420013428
+    },
+    {
+      "text": "about what?  Thanks for the points",
+      "true_label": 8,
+      "pred_label": 9,
+      "confidence": 0.6451572775840759
+    },
+    {
+      "text": "okay think of it this way. I am a daughter to my parents, I am a mother to my children, and i am a wife to my husband.I act differently in each role but I am the same person.",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.6386243104934692
+    },
+    {
+      "text": "What questions are you talking about?",
+      "true_label": 8,
+      "pred_label": 9,
+      "confidence": 0.6376404762268066
+    },
+    {
+      "text": "I'm not gay but it has something to do with either genetics or just who you are attracted to.",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.634964644908905
+    },
+    {
+      "text": "This sounds interesting.What is it?",
+      "true_label": 6,
+      "pred_label": 9,
+      "confidence": 0.6334038376808167
+    },
+    {
+      "text": "Sex, sports, cars, beer, sex, money, fishing, sex, beating up the boss, random statistics and sex.\\n\\nDid I mention sex?",
+      "true_label": 8,
+      "pred_label": 5,
+      "confidence": 0.6306302547454834
+    },
+    {
+      "text": "first i need to know what her favorites are...\\n\\ncolor?\\nhobby?\\ntelevision series?\\nmovie?\\ngenre?\\nclothing style?\\nwish?\\ncollection?\\nfood?\\njob?\\nbirthday?\\nage?\\ncultural back ground?\\nreligion",
+      "true_label": 8,
+      "pred_label": 7,
+      "confidence": 0.6273303031921387
+    },
+    {
+      "text": "Instead of writing a big ol' page about it, this website says it all..\\nhttp://www.stangsource.com/tech/?article=5",
+      "true_label": 5,
+      "pred_label": 4,
+      "confidence": 0.6232898831367493
+    },
+    {
+      "text": "your mom.\\n\\nThanks for the points.",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.6219644546508789
+    },
+    {
+      "text": "It is a serious problem, and, as others have said, the teachers are a large part of that problem, not the solution that they should be.\\n\\nMy grandson brought home a handout from his Language Arts cla",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.6216660141944885
+    },
+    {
+      "text": "It has to do with out physical and social development as human beings.\\n\\nWe categorize as a means of being able to understand.  It is a base learning practice we develop from infancy.\\n\\nThe hard par",
+      "true_label": 9,
+      "pred_label": 3,
+      "confidence": 0.6194271445274353
+    },
+    {
+      "text": "The culture of a place is dependent on the form of Government and Economics not really the other way about which you seem to imply.  However culture is built up from a lot of other things as well that",
+      "true_label": 9,
+      "pred_label": 0,
+      "confidence": 0.6181734800338745
+    },
+    {
+      "text": "My friend and I have this conversation often. Sometimes you get the feeling like \"Is this all there is?\"  THere are days I am completely content and so thankful for all I have...a loving, caring husba",
+      "true_label": 2,
+      "pred_label": 8,
+      "confidence": 0.6178655624389648
+    },
+    {
+      "text": "You could try www.howstuffworks.com",
+      "true_label": 6,
+      "pred_label": 4,
+      "confidence": 0.6146552562713623
+    },
+    {
+      "text": "we do pay to play, we pay to rent the uniforms and or to buy the suits",
+      "true_label": 3,
+      "pred_label": 5,
+      "confidence": 0.6131048798561096
+    },
+    {
+      "text": "Air.",
+      "true_label": 7,
+      "pred_label": 5,
+      "confidence": 0.6112199425697327
+    },
+    {
+      "text": "If you have a man who is faithful to his wife or vv, that child will grow up to learn what faithfulness is. If a child sees parents smoke, do drugs, curse, etc..they will do that... Children learn lov",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.6093496084213257
+    },
+    {
+      "text": "Not me, but I wanted the 2 points!",
+      "true_label": 3,
+      "pred_label": 5,
+      "confidence": 0.6063896417617798
+    }
+  ]
+}

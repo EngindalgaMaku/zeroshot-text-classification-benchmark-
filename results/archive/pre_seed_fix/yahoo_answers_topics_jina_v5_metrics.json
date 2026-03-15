@@ -1,0 +1,336 @@
+{
+  "accuracy": 0.488,
+  "macro_f1": 0.4851388882252389,
+  "weighted_f1": 0.48471744911573195,
+  "macro_precision": 0.5331703058014414,
+  "macro_recall": 0.4883309544956755,
+  "classification_report": {
+    "0": {
+      "precision": 0.3609022556390977,
+      "recall": 0.2748091603053435,
+      "f1-score": 0.3120260021668472,
+      "support": 524.0
+    },
+    "1": {
+      "precision": 0.700374531835206,
+      "recall": 0.3785425101214575,
+      "f1-score": 0.4914586070959264,
+      "support": 494.0
+    },
+    "2": {
+      "precision": 0.4958904109589041,
+      "recall": 0.7154150197628458,
+      "f1-score": 0.5857605177993528,
+      "support": 506.0
+    },
+    "3": {
+      "precision": 0.5296610169491526,
+      "recall": 0.257201646090535,
+      "f1-score": 0.3462603878116344,
+      "support": 486.0
+    },
+    "4": {
+      "precision": 0.7148760330578512,
+      "recall": 0.6811023622047244,
+      "f1-score": 0.6975806451612904,
+      "support": 508.0
+    },
+    "5": {
+      "precision": 0.6756756756756757,
+      "recall": 0.5729166666666666,
+      "f1-score": 0.6200676437429538,
+      "support": 480.0
+    },
+    "6": {
+      "precision": 0.5092592592592593,
+      "recall": 0.3340080971659919,
+      "f1-score": 0.4034229828850856,
+      "support": 494.0
+    },
+    "7": {
+      "precision": 0.2988691437802908,
+      "recall": 0.7414829659318637,
+      "f1-score": 0.4260218767990789,
+      "support": 499.0
+    },
+    "8": {
+      "precision": 0.455535390199637,
+      "recall": 0.5175257731958763,
+      "f1-score": 0.48455598455598453,
+      "support": 485.0
+    },
+    "9": {
+      "precision": 0.5906593406593407,
+      "recall": 0.41030534351145037,
+      "f1-score": 0.48423423423423423,
+      "support": 524.0
+    },
+    "accuracy": 0.488,
+    "macro avg": {
+      "precision": 0.5331703058014414,
+      "recall": 0.4883309544956755,
+      "f1-score": 0.4851388882252389,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.5324129775108885,
+      "recall": 0.488,
+      "f1-score": 0.48471744911573195,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      144,
+      17,
+      48,
+      22,
+      6,
+      6,
+      8,
+      148,
+      101,
+      24
+    ],
+    [
+      11,
+      187,
+      124,
+      17,
+      35,
+      33,
+      14,
+      48,
+      13,
+      12
+    ],
+    [
+      5,
+      5,
+      362,
+      4,
+      3,
+      27,
+      3,
+      68,
+      22,
+      7
+    ],
+    [
+      57,
+      40,
+      51,
+      125,
+      20,
+      16,
+      28,
+      91,
+      31,
+      27
+    ],
+    [
+      12,
+      4,
+      5,
+      10,
+      346,
+      3,
+      18,
+      93,
+      9,
+      8
+    ],
+    [
+      10,
+      2,
+      6,
+      7,
+      14,
+      275,
+      22,
+      119,
+      14,
+      11
+    ],
+    [
+      23,
+      7,
+      60,
+      28,
+      31,
+      13,
+      165,
+      99,
+      33,
+      35
+    ],
+    [
+      8,
+      3,
+      23,
+      5,
+      17,
+      6,
+      13,
+      370,
+      41,
+      13
+    ],
+    [
+      32,
+      0,
+      23,
+      10,
+      3,
+      10,
+      2,
+      142,
+      251,
+      12
+    ],
+    [
+      97,
+      2,
+      28,
+      8,
+      9,
+      18,
+      51,
+      60,
+      36,
+      215
+    ]
+  ],
+  "mean_confidence": 0.5755968129396438,
+  "std_confidence": 0.058421231328832146,
+  "mean_confidence_correct": 0.5806307750158622,
+  "mean_confidence_incorrect": 0.5707988178357482,
+  "experiment_name": "yahoo_answers_topics_jina_v5",
+  "dataset": "yahoo_answers_topics",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "jinaai/jina-embeddings-v5-text-nano",
+  "top_errors": [
+    {
+      "text": "Hey, just bringing this old question up for a vote. \\n\\nIf you have not found the answer you are looking for, please, feel free to use one of the following links from my personal collection:\\n\\nhttp:/",
+      "true_label": 7,
+      "pred_label": 2,
+      "confidence": 0.7800388336181641
+    },
+    {
+      "text": "its all a culture thing -",
+      "true_label": 8,
+      "pred_label": 0,
+      "confidence": 0.778390109539032
+    },
+    {
+      "text": "As an epidemiologist, I have to read medical histories on a regular basis. To help you learn to take good medical Hx, let me offer you my personal wishlist of things I would like to see more of on H&P",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.7767072916030884
+    },
+    {
+      "text": "What questions are you tired of seeing on \"Yahoo Answers\"?\\nHow many licks to get to the center of a tootsie roll pop?\\nQuestions that gripe abought questions that have grammer and spelling errors tha",
+      "true_label": 6,
+      "pred_label": 7,
+      "confidence": 0.7613624930381775
+    },
+    {
+      "text": "Requires more thought...\\n\\nI don't have an easy answer to this question, because I think an agreement about who is who is required.\\n\\nIn specific contexts, such as when private property may be taken",
+      "true_label": 9,
+      "pred_label": 0,
+      "confidence": 0.7523341774940491
+    },
+    {
+      "text": "first i need to know what her favorites are...\\n\\ncolor?\\nhobby?\\ntelevision series?\\nmovie?\\ngenre?\\nclothing style?\\nwish?\\ncollection?\\nfood?\\njob?\\nbirthday?\\nage?\\ncultural back ground?\\nreligion",
+      "true_label": 8,
+      "pred_label": 7,
+      "confidence": 0.7462641000747681
+    },
+    {
+      "text": "Your answer is found in link below.\\nI recommend closing this \"open\" question.\\nIt probably won't get much attention being this old. \\nPutting this one to vote will let others search it as a closed is",
+      "true_label": 0,
+      "pred_label": 9,
+      "confidence": 0.7456979751586914
+    },
+    {
+      "text": "Your answer is found in link below.\\nI recommend closing this \"open\" question.\\nIt probably won't get much attention being this old. \\nPutting this one to vote will let others search it as a closed is",
+      "true_label": 0,
+      "pred_label": 9,
+      "confidence": 0.7456979751586914
+    },
+    {
+      "text": "Ask me the question too",
+      "true_label": 6,
+      "pred_label": 9,
+      "confidence": 0.7419942021369934
+    },
+    {
+      "text": "The culture of a place is dependent on the form of Government and Economics not really the other way about which you seem to imply.  However culture is built up from a lot of other things as well that",
+      "true_label": 9,
+      "pred_label": 0,
+      "confidence": 0.7393648624420166
+    },
+    {
+      "text": "- Death penalty\\n- Abortion\\n- Ban on Smoking in restaurants\\n- Immigration\\nAre any of these interessting?",
+      "true_label": 3,
+      "pred_label": 9,
+      "confidence": 0.7389602661132812
+    },
+    {
+      "text": "colleges",
+      "true_label": 8,
+      "pred_label": 3,
+      "confidence": 0.7304275035858154
+    },
+    {
+      "text": "are you referring to military recruitment? Military and police will call for applications, include medical fitness same day. In case of driving license, any doctor in the vicinity can do it - should b",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7257286906242371
+    },
+    {
+      "text": "What questions are you talking about?",
+      "true_label": 8,
+      "pred_label": 9,
+      "confidence": 0.724424421787262
+    },
+    {
+      "text": "http://www.w3school.org",
+      "true_label": 4,
+      "pred_label": 3,
+      "confidence": 0.7230700254440308
+    },
+    {
+      "text": "definitely info + comms tech.. this is because IT is not enough by itself these days - it's all about communication incorporated via media such as the Internet, Mobile technology, etc etc. so if you g",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.7217596173286438
+    },
+    {
+      "text": "godlessness\\npolitical bashing\\nguilty before proven innocent\\nunisex bathrooms\\ntattoos\\nillegal immigration\\nfederally mandated standards of education",
+      "true_label": 0,
+      "pred_label": 9,
+      "confidence": 0.721583902835846
+    },
+    {
+      "text": "\"What are you doing\"\\nand\\n\"Where are you going?\"\\n\\nProbably the best questions asked on Yahoo! Answers.  Because I asked them.",
+      "true_label": 8,
+      "pred_label": 7,
+      "confidence": 0.7193801403045654
+    },
+    {
+      "text": "That sucks! But no one can really answer your question, except maybe your parents, or grand parents had the same thing, genetics-yeah it can suck big time.",
+      "true_label": 2,
+      "pred_label": 8,
+      "confidence": 0.7163280248641968
+    },
+    {
+      "text": "HEY!  What are you up to???\\nIt's an election year...anything with combustion or explosion\\nin it is red flagged.    Don't go blowing off your foot.",
+      "true_label": 3,
+      "pred_label": 9,
+      "confidence": 0.7153207063674927
+    }
+  ]
+}

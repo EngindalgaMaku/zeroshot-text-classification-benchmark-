@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.814,
+  "macro_f1": 0.8109317080083798,
+  "weighted_f1": 0.8114768397841559,
+  "macro_precision": 0.8142423220024391,
+  "macro_recall": 0.8131105380672615,
+  "classification_report": {
+    "0": {
+      "precision": 0.758694109297374,
+      "recall": 0.851792828685259,
+      "f1-score": 0.8025525525525525,
+      "support": 1255.0
+    },
+    "1": {
+      "precision": 0.9005196733481812,
+      "recall": 0.9604117181314331,
+      "f1-score": 0.9295019157088122,
+      "support": 1263.0
+    },
+    "2": {
+      "precision": 0.7775974025974026,
+      "recall": 0.7676282051282052,
+      "f1-score": 0.7725806451612903,
+      "support": 1248.0
+    },
+    "3": {
+      "precision": 0.8201581027667985,
+      "recall": 0.6726094003241491,
+      "f1-score": 0.7390917186108638,
+      "support": 1234.0
+    },
+    "accuracy": 0.814,
+    "macro avg": {
+      "precision": 0.8142423220024391,
+      "recall": 0.8131105380672615,
+      "f1-score": 0.8109317080083798,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.8144068223725489,
+      "recall": 0.814,
+      "f1-score": 0.8114768397841559,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1069,
+      68,
+      85,
+      33
+    ],
+    [
+      31,
+      1213,
+      19,
+      0
+    ],
+    [
+      122,
+      19,
+      958,
+      149
+    ],
+    [
+      187,
+      47,
+      170,
+      830
+    ]
+  ],
+  "mean_confidence": 0.17785474139966537,
+  "std_confidence": 0.0837011264718725,
+  "mean_confidence_correct": 0.18169679235090921,
+  "mean_confidence_incorrect": 0.16104060444099608,
+  "experiment_name": "ag_news_mpnet",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.45218542218208313
+    },
+    {
+      "text": "Dream Team Leads Spain 44-42 at Halftime ATHENS, Greece - As expected, the U.S. men's basketball team had its hands full in a quarterfinal game against Spain on Thursday...",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.41945284605026245
+    },
+    {
+      "text": "Research Is Definitely in Motion The Blackberry wireless device maker is straining to exceed expectations.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4097713530063629
+    },
+    {
+      "text": "U.S. Softball Team Wins, Closes in on Gold ATHENS, Greece - Right now, the Americans aren't just a Dream Team - they're more like the Perfect Team. Lisa Fernandez pitched a three-hitter Sunday and Cry",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4052690863609314
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3973020911216736
+    },
+    {
+      "text": "STOCKS  amp; BONDS Technology Issues Lead Rally as the 4th Quarter &lt;b&gt;...&lt;/b&gt; tocks rose yesterday amid heavy trading on the first day of the fourth quarter as PeopleSoft and chip-related ",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.38129496574401855
+    },
+    {
+      "text": "Crunch Time for Biotech Companies Washington area biotech companies will face pivotal moments this year, finding out whether key products work before money dries up, fending off competition from bigge",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.37769830226898193
+    },
+    {
+      "text": "EU wants US to clear muddy waters in WTO row Brussles - EU trade chief Peter Mandelson wants clarification of the US stance in threatened WTO action over aid to Airbus, his spokeswoman said Friday aft",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.3775120675563812
+    },
+    {
+      "text": "Opportunity Rings (Forbes.com) Forbes.com - This past summer 25,000 consumers, aged 18 to 24, received short text messages on their cell phones alerting them to numbers on 225 million bottle caps of S",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3747624456882477
+    },
+    {
+      "text": "Toughest athlete is female and unknown You probably haven't heard about one of the toughest endurance sports around: the deca-ironman. That's 38 km swimming, immediately followed by an 1800 km bicycle",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.37023022770881653
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.36442381143569946
+    },
+    {
+      "text": "Does Nick Carr matter? Strategybusiness concludes that a controversial new book on the strategic value of information technology is flawed--but correct.\\",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.36071836948394775
+    },
+    {
+      "text": "Press review 0850CET--The seizure of fake Nike sportswear by the Customs Department was one of the main stories on Wednesday #39;s newspapers. L-Orizzont published ",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.35990816354751587
+    },
+    {
+      "text": "Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3595990538597107
+    },
+    {
+      "text": "Megawati kicks off 36th ASEAN economic meeting JAKARTA (Agencies): President Megawati Soekarnoputri opened high-level economic talks between members of the Association of Southeast Asian Nations (ASEA",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.35796040296554565
+    },
+    {
+      "text": "Intel in new chip breakthrough Intel creates a more powerful memory chip without increasing its size, confounding the firm's critics.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.35691553354263306
+    },
+    {
+      "text": "Erdogan Believes European Council #39;s Decision Will Be A Milestone PARIS - Turkish PM Recep Tayyip Erdogan expressed belief on Thursday that the decision that the European Council would make on Dece",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.35543519258499146
+    },
+    {
+      "text": "Washington Contractors' Sales Increase Companies that provide federal agencies with network integration and payroll accounting technologies are benefiting from a government trying to bolster its defen",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.35360339283943176
+    },
+    {
+      "text": "Unknown Nesterenko Makes World Headlines (Reuters) Reuters - Belarus' Yuliya Nesterenko won the top\\women's athletics gold medal at the Olympics on Saturday,\\triumphing over a field stripped of many b",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.35334712266921997
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.35277801752090454
+    }
+  ]
+}

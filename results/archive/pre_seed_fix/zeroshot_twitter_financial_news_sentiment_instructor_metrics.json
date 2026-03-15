@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.6635,
+  "macro_f1": 0.64051488256849,
+  "weighted_f1": 0.6740988421097268,
+  "macro_precision": 0.6200812080510593,
+  "macro_recall": 0.7216163407385515,
+  "classification_report": {
+    "0": {
+      "precision": 0.4689922480620155,
+      "recall": 0.7986798679867987,
+      "f1-score": 0.590964590964591,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.5211505922165821,
+      "recall": 0.7661691542288557,
+      "f1-score": 0.6203423967774421,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.8701007838745801,
+      "recall": 0.6,
+      "f1-score": 0.7102376599634369,
+      "support": 1295.0
+    },
+    "accuracy": 0.6635,
+    "macro avg": {
+      "precision": 0.6200812080510593,
+      "recall": 0.7216163407385515,
+      "f1-score": 0.64051488256849,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.739193852175719,
+      "recall": 0.6635,
+      "f1-score": 0.6740988421097268,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      242,
+      13,
+      48
+    ],
+    [
+      26,
+      308,
+      68
+    ],
+    [
+      248,
+      270,
+      777
+    ]
+  ],
+  "mean_confidence": 0.9095445739030839,
+  "std_confidence": 0.018363318937603748,
+  "mean_confidence_correct": 0.9104116638082261,
+  "mean_confidence_incorrect": 0.9078348735997793,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_instructor",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "Stock Market Update: Defensive-minded investors",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9549732208251953
+    },
+    {
+      "text": "These Stocks Could Bounce High in January and Beyond",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9519903659820557
+    },
+    {
+      "text": "Caution Abounds Even as Emerging Markets Ready Year-Ending Rally",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9519393444061279
+    },
+    {
+      "text": "Stock Market Heads Off A Correction – For Now.",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9514764547348022
+    },
+    {
+      "text": "Highlight: “When growth is scarce, investors seem very willing to pay up for growth stock\" @PNCBank's… https://t.co/rO4fBOkBG9",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.945483922958374
+    },
+    {
+      "text": "The Markets Speak: The Lesson Has Been Harsh. https://t.co/89QRsOfn53 #business #stocks #stockmarket",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.9429386854171753
+    },
+    {
+      "text": "Next round of notable earnings",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9428277015686035
+    },
+    {
+      "text": "$BPTH buy the dip.",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9422478079795837
+    },
+    {
+      "text": "EUR/USD Price Forecast – Euro Continues To Grind Towards Resistance",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.9421191215515137
+    },
+    {
+      "text": "6 Guru Stocks Beating the Market",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9414875507354736
+    },
+    {
+      "text": "EUR/USD Mid-Session Technical Analysis for December 17, 2019",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.9410427808761597
+    },
+    {
+      "text": "3 Surprising Stocks Hitting New Lows Last Week",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.940942645072937
+    },
+    {
+      "text": "Why value stocks surged more than growth stocks in 2019",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9408459663391113
+    },
+    {
+      "text": "Monday's big rally is premature: financial advisor #economy #MarketScreener https://t.co/Ld6fdzqgQd https://t.co/nqWvTA19gR",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9405360221862793
+    },
+    {
+      "text": "Mitek bull calls pullback 'an overreaction'",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.9403250217437744
+    },
+    {
+      "text": "Videoconferences Zoom Toward Market-Boom Reckoning. https://t.co/kbPZdZj8DF #stocks #trading #economy",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9400800466537476
+    },
+    {
+      "text": "The most patient investors may want some commodities in their portfolio, says @jasonzweigwsj https://t.co/iPzo9hUxaj",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9398516416549683
+    },
+    {
+      "text": "Week ahead on Wall Street #economy #MarketScreener https://t.co/gSr3hoOMQT https://t.co/sNnufj18DG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9385538101196289
+    },
+    {
+      "text": "FOMO time we project SP 500 target 4000 before end of Bull Market",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9383636713027954
+    },
+    {
+      "text": "Best Stocks for 2020: Housing Trend Will Boost PennyMac Financial",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.9372823238372803
+    }
+  ]
+}

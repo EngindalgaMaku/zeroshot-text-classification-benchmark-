@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.807,
+  "macro_f1": 0.8036964473806611,
+  "weighted_f1": 0.8041933523889636,
+  "macro_precision": 0.8051342083897864,
+  "macro_recall": 0.807296600198339,
+  "classification_report": {
+    "0": {
+      "precision": 0.8613445378151261,
+      "recall": 0.7706766917293233,
+      "f1-score": 0.8134920634920635,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.8379310344827586,
+      "recall": 0.9878048780487805,
+      "f1-score": 0.9067164179104478,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.76,
+      "recall": 0.7723577235772358,
+      "f1-score": 0.7661290322580645,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.7612612612612613,
+      "recall": 0.6983471074380165,
+      "f1-score": 0.728448275862069,
+      "support": 242.0
+    },
+    "accuracy": 0.807,
+    "macro avg": {
+      "precision": 0.8051342083897864,
+      "recall": 0.807296600198339,
+      "f1-score": 0.8036964473806611,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.8064339067668075,
+      "recall": 0.807,
+      "f1-score": 0.8041933523889636,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      205,
+      23,
+      28,
+      10
+    ],
+    [
+      2,
+      243,
+      1,
+      0
+    ],
+    [
+      6,
+      7,
+      190,
+      43
+    ],
+    [
+      25,
+      17,
+      31,
+      169
+    ]
+  ],
+  "mean_confidence": 0.2172319305278361,
+  "std_confidence": 0.05758745095927212,
+  "mean_confidence_correct": 0.2187727139489506,
+  "mean_confidence_incorrect": 0.21078938016079252,
+  "experiment_name": "agnews_nomic_embed_v2_moe",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "biencoder": "nomic-ai/nomic-embed-text-v2-moe",
+  "top_errors": [
+    {
+      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.40931379795074463
+    },
+    {
+      "text": "Playing with the traumas of war Are games based on the Vietnam conflict making us immune to realities of history?",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.3581703007221222
+    },
+    {
+      "text": "India, Russia must join hands to develop new tech: Putin Mr Vladimir V. Putin, President of the Russian Federation, Mr NR Narayana Murthy, Chief Mentor and Chairman, Infosys, and Mr Nandan Nilekani, C",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.3392099142074585
+    },
+    {
+      "text": "Google #39;s New PC Search Tool Poses Risks NEW YORK Oct. 18, 2004 - People who use public or workplace computers for e-mail, instant messaging and Web searching have a new privacy risk to worry about",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3318171501159668
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3294183909893036
+    },
+    {
+      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3236490488052368
+    },
+    {
+      "text": "Symantec Said to Be in Talks for Veritas Symantec, which produces the Norton line of computer products, is in talks to acquire Veritas Software, a maker of data backup programs.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.32292458415031433
+    },
+    {
+      "text": "Movies in a snap: Netflix and TiVo discuss downloads Bee Staff Writer. The high-tech ground is shifting underfoot again, amid rumblings of a new Silicon Valley alliance that would let owners of TiVo I",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3218757212162018
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.32170939445495605
+    },
+    {
+      "text": "Stocks to Watch on Dec. 1  NEW YORK (Reuters) - U.S. stocks to watch on Wednesday: IBM  CORP. &lt;A HREF=\"http://www.investor.reuters.com/FullQuote.aspx?ticker=IBM.N target=/stocks/quickinfo/fullquote",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.31928420066833496
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3157452344894409
+    },
+    {
+      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3100314736366272
+    },
+    {
+      "text": "America #39;s curse There is an all but unanswerable case for asserting that the biggest story out of the United States this week has nothing to do with the presidential election, has no connection wi",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.308040052652359
+    },
+    {
+      "text": "King Pong Draws Fans Spike TV's Video Game Awards Show attracts big-name celebrities and bands but gives the fans the votes.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.30544355511665344
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.30183684825897217
+    },
+    {
+      "text": "Half.com to continue at full speed This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half. Online auction giant eBay won #39;t be closi",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.30150002241134644
+    },
+    {
+      "text": "Special to ESPN.com It #39;s the age old question:  quot;What do you give to the man who #39;s been everything? quot;. Only time will tell whether Phil Knight #39;s retirement will be as long-lived as",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.30038678646087646
+    },
+    {
+      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.29852020740509033
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.2983362078666687
+    },
+    {
+      "text": "So Long XMLHack! \\\\\"It's been a lot of fun writing XMLhack since 1999, but it's time for us to take\\a rest.\"\\\\\"XMLhack has always been run by volunteers writing in their spare time, and now\\most of us",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.29408952593803406
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.7664,
+  "macro_f1": 0.7680501751209441,
+  "weighted_f1": 0.7684246989339807,
+  "macro_precision": 0.7943034250861388,
+  "macro_recall": 0.7657916781833544,
+  "classification_report": {
+    "0": {
+      "precision": 0.6252036936447583,
+      "recall": 0.9171314741035856,
+      "f1-score": 0.7435400516795866,
+      "support": 1255.0
+    },
+    "1": {
+      "precision": 0.9527027027027027,
+      "recall": 0.7814726840855107,
+      "f1-score": 0.8586341887777295,
+      "support": 1263.0
+    },
+    "2": {
+      "precision": 0.780466724286949,
+      "recall": 0.7235576923076923,
+      "f1-score": 0.750935550935551,
+      "support": 1248.0
+    },
+    "3": {
+      "precision": 0.8188405797101449,
+      "recall": 0.6410048622366289,
+      "f1-score": 0.7190909090909091,
+      "support": 1234.0
+    },
+    "accuracy": 0.7664,
+    "macro avg": {
+      "precision": 0.7943034250861388,
+      "recall": 0.7657916781833544,
+      "f1-score": 0.7680501751209441,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.7944731792620232,
+      "recall": 0.7664,
+      "f1-score": 0.7684246989339807,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1151,
+      26,
+      55,
+      23
+    ],
+    [
+      237,
+      987,
+      31,
+      8
+    ],
+    [
+      193,
+      8,
+      903,
+      144
+    ],
+    [
+      260,
+      15,
+      168,
+      791
+    ]
+  ],
+  "mean_confidence": 0.48831206280738115,
+  "std_confidence": 0.12379032639353478,
+  "mean_confidence_correct": 0.4913203436084138,
+  "mean_confidence_incorrect": 0.47844242922043145,
+  "experiment_name": "ag_news_snowflake",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "Snowflake/snowflake-arctic-embed-m",
+  "top_errors": [
+    {
+      "text": "Icing call Out of money, out of patience, out of time, and for the foreseeable future, out of business.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.7901630997657776
+    },
+    {
+      "text": "Playing with the traumas of war Are games based on the Vietnam conflict making us immune to realities of history?",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7880739569664001
+    },
+    {
+      "text": "Women, and the future of IT &lt;strong&gt;Interview&lt;/strong&gt; Professor Wendy Hall talks to &lt;em&gt;The Reg&lt;/em&gt;",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7765587568283081
+    },
+    {
+      "text": "Biography of a Worm Can anything stop the next global virus outbreak? We follow the trail of one recent worm to see how the security system works--and whether it can be fixed.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7635522484779358
+    },
+    {
+      "text": "webcrawler: A9.com is cool NOW heres something else thats off the mind. Theres no more need to make mental or computer notes while searching the Internet.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7632448673248291
+    },
+    {
+      "text": "Alternative Energy: Ready or not? Even with a boost from higher oil prices and growing concern about global warming, the payoff on most alternative energy technologies seems a ways off.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7627187967300415
+    },
+    {
+      "text": "For BlackBerry Users, a New Way to Write While popular among financial-industry types, the BlackBerry is practically unknown to everyone else. RIM hopes to change that with its new model.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7601261138916016
+    },
+    {
+      "text": "Blame player, not game It was like nothing youd ever exercised your thumbs to before. You could do whatever you wanted, whenever you wanted. The game seemed endless.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.7508513927459717
+    },
+    {
+      "text": "A Distraction as a Deadline Approaches As the holidays approach, Christmas spirit is a bargain-hunting essential.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7505456805229187
+    },
+    {
+      "text": "Don #39;t Answer the Cell Phone, it #39;s Spam Again It figures...and just when it looked like some major email spammers were going to jail, too. So far, it #39;s only in Russia, but it #39;s nasty.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.746917188167572
+    },
+    {
+      "text": "Briefly: RealNetworks signs up Red Flag Linux roundup Plus: Microsoft ships Virtual PC 7...SGI warns of lower revenue, deeper loss...SAP taps search technology.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.742411732673645
+    },
+    {
+      "text": "Toyota: Some security firms promise too much If \"it sounds like you are being offered a panacea, then it's time to change the conversation,\" says an exec for the firm.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7418206930160522
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7416999936103821
+    },
+    {
+      "text": "PeopleSoft goes a bundle on IBM 'Most Significant Enterprise Applications Alliance in History,'it sez here...",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7370309829711914
+    },
+    {
+      "text": "World #39;s  #39;worst plunderers #39; named HUMAN beings are plundering the earth #39;s resources at an alarming and unsustainable rate, and Australians are among the worst offenders.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7359985709190369
+    },
+    {
+      "text": "FSB FUD over FOI, you cry &lt;strong&gt;Letters&lt;/strong&gt; The postbag, and your miscellaneous musings",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7353015542030334
+    },
+    {
+      "text": "Research Is Definitely in Motion The Blackberry wireless device maker is straining to exceed expectations.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7336413860321045
+    },
+    {
+      "text": "Toile Gets A Makeover The traditional pattern shakes its fussy image as designers give it a new look",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7333410978317261
+    },
+    {
+      "text": "Storage, servers bruise HP earnings update Earnings per share rise compared with a year ago, but company misses analysts' expectations by a long shot.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7328822612762451
+    },
+    {
+      "text": "Fusion reactor decision must wait Six nations planning to build the world's biggest nuclear fusion reactor fail to agree where to site the facility.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7317862510681152
+    }
+  ]
+}

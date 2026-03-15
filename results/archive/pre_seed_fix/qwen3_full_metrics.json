@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.7846052631578947,
+  "macro_f1": 0.7817002605695711,
+  "weighted_f1": 0.7817002605695711,
+  "macro_precision": 0.8013918926281762,
+  "macro_recall": 0.7846052631578947,
+  "classification_report": {
+    "0": {
+      "precision": 0.8504728132387707,
+      "recall": 0.7573684210526316,
+      "f1-score": 0.8012249443207127,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.6949152542372882,
+      "recall": 0.9926315789473684,
+      "f1-score": 0.8175119202427394,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.7902494331065759,
+      "recall": 0.7336842105263158,
+      "f1-score": 0.7609170305676856,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.8699300699300699,
+      "recall": 0.6547368421052632,
+      "f1-score": 0.7471471471471471,
+      "support": 1900.0
+    },
+    "accuracy": 0.7846052631578947,
+    "macro avg": {
+      "precision": 0.8013918926281762,
+      "recall": 0.7846052631578947,
+      "f1-score": 0.7817002605695711,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8013918926281761,
+      "recall": 0.7846052631578947,
+      "f1-score": 0.7817002605695711,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1439,
+      324,
+      109,
+      28
+    ],
+    [
+      7,
+      1886,
+      6,
+      1
+    ],
+    [
+      126,
+      223,
+      1394,
+      157
+    ],
+    [
+      120,
+      281,
+      255,
+      1244
+    ]
+  ],
+  "mean_confidence": 0.35533739790516466,
+  "std_confidence": 0.05268392093074749,
+  "mean_confidence_correct": 0.3629333615807825,
+  "mean_confidence_incorrect": 0.3276680445773032,
+  "experiment_name": "qwen3_full",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "biencoder": "Qwen/Qwen3-Embedding-8B",
+  "top_errors": [
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5113680958747864
+    },
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5025842785835266
+    },
+    {
+      "text": "Cricket: Tendulkar to miss test Sachin Tendulkar is almost certain to miss Thursday's second Test against Australia in Madras.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4929667115211487
+    },
+    {
+      "text": "India seeks new TV bids The Indian Board re-opens the bidding for TV rights after Australian threaten to cancel their tour.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.48731371760368347
+    },
+    {
+      "text": "TheStreet.com May Be Up for Sale -- Report (Reuters) Reuters - TheStreet.com Inc. , the\\financial news and commentary Web site, may be up for sale,\\according to a report in Business Week, sparking a 7",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.48558804392814636
+    },
+    {
+      "text": "Live: Olympics day four Richard Faulds and Stephen Parry are going for gold for Great Britain on day four in Athens.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.485004186630249
+    },
+    {
+      "text": "Dream Team Leads Spain 44-42 at Halftime ATHENS, Greece - As expected, the U.S. men's basketball team had its hands full in a quarterfinal game against Spain on Thursday...",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4837730824947357
+    },
+    {
+      "text": "EU foreign ministers hope to break deadlock over ASEM summit The European Union said Friday it  quot;hoped to reach a conclusion quot; at a meeting of foreign ministers on the participation of militar",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.48362860083580017
+    },
+    {
+      "text": "Sony, IBM, Toshiba Give Details of 'Cell' Chip (Reuters) Reuters - IBM , Sony Corp. (6758.T) and\\Toshiba Corp. (6502.T) on Monday revealed their plans for the\\powerful new \"Cell\" processor the three a",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4827599823474884
+    },
+    {
+      "text": "U.S. Men's Hoops Team Finally Gets a Rout ATHENS, Greece - The Americans got a taste of what it was like in the good ol' days. They finally played an opponent they were able to beat easily, routing An",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4825398027896881
+    },
+    {
+      "text": "HP to tempt holiday shoppers with sights and sounds The computer-hardware giant, best known for products such as PCs and printers, on Friday laid out its plan to become a brand-name in consumer electr",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4808869957923889
+    },
+    {
+      "text": "Argentina Beats U.S. Men's Basketball Team Argentina defeated the United States team of National Basketball Association stars 89-81 here Friday in the Olympic semi-finals, dethroning the three-time de",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.47601866722106934
+    },
+    {
+      "text": "Where have all the people gone? While media and political attention is on the threat of outsourcing, the reality is that outsourcing is a sideshow in a much larger event.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.47587454319000244
+    },
+    {
+      "text": "Football: Azerbaijan 0-1 England Michael Owen heads England's winner in the World Cup qualifier against Azerbaijan.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4740091562271118
+    },
+    {
+      "text": "Greek weightlifter awaits verdict Greek weightlifter Leonidas Sampanis will find out on Sunday if he is to be stripped of his medal.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4725344181060791
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.4720154404640198
+    },
+    {
+      "text": "Intel planning Centrino-like brand for desktops Intel is preparing a marketing strategy that will brand desktop PCs with a similar label that made its Centrino notebook technology a household name, ac",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.47127217054367065
+    },
+    {
+      "text": "webcrawler: A9.com is cool NOW heres something else thats off the mind. Theres no more need to make mental or computer notes while searching the Internet.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4698464274406433
+    },
+    {
+      "text": "Cricket: Pakistan edge ahead Pakistan take a slim lead over Sri Lanka by the end of the day two in the first Test.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.46793827414512634
+    },
+    {
+      "text": "Pakistan down India to ensure top six finish (AFP) AFP - Pakistan defeated arch-rivals India 3-0 here to ensure they stand among the top six in the Olympic men's field hockey competition.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.46735894680023193
+    }
+  ]
+}

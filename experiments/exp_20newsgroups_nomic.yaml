@@ -1,10 +1,10 @@
-experiment_name: sst2_snowflake
+experiment_name: 20newsgroups_nomic_embed_v2_moe
 dataset:
-  name: sst2
-  split: validation
-  text_column: sentence
+  name: SetFit/20_newsgroups
+  split: test
+  text_column: text
   label_column: label
-  max_samples: 1000
+  max_samples: 2000
 task:
   type: zero_shot_classification
   label_mode: description
@@ -12,7 +12,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: Snowflake/snowflake-arctic-embed-m
+    name: nomic-ai/nomic-embed-text-v2-moe
   reranker: null
 pipeline:
   mode: biencoder

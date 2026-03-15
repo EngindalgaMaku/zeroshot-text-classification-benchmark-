@@ -1,9 +1,9 @@
-experiment_name: imdb_snowflake
+experiment_name: yahoo_answers_nomic_embed_v2_moe
 dataset:
-  name: imdb
+  name: yahoo_answers_topics
   split: test
-  text_column: text
-  label_column: label
+  text_column: best_answer
+  label_column: topic
   max_samples: 1000
 task:
   type: zero_shot_classification
@@ -12,7 +12,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: Snowflake/snowflake-arctic-embed-m
+    name: nomic-ai/nomic-embed-text-v2-moe
   reranker: null
 pipeline:
   mode: biencoder

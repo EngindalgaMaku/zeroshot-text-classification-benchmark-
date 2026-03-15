@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.4425,
+  "macro_f1": 0.43430787723458925,
+  "weighted_f1": 0.44123778664622093,
+  "macro_precision": 0.48291480672686865,
+  "macro_recall": 0.5502089118610471,
+  "classification_report": {
+    "0": {
+      "precision": 0.30326295585412666,
+      "recall": 0.5214521452145214,
+      "f1-score": 0.38349514563106796,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.3340060544904137,
+      "recall": 0.8233830845771144,
+      "f1-score": 0.4752333094041637,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.8114754098360656,
+      "recall": 0.30579150579150577,
+      "f1-score": 0.4441951766685362,
+      "support": 1295.0
+    },
+    "accuracy": 0.4425,
+    "macro avg": {
+      "precision": 0.48291480672686865,
+      "recall": 0.5502089118610471,
+      "f1-score": 0.43430787723458925,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.6385098826333258,
+      "recall": 0.4425,
+      "f1-score": 0.44123778664622093,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      158,
+      89,
+      56
+    ],
+    [
+      35,
+      331,
+      36
+    ],
+    [
+      328,
+      571,
+      396
+    ]
+  ],
+  "mean_confidence": 0.7098182171583176,
+  "std_confidence": 0.057231093331315666,
+  "mean_confidence_correct": 0.7131417288618572,
+  "mean_confidence_incorrect": 0.7071802728913824,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_snowflake",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "Snowflake/snowflake-arctic-embed-m",
+  "top_errors": [
+    {
+      "text": "Week ahead on Wall Street #economy #MarketScreener https://t.co/gSr3hoOMQT https://t.co/sNnufj18DG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8459900617599487
+    },
+    {
+      "text": "The Markets Speak: The Lesson Has Been Harsh. https://t.co/89QRsOfn53 #business #stocks #stockmarket",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8385863900184631
+    },
+    {
+      "text": "Dow is down over 500 points. Here's what you need to know now:  https://t.co/hvgRljuQji",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.8361706137657166
+    },
+    {
+      "text": "What Can the 1991 Recession and S&L Crisis Tell Us About Today?",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8359313011169434
+    },
+    {
+      "text": "Wall Street scraps its recession assumptions after robust jobs data https://t.co/oOuPFD2gWp https://t.co/4yICZnGl4z",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.8347417116165161
+    },
+    {
+      "text": "Dow- Chemically Speaking",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8295222520828247
+    },
+    {
+      "text": "Caution Abounds Even as Emerging Markets Ready Year-Ending Rally",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.8268678188323975
+    },
+    {
+      "text": "Stock Market Update: Defensive-minded investors",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8240032196044922
+    },
+    {
+      "text": "The days of extraordinary market returns are over, says BlackRock https://t.co/gJu52JoL8J",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.8234286904335022
+    },
+    {
+      "text": "Two weeks later, no change, Fed ain't stopping the selling",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.820336639881134
+    },
+    {
+      "text": "YTD Performance:\nDow Jones: Red\n30Y: +9%\n\nhttps://t.co/scCDfO2eUv https://t.co/sO1bMzirbY",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8196147680282593
+    },
+    {
+      "text": "News Highlights : Top Energy News of the Day #WTI #Stock #MarketScreener https://t.co/xtZKbd5J1L https://t.co/KsI3MoSvPq",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8173566460609436
+    },
+    {
+      "text": "Is Inflation Really Under Control? https://t.co/B86ntFUj2h",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8170613646507263
+    },
+    {
+      "text": "$F - Ford's Value Has Tanked: Recovery Looks Poor. https://t.co/cLVJUCwNbt #economy #stocks #markets",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.8161090016365051
+    },
+    {
+      "text": "Notable earnings after Monday’s close",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.815863847732544
+    },
+    {
+      "text": "Stocks Are Writing Checks the Economic Data Can’t Cash",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8153527975082397
+    },
+    {
+      "text": "$XLE: Sector Briefing: Energy https://t.co/JU4fcO0cpl",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8140801787376404
+    },
+    {
+      "text": "No, The Fed Won't \"Save The Market\" - Here's Why  https://t.co/Ibq99qWSFz",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.8133585453033447
+    },
+    {
+      "text": "News Highlights : Top Global Markets News of the Day #NewsHighlights #economy #MarketScreener… https://t.co/70WlBhNOkd",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8130041360855103
+    },
+    {
+      "text": "Yields head lower despite strong economic numbers",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8126122951507568
+    }
+  ]
+}

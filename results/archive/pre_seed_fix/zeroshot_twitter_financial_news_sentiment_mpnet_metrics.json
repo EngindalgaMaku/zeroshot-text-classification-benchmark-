@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.6075,
+  "macro_f1": 0.5680101884158089,
+  "weighted_f1": 0.6200398132318258,
+  "macro_precision": 0.5511762152377794,
+  "macro_recall": 0.6170363506701618,
+  "classification_report": {
+    "0": {
+      "precision": 0.416289592760181,
+      "recall": 0.6072607260726073,
+      "f1-score": 0.49395973154362416,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.453125,
+      "recall": 0.6492537313432836,
+      "f1-score": 0.5337423312883436,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.7841140529531568,
+      "recall": 0.5945945945945946,
+      "f1-score": 0.6763285024154589,
+      "support": 1295.0
+    },
+    "accuracy": 0.6075,
+    "macro avg": {
+      "precision": 0.5511762152377794,
+      "recall": 0.6170363506701618,
+      "f1-score": 0.5680101884158089,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.6618598475903364,
+      "recall": 0.6075,
+      "f1-score": 0.6200398132318258,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      184,
+      14,
+      105
+    ],
+    [
+      34,
+      261,
+      107
+    ],
+    [
+      224,
+      301,
+      770
+    ]
+  ],
+  "mean_confidence": 0.20567573646421805,
+  "std_confidence": 0.09592783877777865,
+  "mean_confidence_correct": 0.21402763622839754,
+  "mean_confidence_incorrect": 0.19274891071456446,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_mpnet",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "$ECONX: December University of Michigan Consumer Sentiment- Prelim 99.2 vs 96.5 https://t.co/M9gpUZQoF7 consensus;… https://t.co/fmehvuGCH2",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.4853030741214752
+    },
+    {
+      "text": "What Does Reading International, Inc.'s (NASDAQ:RDI) Share Price Indicate?",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.43329352140426636
+    },
+    {
+      "text": "Highlight: “When growth is scarce, investors seem very willing to pay up for growth stock\" @PNCBank's… https://t.co/rO4fBOkBG9",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.43248194456100464
+    },
+    {
+      "text": "Markel Corporation Beat Analyst Estimates: See What The Consensus Is Forecasting For Next Year",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.42354315519332886
+    },
+    {
+      "text": "Trade war. Possible recession. Presidential election.\n\nHere are the 3 stocks you need heading into 2020. \n\nhttps://t.co/fdcXiqwKpw",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.4235045313835144
+    },
+    {
+      "text": "$TALKX: Market Briefing: Market still riding hope of COVID-19 plateauing https://t.co/P3bUqinQVx",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.4167211055755615
+    },
+    {
+      "text": "Videoconferences Zoom Toward Market-Boom Reckoning. https://t.co/kbPZdZj8DF #stocks #trading #economy",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.41578930616378784
+    },
+    {
+      "text": "Tech stocks led all three major U.S. stock averages marginally into the black following upbeat statements on the U.… https://t.co/S2BkUCDmcx",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.4125009775161743
+    },
+    {
+      "text": "$SMPQY $HSIC $XRAY - Goldman ups view on Henry Schein in premarket analyst action https://t.co/ZjKejttior",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.40762192010879517
+    },
+    {
+      "text": "$GOOG $GOOGL - Alphabet: Flying Right To $1,700. Read more and get updates on any stock! https://t.co/cdftwzEnYJ #economy #finance #markets",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.39875444769859314
+    },
+    {
+      "text": "The bond market is looking 'overbought' even in the context of coronavirus fears, analysts say https://t.co/ALSVRYK0bD",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.39732831716537476
+    },
+    {
+      "text": "This ratio suggests the U.S. stock market will take a ‘brief pause’ then climb higher, analyst says - MarketWatch",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.3957875669002533
+    },
+    {
+      "text": "Which way will the markets be headed next week before traders head home for Thanksgiving? On @MadMoneyOnCNBC,… https://t.co/q4NtFLbrmV",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.3947688937187195
+    },
+    {
+      "text": "Highlight: The Fed has launched an unprecedented round of asset purchases. \"The idea here is the Federal Reserve is… https://t.co/9J31vhPbUG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.3918664753437042
+    },
+    {
+      "text": "Dennis Gartman, who’s closing down his daily newsletter, had some parting advice for investors: sell https://t.co/GwcaDQjWJJ",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.39122653007507324
+    },
+    {
+      "text": "9:45 am (it's early) $SPY 272.99 1,520 STOCKS are up from the open vs 1,700  that are down from the open. $IWM 116.87",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.38890141248703003
+    },
+    {
+      "text": "Twitter upgraded to positive from neutral at Susquehanna",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.3824232816696167
+    },
+    {
+      "text": "Wall Street scraps its recession assumptions after robust jobs data https://t.co/oOuPFD2gWp https://t.co/4yICZnGl4z",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.37929773330688477
+    },
+    {
+      "text": "These Stocks Could Bounce High in January and Beyond",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.3764859735965729
+    },
+    {
+      "text": "Fitch Ratings adds to the drumbeat of credit assessors warning Oman about its precarious public finances https://t.co/4qw624Ecw2",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.3756212890148163
+    }
+  ]
+}

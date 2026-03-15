@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.382,
+  "macro_f1": 0.4082006290167924,
+  "weighted_f1": 0.2929680043954372,
+  "macro_precision": 0.5362272096232248,
+  "macro_recall": 0.6335792906208156,
+  "classification_report": {
+    "0": {
+      "precision": 0.46702317290552586,
+      "recall": 0.8646864686468647,
+      "f1-score": 0.6064814814814815,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.2923433874709977,
+      "recall": 0.9402985074626866,
+      "f1-score": 0.44601769911504424,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.8493150684931506,
+      "recall": 0.09575289575289575,
+      "f1-score": 0.17210270645385148,
+      "support": 1295.0
+    },
+    "accuracy": 0.382,
+    "macro avg": {
+      "precision": 0.5362272096232248,
+      "recall": 0.6335792906208156,
+      "f1-score": 0.4082006290167924,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.6794465384261728,
+      "recall": 0.382,
+      "f1-score": 0.2929680043954372,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      262,
+      30,
+      11
+    ],
+    [
+      13,
+      378,
+      11
+    ],
+    [
+      286,
+      885,
+      124
+    ]
+  ],
+  "mean_confidence": 0.42831401991844176,
+  "std_confidence": 0.08239889087920646,
+  "mean_confidence_correct": 0.44152775935399596,
+  "mean_confidence_incorrect": 0.4201463039566591,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_bge",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "BAAI/bge-m3",
+  "top_errors": [
+    {
+      "text": "Highlight: \"This year, you've had three things in your favor,\" @amundipioneer says about the high-yield bond market… https://t.co/ywPLWmNHWb",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.6027963757514954
+    },
+    {
+      "text": "$ECONX: Federal Reserve announces extensive new measures to support the economy https://t.co/Gf6CfThO7r",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5994399189949036
+    },
+    {
+      "text": "Can $MSFT head higher?  https://t.co/V5l6NINYrr",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5943744778633118
+    },
+    {
+      "text": "Week ahead on Wall Street #economy #MarketScreener https://t.co/gSr3hoOMQT https://t.co/sNnufj18DG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5888711810112
+    },
+    {
+      "text": "Cash is king, and these investors are hoarding it in case of a recession \nhttps://t.co/YQemHWVfpv",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5873315930366516
+    },
+    {
+      "text": "Q4 GDP: Trudging Along. https://t.co/IQebEf5ooz #business #stockmarket #stocks",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5872975587844849
+    },
+    {
+      "text": "$GOOG $GOOGL - Alphabet: Flying Right To $1,700. Read more and get updates on any stock! https://t.co/cdftwzEnYJ #economy #finance #markets",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5861861705780029
+    },
+    {
+      "text": "LISTEN NOW: Trade news is in focus today, as progress is made on the USMCA and China tariffs reportedly could be de… https://t.co/FWS9MkuY65",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5860983729362488
+    },
+    {
+      "text": "The FRED Blog: Since the end of the Great Recession, market-based measures of long-run inflation expectations have… https://t.co/0xHldQgKkG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5860840678215027
+    },
+    {
+      "text": "YTD Performance:\nDow Jones: Red\n30Y: +9%\n\nhttps://t.co/scCDfO2eUv https://t.co/sO1bMzirbY",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5848049521446228
+    },
+    {
+      "text": "The Markets Speak: The Lesson Has Been Harsh. https://t.co/89QRsOfn53 #business #stocks #stockmarket",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5844367146492004
+    },
+    {
+      "text": "Highlight: The Fed has launched an unprecedented round of asset purchases. \"The idea here is the Federal Reserve is… https://t.co/9J31vhPbUG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5830385684967041
+    },
+    {
+      "text": "$ES equilibrium is 3107.50-3108  Long if either open is above 3108 and goes bid above the open. Look for some resis… https://t.co/ifVCk5Vh6r",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5791770219802856
+    },
+    {
+      "text": "$PLUG - Plug Power Raises Some Much-Needed Cash - The Right Move At The Right Time. Read more:… https://t.co/8u9YMYHnLp",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5780687928199768
+    },
+    {
+      "text": "Efforts to support the faltering economy could extend to some form of direct yield curve control. New… https://t.co/Cd4JvxMiXA",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5780573487281799
+    },
+    {
+      "text": "$CEI Long-term chart. Everything is possible here. Full of shorts. Can run 400% like in July or doing nothing. But… https://t.co/JJMEup4XH3",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5773589611053467
+    },
+    {
+      "text": "Heard on the Street: The Fed may need banks to lever up to absorb more activity, but it needs to do so in a way tha… https://t.co/m6nXfI4or7",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.573712944984436
+    },
+    {
+      "text": "Videoconferences Zoom Toward Market-Boom Reckoning. https://t.co/kbPZdZj8DF #stocks #trading #economy",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.5733680725097656
+    },
+    {
+      "text": "The Bank of England's Term Funding Scheme... #Stock #MarketScreener https://t.co/UYAUVEOvlM https://t.co/SeJVLxIyZA",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.5727781057357788
+    },
+    {
+      "text": "$GLD $SLV - Gold & Silver Update: December May Be A Bottom. Read more: https://t.co/c0d06nlqQJ #trading #finance #stocks",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.5703639984130859
+    }
+  ]
+}

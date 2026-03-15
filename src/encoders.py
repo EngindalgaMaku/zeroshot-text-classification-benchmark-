@@ -4,7 +4,7 @@ Supports:
 - Standard sentence-transformers models
 - Jina embeddings with explicit task selection
 - INSTRUCTOR models with instruction pairs
-- Snowflake Arctic models via transformers
+
 - Optional GTE custom backend via transformers
 """
 
@@ -154,17 +154,6 @@ class BiEncoder:
             )
             print(f"Jina model loaded on device: {self.model.device} (task={self.task})")
 
-        # -------- Snowflake backend --------
-        elif "snowflake" in name_lower and "arctic" in name_lower:
-            self.backend = "snowflake"
-            self.model = _TransformersEncoder(
-                model_name=model_name,
-                device=device,
-                trust_remote_code=False,
-                pooling="cls",
-                max_length=512,
-            )
-
         # -------- GTE backend (optional) --------
         elif "gte" in name_lower:
             if not allow_gte:
@@ -266,8 +255,8 @@ class BiEncoder:
             embeddings = self.model.encode(texts, **kwargs)
             return embeddings
 
-        # -------- Snowflake / GTE custom backends --------
-        if self.backend in {"snowflake", "gte"}:
+        # -------- GTE custom backends --------
+        if self.backend in {"gte", "gte"}:
             return self.model.encode(
                 texts=texts,
                 batch_size=batch_size,

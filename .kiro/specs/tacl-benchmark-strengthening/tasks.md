@@ -40,14 +40,14 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
 - [ ] 2. Checkpoint - Validate all configurations
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 3. Archive old results and prepare for re-execution
-  - [ ] 3.1 Create results archival script
+- [x] 3. Archive old results and prepare for re-execution
+  - [x] 3.1 Create results archival script
     - Write Python script to move results/raw/*.json to results/archive/pre_seed_fix/
     - Preserve timestamps and create manifest file listing all archived results
     - Generate comparison baseline from archived results
     - _Requirements: 16.1, 16.5_
   
-  - [ ] 3.2 Verify seed implementation in main.py
+  - [x] 3.2 Verify seed implementation in main.py
     - Confirm set_seed(42) is called before config loading
     - Verify CUDA deterministic mode is enabled when GPU available
     - Add seed value logging to experiment output files
@@ -77,8 +77,8 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
 - [ ] 5. Checkpoint - Verify experiment completion
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 6. Implement label formulation analysis
-  - [ ] 6.1 Create label mode comparison configs
+- [-] 6. Implement label formulation analysis
+  - [-] 6.1 Create label mode comparison configs
     - Duplicate 3 diverse dataset configs (AG News, Banking77, GoEmotions)
     - Create name_only variants for each selected dataset
     - Ensure configs are identical except for label_mode parameter
@@ -186,35 +186,35 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
     - Update results database with new experiments
     - _Requirements: 11.1, 11.4_
 
-- [ ] 12. Evaluate and implement model expansion
-  - [ ] 12.1 Analyze current model selection
+- [x] 12. Evaluate and implement model expansion
+  - [x] 12.1 Analyze current model selection
     - Document rationale for each of the 7 current models
     - Review Snowflake performance (consistently lowest) - consider removal
     - Identify architecture gaps in current model set
     - _Requirements: 12.1, 12.2, 12.4_
   
-  - [ ] 12.2 Evaluate candidate models for inclusion
+  - [x] 12.2 Evaluate candidate models for inclusion
     - Research recent high-performing models from MTEB leaderboard
     - Evaluate technical feasibility (API availability, model size, inference speed)
     - Test 1-2 promising candidates on sample dataset before full commitment
     - Document any technical issues encountered during testing
     - _Requirements: 12.3, 12.4_
   
-  - [ ] 12.3 Make model selection decisions
+  - [x] 12.3 Make model selection decisions
     - Analyze Snowflake performance: if consistently worst, consider removal for cleaner comparison
     - If removing Snowflake, ensure remaining models still represent architecture diversity
     - For new models: only add if technically feasible and adds architectural diversity
     - Document all model selection decisions with justification (performance, feasibility, diversity)
     - _Requirements: 12.2, 12.4, 12.5_
   
-  - [ ] 12.4 Implement selected new models (if any)
+  - [x] 12.4 Implement selected new models (if any)
     - Add new model encoders to src/encoders.py (only if feasible candidates found)
     - Create experiment configs for new models (all datasets)
     - Test thoroughly on 2-3 datasets before committing to full benchmark
     - If technical issues arise, document and skip that model
     - _Requirements: 12.4_
   
-  - [ ] 12.5 Run experiments for new models (if any added)
+  - [x] 12.5 Run experiments for new models (if any added)
     - Execute all dataset experiments for newly added models
     - Verify results are reasonable and comparable
     - Update results database with new model experiments

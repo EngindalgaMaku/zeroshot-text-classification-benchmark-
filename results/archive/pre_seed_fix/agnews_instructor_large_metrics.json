@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.851,
+  "macro_f1": 0.851002820088341,
+  "weighted_f1": 0.8508688172995138,
+  "macro_precision": 0.8541125393277033,
+  "macro_recall": 0.8526671572096942,
+  "classification_report": {
+    "0": {
+      "precision": 0.9111111111111111,
+      "recall": 0.7706766917293233,
+      "f1-score": 0.835030549898167,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.9375,
+      "recall": 0.975609756097561,
+      "f1-score": 0.9561752988047809,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.8114754098360656,
+      "recall": 0.8048780487804879,
+      "f1-score": 0.8081632653061225,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.7563636363636363,
+      "recall": 0.859504132231405,
+      "f1-score": 0.804642166344294,
+      "support": 242.0
+    },
+    "accuracy": 0.851,
+    "macro avg": {
+      "precision": 0.8541125393277033,
+      "recall": 0.8526671572096942,
+      "f1-score": 0.851002820088341,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.8556435063752276,
+      "recall": 0.851,
+      "f1-score": 0.8508688172995138,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      205,
+      12,
+      24,
+      25
+    ],
+    [
+      1,
+      240,
+      4,
+      1
+    ],
+    [
+      5,
+      2,
+      198,
+      41
+    ],
+    [
+      14,
+      2,
+      18,
+      208
+    ]
+  ],
+  "mean_confidence": 0.8836080564260482,
+  "std_confidence": 0.016798187078247758,
+  "mean_confidence_correct": 0.8840923892064885,
+  "mean_confidence_incorrect": 0.8808418336330645,
+  "experiment_name": "agnews_instructor_large",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9185543060302734
+    },
+    {
+      "text": "US economic growth slips to 2.8 Annual US economic growth fell to 2.8 in the second quarter of 2004, marking a slowdown from the 3 estimated a month ago.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.918511152267456
+    },
+    {
+      "text": "Internet Pharmacies: Good or Bad? An investigation into the practice of Internet Pharmacies and how they are changing the U.S. pharmaceutical industry.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.913504958152771
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.910720705986023
+    },
+    {
+      "text": "King Pong Draws Fans Spike TV's Video Game Awards Show attracts big-name celebrities and bands but gives the fans the votes.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.910195529460907
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9100202918052673
+    },
+    {
+      "text": "I.B.M. Sought a China Partnership, Not Just a Sale Inside I.B.M., the issue of whether to stay in the personal computer business has been debated for a decade. The issue was put to rest last week.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9090439081192017
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9076817631721497
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9073848724365234
+    },
+    {
+      "text": "Movies in a snap: Netflix and TiVo discuss downloads Bee Staff Writer. The high-tech ground is shifting underfoot again, amid rumblings of a new Silicon Valley alliance that would let owners of TiVo I",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9068644046783447
+    },
+    {
+      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9064388871192932
+    },
+    {
+      "text": "ASEAN moves closer to single market with  #39;road map #39;, global trade &lt;b&gt;...&lt;/b&gt; JAKARTA : ASEAN finance ministers ended a meeting which saw Southeast Asia edge closer to a Europe-styl",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9060851335525513
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9054919481277466
+    },
+    {
+      "text": "IBM, LG Electronics to End Joint Venture International Business Machines Corp. and LG Electronics Inc. will end an eight-year alliance that helped expand the US computer maker #39;s presence in the bo",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9048594832420349
+    },
+    {
+      "text": "Texas Instruments Plans Investment US-based chipmaker Texas Instruments Inc. said it will spend about US\\$300 million (euro 240 million) over the next three years to increase output at its facilities ",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9046062231063843
+    },
+    {
+      "text": "AOL's Viral Marketing America Online will now provide gratis antivirus protection to its subscribers.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9041285514831543
+    },
+    {
+      "text": "Taking Advantage of the Terminally Stupid Would you pay \\$4 for something that, at best, is worth a dime? Concord Communications shareholders would.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9038174152374268
+    },
+    {
+      "text": "Stocks Climb on Drop in Consumer Prices NEW YORK - Stocks rose for a second straight session Tuesday as a drop in consumer prices allowed investors to put aside worries about inflation, at least for t",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9029251337051392
+    },
+    {
+      "text": "Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.901725172996521
+    },
+    {
+      "text": "Hasbro's No Conehead Its Saturday Night Live version of \"Trivial Pursuit\" is good strategy for staying ahead of age compression.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8998433351516724
+    }
+  ]
+}

@@ -182,6 +182,7 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
     metrics["label_mode"] = label_mode
     metrics["pipeline_mode"] = pipeline_mode
     metrics["num_samples"] = len(texts)
+    metrics["random_seed"] = 42  # Document seed for reproducibility
     metrics[model_type] = model_name
     if pipeline_mode == "biencoder" and biencoder_task is not None:
         metrics["biencoder_task"] = biencoder_task

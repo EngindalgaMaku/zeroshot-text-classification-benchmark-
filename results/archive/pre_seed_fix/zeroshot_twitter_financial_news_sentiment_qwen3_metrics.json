@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.7005,
+  "macro_f1": 0.6461478432835942,
+  "weighted_f1": 0.7042902759455907,
+  "macro_precision": 0.6350750526217827,
+  "macro_recall": 0.6600076950010451,
+  "classification_report": {
+    "0": {
+      "precision": 0.5632530120481928,
+      "recall": 0.6171617161716172,
+      "f1-score": 0.5889763779527559,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.5462555066079295,
+      "recall": 0.6169154228855721,
+      "f1-score": 0.5794392523364486,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.7957166392092258,
+      "recall": 0.745945945945946,
+      "f1-score": 0.7700278995615784,
+      "support": 1295.0
+    },
+    "accuracy": 0.7005,
+    "macro avg": {
+      "precision": 0.6350750526217827,
+      "recall": 0.6600076950010451,
+      "f1-score": 0.6461478432835942,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.7103567120414688,
+      "recall": 0.7005,
+      "f1-score": 0.7042902759455907,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      187,
+      7,
+      109
+    ],
+    [
+      15,
+      248,
+      139
+    ],
+    [
+      130,
+      199,
+      966
+    ]
+  ],
+  "mean_confidence": 0.3491329352259636,
+  "std_confidence": 0.06249825874738787,
+  "mean_confidence_correct": 0.35515893140620286,
+  "mean_confidence_incorrect": 0.3350387438261051,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_qwen3",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "Qwen/Qwen3-Embedding-8B",
+  "top_errors": [
+    {
+      "text": "Bulletproof stock market shakes off negative trade headlines and keeps marching to records",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.5406709313392639
+    },
+    {
+      "text": "Why the markets 'look clean' into 2019 year-end",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.5306038856506348
+    },
+    {
+      "text": "$TALKX: Market Briefing: Market still riding hope of COVID-19 plateauing https://t.co/P3bUqinQVx",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.5063531398773193
+    },
+    {
+      "text": "Central bank 'collateral damage' is skewing financial markets, one economist says https://t.co/sshC7mEqzk",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5039726495742798
+    },
+    {
+      "text": "Stock Market Heads Off A Correction – For Now.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.4977334141731262
+    },
+    {
+      "text": "Stock Market Update: Futures slip lower following trade tweet from CNBC reporter",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.4940345883369446
+    },
+    {
+      "text": "FOMO time we project SP 500 target 4000 before end of Bull Market",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.4814966917037964
+    },
+    {
+      "text": "Asian shares advance after Fed keeps interest rates steady",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.47880133986473083
+    },
+    {
+      "text": "The days of extraordinary market returns are over, says BlackRock https://t.co/gJu52JoL8J",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.47804519534111023
+    },
+    {
+      "text": "No, The Fed Won't \"Save The Market\" - Here's Why  https://t.co/Ibq99qWSFz",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.47451135516166687
+    },
+    {
+      "text": "China central bank warns high financial risks amid rising economic headwinds - Reuters https://t.co/p26nFHoGg5",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.46865010261535645
+    },
+    {
+      "text": "S&P 500, Nasdaq see closing highs; Slack halted for coming news https://t.co/cMizm4ImP6 https://t.co/vlKQ67OJDo",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.4659479558467865
+    },
+    {
+      "text": "GE upgraded from Sell by longtime bear",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.46009618043899536
+    },
+    {
+      "text": "Mitek bull calls pullback 'an overreaction'",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.45984455943107605
+    },
+    {
+      "text": "$SUMRX: Overnight Summary -- World markets extending gains overnight https://t.co/pjuCZNd5jf",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.45852237939834595
+    },
+    {
+      "text": "Asia markets mostly fall as China's trade data gets delayed - CNBC",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.4572921395301819
+    },
+    {
+      "text": "Stock Market Update: Stock market drifts in record territory",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.4568258821964264
+    },
+    {
+      "text": "These Stocks Could Bounce High in January and Beyond",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.4495629668235779
+    },
+    {
+      "text": "Dow falls 0.5%;S&P 500 falls 0.3% at Friday's open",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.44830965995788574
+    },
+    {
+      "text": "Can $MSFT head higher?  https://t.co/V5l6NINYrr",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.44656872749328613
+    }
+  ]
+}

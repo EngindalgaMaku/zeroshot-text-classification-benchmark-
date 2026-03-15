@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.8167105263157894,
+  "macro_f1": 0.8143655974116213,
+  "weighted_f1": 0.8143655974116212,
+  "macro_precision": 0.8164716158068255,
+  "macro_recall": 0.8167105263157896,
+  "classification_report": {
+    "0": {
+      "precision": 0.7716460513796385,
+      "recall": 0.8536842105263158,
+      "f1-score": 0.8105947026486756,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.8971456692913385,
+      "recall": 0.9594736842105264,
+      "f1-score": 0.927263479145473,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.777659005879209,
+      "recall": 0.7657894736842106,
+      "f1-score": 0.771678599840891,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.819435736677116,
+      "recall": 0.6878947368421052,
+      "f1-score": 0.7479256080114449,
+      "support": 1900.0
+    },
+    "accuracy": 0.8167105263157894,
+    "macro avg": {
+      "precision": 0.8164716158068255,
+      "recall": 0.8167105263157896,
+      "f1-score": 0.8143655974116213,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8164716158068255,
+      "recall": 0.8167105263157894,
+      "f1-score": 0.8143655974116212,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1622,
+      109,
+      120,
+      49
+    ],
+    [
+      41,
+      1823,
+      31,
+      5
+    ],
+    [
+      181,
+      30,
+      1455,
+      234
+    ],
+    [
+      258,
+      70,
+      265,
+      1307
+    ]
+  ],
+  "mean_confidence": 0.17785930226624355,
+  "std_confidence": 0.08413189981513952,
+  "mean_confidence_correct": 0.18159263003850468,
+  "mean_confidence_incorrect": 0.16122415116615393,
+  "experiment_name": "mpnet_full",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.46035975217819214
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.4557957649230957
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.45218542218208313
+    },
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.4306268095970154
+    },
+    {
+      "text": "U.S. Men's Hoops Team Finally Gets a Rout ATHENS, Greece - The Americans got a taste of what it was like in the good ol' days. They finally played an opponent they were able to beat easily, routing An",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.426283061504364
+    },
+    {
+      "text": "Dream Team Leads Spain 44-42 at Halftime ATHENS, Greece - As expected, the U.S. men's basketball team had its hands full in a quarterfinal game against Spain on Thursday...",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.41945284605026245
+    },
+    {
+      "text": "Research Is Definitely in Motion The Blackberry wireless device maker is straining to exceed expectations.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4097713530063629
+    },
+    {
+      "text": "U.S. Softball Team Wins, Closes in on Gold ATHENS, Greece - Right now, the Americans aren't just a Dream Team - they're more like the Perfect Team. Lisa Fernandez pitched a three-hitter Sunday and Cry",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4052690863609314
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3973020911216736
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.39197373390197754
+    },
+    {
+      "text": "Turkey eyes \\$15 billion investment years ANKARA: Turkey is hoping to attract \\$15 billion of foreign investment between 2005 and 2007 through reforms designed to overhaul its economy and ease the cou",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.3878665268421173
+    },
+    {
+      "text": "STOCKS  amp; BONDS Technology Issues Lead Rally as the 4th Quarter &lt;b&gt;...&lt;/b&gt; tocks rose yesterday amid heavy trading on the first day of the fourth quarter as PeopleSoft and chip-related ",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.381294846534729
+    },
+    {
+      "text": "Crunch Time for Biotech Companies Washington area biotech companies will face pivotal moments this year, finding out whether key products work before money dries up, fending off competition from bigge",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.37769830226898193
+    },
+    {
+      "text": "EU wants US to clear muddy waters in WTO row Brussles - EU trade chief Peter Mandelson wants clarification of the US stance in threatened WTO action over aid to Airbus, his spokeswoman said Friday aft",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.377512127161026
+    },
+    {
+      "text": "The Bahamas - the real medal winner of the Athens Olympics A different way of calculating the medal standings brings some interesting results.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.37699654698371887
+    },
+    {
+      "text": "India desperate for jobs, infrastructure despite economic boom (AFP) AFP - Despite India's economic boom in software and outsourcing services, economists have warned the government needs more reforms ",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.3764210045337677
+    },
+    {
+      "text": "Opportunity Rings (Forbes.com) Forbes.com - This past summer 25,000 consumers, aged 18 to 24, received short text messages on their cell phones alerting them to numbers on 225 million bottle caps of S",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.37476232647895813
+    },
+    {
+      "text": "Toughest athlete is female and unknown You probably haven't heard about one of the toughest endurance sports around: the deca-ironman. That's 38 km swimming, immediately followed by an 1800 km bicycle",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.37023022770881653
+    },
+    {
+      "text": "Internet Emerging As Potent Terrorist Tool By THOMAS WAGNER     LONDON (AP) -- The images coming out of the latest hostage crisis in Iraq - capped by dramatic video of British captive Kenneth Bigley b",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.368302583694458
+    },
+    {
+      "text": "Sony, IBM, Toshiba Give Details of 'Cell' Chip (Reuters) Reuters - IBM , Sony Corp. (6758.T) and\\Toshiba Corp. (6502.T) on Monday revealed their plans for the\\powerful new \"Cell\" processor the three a",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3666793406009674
+    }
+  ]
+}

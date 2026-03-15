@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.8027631578947368,
+  "macro_f1": 0.7980407707234523,
+  "weighted_f1": 0.7980407707234523,
+  "macro_precision": 0.8036775998065264,
+  "macro_recall": 0.8027631578947368,
+  "classification_report": {
+    "0": {
+      "precision": 0.7852283770651117,
+      "recall": 0.8505263157894737,
+      "f1-score": 0.8165740272865083,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.8055913978494623,
+      "recall": 0.9857894736842105,
+      "f1-score": 0.8866272189349113,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.8063314711359404,
+      "recall": 0.6836842105263158,
+      "f1-score": 0.7399601253204215,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.8175591531755916,
+      "recall": 0.6910526315789474,
+      "f1-score": 0.749001711351968,
+      "support": 1900.0
+    },
+    "accuracy": 0.8027631578947368,
+    "macro avg": {
+      "precision": 0.8036775998065264,
+      "recall": 0.8027631578947368,
+      "f1-score": 0.7980407707234523,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8036775998065265,
+      "recall": 0.8027631578947368,
+      "f1-score": 0.7980407707234523,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1616,
+      123,
+      104,
+      57
+    ],
+    [
+      15,
+      1873,
+      10,
+      2
+    ],
+    [
+      221,
+      146,
+      1299,
+      234
+    ],
+    [
+      206,
+      183,
+      198,
+      1313
+    ]
+  ],
+  "mean_confidence": 0.5884822209728392,
+  "std_confidence": 0.05270152512720396,
+  "mean_confidence_correct": 0.5931178047224803,
+  "mean_confidence_incorrect": 0.5696151786402435,
+  "experiment_name": "jina_v5_full",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "biencoder": "jinaai/jina-embeddings-v5-text-nano",
+  "top_errors": [
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.7699127793312073
+    },
+    {
+      "text": "Quicken, Money Duel to a Draw (washingtonpost.com) washingtonpost.com - The Intuit-Microsoft battle for supremacy in the personal-finance software market is as long-running as some sports rivalries --",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.7563943266868591
+    },
+    {
+      "text": "Official: MLB to Move Expos to Washington WASHINGTON - Major League Baseball will announce Wednesday that Washington will be the new home of the Montreal Expos, bringing the national pastime back to t",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7536014318466187
+    },
+    {
+      "text": "U.S. Misses Cut in Olympic 100 Free ATHENS, Greece - Top American sprinters Jason Lezak and Ian Crocker missed the cut in the Olympic 100-meter freestyle preliminaries Tuesday, a stunning blow for a c",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7294087409973145
+    },
+    {
+      "text": "webcrawler: A9.com is cool NOW heres something else thats off the mind. Theres no more need to make mental or computer notes while searching the Internet.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7269545197486877
+    },
+    {
+      "text": "Whats New With Google News What's New With Google News\\\\Google News has added a whole bunch of features while we weren't lookin'. First off there's a new pull-down menu at the top of the page which ea",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.726089596748352
+    },
+    {
+      "text": "Stocks Close Higher on Brokerage Earnings NEW YORK - Stocks dashed higher Tuesday as investors welcomed strong earnings from financial services companies, upbeat economic data and some reassuring news",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.7255210876464844
+    },
+    {
+      "text": "Sports Court Hears Hamm Gold Medal Appeal LAUSANNE, Switzerland - Paul Hamm appeared before the sports world's highest court Monday to argue why he should he keep his Olympic gymnastics gold medal.   ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.717904806137085
+    },
+    {
+      "text": "ASEAN moves closer to single market with  #39;road map #39;, global trade &lt;b&gt;...&lt;/b&gt; JAKARTA : ASEAN finance ministers ended a meeting which saw Southeast Asia edge closer to a Europe-styl",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.7131556272506714
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7103885412216187
+    },
+    {
+      "text": "USC, Miami Top BCS Standings, Not Okla. Southern California took the top spot Monday in the season's first Bowl Championship Series standings, and surprisingly Miami is ahead of Oklahoma in a close ra",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7075812816619873
+    },
+    {
+      "text": "U.S. Softball Team Wins, Closes in on Gold ATHENS, Greece - Right now, the Americans aren't just a Dream Team - they're more like the Perfect Team. Lisa Fernandez pitched a three-hitter Sunday and Cry",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.70693439245224
+    },
+    {
+      "text": "On Google's Horizon ... Microsoft (washingtonpost.com) washingtonpost.com - Careful followers of search-engine giant Google surely took note this morning of reports that the company is reiterating an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.6981558799743652
+    },
+    {
+      "text": "Employment Picture Expected to Improve NEW YORK - A rash of job cuts - more than 10,000 layoffs just this week from a handful of companies - has created some gloom on the jobs front. But Friday's rele",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.6967158317565918
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.6952890753746033
+    },
+    {
+      "text": "Service packs, senators and civil liberties &lt;strong&gt;Letters:&lt;/strong&gt; The bulging postbag gives up its secrets",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.6949930787086487
+    },
+    {
+      "text": "Google #39;s New PC Search Tool Poses Risks NEW YORK Oct. 18, 2004 - People who use public or workplace computers for e-mail, instant messaging and Web searching have a new privacy risk to worry about",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6931771039962769
+    },
+    {
+      "text": "U.S. Men's Hoops Team Finally Gets a Rout ATHENS, Greece - The Americans got a taste of what it was like in the good ol' days. They finally played an opponent they were able to beat easily, routing An",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.6927511096000671
+    },
+    {
+      "text": "TheStreet.com May Be Up for Sale -- Report (Reuters) Reuters - TheStreet.com Inc. , the\\financial news and commentary Web site, may be up for sale,\\according to a report in Business Week, sparking a 7",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.6895402669906616
+    },
+    {
+      "text": "Collaboration suite to help secure tonight's Bush-Kerry debate The U.S. Secret Service and a throng of police and emergency management officials in Missouri will for the first time use a customized Mi",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.6884967088699341
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.7830263157894737,
+  "macro_f1": 0.7776077668538244,
+  "weighted_f1": 0.7776077668538244,
+  "macro_precision": 0.7995410312392731,
+  "macro_recall": 0.7830263157894737,
+  "classification_report": {
+    "0": {
+      "precision": 0.8867132867132868,
+      "recall": 0.6673684210526316,
+      "f1-score": 0.7615615615615615,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.7641778865769074,
+      "recall": 0.9857894736842105,
+      "f1-score": 0.8609515054010572,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.701505376344086,
+      "recall": 0.858421052631579,
+      "f1-score": 0.7720710059171597,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.8457675753228121,
+      "recall": 0.6205263157894737,
+      "f1-score": 0.7158469945355191,
+      "support": 1900.0
+    },
+    "accuracy": 0.7830263157894737,
+    "macro avg": {
+      "precision": 0.7995410312392731,
+      "recall": 0.7830263157894737,
+      "f1-score": 0.7776077668538244,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.7995410312392731,
+      "recall": 0.7830263157894737,
+      "f1-score": 0.7776077668538244,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1268,
+      313,
+      276,
+      43
+    ],
+    [
+      8,
+      1873,
+      18,
+      1
+    ],
+    [
+      47,
+      51,
+      1631,
+      171
+    ],
+    [
+      107,
+      214,
+      400,
+      1179
+    ]
+  ],
+  "mean_confidence": 0.4414283426458898,
+  "std_confidence": 0.046173336761942116,
+  "mean_confidence_correct": 0.4452784331861293,
+  "mean_confidence_incorrect": 0.42753392857374606,
+  "experiment_name": "bge_full",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "biencoder": "BAAI/bge-m3",
+  "top_errors": [
+    {
+      "text": "Google #39;s New PC Search Tool Poses Risks NEW YORK Oct. 18, 2004 - People who use public or workplace computers for e-mail, instant messaging and Web searching have a new privacy risk to worry about",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5958595275878906
+    },
+    {
+      "text": "Ofcom's review of telecoms due this week &lt;strong&gt;Analysis&lt;/strong&gt; That'll be the circus in town, then",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5855551958084106
+    },
+    {
+      "text": "Stocks Close Higher on Brokerage Earnings NEW YORK - Stocks dashed higher Tuesday as investors welcomed strong earnings from financial services companies, upbeat economic data and some reassuring news",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5801267027854919
+    },
+    {
+      "text": "HP to tempt holiday shoppers with sights and sounds The computer-hardware giant, best known for products such as PCs and printers, on Friday laid out its plan to become a brand-name in consumer electr",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5794495344161987
+    },
+    {
+      "text": "Dream Team Leads Spain 44-42 at Halftime ATHENS, Greece - As expected, the U.S. men's basketball team had its hands full in a quarterfinal game against Spain on Thursday...",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.575494647026062
+    },
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.574213981628418
+    },
+    {
+      "text": "TheStreet.com May Be Up for Sale -- Report (Reuters) Reuters - TheStreet.com Inc. , the\\financial news and commentary Web site, may be up for sale,\\according to a report in Business Week, sparking a 7",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5680016875267029
+    },
+    {
+      "text": "Google puts desktop search privacy up front Google has announced a new desktop search application that enables users to search their e-mail, files, web history, and chats. Perhaps learning from previo",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5596742033958435
+    },
+    {
+      "text": "Sun makes run for supercomputing title With the economy slowly turning up, upgrading hardware has been on businesses radar in the past 12 months as their number two priority.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5568641424179077
+    },
+    {
+      "text": "Washington Contractors' Sales Increase Companies that provide federal agencies with network integration and payroll accounting technologies are benefiting from a government trying to bolster its defen",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.555767834186554
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5534566640853882
+    },
+    {
+      "text": "Icing call Out of money, out of patience, out of time, and for the foreseeable future, out of business.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.5517410635948181
+    },
+    {
+      "text": "Feds kick off digital TV consumer campaign WASHINGTON - It #39;s one of the biggest technical changes in television since color TV: the digital transition. And because many Americans remain in the dar",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5462198853492737
+    },
+    {
+      "text": "Groups Petition U.S. on China Policies (AP) AP - A group of industry, farm and labor groups, seeking to put pressure on the Bush administration before the presidential election, petitioned the governm",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5445801615715027
+    },
+    {
+      "text": "Quicken, Money Duel to a Draw (washingtonpost.com) washingtonpost.com - The Intuit-Microsoft battle for supremacy in the personal-finance software market is as long-running as some sports rivalries --",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5437738299369812
+    },
+    {
+      "text": "Tech Firms Keep Riding Chinese Tiger Microsoft watched a software deal with China go bust less than two weeks into the contract. And Beijing is pushing its government IT officials to buy local. But Ch",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.542144238948822
+    },
+    {
+      "text": "Clicking on Profits The latest data from the US Department of Commerce further bolsters what we have all suspected: E-commerce sales are increasing. Not only might one suspect that consumer confidence",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5404922962188721
+    },
+    {
+      "text": "Dell, AOL team up in schools initiative ROUND ROCK, Texas -- Dell Inc. and America Online Inc. announced a partnership Monday to provide 5,000 low-income students with free refurbished personal comput",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5396193265914917
+    },
+    {
+      "text": "Wi-Fi successor is called high-speed hype -- for now SAN FRANCISCO -- At virtually every turn, Intel Corp. executives are heaping praise on an emerging long-range wireless technology known as WiMAX, w",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.538384199142456
+    },
+    {
+      "text": "U.S. Softball Team Wins, Closes in on Gold ATHENS, Greece - Right now, the Americans aren't just a Dream Team - they're more like the Perfect Team. Lisa Fernandez pitched a three-hitter Sunday and Cry",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.5375566482543945
+    }
+  ]
+}

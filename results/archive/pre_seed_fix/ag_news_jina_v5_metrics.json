@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.804,
+  "macro_f1": 0.7986825371351141,
+  "weighted_f1": 0.7991557152349508,
+  "macro_precision": 0.8043102882531439,
+  "macro_recall": 0.8030398157719131,
+  "classification_report": {
+    "0": {
+      "precision": 0.7773749093546047,
+      "recall": 0.8541832669322709,
+      "f1-score": 0.8139711465451784,
+      "support": 1255.0
+    },
+    "1": {
+      "precision": 0.8198553583168968,
+      "recall": 0.9873317498020586,
+      "f1-score": 0.8958333333333334,
+      "support": 1263.0
+    },
+    "2": {
+      "precision": 0.809433962264151,
+      "recall": 0.6875,
+      "f1-score": 0.7435008665511266,
+      "support": 1248.0
+    },
+    "3": {
+      "precision": 0.8105769230769231,
+      "recall": 0.6831442463533225,
+      "f1-score": 0.741424802110818,
+      "support": 1234.0
+    },
+    "accuracy": 0.804,
+    "macro avg": {
+      "precision": 0.8043102882531439,
+      "recall": 0.8030398157719131,
+      "f1-score": 0.7986825371351141,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.8043016673553706,
+      "recall": 0.804,
+      "f1-score": 0.7991557152349508,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1072,
+      74,
+      71,
+      38
+    ],
+    [
+      9,
+      1247,
+      6,
+      1
+    ],
+    [
+      149,
+      83,
+      858,
+      158
+    ],
+    [
+      149,
+      117,
+      125,
+      843
+    ]
+  ],
+  "mean_confidence": 0.5890149664282799,
+  "std_confidence": 0.05257277332602637,
+  "mean_confidence_correct": 0.5934837632437251,
+  "mean_confidence_incorrect": 0.5706837794914538,
+  "experiment_name": "ag_news_jina_v5",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "jinaai/jina-embeddings-v5-text-nano",
+  "top_errors": [
+    {
+      "text": "Quicken, Money Duel to a Draw (washingtonpost.com) washingtonpost.com - The Intuit-Microsoft battle for supremacy in the personal-finance software market is as long-running as some sports rivalries --",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.755784273147583
+    },
+    {
+      "text": "Official: MLB to Move Expos to Washington WASHINGTON - Major League Baseball will announce Wednesday that Washington will be the new home of the Montreal Expos, bringing the national pastime back to t",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.754591703414917
+    },
+    {
+      "text": "U.S. Misses Cut in Olympic 100 Free ATHENS, Greece - Top American sprinters Jason Lezak and Ian Crocker missed the cut in the Olympic 100-meter freestyle preliminaries Tuesday, a stunning blow for a c",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7294327020645142
+    },
+    {
+      "text": "webcrawler: A9.com is cool NOW heres something else thats off the mind. Theres no more need to make mental or computer notes while searching the Internet.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7269644141197205
+    },
+    {
+      "text": "Whats New With Google News What's New With Google News\\\\Google News has added a whole bunch of features while we weren't lookin'. First off there's a new pull-down menu at the top of the page which ea",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7253848314285278
+    },
+    {
+      "text": "Stocks Close Higher on Brokerage Earnings NEW YORK - Stocks dashed higher Tuesday as investors welcomed strong earnings from financial services companies, upbeat economic data and some reassuring news",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.725250244140625
+    },
+    {
+      "text": "ASEAN moves closer to single market with  #39;road map #39;, global trade &lt;b&gt;...&lt;/b&gt; JAKARTA : ASEAN finance ministers ended a meeting which saw Southeast Asia edge closer to a Europe-styl",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.7149150371551514
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.710003674030304
+    },
+    {
+      "text": "U.S. Softball Team Wins, Closes in on Gold ATHENS, Greece - Right now, the Americans aren't just a Dream Team - they're more like the Perfect Team. Lisa Fernandez pitched a three-hitter Sunday and Cry",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7065765261650085
+    },
+    {
+      "text": "USC, Miami Top BCS Standings, Not Okla. Southern California took the top spot Monday in the season's first Bowl Championship Series standings, and surprisingly Miami is ahead of Oklahoma in a close ra",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7064326405525208
+    },
+    {
+      "text": "Google #39;s New PC Search Tool Poses Risks NEW YORK Oct. 18, 2004 - People who use public or workplace computers for e-mail, instant messaging and Web searching have a new privacy risk to worry about",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6927127838134766
+    },
+    {
+      "text": "Collaboration suite to help secure tonight's Bush-Kerry debate The U.S. Secret Service and a throng of police and emergency management officials in Missouri will for the first time use a customized Mi",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.6881584525108337
+    },
+    {
+      "text": "TheStreet.com May Be Up for Sale -- Report (Reuters) Reuters - TheStreet.com Inc. , the\\financial news and commentary Web site, may be up for sale,\\according to a report in Business Week, sparking a 7",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.6859278082847595
+    },
+    {
+      "text": "HP to tempt holiday shoppers with sights and sounds The computer-hardware giant, best known for products such as PCs and printers, on Friday laid out its plan to become a brand-name in consumer electr",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6840273141860962
+    },
+    {
+      "text": "Dodgers Nip Giants 3-2 in Crucial Series SAN FRANCISCO - Shawn Green can sit out Saturday knowing he was a huge help to the Dodgers during their crucial series against San Francisco. Green hit a two-r",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.682974636554718
+    },
+    {
+      "text": "Feds kick off digital TV consumer campaign WASHINGTON - It #39;s one of the biggest technical changes in television since color TV: the digital transition. And because many Americans remain in the dar",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6797915101051331
+    },
+    {
+      "text": "Data revision shows Japan's economy grew slightly in July-September (Canadian Press) Canadian Press - TOKYO (AP) - Japan's economy barely grew during the quarter ending Sept. 30 and in the April-June ",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.6793425679206848
+    },
+    {
+      "text": "Collingwood anchors England (AFP) AFP - Paul Collingwood's unbeaten 80 took England to 299 for seven against Zimbabwe in their opening Champions Trophy Pool D match at Edgbaston here.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.6782816648483276
+    },
+    {
+      "text": "Oil Edges Down, Microsoft Boosts Techs  NEW YORK (Reuters) - Oil prices touched 2-month lows near  \\$45 a barrel on Monday before taking back most of their losses,  but the downward trend knocked ener",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6749739646911621
+    },
+    {
+      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.6747698783874512
+    }
+  ]
+}

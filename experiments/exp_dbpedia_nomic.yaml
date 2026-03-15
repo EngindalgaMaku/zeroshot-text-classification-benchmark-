@@ -1,8 +1,8 @@
-experiment_name: banking77_snowflake_arctic
+experiment_name: dbpedia_14_nomic_embed_v2_moe
 dataset:
-  name: banking77
+  name: fancyzhx/dbpedia_14
   split: test
-  text_column: text
+  text_column: content
   label_column: label
   max_samples: 1000
 task:
@@ -12,7 +12,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: Snowflake/snowflake-arctic-embed-m
+    name: nomic-ai/nomic-embed-text-v2-moe
   reranker: null
 pipeline:
   mode: biencoder

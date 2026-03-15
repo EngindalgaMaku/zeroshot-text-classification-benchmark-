@@ -1,0 +1,464 @@
+{
+  "accuracy": 0.82,
+  "macro_f1": 0.8120888129067614,
+  "weighted_f1": 0.8129882254969352,
+  "macro_precision": 0.8236561370817995,
+  "macro_recall": 0.8217845600510933,
+  "classification_report": {
+    "0": {
+      "precision": 0.9305555555555556,
+      "recall": 0.5140664961636828,
+      "f1-score": 0.6622734761120264,
+      "support": 391.0
+    },
+    "1": {
+      "precision": 0.8114942528735632,
+      "recall": 0.9751381215469613,
+      "f1-score": 0.8858218318695107,
+      "support": 362.0
+    },
+    "2": {
+      "precision": 0.8013468013468014,
+      "recall": 0.6556473829201102,
+      "f1-score": 0.7212121212121212,
+      "support": 363.0
+    },
+    "3": {
+      "precision": 0.8772845953002611,
+      "recall": 0.9970326409495549,
+      "f1-score": 0.9333333333333333,
+      "support": 337.0
+    },
+    "4": {
+      "precision": 0.910958904109589,
+      "recall": 0.95,
+      "f1-score": 0.9300699300699301,
+      "support": 420.0
+    },
+    "5": {
+      "precision": 0.69921875,
+      "recall": 0.5114285714285715,
+      "f1-score": 0.5907590759075908,
+      "support": 350.0
+    },
+    "6": {
+      "precision": 0.595,
+      "recall": 0.7125748502994012,
+      "f1-score": 0.6485013623978202,
+      "support": 334.0
+    },
+    "7": {
+      "precision": 0.9014925373134328,
+      "recall": 0.8435754189944135,
+      "f1-score": 0.8715728715728716,
+      "support": 358.0
+    },
+    "8": {
+      "precision": 0.7264150943396226,
+      "recall": 0.9967637540453075,
+      "f1-score": 0.8403819918144612,
+      "support": 309.0
+    },
+    "9": {
+      "precision": 0.9347826086956522,
+      "recall": 0.7435158501440923,
+      "f1-score": 0.8282504012841091,
+      "support": 347.0
+    },
+    "10": {
+      "precision": 0.8181818181818182,
+      "recall": 0.975609756097561,
+      "f1-score": 0.8899876390605687,
+      "support": 369.0
+    },
+    "11": {
+      "precision": 0.8174807197943444,
+      "recall": 0.9695121951219512,
+      "f1-score": 0.8870292887029289,
+      "support": 328.0
+    },
+    "12": {
+      "precision": 0.8916876574307305,
+      "recall": 0.9389920424403183,
+      "f1-score": 0.9147286821705426,
+      "support": 377.0
+    },
+    "13": {
+      "precision": 0.8152866242038217,
+      "recall": 0.7211267605633803,
+      "f1-score": 0.7653213751868461,
+      "support": 355.0
+    },
+    "accuracy": 0.82,
+    "macro avg": {
+      "precision": 0.8236561370817995,
+      "recall": 0.8217845600510933,
+      "f1-score": 0.8120888129067614,
+      "support": 5000.0
+    },
+    "weighted avg": {
+      "precision": 0.8274806329330957,
+      "recall": 0.82,
+      "f1-score": 0.8129882254969352,
+      "support": 5000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      201,
+      16,
+      18,
+      12,
+      6,
+      56,
+      22,
+      3,
+      9,
+      2,
+      0,
+      24,
+      11,
+      11
+    ],
+    [
+      0,
+      353,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      3,
+      0,
+      0,
+      0,
+      2,
+      1
+    ],
+    [
+      0,
+      10,
+      238,
+      11,
+      21,
+      0,
+      2,
+      0,
+      4,
+      0,
+      0,
+      36,
+      11,
+      30
+    ],
+    [
+      0,
+      1,
+      0,
+      336,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      9,
+      3,
+      7,
+      399,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      6,
+      0,
+      6,
+      4,
+      179,
+      134,
+      2,
+      5,
+      3,
+      1,
+      0,
+      3,
+      4
+    ],
+    [
+      1,
+      20,
+      10,
+      0,
+      1,
+      7,
+      238,
+      12,
+      40,
+      1,
+      1,
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      5,
+      0,
+      302,
+      36,
+      3,
+      10,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      308,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      5,
+      1,
+      1,
+      2,
+      1,
+      6,
+      7,
+      258,
+      63,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      360,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      6,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      318,
+      2,
+      1
+    ],
+    [
+      0,
+      1,
+      3,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      1,
+      4,
+      354,
+      8
+    ],
+    [
+      9,
+      17,
+      12,
+      6,
+      6,
+      6,
+      2,
+      1,
+      12,
+      7,
+      4,
+      6,
+      11,
+      256
+    ]
+  ],
+  "mean_confidence": 0.7562150898456573,
+  "std_confidence": 0.014055844361937398,
+  "mean_confidence_correct": 0.7569937806013154,
+  "mean_confidence_incorrect": 0.7526677208476596,
+  "experiment_name": "dbpedia_14_e5",
+  "dataset": "dbpedia_14",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 5000,
+  "biencoder": "intfloat/multilingual-e5-large",
+  "top_errors": [
+    {
+      "text": " Bird migration is the regular seasonal movement often north and south along a flyway between breeding and wintering grounds undertaken by many species of birds. Migration which carries high costs in ",
+      "true_label": 9,
+      "pred_label": 5,
+      "confidence": 0.8032078742980957
+    },
+    {
+      "text": " Academia de Talentos is a Portuguese online newspaper dedicated to youth-level football.",
+      "true_label": 13,
+      "pred_label": 1,
+      "confidence": 0.8012109994888306
+    },
+    {
+      "text": " Claycord.com News & Talk is an independent news blog.",
+      "true_label": 0,
+      "pred_label": 4,
+      "confidence": 0.7967325448989868
+    },
+    {
+      "text": " The Press is the local daily paper for a substantial area of North and East Yorkshire based on the city of York.",
+      "true_label": 13,
+      "pred_label": 8,
+      "confidence": 0.7954506278038025
+    },
+    {
+      "text": " The Arts Marketing Association (AMA) is a professional development body for arts marketers and audience development professionals.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.7943345904350281
+    },
+    {
+      "text": " The Education of Robert Nifkin is a 1998 novel written for young adults by United States author Daniel Pinkwater. It is set during the 1950s in Chicago and is written in the format of a college appli",
+      "true_label": 13,
+      "pred_label": 1,
+      "confidence": 0.7932607531547546
+    },
+    {
+      "text": " Maharashtra Knowledge Corporation Limited is a public limited company promoted by the Department of Higher and Technical Education Government of Maharashtra India.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7928377389907837
+    },
+    {
+      "text": " The Get Schooled Foundation (also Get Schooled or getschooled.com) is a non-profit organization dedicated to using the power of media technology and popular culture to motivate and inspire young peop",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7926322221755981
+    },
+    {
+      "text": " John R.",
+      "true_label": 4,
+      "pred_label": 3,
+      "confidence": 0.7916931509971619
+    },
+    {
+      "text": " Space Coast Area Transit is the municipal bus system serving the Brevard County Florida area.",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.791557788848877
+    },
+    {
+      "text": " Société de transport du Saguenay (STS) is the public transport company in Saguenay Quebec Canada formerly the Corporation intermunicipale de transport du Saguenay (CITS). They operate from three main",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.7898433208465576
+    },
+    {
+      "text": " Hydrobiologia: The International Journal of Aquatic Sciences is a scientific journal specialising in hydrobiology including limnology and oceanography systematics of aquatic organisms and aquatic eco",
+      "true_label": 13,
+      "pred_label": 9,
+      "confidence": 0.7889245748519897
+    },
+    {
+      "text": " Scholastic Corporation is an American book publishing company known for publishing educational materials for schools teachers parents and children and selling and distributing them by mail order via ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7885186076164246
+    },
+    {
+      "text": " Summon (formerly InstantCab) is a mobile application that matches customers needing transportation with a taxi driver or a personal driver who is willing to provide a ride. It is part of a group of T",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.7867431640625
+    },
+    {
+      "text": " SMRT Buses (originally Trans Island Bus Services (TIBS)) is a public bus transport operator in Singapore. Singapore has a duopoly transport system in which SMRT's only competitor is SBS Transit which",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.7858902215957642
+    },
+    {
+      "text": " Blumhouse Productions is founded and run by Jason Blum. Blumhouse produces micro and low-budget genre movies like the Paranormal Activity Insidious and Sinister franchises.",
+      "true_label": 0,
+      "pred_label": 12,
+      "confidence": 0.7855958938598633
+    },
+    {
+      "text": " The National Association for Special Educational Needs (NASEN) is an education and development charitable organisation based in the United Kingdom which aims to promote the education training advance",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.7852582931518555
+    },
+    {
+      "text": " Bachelor of Film and Television (usually BF&TV or BFTV) is an undergraduate bachelor's degree awarded to students who have studied elements of Filmmaking and Television production at a three-year acc",
+      "true_label": 1,
+      "pred_label": 12,
+      "confidence": 0.7847632169723511
+    },
+    {
+      "text": " The Fort Worth Transportation Authority (popularly known as The T) is a transit agency located in Fort Worth Texas.The T primarily operates Fort Worth's bus system which also serves several Fort Wort",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.7844125032424927
+    },
+    {
+      "text": " The Treatment Trap - How the Overuse of Medical Care is Wrecking your Health and what you can do to Prevent it is a 2010 book by Rosemary Gibson and Janardan Prasad Singh about unnecessary health car",
+      "true_label": 13,
+      "pred_label": 5,
+      "confidence": 0.7833808660507202
+    }
+  ]
+}

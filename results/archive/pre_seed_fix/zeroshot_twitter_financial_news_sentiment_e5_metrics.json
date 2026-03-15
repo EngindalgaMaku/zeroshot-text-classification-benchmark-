@@ -1,0 +1,189 @@
+{
+  "accuracy": 0.4825,
+  "macro_f1": 0.4971061723670686,
+  "weighted_f1": 0.471558853907841,
+  "macro_precision": 0.5380513251376435,
+  "macro_recall": 0.6308429183262936,
+  "classification_report": {
+    "0": {
+      "precision": 0.4603854389721627,
+      "recall": 0.7095709570957096,
+      "f1-score": 0.5584415584415584,
+      "support": 303.0
+    },
+    "1": {
+      "precision": 0.3365200764818356,
+      "recall": 0.8756218905472637,
+      "f1-score": 0.4861878453038674,
+      "support": 402.0
+    },
+    "2": {
+      "precision": 0.8172484599589322,
+      "recall": 0.3073359073359073,
+      "f1-score": 0.44668911335578004,
+      "support": 1295.0
+    },
+    "accuracy": 0.4825,
+    "macro avg": {
+      "precision": 0.5380513251376435,
+      "recall": 0.6308429183262936,
+      "f1-score": 0.4971061723670686,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.6665573072005402,
+      "recall": 0.4825,
+      "f1-score": 0.471558853907841,
+      "support": 2000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      215,
+      38,
+      50
+    ],
+    [
+      11,
+      352,
+      39
+    ],
+    [
+      241,
+      656,
+      398
+    ]
+  ],
+  "mean_confidence": 0.7828606430590153,
+  "std_confidence": 0.01894960980570889,
+  "mean_confidence_correct": 0.7866229813333621,
+  "mean_confidence_incorrect": 0.7793527624457355,
+  "experiment_name": "zeroshot_twitter_financial_news_sentiment_e5",
+  "dataset": "zeroshot/twitter-financial-news-sentiment",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 2000,
+  "biencoder": "intfloat/multilingual-e5-large",
+  "top_errors": [
+    {
+      "text": "The Markets Speak: The Lesson Has Been Harsh. https://t.co/89QRsOfn53 #business #stocks #stockmarket",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8346417546272278
+    },
+    {
+      "text": "Your future portfolio might be stocks, bonds, and a bit of basketball https://t.co/6Dmyj8s9aJ via @BW",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8312495946884155
+    },
+    {
+      "text": "Highlight: \"This year, you've had three things in your favor,\" @amundipioneer says about the high-yield bond market… https://t.co/ywPLWmNHWb",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8249773979187012
+    },
+    {
+      "text": "$ECONX: Federal Reserve announces extensive new measures to support the economy https://t.co/Gf6CfThO7r",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8235887885093689
+    },
+    {
+      "text": "Economy Week Ahead : U.S. Inflation and Chinese Manufacturing Data #EconomyWeekAhead #economy #MarketScreener… https://t.co/v3NCaFfyNy",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8233227133750916
+    },
+    {
+      "text": "A year in which the IPO market sobered up https://t.co/bgpuGK5XpJ",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8225855827331543
+    },
+    {
+      "text": "Week ahead on Wall Street #economy #MarketScreener https://t.co/gSr3hoOMQT https://t.co/sNnufj18DG",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8218328952789307
+    },
+    {
+      "text": "The Bank of England's Financial Policy Committee says it's prepared to take further action as needed to help the fi… https://t.co/nXFVWsODV3",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.820736289024353
+    },
+    {
+      "text": "By diversifying, you reduce the risk of any one company losing value and negatively affecting your portfolio.… https://t.co/fZZP7j69yG",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8206436634063721
+    },
+    {
+      "text": "10-year yield at 1.632%; 2-year yield at 1.450%; 30-year yield at 2.088%",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8205905556678772
+    },
+    {
+      "text": "#IPOs expected/Priced this week https://t.co/CUVLFGPBiP #IPOCalendar $CAN $PINE $SITM",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8205377459526062
+    },
+    {
+      "text": "A REIT Activist's New Positions In Q3. Continue reading: https://t.co/rv7TZZGn6g #business #finance #trading",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8195720911026001
+    },
+    {
+      "text": "Markets bet Fed is pushed to cut rates in coronavirus response https://t.co/4NDOpE6Kka https://t.co/8L2dYY8EYK",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8194490075111389
+    },
+    {
+      "text": "Greenhouse gas emissions in the U.S. are forecast to decline by a whopping 7.5% this year https://t.co/MjBXKkouHy",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8182681798934937
+    },
+    {
+      "text": "U.S. consumer credit increased at faster pace in February https://t.co/VvjV1lEi7x",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8176634907722473
+    },
+    {
+      "text": "Can $MSFT head higher?  https://t.co/V5l6NINYrr",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8170632123947144
+    },
+    {
+      "text": "Six Sigma Metals : Experienced Board Addition & Appendix 3X #SixSigmaMetals #Stock #MarketScreener… https://t.co/GzmaLJyhFQ",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.816391110420227
+    },
+    {
+      "text": "Should You Add These 3 Top-Performing Mutual Funds to Your Portfolio? - February 06, 2020",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8161956071853638
+    },
+    {
+      "text": "Germany: Consumption Is The New Export. Get more info on Seeking Alpha: https://t.co/uNytzzpWSE #trading #stocks #stockmarket",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8158531785011292
+    },
+    {
+      "text": "FOMO time we project SP 500 target 4000 before end of Bull Market",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.8158258199691772
+    }
+  ]
+}

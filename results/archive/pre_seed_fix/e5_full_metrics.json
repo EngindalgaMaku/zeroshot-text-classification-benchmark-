@@ -1,0 +1,204 @@
+{
+  "accuracy": 0.844078947368421,
+  "macro_f1": 0.8427268884051443,
+  "weighted_f1": 0.8427268884051443,
+  "macro_precision": 0.8453836371693366,
+  "macro_recall": 0.844078947368421,
+  "classification_report": {
+    "0": {
+      "precision": 0.9041514041514042,
+      "recall": 0.7794736842105263,
+      "f1-score": 0.8371961560203505,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.8771106941838649,
+      "recall": 0.9842105263157894,
+      "f1-score": 0.9275793650793651,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.8051529790660226,
+      "recall": 0.7894736842105263,
+      "f1-score": 0.7972362476747276,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.7951194712760549,
+      "recall": 0.8231578947368421,
+      "f1-score": 0.808895784846134,
+      "support": 1900.0
+    },
+    "accuracy": 0.844078947368421,
+    "macro avg": {
+      "precision": 0.8453836371693366,
+      "recall": 0.844078947368421,
+      "f1-score": 0.8427268884051443,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8453836371693366,
+      "recall": 0.844078947368421,
+      "f1-score": 0.8427268884051443,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1481,
+      160,
+      171,
+      88
+    ],
+    [
+      11,
+      1870,
+      18,
+      1
+    ],
+    [
+      51,
+      35,
+      1500,
+      314
+    ],
+    [
+      95,
+      67,
+      174,
+      1564
+    ]
+  ],
+  "mean_confidence": 0.7574561964916555,
+  "std_confidence": 0.016901795672881886,
+  "mean_confidence_correct": 0.7574184928289727,
+  "mean_confidence_incorrect": 0.7576603053491326,
+  "experiment_name": "e5_full",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "biencoder": "intfloat/multilingual-e5-large",
+  "top_errors": [
+    {
+      "text": "Ofcom's review of telecoms due this week &lt;strong&gt;Analysis&lt;/strong&gt; That'll be the circus in town, then",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8176426291465759
+    },
+    {
+      "text": "Biography of a Worm Can anything stop the next global virus outbreak? We follow the trail of one recent worm to see how the security system works--and whether it can be fixed.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.8155988454818726
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8144924640655518
+    },
+    {
+      "text": "Five Times for the Fed Plus, Intel's still straining, revenge of the nerds, and a \\$13 billion Christmas present?",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8115252256393433
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.8106392621994019
+    },
+    {
+      "text": "Icing call Out of money, out of patience, out of time, and for the foreseeable future, out of business.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.8089607357978821
+    },
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8065618276596069
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.8045430779457092
+    },
+    {
+      "text": "Lazarus-like virus hits computers A new computer virus is catching people out by coming back from the dead.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8041337728500366
+    },
+    {
+      "text": "Clicking on Profits The latest data from the US Department of Commerce further bolsters what we have all suspected: E-commerce sales are increasing. Not only might one suspect that consumer confidence",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8037060499191284
+    },
+    {
+      "text": "Research Is Definitely in Motion The Blackberry wireless device maker is straining to exceed expectations.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8018024563789368
+    },
+    {
+      "text": "US consumers unaware of spyware The findings come in a report from the newly formed Consumer Spyware Initiative, a joint effort by Dell and the non-profit Internet Education Foundation that aims to in",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8016126751899719
+    },
+    {
+      "text": "How to take the perfect penalty A sports psychologist says how footballers should prepare themselves for the high-pressure penalties.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.8015587329864502
+    },
+    {
+      "text": "Tech Firms Keep Riding Chinese Tiger Microsoft watched a software deal with China go bust less than two weeks into the contract. And Beijing is pushing its government IT officials to buy local. But Ch",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7983087301254272
+    },
+    {
+      "text": "Playing with the traumas of war Are games based on the Vietnam conflict making us immune to realities of history?",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7982523441314697
+    },
+    {
+      "text": "webcrawler: A9.com is cool NOW heres something else thats off the mind. Theres no more need to make mental or computer notes while searching the Internet.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7973095178604126
+    },
+    {
+      "text": "September Retail Sales Up by 1.5 Percent WASHINGTON - Shoppers got their buying groove back last month, propelling sales at the nation's retailers by a strong 1.5 percent. It was the best showing sinc",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.796927273273468
+    },
+    {
+      "text": "Why 2004 was the year of the blog A US dictionary publisher declares \"blog\" as one of the words of the year.",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.7967917919158936
+    },
+    {
+      "text": "Apple offers 2004 financial details Apple's latest Form 10-K filing with the Securities and Exchange Commission offers a look at how the company did this past year, how it thinks it's doing and what's",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7964873313903809
+    },
+    {
+      "text": "Is PeopleSoft waiting for the right price? A company board member testifies in trial that a sale would be possible if Oracle ups its offer.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.7955965995788574
+    }
+  ]
+}
