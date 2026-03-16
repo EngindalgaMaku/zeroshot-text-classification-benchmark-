@@ -1,8 +1,8 @@
 model,mean_f1,std_f1,min_f1,max_f1,count,cv,stability_rank,performance_rank,category,composite_score,composite_rank
-Qwen3,68.9306,23.5302,20.9803,89.9063,8,34.1361,4,1,High Perf + High Stability (IDEAL),51.8625,1
-INSTRUCTOR,66.5184,21.7068,20.4103,88.9291,9,32.6327,1,2,High Perf + High Stability (IDEAL),50.2021,2
-Jina v5,62.5821,21.3020,22.4414,87.2427,9,34.0385,3,4,High Perf + High Stability (IDEAL),45.5629,3
+INSTRUCTOR,66.5184,21.7068,20.4103,88.9291,9,32.6327,1,1,High Perf + High Stability (IDEAL),50.2021,1
+Qwen3,65.8088,21.9088,20.9803,89.9063,10,33.2916,2,2,High Perf + High Stability (IDEAL),49.1630,2
+Jina v5,62.5821,21.3020,22.4414,87.2427,9,34.0385,4,4,High Perf + High Stability (IDEAL),45.5629,3
 E5-large,62.7613,24.2810,17.4243,90.5425,9,38.6878,7,3,High Perf + Low Stability,43.4174,4
 BGE-M3,61.1882,22.2981,20.1544,85.9879,9,36.4418,6,5,Low Perf + Low Stability,42.9674,5
 Nomic-MoE,59.4400,21.2497,14.5200,80.3696,9,35.7498,5,6,Low Perf + Low Stability,41.5651,6
-MPNet,58.3472,19.8187,14.7625,82.8860,9,33.9668,2,7,Low Perf + High Stability,41.3637,7
+MPNet,58.3472,19.8187,14.7625,82.8860,9,33.9668,3,7,Low Perf + High Stability,41.3637,7

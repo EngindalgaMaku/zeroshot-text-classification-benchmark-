@@ -1,4 +1,4 @@
 characteristic,label,pearson_r,pearson_p,spearman_r,spearman_p
-num_classes,Number of Classes,-0.235701,0.541511,-0.594147,0.091583
-avg_text_length,Average Text Length,0.271496,0.479770,0.600000,0.087623
-label_similarity,Label Semantic Similarity,0.446933,0.227780,0.292890,0.444355
+num_classes,Number of Classes,-0.235359,0.542115,-0.594147,0.091583
+avg_text_length,Average Text Length,0.277766,0.469269,0.600000,0.087623
+label_similarity,Label Semantic Similarity,0.444809,0.230266,0.292890,0.444355

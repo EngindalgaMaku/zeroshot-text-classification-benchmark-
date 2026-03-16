@@ -1,18 +1,6 @@
 {
-  "correlation_f1_cv": -0.3126870646814935,
+  "correlation_f1_cv": -0.36885536046853795,
   "models": [
-    {
-      "model": "Qwen3",
-      "mean_f1": 68.93059512989576,
-      "std_f1": 23.530244947716227,
-      "cv": 34.13614071280659,
-      "min_f1": 20.980256990282207,
-      "max_f1": 89.9063453646217,
-      "stability_rank": 4,
-      "performance_rank": 1,
-      "composite_rank": 1,
-      "category": "High Perf + High Stability (IDEAL)"
-    },
     {
       "model": "INSTRUCTOR",
       "mean_f1": 66.51844718614717,
@@ -21,6 +9,18 @@
       "min_f1": 20.410344994785092,
       "max_f1": 88.92914653784219,
       "stability_rank": 1,
+      "performance_rank": 1,
+      "composite_rank": 1,
+      "category": "High Perf + High Stability (IDEAL)"
+    },
+    {
+      "model": "Qwen3",
+      "mean_f1": 65.80877979948004,
+      "std_f1": 21.9087994498919,
+      "cv": 33.291605643879464,
+      "min_f1": 20.980256990282207,
+      "max_f1": 89.9063453646217,
+      "stability_rank": 2,
       "performance_rank": 2,
       "composite_rank": 2,
       "category": "High Perf + High Stability (IDEAL)"
@@ -32,7 +32,7 @@
       "cv": 34.03850872154312,
       "min_f1": 22.44141567117999,
       "max_f1": 87.24273262676154,
-      "stability_rank": 3,
+      "stability_rank": 4,
       "performance_rank": 4,
       "composite_rank": 3,
       "category": "High Perf + High Stability (IDEAL)"
@@ -80,7 +80,7 @@
       "cv": 33.966840508790554,
       "min_f1": 14.762546162639168,
       "max_f1": 82.88604697054294,
-      "stability_rank": 2,
+      "stability_rank": 3,
       "performance_rank": 7,
       "composite_rank": 7,
       "category": "Low Perf + High Stability"

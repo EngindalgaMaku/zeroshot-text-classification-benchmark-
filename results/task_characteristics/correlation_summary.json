@@ -3,50 +3,50 @@
     {
       "characteristic": "num_classes",
       "label": "Number of Classes",
-      "pearson_r": -0.22538791376933937,
-      "pearson_p": 0.07818262822490057,
-      "spearman_r": -0.5081964201249988,
-      "spearman_p": 2.4789245410110584e-05
+      "pearson_r": -0.22082343262818366,
+      "pearson_p": 0.0795185213464748,
+      "spearman_r": -0.4982621904041204,
+      "spearman_p": 2.792144577657466e-05
     },
     {
       "characteristic": "avg_text_length",
       "label": "Average Text Length",
-      "pearson_r": 0.27741159787844893,
-      "pearson_p": 0.029041095758497427,
-      "spearman_r": 0.5152429262811409,
-      "spearman_p": 1.826417780222875e-05
+      "pearson_r": 0.271044092128412,
+      "pearson_p": 0.030284781893556142,
+      "spearman_r": 0.5051921427222233,
+      "spearman_p": 2.0674562544457477e-05
     },
     {
       "characteristic": "label_similarity",
       "label": "Label Semantic Similarity",
-      "pearson_r": 0.4256252352115362,
-      "pearson_p": 0.000563176320998893,
-      "spearman_r": 0.18139329407366003,
-      "spearman_p": 0.15825623326784036
+      "pearson_r": 0.4272336311404905,
+      "pearson_p": 0.00043007717955499783,
+      "spearman_r": 0.1748600799092854,
+      "spearman_p": 0.1669768121755375
     }
   ],
   "dataset_level_correlations": [
     {
       "characteristic": "num_classes",
       "label": "Number of Classes",
-      "pearson_r": -0.2357010728211136,
-      "pearson_p": 0.5415113726278598,
+      "pearson_r": -0.23535946299064892,
+      "pearson_p": 0.5421147578399254,
       "spearman_r": -0.5941474602165634,
       "spearman_p": 0.09158336570110653
     },
     {
       "characteristic": "avg_text_length",
       "label": "Average Text Length",
-      "pearson_r": 0.2714959006297894,
-      "pearson_p": 0.47976954763840746,
+      "pearson_r": 0.2777664799608698,
+      "pearson_p": 0.46926944827747513,
       "spearman_r": 0.6,
       "spearman_p": 0.0876228290414025
     },
     {
       "characteristic": "label_similarity",
       "label": "Label Semantic Similarity",
-      "pearson_r": 0.44693336972669934,
-      "pearson_p": 0.22777973180754216,
+      "pearson_r": 0.4448092968670062,
+      "pearson_p": 0.23026601185121756,
       "spearman_r": 0.2928895930645031,
       "spearman_p": 0.4443546956852246
     }
