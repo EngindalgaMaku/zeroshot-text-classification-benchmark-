@@ -18,7 +18,7 @@ models:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 4
+  batch_size: 32
 evaluation:
   metrics:
   - accuracy

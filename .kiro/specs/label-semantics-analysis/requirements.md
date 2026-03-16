@@ -26,6 +26,10 @@ Mevcut altyapı L1 (`name_only`) ve L2 (`description`) label modlarını destekl
 - **Separability_Score**: Bir dataset için hesaplanan Label_Separability değeri (0–1 arası; düşük = daha ayrışık).
 - **Pilot_Dataset**: AG News — 4 sınıf, topic görevi, L3 pipeline doğrulaması için kullanılan ilk dataset.
 - **BiEncoder**: `src/encoders.py` içindeki, metin ve label'ları ayrı ayrı encode eden model.
+- **Description_Generator**: LLM tabanlı label description üretim scripti (`scripts/generate_label_descriptions.py`).
+- **Provenance**: Her description'ın kaynağını (LLM, Wikipedia, sözlük vb.) belgeleyen kayıt; `src/label_descriptions/provenance.json` dosyasında tutulur.
+- **Set_A / Set_B**: Robustness testi için kullanılan iki farklı description seti; Set_A GPT-4o üretimi, Set_B Claude 3.5 Sonnet veya sözlük kaynaklıdır.
+- **Robustness_Threshold**: `|ΔF1(A-B)| < 0.02` eşiği; bu eşiğin altındaki farklar "description ifadesine karşı robust" olarak nitelendirilir.
 
 ---
 
