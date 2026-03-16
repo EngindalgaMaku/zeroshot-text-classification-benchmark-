@@ -1,0 +1,17 @@
+experiment_name: exp_yahoo_answers_topics_all-MiniLM-L6-v2_l3
+dataset:
+  name: yahoo_answers_topics
+  split: test
+  text_column: text
+  label_column: label
+task:
+  label_mode: l3
+models:
+  biencoder:
+    name: sentence-transformers/all-MiniLM-L6-v2
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results
+  save_metrics: true
+  save_predictions: false

@@ -1,6 +1,29 @@
 """Label definitions for zero-shot classification."""
 
 from typing import Dict, List
+import json
+from pathlib import Path
+
+
+# Cache for LLM-generated descriptions
+_GENERATED_DESC_CACHE = None
+
+
+def load_generated_descriptions():
+    """Load LLM-generated descriptions from JSON file.
+    
+    Returns:
+        Dictionary with structure: {dataset: {label_id: {"l2": str, "l3": [str, str, str]}}}
+    """
+    global _GENERATED_DESC_CACHE
+    if _GENERATED_DESC_CACHE is None:
+        desc_file = Path(__file__).parent / "label_descriptions" / "generated_descriptions.json"
+        if desc_file.exists():
+            with open(desc_file, encoding="utf-8") as f:
+                _GENERATED_DESC_CACHE = json.load(f)
+        else:
+            _GENERATED_DESC_CACHE = {}
+    return _GENERATED_DESC_CACHE
 
 
 LABEL_SETS = {
@@ -1151,18 +1174,45 @@ LABEL_SETS = {
 def get_label_texts(dataset_name: str, label_mode: str) -> Dict[int, List[str]]:
     """Get label texts for a dataset and mode.
     
+    Supports both manual label definitions and LLM-generated descriptions.
+    
     Args:
         dataset_name: Name of the dataset
-        label_mode: Label mode (name_only, description, multi_description)
+        label_mode: Label mode (name_only, description, multi_description, l2, l3, etc.)
         
     Returns:
         Dictionary mapping label IDs to list of text representations
     """
+    # Check for LLM-generated descriptions first (l2 and l3 modes)
+    if label_mode in ("l2", "l3"):
+        generated = load_generated_descriptions()
+        if dataset_name in generated:
+            result = {}
+            for label_id, data in generated[dataset_name].items():
+                label_id = int(label_id)
+                if label_mode == "l2":
+                    # L2: Single description -> wrap in list for consistency
+                    result[label_id] = [data["l2"]]
+                elif label_mode == "l3":
+                    # L3: Already a list of 3 descriptions
+                    result[label_id] = data["l3"]
+            return result
+        else:
+            raise ValueError(
+                f"LLM-generated descriptions not found for dataset '{dataset_name}'. "
+                f"Run 'python -m scripts.generate_label_descriptions --dataset {dataset_name}' first."
+            )
+    
+    # Fall back to manual label definitions
     if dataset_name not in LABEL_SETS:
         raise ValueError(f"Dataset {dataset_name} not found in LABEL_SETS")
     
     if label_mode not in LABEL_SETS[dataset_name]:
-        raise ValueError(f"Label mode {label_mode} not found for dataset {dataset_name}")
+        available_modes = list(LABEL_SETS[dataset_name].keys())
+        raise ValueError(
+            f"Label mode {label_mode} not found for dataset {dataset_name}. "
+            f"Available modes: {available_modes}"
+        )
     
     return LABEL_SETS[dataset_name][label_mode]
 

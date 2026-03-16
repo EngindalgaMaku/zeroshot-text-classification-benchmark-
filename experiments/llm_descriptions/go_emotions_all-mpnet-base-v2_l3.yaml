@@ -1,0 +1,18 @@
+experiment_name: go_emotions_all-mpnet-base-v2_l3
+dataset:
+  name: go_emotions
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: 2000
+task:
+  label_mode: l3
+models:
+  biencoder:
+    name: sentence-transformers/all-mpnet-base-v2
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results/llm_descriptions
+  save_metrics: true
+  save_predictions: true

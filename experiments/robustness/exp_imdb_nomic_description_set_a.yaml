@@ -1,0 +1,29 @@
+dataset:
+  label_column: label
+  max_samples: 1000
+  name: imdb
+  split: test
+  text_column: text
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+experiment_name: imdb_nomic_description_set_a
+models:
+  biencoder:
+    name: nomic-ai/nomic-embed-text-v2-moe
+    provider: hf
+  reranker: null
+output:
+  output_dir: results/robustness
+  save_metrics: true
+  save_predictions: true
+pipeline:
+  batch_size: 8
+  mode: biencoder
+  normalize_embeddings: true
+task:
+  label_mode: description_set_a
+  language: en
+  type: zero_shot_classification

@@ -1,0 +1,17 @@
+experiment_name: exp_SetFit_20_newsgroups_jina-embeddings-v3_l2
+dataset:
+  name: SetFit/20_newsgroups
+  split: test
+  text_column: text
+  label_column: label
+task:
+  label_mode: l2
+models:
+  biencoder:
+    name: jinaai/jina-embeddings-v3
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results
+  save_metrics: true
+  save_predictions: false

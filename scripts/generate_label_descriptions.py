@@ -34,11 +34,25 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-PROMPT_TEMPLATE = (
-    "Define the following text classification label in 15-20 words, "
-    "focusing only on its semantic core without using the label name itself. "
-    "Dataset: {dataset_name}. Label: {label_name}."
-)
+PROMPT_L2 = """Define the following text classification label in 15–20 words.
+
+Focus on the semantic meaning of the label.
+Do NOT repeat the label word itself.
+Write a neutral description that could help classify a text belonging to this category.
+
+Dataset: {dataset_name}
+Label: {label_name}"""
+
+PROMPT_L3 = """Generate three different short descriptions of the following classification label.
+
+Each description should focus on slightly different aspects of the concept.
+Keep each description between 15–20 words.
+Do not repeat the label word itself.
+
+Dataset: {dataset_name}
+Label: {label_name}
+
+Return exactly 3 descriptions, numbered 1-3."""
 
 OUTPUT_DIR = Path("src/label_descriptions")
 
@@ -171,18 +185,54 @@ class DescriptionGenerator:
     # Public API
     # ------------------------------------------------------------------
 
-    def generate(self, dataset_name: str, label_name: str) -> str:
+    def generate(self, dataset_name: str, label_name: str, prompt_template: str) -> str:
         """Generate a description for a single label.
 
         Args:
             dataset_name: Dataset identifier (e.g. ``"ag_news"``).
             label_name: Human-readable label name (e.g. ``"world"``).
+            prompt_template: Prompt template to use.
 
         Returns:
             Generated description string.
         """
-        prompt = PROMPT_TEMPLATE.format(dataset_name=dataset_name, label_name=label_name)
+        prompt = prompt_template.format(dataset_name=dataset_name, label_name=label_name)
         return self._call_with_retry(prompt)
+
+    def generate_multi(self, dataset_name: str, label_name: str) -> list:
+        """Generate 3 different descriptions for a single label (L3).
+
+        Args:
+            dataset_name: Dataset identifier.
+            label_name: Human-readable label name.
+
+        Returns:
+            List of 3 description strings.
+        """
+        prompt = PROMPT_L3.format(dataset_name=dataset_name, label_name=label_name)
+        response = self._call_with_retry(prompt)
+        
+        # Parse the response to extract 3 descriptions
+        lines = response.strip().split('\n')
+        descriptions = []
+        
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+            # Remove numbering like "1.", "2.", "3." or "1)", "2)", "3)"
+            if line[0].isdigit() and len(line) > 2 and line[1] in '.):':
+                line = line[2:].strip()
+            if line:
+                descriptions.append(line)
+        
+        # Ensure we have exactly 3 descriptions
+        if len(descriptions) < 3:
+            log.warning("  L3 returned fewer than 3 descriptions, padding with duplicates")
+            while len(descriptions) < 3:
+                descriptions.append(descriptions[0] if descriptions else "Description not available")
+        
+        return descriptions[:3]  # Take only first 3
 
     def generate_for_dataset(
         self,
@@ -312,41 +362,40 @@ def _extract_label_names(label_dict: dict) -> dict:
 
 def generate_descriptions(
     dataset_filter: str = None,
-    sets: str = "both",
+    level: str = "both",
     dry_run: bool = False,
     output_path: str = None,
 ) -> dict:
-    """Generate Set A and/or Set B descriptions for all (or one) dataset(s).
+    """Generate L2 and/or L3 descriptions for all (or one) dataset(s).
 
     Args:
         dataset_filter: If given, only process this dataset name.
-        sets: ``"a"``, ``"b"``, or ``"both"``.
+        level: ``"l2"``, ``"l3"``, or ``"both"``.
         dry_run: Print prompts without calling the API.
         output_path: Where to write the output JSON.
 
     Returns:
-        ``{dataset_name: {label_id: {"set_a": str, "set_b": str}}}``
+        ``{dataset_name: {label_id: {"l2": str, "l3": [str, str, str]}}}``
     """
     from src.labels import LABEL_SETS  # noqa: PLC0415
 
     output_path = output_path or str(OUTPUT_DIR / "generated_descriptions.json")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Read model names from env
-    model_a = os.getenv("DESCRIPTION_MODEL_SET_A", "openai/gpt-4o-mini")
-    model_b = os.getenv("DESCRIPTION_MODEL_SET_B", "anthropic/claude-3-haiku")
+    # Use GPT-4o-mini for both L2 and L3
+    model = os.getenv("DESCRIPTION_MODEL", "openai/gpt-4o-mini")
+    log.info("Model: %s", model)
+    log.info("Level: %s", level)
 
-    log.info("Set A model: %s", model_a)
-    log.info("Set B model: %s", model_b)
-
-    # Build generators (only if not dry-run)
-    gen_a = DescriptionGenerator(model_a) if not dry_run and sets in ("a", "both") else None
-    gen_b = DescriptionGenerator(model_b) if not dry_run and sets in ("b", "both") else None
+    # Build generator (only if not dry-run)
+    generator = DescriptionGenerator(model) if not dry_run else None
 
     source_mapper = AuthoritativeSourceMapper()
     provenance = ProvenanceRecorder()
-    meta_a = GenerationMetadata(model_a, PROMPT_TEMPLATE, temperature=0)
-    meta_b = GenerationMetadata(model_b, PROMPT_TEMPLATE, temperature=0)
+    
+    # Metadata for both levels
+    meta_l2 = GenerationMetadata(model, PROMPT_L2, temperature=0)
+    meta_l3 = GenerationMetadata(model, PROMPT_L3, temperature=0)
 
     results: dict = {}
     datasets = (
@@ -362,45 +411,47 @@ def generate_descriptions(
         results[dataset_name] = {}
 
         _, source_type = source_mapper.fetch_authoritative_description(dataset_name, "")
-        # Since authoritative fetch returns None, we always use llm_fallback
         effective_source = "llm_fallback"
         generated_at = datetime.now(timezone.utc).isoformat()
 
         for label_id in sorted(name_only.keys()):
             label_name = label_names[label_id]
-            prompt = PROMPT_TEMPLATE.format(dataset_name=dataset_name, label_name=label_name)
             entry: dict = {}
 
             if dry_run:
-                log.info("  [DRY-RUN] label %d %r → prompt: %s", label_id, label_name, prompt)
-                if sets in ("a", "both"):
-                    entry["set_a"] = f"[DRY-RUN] {prompt}"
-                if sets in ("b", "both"):
-                    entry["set_b"] = f"[DRY-RUN] {prompt}"
+                prompt_l2 = PROMPT_L2.format(dataset_name=dataset_name, label_name=label_name)
+                prompt_l3 = PROMPT_L3.format(dataset_name=dataset_name, label_name=label_name)
+                log.info("  [DRY-RUN] label %d %r", label_id, label_name)
+                if level in ("l2", "both"):
+                    entry["l2"] = f"[DRY-RUN] {prompt_l2}"
+                if level in ("l3", "both"):
+                    entry["l3"] = [f"[DRY-RUN] {prompt_l3}"]
             else:
-                if sets in ("a", "both"):
-                    log.info("  Set A — label %d: %r", label_id, label_name)
-                    desc_a = gen_a.generate(dataset_name, label_name)
-                    entry["set_a"] = desc_a
+                # Generate L2
+                if level in ("l2", "both"):
+                    log.info("  L2 — label %d: %r", label_id, label_name)
+                    desc_l2 = generator.generate(dataset_name, label_name, PROMPT_L2)
+                    entry["l2"] = desc_l2
                     provenance.record(
                         dataset=dataset_name,
                         label_id=label_id,
                         label_mode="L2",
                         source_type=effective_source,
-                        source_url_or_reference=f"model:{model_a}",
+                        source_url_or_reference=f"model:{model}",
                         generated_at=generated_at,
                     )
 
-                if sets in ("b", "both"):
-                    log.info("  Set B — label %d: %r", label_id, label_name)
-                    desc_b = gen_b.generate(dataset_name, label_name)
-                    entry["set_b"] = desc_b
+                # Generate L3 (3 descriptions)
+                if level in ("l3", "both"):
+                    log.info("  L3 — label %d: %r", label_id, label_name)
+                    desc_l3 = generator.generate_multi(dataset_name, label_name)
+                    entry["l3"] = desc_l3
                     provenance.record(
                         dataset=dataset_name,
                         label_id=label_id,
-                        label_mode="L2",
+                        label_mode="L3",
                         source_type=effective_source,
-                        source_url_or_reference=f"model:{model_b}",
+                        source_url_or_reference=f"model:{model}",
                         generated_at=generated_at,
                     )
 
@@ -410,12 +461,12 @@ def generate_descriptions(
     if not dry_run:
         provenance.save(str(OUTPUT_DIR / "provenance.json"))
 
-        # Build a single generation_metadata.json with both (or one) set(s)
+        # Build generation_metadata.json
         combined_meta: dict = {}
-        if sets in ("a", "both"):
-            combined_meta["set_a"] = meta_a.to_dict()
-        if sets in ("b", "both"):
-            combined_meta["set_b"] = meta_b.to_dict()
+        if level in ("l2", "both"):
+            combined_meta["l2"] = meta_l2.to_dict()
+        if level in ("l3", "both"):
+            combined_meta["l3"] = meta_l3.to_dict()
         meta_path = OUTPUT_DIR / "generation_metadata.json"
         meta_path.parent.mkdir(parents=True, exist_ok=True)
         with open(meta_path, "w", encoding="utf-8") as _fh:
@@ -432,10 +483,10 @@ def generate_descriptions(
     # Summary
     total_labels = sum(len(v) for v in results.values())
     log.info(
-        "Summary: %d dataset(s), %d label(s) processed (sets=%s, dry_run=%s)",
+        "Summary: %d dataset(s), %d label(s) processed (level=%s, dry_run=%s)",
         len(results),
         total_labels,
-        sets,
+        level,
         dry_run,
     )
 
@@ -456,10 +507,10 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Generate for a specific dataset only (default: all 9 datasets).",
     )
     p.add_argument(
-        "--set",
-        choices=["a", "b", "both"],
+        "--level",
+        choices=["l2", "l3", "both"],
         default="both",
-        help="Which description set to generate (default: both).",
+        help="Which description level to generate: l2 (single), l3 (multi-aspect), or both (default: both).",
     )
     p.add_argument(
         "--dry-run",
@@ -478,7 +529,7 @@ if __name__ == "__main__":
     args = _build_parser().parse_args()
     generate_descriptions(
         dataset_filter=args.dataset,
-        sets=args.set,
+        level=args.level,
         dry_run=args.dry_run,
         output_path=args.output,
     )

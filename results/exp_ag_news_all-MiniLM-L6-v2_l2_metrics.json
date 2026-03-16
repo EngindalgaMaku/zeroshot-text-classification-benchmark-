@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.6960526315789474,
+  "macro_f1": 0.6911842490934297,
+  "weighted_f1": 0.6911842490934296,
+  "macro_precision": 0.6991878604652857,
+  "macro_recall": 0.6960526315789474,
+  "classification_report": {
+    "0": {
+      "precision": 0.7226580526072912,
+      "recall": 0.8242105263157895,
+      "f1-score": 0.770100811408901,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.844097995545657,
+      "recall": 0.7978947368421052,
+      "f1-score": 0.8203463203463204,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.5846422338568935,
+      "recall": 0.7052631578947368,
+      "f1-score": 0.6393129770992366,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.6453531598513012,
+      "recall": 0.4568421052631579,
+      "f1-score": 0.5349768875192604,
+      "support": 1900.0
+    },
+    "accuracy": 0.6960526315789474,
+    "macro avg": {
+      "precision": 0.6991878604652857,
+      "recall": 0.6960526315789474,
+      "f1-score": 0.6911842490934297,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.6991878604652857,
+      "recall": 0.6960526315789474,
+      "f1-score": 0.6911842490934296,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1566,
+      117,
+      141,
+      76
+    ],
+    [
+      130,
+      1516,
+      146,
+      108
+    ],
+    [
+      227,
+      40,
+      1340,
+      293
+    ],
+    [
+      244,
+      123,
+      665,
+      868
+    ]
+  ],
+  "mean_confidence": 0.1307393606090538,
+  "std_confidence": 0.07936219666053486,
+  "mean_confidence_correct": 0.1327124402073332,
+  "mean_confidence_incorrect": 0.12622092291429282,
+  "experiment_name": "exp_ag_news_all-MiniLM-L6-v2_l2",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_errors": [
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.4579349458217621
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4496539235115051
+    },
+    {
+      "text": "Lucent milestone: A profit Lucent Technologies yesterday posted higher fiscal fourth- quarter earnings, helping lift the telecommunications equipment maker to its first profitable year since 2000.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.4005987346172333
+    },
+    {
+      "text": "Does Nick Carr matter? Strategybusiness concludes that a controversial new book on the strategic value of information technology is flawed--but correct.\\",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.39672523736953735
+    },
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3917129635810852
+    },
+    {
+      "text": "Lockheed Profit Jumps on IT, Jet Demand &lt;p&gt;\\&lt;/p&gt;&lt;p&gt; NEW YORK (Reuters) - No. 1 U.S. defense contractor Lockheed\\Martin Corp. &lt;LMT.N&gt; reported a 41 percent rise in quarterly\\pro",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3612064719200134
+    },
+    {
+      "text": "Surviving Biotech's Downturns Charly Travers offers advice on withstanding the volatility of the biotech sector.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3600212633609772
+    },
+    {
+      "text": "Industry Report: Dec. 6, 2004 With a raft of new products ready to roll out over the next few years, Ford Motor Co. is setting big growth goals for its long-troubled Lincoln Mercury division.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.35227006673812866
+    },
+    {
+      "text": "IU researchers helping to study video game-violence link Researchers from the Indiana University School of Medicine are trying to determine whether violent video games such as Grand Theft Auto can mak",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.3491251468658447
+    },
+    {
+      "text": "Research Is Definitely in Motion The Blackberry wireless device maker is straining to exceed expectations.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.34757059812545776
+    },
+    {
+      "text": "CRM Best Practices: TCO and ROI (NewsFactor) NewsFactor - With CRM projects costing millions, even in some mid-size companies, it is no surprise CFOs are leading the charge to be sure the most importa",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3470413088798523
+    },
+    {
+      "text": "Salesforce.com launches on-demand support com September 29, 2004, 2:57 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3466842472553253
+    },
+    {
+      "text": "Virgin tunes into the online music market  quot;We dont see this market as crowded. There is tremendous growth potential quot; - Zack Zalon, Virgin Digital president. Story in full VIRGIN Mobile, part",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.34454867243766785
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.34096720814704895
+    },
+    {
+      "text": "Global foreign investment falls Foreign investment levels decline in 2003, a UN report reveals, but there are signs of recovery - especially among developing nations.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.3368578851222992
+    },
+    {
+      "text": "Study: 400K Fewer Tech Jobs Since 2001 The US information tech sector lost 403,300 jobs between March 2001 and this past April, and the market for tech workers remains bleak, according to a new report",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3343300521373749
+    },
+    {
+      "text": "2004 Signals More Global Warming, Extreme Weather: UN (Reuters) Reuters - Global warming is set to continue, and\\bring with it an increase in extreme weather such as hurricanes\\and droughts, scientist",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.33391958475112915
+    },
+    {
+      "text": "Jobs #39; Apple vs Beatles #39; Apple p2pnet.net News:- It #39;s Apple vs Apple again - that #39;s to say Steve Jobs #39; Apple versus The Beatles #39; Apple. Apple-B claims Apple-J infringes its trad",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.333175390958786
+    },
+    {
+      "text": "Search Engine Marketing: Outsource or In House? Search Engine Marketing: Outsource or In House?\\\\The next Search Engine Strategies session I thought would be interesting to report on was Search Engine",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3322643041610718
+    },
+    {
+      "text": "SCO Postpones Legal Web Site (NewsFactor) NewsFactor - The SCO Group is delaying the launch of a Web site focusing on the details of ongoing litigation concerning the company's intellectual property.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.33206087350845337
+    }
+  ]
+}

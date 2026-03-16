@@ -1,0 +1,17 @@
+experiment_name: exp_dbpedia_14_e5-small-v2_l2
+dataset:
+  name: dbpedia_14
+  split: test
+  text_column: text
+  label_column: label
+task:
+  label_mode: l2
+models:
+  biencoder:
+    name: intfloat/e5-small-v2
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results
+  save_metrics: true
+  save_predictions: false

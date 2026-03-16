@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Generate multi_description YAML config files for all dataset × model combinations."""
+"""Generate YAML config files for all dataset × model combinations.
+
+Modes:
+  label_formulation  — 9 datasets × 7 models × multi_description (63 files)
+  robustness         — 9 datasets × 7 models × {description_set_a, description_set_b} (126 files)
+"""
 
 import argparse
 from pathlib import Path
@@ -91,6 +96,8 @@ MODELS = [
     {"key": "qwen3", "hf_name": "Qwen/Qwen3-Embedding-8B", "batch_size": 8},
 ]
 
+ROBUSTNESS_LABEL_MODES = ["description_set_a", "description_set_b"]
+
 
 def build_config(dataset: dict, model: dict) -> dict:
     return {
@@ -130,14 +137,58 @@ def build_config(dataset: dict, model: dict) -> dict:
     }
 
 
+def build_robustness_config(dataset: dict, model: dict, label_mode: str) -> dict:
+    return {
+        "experiment_name": f"{dataset['key']}_{model['key']}_{label_mode}",
+        "dataset": {
+            "name": dataset["name"],
+            "split": dataset["split"],
+            "text_column": dataset["text_column"],
+            "label_column": dataset["label_column"],
+            "max_samples": dataset["max_samples"],
+        },
+        "task": {
+            "type": "zero_shot_classification",
+            "label_mode": label_mode,
+            "language": "en",
+        },
+        "models": {
+            "biencoder": {
+                "provider": "hf",
+                "name": model["hf_name"],
+            },
+            "reranker": None,
+        },
+        "pipeline": {
+            "mode": "biencoder",
+            "normalize_embeddings": True,
+            "batch_size": model["batch_size"],
+        },
+        "evaluation": {
+            "metrics": ["accuracy", "macro_f1", "per_class_f1"],
+        },
+        "output": {
+            "save_predictions": True,
+            "save_metrics": True,
+            "output_dir": "results/robustness",
+        },
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate multi_description YAML config files (9 datasets × 7 models)."
+        description="Generate YAML config files for dataset × model combinations."
+    )
+    parser.add_argument(
+        "--mode",
+        choices=["label_formulation", "robustness"],
+        default="label_formulation",
+        help="Generation mode: 'label_formulation' (63 multi_description files) or 'robustness' (126 description_set_a/b files)",
     )
     parser.add_argument(
         "--output-dir",
-        default="experiments/label_formulation",
-        help="Directory to write config files into (default: experiments/label_formulation)",
+        default=None,
+        help="Directory to write config files into (default depends on mode)",
     )
     parser.add_argument(
         "--overwrite",
@@ -146,31 +197,60 @@ def main():
     )
     args = parser.parse_args()
 
-    output_dir = Path(args.output_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
+    if args.mode == "robustness":
+        output_dir = Path(args.output_dir) if args.output_dir else Path("experiments/robustness")
+        output_dir.mkdir(parents=True, exist_ok=True)
 
-    created = 0
-    skipped = 0
+        created = 0
+        skipped = 0
 
-    for dataset in DATASETS:
-        for model in MODELS:
-            filename = f"exp_{dataset['key']}_{model['key']}_multi_description.yaml"
-            filepath = output_dir / filename
+        for dataset in DATASETS:
+            for model in MODELS:
+                for label_mode in ROBUSTNESS_LABEL_MODES:
+                    filename = f"exp_{dataset['key']}_{model['key']}_{label_mode}.yaml"
+                    filepath = output_dir / filename
 
-            if filepath.exists() and not args.overwrite:
-                print(f"  SKIP  {filename}")
-                skipped += 1
-                continue
+                    if filepath.exists() and not args.overwrite:
+                        print(f"  SKIP  {filename}")
+                        skipped += 1
+                        continue
 
-            config = build_config(dataset, model)
-            with open(filepath, "w", encoding="utf-8") as f:
-                yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
+                    config = build_robustness_config(dataset, model, label_mode)
+                    with open(filepath, "w", encoding="utf-8") as f:
+                        yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
 
-            print(f"  CREATE {filename}")
-            created += 1
+                    print(f"  CREATE {filename}")
+                    created += 1
 
-    total = created + skipped
-    print(f"\nDone: {created} created, {skipped} skipped, {total} total.")
+        total = created + skipped
+        print(f"\nDone: {created} created, {skipped} skipped, {total} total.")
+
+    else:  # label_formulation
+        output_dir = Path(args.output_dir) if args.output_dir else Path("experiments/label_formulation")
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        created = 0
+        skipped = 0
+
+        for dataset in DATASETS:
+            for model in MODELS:
+                filename = f"exp_{dataset['key']}_{model['key']}_multi_description.yaml"
+                filepath = output_dir / filename
+
+                if filepath.exists() and not args.overwrite:
+                    print(f"  SKIP  {filename}")
+                    skipped += 1
+                    continue
+
+                config = build_config(dataset, model)
+                with open(filepath, "w", encoding="utf-8") as f:
+                    yaml.dump(config, f, default_flow_style=False, allow_unicode=True)
+
+                print(f"  CREATE {filename}")
+                created += 1
+
+        total = created + skipped
+        print(f"\nDone: {created} created, {skipped} skipped, {total} total.")
 
 
 if __name__ == "__main__":

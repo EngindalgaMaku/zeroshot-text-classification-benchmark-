@@ -1,7 +1,14 @@
 {
-  "model_set_a": "openai/gpt-4o",
-  "model_set_b": "anthropic/claude-3-5-sonnet",
-  "prompt_template": "Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: {dataset_name}. Label: {label_name}.",
-  "temperature": 0,
-  "generated_at": "2026-03-16T10:57:47.523458+00:00"
+  "l2": {
+    "model": "openai/gpt-4o-mini",
+    "prompt_template": "Define the following text classification label in 15–20 words.\n\nFocus on the semantic meaning of the label.\nDo NOT repeat the label word itself.\nWrite a neutral description that could help classify a text belonging to this category.\n\nDataset: {dataset_name}\nLabel: {label_name}",
+    "temperature": 0,
+    "generated_at": "2026-03-16T12:01:02.119911+00:00"
+  },
+  "l3": {
+    "model": "openai/gpt-4o-mini",
+    "prompt_template": "Generate three different short descriptions of the following classification label.\n\nEach description should focus on slightly different aspects of the concept.\nKeep each description between 15–20 words.\nDo not repeat the label word itself.\n\nDataset: {dataset_name}\nLabel: {label_name}\n\nReturn exactly 3 descriptions, numbered 1-3.",
+    "temperature": 0,
+    "generated_at": "2026-03-16T12:01:02.119925+00:00"
+  }
 }

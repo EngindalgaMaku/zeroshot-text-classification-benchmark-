@@ -151,12 +151,12 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - **Property 5: Her provenance kaydı zorunlu 6 alanı içermeli** — `dataset`, `label_id`, `label_mode`, `source_type`, `source_url_or_reference`, `generated_at`
     - **Validates: Requirements 8.6**
 
-- [-] 15. `src/labels.py`'yi standart description'larla güncelle
+- [x] 15. `src/labels.py`'yi standart description'larla güncelle
   - [x] 15.1 `LABEL_SETS`'e `description_set_a` (GPT-4o üretimi) key'ini ekle
     - 9 dataset için GPT-4o üretimi description'ları `description_set_a` altında tanımla
     - Mevcut `description` ve `multi_description` key'lerini değiştirme
     - _Requirements: 8.1, 9.1_
-  - [-] 15.2 `LABEL_SETS`'e `description_set_b` (Claude / sözlük kaynaklı) key'ini ekle
+  - [x] 15.2 `LABEL_SETS`'e `description_set_b` (Claude / sözlük kaynaklı) key'ini ekle
     - 9 dataset için Claude 3.5 Sonnet veya sözlük kaynaklı description'ları `description_set_b` altında tanımla
     - _Requirements: 9.1_
   - [ ]* 15.3 `LABEL_SETS` bütünlük testi yaz
@@ -164,11 +164,11 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - Her key altındaki label sayısının diğer modlarla tutarlı olduğunu doğrula
     - **Validates: Requirements 9.1**
 
-- [ ] 16. Checkpoint — Description üretimi ve labels.py güncellemesi tamamlandı
+- [x] 16. Checkpoint — Description üretimi ve labels.py güncellemesi tamamlandı
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 17. Robustness deneyi YAML config'leri — `experiments/robustness/`
-  - [ ] 17.1 `scripts/generate_configs.py` scriptini `description_set_a` ve `description_set_b` modlarını kapsayacak şekilde güncelle
+- [x] 17. Robustness deneyi YAML config'leri — `experiments/robustness/`
+  - [x] 17.1 `scripts/generate_configs.py` scriptini `description_set_a` ve `description_set_b` modlarını kapsayacak şekilde güncelle
     - 9 dataset × 7 model × 2 set = 126 YAML dosyasını `experiments/robustness/` altına üret
     - Her YAML'da `label_mode: description_set_a` veya `label_mode: description_set_b` alanını ayarla
     - _Requirements: 9.2_
@@ -177,14 +177,14 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - Her YAML'ın `label_mode` alanını içerdiğini doğrula
     - **Validates: Requirements 9.2**
 
-- [ ] 18. Robustness Analyzer — `scripts/analyze_robustness.py`
-  - [ ] 18.1 `RobustnessAnalyzer` sınıfını yaz
+- [x] 18. Robustness Analyzer — `scripts/analyze_robustness.py`
+  - [x] 18.1 `RobustnessAnalyzer` sınıfını yaz
     - `results/` dizininden Set A ve Set B sonuçlarını oku
     - Her (dataset, model) çifti için `|ΔF1(A-B)|` hesapla
     - Tüm çiftler üzerinden ortalama `|ΔF1(A-B)|` hesapla; 0.02 eşiğiyle karşılaştır
     - Eksik Set B description'larını logla, mevcut verilerle analizi tamamla
     - _Requirements: 9.3, 9.4, 9.7_
-  - [ ] 18.2 Robustness çıktılarını kaydet
+  - [x] 18.2 Robustness çıktılarını kaydet
     - `reports/robustness/robustness_scores.csv` — dataset, model, delta_f1_abs sütunları
     - `reports/robustness/robustness_heatmap.png` — dataset × model heatmap (≥300 DPI)
     - `reports/robustness/robustness_summary.md` — ortalama `|ΔF1(A-B)|`, en yüksek/düşük varyans gösteren çiftler
@@ -195,7 +195,7 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - **Property 7: |ΔF1(A-B)| her zaman 0 ile 1 arasında olmalı**
     - **Validates: Requirements 9.3, 9.4**
 
-- [ ] 19. Paper metodoloji dokümantasyonu — `reports/methodology/description_protocol.md`
+- [x] 19. Paper metodoloji dokümantasyonu — `reports/methodology/description_protocol.md`
   - Kullanılan LLM modelini, prompt şablonunu ve temperature değerini belgele
   - Her dataset için kaynak eşlemesini tablo formatında yaz
   - Paper'ın metodoloji bölümüne doğrudan dahil edilebilecek şekilde yaz

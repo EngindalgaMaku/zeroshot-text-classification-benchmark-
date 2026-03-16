@@ -1,1 +1,2562 @@
-[]
+[
+  {
+    "dataset": "ag_news",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 3,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "ag_news",
+    "label_id": 3,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:02.120043+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 3,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 3,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 4,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 4,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 5,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 5,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 6,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 6,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 7,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 7,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 8,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 8,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 9,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 9,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 10,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 10,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 11,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 11,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 12,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 12,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 13,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "dbpedia_14",
+    "label_id": 13,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:15.861079+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 3,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 3,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 4,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 4,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 5,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 5,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 6,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 6,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 7,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 7,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 8,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 8,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 9,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "yahoo_answers_topics",
+    "label_id": 9,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:01:55.571829+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 3,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 3,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 4,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 4,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 5,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 5,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 6,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 6,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 7,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 7,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 8,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 8,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 9,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 9,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 10,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 10,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 11,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 11,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 12,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 12,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 13,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 13,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 14,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 14,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 15,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 15,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 16,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 16,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 17,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 17,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 18,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 18,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 19,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 19,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 20,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 20,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 21,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 21,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 22,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 22,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 23,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 23,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 24,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 24,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 25,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 25,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 26,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 26,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 27,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 27,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 28,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 28,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 29,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 29,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 30,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 30,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 31,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 31,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 32,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 32,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 33,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 33,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 34,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 34,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 35,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 35,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 36,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 36,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 37,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 37,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 38,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 38,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 39,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 39,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 40,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 40,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 41,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 41,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 42,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 42,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 43,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 43,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 44,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 44,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 45,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 45,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 46,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 46,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 47,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 47,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 48,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 48,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 49,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 49,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 50,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 50,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 51,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 51,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 52,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 52,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 53,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 53,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 54,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 54,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 55,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 55,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 56,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 56,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 57,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 57,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 58,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 58,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 59,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 59,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 60,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 60,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 61,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 61,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 62,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 62,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 63,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 63,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 64,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 64,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 65,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 65,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 66,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 66,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 67,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 67,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 68,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 68,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 69,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 69,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 70,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 70,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 71,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 71,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 72,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 72,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 73,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 73,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 74,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 74,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 75,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 75,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 76,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "banking77",
+    "label_id": 76,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:02:27.834540+00:00"
+  },
+  {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:04.664322+00:00"
+  },
+  {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:04.664322+00:00"
+  },
+  {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:04.664322+00:00"
+  },
+  {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:04.664322+00:00"
+  },
+  {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:04.664322+00:00"
+  },
+  {
+    "dataset": "zeroshot/twitter-financial-news-sentiment",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:04.664322+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 3,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 3,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 4,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 4,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 5,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 5,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 6,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 6,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 7,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 7,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 8,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 8,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 9,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 9,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 10,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 10,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 11,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 11,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 12,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 12,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 13,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 13,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 14,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 14,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 15,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 15,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 16,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 16,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 17,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 17,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 18,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 18,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 19,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "SetFit/20_newsgroups",
+    "label_id": 19,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:06:12.349221+00:00"
+  },
+  {
+    "dataset": "imdb",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:08.061106+00:00"
+  },
+  {
+    "dataset": "imdb",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:08.061106+00:00"
+  },
+  {
+    "dataset": "imdb",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:08.061106+00:00"
+  },
+  {
+    "dataset": "imdb",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:08.061106+00:00"
+  },
+  {
+    "dataset": "sst2",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:13.715788+00:00"
+  },
+  {
+    "dataset": "sst2",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:13.715788+00:00"
+  },
+  {
+    "dataset": "sst2",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:13.715788+00:00"
+  },
+  {
+    "dataset": "sst2",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:13.715788+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 0,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 0,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 1,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 1,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 2,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 2,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 3,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 3,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 4,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 4,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 5,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 5,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 6,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 6,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 7,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 7,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 8,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 8,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 9,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 9,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 10,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 10,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 11,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 11,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 12,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 12,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 13,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 13,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 14,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 14,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 15,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 15,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 16,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 16,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 17,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 17,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 18,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 18,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 19,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 19,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 20,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 20,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 21,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 21,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 22,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 22,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 23,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 23,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 24,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 24,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 25,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 25,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 26,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 26,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 27,
+    "label_mode": "L2",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  },
+  {
+    "dataset": "go_emotions",
+    "label_id": 27,
+    "label_mode": "L3",
+    "source_type": "llm_fallback",
+    "source_url_or_reference": "model:openai/gpt-4o-mini",
+    "generated_at": "2026-03-16T12:07:18.817282+00:00"
+  }
+]

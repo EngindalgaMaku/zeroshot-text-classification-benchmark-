@@ -1,0 +1,18 @@
+experiment_name: dbpedia_14_bge-small-en-v1.5_l3
+dataset:
+  name: dbpedia_14
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: 1000
+task:
+  label_mode: l3
+models:
+  biencoder:
+    name: BAAI/bge-small-en-v1.5
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results/llm_descriptions
+  save_metrics: true
+  save_predictions: true

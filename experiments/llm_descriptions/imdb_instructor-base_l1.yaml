@@ -1,0 +1,18 @@
+experiment_name: imdb_instructor-base_l1
+dataset:
+  name: imdb
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: 2000
+task:
+  label_mode: name_only
+models:
+  biencoder:
+    name: hkunlp/instructor-base
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results/llm_descriptions
+  save_metrics: true
+  save_predictions: true
