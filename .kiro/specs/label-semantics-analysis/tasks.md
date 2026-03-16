@@ -120,7 +120,7 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
 - [ ] 12. Final checkpoint — Tüm analizler tamamlandı
   - Ensure all tests pass, ask the user if questions arise.
 
-- [-] 13. LLM tabanlı label description üretim scripti — `scripts/generate_label_descriptions.py`
+- [x] 13. LLM tabanlı label description üretim scripti — `scripts/generate_label_descriptions.py`
   - [x] 13.1 `DescriptionGenerator` sınıfını yaz
     - OpenAI GPT-4o ve Anthropic Claude 3.5 Sonnet API'lerini destekle
     - Sabit prompt şablonunu uygula: `"Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: [Dataset Name]. Label: [Label Name]."`
@@ -139,8 +139,8 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - `temperature=0` parametresinin her çağrıda iletildiğini doğrula
     - **Validates: Requirements 8.1, 8.2**
 
-- [ ] 14. Provenance ve generation metadata kaydı
-  - [ ] 14.1 `src/label_descriptions/provenance.json` üretimini yaz
+- [-] 14. Provenance ve generation metadata kaydı
+  - [x] 14.1 `src/label_descriptions/provenance.json` üretimini yaz
     - Her description için `dataset`, `label_id`, `label_mode`, `source_type`, `source_url_or_reference`, `generated_at` alanlarını kaydet
     - `source_type` değerleri: `llm_generated`, `wikipedia`, `wikidata`, `dbpedia_ontology`, `dataset_documentation`, `psychology_dictionary`, `ekman_theory`, `plutchik_theory`, `llm_fallback`
     - _Requirements: 8.5, 8.6_

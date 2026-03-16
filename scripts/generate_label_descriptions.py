@@ -409,10 +409,18 @@ def generate_descriptions(
     # Persist outputs
     if not dry_run:
         provenance.save(str(OUTPUT_DIR / "provenance.json"))
+
+        # Build a single generation_metadata.json with both (or one) set(s)
+        combined_meta: dict = {}
         if sets in ("a", "both"):
-            meta_a.save(str(OUTPUT_DIR / "generation_metadata_set_a.json"))
+            combined_meta["set_a"] = meta_a.to_dict()
         if sets in ("b", "both"):
-            meta_b.save(str(OUTPUT_DIR / "generation_metadata_set_b.json"))
+            combined_meta["set_b"] = meta_b.to_dict()
+        meta_path = OUTPUT_DIR / "generation_metadata.json"
+        meta_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(meta_path, "w", encoding="utf-8") as _fh:
+            json.dump(combined_meta, _fh, indent=2, ensure_ascii=False)
+        log.info("Generation metadata saved → %s", meta_path)
 
     # Write main output
     out = Path(output_path)

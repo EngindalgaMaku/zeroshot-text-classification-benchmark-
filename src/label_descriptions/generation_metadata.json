@@ -1,0 +1,7 @@
+{
+  "model_set_a": "openai/gpt-4o",
+  "model_set_b": "anthropic/claude-3-5-sonnet",
+  "prompt_template": "Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: {dataset_name}. Label: {label_name}.",
+  "temperature": 0,
+  "generated_at": "2026-03-16T10:57:47.523458+00:00"
+}

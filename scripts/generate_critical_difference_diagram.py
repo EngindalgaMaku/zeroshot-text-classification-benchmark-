@@ -63,11 +63,20 @@ def draw_cd_diagram(average_ranks, cd, cliques, friedman_p, kendalls_w):
 
     label_heights = [0.20, 0.38, 0.20, 0.38, 0.20, 0.38, 0.20]
     for i, (name, rank) in enumerate(zip(names, ranks)):
-        # Highlight Qwen3 with red color
-        color = "red" if name == "Qwen3" else "black"
-        marker_size = 7 if name == "Qwen3" else 6
+        # Highlight Qwen3 with red color AND star marker for B&W printing
+        if name == "Qwen3":
+            color = "red"
+            marker = "*"  # Star marker - visible in B&W
+            marker_size = 14  # Larger for star
+        else:
+            color = "black"
+            marker = "o"
+            marker_size = 6
         
-        ax.plot(rank, axis_y, "o", color=color, markersize=marker_size, zorder=5)
+        ax.plot(rank, axis_y, marker, color=color, markersize=marker_size, 
+                markeredgecolor="black" if name == "Qwen3" else color,
+                markeredgewidth=1.2 if name == "Qwen3" else 0,
+                zorder=5)
         y_label = axis_y + label_heights[i % len(label_heights)]
         
         # Use lighter grey for grid lines
