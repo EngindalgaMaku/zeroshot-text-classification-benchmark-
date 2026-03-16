@@ -1,0 +1,16 @@
+{
+  "ag_news": {
+    "0": {
+      "set_a": "[DRY-RUN] Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: ag_news. Label: world."
+    },
+    "1": {
+      "set_a": "[DRY-RUN] Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: ag_news. Label: sports."
+    },
+    "2": {
+      "set_a": "[DRY-RUN] Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: ag_news. Label: business."
+    },
+    "3": {
+      "set_a": "[DRY-RUN] Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: ag_news. Label: science and technology."
+    }
+  }
+}

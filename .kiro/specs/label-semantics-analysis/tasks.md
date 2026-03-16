@@ -121,12 +121,12 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
   - Ensure all tests pass, ask the user if questions arise.
 
 - [-] 13. LLM tabanlı label description üretim scripti — `scripts/generate_label_descriptions.py`
-  - [-] 13.1 `DescriptionGenerator` sınıfını yaz
+  - [x] 13.1 `DescriptionGenerator` sınıfını yaz
     - OpenAI GPT-4o ve Anthropic Claude 3.5 Sonnet API'lerini destekle
     - Sabit prompt şablonunu uygula: `"Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: [Dataset Name]. Label: [Label Name]."`
     - Tüm LLM çağrılarını `temperature=0` ile gerçekleştir
     - _Requirements: 8.1, 8.2_
-  - [-] 13.2 Dataset başına otoriter kaynak eşlemesini uygula
+  - [x] 13.2 Dataset başına otoriter kaynak eşlemesini uygula
     - `ag_news`, `yahoo_answers_topics`, `SetFit/20_newsgroups` → Wikipedia / Wikidata
     - `dbpedia_14` → DBpedia Ontology
     - `banking77` → dataset dokümantasyonu

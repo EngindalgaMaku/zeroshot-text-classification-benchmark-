@@ -57,19 +57,29 @@ def draw_cd_diagram(average_ranks, cd, cliques, friedman_p, kendalls_w):
                 color="black", linewidth=1.2, zorder=3)
         ax.text(r, axis_y - 0.08, str(r), ha="center", va="top", fontsize=10)
 
-    ax.text((rank_min + rank_max) / 2, axis_y - 0.22,
+    ax.text((rank_min + rank_max) / 2, axis_y - 0.28,
             "Average Rank  (lower = better)",
             ha="center", va="top", fontsize=11)
 
     label_heights = [0.20, 0.38, 0.20, 0.38, 0.20, 0.38, 0.20]
     for i, (name, rank) in enumerate(zip(names, ranks)):
-        ax.plot(rank, axis_y, "o", color="black", markersize=6, zorder=5)
+        # Highlight Qwen3 with red color
+        color = "red" if name == "Qwen3" else "black"
+        marker_size = 7 if name == "Qwen3" else 6
+        
+        ax.plot(rank, axis_y, "o", color=color, markersize=marker_size, zorder=5)
         y_label = axis_y + label_heights[i % len(label_heights)]
+        
+        # Use lighter grey for grid lines
+        line_color = color if name == "Qwen3" else "#999999"
         ax.plot([rank, rank], [axis_y + 0.03, y_label - 0.03],
-                color="black", linewidth=0.8, linestyle="--", zorder=2)
+                color=line_color, linewidth=0.8, linestyle="--", zorder=2, alpha=0.6)
+        
+        # Bold and red for Qwen3
         ax.text(rank, y_label + 0.02, name,
                 ha="center", va="bottom", fontsize=10,
-                fontweight="bold" if i == 0 else "normal")
+                fontweight="bold" if name == "Qwen3" else "normal",
+                color=color)
 
     cd_y = 0.88
     cd_start = rank_min

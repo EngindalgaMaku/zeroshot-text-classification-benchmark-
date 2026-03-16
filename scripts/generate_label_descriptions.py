@@ -3,8 +3,8 @@
 Required packages (install separately):
     openai, anthropic, python-dotenv
 
-Usage:
-    python scripts/generate_label_descriptions.py [--dataset DATASET] [--set {a,b,both}]
+Usage (run from project root):
+    python -m scripts.generate_label_descriptions [--dataset DATASET] [--set {a,b,both}]
                                                    [--dry-run] [--output PATH]
 """
 
