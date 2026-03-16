@@ -29,10 +29,10 @@ def load_generated_descriptions():
 LABEL_SETS = {
     "ag_news": {
         "name_only": {
-            0: ["world"],
-            1: ["sports"],
-            2: ["business"],
-            3: ["science and technology"],
+            0: ["World"],
+            1: ["Sports"],
+            2: ["Business"],
+            3: ["Sci/Tech"],
         },
         "description": {
             0: ["This text is about international events, global politics, diplomacy, conflicts, or world affairs."],
@@ -78,20 +78,20 @@ LABEL_SETS = {
     
     "dbpedia_14": {
         "name_only": {
-            0: ["company"],
-            1: ["educational institution"],
-            2: ["artist"],
-            3: ["athlete"],
-            4: ["office holder"],
-            5: ["mean of transportation"],
-            6: ["building"],
-            7: ["natural place"],
-            8: ["village"],
-            9: ["animal"],
-            10: ["plant"],
-            11: ["album"],
-            12: ["film"],
-            13: ["written work"],
+            0: ["Company"],
+            1: ["EducationalInstitution"],
+            2: ["Artist"],
+            3: ["Athlete"],
+            4: ["OfficeHolder"],
+            5: ["MeanOfTransportation"],
+            6: ["Building"],
+            7: ["NaturalPlace"],
+            8: ["Village"],
+            9: ["Animal"],
+            10: ["Plant"],
+            11: ["Album"],
+            12: ["Film"],
+            13: ["WrittenWork"],
         },
         "description": {
             0: ["This text describes a company, corporation, or business organization."],
@@ -373,7 +373,7 @@ LABEL_SETS = {
             50: ["receiving money"],
             51: ["refund not showing up"],
             52: ["request refund"],
-            53: ["reverted card payment"],
+            53: ["reverted card payment?"],
             54: ["supported cards and currencies"],
             55: ["terminate account"],
             56: ["top up by bank transfer charge"],
@@ -954,8 +954,8 @@ LABEL_SETS = {
     # IMDB Movie Reviews - Binary sentiment
     "imdb": {
         "name_only": {
-            0: ["negative"],
-            1: ["positive"],
+            0: ["neg"],
+            1: ["pos"],
         },
         "description": {
             0: ["This text expresses negative sentiment, criticism, disappointment, or unfavorable opinion about a movie."],

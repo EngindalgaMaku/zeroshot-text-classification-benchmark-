@@ -51,10 +51,15 @@ DATASET_TASK_TYPE: dict[str, str] = {
 }
 
 # label_mode string → code
+# Supports both legacy keys (name_only/description/multi_description) and
+# llm_descriptions experiment keys (l1/l2/l3)
 LABEL_MODE_CODE: dict[str, str] = {
     "name_only": "L1",
+    "l1": "L1",
     "description": "L2",
+    "l2": "L2",
     "multi_description": "L3",
+    "l3": "L3",
 }
 
 

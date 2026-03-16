@@ -210,11 +210,18 @@ def load_macro_f1_from_results(results_dir: Path) -> pd.DataFrame:
 
 
 def map_label_mode_to_code(label_mode: str) -> Optional[str]:
-    """Map LABEL_SETS key to L1/L2/L3 code."""
+    """Map label_mode string to L1/L2/L3 code.
+
+    Supports both legacy LABEL_SETS keys (name_only/description/multi_description)
+    and llm_descriptions experiment keys (l1/l2/l3).
+    """
     mapping = {
         "name_only": "L1",
+        "l1": "L1",
         "description": "L2",
+        "l2": "L2",
         "multi_description": "L3",
+        "l3": "L3",
     }
     return mapping.get(label_mode)
 
