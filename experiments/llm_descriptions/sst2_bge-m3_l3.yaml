@@ -1,0 +1,18 @@
+experiment_name: sst2_bge-m3_l3
+dataset:
+  name: sst2
+  split: validation
+  text_column: text
+  label_column: label
+  max_samples: 1000
+task:
+  label_mode: l3
+models:
+  biencoder:
+    name: BAAI/bge-m3
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results/llm_descriptions
+  save_metrics: true
+  save_predictions: true

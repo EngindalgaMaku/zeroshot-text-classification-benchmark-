@@ -18,15 +18,15 @@ DATASETS = {
     "go_emotions": {"split": "test", "max_samples": 2000},
 }
 
-# Models to test - ACTIVE models only
+# Models to test - ALL 7 models from main experiments
 MODELS = [
-    "sentence-transformers/all-mpnet-base-v2",           # mpnet
-    "BAAI/bge-small-en-v1.5",                           # bge
-    "nomic-ai/nomic-embed-text-v1.5",                   # nomic
-    "intfloat/e5-small-v2",                             # e5
-    "hkunlp/instructor-base",                           # instructor
-    "jinaai/jina-embeddings-v3",                        # jina_v5
-    # "Alibaba-NLP/gte-Qwen2-1.5B-instruct",           # REMOVED - not used anymore
+    "sentence-transformers/all-mpnet-base-v2",           # MPNet
+    "BAAI/bge-m3",                                       # BGE-M3
+    "nomic-ai/nomic-embed-text-v1.5",                   # Nomic-MoE
+    "intfloat/multilingual-e5-large",                   # E5-large
+    "hkunlp/instructor-base",                           # INSTRUCTOR
+    "jinaai/jina-embeddings-v3",                        # Jina v5
+    "Qwen/Qwen3-Embedding-4B",                          # Qwen3
 ]
 
 def generate_configs():

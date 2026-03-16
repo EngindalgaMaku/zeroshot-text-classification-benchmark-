@@ -1,0 +1,18 @@
+experiment_name: banking77_bge-m3_l1
+dataset:
+  name: banking77
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: 1000
+task:
+  label_mode: name_only
+models:
+  biencoder:
+    name: BAAI/bge-m3
+pipeline:
+  normalize_embeddings: true
+output:
+  output_dir: results/llm_descriptions
+  save_metrics: true
+  save_predictions: true
