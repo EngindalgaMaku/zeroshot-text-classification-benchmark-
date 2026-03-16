@@ -120,7 +120,7 @@ def draw_heatmap(pivot: pd.DataFrame) -> plt.Figure:
     fig, ax = plt.subplots(figsize=(14, 6))
 
     # ---- draw the full heatmap (all rows × all cols) ----
-    cmap = matplotlib.colormaps.get_cmap("YlOrRd")
+    cmap = matplotlib.colormaps.get_cmap("Blues")
     cmap.set_bad(color="#cccccc")  # grey for NaN
 
     vmin = pivot.loc[data_rows, data_cols].min().min()
@@ -172,7 +172,7 @@ def draw_heatmap(pivot: pd.DataFrame) -> plt.Figure:
 
     # ---- axis labels ----
     ax.set_xlabel("Dataset", fontsize=12, labelpad=8)
-    ax.set_ylabel("Model", fontsize=12, labelpad=8)
+    ax.set_ylabel("Embedding Model", fontsize=12, labelpad=8)
 
     # Rotate x-tick labels for readability
     ax.set_xticklabels(
