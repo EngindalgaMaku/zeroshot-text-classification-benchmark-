@@ -1,500 +1,1300 @@
 {
   "ag_news": {
     "0": {
-      "l2": "This text is about diplomacy, international relations, treaties, conflicts, humanitarian aid, or global summits."
+      "l2": "This text is about diplomacy, international relations, treaties, conflicts, humanitarian aid, or global security.",
+      "l3": [
+        "This text is about geopolitics, international relations, diplomacy, global conflicts, humanitarian crises, or economic sanctions.",
+        "Global conflicts often reshape alliances and influence international trade dynamics.",
+        "Humanitarian crises highlight the urgent need for international aid and cooperation."
+      ]
     },
     "1": {
-      "l2": "This text is about athletes, championships, scores, leagues, tournaments, or records."
+      "l2": "This text is about athletes, championships, scores, leagues, tournaments, or records.",
+      "l3": [
+        "This text is about athletes, competitions, leagues, scores, training, or endorsements.",
+        "Sports journalism often highlights athlete performance and statistics in detail.",
+        "Coverage includes analysis of game strategies and team dynamics throughout seasons."
+      ]
     },
     "2": {
-      "l2": "This text is about mergers, acquisitions, investments, market trends, financial reports, or economic forecasts."
+      "l2": "This text is about mergers, acquisitions, investments, market trends, financial reports, or economic forecasts.",
+      "l3": [
+        "This text is about finance, investment, market trends, corporate strategies, economic forecasts, or mergers and acquisitions.",
+        "Business articles often analyze stock performance and its impact on investor sentiment.",
+        "They also explore regulatory changes and their implications for industry growth and competition."
+      ]
     },
     "3": {
-      "l2": "This text is about artificial intelligence, quantum computing, biotechnology, renewable energy, cybersecurity, or space exploration."
+      "l2": "This text is about artificial intelligence, quantum computing, biotechnology, renewable energy, cybersecurity, or space exploration.",
+      "l3": [
+        "This text is about artificial intelligence, quantum computing, biotechnology, renewable energy, cybersecurity, or nanotechnology.",
+        "Emerging technologies are reshaping industries and driving innovation globally.",
+        "Research breakthroughs in science are leading to new applications and solutions."
+      ]
     }
   },
   "dbpedia_14": {
     "0": {
-      "l2": "This text is about corporation, enterprise, startup, conglomerate, partnership, or firm."
+      "l2": "This text is about corporation, enterprise, startup, conglomerate, partnership, or limited liability company.",
+      "l3": [
+        "This text is about corporations, enterprises, businesses, firms, organizations, or startups.",
+        "Companies engage in commercial activities to generate profit and provide goods.",
+        "Corporate structures often include shareholders, management, and operational divisions."
+      ]
     },
     "1": {
-      "l2": "This text is about university, college, academy, institute, campus, or school."
+      "l2": "This text is about university, college, academy, institute, school, or campus.",
+      "l3": [
+        "This text is about universities, colleges, academies, schools, institutes, or educational organizations.",
+        "Educational institutions provide structured learning environments for diverse academic disciplines.",
+        "They often engage in research initiatives and community outreach programs to enhance education."
+      ]
     },
     "2": {
-      "l2": "This text is about painter, sculptor, musician, composer, photographer, or illustrator."
+      "l2": "This text is about painter, sculptor, musician, composer, photographer, or illustrator.",
+      "l3": [
+        "This text is about painters, sculptors, musicians, photographers, illustrators, or graphic designers.",
+        "Artists often express cultural narratives through their chosen medium and style.",
+        "The impact of artists can be seen in societal movements and aesthetic trends."
+      ]
     },
     "3": {
-      "l2": "This text is about marathon runner, Olympic medalist, sports coach, professional boxer, football player, or tennis champion."
+      "l2": "This text is about marathon runner, football player, swimmer, basketball player, tennis player, or cyclist.",
+      "l3": [
+        "This text is about sports, competition, training, performance, endurance, or physical fitness.",
+        "Athletes often specialize in specific sports, showcasing unique skills and techniques.",
+        "They undergo rigorous training regimens to enhance strength, agility, and stamina."
+      ]
     },
     "4": {
-      "l2": "This text is about senator, governor, mayor, representative, councilor, or president."
+      "l2": "This text is about senator, governor, mayor, representative, councilor, or president.",
+      "l3": [
+        "This text is about politicians, governors, senators, mayors, representatives, or councilors.",
+        "Officeholders are responsible for enacting legislation and public policy decisions.",
+        "They often engage in constituent services and community outreach initiatives."
+      ]
     },
     "5": {
-      "l2": "This text is about bicycle, airplane, train, bus, motorcycle, or boat."
+      "l2": "This text is about bicycle, car, airplane, train, bus, or boat.",
+      "l3": [
+        "This text is about bicycles, cars, trains, airplanes, boats, or buses.",
+        "\"Public transportation systems enhance urban mobility and reduce congestion.\"",
+        "\"Personal vehicles offer convenience and flexibility for individual travel needs.\""
+      ]
     },
     "6": {
-      "l2": "This text is about skyscrapers, cathedrals, museums, bridges, residential complexes, or office buildings."
+      "l2": "This text is about skyscrapers, cathedrals, museums, bridges, residential complexes, or historical landmarks.",
+      "l3": [
+        "This text is about architecture, construction, design, infrastructure, landmarks, or heritage.",
+        "Buildings serve as functional spaces for residential, commercial, or institutional purposes.",
+        "Architectural styles reflect cultural significance, historical context, and technological advancements."
+      ]
     },
     "7": {
-      "l2": "This text is about mountain ranges, national parks, rivers, lakes, forests, or wetlands."
+      "l2": "This text is about mountain ranges, national parks, rivers, lakes, forests, or wetlands.",
+      "l3": [
+        "This text is about ecosystems, habitats, biomes, landscapes, geological formations, or natural reserves.",
+        "Natural places encompass diverse ecosystems that support unique flora and fauna.",
+        "They often feature significant geological formations shaped by natural processes over time."
+      ]
     },
     "8": {
-      "l2": "This text is about hamlet, township, community, settlement, locality, or neighborhood."
+      "l2": "This text is about hamlet, township, community, settlement, locality, or neighborhood.",
+      "l3": [
+        "This text is about rural settlements, community structures, agricultural practices, local governance, cultural heritage, or population demographics.",
+        "Villages often serve as centers for traditional agricultural activities and local economies.",
+        "They frequently maintain unique cultural identities through festivals, crafts, and communal traditions."
+      ]
     },
     "9": {
-      "l2": "This text is about mammal, reptile, amphibian, bird, fish, or insect."
+      "l2": "This text is about mammal, reptile, amphibian, bird, fish, or insect.",
+      "l3": [
+        "This text is about mammals, reptiles, amphibians, birds, fish, or invertebrates.",
+        "Animals exhibit diverse adaptations for survival in various ecosystems.",
+        "Reproductive strategies in animals include oviparity, viviparity, and parthenogenesis."
+      ]
     },
     "10": {
-      "l2": "This text is about photosynthesis, chlorophyll, angiosperms, gymnosperms, ferns, or mosses."
+      "l2": "This text is about photosynthesis, chlorophyll, angiosperms, gymnosperms, mycorrhizae, or pollination.",
+      "l3": [
+        "This text is about photosynthesis, chlorophyll, angiosperms, gymnosperms, plant anatomy, or plant ecology.",
+        "Plants utilize photosynthesis to convert sunlight into energy efficiently.",
+        "Diverse plant species exhibit unique adaptations to various ecological niches."
+      ]
     },
     "11": {
-      "l2": "This text is about tracklist, genre, release date, producer, cover art, or music label."
+      "l2": "This text is about tracklist, genre, release date, producer, cover art, or music label.",
+      "l3": [
+        "This text is about music genres, track listings, production techniques, album covers, artist collaborations, or critical reception.",
+        "Albums serve as a collection of musical compositions, showcasing an artist's creativity.",
+        "They often reflect cultural trends and influence the music industry landscape significantly."
+      ]
     },
     "12": {
-      "l2": "This text is about director, screenplay, cinematography, film festival, box office, or genre."
+      "l2": "This text is about director, screenplay, cinematography, film festival, box office, or genre.",
+      "l3": [
+        "This text is about cinematography, screenwriting, directing, editing, production design, or acting.",
+        "Cinematography involves the art of visual storytelling through camera techniques.",
+        "Screenwriting focuses on crafting compelling narratives and character development."
+      ]
     },
     "13": {
-      "l2": "This text is about novel, essay, poem, biography, anthology, or manuscript."
+      "l2": "This text is about novel, essay, poem, biography, anthology, or manuscript.",
+      "l3": [
+        "This text is about novels, essays, articles, biographies, poems, or plays.",
+        "Written works serve as a medium for artistic expression and intellectual discourse.",
+        "They encompass diverse genres, each with unique structures and thematic elements."
+      ]
     }
   },
   "yahoo_answers_topics": {
     "0": {
-      "l2": "This text is about traditions, customs, beliefs, values, identities, or social norms."
+      "l2": "This text is about traditions, customs, beliefs, values, identities, or social norms.",
+      "l3": [
+        "This text is about social norms, cultural practices, community values, identity formation, or interpersonal relationships.",
+        "Cultural practices shape community interactions and influence social cohesion significantly.",
+        "Identity formation is crucial for individuals navigating diverse societal expectations and roles."
+      ]
     },
     "1": {
-      "l2": "This text is about calculus, algebra, geometry, physics, statistics, or trigonometry."
+      "l2": "This text is about calculus, algebra, geometry, physics, statistics, or trigonometry.",
+      "l3": [
+        "This text is about physics, chemistry, biology, calculus, statistics, algebra, or geometry.",
+        "Scientific inquiry often involves hypothesis testing and experimental design principles.",
+        "Mathematical modeling is crucial for solving real-world problems and data analysis."
+      ]
     },
     "2": {
-      "l2": "This text is about nutrition, exercise, mental health, chronic illness, medication, or wellness."
+      "l2": "This text is about nutrition, exercise, mental health, chronic illness, medication, or wellness.",
+      "l3": [
+        "This text is about nutrition, mental health, fitness, chronic illness, wellness, or preventive care.",
+        "Health-related community questions often explore dietary choices and their impacts.",
+        "Discussions frequently address mental well-being and coping strategies for stress."
+      ]
     },
     "3": {
-      "l2": "This text is about homework help, study tips, educational resources, tutoring services, exam preparation, or academic advice."
+      "l2": "This text is about homework help, study tips, educational resources, tutoring services, exam preparation, or research methods.",
+      "l3": [
+        "This text is about academic resources, study techniques, educational policies, tutoring services, learning strategies, or reference materials.",
+        "Educational policies shape curriculum standards and influence teaching methodologies significantly.",
+        "Tutoring services provide personalized support to enhance student understanding and performance."
+      ]
     },
     "4": {
-      "l2": "This text is about software, hardware, networking, cybersecurity, programming, or web development."
+      "l2": "This text is about software, hardware, networking, cybersecurity, programming, or web development.",
+      "l3": [
+        "This text is about software development, cybersecurity, networking, web design, cloud computing, or data management.",
+        "Discussions often focus on programming languages and frameworks for application development.",
+        "Users frequently seek advice on securing networks against cyber threats and vulnerabilities."
+      ]
     },
     "5": {
-      "l2": "This text is about basketball, football, soccer, tennis, baseball, or hockey."
+      "l2": "This text is about basketball, football, soccer, tennis, baseball, or hockey.",
+      "l3": [
+        "This text is about athletes, competitions, training, sportsmanship, leagues, or fitness.",
+        "Discussions often focus on athlete performance and training regimens.",
+        "Community questions may explore rules, strategies, and sports equipment usage."
+      ]
     },
     "6": {
-      "l2": "This text is about investment strategies, stock market trends, financial planning, budgeting techniques, economic indicators, or retirement accounts."
+      "l2": "This text is about investment strategies, stock market trends, financial planning, budgeting techniques, credit scores, or retirement accounts.",
+      "l3": [
+        "This text is about investment strategies, market analysis, financial planning, economic trends, stock trading, or personal finance.",
+        "Understanding investment strategies helps individuals maximize their returns effectively.",
+        "Market analysis provides insights into economic trends influencing business decisions."
+      ]
     },
     "7": {
-      "l2": "This text is about concerts, albums, music videos, artists, genres, or playlists."
+      "l2": "This text is about concerts, albums, music videos, artists, genres, or playlists.",
+      "l3": [
+        "This text is about concerts, music genres, artists, albums, playlists, or streaming services.",
+        "Discussions often revolve around favorite bands and upcoming album releases.",
+        "Community members frequently seek recommendations for new music and live performances."
+      ]
     },
     "8": {
-      "l2": "This text is about marriage, parenting, divorce, dating, family dynamics, or relationships."
+      "l2": "This text is about marriage, parenting, divorce, dating, family dynamics, or sibling rivalry.",
+      "l3": [
+        "This text is about parenting, marriage, communication, family dynamics, relationships, or conflict resolution.",
+        "Exploring effective communication strategies can strengthen family bonds significantly.",
+        "Addressing relationship conflicts often requires understanding emotional needs and perspectives."
+      ]
     },
     "9": {
-      "l2": "This text is about elections, legislation, policies, governance, political parties, or public opinion."
+      "l2": "This text is about legislation, elections, policies, governance, political parties, or public opinion.",
+      "l3": [
+        "This text is about legislation, governance, elections, public policy, civic engagement, or political theory.",
+        "Political discourse often revolves around the impact of legislation on society.",
+        "Elections serve as a critical mechanism for citizen participation in governance."
+      ]
     }
   },
   "banking77": {
     "0": {
-      "l2": "This text is about card activation, customer verification, security code, online banking, mobile app, or account management."
+      "l2": "This text is about card activation, customer identification, security verification, account status, PIN setup, or online banking.",
+      "l3": [
+        "This text is about card activation, customer verification, security protocols, account management, or transaction processing.",
+        "Customers often need assistance with verifying their identity for card activation.",
+        "Activation processes may involve security questions or temporary PIN generation."
+      ]
     },
     "1": {
-      "l2": "This text is about minimum age requirement, account eligibility, youth savings accounts, senior citizen benefits, age verification process, or age-related policies."
+      "l2": "This text is about minimum age requirement, account eligibility, youth savings accounts, senior citizen benefits, age verification process, or age-related policies.",
+      "l3": [
+        "This text is about age verification, customer eligibility, account restrictions, service access, compliance regulations, or age-related policies.",
+        "Age limit policies ensure compliance with financial regulations and protect vulnerable populations.",
+        "Customer service representatives must accurately assess age-related eligibility for banking products."
+      ]
     },
     "2": {
-      "l2": "This text is about mobile payments, transaction security, digital wallets, payment processing, account linking, or customer support."
+      "l2": "This text is about mobile payments, transaction security, digital wallets, payment processing, account linking, or customer support.",
+      "l3": [
+        "This text is about mobile payments, digital wallets, transaction security, contactless payments, user authentication, or payment processing.",
+        "Apple Pay and Google Pay enhance transaction security through biometric authentication methods.",
+        "These platforms streamline customer service by enabling quick, contactless payment options."
+      ]
     },
     "3": {
-      "l2": "This text is about ATM transactions, card withdrawals, cash deposits, error messages, transaction limits, or maintenance requests."
+      "l2": "This text is about ATM transactions, card withdrawals, cash deposits, error messages, machine malfunctions, or transaction limits.",
+      "l3": [
+        "This text is about ATM transactions, card withdrawals, cash deposits, machine malfunctions, transaction limits, or customer inquiries.",
+        "ATM support assists customers with troubleshooting machine errors and transaction failures.",
+        "It provides guidance on withdrawal limits and fees associated with ATM usage."
+      ]
     },
     "4": {
-      "l2": "This text is about account balance, payment schedule, transaction limit, notification settings, funding source, or recurring payments."
+      "l2": "This text is about account balance, payment schedule, transaction limit, funding source, notification settings, or recurring payments.",
+      "l3": [
+        "This text is about account balance, payment processing, transaction limits, customer notifications, funding sources, or recurring payments.",
+        "Automatic top-up ensures seamless account funding to avoid overdrafts and service interruptions.",
+        "Customers can set preferences for funding sources and top-up amounts for convenience."
+      ]
     },
     "5": {
-      "l2": "This text is about transaction delay, account balance, bank transfer, customer inquiry, payment processing, or service resolution."
+      "l2": "This text is about transaction delay, account balance, bank transfer, customer inquiry, payment processing, or service resolution.",
+      "l3": [
+        "This text is about bank transfers, account balances, transaction processing, customer inquiries, online banking, or payment delays.",
+        "Customers may experience delays in seeing updated balances after transfers.",
+        "Issues can arise from system errors or processing times affecting account visibility."
+      ]
     },
     "6": {
-      "l2": "This text is about cheque deposit, cash deposit, account balance, transaction processing, deposit hold, or customer inquiry."
+      "l2": "This text is about cheque deposit, cash deposit, account balance, transaction processing, deposit hold, or customer inquiry.",
+      "l3": [
+        "This text is about cheque deposits, cash deposits, account balance, transaction processing, banking systems, or customer inquiries.",
+        "Delayed updates can lead to customer dissatisfaction and confusion regarding available funds.",
+        "Inaccurate balance information may affect customers' ability to make timely financial decisions."
+      ]
     },
     "7": {
-      "l2": "This text is about beneficiary restrictions, account limitations, compliance regulations, transaction denials, service policies, or customer inquiries."
+      "l2": "This text is about account restrictions, payment processing, beneficiary verification, compliance regulations, transaction limits, or service denial.",
+      "l3": [
+        "This text is about account restrictions, transaction limits, compliance regulations, beneficiary eligibility, risk assessment, or account management.",
+        "Beneficiary not allowed indicates a restriction on adding certain individuals to accounts.",
+        "This status often arises from compliance with anti-money laundering regulations."
+      ]
     },
     "8": {
-      "l2": "This text is about transfer request, transaction reversal, account balance, customer verification, service fee, or cancellation policy."
+      "l2": "This text is about transfer request, transaction reversal, account balance, payment processing, customer inquiry, or service cancellation.",
+      "l3": [
+        "This text is about transaction reversal, fund retrieval, account management, payment processing, customer requests, or service inquiries.",
+        "Customers often seek assistance with reversing unauthorized or mistaken transfers.",
+        "Support agents guide users through the necessary steps to cancel pending transactions."
+      ]
     },
     "9": {
-      "l2": "This text is about expiration date, renewal process, replacement card, customer notification, account update, or service interruption."
+      "l2": "This text is about expiration date, renewal process, replacement card, customer notification, account update, or service alert.",
+      "l3": [
+        "This text is about card expiration dates, renewal notifications, customer alerts, account management, transaction continuity, or service updates.",
+        "Timely notifications help customers avoid service interruptions and maintain access.",
+        "Renewal processes ensure seamless transitions to new cards without account disruptions."
+      ]
     },
     "10": {
-      "l2": "This text is about payment processing, transaction approval, card verification, merchant services, payment gateways, or fraud detection."
+      "l2": "This text is about payment processing, transaction approval, card verification, merchant services, point of sale, or contactless payments.",
+      "l3": [
+        "This text is about payment processing, transaction verification, merchant services, card networks, authorization requests, or fraud prevention.",
+        "Card acceptance involves ensuring compatibility with major card networks like Visa and MasterCard.",
+        "It also includes managing transaction disputes and chargebacks for customer satisfaction."
+      ]
     },
     "11": {
-      "l2": "This text is about card delivery, tracking number, shipping status, customer notification, delivery timeframe, or card activation."
+      "l2": "This text is about card delivery, tracking number, estimated arrival date, shipping method, customer notification, or card activation.",
+      "l3": [
+        "This text is about card delivery, tracking status, shipping notifications, customer inquiries, or expected arrival.",
+        "Customers often seek updates on their card's shipping progress and estimated delivery dates.",
+        "Inquiries may include requests for reissuance due to delays or lost cards during transit."
+      ]
     },
     "12": {
-      "l2": "This text is about delivery timeframe, tracking number, shipping method, customer notification, card activation, or estimated arrival date."
+      "l2": "This text is about delivery timeframe, tracking number, shipping method, customer notification, card activation, or estimated arrival date.",
+      "l3": [
+        "This text is about card delivery timelines, shipping methods, tracking information, customer notifications, or delivery confirmations.",
+        "Customers inquire about the expected arrival date of their new debit or credit card.",
+        "Support agents provide updates on shipping status and any potential delays."
+      ]
     },
     "13": {
-      "l2": "This text is about account verification, payment processing, transaction history, card activation, security protocols, or customer inquiries."
+      "l2": "This text is about account verification, payment processing, transaction history, card activation, security protocols, or customer inquiries.",
+      "l3": [
+        "This text is about account integration, payment methods, transaction history, mobile banking, security protocols, or user authentication.",
+        "Linking cards allows customers to manage multiple accounts seamlessly.",
+        "Security measures ensure safe transactions and protect user data during linking."
+      ]
     },
     "14": {
-      "l2": "This text is about card activation, transaction decline, payment processing, account verification, fraud alert, or customer support."
+      "l2": "This text is about card activation, transaction decline, payment processing, account verification, fraud alert, or customer support.",
+      "l3": [
+        "This text is about card transactions, payment processing, account verification, fraud detection, customer support, or technical issues.",
+        "Customers may experience declined transactions due to insufficient funds or card expiration.",
+        "Technical glitches can prevent card activation or lead to payment processing errors."
+      ]
     },
     "15": {
-      "l2": "This text is about transaction fees, service charges, credit card payments, merchant fees, account statements, or billing inquiries."
+      "l2": "This text is about transaction fees, service charges, payment processing, credit card statements, account deductions, or merchant fees.",
+      "l3": [
+        "This text is about transaction fees, card processing, merchant charges, payment gateways, service fees, or customer inquiries.",
+        "Customers often seek clarification on the specific fees associated with card transactions.",
+        "Disputes may arise regarding unexpected charges on monthly statements from card payments."
+      ]
     },
     "16": {
-      "l2": "This text is about transaction decline, payment authorization, card verification, merchant processing, account status, or fraud alert."
+      "l2": "This text is about transaction decline, payment authorization, card verification, merchant processing, account status, or fraud alert.",
+      "l3": [
+        "This text is about transaction disputes, payment authorization, merchant processing, customer verification, fraud detection, or chargeback requests.",
+        "Customers often report unauthorized transactions leading to confusion and frustration.",
+        "Resolution typically involves verifying transaction details and investigating merchant communications."
+      ]
     },
     "17": {
-      "l2": "This text is about transaction discrepancy, currency conversion, exchange rate fluctuation, payment processing error, foreign transaction fee, or customer complaint."
+      "l2": "This text is about transaction discrepancy, currency conversion, exchange rate error, payment processing, foreign transaction fee, or customer complaint.",
+      "l3": [
+        "This text is about currency conversion, transaction fees, exchange rate discrepancies, international payments, cardholder complaints, or customer support.",
+        "Customers often report unexpected charges due to incorrect exchange rates applied during transactions.",
+        "Disputes arise when cardholders seek refunds for overcharged amounts linked to foreign currency exchanges."
+      ]
     },
     "18": {
-      "l2": "This text is about card retrieval, ATM malfunction, customer identification, transaction interruption, card replacement, or service escalation."
+      "l2": "This text is about card retrieval, ATM malfunction, customer identification, transaction interruption, account security, or service escalation.",
+      "l3": [
+        "This text is about card retrieval, ATM malfunction, customer notification, transaction interruption, or card replacement.",
+        "Customers may experience delays in accessing funds due to card retention.",
+        "Service representatives guide users through the process of reporting and replacing cards."
+      ]
     },
     "19": {
-      "l2": "This text is about transaction fees, ATM charges, service fees, account statements, withdrawal limits, or customer inquiries."
+      "l2": "This text is about transaction fees, ATM charges, service fees, account statements, withdrawal limits, or customer inquiries.",
+      "l3": [
+        "This text is about transaction fees, ATM usage, account balance, service charges, withdrawal limits, or customer inquiries.",
+        "\"Customers may incur fees when withdrawing cash from ATMs outside their network.\"",
+        "\"Understanding withdrawal limits helps avoid unexpected cash withdrawal charges.\""
+      ]
     },
     "20": {
-      "l2": "This text is about transaction dispute, ATM malfunction, account verification, withdrawal limit, unauthorized charge, or customer complaint."
+      "l2": "This text is about transaction dispute, account statement, ATM error, withdrawal limit, unauthorized charge, or customer complaint.",
+      "l3": [
+        "This text is about transaction disputes, ATM errors, account verification, withdrawal limits, customer complaints, or fraud alerts.",
+        "Customers may report unauthorized cash withdrawals from their accounts.",
+        "Bank representatives investigate discrepancies in transaction records and account activity."
+      ]
     },
     "21": {
-      "l2": "This text is about PIN number, security code, account access, authentication, customer request, or online banking."
+      "l2": "This text is about PIN number, security code, account access, verification process, customer request, or authentication method.",
+      "l3": [
+        "This text is about PIN security, account access, authentication methods, customer verification, online banking, or mobile banking.",
+        "Changing a PIN enhances security by preventing unauthorized access to accounts.",
+        "Customers can update their PIN through online banking or by contacting customer support."
+      ]
     },
     "22": {
-      "l2": "This text is about card fraud, transaction alerts, account security, customer verification, replacement cards, or unauthorized charges."
+      "l2": "This text is about card fraud, account security, transaction alerts, customer verification, card replacement, or unauthorized charges.",
+      "l3": [
+        "This text is about card fraud detection, transaction alerts, account security, identity theft, customer verification, or chargeback processes.",
+        "Compromised cards often lead to unauthorized transactions and financial loss for customers.",
+        "Immediate reporting and card replacement are crucial to mitigate further risks."
+      ]
     },
     "23": {
-      "l2": "This text is about contactless payment, card reader, transaction failure, mobile wallet, NFC technology, or customer support."
+      "l2": "This text is about contactless payment, card reader, transaction failure, mobile wallet, NFC technology, or customer support.",
+      "l3": [
+        "This text is about contactless payments, mobile wallets, transaction failures, NFC technology, card readers, or customer support.",
+        "Customers may experience difficulties with NFC-enabled devices during transactions.",
+        "Issues can arise from outdated software or hardware incompatibility with payment terminals."
+      ]
     },
     "24": {
-      "l2": "This text is about international transactions, currency exchange, regulatory compliance, account verification, fraud prevention, or customer inquiries."
+      "l2": "This text is about international transactions, currency exchange, regulatory compliance, customer inquiries, fraud prevention, or account management.",
+      "l3": [
+        "This text is about international transactions, currency exchange, account verification, compliance regulations, or customer inquiries.",
+        "Country support involves assisting customers with cross-border banking regulations and requirements.",
+        "It also includes providing guidance on local currency conversion rates and fees."
+      ]
     },
     "25": {
-      "l2": "This text is about transaction failure, insufficient funds, fraud alert, credit limit, payment authorization, or merchant rejection."
+      "l2": "This text is about transaction failure, insufficient funds, fraud alert, credit limit, payment authorization, or merchant rejection.",
+      "l3": [
+        "This text is about transaction failure, payment authorization, credit limit, fraud detection, account status, or customer notification.",
+        "The customer may experience declined payments due to insufficient funds or exceeded credit limits.",
+        "Fraud detection systems can trigger declines if suspicious activity is detected on the account."
+      ]
     },
     "26": {
-      "l2": "This text is about account balance, transaction limit, ATM malfunction, insufficient funds, withdrawal request, or customer notification."
+      "l2": "This text is about account balance, transaction limit, ATM error, withdrawal request, customer notification, or service escalation.",
+      "l3": [
+        "This text is about cash withdrawal limits, account balance, transaction fees, ATM availability, customer verification, or service interruptions.",
+        "Declined cash withdrawals often occur due to insufficient account balance or exceeded withdrawal limits.",
+        "Customer verification processes can delay transactions, leading to declined cash withdrawal requests."
+      ]
     },
     "27": {
-      "l2": "This text is about transaction limits, insufficient funds, account verification, fraud alerts, transfer fees, or customer complaints."
+      "l2": "This text is about transfer request, insufficient funds, account verification, transaction limit, fraud alert, or customer notification.",
+      "l3": [
+        "This text is about transfer requests, account verification, transaction limits, fraud detection, customer notifications, or service policies.",
+        "Transfer requests may be declined due to insufficient funds or exceeding daily limits.",
+        "Account verification processes ensure security but can delay transaction approvals."
+      ]
     },
     "28": {
-      "l2": "This text is about direct debit, payment processing, transaction failure, account verification, bank statement, or customer inquiry."
+      "l2": "This text is about direct debit, payment processing, transaction failure, account reconciliation, customer inquiry, or payment dispute.",
+      "l3": [
+        "This text is about direct debit transactions, payment processing, account reconciliation, transaction disputes, bank statements, or customer inquiries.",
+        "Customers may report unauthorized deductions from their accounts, leading to confusion.",
+        "Bank representatives often assist in tracing the origin of the disputed payments."
+      ]
     },
     "29": {
-      "l2": "This text is about transaction limits, spending caps, temporary cards, account restrictions, customer inquiries, or limit adjustments."
+      "l2": "This text is about transaction limits, spending caps, temporary cards, account restrictions, fraud protection, or customer inquiries.",
+      "l3": [
+        "This text is about disposable card limits, transaction thresholds, spending caps, temporary cards, security features, or customer preferences.",
+        "Disposable card limits help manage spending for online purchases securely.",
+        "Customers can set specific limits to control their budget effectively."
+      ]
     },
     "30": {
-      "l2": "This text is about account information, contact number, mailing address, email address, identification documents, or user preferences."
+      "l2": "This text is about account information, contact number, mailing address, email address, identification documents, or user preferences.",
+      "l3": [
+        "This text is about account information, contact updates, address changes, profile management, security settings, or personal identification.",
+        "Updating personal details ensures accurate communication and service delivery from the bank.",
+        "Maintaining current information helps prevent fraud and enhances account security measures."
+      ]
     },
     "31": {
-      "l2": "This text is about currency conversion, transaction fees, foreign exchange rates, service charges, international transfers, or account statements."
+      "l2": "This text is about currency conversion, transaction fees, foreign exchange rates, service charges, international transfers, or account statements.",
+      "l3": [
+        "This text is about currency conversion fees, international transactions, foreign exchange rates, service charges, or account statements.",
+        "Exchange charges apply when converting one currency to another during transactions.",
+        "Customers may incur additional fees for international wire transfers or ATM withdrawals abroad."
+      ]
     },
     "32": {
-      "l2": "This text is about currency conversion, foreign exchange, forex rates, international transfers, exchange rate fluctuations, or cross-border payments."
+      "l2": "This text is about currency conversion, foreign exchange, forex rates, international transfers, exchange rate fluctuations, or cross-border payments.",
+      "l3": [
+        "This text is about currency conversion, foreign exchange, forex rates, market fluctuations, international transactions, or cross-border payments.",
+        "Understanding exchange rates helps customers make informed currency conversion decisions.",
+        "Real-time forex rate updates enable customers to optimize their international transactions."
+      ]
     },
     "33": {
-      "l2": "This text is about mobile transactions, app notifications, customer inquiries, digital wallets, account management, or payment processing."
+      "l2": "This text is about mobile transactions, digital wallets, account transfers, payment notifications, transaction history, or customer support.",
+      "l3": [
+        "This text is about mobile transactions, digital wallets, account transfers, payment notifications, user authentication, or customer support.",
+        "Mobile transactions enable users to send and receive funds instantly through the app.",
+        "Digital wallets provide a secure platform for storing payment information and making purchases."
+      ]
     },
     "34": {
-      "l2": "This text is about transaction fees, account statements, billing errors, service charges, overdraft fees, or monthly maintenance fees."
+      "l2": "This text is about transaction fees, account statements, billing errors, service charges, overdraft fees, or monthly maintenance fees.",
+      "l3": [
+        "This text is about account fees, transaction charges, service fees, overdraft penalties, monthly maintenance fees, or unexpected deductions.",
+        "Customers often inquire about unrecognized fees on their monthly bank statements.",
+        "Clarification is sought regarding the breakdown of service-related charges applied to accounts."
+      ]
     },
     "35": {
-      "l2": "This text is about transaction error, insufficient funds, account verification, payment processing, transfer limits, or customer notification."
+      "l2": "This text is about transaction error, insufficient funds, account verification, payment processing, transfer limits, or customer notification.",
+      "l3": [
+        "This text is about transaction errors, insufficient funds, payment processing, account verification, transfer limits, or customer notifications.",
+        "Failed transfers often result from insufficient funds in the sender's account.",
+        "Transaction errors can occur due to incorrect recipient details or system outages."
+      ]
     },
     "36": {
-      "l2": "This text is about currency exchange, transaction fees, account balances, withdrawal limits, deposit methods, or payment processing."
+      "l2": "This text is about currency exchange, transaction fees, account balances, wire transfers, foreign currency accounts, or cash withdrawals.",
+      "l3": [
+        "This text is about currency exchange rates, transaction fees, payment processing, international transfers, account balances, or customer inquiries.",
+        "Fiat currency support includes assistance with local and foreign currency transactions.",
+        "Customer service representatives provide guidance on currency conversion and related fees."
+      ]
     },
     "37": {
-      "l2": "This text is about virtual card, disposable card, online transactions, security features, temporary card, or customer support."
+      "l2": "This text is about virtual card, disposable card, online security, transaction limit, temporary card, or customer support.",
+      "l3": [
+        "This text is about disposable virtual card, online transactions, security features, temporary card numbers, digital wallets, or fraud prevention.",
+        "Disposable virtual cards enhance security for online purchases by masking real card details.",
+        "They provide temporary access for transactions, reducing the risk of fraud and unauthorized charges."
+      ]
     },
     "38": {
-      "l2": "This text is about card issuance, delivery address, identification verification, card activation, customer request, or replacement card."
+      "l2": "This text is about card issuance, card delivery, physical card request, card activation, card replacement, or card tracking.",
+      "l3": [
+        "This text is about card issuance, customer identification, account verification, delivery options, PIN setup, or card activation.",
+        "Customers inquire about the process for obtaining a new physical debit or credit card.",
+        "Support representatives assist with verifying identity and ensuring secure card delivery."
+      ]
     },
     "39": {
-      "l2": "This text is about spare card request, card replacement process, customer identification, account verification, delivery options, or card activation."
+      "l2": "This text is about replacement card, card request, customer identification, account verification, delivery options, or card activation.",
+      "l3": [
+        "This text is about card replacement, account security, customer verification, transaction history, or card issuance.",
+        "Customers often request a spare card for enhanced account accessibility and security.",
+        "The process typically involves verifying identity and confirming the need for a replacement card."
+      ]
     },
     "40": {
-      "l2": "This text is about virtual card application, digital card issuance, online banking, card activation, security features, or transaction limits."
+      "l2": "This text is about virtual card application, digital card issuance, online banking, card activation, security features, or customer support.",
+      "l3": [
+        "This text is about virtual card issuance, online banking, digital payments, security features, transaction limits, or customer support.",
+        "Customers inquire about the process for obtaining a virtual card quickly and securely.",
+        "Users seek information on managing their virtual card settings and transaction notifications."
+      ]
     },
     "41": {
-      "l2": "This text is about card replacement, fraud alert, transaction dispute, account security, customer verification, or emergency assistance."
+      "l2": "This text is about card replacement, fraud alert, transaction dispute, account security, customer verification, or emergency assistance.",
+      "l3": [
+        "This text is about card replacement, fraud prevention, account security, transaction monitoring, customer verification, or emergency assistance.",
+        "Timely reporting of a lost or stolen card helps mitigate unauthorized transactions.",
+        "Customers may need to verify their identity to secure a replacement card."
+      ]
     },
     "42": {
-      "l2": "This text is about account security, mobile banking, fraud alert, customer verification, device tracking, or account suspension."
+      "l2": "This text is about account security, mobile banking, fraud alerts, customer verification, device tracking, or account suspension.",
+      "l3": [
+        "This text is about account security, mobile banking, fraud prevention, customer support, identity verification, or device tracking.",
+        "Customers need to report lost or stolen phones immediately to protect their accounts.",
+        "Banking services may require identity verification to assist with device recovery."
+      ]
     },
     "43": {
-      "l2": "This text is about card application, delivery address, card activation, PIN selection, card replacement, or customer verification."
+      "l2": "This text is about card application, delivery address, card activation, PIN selection, card replacement, or customer verification.",
+      "l3": [
+        "This text is about card issuance, customer requests, physical card delivery, account management, banking services, or customer support.",
+        "Customers inquire about the process for obtaining a new physical debit or credit card.",
+        "The text discusses the timeline and requirements for receiving a physical card after ordering."
+      ]
     },
     "44": {
-      "l2": "This text is about account access, security questions, identity verification, password reset, customer support, or authentication methods."
+      "l2": "This text is about account access, security questions, password reset, identity verification, customer support, or authentication methods.",
+      "l3": [
+        "This text is about account security, authentication, password recovery, identity verification, customer support, or user access.",
+        "Customers often require assistance with resetting their online banking passcodes securely.",
+        "Support agents guide users through identity verification to regain account access efficiently."
+      ]
     },
     "45": {
-      "l2": "This text is about transaction status, payment authorization, card processing, account balance, payment delay, or customer inquiry."
+      "l2": "This text is about transaction status, payment authorization, card processing, account balance, payment delay, or customer inquiry.",
+      "l3": [
+        "This text is about transaction delays, payment processing, card authorization, merchant transactions, account balances, or customer inquiries.",
+        "Pending card payments often arise from insufficient funds or merchant verification delays.",
+        "Customers may experience frustration due to extended processing times or unclear payment statuses."
+      ]
     },
     "46": {
-      "l2": "This text is about transaction status, withdrawal request, account balance, processing time, customer inquiry, or service delay."
+      "l2": "This text is about transaction status, withdrawal request, account balance, processing time, customer inquiry, or service delay.",
+      "l3": [
+        "This text is about transaction delays, account balances, withdrawal limits, customer inquiries, processing times, or service requests.",
+        "Pending cash withdrawals often involve verification of account status and available funds.",
+        "Customers may experience delays due to bank processing times or compliance checks."
+      ]
     },
     "47": {
-      "l2": "This text is about account balance, transaction delay, fund transfer, payment processing, customer inquiry, or top-up request."
+      "l2": "This text is about account balance, transaction delay, payment processing, fund availability, customer inquiry, or top-up request.",
+      "l3": [
+        "This text is about account balance, transaction processing, fund transfer, payment methods, customer inquiries, or account management.",
+        "Pending top-ups often involve verification of payment methods and account details.",
+        "Customers may inquire about the status and expected completion time of their top-ups."
+      ]
     },
     "48": {
-      "l2": "This text is about transaction status, transfer confirmation, hold period, beneficiary details, payment processing, or customer inquiry."
+      "l2": "This text is about transaction status, transfer confirmation, hold period, beneficiary details, payment processing, or customer inquiry.",
+      "l3": [
+        "This text is about transaction status, fund availability, transfer confirmation, processing delays, customer inquiries, or payment tracking.",
+        "Pending transfers often involve verification of account details and transaction limits.",
+        "Customers may seek updates on expected completion times for their transfers."
+      ]
     },
     "49": {
-      "l2": "This text is about PIN reset, account security, customer verification, fraud prevention, transaction denial, or service interruption."
+      "l2": "This text is about PIN reset, account security, customer verification, fraud prevention, transaction denial, or service interruption.",
+      "l3": [
+        "This text is about account security, transaction verification, customer authentication, fraud prevention, PIN management, or account access.",
+        "Customers may experience a blocked PIN due to multiple incorrect entry attempts.",
+        "Reactivation of a blocked PIN often requires identity verification through customer support."
+      ]
     },
     "50": {
-      "l2": "This text is about wire transfers, direct deposits, money orders, remittances, ACH transactions, or check deposits."
+      "l2": "This text is about wire transfers, direct deposits, money orders, ACH transactions, remittances, or check deposits.",
+      "l3": [
+        "This text is about wire transfers, direct deposits, payment processing, remittances, ACH transactions, or money orders.",
+        "Receiving money through wire transfers ensures quick and secure fund availability.",
+        "Direct deposits streamline payroll processes, enhancing customer satisfaction and efficiency."
+      ]
     },
     "51": {
-      "l2": "This text is about transaction history, refund request, account statement, processing delay, customer inquiry, or payment reversal."
+      "l2": "This text is about transaction history, account statement, refund request, payment processing, customer inquiry, or dispute resolution.",
+      "l3": [
+        "This text is about transaction history, account reconciliation, payment processing, customer inquiries, refund policies, or dispute resolution.",
+        "Customers often inquire about the status of their refunds in transaction records.",
+        "Delayed processing times can lead to confusion regarding expected refund timelines."
+      ]
     },
     "52": {
-      "l2": "This text is about transaction dispute, chargeback request, refund policy, account credit, payment reversal, or customer complaint."
+      "l2": "This text is about refund request, transaction dispute, chargeback process, account adjustment, payment reversal, or customer complaint.",
+      "l3": [
+        "This text is about transaction disputes, chargebacks, refund policies, customer satisfaction, financial adjustments, or account reconciliation.",
+        "Customers often seek refunds due to unauthorized transactions or service dissatisfaction.",
+        "Refund requests may involve specific documentation like receipts or transaction IDs."
+      ]
     },
     "53": {
-      "l2": "This text is about transaction reversal, chargeback request, payment dispute, refund process, customer inquiry, or account adjustment."
+      "l2": "This text is about transaction reversal, chargeback request, payment dispute, refund process, merchant authorization, or customer inquiry.",
+      "l3": [
+        "This text is about card transactions, payment reversals, customer inquiries, transaction disputes, or refunds.",
+        "Customers often seek clarification on the process for reversing unauthorized card payments.",
+        "Representatives assist in tracking the status of reverted payments and ensuring timely resolutions."
+      ]
     },
     "54": {
-      "l2": "This text is about credit cards, debit cards, prepaid cards, foreign currencies, exchange rates, or digital wallets."
+      "l2": "This text is about credit cards, debit cards, prepaid cards, foreign currencies, exchange rates, or payment methods.",
+      "l3": [
+        "This text is about credit cards, debit cards, prepaid cards, foreign currencies, exchange rates, or transaction fees.",
+        "Credit cards offer rewards programs and interest rates for customers.",
+        "Foreign currencies include major currencies like USD, EUR, and GBP for transactions."
+      ]
     },
     "55": {
-      "l2": "This text is about account closure, customer request, final statement, account balance, service fees, or account verification."
+      "l2": "This text is about account closure, customer request, final statement, account balance, service fees, or documentation requirements.",
+      "l3": [
+        "This text is about account closure, customer dissatisfaction, service fees, account inactivity, or financial disputes.",
+        "Customers may seek to terminate accounts due to high maintenance fees or poor service experiences.",
+        "Account termination can also arise from unresolved disputes or lack of engagement with banking services."
+      ]
     },
     "56": {
-      "l2": "This text is about bank transfer, top-up fees, transaction limits, account balance, payment processing, or service charges."
+      "l2": "This text is about bank transfer, top-up fees, transaction limits, account balance, service charges, or payment processing.",
+      "l3": [
+        "This text is about bank transfer fees, account funding, transaction processing, payment methods, service charges, or customer inquiries.",
+        "Customers often inquire about the specific fees associated with bank transfer top-ups.",
+        "Understanding the processing times for bank transfer charges is crucial for timely account funding."
+      ]
     },
     "57": {
-      "l2": "This text is about card payment, account balance, transaction fee, payment method, customer inquiry, or charge authorization."
+      "l2": "This text is about card payment, account balance, transaction fee, payment method, customer inquiry, or charge authorization.",
+      "l3": [
+        "This text is about card payments, account balance, transaction fees, payment processing, customer verification, or charge authorization.",
+        "This category involves processing card payments to increase account balances efficiently.",
+        "It also includes verifying customer identities to ensure secure transactions."
+      ]
     },
     "58": {
-      "l2": "This text is about cash deposit, cheque deposit, transaction receipt, account balance, teller assistance, or payment processing."
+      "l2": "This text is about cash deposit, cheque deposit, transaction receipt, account balance, teller assistance, or payment processing.",
+      "l3": [
+        "This text is about cash deposits, cheque deposits, transaction processing, account funding, payment methods, or customer inquiries.",
+        "Customers can inquire about the procedures for cash or cheque deposits.",
+        "Bank representatives assist with verifying transaction limits and processing times."
+      ]
     },
     "59": {
-      "l2": "This text is about transaction decline, account balance, payment processing, customer notification, service interruption, or error message."
+      "l2": "This text is about transaction decline, account balance, payment processing, customer notification, service interruption, or error message.",
+      "l3": [
+        "This text is about transaction errors, account balance discrepancies, payment processing delays, customer notifications, or service interruptions.",
+        "Customers may experience failed top-ups due to insufficient funds in their accounts.",
+        "Technical glitches in the payment gateway can also lead to unsuccessful top-up attempts."
+      ]
     },
     "60": {
-      "l2": "This text is about transaction limits, account balance, funding sources, payment methods, customer requests, or service fees."
+      "l2": "This text is about transaction limits, account balance, funding sources, payment methods, customer requests, or service fees.",
+      "l3": [
+        "This text is about account funding, transaction thresholds, deposit restrictions, balance management, or customer inquiries.",
+        "Understanding top up limits helps customers manage their account funding effectively.",
+        "Clear communication of deposit restrictions ensures compliance with banking regulations."
+      ]
     },
     "61": {
-      "l2": "This text is about transaction reversal, account balance, customer notification, payment processing, fund availability, or service inquiry."
+      "l2": "This text is about transaction reversal, account balance, customer notification, payment processing, fund availability, or service inquiry.",
+      "l3": [
+        "This text is about transaction reversal, account balance, payment processing, customer notification, financial adjustment, or service inquiry.",
+        "The customer is informed about the reversal of a recent top-up transaction.",
+        "The banking system updates the account balance to reflect the reverted funds."
+      ]
     },
     "62": {
-      "l2": "This text is about card payment, account balance, transaction confirmation, payment gateway, customer support, or funding source."
+      "l2": "This text is about card payment, account balance, transaction confirmation, payment gateway, customer support, or funding source.",
+      "l3": [
+        "This text is about payment processing, transaction limits, card verification, account balance, funding sources, or customer support.",
+        "Customers can use debit or credit cards to increase their account balance.",
+        "Transaction limits may apply based on the card issuer's policies and customer status."
+      ]
     },
     "63": {
-      "l2": "This text is about duplicate charges, billing errors, transaction disputes, account statements, refund requests, or customer complaints."
+      "l2": "This text is about duplicate charges, billing errors, transaction disputes, account statements, refund requests, or customer complaints.",
+      "l3": [
+        "This text is about duplicate transactions, billing discrepancies, account statements, transaction history, customer complaints, or refund requests.",
+        "Customers often report unauthorized charges appearing multiple times on their statements.",
+        "Resolution typically involves verifying transaction details and issuing refunds promptly."
+      ]
     },
     "64": {
-      "l2": "This text is about transaction fees, service charges, account transfers, wire fees, processing costs, or customer inquiries."
+      "l2": "This text is about transfer fee, transaction cost, service charge, account statement, wire transfer, or customer inquiry.",
+      "l3": [
+        "This text is about transaction fees, service charges, account transfers, wire fees, processing costs, or customer inquiries.",
+        "\"Customers often inquire about the specific rates for international wire transfers.\"",
+        "\"Fee structures can vary based on account type and transaction method.\""
+      ]
     },
     "65": {
-      "l2": "This text is about deposit, funds, transaction, account number, wire transfer, or ACH transfer."
+      "l2": "This text is about account balance, wire transfer, direct deposit, transaction history, fund availability, or account verification.",
+      "l3": [
+        "This text is about account deposits, fund transfers, transaction processing, banking regulations, customer inquiries, or online banking.",
+        "Customers often seek assistance with initiating or tracking fund transfers.",
+        "Support representatives clarify procedures for transferring funds between accounts."
+      ]
     },
     "66": {
-      "l2": "This text is about transaction delay, payment confirmation, recipient account, wire transfer, remittance tracking, or customer inquiry."
+      "l2": "This text is about transaction delay, payment confirmation, recipient account, wire transfer, remittance tracking, or customer inquiry.",
+      "l3": [
+        "This text is about transaction delays, payment processing, fund transfer, recipient verification, banking protocols, or customer inquiries.",
+        "Customers often inquire about the status of their wire transfers and payment confirmations.",
+        "Issues may arise from incorrect recipient details or banking network disruptions affecting transfers."
+      ]
     },
     "67": {
-      "l2": "This text is about transaction processing, fund availability, transfer duration, processing times, cut-off hours, or delivery schedules."
+      "l2": "This text is about transaction processing, fund availability, transfer duration, processing times, cut-off hours, or delivery schedules.",
+      "l3": [
+        "This text is about transaction processing, fund availability, transfer delays, payment schedules, processing times, or cut-off times.",
+        "Transfer timing affects when funds are accessible to the recipient.",
+        "Understanding cut-off times is crucial for timely transaction execution."
+      ]
     },
     "68": {
-      "l2": "This text is about account verification, identity documents, security questions, customer authentication, fraud prevention, or identity theft."
+      "l2": "This text is about identity verification, customer authentication, security questions, account access, personal identification, or fraud prevention.",
+      "l3": [
+        "This text is about identity verification, customer authentication, security protocols, fraud prevention, account access, or identity theft.",
+        "Verification challenges often arise from mismatched personal information or documentation.",
+        "Customer service representatives must navigate complex security questions to confirm identities."
+      ]
     },
     "69": {
-      "l2": "This text is about account verification, identity documents, security questions, biometric authentication, customer identification, or fraud prevention."
+      "l2": "This text is about account verification, identity documents, security questions, biometric authentication, customer identification, or fraud prevention.",
+      "l3": [
+        "This text is about identity verification, customer authentication, security protocols, personal identification, account access, or fraud prevention.",
+        "This process ensures secure access to banking services through multi-factor authentication.",
+        "Customers may need to provide personal information or documents for verification purposes."
+      ]
     },
     "70": {
-      "l2": "This text is about account statements, transaction history, source documentation, income verification, financial records, or bank references."
+      "l2": "This text is about account statements, transaction history, income verification, bank transfers, source documentation, or financial audits.",
+      "l3": [
+        "This text is about account verification, transaction history, financial documentation, compliance regulations, or due diligence.",
+        "Verifying the source of funds ensures compliance with anti-money laundering regulations.",
+        "Customers may need to provide bank statements or pay stubs for verification purposes."
+      ]
     },
     "71": {
-      "l2": "This text is about account balance, transaction history, payment confirmation, mobile top-up, fund transfer, or customer verification."
+      "l2": "This text is about account balance, transaction history, payment confirmation, mobile top-up, fund transfer, or customer verification.",
+      "l3": [
+        "This text is about account balance, transaction history, payment confirmation, fund transfer, customer verification, or top-up requests.",
+        "Verifying a top-up involves checking the transaction status and ensuring funds are credited.",
+        "Customer service agents assist with discrepancies in top-up amounts and provide resolution steps."
+      ]
     },
     "72": {
-      "l2": "This text is about virtual card activation, transaction decline, customer support, account verification, payment processing, or security alerts."
+      "l2": "This text is about virtual card activation, transaction decline, customer support, account verification, payment processing, or security alerts.",
+      "l3": [
+        "This text is about virtual card transactions, payment processing, account security, transaction limits, customer support, or technical issues.",
+        "Users may experience declined transactions due to insufficient funds or incorrect card details.",
+        "Technical glitches can prevent virtual card activation or hinder online purchases."
+      ]
     },
     "73": {
-      "l2": "This text is about card activation, transaction disputes, account statements, fraud alerts, payment processing, or credit limits."
+      "l2": "This text is about card activation, transaction disputes, account statements, fraud alerts, payment processing, or credit limits.",
+      "l3": [
+        "This text is about credit card processing, transaction fees, account management, rewards programs, customer support, or fraud protection.",
+        "Visa and Mastercard offer distinct rewards programs tailored to consumer spending habits.",
+        "Customer service for these cards includes assistance with disputes and fraud alerts."
+      ]
     },
     "74": {
-      "l2": "This text is about account security, fraud prevention, identity theft, regulatory compliance, customer verification, or transaction authorization."
+      "l2": "This text is about account security, fraud prevention, identity theft, regulatory compliance, customer verification, or transaction authorization.",
+      "l3": [
+        "This text is about identity verification, fraud prevention, account security, customer authentication, data protection, or regulatory compliance.",
+        "Verifying identity helps prevent unauthorized access to sensitive financial information.",
+        "It ensures compliance with anti-money laundering regulations and protects against identity theft."
+      ]
     },
     "75": {
-      "l2": "This text is about cash discrepancy, transaction error, deposit amount, withdrawal amount, cash handling, or customer complaint."
+      "l2": "This text is about cash discrepancy, transaction error, withdrawal amount, deposit receipt, teller mistake, or cash handling.",
+      "l3": [
+        "This text is about cash discrepancies, transaction errors, teller mistakes, customer complaints, receipt verification, or cash handling procedures.",
+        "Inaccurate cash amounts can lead to customer dissatisfaction and trust issues.",
+        "Proper training in cash management is essential to minimize errors during transactions."
+      ]
     },
     "76": {
-      "l2": "This text is about exchange rate discrepancy, cash withdrawal fees, foreign currency conversion, transaction amount, customer complaint, or service resolution."
+      "l2": "This text is about exchange rate discrepancy, cash withdrawal fees, foreign currency conversion, transaction errors, customer complaints, or service resolution.",
+      "l3": [
+        "This text is about exchange rates, cash withdrawals, foreign currency, transaction fees, customer complaints, or service discrepancies.",
+        "Customers may experience unexpected charges due to incorrect exchange rate applications.",
+        "Discrepancies in rates can lead to significant financial losses during withdrawals."
+      ]
     }
   },
   "zeroshot/twitter-financial-news-sentiment": {
     "0": {
-      "l2": "This text is about market downturns, negative earnings reports, declining stock prices, bearish trends, economic recessions, or investor pessimism."
+      "l2": "This text is about market downturns, negative earnings reports, declining stock prices, bearish trends, investor pessimism, or economic recession.",
+      "l3": [
+        "This text is about market downturns, negative earnings reports, investor pessimism, declining stock prices, or economic recession.",
+        "Bearish sentiment often leads to increased volatility and risk aversion among traders.",
+        "Investors may anticipate lower future profits, prompting sell-offs and reduced market confidence."
+      ]
     },
     "1": {
-      "l2": "This text is about market optimism, stock price increase, investor confidence, positive earnings reports, economic growth, or bullish trends."
+      "l2": "This text is about optimism, price increase, market rally, investor confidence, positive earnings, or growth potential.",
+      "l3": [
+        "This text is about market optimism, stock price increases, investor confidence, economic growth, trading volume, or positive earnings reports.",
+        "Bullish sentiment often indicates expectations of rising asset values and favorable market conditions.",
+        "Investors may react to bullish signals by increasing their positions in stocks or other securities."
+      ]
     },
     "2": {
-      "l2": "This text is about market trends, economic indicators, stock performance, investment strategies, trading volumes, or analyst reports."
+      "l2": "This text is about market trends, economic indicators, stock performance, trading volume, investor behavior, or earnings reports.",
+      "l3": [
+        "This text is about market trends, economic indicators, stock performance, investment strategies, trading volumes, or analyst reports.",
+        "Market trends reflect stable conditions without significant bullish or bearish movements.",
+        "Economic indicators provide data that influences investor sentiment without clear direction."
+      ]
     }
   },
   "SetFit/20_newsgroups": {
     "0": {
-      "l2": "This text is about atheism, secularism, religious debate, skepticism, belief systems, or faith."
+      "l2": "This text is about atheism, belief systems, religious debates, secularism, skepticism, or faith.",
+      "l3": [
+        "This text is about secularism, skepticism, rationalism, atheism, humanism, or agnosticism.",
+        "Discussions often focus on the philosophical foundations of disbelief in deities.",
+        "Members frequently share personal experiences related to religious upbringing and identity."
+      ]
     },
     "1": {
-      "l2": "This text is about rendering, shaders, textures, 3D modeling, graphics cards, or image processing."
+      "l2": "This text is about rendering techniques, 3D modeling, texture mapping, graphics hardware, animation software, or image processing.",
+      "l3": [
+        "This text is about rendering techniques, 3D modeling, image processing, computer vision, graphics hardware, or animation software.",
+        "Discussions often focus on advanced rendering techniques like ray tracing and rasterization.",
+        "Users share insights on optimizing graphics performance through hardware acceleration and shader programming."
+      ]
     },
     "2": {
-      "l2": "This text is about Windows installation, driver updates, system errors, software compatibility, troubleshooting tips, or user experiences."
+      "l2": "This text is about Windows installation, driver updates, system errors, software compatibility, troubleshooting tips, or user experiences.",
+      "l3": [
+        "This text is about Windows operating system, software compatibility, driver installation, system updates, troubleshooting techniques, or user interface customization.",
+        "Discussions often focus on resolving software compatibility challenges with various applications.",
+        "Users frequently share tips for optimizing system performance and enhancing user experience."
+      ]
     },
     "3": {
-      "l2": "This text is about motherboards, graphics cards, power supplies, hard drives, RAM, or CPUs."
+      "l2": "This text is about motherboards, graphics cards, power supplies, hard drives, RAM, or CPUs.",
+      "l3": [
+        "This text is about hardware specifications, system upgrades, compatibility issues, performance benchmarks, driver installations, or troubleshooting techniques.",
+        "Discussions often focus on optimizing PC performance through hardware upgrades and configurations.",
+        "Users frequently seek advice on compatibility between different components and software drivers."
+      ]
     },
     "4": {
-      "l2": "This text is about MacBook, iMac, hardware upgrades, peripherals, troubleshooting, or compatibility."
+      "l2": "This text is about MacBook, iMac, hardware upgrades, peripherals, troubleshooting, or compatibility.",
+      "l3": [
+        "This text is about MacBook components, hardware upgrades, peripherals, system performance, troubleshooting, or compatibility.",
+        "Discussions often focus on optimizing Mac hardware for enhanced performance and efficiency.",
+        "Users frequently share experiences regarding compatibility issues with third-party accessories and upgrades."
+      ]
     },
     "5": {
-      "l2": "This text is about X Window System, graphical user interface, window managers, display servers, remote desktop, or Unix-based systems."
+      "l2": "This text is about X Window System, graphical user interface, window managers, display servers, remote desktop, or Unix-based systems.",
+      "l3": [
+        "This text is about X Window System, graphical user interface, window management, display servers, desktop environments, or user input devices.",
+        "Discussions often focus on optimizing X server configurations for performance.",
+        "Users share tips on integrating various window managers with the X environment."
+      ]
     },
     "6": {
-      "l2": "This text is about listings, transactions, negotiations, pricing, shipping, or payment methods."
+      "l2": "This text is about listings, auctions, transactions, merchandise, pricing, or shipping.",
+      "l3": [
+        "This text is about classifieds, auctions, listings, transactions, merchandise, or services.",
+        "Participants often negotiate prices and terms for various goods and services.",
+        "Users share reviews and experiences related to buying and selling items online."
+      ]
     },
     "7": {
-      "l2": "This text is about car maintenance, engine performance, fuel efficiency, automotive technology, vehicle safety, or repair tips."
+      "l2": "This text is about car maintenance, engine performance, fuel efficiency, automotive technology, vehicle safety, or repair tips.",
+      "l3": [
+        "This text is about automotive technology, vehicle maintenance, car reviews, driving tips, engine performance, or automotive safety.",
+        "Discussions often focus on the latest innovations in electric and hybrid vehicles.",
+        "Users frequently share personal experiences regarding car repairs and maintenance techniques."
+      ]
     },
     "8": {
-      "l2": "This text is about motorcycle maintenance, riding gear, engine modifications, safety tips, touring routes, or community events."
+      "l2": "This text is about motorcycle maintenance, riding gear, engine modifications, safety tips, touring routes, or community events.",
+      "l3": [
+        "This text is about motorcycle maintenance, riding techniques, safety gear, touring tips, bike modifications, or community events.",
+        "Discussions often focus on optimal tire pressure and chain lubrication methods.",
+        "Members share experiences about long-distance rides and recommended routes for touring."
+      ]
     },
     "9": {
-      "l2": "This text is about baseball statistics, player trades, game highlights, team rosters, fan opinions, or pitching strategies."
+      "l2": "This text is about baseball statistics, player trades, game highlights, team rosters, fan opinions, or pitching strategies.",
+      "l3": [
+        "This text is about baseball statistics, player performance, team strategies, game analysis, pitching techniques, or fan engagement.",
+        "Discussions often focus on advanced metrics like WAR and OPS for evaluating players.",
+        "Fans frequently debate team lineups, trade rumors, and managerial decisions during the season."
+      ]
     },
     "10": {
-      "l2": "This text is about hockey players, game strategies, team statistics, player trades, fan opinions, or match highlights."
+      "l2": "This text is about hockey players, game strategies, team statistics, player trades, fan discussions, or playoff predictions.",
+      "l3": [
+        "This text is about ice hockey, NHL teams, player statistics, game strategies, fan engagement, or playoff predictions.",
+        "Discussions often focus on team performance metrics and player analytics.",
+        "Fans frequently debate coaching tactics and game-day strategies in detail."
+      ]
     },
     "11": {
-      "l2": "This text is about encryption, cryptography, digital signatures, key exchange, hash functions, or public key infrastructure."
+      "l2": "This text is about encryption, cryptography, digital signatures, key exchange, hash functions, or public key infrastructure.",
+      "l3": [
+        "This text is about cryptography, encryption algorithms, digital signatures, key management, secure communication, or cryptanalysis.",
+        "Discussions often focus on the latest advancements in encryption techniques and their applications.",
+        "Participants frequently analyze vulnerabilities in cryptographic protocols and propose solutions."
+      ]
     },
     "12": {
-      "l2": "This text is about circuit design, microcontrollers, soldering techniques, PCB layout, signal processing, or electronic components."
+      "l2": "This text is about circuit design, microcontrollers, soldering techniques, PCB layout, signal processing, or electronic components.",
+      "l3": [
+        "This text is about circuit design, semiconductor devices, signal processing, microcontrollers, PCB layout, or electronic components.",
+        "Discussions often focus on troubleshooting circuit malfunctions and optimizing performance.",
+        "Users share insights on the latest advancements in semiconductor technology and applications."
+      ]
     },
     "13": {
-      "l2": "This text is about medical advice, health conditions, treatment options, prescription medications, patient experiences, or clinical trials."
+      "l2": "This text is about medical research, clinical trials, patient care, health advice, treatment options, or disease prevention.",
+      "l3": [
+        "This text is about medical research, clinical trials, patient care, healthcare policies, disease prevention, or treatment options.",
+        "Discussions often focus on the latest advancements in medical technology and therapies.",
+        "Participants frequently share personal experiences related to chronic illnesses and healthcare access."
+      ]
     },
     "14": {
-      "l2": "This text is about spacecraft, astronomy, astrophysics, satellite technology, space exploration, or planetary science."
+      "l2": "This text is about spacecraft, astronomy, astrophysics, satellite technology, space exploration, or planetary science.",
+      "l3": [
+        "This text is about astrophysics, space exploration, satellite technology, planetary science, astronomy, or cosmology.",
+        "Discussions often focus on recent discoveries in exoplanet research and their implications.",
+        "Participants frequently analyze the latest advancements in rocket propulsion and space missions."
+      ]
     },
     "15": {
-      "l2": "This text is about scripture, theology, prayer requests, church events, faith discussions, or biblical interpretations."
+      "l2": "This text is about scripture, theology, prayer requests, church activities, faith discussions, or biblical interpretations.",
+      "l3": [
+        "This text is about theology, biblical interpretation, church practices, faith discussions, Christian ethics, or spiritual growth.",
+        "Engagement in doctrinal debates often shapes community beliefs and practices.",
+        "Members share personal testimonies to encourage spiritual development and fellowship."
+      ]
     },
     "16": {
-      "l2": "This text is about gun control, Second Amendment, firearm legislation, political debates, shooting sports, or self-defense."
+      "l2": "This text is about gun control, Second Amendment, firearm legislation, self-defense, gun rights, or political activism.",
+      "l3": [
+        "This text is about gun control legislation, Second Amendment rights, firearm regulations, political advocacy, self-defense laws, or public safety debates.",
+        "Discussions often center around the interpretation of the Second Amendment and its implications.",
+        "Participants frequently debate the effectiveness of various gun control measures on crime rates."
+      ]
     },
     "17": {
-      "l2": "This text is about Israel, Palestine, Hamas, negotiations, settlements, or ceasefires."
+      "l2": "This text is about Israel, Palestine, Hamas, Hezbollah, peace talks, or military conflict.",
+      "l3": [
+        "This text is about geopolitical tensions, Middle Eastern conflicts, diplomatic relations, regional security, peace negotiations, or international interventions.",
+        "Discussions often focus on the impact of foreign policy on regional stability and alliances.",
+        "Participants frequently analyze historical contexts and cultural factors influencing current events."
+      ]
     },
     "18": {
-      "l2": "This text is about political debates, election campaigns, policy discussions, government actions, voter rights, or political ideologies."
+      "l2": "This text is about political debates, election campaigns, policy discussions, government actions, voter rights, or political ideologies.",
+      "l3": [
+        "This text is about political discourse, policy debates, electoral strategies, civic engagement, ideological perspectives, or grassroots movements.",
+        "Engagement in political discourse often involves analyzing policy debates and their implications.",
+        "Participants frequently discuss electoral strategies and their impact on civic engagement initiatives."
+      ]
     },
     "19": {
-      "l2": "This text is about theology, scripture, faith, prayer, doctrine, or spirituality."
+      "l2": "This text is about faith, scripture, theology, prayer, doctrine, or spirituality.",
+      "l3": [
+        "This text is about theology, spirituality, faith, religious practices, interfaith dialogue, or moral philosophy.",
+        "Discussions often explore diverse interpretations of sacred texts and doctrines.",
+        "Participants frequently share personal experiences related to spirituality and belief systems."
+      ]
     }
   },
   "imdb": {
     "0": {
-      "l2": "This text is about poor acting, weak plot, lack of character development, bad dialogue, unconvincing performances, or clichéd storytelling."
+      "l2": "This text is about poor acting, weak plot, bad dialogue, unconvincing characters, lack of originality, or disappointing direction.",
+      "l3": [
+        "This text is about poor acting, weak plot, lack of character development, clichéd dialogue, uninspired direction, or disappointing cinematography.",
+        "The film suffers from unconvincing performances that fail to engage the audience.",
+        "The storyline is riddled with predictable twists that diminish viewer interest."
+      ]
     },
     "1": {
-      "l2": "This text is about cinematography, performances, direction, screenplay, soundtrack, or character development."
+      "l2": "This text is about cinematography, performances, direction, screenplay, editing, or soundtrack.",
+      "l3": [
+        "This text is about cinematography, character development, plot twists, emotional depth, dialogue quality, or soundtrack.",
+        "Cinematography enhances the visual storytelling, creating immersive experiences for viewers.",
+        "Character development allows audiences to connect deeply with the protagonists' journeys."
+      ]
     }
   },
   "sst2": {
     "0": {
-      "l2": "This text is about disappointment, frustration, anger, dissatisfaction, negativity, or pessimism."
+      "l2": "This text is about disappointment, frustration, anger, dissatisfaction, negativity, or pessimism.",
+      "l3": [
+        "This text is about dissatisfaction, disappointment, frustration, discontent, pessimism, or negativity.",
+        "The sentiment reflects a lack of satisfaction with a product or service experience.",
+        "Emotional tone indicates adverse reactions to a situation or interaction."
+      ]
     },
     "1": {
-      "l2": "This text is about enthusiasm, satisfaction, joy, approval, appreciation, or delight."
+      "l2": "This text is about enthusiasm, satisfaction, joy, approval, appreciation, or delight.",
+      "l3": [
+        "This text is about positive sentiment, emotional resonance, favorable opinions, uplifting experiences, optimistic expressions, or enthusiastic feedback.",
+        "Positive sentiment often reflects joy, satisfaction, and appreciation in user-generated content.",
+        "Favorable opinions can enhance brand loyalty and influence consumer behavior significantly."
+      ]
     }
   },
   "go_emotions": {
     "0": {
-      "l2": "This text is about respect, appreciation, esteem, adoration, praise, or reverence."
+      "l2": "This text is about respect, appreciation, praise, esteem, adoration, or reverence.",
+      "l3": [
+        "This text is about appreciation, respect, esteem, reverence, adoration, or veneration.",
+        "Admiration often manifests through verbal affirmations and positive body language.",
+        "Expressions of admiration can enhance interpersonal relationships and foster motivation."
+      ]
     },
     "1": {
-      "l2": "This text is about laughter, joy, humor, playfulness, entertainment, or fun."
+      "l2": "This text is about laughter, joy, humor, playfulness, entertainment, or fun.",
+      "l3": [
+        "This text is about humor, joy, laughter, entertainment, playfulness, or satire.",
+        "Amusement often arises from unexpected twists or clever wordplay in narratives.",
+        "It can also be triggered by visual gags, physical comedy, or absurd situations."
+      ]
     },
     "2": {
-      "l2": "This text is about frustration, rage, irritation, hostility, resentment, or fury."
+      "l2": "This text is about frustration, rage, irritation, hostility, resentment, or fury.",
+      "l3": [
+        "This text is about frustration, rage, irritation, hostility, resentment, or exasperation.",
+        "Anger often manifests through physical expressions like clenched fists or raised voices.",
+        "Cognitive responses to anger can include feelings of injustice or perceived threats."
+      ]
     },
     "3": {
-      "l2": "This text is about irritation, frustration, exasperation, displeasure, aggravation, or annoyance."
+      "l2": "This text is about irritation, frustration, exasperation, displeasure, aggravation, or annoyance.",
+      "l3": [
+        "This text is about irritation, frustration, displeasure, exasperation, aggravation, or discontent.",
+        "Annoyance often arises from unmet expectations or repeated disturbances.",
+        "It can manifest in verbal expressions, body language, or social interactions."
+      ]
     },
     "4": {
-      "l2": "This text is about praise, validation, encouragement, endorsement, appreciation, or recognition."
+      "l2": "This text is about praise, validation, encouragement, endorsement, appreciation, or recognition.",
+      "l3": [
+        "This text is about validation, endorsement, support, appreciation, recognition, encouragement, or praise.",
+        "Approval often signifies a positive emotional response to someone's actions or achievements.",
+        "Expressions of approval can enhance interpersonal relationships and boost self-esteem."
+      ]
     },
     "5": {
-      "l2": "This text is about empathy, compassion, kindness, support, nurturing, or affection."
+      "l2": "This text is about empathy, compassion, kindness, support, nurturing, or affection.",
+      "l3": [
+        "This text is about empathy, compassion, support, kindness, nurturing, affection, or understanding.",
+        "Caring involves expressing emotional warmth through supportive gestures and words.",
+        "It also encompasses active listening and validating others' feelings and experiences."
+      ]
     },
     "6": {
-      "l2": "This text is about uncertainty, bewilderment, disorientation, perplexity, ambiguity, or indecision."
+      "l2": "This text is about uncertainty, bewilderment, disorientation, perplexity, ambiguity, or indecision.",
+      "l3": [
+        "This text is about uncertainty, perplexity, ambiguity, disorientation, bewilderment, or indecision.",
+        "Confusion often arises from conflicting information or unexpected outcomes.",
+        "Emotional expressions of confusion can manifest through facial cues and body language."
+      ]
     },
     "7": {
-      "l2": "This text is about wonder, inquiry, exploration, fascination, questioning, or discovery."
+      "l2": "This text is about wonder, inquiry, exploration, fascination, questioning, or discovery.",
+      "l3": [
+        "This text is about exploration, inquiry, wonder, fascination, investigation, or discovery.",
+        "Curiosity drives individuals to seek new knowledge and experiences actively.",
+        "It often manifests as a desire to understand complex concepts or phenomena."
+      ]
     },
     "8": {
-      "l2": "This text is about longing, craving, yearning, aspiration, wish, or hope."
+      "l2": "This text is about longing, craving, yearning, aspiration, wish, or hope.",
+      "l3": [
+        "This text is about longing, aspiration, craving, yearning, ambition, hope, or passion.",
+        "Desire often manifests as a strong emotional drive towards achieving personal goals.",
+        "It can also reflect a deep emotional connection to people, experiences, or material possessions."
+      ]
     },
     "9": {
-      "l2": "This text is about unmet expectations, unfulfilled desires, dashed hopes, letdowns, disillusionment, or frustration."
+      "l2": "This text is about unmet expectations, unfulfilled desires, dashed hopes, letdowns, disillusionment, or dissatisfaction.",
+      "l3": [
+        "This text is about unmet expectations, personal failures, unfulfilled desires, lost opportunities, emotional letdowns, or disillusionment.",
+        "Disappointment often arises from a gap between aspirations and reality, leading to emotional distress.",
+        "It can manifest in relationships, career setbacks, or personal goals, affecting overall well-being."
+      ]
     },
     "10": {
-      "l2": "This text is about criticism, disdain, contempt, rejection, scorn, or discontent."
+      "l2": "This text is about criticism, disdain, contempt, rejection, scorn, or discontent.",
+      "l3": [
+        "This text is about criticism, rejection, dissatisfaction, disdain, contempt, or disapproval.",
+        "Disapproval often manifests through negative body language and vocal tone.",
+        "Expressions of disapproval can influence social dynamics and interpersonal relationships."
+      ]
     },
     "11": {
-      "l2": "This text is about nausea, revulsion, aversion, distaste, loathing, or repugnance."
+      "l2": "This text is about nausea, revulsion, aversion, loathing, distaste, or repugnance.",
+      "l3": [
+        "This text is about aversion, nausea, repulsion, distaste, loathing, or revulsion.",
+        "Disgust often manifests through physical reactions like gagging or grimacing.",
+        "Cultural influences can shape what individuals find disgusting or acceptable."
+      ]
     },
     "12": {
-      "l2": "This text is about blushing, sweating, awkwardness, self-consciousness, humiliation, or shyness."
+      "l2": "This text is about blushing, awkward silence, fidgeting, avoiding eye contact, sweating, or stammering.",
+      "l3": [
+        "This text is about social faux pas, self-consciousness, awkwardness, humiliation, vulnerability, or shyness.",
+        "Embarrassment often arises from perceived social blunders or missteps in public settings.",
+        "It can trigger physiological responses like blushing, sweating, or increased heart rate."
+      ]
     },
     "13": {
-      "l2": "This text is about joy, enthusiasm, thrill, anticipation, exhilaration, or eagerness."
+      "l2": "This text is about joy, enthusiasm, thrill, anticipation, exhilaration, or eagerness.",
+      "l3": [
+        "This text is about enthusiasm, joy, anticipation, thrill, exhilaration, or eagerness.",
+        "Excitement often manifests through heightened energy and animated behavior.",
+        "Expressions of excitement can include vocal variations and physical gestures."
+      ]
     },
     "14": {
-      "l2": "This text is about anxiety, dread, terror, panic, apprehension, or phobia."
+      "l2": "This text is about anxiety, dread, terror, panic, apprehension, or phobia.",
+      "l3": [
+        "This text is about anxiety, dread, phobia, terror, apprehension, unease, or panic.",
+        "Fear often manifests through physiological responses like increased heart rate and sweating.",
+        "Cognitive aspects of fear include irrational thoughts and heightened vigilance to threats."
+      ]
     },
     "15": {
-      "l2": "This text is about appreciation, thankfulness, recognition, indebtedness, acknowledgment, or benevolence."
+      "l2": "This text is about appreciation, thankfulness, recognition, indebtedness, acknowledgment, or benevolence.",
+      "l3": [
+        "This text is about appreciation, thankfulness, recognition, acknowledgment, kindness, or generosity.",
+        "Gratitude often enhances interpersonal relationships and fosters emotional connections.",
+        "Expressions of gratitude can improve mental well-being and promote positive behavior."
+      ]
     },
     "16": {
-      "l2": "This text is about mourning, sorrow, loss, bereavement, lamentation, or heartache."
+      "l2": "This text is about mourning, loss, sorrow, bereavement, heartache, or lamentation.",
+      "l3": [
+        "This text is about loss, mourning, sorrow, bereavement, sadness, or heartache.",
+        "Grief often manifests through physical symptoms like fatigue and insomnia.",
+        "Coping mechanisms for grief can include support groups and therapy sessions."
+      ]
     },
     "17": {
-      "l2": "This text is about happiness, laughter, celebration, excitement, delight, or euphoria."
+      "l2": "This text is about happiness, laughter, celebration, excitement, delight, or euphoria.",
+      "l3": [
+        "This text is about happiness, elation, delight, amusement, contentment, jubilation, or excitement.",
+        "Joyful expressions often manifest through laughter, smiles, and positive body language.",
+        "Cultural celebrations frequently evoke joy, enhancing community bonds and shared experiences."
+      ]
     },
     "18": {
-      "l2": "This text is about affection, passion, romance, devotion, tenderness, or adoration."
+      "l2": "This text is about affection, passion, romance, devotion, intimacy, or tenderness.",
+      "l3": [
+        "This text is about affection, passion, devotion, romance, attachment, intimacy, or adoration.",
+        "Expressions of love often convey deep emotional connections and personal bonds.",
+        "Romantic love can inspire creativity, leading to art, poetry, and music."
+      ]
     },
     "19": {
-      "l2": "This text is about anxiety, apprehension, unease, tension, jitters, or restlessness."
+      "l2": "This text is about anxiety, apprehension, unease, tension, jitters, or restlessness.",
+      "l3": [
+        "This text is about anxiety, apprehension, unease, trepidation, jitters, or restlessness.",
+        "Nervousness often manifests through physiological responses like sweating or trembling.",
+        "Cognitive aspects include racing thoughts and heightened self-awareness in social situations."
+      ]
     },
     "20": {
-      "l2": "This text is about hope, positivity, encouragement, resilience, enthusiasm, or confidence."
+      "l2": "This text is about hope, positivity, encouragement, resilience, enthusiasm, or confidence.",
+      "l3": [
+        "This text is about hopefulness, positivity, resilience, encouragement, motivation, or enthusiasm.",
+        "Optimism often manifests through uplifting language and supportive sentiments.",
+        "Expressions of optimism can inspire confidence and foster a sense of community."
+      ]
     },
     "21": {
-      "l2": "This text is about accomplishment, self-esteem, confidence, achievement, recognition, or satisfaction."
+      "l2": "This text is about accomplishment, self-esteem, recognition, achievement, confidence, or satisfaction.",
+      "l3": [
+        "This text is about self-esteem, accomplishment, recognition, achievement, confidence, or success.",
+        "Pride often manifests through expressions of personal triumph and validation.",
+        "It can also be reflected in social contexts, showcasing group identity and collective success."
+      ]
     },
     "22": {
-      "l2": "This text is about awareness, acknowledgment, insight, understanding, recognition, or clarity."
+      "l2": "This text is about awareness, acknowledgment, insight, understanding, recognition, or clarity.",
+      "l3": [
+        "This text is about awareness, understanding, insight, acknowledgment, comprehension, or recognition.",
+        "Realization often involves a sudden clarity about one's feelings or thoughts.",
+        "It can also signify a deep understanding of personal experiences and their implications."
+      ]
     },
     "23": {
-      "l2": "This text is about comfort, reassurance, release, tranquility, liberation, or contentment."
+      "l2": "This text is about comfort, reassurance, release, tranquility, liberation, or contentment.",
+      "l3": [
+        "This text is about comfort, release, tranquility, satisfaction, ease, or contentment.",
+        "Relief often manifests as a reduction in anxiety and stress levels.",
+        "Experiencing relief can enhance overall well-being and promote positive emotions."
+      ]
     },
     "24": {
-      "l2": "This text is about guilt, regret, sorrow, contrition, shame, or self-reproach."
+      "l2": "This text is about guilt, regret, sorrow, contrition, shame, or self-reproach.",
+      "l3": [
+        "This text is about guilt, regret, self-reproach, contrition, sorrow, or shame.",
+        "Remorse often involves a deep sense of guilt for past actions.",
+        "It can manifest as a desire to make amends or seek forgiveness."
+      ]
     },
     "25": {
-      "l2": "This text is about grief, sorrow, melancholy, despair, heartache, or mourning."
+      "l2": "This text is about grief, sorrow, melancholy, despair, heartache, or mourning.",
+      "l3": [
+        "This text is about grief, melancholy, despair, sorrow, heartache, mourning, or loss.",
+        "Sadness often manifests through physical expressions like tears and slumped posture.",
+        "Cognitive aspects include rumination and feelings of hopelessness or worthlessness."
+      ]
     },
     "26": {
-      "l2": "This text is about astonishment, disbelief, shock, wonder, amazement, or unexpectedness."
+      "l2": "This text is about astonishment, disbelief, shock, wonder, amazement, or unexpectedness.",
+      "l3": [
+        "This text is about astonishment, disbelief, unexpectedness, wonder, shock, or amazement.",
+        "Surprise often triggers physiological responses like increased heart rate and widened eyes.",
+        "It can lead to a reevaluation of beliefs or expectations in social interactions."
+      ]
     },
     "27": {
-      "l2": "This text is about calmness, indifference, neutrality, composure, detachment, or apathy."
+      "l2": "This text is about calmness, indifference, neutrality, composure, detachment, or apathy.",
+      "l3": [
+        "This text is about emotional detachment, calmness, indifference, apathy, serenity, or composure.",
+        "Neutral emotional expressions often signify a lack of strong feelings or reactions.",
+        "They can indicate a balanced state of mind, free from emotional extremes."
+      ]
     }
   }
 }

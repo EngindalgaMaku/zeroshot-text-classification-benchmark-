@@ -1,78 +1,78 @@
 {
-  "accuracy": 0.766,
-  "macro_f1": 0.7550343426491315,
-  "weighted_f1": 0.7567863969280942,
-  "macro_precision": 0.7769476670216765,
-  "macro_recall": 0.7644600313523174,
+  "accuracy": 0.822,
+  "macro_f1": 0.8187000887210272,
+  "weighted_f1": 0.8193921498141005,
+  "macro_precision": 0.8216331985829843,
+  "macro_recall": 0.821276760738775,
   "classification_report": {
     "0": {
-      "precision": 0.8387096774193549,
-      "recall": 0.7819548872180451,
-      "f1-score": 0.8093385214007782,
+      "precision": 0.8461538461538461,
+      "recall": 0.8270676691729323,
+      "f1-score": 0.8365019011406845,
       "support": 266.0
     },
     "1": {
-      "precision": 0.8456140350877193,
-      "recall": 0.9796747967479674,
-      "f1-score": 0.9077212806026366,
+      "precision": 0.8966789667896679,
+      "recall": 0.9878048780487805,
+      "f1-score": 0.9400386847195358,
       "support": 246.0
     },
     "2": {
-      "precision": 0.6276923076923077,
-      "recall": 0.8292682926829268,
-      "f1-score": 0.7145359019264448,
+      "precision": 0.7296296296296296,
+      "recall": 0.8008130081300813,
+      "f1-score": 0.7635658914728682,
       "support": 246.0
     },
     "3": {
-      "precision": 0.795774647887324,
-      "recall": 0.4669421487603306,
-      "f1-score": 0.5885416666666666,
+      "precision": 0.8140703517587939,
+      "recall": 0.6694214876033058,
+      "f1-score": 0.7346938775510204,
       "support": 242.0
     },
-    "accuracy": 0.766,
+    "accuracy": 0.822,
     "macro avg": {
-      "precision": 0.7769476670216765,
-      "recall": 0.7644600313523174,
-      "f1-score": 0.7550343426491315,
+      "precision": 0.8216331985829843,
+      "recall": 0.821276760738775,
+      "f1-score": 0.8187000887210272,
       "support": 1000.0
     },
     "weighted avg": {
-      "precision": 0.7781075993061674,
-      "recall": 0.766,
-      "f1-score": 0.7567863969280942,
+      "precision": 0.8221538629216983,
+      "recall": 0.822,
+      "f1-score": 0.8193921498141005,
       "support": 1000.0
     }
   },
   "confusion_matrix": [
     [
-      208,
-      21,
+      220,
+      13,
       22,
-      15
+      11
     ],
     [
-      2,
-      241,
+      0,
+      243,
       2,
       1
     ],
     [
       18,
-      11,
-      204,
-      13
+      6,
+      197,
+      25
     ],
     [
-      20,
-      12,
-      97,
-      113
+      22,
+      9,
+      49,
+      162
     ]
   ],
-  "mean_confidence": 0.8750672895312309,
-  "std_confidence": 0.015408781704383057,
-  "mean_confidence_correct": 0.8753687305954667,
-  "mean_confidence_incorrect": 0.8740805209192455,
+  "mean_confidence": 0.89009386408329,
+  "std_confidence": 0.015371431442176979,
+  "mean_confidence_correct": 0.8908121189206766,
+  "mean_confidence_incorrect": 0.8867769793847974,
   "experiment_name": "ag_news_instructor_v5_l3_test",
   "dataset": "ag_news",
   "label_mode": "l3",
@@ -82,124 +82,124 @@
   "biencoder": "hkunlp/instructor-base",
   "top_errors": [
     {
-      "text": "Amazon.com net sales jump 29; Google reports \\$52M in net income OCTOBER 22, 2004 (IDG NEWS SERVICE) - Amazon.com Inc. fell a penny short of analysts #39; per-share earnings expectations, while report",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.9112313985824585
-    },
-    {
-      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.9093979597091675
-    },
-    {
-      "text": "AOL drops Microsoft antispam technology com September 16, 2004, 1:15 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.906349241733551
-    },
-    {
-      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
-      "true_label": 3,
-      "pred_label": 1,
-      "confidence": 0.905582070350647
-    },
-    {
-      "text": "Internet Ad Revenues Jump 40 Percent Internet advertising revenues jumped 40 percent in the first half of this year, driven largely by the growing popularity of keyword ads tied to search results.",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.9052514433860779
-    },
-    {
-      "text": "Ask Jeeves revamps search engine Ask Jeeves Inc. has made three significant enhancements to its search engine, as the Emeryville, California company continues to take aim at its much larger competitor",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.9048042893409729
-    },
-    {
-      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
-      "true_label": 0,
-      "pred_label": 2,
-      "confidence": 0.904761791229248
-    },
-    {
-      "text": "Google Enhances Discussion Groups Google is improving on the discussions its popular Web site hosts, hoping the upgrades will spur more online banter and make its market-leading search engine a richer",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.9046761393547058
-    },
-    {
-      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.9016461372375488
-    },
-    {
-      "text": "Calif. Mental Health Services May Expand (AP) AP - As pressures increase on California's mental health system, its workers and advocates say they are forced to do more with a supply of money that seem",
-      "true_label": 0,
-      "pred_label": 2,
-      "confidence": 0.9016032218933105
+      "text": "CA to buy Netegrity for \\$430 million com October 6, 2004, 7:36 AM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9225915670394897
     },
     {
       "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
       "true_label": 0,
       "pred_label": 1,
-      "confidence": 0.9012569785118103
+      "confidence": 0.9220993518829346
     },
     {
-      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
+      "text": "Amazon.com net sales jump 29; Google reports \\$52M in net income OCTOBER 22, 2004 (IDG NEWS SERVICE) - Amazon.com Inc. fell a penny short of analysts #39; per-share earnings expectations, while report",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.9009244441986084
+      "confidence": 0.9187303781509399
     },
     {
-      "text": "IT Heavies Launch  quot;MegaGrid quot; Project SAN FRANCISCO -- Four mainstream IT companies are pooling resources to launch a standardized enterprise grid infrastructure based on their products.",
-      "true_label": 3,
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
       "pred_label": 2,
-      "confidence": 0.900249719619751
+      "confidence": 0.9183981418609619
     },
     {
-      "text": "Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advi",
+      "text": "Oracle Fails to Inspire Tech Rally Oracle Corp. handed the software industry some positive earnings news after the bell on Tuesday, but investors pulled cash from the sector on concerns that informati",
       "true_label": 2,
       "pred_label": 3,
-      "confidence": 0.9001576900482178
+      "confidence": 0.9166820049285889
     },
     {
-      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "text": "Calif. Mental Health Services May Expand (AP) AP - As pressures increase on California's mental health system, its workers and advocates say they are forced to do more with a supply of money that seem",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9133578538894653
+    },
+    {
+      "text": "Football: Spanish FA apologises The Spanish FA apologises to its English counterparts following racist chanting.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9128322601318359
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
       "true_label": 3,
-      "pred_label": 0,
-      "confidence": 0.8992172479629517
+      "pred_label": 2,
+      "confidence": 0.9116848111152649
+    },
+    {
+      "text": "EPA May Conduct Human Tests for Chemicals (AP) AP - In setting limits on chemicals in food and water, the Environmental Protection Agency may rely on industry tests that expose people to poisons and r",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9116607904434204
     },
     {
       "text": "US economic growth slips to 2.8 Annual US economic growth fell to 2.8 in the second quarter of 2004, marking a slowdown from the 3 estimated a month ago.",
       "true_label": 0,
       "pred_label": 2,
-      "confidence": 0.8987870216369629
+      "confidence": 0.9107271432876587
     },
     {
-      "text": "Half.com to continue at full speed This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half. Online auction giant eBay won #39;t be closi",
+      "text": "Football: Brazil legend's UK debut Brazil football great Socrates is set to make his debut for non-league Garforth Town on Saturday.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9104975461959839
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.898719310760498
+      "confidence": 0.9103577136993408
     },
     {
-      "text": "Ballmer strikes big rivals from Microsoft shopping list LISBON - Customers watching for Microsoft Corp. to make a headline-grabbing buy in the business applications market faced disappointment Tuesday",
+      "text": "Smart phones to make up 16 of market LONDON-A new study shows that the market for smart phones will continue to increase during the next several years, with global shipments growing from 14.",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.898586094379425
+      "confidence": 0.9094974994659424
     },
     {
-      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.898421585559845
+      "text": "Tata CS celebrates profits uplift Indian software giant Tata CS unveils sharply higher profits in its first set of results since its stock market launch.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9090331792831421
     },
     {
-      "text": "EU, US Talks on Aircraft Aid Grounded US and EU negotiators disagreed on Thursday about state aid for aircraft rivals Airbus and Boeing, winding up no closer on a sensitive issue that has gathered ste",
+      "text": "France joins Germany, Japan in economic slide (AFP) AFP - The French economy hit a rough patch in the third quarter, throwing the government's full-year growth target into question amid signs of an ec",
       "true_label": 2,
       "pred_label": 0,
-      "confidence": 0.8981595039367676
+      "confidence": 0.9078096747398376
+    },
+    {
+      "text": "Sun Micro Posts Narrower Quarterly Loss  SAN FRANCISCO (Reuters) - Network computer maker Sun  Microsystems Inc. on Thursday posted a narrower quarterly loss  as revenue rose for the second consecutiv",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9076412320137024
+    },
+    {
+      "text": "PeopleSoft revises third-quarter profit Oracle target adds \\$2.6 million to bottom line after tax adjustment related to ex-CEO's severance package.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9076107740402222
+    },
+    {
+      "text": "Apple to give its stores a Mini Me look The Mac maker has big plans to expand its network of retail outlets by creating small versions of its stores.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9076077938079834
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9068977236747742
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.906502366065979
     }
   ]
 }
