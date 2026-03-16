@@ -12,6 +12,7 @@ models:
     name: intfloat/multilingual-e5-large
 pipeline:
   normalize_embeddings: true
+  random_seed: 42
 output:
   output_dir: results/llm_descriptions
   save_metrics: true

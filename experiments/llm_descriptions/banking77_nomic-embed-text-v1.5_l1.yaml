@@ -12,6 +12,7 @@ models:
     name: nomic-ai/nomic-embed-text-v1.5
 pipeline:
   normalize_embeddings: true
+  random_seed: 42
 output:
   output_dir: results/llm_descriptions
   save_metrics: true

@@ -70,6 +70,7 @@ def generate_configs():
                 },
                 "pipeline": {
                     "normalize_embeddings": True,
+                    "random_seed": 42,  # Match main experiments
                 },
                 "output": {
                     "output_dir": "results/llm_descriptions",
@@ -113,6 +114,7 @@ def generate_configs():
                 },
                 "pipeline": {
                     "normalize_embeddings": True,
+                    "random_seed": 42,  # Match main experiments
                 },
                 "output": {
                     "output_dir": "results/llm_descriptions",
@@ -156,6 +158,7 @@ def generate_configs():
                 },
                 "pipeline": {
                     "normalize_embeddings": True,
+                    "random_seed": 42,  # Match main experiments
                 },
                 "output": {
                     "output_dir": "results/llm_descriptions",

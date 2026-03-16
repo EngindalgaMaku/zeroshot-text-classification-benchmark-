@@ -12,6 +12,7 @@ models:
     name: jinaai/jina-embeddings-v3
 pipeline:
   normalize_embeddings: true
+  random_seed: 42
 output:
   output_dir: results/llm_descriptions
   save_metrics: true

@@ -14,6 +14,7 @@ models:
     use_fp16: true
 pipeline:
   normalize_embeddings: true
+  random_seed: 42
 output:
   output_dir: results/llm_descriptions
   save_metrics: true
