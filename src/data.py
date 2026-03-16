@@ -33,11 +33,12 @@ TURKISH_LABEL_MAPS = {
 }
 
 
-def load_text_classification_dataset(cfg: Dict[str, Any]):
+def load_text_classification_dataset(cfg: Dict[str, Any], seed: Optional[int] = None):
     """Load a text classification dataset.
     
     Args:
         cfg: Configuration dictionary containing dataset parameters
+        seed: Random seed for sampling (if None, tries to get from cfg["pipeline"]["random_seed"], defaults to 42)
         
     Returns:
         HuggingFace Dataset object
@@ -46,7 +47,13 @@ def load_text_classification_dataset(cfg: Dict[str, Any]):
     split = cfg["dataset"].get("split", "test")
     max_samples = cfg["dataset"].get("max_samples")
     
+    # Get seed from parameter, config, or default
+    if seed is None:
+        seed = cfg.get("pipeline", {}).get("random_seed", 42)
+    
     print(f"Loading dataset: {ds_name}, split: {split}")
+    if max_samples:
+        print(f"Random seed for sampling: {seed}")
     
     # Load dataset
     if ds_name == "ag_news":
@@ -71,8 +78,8 @@ def load_text_classification_dataset(cfg: Dict[str, Any]):
     
     # Sample if needed
     if max_samples is not None and max_samples < len(dataset):
-        dataset = dataset.shuffle(seed=42).select(range(max_samples))
-        print(f"Sampled {max_samples} examples")
+        dataset = dataset.shuffle(seed=seed).select(range(max_samples))
+        print(f"Sampled {max_samples} examples (seed={seed})")
     
     print(f"Dataset loaded: {len(dataset)} examples")
     return dataset
