@@ -39,6 +39,12 @@ LABEL_SETS = {
                 "Coverage of technology companies, software, or new scientific developments.",
             ],
         },
+        "description_set_a": {
+            0: ["Coverage of international affairs, geopolitical developments, and cross-border events shaping global society."],
+            1: ["Reports on athletic competitions, team performance, player achievements, and organized sporting events."],
+            2: ["Analysis of corporate activity, financial markets, economic trends, and commercial enterprise developments."],
+            3: ["Coverage of scientific research, technological innovation, digital products, and engineering breakthroughs."],
+        },
     },
     
     "dbpedia_14": {
@@ -146,6 +152,22 @@ LABEL_SETS = {
                 "Content about a written work's author, genre, or subject matter.",
             ],
         },
+        "description_set_a": {
+            0: ["A commercial entity organized to produce goods or services for profit within an economic system."],
+            1: ["An organization established to provide formal instruction, training, or academic learning to students."],
+            2: ["An individual recognized for creative expression through visual, performing, or literary artistic disciplines."],
+            3: ["A person who engages in competitive physical activities, sports, or organized athletic pursuits professionally."],
+            4: ["An individual who holds an appointed or elected position within a governmental or institutional body."],
+            5: ["A vehicle, vessel, or system designed to convey people or goods from one location to another."],
+            6: ["A permanent structure constructed for human use, habitation, commerce, or institutional purposes."],
+            7: ["A geographic feature or landscape formed by natural processes, unaltered by significant human intervention."],
+            8: ["A small, sparsely populated human settlement, typically rural and subordinate to larger administrative units."],
+            9: ["A multicellular organism belonging to the kingdom Animalia, capable of voluntary movement and sensation."],
+            10: ["A photosynthetic organism belonging to the plant kingdom, typically rooted and producing its own nutrients."],
+            11: ["A collection of audio recordings released as a unified work by a musical artist or group."],
+            12: ["A narrative or documentary work produced for cinematic or screen-based visual presentation to audiences."],
+            13: ["A text-based composition intended for reading, encompassing fiction, nonfiction, poetry, or scholarly works."],
+        },
     },
     
     "yahoo_answers_topics": {
@@ -224,6 +246,18 @@ LABEL_SETS = {
                 "Text discussing laws, elections, political parties, or governance.",
                 "Content about political issues, civic matters, or governmental decisions.",
             ],
+        },
+        "description_set_a": {
+            0: ["Questions addressing human social organization, cultural traditions, values, and collective behavioral norms."],
+            1: ["Questions exploring empirical inquiry, mathematical reasoning, natural phenomena, and scientific methodology."],
+            2: ["Questions concerning physical or mental well-being, medical conditions, treatments, and healthcare practices."],
+            3: ["Questions about formal learning systems, academic subjects, instructional methods, and knowledge resources."],
+            4: ["Questions relating to computing devices, software applications, internet services, and digital technologies."],
+            5: ["Questions about organized physical competitions, athletic performance, teams, and sporting rules or events."],
+            6: ["Questions addressing commercial enterprises, financial instruments, economic systems, and investment strategies."],
+            7: ["Questions about popular media, musical artists, film, television, and recreational cultural activities."],
+            8: ["Questions concerning domestic relationships, parenting, romantic partnerships, and interpersonal social bonds."],
+            9: ["Questions about governmental structures, political processes, public policy, and civic institutions."],
         },
     },
     

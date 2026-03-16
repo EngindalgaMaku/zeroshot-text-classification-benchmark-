@@ -25,12 +25,12 @@ warnings.filterwarnings("ignore", category=UserWarning, module="matplotlib")
 plt.rcParams.update({
     'font.family': 'serif',
     'font.serif': ['Times New Roman', 'DejaVu Serif'],
-    'font.size': 11,
-    'axes.labelsize': 12,
-    'axes.titlesize': 13,
-    'xtick.labelsize': 11,
-    'ytick.labelsize': 11,
-    'legend.fontsize': 10,
+    'font.size': 12,           # Increased from 11
+    'axes.labelsize': 13,      # Increased from 12
+    'axes.titlesize': 14,      # Increased from 13
+    'xtick.labelsize': 12,     # Increased from 11
+    'ytick.labelsize': 12,     # Increased from 11
+    'legend.fontsize': 11,     # Increased from 10
     'figure.dpi': 300,
     'savefig.dpi': 300,
     'savefig.bbox': 'tight',
@@ -58,15 +58,15 @@ TASK_TYPE_MAP = {
 
 TASK_ORDER = ["Topic", "Entity", "Intent", "Sentiment", "Emotion"]
 
-# Consistent model color palette
+# Consistent model color palette - Qwen3 highlighted in red, others neutral
 MODEL_COLORS = {
-    "BGE-M3":     "#1f77b4",  # blue
-    "E5-large":   "#ff7f0e",  # orange
-    "INSTRUCTOR": "#2ca02c",  # green
-    "Jina v5":    "#d62728",  # red
-    "MPNet":      "#9467bd",  # purple
-    "Nomic-MoE":  "#8c564b",  # brown
-    "Qwen3":      "#e377c2",  # pink
+    "Qwen3":      "#d62728",  # RED - our model (highlighted)
+    "INSTRUCTOR": "#4682b4",  # steel blue (neutral)
+    "E5-large":   "#708090",  # slate grey (neutral)
+    "Jina v5":    "#8b7355",  # tan brown (neutral)
+    "BGE-M3":     "#696969",  # dim grey (neutral)
+    "MPNet":      "#778899",  # light slate grey (neutral)
+    "Nomic-MoE":  "#a9a9a9",  # dark grey (neutral)
 }
 
 
@@ -133,8 +133,8 @@ def draw_grouped_bar_chart(
     n_tasks  = len(task_types)
     n_models = len(model_order)
 
-    bar_width = 0.10
-    group_gap = 0.15          # extra space between groups
+    bar_width = 0.12          # Increased from 0.10 for thicker bars
+    group_gap = 0.30          # Increased from 0.15 for better separation
     group_width = n_models * bar_width + group_gap
     group_centers = np.arange(n_tasks) * group_width
 
@@ -152,42 +152,51 @@ def draw_grouped_bar_chart(
                    else 0.0
                    for t in task_types]
 
+        # Thicker edge for Qwen3
+        edge_width = 1.2 if model == "Qwen3" else 0.4
+        
         ax.bar(
             offsets,
             heights,
             width=bar_width,
             color=MODEL_COLORS.get(model, "#333333"),
             label=model,
-            edgecolor="white",
-            linewidth=0.4,
+            edgecolor="black" if model == "Qwen3" else "white",
+            linewidth=edge_width,
         )
 
-        # Draw error bars only where std > 0
+        # Draw error bars with thicker lines and larger caps
         for x, h, e in zip(offsets, heights, errors):
             if e > 0:
+                # Clip error bars to not exceed ymax
+                e_clipped = min(e, 15)  # Max error bar length
                 ax.errorbar(
-                    x, h, yerr=e,
+                    x, h, yerr=e_clipped,
                     fmt="none",
                     ecolor="black",
-                    elinewidth=0.8,
-                    capsize=2,
-                    capthick=0.8,
+                    elinewidth=1.5,     # Thicker from 0.8
+                    capsize=4,          # Larger caps from 2
+                    capthick=1.5,       # Thicker caps from 0.8
+                    zorder=10,
                 )
 
     # x-axis ticks at group centers
     ax.set_xticks(group_centers)
-    ax.set_xticklabels(task_types, fontsize=11)
+    ax.set_xticklabels(task_types, fontsize=12, fontweight='bold')
 
-    ax.set_ylabel("Mean Macro-F1 (%)", fontsize=12)
+    ax.set_ylabel("Mean Macro-F1 (%)", fontsize=13, fontweight='bold')
     ax.set_xlabel("")          # task type labels are self-explanatory
 
     # y-axis range: start at 0, end slightly above max value
     all_vals = means_pivot.values[~np.isnan(means_pivot.values)]
     ymax = max(all_vals) + 8
     ax.set_ylim(0, ymax)
+    
+    # Sparse y-axis ticks (only major gridlines: 0, 20, 40, 60, 80)
+    ax.set_yticks([0, 20, 40, 60, 80])
 
-    # y-axis grid only
-    ax.yaxis.grid(True, linestyle="--", alpha=0.4, linewidth=0.7)
+    # Reduced grid lines - only major ticks, lighter
+    ax.yaxis.grid(True, linestyle="--", alpha=0.3, linewidth=0.5)
     ax.set_axisbelow(True)
 
     # Remove top and right spines

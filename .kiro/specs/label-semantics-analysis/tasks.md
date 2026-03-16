@@ -139,20 +139,20 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - `temperature=0` parametresinin her çağrıda iletildiğini doğrula
     - **Validates: Requirements 8.1, 8.2**
 
-- [-] 14. Provenance ve generation metadata kaydı
+- [x] 14. Provenance ve generation metadata kaydı
   - [x] 14.1 `src/label_descriptions/provenance.json` üretimini yaz
     - Her description için `dataset`, `label_id`, `label_mode`, `source_type`, `source_url_or_reference`, `generated_at` alanlarını kaydet
     - `source_type` değerleri: `llm_generated`, `wikipedia`, `wikidata`, `dbpedia_ontology`, `dataset_documentation`, `psychology_dictionary`, `ekman_theory`, `plutchik_theory`, `llm_fallback`
     - _Requirements: 8.5, 8.6_
-  - [ ] 14.2 `src/label_descriptions/generation_metadata.json` üretimini yaz
+  - [x] 14.2 `src/label_descriptions/generation_metadata.json` üretimini yaz
     - Kullanılan model adı, prompt şablonu, temperature değeri ve üretim tarihini kaydet
     - _Requirements: 8.3_
   - [ ]* 14.3 Provenance kaydı için property testi yaz
     - **Property 5: Her provenance kaydı zorunlu 6 alanı içermeli** — `dataset`, `label_id`, `label_mode`, `source_type`, `source_url_or_reference`, `generated_at`
     - **Validates: Requirements 8.6**
 
-- [ ] 15. `src/labels.py`'yi standart description'larla güncelle
-  - [ ] 15.1 `LABEL_SETS`'e `description_set_a` (GPT-4o üretimi) key'ini ekle
+- [-] 15. `src/labels.py`'yi standart description'larla güncelle
+  - [-] 15.1 `LABEL_SETS`'e `description_set_a` (GPT-4o üretimi) key'ini ekle
     - 9 dataset için GPT-4o üretimi description'ları `description_set_a` altında tanımla
     - Mevcut `description` ve `multi_description` key'lerini değiştirme
     - _Requirements: 8.1, 9.1_
