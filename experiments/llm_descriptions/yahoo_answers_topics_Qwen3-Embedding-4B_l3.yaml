@@ -10,6 +10,8 @@ task:
 models:
   biencoder:
     name: Qwen/Qwen3-Embedding-4B
+    max_seq_length: 512
+    use_fp16: true
 pipeline:
   normalize_embeddings: true
 output:

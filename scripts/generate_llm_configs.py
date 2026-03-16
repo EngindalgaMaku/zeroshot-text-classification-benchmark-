@@ -45,6 +45,15 @@ def generate_configs():
             
             # L1 config (name_only)
             l1_name = f"{dataset_id}_{model_id}_l1"
+            
+            # Base biencoder config
+            biencoder_config = {"name": model}
+            
+            # Add Qwen3-specific memory optimizations
+            if "Qwen" in model:
+                biencoder_config["max_seq_length"] = 512
+                biencoder_config["use_fp16"] = True
+            
             l1_config = {
                 "experiment_name": l1_name,
                 "dataset": {
@@ -57,9 +66,7 @@ def generate_configs():
                     "label_mode": "name_only",  # L1 - just label names
                 },
                 "models": {
-                    "biencoder": {
-                        "name": model,
-                    }
+                    "biencoder": biencoder_config
                 },
                 "pipeline": {
                     "normalize_embeddings": True,
@@ -83,6 +90,13 @@ def generate_configs():
             
             # L2 config (single description)
             l2_name = f"{dataset_id}_{model_id}_l2"
+            
+            # Reuse biencoder config with same optimizations
+            biencoder_config_l2 = {"name": model}
+            if "Qwen" in model:
+                biencoder_config_l2["max_seq_length"] = 512
+                biencoder_config_l2["use_fp16"] = True
+            
             l2_config = {
                 "experiment_name": l2_name,
                 "dataset": {
@@ -95,9 +109,7 @@ def generate_configs():
                     "label_mode": "l2",  # LLM-generated single description
                 },
                 "models": {
-                    "biencoder": {
-                        "name": model,
-                    }
+                    "biencoder": biencoder_config_l2
                 },
                 "pipeline": {
                     "normalize_embeddings": True,
@@ -121,9 +133,39 @@ def generate_configs():
             
             # L3 config (multi-aspect descriptions with mean pooling)
             l3_name = f"{dataset_id}_{model_id}_l3"
-            l3_config = l2_config.copy()
-            l3_config["experiment_name"] = l3_name
-            l3_config["task"] = {"label_mode": "l3"}  # LLM-generated multi-aspect
+            
+            # Reuse biencoder config with same optimizations
+            biencoder_config_l3 = {"name": model}
+            if "Qwen" in model:
+                biencoder_config_l3["max_seq_length"] = 512
+                biencoder_config_l3["use_fp16"] = True
+            
+            l3_config = {
+                "experiment_name": l3_name,
+                "dataset": {
+                    "name": dataset_name,
+                    "split": dataset_config["split"],
+                    "text_column": "text",
+                    "label_column": "label",
+                },
+                "task": {
+                    "label_mode": "l3",  # LLM-generated multi-aspect
+                },
+                "models": {
+                    "biencoder": biencoder_config_l3
+                },
+                "pipeline": {
+                    "normalize_embeddings": True,
+                },
+                "output": {
+                    "output_dir": "results/llm_descriptions",
+                    "save_metrics": True,
+                    "save_predictions": True,
+                }
+            }
+            
+            if "max_samples" in dataset_config:
+                l3_config["dataset"]["max_samples"] = dataset_config["max_samples"]
             
             # Write L3 config
             l3_path = output_dir / f"{l3_name}.yaml"
