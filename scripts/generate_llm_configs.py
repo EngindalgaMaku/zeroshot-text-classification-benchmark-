@@ -25,7 +25,7 @@ MODELS = [
     "nomic-ai/nomic-embed-text-v1.5",                   # Nomic-MoE
     "intfloat/multilingual-e5-large",                   # E5-large
     "hkunlp/instructor-base",                           # INSTRUCTOR
-    "jinaai/jina-embeddings-v3",                        # Jina v5
+    "jinaai/jina-embeddings-v5-text-nano",              # Jina v5-nano
     "Qwen/Qwen3-Embedding-4B",                          # Qwen3
 ]
 

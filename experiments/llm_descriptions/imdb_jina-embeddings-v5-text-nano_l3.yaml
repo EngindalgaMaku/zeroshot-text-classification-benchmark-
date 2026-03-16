@@ -1,0 +1,19 @@
+experiment_name: imdb_jina-embeddings-v5-text-nano_l3
+dataset:
+  name: imdb
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: 2000
+task:
+  label_mode: l3
+models:
+  biencoder:
+    name: jinaai/jina-embeddings-v5-text-nano
+pipeline:
+  normalize_embeddings: true
+  random_seed: 42
+output:
+  output_dir: results/llm_descriptions
+  save_metrics: true
+  save_predictions: true
