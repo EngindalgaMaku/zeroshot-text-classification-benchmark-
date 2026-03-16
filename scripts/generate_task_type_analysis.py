@@ -62,10 +62,10 @@ TASK_ORDER = ["Topic", "Entity", "Intent", "Sentiment", "Emotion"]
 MODEL_COLORS = {
     "Qwen3":      "#d62728",  # RED - our model (highlighted)
     "INSTRUCTOR": "#4682b4",  # steel blue (neutral)
-    "E5-large":   "#708090",  # slate grey (neutral)
+    "E5-large":   "#708090",  # slate grey (dark neutral)
     "Jina v5":    "#8b7355",  # tan brown (neutral)
     "BGE-M3":     "#696969",  # dim grey (neutral)
-    "MPNet":      "#778899",  # light slate grey (neutral)
+    "MPNet":      "#b0c4de",  # light steel blue (LIGHTER - distinct from E5)
     "Nomic-MoE":  "#a9a9a9",  # dark grey (neutral)
 }
 
