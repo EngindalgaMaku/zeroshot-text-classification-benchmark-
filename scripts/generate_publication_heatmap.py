@@ -123,7 +123,9 @@ def draw_heatmap(pivot: pd.DataFrame) -> plt.Figure:
     cmap = matplotlib.colormaps.get_cmap("Blues")
     cmap.set_bad(color="#cccccc")  # grey for NaN
 
-    vmin = pivot.loc[data_rows, data_cols].min().min()
+    # Adjust vmin to make low values more visible (e.g., GoEmotions)
+    # Instead of using absolute minimum, use a fixed lower bound
+    vmin = 10  # Fixed minimum for better color contrast
     vmax = pivot.loc[data_rows, data_cols].max().max()
 
     sns.heatmap(
