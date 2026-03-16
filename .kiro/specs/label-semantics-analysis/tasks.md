@@ -152,11 +152,11 @@ L3 (`multi_description`) label modunu mevcut pipeline'a entegre eder, pilot ve f
     - **Validates: Requirements 8.6**
 
 - [-] 15. `src/labels.py`'yi standart description'larla güncelle
-  - [-] 15.1 `LABEL_SETS`'e `description_set_a` (GPT-4o üretimi) key'ini ekle
+  - [x] 15.1 `LABEL_SETS`'e `description_set_a` (GPT-4o üretimi) key'ini ekle
     - 9 dataset için GPT-4o üretimi description'ları `description_set_a` altında tanımla
     - Mevcut `description` ve `multi_description` key'lerini değiştirme
     - _Requirements: 8.1, 9.1_
-  - [ ] 15.2 `LABEL_SETS`'e `description_set_b` (Claude / sözlük kaynaklı) key'ini ekle
+  - [-] 15.2 `LABEL_SETS`'e `description_set_b` (Claude / sözlük kaynaklı) key'ini ekle
     - 9 dataset için Claude 3.5 Sonnet veya sözlük kaynaklı description'ları `description_set_b` altında tanımla
     - _Requirements: 9.1_
   - [ ]* 15.3 `LABEL_SETS` bütünlük testi yaz

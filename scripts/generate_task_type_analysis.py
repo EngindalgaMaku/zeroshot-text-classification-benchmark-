@@ -187,10 +187,15 @@ def draw_grouped_bar_chart(
     ax.set_ylabel("Mean Macro-F1 (%)", fontsize=13, fontweight='bold')
     ax.set_xlabel("")          # task type labels are self-explanatory
 
-    # y-axis range: start at 0, end slightly above max value
+    # y-axis range: start at 0, include error bars in calculation
+    # Find max value + max error bar
     all_vals = means_pivot.values[~np.isnan(means_pivot.values)]
-    ymax = max(all_vals) + 8
-    ax.set_ylim(0, ymax)
+    all_errs = stds_pivot.values[~np.isnan(stds_pivot.values)]
+    max_bar_with_error = max(all_vals) + (max(all_errs) if len(all_errs) > 0 else 0)
+    
+    # Round up to nearest 5 and add padding
+    ymax = (int(max_bar_with_error / 5) + 2) * 5
+    ax.set_ylim(0, min(ymax, 100))  # Cap at 100 for clean appearance
     
     # Sparse y-axis ticks (only major gridlines: 0, 20, 40, 60, 80)
     ax.set_yticks([0, 20, 40, 60, 80])
