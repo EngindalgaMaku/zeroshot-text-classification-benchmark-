@@ -1,6 +1,5 @@
 dataset:
   label_column: label
-  # Larger sample size for 20 Newsgroups due to higher class count (20 classes)
   max_samples: 2000
   name: SetFit/20_newsgroups
   split: test
@@ -13,7 +12,7 @@ evaluation:
 experiment_name: SetFit_20_newsgroups_jina_task
 models:
   biencoder:
-    name: jinaai/jina-embeddings-v3
+    name: jinaai/jina-embeddings-v2-base-en
     provider: hf
     task: classification
   reranker: null

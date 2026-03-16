@@ -1,4 +1,4 @@
-experiment_name: sst2_nomic_embed_v2_moe
+experiment_name: exp_sst2_nomic
 dataset:
   name: sst2
   split: validation
@@ -17,7 +17,7 @@ models:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 16
+  batch_size: 32
 evaluation:
   metrics:
   - accuracy

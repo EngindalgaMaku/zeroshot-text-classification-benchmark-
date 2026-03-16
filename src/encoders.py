@@ -134,7 +134,7 @@ class BiEncoder:
             self.backend = "instructor"
             self.model = SentenceTransformer(
                 model_name,
-                device=device,
+                device=self.device,
                 trust_remote_code=True,
             )
             print(f"INSTRUCTOR model loaded on device: {self.model.device}")
@@ -142,17 +142,23 @@ class BiEncoder:
         # -------- Jina backend --------
         elif "jina" in name_lower:
             self.backend = "jina"
-            # Jina v5 requires a task
-            # For zero-shot classification (text-label matching), use "text-matching"
-            # Alternative: "retrieval.query" / "retrieval.passage" for asymmetric tasks
+            # Jina v3/v5 requires trust_remote_code for custom modules
             self.task = task or "text-matching"
+            
+            # Some Jina v5 models (like text-small) require default_task
+            # Others (like text-small-text-matching) use different architecture and don't
+            model_kwargs = {'trust_remote_code': True}
+            if "text-matching" not in model_name:
+                # Only add default_task if not already in model name
+                model_kwargs['default_task'] = self.task
+            
             self.model = SentenceTransformer(
                 model_name,
-                device=device,
+                device=self.device,
                 trust_remote_code=True,
-                model_kwargs={"default_task": self.task},
+                model_kwargs=model_kwargs,
             )
-            print(f"Jina model loaded on device: {self.model.device} (task={self.task})")
+            print(f"Jina model loaded on device: {self.model.device} with task: {self.task}")
 
         # -------- GTE backend (optional) --------
         elif "gte" in name_lower:
@@ -166,7 +172,7 @@ class BiEncoder:
             self.backend = "gte"
             self.model = _TransformersEncoder(
                 model_name=model_name,
-                device=device,
+                device=self.device,
                 trust_remote_code=True,
                 pooling="cls",
                 max_length=256,
@@ -177,7 +183,7 @@ class BiEncoder:
             self.backend = "sentence_transformers"
             self.model = SentenceTransformer(
                 model_name,
-                device=device,
+                device=self.device,
                 trust_remote_code=True,
             )
             print(f"Model loaded on device: {self.model.device}")
@@ -232,27 +238,15 @@ class BiEncoder:
 
         # -------- Jina --------
         if self.backend == "jina":
-            # Jina v5 supports different tasks for query vs document
-            # For zero-shot classification:
-            # - texts (queries) should use "text-matching" or "retrieval.query"
-            # - labels (documents) should use "text-matching" or "retrieval.passage"
-            
-            # Use text_type to differentiate
-            if text_type == "label":
-                # Labels are like documents/passages
-                task = "retrieval.passage" if "retrieval" in self.task else self.task
-            else:
-                # Texts are like queries
-                task = "retrieval.query" if "retrieval" in self.task else self.task
-            
-            kwargs = dict(
+            # Jina v2 doesn't require task parameter during encoding
+            # It works directly with sentence-transformers interface
+            embeddings = self.model.encode(
+                texts,
                 batch_size=batch_size,
                 normalize_embeddings=normalize,
                 show_progress_bar=show_progress,
                 convert_to_numpy=True,
-                task=task,
             )
-            embeddings = self.model.encode(texts, **kwargs)
             return embeddings
 
         # -------- GTE custom backends --------

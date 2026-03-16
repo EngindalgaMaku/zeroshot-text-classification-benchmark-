@@ -1,4 +1,4 @@
-experiment_name: banking77_nomic_embed_v2_moe
+experiment_name: exp_banking77_nomic
 dataset:
   name: banking77
   split: test
@@ -17,7 +17,7 @@ models:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 16
+  batch_size: 32
 evaluation:
   metrics:
   - accuracy

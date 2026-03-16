@@ -1,0 +1,233 @@
+{
+  "friedman": {
+    "statistic": 16.446428571428555,
+    "p_value": 0.011548179397869958,
+    "n_datasets": 8,
+    "n_models": 7,
+    "df": 6
+  },
+  "effect_size": {
+    "kendalls_w": 0.3426339285714282,
+    "interpretation": "Moderate effect"
+  },
+  "average_ranks": {
+    "Qwen3": 2.0,
+    "INSTRUCTOR": 2.875,
+    "E5-large": 3.375,
+    "Jina v5": 4.5,
+    "MPNet": 4.75,
+    "BGE-M3": 5.25,
+    "Nomic-MoE": 5.25
+  },
+  "nemenyi": {
+    "critical_distance": 3.1852840532674636,
+    "q_alpha": 2.949,
+    "comparisons": [
+      {
+        "model1": "Qwen3",
+        "model2": "INSTRUCTOR",
+        "rank_diff": 0.875,
+        "significant": false
+      },
+      {
+        "model1": "Qwen3",
+        "model2": "E5-large",
+        "rank_diff": 1.375,
+        "significant": false
+      },
+      {
+        "model1": "Qwen3",
+        "model2": "Jina v5",
+        "rank_diff": 2.5,
+        "significant": false
+      },
+      {
+        "model1": "Qwen3",
+        "model2": "MPNet",
+        "rank_diff": 2.75,
+        "significant": false
+      },
+      {
+        "model1": "Qwen3",
+        "model2": "BGE-M3",
+        "rank_diff": 3.25,
+        "significant": true
+      },
+      {
+        "model1": "Qwen3",
+        "model2": "Nomic-MoE",
+        "rank_diff": 3.25,
+        "significant": true
+      },
+      {
+        "model1": "INSTRUCTOR",
+        "model2": "E5-large",
+        "rank_diff": 0.5,
+        "significant": false
+      },
+      {
+        "model1": "INSTRUCTOR",
+        "model2": "Jina v5",
+        "rank_diff": 1.625,
+        "significant": false
+      },
+      {
+        "model1": "INSTRUCTOR",
+        "model2": "MPNet",
+        "rank_diff": 1.875,
+        "significant": false
+      },
+      {
+        "model1": "INSTRUCTOR",
+        "model2": "BGE-M3",
+        "rank_diff": 2.375,
+        "significant": false
+      },
+      {
+        "model1": "INSTRUCTOR",
+        "model2": "Nomic-MoE",
+        "rank_diff": 2.375,
+        "significant": false
+      },
+      {
+        "model1": "E5-large",
+        "model2": "Jina v5",
+        "rank_diff": 1.125,
+        "significant": false
+      },
+      {
+        "model1": "E5-large",
+        "model2": "MPNet",
+        "rank_diff": 1.375,
+        "significant": false
+      },
+      {
+        "model1": "E5-large",
+        "model2": "BGE-M3",
+        "rank_diff": 1.875,
+        "significant": false
+      },
+      {
+        "model1": "E5-large",
+        "model2": "Nomic-MoE",
+        "rank_diff": 1.875,
+        "significant": false
+      },
+      {
+        "model1": "Jina v5",
+        "model2": "MPNet",
+        "rank_diff": 0.25,
+        "significant": false
+      },
+      {
+        "model1": "Jina v5",
+        "model2": "BGE-M3",
+        "rank_diff": 0.75,
+        "significant": false
+      },
+      {
+        "model1": "Jina v5",
+        "model2": "Nomic-MoE",
+        "rank_diff": 0.75,
+        "significant": false
+      },
+      {
+        "model1": "MPNet",
+        "model2": "BGE-M3",
+        "rank_diff": 0.5,
+        "significant": false
+      },
+      {
+        "model1": "MPNet",
+        "model2": "Nomic-MoE",
+        "rank_diff": 0.5,
+        "significant": false
+      },
+      {
+        "model1": "BGE-M3",
+        "model2": "Nomic-MoE",
+        "rank_diff": 0.0,
+        "significant": false
+      }
+    ],
+    "n_significant": 2,
+    "n_total": 21
+  },
+  "cliques": [
+    [
+      "Qwen3",
+      "INSTRUCTOR",
+      "E5-large",
+      "Jina v5",
+      "MPNet"
+    ],
+    [
+      "BGE-M3",
+      "Nomic-MoE"
+    ]
+  ],
+  "power_analysis": {
+    "power": 0.8796375080423647,
+    "interpretation": "Adequate power - results are reasonably reliable",
+    "recommendation": "Sample size is sufficient for detecting the observed effect",
+    "n_datasets": 8,
+    "n_models": 7,
+    "effect_size_w": 0.3426339285714282,
+    "ncp": 16.446428571428555,
+    "required_n_80": 7,
+    "required_n_90": 9
+  },
+  "sample_sizes": {
+    "sample_sizes": {
+      "mean": {
+        "20 Newsgroups": 2000.0,
+        "AG News": 1000.0,
+        "Banking77": 1000.0,
+        "DBpedia-14": 1000.0,
+        "GoEmotions": 1000.0,
+        "IMDB": 1000.0,
+        "SST-2": 872.0,
+        "Twitter Financial": 1000.0,
+        "Yahoo Answers": 1000.0
+      },
+      "std": {
+        "20 Newsgroups": 0.0,
+        "AG News": 0.0,
+        "Banking77": 0.0,
+        "DBpedia-14": 0.0,
+        "GoEmotions": 0.0,
+        "IMDB": 0.0,
+        "SST-2": 0.0,
+        "Twitter Financial": 0.0,
+        "Yahoo Answers": 0.0
+      },
+      "min": {
+        "20 Newsgroups": 2000,
+        "AG News": 1000,
+        "Banking77": 1000,
+        "DBpedia-14": 1000,
+        "GoEmotions": 1000,
+        "IMDB": 1000,
+        "SST-2": 872,
+        "Twitter Financial": 1000,
+        "Yahoo Answers": 1000
+      },
+      "max": {
+        "20 Newsgroups": 2000,
+        "AG News": 1000,
+        "Banking77": 1000,
+        "DBpedia-14": 1000,
+        "GoEmotions": 1000,
+        "IMDB": 1000,
+        "SST-2": 872,
+        "Twitter Financial": 1000,
+        "Yahoo Answers": 1000
+      }
+    },
+    "mean": 1082.3225806451612,
+    "median": 1000.0,
+    "min": 872,
+    "max": 2000,
+    "inconsistent_datasets": []
+  }
+}

@@ -136,8 +136,13 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
         biencoder_task = biencoder_cfg.get("task")
         allow_gte = biencoder_cfg.get("allow_gte", False)
 
+        # Get device for encoder
+        import torch
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        
         encoder = BiEncoder(
             biencoder_name,
+            device=device,
             task=biencoder_task,
             allow_gte=allow_gte,
         )
@@ -157,15 +162,40 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
                 batch_size = 32  # Default
 
         print("\nRunning biencoder pipeline\n")
-        flat_texts, flat_ids = flatten_label_texts(grouped_labels)
-        y_pred, confidences, _ = predict_biencoder(
-            texts,
-            flat_texts,
-            flat_ids,
-            encoder,
-            normalize=normalize,
-            batch_size=batch_size,
-        )
+        if label_mode == "multi_description":
+            # L3: mean-pool multiple descriptions per class
+            from src.labels import build_multi_description_embeddings
+            from src.encoders import compute_similarities
+
+            print(f"Encoding texts...")
+            text_emb = encoder.encode(
+                texts,
+                batch_size=batch_size,
+                normalize=normalize,
+                show_progress=True,
+                text_type="text",
+            )
+            print(f"Building multi-description label embeddings (mean pooling)...")
+            label_emb, flat_ids = build_multi_description_embeddings(
+                grouped_labels,
+                encoder,
+                normalize=normalize,
+                batch_size=batch_size,
+            )
+            sim = compute_similarities(text_emb, label_emb)
+            pred_indices = sim.argmax(axis=1)
+            y_pred = [flat_ids[i] for i in pred_indices]
+            confidences = sim.max(axis=1).tolist()
+        else:
+            flat_texts, flat_ids = flatten_label_texts(grouped_labels)
+            y_pred, confidences, _ = predict_biencoder(
+                texts,
+                flat_texts,
+                flat_ids,
+                encoder,
+                normalize=normalize,
+                batch_size=batch_size,
+            )
         
         model_name = biencoder_name
         model_type = "biencoder"

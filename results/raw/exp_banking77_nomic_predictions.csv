@@ -1,0 +1,1001 @@
+text,y_true,y_pred,confidence,correct
+Are there restrictions for my disposable card since it does not seem to be working?,72,29,0.7089536786079407,False
+I'm trying to transfer money to another country. It's just pending and not sending. My account details are correct. Please help me.,48,48,0.6358078122138977,True
+What do I do if I notice a strange withdrawl in my statement?,20,20,0.4975840747356415,True
+I got a message that I need to verify my identity; what do I do?,69,69,0.6776303052902222,True
+How do I use the app if I don't have my phone with me?,42,42,0.41033607721328735,True
+why is the exchange rate for a Foreign ATM different,76,17,0.5299573540687561,False
+What happens if my card is stuck in the ATM?,18,18,0.5851318836212158,True
+Is there a discount for frequently exchanging currencies?,31,31,0.5151113271713257,True
+I sent money.  They haven't received it.,66,66,0.6245912909507751,True
+What age do my kids need to be to use your service?,1,1,0.6173277497291565,True
+"I've notice I was charged for withdrawing cash, can you explain why?",19,19,0.72362220287323,True
+Can you please identify the problem with my bank card?,14,14,0.6078985929489136,True
+Do you know where my card will be accepted?,10,10,0.7451270222663879,True
+"My work sends me all over the world, can I get a discount for all the money I have to exchange?",31,31,0.45661666989326477,True
+Why do I have to verify my identity?,74,74,0.7541712522506714,True
+When my card expires what happens to my account?,9,9,0.6285043358802795,True
+It appears that I am being double charged for some items that I have purchased this past week.  Please review and correct.,63,63,0.5448457598686218,True
+how long til my cash out goes through?,46,46,0.4635997414588928,True
+my phone is gone,42,42,0.6338467001914978,True
+My money transfer has not arrived.,66,66,0.6562552452087402,True
+I bought something but now I would like a refund. How do I do that?,52,52,0.5946700572967529,True
+Hello. Can you tell me if you use Visa or Mastercard?,73,73,0.7517642974853516,True
+I can't see my latest bank transfer,5,5,0.5873928070068359,True
+I got a fee for an ATM withdrawal.,19,19,0.6388247013092041,True
+There is a transaction for $1 and I don't know why it was charged.,34,63,0.5917677283287048,False
+Am I able to get a second card?,39,39,0.49998533725738525,True
+Why is my card payment showing as pending?,45,45,0.8076925277709961,True
+Why was I chaged twice for the same thing?,63,63,0.5517780184745789,True
+Is it okay to use a bank card to top up,57,57,0.6187782287597656,True
+I see what looks like duplicate charges on account.,63,63,0.6494215130805969,True
+What ATMs is the card okay to use at?,3,10,0.5063585042953491,False
+I want a refund because my package has been taking too long to arrive. How do I go about doing that?,52,52,0.4910217523574829,True
+Freeze my account it's been hacked.,22,44,0.44436579942703247,False
+The card got declined twice when I tried to use it to buy something online yesterday.,27,25,0.6673954725265503,False
+The transfer is coming up as pending the payment is due today. Will I be charged a fee?,48,64,0.6083238124847412,False
+Does my PIN come with my card?,38,49,0.4684261083602905,False
+"Someone else is using my card, freeze it.",22,22,0.5975325107574463,True
+Transferring money in 2018 to another country shouldn't take this long. My transfer has been pending for too long. I verified my account details are correct.,48,48,0.5961082577705383,True
+My card is gone I think it was stolen,41,41,0.7184796333312988,True
+Can I get a mastercard?,73,73,0.4352070093154907,True
+I don't understand where this debit came from and want it removed.,28,28,0.5151205062866211,True
+I made a transfer 12 hours ago. Why is it still listed as pending?,48,48,0.6563779711723328,True
+can you limit my top up?,60,60,0.7480514049530029,True
+Why can't I get my virtual card to work?,72,72,0.8339008688926697,True
+What steps must I follow to get a Visa credit card?,73,73,0.4752677381038666,True
+Can I transfer money to a beneficiery?,7,7,0.4521465301513672,True
+Can you help with a transfer to an account,7,65,0.7258716821670532,False
+Do you support all fiat currencies?,36,36,0.7637962698936462,True
+My transfer didn't go through.,35,35,0.6936919689178467,True
+How do I add the card to my account?,13,0,0.5699961185455322,False
+I am still waiting for a cash withdrawal to show,46,46,0.6636606454849243,True
+What places can I use my card?,10,10,0.5829852819442749,True
+How do I open up an account for my child?,1,65,0.41643595695495605,False
+can you tell me what cards and currencies you take?,54,54,0.640114426612854,True
+Why didn't my balance change after I transferred some money?,5,5,0.7250490188598633,True
+The wrong rate was applied to an item I bought in a currency different from mine. Can this be changed?,17,17,0.614757239818573,True
+How many tries do I have to enter my pin before I'm blocked?,49,49,0.6298335790634155,True
+My top-up isn't working.,59,59,0.7035616636276245,True
+Where do I need to live to get support?,24,3,0.37834393978118896,False
+Delete this account!,55,55,0.469882071018219,True
+There is an extra $1 charge,34,34,0.589716911315918,True
+app does not recognize me,68,68,0.43893179297447205,True
+What are the fees for a physical card?,43,38,0.65190589427948,False
+Is there a limit to top-ups?,60,60,0.719190239906311,True
+Please explain why the transfers shows up as pending?,48,48,0.6944483518600464,True
+How do I know which ATMs will accept this card?,3,10,0.5790616273880005,False
+Is my cash withdrawal pending?,46,46,0.8379908204078674,True
+Why do you require so many identity details?,74,74,0.5822603702545166,True
+I don't recognize a debit payment that was made and would like to find out about the payment.,28,28,0.6602907776832581,True
+Still waiting on a refund.,51,51,0.620296061038971,True
+Why is there a transaction that shows multiple times?,63,63,0.6002509593963623,True
+I was taking out funds and was unable to regain my card.,18,41,0.5762878656387329,False
+My credit card cancelled a payment for a purchase.,53,25,0.6321282982826233,False
+Can I get a physical card through this app?,43,38,0.7280646562576294,False
+I made a mistake and need to cancel a transaction,8,8,0.5552003979682922,True
+"I need to verify my identity, but how do I do that?",69,69,0.7040263414382935,True
+I need to cancel an incorrect transaction.,8,8,0.575828492641449,True
+"My latest payment was declined, I was told everything was back to working order. What happened?",25,25,0.5758382081985474,True
+whats your exchange rate,31,32,0.6167576909065247,False
+How do I get my paycheck through this?,50,50,0.39140498638153076,True
+How can i check if my card is working?,14,14,0.6019188761711121,True
+What is the top-ups limit?,60,60,0.7657428979873657,True
+I would like to link my card. How do I do it?,13,13,0.731856107711792,True
+Where do I go if I want to link my new card?,13,13,0.6806550025939941,True
+How can I start using my card?,0,0,0.6061265468597412,True
+I made a mistake when I did a transfer so now what can I do to fix that?,8,35,0.5147128105163574,False
+The app reverted what I topped up.,61,61,0.6624230146408081,True
+"In terms of holding and exchange, what fiat currencies do you use.",36,36,0.6178618669509888,True
+Can you tell me if my top-up has been cancelled?,61,59,0.5773433446884155,False
+Why can't I use my American Express with Apple Pay to top up my account?,2,58,0.5012754797935486,False
+"Can you help me with a weird charge?  It's a pound charge that never goes away from the statement view on the app I'm using.  It's not described as anything but ""Pending"", and that status has never changed during the last two days.",34,34,0.5779486298561096,True
+"I received my new card, but I don't see it in the app anywhere.  What do I do?",13,14,0.48768436908721924,False
+The transfer I did hasn't arrived,66,66,0.6465275287628174,True
+Can I top up using an international card,57,62,0.5915700197219849,False
+How do I deal with a blocked PIN?,49,49,0.7999393939971924,True
+Why was I charged a fee for withdrawing cash?,19,19,0.7553385496139526,True
+I payed with a card and was charged an extra fee,15,15,0.7474576234817505,True
+Hello. I checked my transactions and saw I was double charged on my card for a restaurant visit. I would like to get my money back.,63,63,0.6474685668945312,True
+How long do card transactions take to clear?,45,45,0.4840727746486664,True
+I don't like that I have to fill out so much information about my identity.,74,69,0.5763686895370483,False
+I need to update my current address,30,30,0.38939470052719116,True
+I would like to change my pin.,21,21,0.7234885692596436,True
+Why is there an extra 1 pound charge on my card?,34,34,0.5624076724052429,True
+How do I link my replacement card?,13,13,0.5869418382644653,True
+How long will this card payment stay pending?,45,45,0.7668973207473755,True
+What countries are you currently in?,24,24,0.4585121273994446,True
+There's a Direct Debit payment in my account that I didn't make,28,28,0.697401225566864,True
+Will this app exchange currencies?,33,33,0.7887647151947021,True
+"Please put a freeze on my card,  I am worried there has been some payments on it and I don't know what for.",16,45,0.495597243309021,False
+There is a odd withdrawal on my account.,20,20,0.5715458393096924,True
+Why doesn't the card payment work,25,14,0.6409764289855957,False
+I completed a money transaction but the recipient hasn't received it,66,66,0.6870071887969971,True
+Is there a problem with receiving my salary in GBP?,50,50,0.44370248913764954,True
+Why didn`t my topup go through?,59,59,0.5567470788955688,True
+Are there extra charges for exchanging currency?,31,31,0.6348313689231873,True
+I had a transfer blocked,7,27,0.5659999847412109,False
+I would like to create a disposable virtual card. How do I go about doing that?,37,37,0.7935267090797424,True
+Can you tell me why my refund is not showing in my statement?,51,51,0.699366569519043,True
+Is there a fee for exchanging currencies?,31,31,0.6266494393348694,True
+What are the top up charges for US cards?,57,57,0.6792849898338318,True
+My attempted transfer failed.,35,35,0.7390227317810059,True
+"I received my American Express card, but I am having problems making it work with Apple pay.  Can you help me with this problem?",2,2,0.5100610852241516,True
+My transfer didn't work,35,35,0.6558216214179993,True
+I need to change my pin but I am on the road.,21,21,0.5643152594566345,True
+What are the fees to get a physical card?,43,38,0.7197287678718567,False
+How can I top up my Google Pay?,2,58,0.5586379766464233,False
+what is the most i can top up?,60,60,0.6334248185157776,True
+"Is there anyway, I can get a disposable virtual card?",37,37,0.8032865524291992,True
+How do I top up with Apple Pay?,2,2,0.6096773743629456,True
+My phone is lost.  What do I do to prevent someone from using the app?,42,42,0.6779412627220154,True
+How do I get my top-up verification code?,71,71,0.6513147354125977,True
+"I thought cash withdrawals were free? Why have I been charged a fee? Also, how much is this fee?",19,19,0.6780350208282471,True
+Assist me please with card activation.,0,0,0.7109650373458862,True
+Is it possible to use my credit card to transfer money?,62,65,0.4546038508415222,False
+How do I troubleshoot Google pay top up?,2,57,0.5273259282112122,False
+My transfer is still coming up as pending.,48,48,0.7717540264129639,True
+I've tried numerous times to submit a transfer of funds. Why isn't it going through?,7,35,0.5662386417388916,False
+How much money can i top up?,60,58,0.567406415939331,False
+is apple pay eligible for top up,2,57,0.5618338584899902,False
+I need to know the cost and when I will receive a new card to replace an old one.,9,9,0.5316210985183716,True
+I deposited a check but my balance is still the same.,6,6,0.658342182636261,True
+Do these virtual cards have any caps on using them?,29,40,0.5688890814781189,False
+The atm won't give my card back!,18,18,0.47060397267341614,True
+From where are you getting your exchange rates?,32,32,0.6683222055435181,True
+What do I do if I think someone managed to get my card information?,22,22,0.6315544843673706,True
+Why hasn't my card been delivered?,11,14,0.5914329290390015,False
+why was my transfer declined,27,27,0.7439311742782593,True
+I'm not sure why my account has been refunded a payment for an item I've already received about 2 weeks ago. Can you please tell me what is going on?,53,51,0.5179387331008911,False
+I want to choose a different PIN.,21,21,0.6806859374046326,True
+How long does it take for a money transfer to show?,48,67,0.534925639629364,False
+I want to reverse a purchase. Can I cancel it?,52,8,0.5277543067932129,False
+What is the difference between standard and express delivery?,12,12,0.2774772346019745,True
+My daughter needs a card. Can I give her one of mine that's linked to my account?,39,13,0.6001311540603638,False
+"what is source of my funds, need to verify",70,70,0.8042284846305847,True
+I cannot find my credit card.,41,41,0.5454361438751221,True
+Where can I obtain my virtual card?,40,40,0.7543638348579407,True
+Can you tell me how to close my account?,55,55,0.5557712316513062,True
+I made a cash deposit almost a week ago but it's still not there!! please sort this out asap I need the money,6,6,0.48554474115371704,True
+Will my friend be able to top off my account?,62,60,0.4936552047729492,False
+What is the point of an identity check?,74,74,0.5881140828132629,True
+Why isn't a recent refund on my statement?,51,51,0.6063088774681091,True
+"I am missing some funds from my account - I tried to transfer them using my credit card number, and it disappeared.",62,65,0.49016034603118896,False
+I need help getting the virtual card to work.,72,72,0.8124974370002747,True
+I want to order another crad,39,43,0.33028024435043335,False
+Why are there so many fees on my statement?,34,34,0.5524686574935913,True
+Top up on my Google Pay isn't working.,2,59,0.5979398488998413,False
+"My receipt shows an extra charge on my transfer, why is this?",64,34,0.5641353130340576,False
+It will be fine to use at any establishment that accepts Mastercard.,10,73,0.4675331711769104,False
+I didn't get the right amount at the ATM.,75,75,0.5984801650047302,True
+How do I activate a card I received?,0,0,0.7216863632202148,True
+Why can't I see my topup in my wallet anymore?,62,59,0.531537652015686,False
+Are there any limits to how many disposable cards I can use?,29,29,0.7612869143486023,True
+Where can I use my card?,10,10,0.5806281566619873,True
+Can I get paid in another currency?,50,33,0.4812847375869751,False
+I made a transaction but did it to the wrong account.,8,75,0.5597183108329773,False
+Why was my Payment declined,25,25,0.6456312537193298,True
+how secure is a disposable virtual card,37,37,0.7573312520980835,True
+May I exchange currencies with this?,33,33,0.5806553959846497,True
+Hello I changed my mind and really need a refund on one of things I bought recently. Can you please cancel the transaction and get my money back. Please it's urgent.,52,52,0.549327552318573,True
+My ecchange rate was wrong for a cash transaction.,76,76,0.7077423334121704,True
+What are the rules for transferring to a beneficiary?,7,66,0.5234830975532532,False
+Where can I find the top-up verification code?,71,71,0.6622880697250366,True
+Is there a specific type you need for identity verification?,69,74,0.6518580317497253,False
+Whats the delivery time to the United States?,12,12,0.46051809191703796,True
+Why isn't my top up working using my saved American Express in ApplePay?,2,59,0.5261682271957397,False
+Why do I have to verify the top-up?,71,71,0.7692294716835022,True
+I don't have my access code for the app.,44,68,0.44699525833129883,False
+Are you sure when the withdrawal will show?,46,20,0.500008761882782,False
+how old do i need to be to get an account for myself,1,1,0.3274601101875305,True
+What do I do if my card is expiring soon?,9,9,0.7156969904899597,True
+Can you tell my why my card payment has been reverted.,53,53,0.7752403020858765,True
+I'd like to use cash to top up. How do I find that option?,58,58,0.7275194525718689,True
+Help me cancel my transaction,8,8,0.6026153564453125,True
+Where is my new card? I have been waiting a week!,11,11,0.5265213847160339,True
+how to activate card?,0,0,0.7660422325134277,True
+Can you explain where I can find the auto-top option?,4,4,0.6287490725517273,True
+Where can I exchange my money for EUR?,36,33,0.4974553883075714,False
+Will I be charged if someone needs to send me money?,56,50,0.5462737083435059,False
+Can you tell me why my top up was reverted?,61,61,0.7739550471305847,True
+"I still have not received my new card, I ordered over a week ago.",11,11,0.534047544002533,True
+My transfer will not go through.,35,35,0.654761791229248,True
+I think someone has access to my card numbers that shouldn't.,22,22,0.6219136118888855,True
+"I requested a refund, and never received it. What can I do?",51,51,0.6072225570678711,True
+How do I send my account money through transfer?,65,65,0.6103047132492065,True
+How do I interconvert between AUD and GBP?,33,33,0.3844238817691803,True
+Can I purchase extra non-virtual cards?,39,40,0.5629798173904419,False
+How do I top up my account with a cash payment?,58,58,0.6720271110534668,True
+I have a strange cash withdrawal in my statement,20,20,0.6219624280929565,True
+Can you get me my card fast?,12,11,0.5335894823074341,False
+There is a fee on my account. Why?,15,15,0.5223203301429749,True
+"Please help in finding my card PIN, thank you!",38,49,0.44494420289993286,False
+"When I want to transfer money to my account, how can I do that?",65,65,0.629467785358429,True
+How can I top-ff my account using my Apple Watch?,2,62,0.42021384835243225,False
+i need my card quick,12,41,0.5060242414474487,False
+Is it possible to verify a top up?,71,71,0.7960960865020752,True
+Why do you keep declining my payment? I tried several times already with this card and it's just not working,25,25,0.5530617237091064,True
+Somehow I am missing my card.  What should I do?,41,41,0.5773853063583374,True
+How do I retrieve my card from the machine?,18,41,0.545624852180481,False
+My app shows some cash I didn't get.,20,75,0.5966686606407166,False
+Will it automatically top-up or do I need to do that manually if there isn't much cash left?,4,58,0.5941282510757446,False
+I should have received a refund however it is not showing on my statement,51,51,0.6513928771018982,True
+What is the necessity of verifying the top up?,71,71,0.8242220878601074,True
+How much am I charged for a SEPA transfer?,56,64,0.5485172867774963,False
+can you check why I wasn't able to top up?,59,59,0.6176406145095825,True
+Why don't I see my top up in my wallet?,62,71,0.5330595374107361,False
+My exchange went wrong. I swapped Russian Ruble for UK pounds and was charged too much.,17,76,0.5753758549690247,False
+I need to update my info.,30,30,0.521416962146759,True
+When does the money get transferred to my account,67,65,0.56937175989151,False
+I don't know what to do. Should I transfer funds. My account is out of money.,65,65,0.5955780744552612,True
+Is my card broken?,14,14,0.6888332366943359,True
+Why is it asking me to verify my identity,74,74,0.739223301410675,True
+What is the youngest age in order to have an account?,1,1,0.4371652603149414,True
+I just purchased a disposable virtual card. Am I able to use it for online purchases immediately?,37,37,0.7031895518302917,True
+I bought some stuff this morning but the payment shows as pending,45,45,0.6065557599067688,True
+"When I got cash, I'm pretty sure there was a glitch that overcharged me.",19,75,0.5282891988754272,False
+My virtual card isn't working. What do I do?,72,72,0.8504191637039185,True
+How do I transfer money using a credit card?,62,65,0.48157113790512085,False
+still waiting on that card,11,45,0.5417324304580688,False
+I was charged for a cash withdrawal.,19,19,0.8684830665588379,True
+Help me please!  My card was stolen!,41,41,0.6394287943840027,True
+What do I have to do to get a Visa credit card?,73,73,0.4832247495651245,True
+"I Submitted a cheque couple days ago, nothing happened to my account yet.Would you please check What could be the possible issue?",6,6,0.49991852045059204,True
+I would rather the Mastercard.,73,73,0.5768362283706665,True
+How old does my kids need to be to open an account?,1,1,0.4033714532852173,True
+How can I speed up a transfer?  Mine is pending.,48,48,0.7052097320556641,True
+Can I use American Express to add money into my account?,54,50,0.42584148049354553,False
+I am waiting for a pending money transfer to process.,48,48,0.7026479840278625,True
+Can you tell me what countries you operate in?,24,24,0.46309852600097656,True
+Why isn't my PIN available yet?,38,49,0.5579099059104919,False
+How long is my Europe transfer wait?,67,67,0.5602771043777466,True
+"Your service is terrible,.  Delete my account,",55,55,0.5092477798461914,True
+What is accepted in regards to cards and currencies?,54,54,0.6373021602630615,True
+Transactions on my card look really weird. I've been charged twice for a couple things this week! Please check this and return the double charged ones.,63,63,0.6400634050369263,True
+I need to know your exchange rates.,32,32,0.7420579195022583,True
+How long does it take to get my card? Can I choose when to receive it?,12,11,0.6098202466964722,False
+Where are cards delivered to?,43,10,0.5383570790290833,False
+I am awaiting my refund,51,51,0.546284556388855,True
+How do I exchange my GBP to AUD?,33,33,0.4220200181007385,True
+Where is the virtual card?,40,72,0.7529216408729553,False
+The rate of exchange for my card payment is incorrect,17,17,0.7326753735542297,True
+I would like to know why my transfer was declined.,27,27,0.7159829139709473,True
+How do I find the exchange rate?,32,32,0.6542598009109497,True
+Why didn't my transfer go through?,35,66,0.6473524570465088,False
+Can I top up my account with a cheque?,58,58,0.7045321464538574,True
+I'm unable to use contactless payments for purchases.,23,23,0.7799538373947144,True
+I had to pay in order to do a transfer,64,64,0.6074820160865784,True
+Is GBP a supported currency?,50,54,0.5619932413101196,False
+Am I able to get a card in EU?,24,38,0.4859274625778198,False
+What do I do if I think my card was improperly used?,22,22,0.611729085445404,True
+Does the card you sent have a way to track to it?,11,12,0.4941105544567108,False
+I have a payment listed as cancelled.,53,25,0.510055422782898,False
+The rate for a currency exchange was wrong when I bought something.,17,17,0.6614633202552795,True
+Can I use my card anywere?,10,0,0.5026164650917053,False
+Is it possible to get a transfer from SWIFT?,56,27,0.40976810455322266,False
+I made an out of country transfer and it hasn't went through yet.,5,48,0.5651755332946777,False
+"I'm out of money, can I add money with my bank?",65,50,0.42152857780456543,False
+Do you know if I can use this for my salary?,50,24,0.3353630006313324,False
+"Hi, I don't think your exchange rate is right. I need you to check the official interbank exchange please.",17,32,0.6138617396354675,False
+What is the current exchange rate for me?,32,32,0.5826079845428467,True
+Are there fees for adding money using an international card,57,15,0.48856303095817566,False
+Will there be additional costs of I make a withdrawal from a local ATM of British pounds? I need some cash to feel comfortable on the journey home,76,19,0.47647374868392944,False
+I didn't buy this twice,63,63,0.5201968550682068,True
+There is a withdrawal that isn't mind in the app.,20,20,0.5787323713302612,True
+Would I be able to get a refund for something I bought?,52,52,0.4908123016357422,True
+I thought cash withdrawals didn't have a fee,19,20,0.6537923812866211,False
+"If you send me more cards, are there any charges?",39,15,0.4515393376350403,False
+How long does it take for a payment to go thru? I made one a few days ago and it has not been cleared yet.,45,45,0.437346488237381,True
+"I am waiting patiently for a week now for the seller to get back to me and there has been no response, could you please help me further with getting my money back.  Thank you.",51,51,0.45982635021209717,True
+Can I receive my salary in a currency other than what it is deposited in?,50,50,0.44653815031051636,True
+What are the countries you operate in.,24,24,0.4828929305076599,True
+Can I top-up as much as I want?,60,60,0.6227313280105591,True
+My card won't work.,14,14,0.7350181937217712,True
+How can I transfer money from an outside bank?,65,5,0.48030969500541687,False
+Is there supposed to be a fee for the transfer I made?,64,64,0.6351361274719238,True
+How many times can I use the disposable virtual card I have?,29,37,0.7234362363815308,False
+I requested a refund from a store but it hasn't arrived.,51,51,0.6030310392379761,True
+What is the fee to receive money?,56,50,0.6389239430427551,False
+Where is my deposit?,6,6,0.426998108625412,True
+I tired to deposit some cash into my account but it's not there,6,6,0.5674282312393188,True
+Some idiot stole my card.,41,41,0.6726005673408508,True
+Can you look to make sure the exchange rate is correct,76,32,0.607043981552124,False
+How do I obtain a disposable virtual card?,37,37,0.8522336483001709,True
+I just got my new card but am not sure how to check its PIN.,38,21,0.4720577597618103,False
+I'm unsure of a withdrawl in my statement.,20,20,0.4939531981945038,True
+Why can't I use my virtual card for subscription services?,72,72,0.6847664713859558,True
+"My beneficiary is not allowed, please may I have answer as to why this is?",7,7,0.7448968291282654,True
+Why is identity verification mandatory?,74,74,0.7225017547607422,True
+"Since my card is about to expire, what do I do to get a new one?",9,9,0.6720078587532043,True
+The rate of exchange isn't right for my cash withdrawal.,76,76,0.7434406876564026,True
+What is the process of card activation?,0,0,0.7272670269012451,True
+"I didn't get cash from an ATM, but according to the app a transaction was made when i didn't make it.",20,20,0.5158318877220154,True
+Is there currency exchange on this app?,33,33,0.7738953232765198,True
+"I'm not in the UK, can I get a card?",24,38,0.4892313480377197,False
+Is there a charge for topping up by transfer?,56,56,0.6492301821708679,True
+i want to track the card you sent,11,12,0.5479984879493713,False
+"Please, how do I order a card?",43,43,0.6911773681640625,True
+"I already have one of your cards, how do I link them?",13,13,0.6779757738113403,True
+I relocated and need to change my personal details.,30,30,0.6250475645065308,True
+What places will accept my card for payment?,10,10,0.647473931312561,True
+"Hi I'm a new customer and tried topping up for the first time today, seems it's not working, the thing shows up as pending since half an hour already! Please fix it!",47,47,0.6310891509056091,True
+What do I need to do to get a refund?,52,52,0.6182618737220764,True
+Why is the exchange rate wrong when I purchase something abroad?,17,17,0.5627142786979675,True
+I have an unauthorized transaction on my statement,16,34,0.47358590364456177,False
+Please help me!  I need to cancel a transaction.,8,8,0.6118801832199097,True
+I think my top up did not work,59,59,0.6785470247268677,True
+How do I reset my PIN?,49,21,0.6186221241950989,False
+"I would like to activate my card to use now, can you help me?",0,0,0.6985325813293457,True
+I need to verify my source of funds,70,70,0.8422609567642212,True
+I took out cash abroad and the exchange rate isn't correct.,76,76,0.6567198038101196,True
+The ATM gave me less cash than I requested,75,75,0.5474353432655334,True
+how do I link a card I already have?,13,13,0.6672643423080444,True
+When will the transfer go through?,48,67,0.6219108700752258,False
+I am chatting about an order from a long while back.  I never got it to this day and am deeply upset by this!  I want all of my money back!  I just can not accept paying for something I never got.,52,50,0.43989142775535583,False
+The top-up verification code is missing,71,71,0.6402894854545593,True
+How long does it take to process transfers from Europe?,67,67,0.6276955604553223,True
+My card is being used online to make a bunch of purchases! Someone else is using it fraudulently. Can you help me freeze it?,22,22,0.6076090335845947,True
+"i want to close an account but im not sure about setting up a new one in the future, what do you recommend",55,55,0.5024160742759705,True
+virtual card is not working for me,72,72,0.836383044719696,True
+What currencies or cards do you support for topping up?,54,54,0.5981528162956238,True
+Need to deposit a cheque into my account,58,6,0.5363364219665527,False
+I made a deposit this morning but it is still pending?,6,48,0.47936373949050903,False
+My card is about to expire.,9,9,0.7665477395057678,True
+Why has my card payment been cancelled?,53,45,0.6499764323234558,False
+Are there any fees if I use a European bank card for a top up?,57,57,0.5986647605895996,True
+"I tried to take money from my card, but it didn't work. Later I saw that the transaction is still in progress. What's goign on?",46,14,0.5289493203163147,False
+Why did it decline my payment?,25,25,0.6679781675338745,True
+I have to verify the source of my funds,70,70,0.8373113870620728,True
+Why did I not get my cash back after I withdrew?,75,20,0.5505829453468323,False
+How long will it take to activate my new card?,0,0,0.5851036310195923,True
+My card payment is showing pending.,45,45,0.8406935334205627,True
+Can I have a second card?,39,39,0.49390512704849243,True
+The app won't let me log in as myself.,68,68,0.5566021800041199,True
+Where is the auto top-up option?,4,4,0.6863746047019958,True
+The cash I tried to draw from the ATM was not approved.,26,20,0.5299796462059021,False
+"I need AUD not GBP, how do I change it?",33,33,0.42380276322364807,True
+"If my card is about to expire, do I need to order a new one?",9,9,0.6141580939292908,True
+I want to cancel a transfer right away! Can you help?,8,8,0.6768995523452759,True
+Someone stopped my payment,53,16,0.5411365628242493,False
+How can I get my card out of the damn ATM?,18,18,0.5896236896514893,True
+"Looks like my card payment was duplicated. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and clearly was declined?",63,25,0.6208948493003845,False
+My card was used without my permission.,22,22,0.5954853296279907,True
+Are you able to explain the restrictions of the disposable cards?,29,29,0.78499436378479,True
+"Hi, I'm buying a flat and I'm trying to get my mortgage to go though. Every time I check I simply get an error message. Is there any way you can help me get this money transferred over. Thanks!",35,35,0.4403972327709198,True
+What do I do when my card is about to expire?,9,9,0.7362502813339233,True
+What's the deal? My card was just denied for top up. Why is it not going through?,59,57,0.5595158934593201,False
+how long do money transfers take?,66,67,0.6058380007743835,False
+How do I get a visa card?,73,38,0.5259047746658325,False
+Do you offer services for children to have money saving experience?,1,1,0.4007375240325928,True
+My address has updated and I need to change it.,30,21,0.4307880997657776,False
+I didn't get all the cash I requested for at the ATM,75,75,0.510290265083313,True
+Why didn't the ATM give me my money?,26,18,0.5025659203529358,False
+"I noticed an extra $1 charge on my statement, can you tell me why that is?",34,34,0.7087368369102478,True
+My cash deposit from a week ago hasn't shown up. I need the money - how quickly can you sort this out?,6,51,0.497516393661499,False
+Cash withdrawal still pending?,46,46,0.7813750505447388,True
+Will it automatically top-up if there isn't much money left?,4,58,0.5337347984313965,False
+What'll it charge me for a SEPA transfer?,56,64,0.5315850377082825,False
+How long will it take for the transfer to reach my account?,67,67,0.6062619686126709,True
+Is my card usable anywhere?,10,10,0.5493009686470032,True
+How old do I have to be to open an account?,1,1,0.43723517656326294,True
+How do I convert currencies with the app?,33,33,0.7535985708236694,True
+The exchange rate was wrong when I bought something outside the country.,17,17,0.6205889582633972,True
+I am not able to do contactless.,23,23,0.6473185420036316,True
+I need to get some more physical cards.,39,38,0.6518160104751587,False
+I got double charged for a payment so how do I fix that?,63,63,0.6292673349380493,True
+I NEED TO KNOW HOW TO TRANSFER MONEY INTO MY BANK ACCOUNT. PLEASE HELP,65,65,0.5259901285171509,True
+I need to activate my card can you do that now?,0,0,0.7015226483345032,True
+If my transfer is from Europe how long will it take?,67,67,0.6012105345726013,True
+Will salary be received through this?,50,50,0.5040016174316406,True
+What do I need to show who I am?,69,74,0.4675449728965759,False
+Is the top up feature available on the Apple Watch?,2,4,0.5942606329917908,False
+I attempted to top up but the app denied it.,59,59,0.5826012492179871,True
+Why do you need all this information about my Source of Funds?,70,70,0.6105383634567261,True
+I took out money from a transaction machine and it exchanged the wrong dollar value amount from another currency!,76,76,0.5669268369674683,True
+Can i get a single use virtual card,37,40,0.6856353282928467,False
+I got topped up but the application reverted it.,61,61,0.6057325005531311,True
+How can I get a physical card,43,38,0.8160737752914429,False
+"Hi, I am calling about a recent transaction that has happened on my account.  I recently went to the ATM, and tried to make a withdrawal on my account.  I just happened to check my transaction slip and noticed a fee for my withdrawal.  How can I resolve this, I didn't know fees were charged for this type of action.",19,19,0.5777120590209961,True
+I don't know where to look to find my PIN.,38,21,0.5674518942832947,False
+What currencies are accepted for adding money?,54,54,0.491619735956192,True
+What locations are you in?,24,10,0.42103642225265503,False
+"I just activated auto top-up, but it is not letting me enable it. Why not?",4,4,0.6248279809951782,True
+How long does a transfer take from china?,67,67,0.5954604744911194,True
+"Since my pin is blocked, would you help me unblock it?",49,49,0.7262623310089111,True
+I was contacted by a seller with a message that they never received my money. I am 100% sure it was taken from my account so I definitely need this sorted out soon.,53,50,0.517179012298584,False
+How do I report my card lost or stolen?,41,41,0.7274116277694702,True
+What kind of currencies can I use to add money?,54,54,0.5093734860420227,True
+I am not able to use the app since I forgot my phone at the hotel I was staying at.,42,42,0.5010980367660522,True
+Why does the top-up need verification?,71,71,0.7811926603317261,True
+Why would I have a pending payment?,45,45,0.676110029220581,True
+What is the youngest someone can be to open an account?,1,1,0.42603370547294617,True
+Why was the exchange rate wrong when I got cash,76,76,0.6326774954795837,True
+Is it possible to receive a Visa and a MasterCard?,73,73,0.5876198410987854,True
+I think I see a withdraw I did not make.,20,20,0.5485039949417114,True
+I used an ATM in a foreign currency but the rate applied is wrong!,76,17,0.5975096225738525,False
+I need help changing my last name on my account.,30,30,0.5181991457939148,True
+Am I allowed to give my daughter one of my cards to use?,39,29,0.4531867802143097,False
+I want my account deleted!,55,55,0.5740736126899719,True
+Does every place of business accept this card?,10,10,0.5985100269317627,True
+I'd like to have another card,39,39,0.5230094194412231,True
+I still haven't seen a refund on my account,51,51,0.7194081544876099,True
+I withdrew money but the full amount wasn't dispensed.,75,26,0.5047499537467957,False
+I tried making an update to my balance using cheque just yesterday but it doesn't appear to have worked. Should this not be a faster process? I need you to please check over my account because something has went wrong.,6,6,0.6289756298065186,True
+"Why does my transfer say ""pending""?",48,48,0.7185696363449097,True
+I found an unauthorized card payment,16,16,0.6342904567718506,True
+Where do you guys acquire your exchange rate?,32,32,0.5757319927215576,True
+"There was a transaction from two weeks ago from a business that I don't know. I'm fairly certain it wasn't me who made it, but is it an option to trace it to confirm?",28,70,0.4009556770324707,False
+I would like to cancel a payment. I purchased something several days ago and i still have not received it.,52,8,0.5442422032356262,False
+HOw do I get my card back after the ATM has pulled it in?,18,41,0.5369961261749268,False
+I was at an ATM and it swallowed my card.,18,18,0.864315390586853,True
+A transfer to an account was not allowed,7,27,0.6353855729103088,False
+I can't recall my passcode and need to reset it.,44,44,0.6982749700546265,True
+"I need the right foreign money, at the right rate, at ATMs, when I go abroad.",76,32,0.535111665725708,False
+"My top-up was reverted, why did this happen?",61,61,0.7477263808250427,True
+The person I sent money to hasn't gotten it yet!,66,66,0.5505104660987854,True
+Did my refund go through? It's not on my statement.,51,51,0.578610897064209,True
+Is there a way to know when my card will arrive?,11,11,0.6628953218460083,True
+how long does it take to post atm with drawl,46,67,0.3785884976387024,False
+"When I submit a transfer, it is being declined.  The information I put in has been reviewed.",27,27,0.6903579235076904,True
+I see a charge on my account that I don't recall making. I feel like my account may have been compromised.,16,34,0.5371682047843933,False
+You did not apply the correct exchange rate for an item that I bought.,17,17,0.6349062919616699,True
+"I got my American Express in Apple Pay, why is top up not working?",2,59,0.5435767769813538,False
+Am I able to change my PIN at any cash machines?,21,21,0.6059713959693909,True
+I think there has been a purchase made that wasn't by me.,16,22,0.36963462829589844,False
+Why can't I verify my identity?,68,68,0.7702764272689819,True
+How to change the PIN on my card?,21,21,0.6900032162666321,True
+"I've just come back from an eating holiday in the USA and Canada and have SO many pending and duplicated transactions on my account.  I think there is something wrong, can you look in to it please?",63,63,0.4843832850456238,True
+Has the check I deposited cleared to I can get the cash?,6,6,0.4714612066745758,True
+I checked my account today and it said I was out of money. How do I transfer money into my account?,65,65,0.5028051137924194,True
+Can my 19 year old daughter open a savings account at the bank?,1,1,0.3323277235031128,True
+I was wondering whether exchanging currencies can be done on this app.,33,33,0.7757776379585266,True
+Do cash machines let me change my pin?,21,21,0.6028106808662415,True
+Can I have it be delivered at a certain time?,12,12,0.44064563512802124,True
+I made a payment that got charged twice instead of once.,63,63,0.7966170310974121,True
+Unknown direct deposit,28,28,0.5224480628967285,True
+Can I change to another currency?,33,33,0.5216538310050964,True
+Is there a way my new card can be renewed?,0,9,0.4489727020263672,False
+What is the payment in my account that I did not do?,16,16,0.5353679656982422,True
+"If I have more than one disposable card, can I make five payments on each of them?",29,29,0.5833694934844971,True
+How can I edit my personal details?,30,30,0.7999110817909241,True
+When should I expect to see my transfer hit my account?,67,67,0.5260085463523865,True
+Why is the cash deposit not showing up in my account?,6,6,0.5844630002975464,True
+How do I find the verification code for my top-up card?,71,71,0.6135899424552917,True
+"When I got cash, my exchange rate was wrong.",76,76,0.6939187049865723,True
+I requested a refund from a merchant days ago but I do not see it in my account.,51,51,0.6894616484642029,True
+Is it possible to edit my personal details on the app?,30,30,0.6969250440597534,True
+Can I use my card everywhere?,10,29,0.5150541067123413,False
+How do I go forth verifying my top-up card?,71,71,0.6849498748779297,True
+"I ordered a card a week ago, and it's still not here. What do I do?",11,11,0.5025227665901184,True
+Please advise what is the exchange rate,32,32,0.6834070086479187,True
+What places will accept my card?,10,10,0.6987204551696777,True
+"For some reason, the virtual card won't work for me.",72,72,0.8365529775619507,True
+How are currencies exchanged?,33,33,0.6054433584213257,True
+"If the transfer details have already but reviewed and confirmed that they are correct, what other reason would cause my transfer to be declined?",27,27,0.5354636907577515,True
+will i be able to open an account for my daughter,1,65,0.33802974224090576,False
+How old does one have to be to have an account with the bank?,1,65,0.4269276261329651,False
+"More than one time this week, I have been charged more than once for the same transaction. Please correct the issue and refund the duplicate charges.",63,63,0.6770345568656921,True
+Where can I get a virtual card?,40,40,0.7850373983383179,True
+I want to transfer money to a beneficiery. Why can't I?,7,7,0.49375513195991516,True
+"I tried to make a transfer, but it was declined. Can you tell me why?",27,27,0.6787097454071045,True
+What are the fees for top ups?,57,57,0.5747175812721252,True
+How do I verify a top-up?,71,71,0.7889869809150696,True
+How long does it take for a transfer to get to a recipient?,66,66,0.6856366991996765,True
+Your exchange rate is totally wrong for my card payment,17,17,0.7668083906173706,True
+Can I set up an automatic top-up for travel.,4,4,0.7244150638580322,True
+How does my identity get verified?,69,69,0.7042858600616455,True
+"I have a card payment that was declined, but why?",25,25,0.7621386647224426,True
+"I'm not in the UK, is it possible for me to still get a card?",24,38,0.4370594620704651,False
+I got my new card where do I go to activate it?,0,0,0.665204644203186,True
+"Hey, I try to make a bank transfer from my UK account a few hours ago, but it haven't show up yet. Please check my account to make sure everything alright with it?",5,5,0.5188145637512207,True
+Will I be able to use my card anywhere?,10,10,0.5279843807220459,True
+There is an extra charge on my app that I was not told about or I was aware of!,34,34,0.5954891443252563,True
+I would like to know how I can verify my Identity.,69,69,0.7186928391456604,True
+How do I use contactless payments?,23,23,0.7778240442276001,True
+Why could I not get cash?,26,75,0.49607181549072266,False
+when will i receive a US transfer,67,66,0.48351794481277466,False
+Why is there a pending transaction on my card?,45,45,0.722536027431488,True
+What is the limit to top up?,60,60,0.7866391539573669,True
+Will it cost anything to top up a US card?,57,57,0.5808085799217224,True
+Where do you get your exchange rates from?,32,32,0.6529854536056519,True
+Do you guys accept mastercard or visa?,73,73,0.5845269560813904,True
+I lost my wallet today with all my credit cards. Will you please block the card and send a replacement?,41,41,0.546993613243103,True
+Good morning. I tried to make a purchase with my credit card last night and again this morning. Both times it was declined. Can you investigate?,27,25,0.5940968990325928,False
+going to need a new card what are the fees and time it takes,9,15,0.4956407845020294,False
+How do your exchange rates work?,32,32,0.6532822847366333,True
+Can I receive a new card while I am in China?,9,10,0.4751046299934387,False
+I have found my lost or stolen card. Is there a way I can link the card with my account through my app again?,13,41,0.6437249183654785,False
+How old do I need to be to open an account?,1,1,0.4382837414741516,True
+May I get a disposable virtual card as well?,37,37,0.7804367542266846,True
+Are your cards available in Europe?,24,10,0.5094408988952637,False
+"I will need to exchange currencies frequently, will I be able to get a discount?",31,31,0.4495643377304077,True
+Why is my top-up still outstanding?,47,59,0.5657352209091187,False
+I need to know the time frame that is typical for a transfer from a UK account. I just made a transfer and it doesn't appear. I want to make sure everything is okay.,5,67,0.626694917678833,False
+I want to transfer from accounts in order to Top up. What are the steps necessary.,65,65,0.5763425827026367,True
+Where are the options to top up with a cheque on my account?,58,58,0.6961919069290161,True
+Are there any documents needed for the identity check?,69,74,0.5132842659950256,False
+I transferred money and was charged and want to know why.,64,64,0.6409680843353271,True
+What is the process for activating my card?,0,0,0.7531295418739319,True
+Please delete my account right now!,55,55,0.5139638185501099,True
+What do I do if it says my card payment has been cancelled?,53,45,0.5917309522628784,False
+What is the charge for a physical card?,43,38,0.637528657913208,False
+Why was my payment cancelled?,53,25,0.5564020276069641,False
+How do I unblock my PIN?,49,49,0.7333965301513672,True
+My bank transfer is still not showing up in my account.,5,5,0.6576223373413086,True
+Where can I get a disposable virtual card?,37,37,0.8197106122970581,True
+What can you tell me about getting a virtual disposable card?,37,37,0.7963191270828247,True
+Can i have a card to my daughter?,39,38,0.4398518204689026,False
+How do I get a physical card?,43,38,0.7958237528800964,False
+"I tried using my card today and it's not working, can you help me?",14,14,0.6144551038742065,True
+Is there a location near me that i can change my PIN?,21,21,0.6277716755867004,True
+How long is it going to take for my funds to show in my account?,67,70,0.4767025113105774,False
+Why was my cash withdrawal declined?,26,26,0.8098425269126892,True
+"When considering currency holdings and exchanges, what fiat currencies are supported?",36,36,0.6884452104568481,True
+How can I fix a problem where contactless isn't working?,23,23,0.6899437308311462,True
+Where are my funds coming from? I need to know.,70,70,0.6093698143959045,True
+I believe my credit card was stolen.,41,41,0.6527343988418579,True
+I cannot prove my own identity.,68,68,0.6314576864242554,True
+What currencies will this app exchange?,33,33,0.7811874747276306,True
+What do I do if the ATM ate my card?,18,18,0.6833541393280029,True
+I cannot get my virtual card to work.,72,72,0.8579395413398743,True
+I am having trouble verifying my identity.,68,68,0.7335500121116638,True
+I'm trying to transfer money into my account.,65,65,0.6732972264289856,True
+I would like to change my card PIN.,21,21,0.7609946131706238,True
+Why does my statement have these extra charges?,34,34,0.7325824499130249,True
+I am not being recognized by the app.,68,68,0.4515983462333679,True
+There appears to have been a reversion in my top up,61,61,0.6755757331848145,True
+Will my card be accepted all over the world?,10,10,0.617933988571167,True
+"To add money to my account, what currencies can I use?",54,54,0.5361795425415039,True
+What is the limit to top-up?,60,60,0.7622196078300476,True
+Does Google Play have an app to Top up?,2,4,0.5797988176345825,False
+Why do you require so many details about my identity?,74,74,0.5808690786361694,True
+Can I reactivate my PIN?,49,21,0.5579447746276855,False
+Can I give a second card to my daughter?,39,39,0.44164085388183594,True
+Do I have to pay for topping up by transfer?,56,56,0.6143338680267334,True
+May I have another card?,39,39,0.5169104337692261,True
+Im waiting for my transaction to go through.,66,48,0.4973483681678772,False
+"Hi, My card withdrawal was declined this morning. It was working fine till yesterday. Please check and inform me.",26,26,0.6137281656265259,True
+Why were there additional charges when transferring?,64,64,0.6163651943206787,True
+"my daughter needs a card, how do i add her?",39,39,0.4869259297847748,True
+"I show another charge on my card from when I used it, why?",15,34,0.5666583776473999,False
+I have tried to use my card several times and it does not work.,14,14,0.678563117980957,True
+Can I submit a check or cash payment?,58,50,0.4294733703136444,False
+Are US credit cards accepted?,54,10,0.5340293645858765,False
+An unauthorized payment is in my app,16,16,0.5237731337547302,True
+I topped up but the app did not accept it.,59,62,0.48305633664131165,False
+Can I get a spare card for someone else to use?,39,39,0.7798179388046265,True
+How long does a transfer take to be confirmed?,48,67,0.6529077291488647,False
+What cards to do you support to top up.,54,62,0.5845848917961121,False
+Where is the nearest bank machine?,3,3,0.3375813663005829,True
+do i have to setup apple pay to use it,2,2,0.5068610310554504,True
+Tell me how to go about activating my new card?,0,0,0.6983397603034973,True
+The see the rate applied to my transaction was wrong at the atm.,76,17,0.5659323334693909,False
+Is there an age minimum?,1,1,0.5743926763534546,True
+Why does my account not accept cash deposits?,6,6,0.5490661263465881,True
+"I need to top up cash, How do I do it?",58,58,0.69431471824646,True
+My card is about to expire. How much does it cost to order a new one and how fast will I get it?,9,9,0.6130115985870361,True
+An ATM fee was attached to my recent withdrawal.,19,19,0.624866247177124,True
+What's the right way to activate my card?,0,0,0.7348338961601257,True
+Are there any extra fees for adding money into the international card?,57,31,0.45708853006362915,False
+What do i have to do to change my name?,30,30,0.4282588064670563,True
+Why do you require all my identity details?,74,74,0.6127347946166992,True
+Why did my transfer not go through?,35,66,0.6593513488769531,False
+Where can I get a second card?,39,39,0.5208932161331177,True
+has my top-up has been cancelled,61,59,0.6188657879829407,False
+How do I transfer funds from my American Express into my account?,54,65,0.4819992482662201,False
+Help!  The atm won't give me my card back.,18,18,0.50721675157547,True
+I am still awaiting the completion of the transaction.,66,48,0.46075528860092163,False
+how can i change my details,30,30,0.6133143305778503,True
+Will topping up by transfer lead to a charge on my account?,56,56,0.6708229780197144,True
+Is it possible to have both a Visa and a Mastercard from you?,73,73,0.6387947201728821,True
+Can I put my old card back into the system? I just found it/,13,41,0.5280535221099854,False
+Can I use your app if I am from the EU?,24,24,0.49998509883880615,True
+I need a new card since my old one is about to expire.,9,9,0.6787378191947937,True
+What countries do you do business in?,24,24,0.3964473605155945,True
+"Hi. I just withdrew cash from an ATM and received the wrong amount. However, my app shows the correct amount I withdrew. How do I get the rest of the cash?",75,75,0.5892692804336548,True
+I just completed a bank transfer and the balance didn't update,5,5,0.8171809315681458,True
+Are my friends able to top up my account?,62,71,0.5366897583007812,False
+On my last transaction it seem that my top-up was not successful.,61,59,0.663912296295166,False
+Can I verify a top-up and what card is used?,71,71,0.6793987154960632,True
+How can I freeze a stolen card?,41,41,0.5696418881416321,True
+I would like a refund on the extra pound I was charged.,34,52,0.5268722772598267,False
+someone is using my account,22,55,0.5672757029533386,False
+What should I do if I've tried to enter my PIN too often?,49,21,0.5307663679122925,False
+"I was attempting to purchase a golf club off eBay yesterday, but my credit card was declined. I tried multiple times, and again this morning. Can you check into my card please?",27,25,0.5183853507041931,False
+The app doesn't recognize me.,68,68,0.5030613541603088,True
+Will you deal with SWIFT transfers?,56,67,0.4538182020187378,False
+I need to know why my credit card was declined for top up? What is the deal here and why did it not go through?,59,57,0.5617800951004028,False
+I did not get as much cash as I requested at the ATM.,75,75,0.5472086071968079,True
+What does a pending transaction mean?,45,48,0.577975869178772,False
+Can you cancel my purchase?,52,8,0.4794429540634155,False
+Can I unblock my card using the app?,49,49,0.49761146306991577,True
+Do all ATMs take this card?,3,18,0.5774847865104675,False
+what is the exchange rate?,32,32,0.6924590468406677,True
+I transferred money but the recipient says it has not arrived. Why would this be?,66,66,0.6789124608039856,True
+I submitted my transfer but it has been pending for quite a while and I was wondering what takes so long? why hasn't it completed,48,48,0.639966607093811,True
+What different ways are there for someone to send me money?,50,50,0.6378240585327148,True
+"If i'm not in the UK, can I still get a card?",24,10,0.4501369297504425,False
+I cannot locate the card PIN.,38,13,0.5470697283744812,False
+Balance hasn't been updated following a cheque or cash deposit,6,6,0.8609025478363037,True
+Where can I get my card at?,43,10,0.6057702302932739,False
+what is the charges for new card?,23,15,0.5423095226287842,False
+How is the top-up card verified?,71,71,0.7115906476974487,True
+How many miles away is the ATM?,3,3,0.5179427862167358,True
+"Someone stole my wallet earlier today, not sure exactly when, probably on Piccadilly circus. Can you check if there were any attempts to use the card and obviously block it?",41,22,0.48558342456817627,False
+Can I change from one currency to another?,33,33,0.5475178360939026,True
+Do you use Mastercard or Visa?,73,73,0.7460842132568359,True
+I couldn't do a transfer to an account,7,27,0.6384115815162659,False
+I don't know where this transaction came from?,16,66,0.41417092084884644,False
+i live in the US can i still get a card?,24,10,0.46955904364585876,False
+Can I dispute a payment even if I notice it several weeks after it was made?,28,51,0.4148929715156555,False
+I just topped off my card will I be charged for it?,57,57,0.642852783203125,True
+Where is my cash deposit?,6,6,0.4935665726661682,True
+"Where can I find the ""auto-top"" feature?",4,4,0.6582363843917847,True
+Which fiat currencies do you support?,36,36,0.7500900030136108,True
+"My payment has been declined, I thought this issue was fixed!",25,25,0.5835342407226562,True
+Change currency,33,33,0.5470620393753052,True
+Would it be possible to get another card?,39,39,0.5312057733535767,True
+How do I get rid of my account ASAP?,55,55,0.569783091545105,True
+What cards and currencies do you support?,54,54,0.7649071216583252,True
+Can I use this account to receive my salary?,50,50,0.47103530168533325,True
+"I had a cheque deposited, but I still haven't seen the cash.",6,6,0.615556538105011,True
+"When I made a transfer, there was a fee.  Why?",64,64,0.6609839797019958,True
+I need my card as soon as possible.,12,41,0.5819597840309143,False
+How do I claim a refund?,52,52,0.6319958567619324,True
+If I wanted to make a change from GBP to AUD what is the process?,33,33,0.39332115650177,True
+"While I was checking out in the grocery store, I realized I needed cash so I requested some.  However, I noticed there was a fee for this transaction.  Why did I get charged a fee?",19,15,0.5463524460792542,False
+The hotel called and said I left my phone in the room.,42,42,0.5016148686408997,True
+My card suddenly quit working.,14,14,0.6253518462181091,True
+I checked the app and saw an extra cash withdrawal that I didn't authorize,20,20,0.647424578666687,True
+Why isn't my transfer not going through? I keep getting an error message.,7,35,0.6575939655303955,False
+Will I be charged for a SEPA transfer?,56,64,0.5511876344680786,False
+I purchased something in a foreign currency but the rate applied is wrong,17,17,0.6136383414268494,True
+There is more than one of the same transaction on my account.,63,63,0.5930982828140259,True
+Help me with my contactless which isn't working.,23,23,0.6914647221565247,True
+How do you verify an identity?,69,69,0.7631450891494751,True
+I know that I am able to make transfers for free.  That was something that I valued.  After I bought something online from abroad I noticed that I got charged a fee?  What is this and can it be removed?,64,64,0.6092137694358826,True
+Can I have it add money automatically in certain intervals?,4,50,0.4187830090522766,False
+I have not received the amount of cash i was supposed to.,75,75,0.6644791960716248,True
+I took out a foreign currency and the exchange rate is wrong.,76,76,0.6577182412147522,True
+is there a fee for a transfer? if so how much will it be?,56,64,0.587307333946228,False
+I want a virtual card!,40,40,0.6968402862548828,True
+"Hi! I was wondering if you can help me. I used the city centre ATM to get some cash, but the machine declined my card. My account shows that transaction is still pending. I didn't receive the money, so please cancel that transaction.",46,25,0.6151400804519653,False
+I need to create several disposable cards per day.,29,29,0.6322515606880188,True
+Can I reset my password?  I don't know what it is.,44,44,0.5062394142150879,True
+Can you tell me the total cost of a transfer?,56,64,0.525416374206543,False
+A wrong exchange rate was applied to a transaction made abroad.,76,17,0.7389366626739502,False
+Can this be used to receive my salary?,50,50,0.47987642884254456,True
+Hello. I'm on holiday and didn't bring any cash with me. I need to withdrawal my home currency from one of your machines. Do you have any that will do this and is there a charge?,76,19,0.530358076095581,False
+This company is terrible! Can you delete my account?,55,55,0.5057170987129211,True
+My card was taken by the ATM.,18,18,0.7297770977020264,True
+Where do I go to get the code to verify the top up card?,71,71,0.6428873538970947,True
+My virtual card won't work.,72,72,0.8714174628257751,True
+How do I exchange currency?,33,33,0.6696913242340088,True
+I need to verify my identity,69,69,0.7476224899291992,True
+Help! I forgot my PIN and have been locked out of using my card.,49,49,0.5976557731628418,True
+I need to change my PIN.,21,21,0.7922642230987549,True
+How do I change my PIN?,21,21,0.7390865087509155,True
+Do you guys accept Visa or Mastercard?,73,73,0.6589474678039551,True
+The ATM didn't give me the the withdraw amount requested.,75,20,0.5801168084144592,False
+I submitted a cash deposit to my account but it hasn't posted yet.,6,6,0.5863547921180725,True
+Why does my money come from?,70,50,0.5340200066566467,False
+Why is a money transfer not showing?,48,51,0.5994673371315002,False
+What methods can I use to add money to my account?,65,50,0.5079150199890137,False
+I was retrieving money and my card wouldn't remove.,18,53,0.564623236656189,False
+Can I see that history on my funds and where they came from?,70,70,0.5327723026275635,True
+How to I transfer my funds into my account?,65,65,0.5862560272216797,True
+Why was I charged extra for transferring money?,64,64,0.6281728744506836,True
+This company sucks! Can you terminate my account?,55,55,0.6560660600662231,True
+I am not Happy with this product can i get a refund?,52,52,0.45097649097442627,True
+I was charged on my account that shouldn't be there.,28,15,0.5522240996360779,False
+How do I make an exchange from one currency to another?,33,33,0.6354088187217712,True
+What should I do if I think someone is using my card.,22,22,0.7261793613433838,True
+"There must be an issue, why has my card been cancelled?",53,25,0.5400459170341492,False
+Something is wrong with my payment account since it has been declined,25,25,0.6270498037338257,True
+My card was declined today when eating and I need to know what's wrong.,14,25,0.6110705733299255,False
+Why hasn't my recipient received their money?,66,66,0.6636966466903687,True
+I would like to order a disposable virtual card. How can I do this?,37,37,0.798179566860199,True
+My transfer is still pending and I know the account numbers are correct.  Please help.,48,48,0.6399285197257996,True
+"How much is a cross currency exchange, and can I check to see if I have any discounts available?",31,31,0.5138746500015259,True
+I need to edit the personal details section of my account,30,30,0.7367076277732849,True
+I asked for 100 but only got 20.,75,75,0.3303840458393097,True
+I don't think my card payment exchange rate is correct.,17,17,0.7263875603675842,True
+Can i change my PIN at the ATM?,21,21,0.625912606716156,True
+I just got $20 when I tried to get $100,75,75,0.4150119423866272,True
+Where has my available money come from?,70,50,0.4985305368900299,False
+What is the extra  €1 fee in my statement,34,34,0.6183779239654541,True
+I have a problem!  The ATM stole my card!,18,18,0.5813052654266357,True
+What do I do for the identity check?,69,69,0.5886687636375427,True
+Can I open an account for a child?,1,65,0.4058038294315338,False
+Can I have a auto top-up when my account is short?,4,4,0.5857787132263184,True
+Why hasn't my top-up been completed?,47,59,0.6501957178115845,False
+why does the app show a direct debit payment that I did not authorize,28,28,0.6638101935386658,True
+Is it possible to use Apple Pay to put money in my account?,2,2,0.6004859805107117,True
+The app doesn't believe that I am me,68,68,0.4911290109157562,True
+there is a transaction on my account that i didnt make,16,16,0.42195504903793335,True
+How do I transfer money to my account?,65,65,0.6140462160110474,True
+"I no longer live at my address on file, how do I change it?",30,30,0.35389918088912964,True
+How long does it take for a refund?,51,51,0.5580867528915405,True
+Can friends add to my account,62,7,0.4502090513706207,False
+Can I make many disposable cards per day?,29,29,0.6668655872344971,True
+What are your policies for card transfers?,35,10,0.5603879690170288,False
+How do I freeze my card using the app?,22,0,0.4789908230304718,False
+Please delete my account. I am not happy with the service from your company.,55,55,0.5605482459068298,True
+My transaction needs to be canceled.,8,8,0.6089427471160889,True
+Please help me to know the status of my card payment as its pending since a while.,45,45,0.7069611549377441,True
+My card isn't working anymore.,14,14,0.7417177557945251,True
+"Even though it's late, I wanted to see about disputing a charge. I was just looking through my transactions over the past couple of months and noticed a pretty large amount that was not completed by me. Is this possibly something I can still do.",28,51,0.4339384436607361,False
+I am being charged a transfer fee aren't they free?,64,64,0.643776535987854,True
+Do you know why my card payment was reverted?,53,53,0.7963931560516357,True
+"I want to withdraw money, where can I go?",3,46,0.4515543282032013,False
+Can you explain your exchange rate policy? I don't think I received the correct amount of cash in my ATM transaction.,76,75,0.6235703229904175,False
+What fiat currencies are used for holding transactions?,36,36,0.575558066368103,True
+"I need help. I asked for a refund from a merchant a while ago, but I have not gotten my money back. I keep checking my account, but nothing is showing up. What should I do now?",51,51,0.650389552116394,True
+Are there any fees for adding money with an international card?,57,31,0.45814207196235657,False
+I don't like your company. Delete my account.,55,55,0.546521782875061,True
+What do I need to do to transfer money into my account?,65,65,0.6248852014541626,True
+Can I have a refund?,52,52,0.6188636422157288,True
+"If my card payment is cancelled, what should I do?",53,45,0.5901826620101929,False
+Can I used my card even if my phone has been stolen?,42,41,0.6363524198532104,False
+Can you tell me where I can order a virtual card?,40,40,0.705694854259491,True
+I would like to make a transfer. How much does it cost?,56,67,0.5027579069137573,False
+What's with not verifying my Id?,68,68,0.5792206525802612,True
+If I need to exchange currency is there an extra fee?,31,31,0.6178823709487915,True
+I would like to close my account.,55,55,0.6714525818824768,True
+I would like to know why I was charged twice for my purchase.,63,63,0.728439211845398,True
+There is a payment that is not mine in the app.  Please advise/,16,16,0.5225562453269958,True
+how do I top up my money automatically,4,58,0.6704376339912415,False
+Can I still use the app if I switched phones?,42,33,0.40182703733444214,False
+Can I use my Apple Watch to to top up?,2,4,0.5051461458206177,False
+How are exchange rates calculated?,32,32,0.6138913035392761,True
+How do I link my card,13,13,0.7430812120437622,True
+Why did the disposable virtual card which I used to pay a gym subscription get denied?,72,37,0.6589586734771729,False
+Where did the extra fee on my statement come from?,34,34,0.6909312009811401,True
+A transaction is repeated several times on my account.,63,63,0.6471000909805298,True
+Who else can top up my account,62,71,0.5909137725830078,False
+Where do I find the exchange rate?,31,32,0.6598320007324219,False
+"I sent out money, but was charged extra for transferring. Why?",64,64,0.6220062971115112,True
+Which ATMs accept this card?,3,10,0.5922893285751343,False
+Where can I use this card at an ATM?,3,18,0.5778922438621521,False
+Why could my transfer have been declined?,27,27,0.7201513648033142,True
+Can I use any currency to add money?,54,36,0.488598495721817,False
+I would appreciate it if I could get an item refunded,52,52,0.5774928331375122,True
+"I transferred money yesterday, but it still isn't available?",48,5,0.5060693025588989,False
+Are you able to unblock my pin?,49,49,0.6615189909934998,True
+What is the transfer fee charge?,64,64,0.7074621915817261,True
+Is my pending cash withdrawal processed?,46,46,0.7580050230026245,True
+Can I use my account if the identity verification is not complete?,74,68,0.6123074293136597,False
+When will the card arrive?,12,11,0.694015622138977,False
+why do i not have a virtual card,40,40,0.6696932315826416,True
+I'm quite confused as to what is going on. There is some odd extra pound charge on my statement in the app that's just listed as pending and doesn't go away since a couple days.,34,34,0.5866935849189758,True
+I want to know how many different currencies my money can be in,36,54,0.4791923463344574,False
+What do you need to verify my identity?,69,69,0.7213869094848633,True
+Will filling stations accept my card?,10,10,0.5680608749389648,True
+Are contactless payments enabled on my new card?,23,23,0.6490554213523865,True
+How do people send me money?,50,50,0.6621818542480469,True
+Do I need any kind of documentation for the identity check?,69,74,0.5125890374183655,False
+What kind of foreign exchange rate will I get when I exchange my money?,32,32,0.5945092439651489,True
+Do my kids have to be a certain age to use this service?,1,1,0.602161169052124,True
+The contactless I have won't work.,23,23,0.6686950325965881,True
+I need help finding the verification code for my top-up card.,71,71,0.6306850910186768,True
+"Could you please check one of my transfer which i made few hours ago from my UK bank account, as its not showing yet.",5,5,0.5008647441864014,True
+We need both a visa and a Mastercard.,73,73,0.6933982372283936,True
+Where is the card PIN?,38,49,0.5877057909965515,False
+"Since my card is about to expire, I need a new one.",9,9,0.6828588843345642,True
+What is the exchange rate like on this app?,32,33,0.6876046657562256,False
+"in china, need new card",9,39,0.4986618757247925,False
+"How long does a transfer take from the point it's sent, to the point it arrives in my account?",67,67,0.6226395964622498,True
+Why was my account deducted from a seller when I didn't approve of it?,28,28,0.454085111618042,True
+What do I need to do to activate my card?,0,0,0.7175159454345703,True
+I sent a cheque  a few days ago and nothing has happened to my account yet. Can you please check on this for me?,6,6,0.48525142669677734,True
+I need to transfer funds into my account. How can I do this?,65,65,0.6251818537712097,True
+Explain why I can't do a transfer to a beneficiary.,7,66,0.6354146599769592,False
+"I transferred my funds, why did it not go through?",35,66,0.5506603121757507,False
+Can I exchange to EUR?,36,31,0.49094071984291077,False
+Was charged an ATM fee despite it being a small withdrawal on the 1st day of the month. I thought I was allowed 200 per month?,19,19,0.5456773042678833,True
+"Hi, i don't know what's going on i've just paid for my top up twice by accident can you help me get a refund please.",61,56,0.5282551050186157,False
+How do I make my virtual card work?,72,72,0.7750526666641235,True
+How might  I change my PIN?,21,21,0.7473368644714355,True
+My payments from my virtual card keep getting rejected.,72,72,0.693589448928833,True
+Why don't I have my transfer?,5,66,0.6195060014724731,False
+Why was I charged multiple times for the same thing?,63,63,0.7044457793235779,True
+Is there a way to revert my transaction from this morning?,8,53,0.4717195928096771,False
+I transferred some money but the receiver can't pick it up for some reason.,66,66,0.6428618431091309,True
+Why is the exchange rate wrong for my international withdrawal?,76,76,0.6868494749069214,True
+How come my cash deposit is not showing up. This can't be right. There must be some mistake. Where did my cash go. You better not have lost it as I need this money asap.,6,51,0.5445430278778076,False
+The exchange rate for my withdrawal isn't correct and doesn't match the actual exchange rate.,76,76,0.7207569479942322,True
+There is a card payment I do not recognise.,16,16,0.675716757774353,True
+I can see an extra 1£ charge on my app. Why did you charge me extra?,34,34,0.6217741370201111,True
+"I did what you told me earlier and contacted the seller for a refund directly, but nothing is happening! It's been a week and I still haven't got anything. Please just give me back my money",51,51,0.4932633638381958,True
+What are the fees of using an international card to add money?,57,15,0.5018427968025208,False
+Why am I being charged twice?,63,63,0.7522345781326294,True
+"Hi, I would like to file a claim for an inquiry. I am a frequent customer of the company in question and have never had any issue with my purchases, payments, or otherwise. However, the price deducted for an item I purchased a couple of weeks ago has been returned to my checking account. Was there an issue with my payment? The item has already been delivered to me.",53,50,0.436880499124527,False
+"lost phone, can i still access account?",42,42,0.5085893273353577,True
+I would like a virtual card- where can I purchase one?,40,40,0.7271016240119934,True
+I got my new card. How do I activate it?,0,0,0.6986656785011292,True
+I have a transfer that's pending and wanted to know how long it is going to take to process?,48,67,0.6458003520965576,False
+Someone stole my phone.,42,42,0.6923246383666992,True
+Can I use my card at any ATMs?,3,18,0.5226708650588989,False
+Why doesn't it show that I did a balance transfer?,5,5,0.6510688066482544,True
+This rate is too low. Are you sure your using the right exchange rate.,17,32,0.6246755123138428,False
+"lost phone, dont want others to access account",42,42,0.5704411268234253,True
+Are there any fees for top ups?,57,57,0.566769003868103,True
+"If I feel someone has my card information, can I get a new card?",22,9,0.5828056335449219,False
+What can I do to verify my identity?,69,69,0.72413569688797,True
+My phone was stolen so I no longer have access to the app.,42,42,0.6498178839683533,True
+When will my transfer go through?,48,67,0.6179369688034058,False
+What is the number of days I have to wait for my Europe transfer?,67,67,0.518599271774292,True
+Somebody used my card to make a purchase,16,22,0.5975644588470459,False
+can i do a transfer with swift,56,27,0.45648056268692017,False
+Will my transfer immediately show up in my account?,67,65,0.5760284662246704,False
+The balance on my account wasn't updated after I made a depost.,6,6,0.6665257811546326,True
+The incorrect rate was used in my foreign purchase,17,17,0.5943747758865356,True
+How can I fund my top-up account using my bank account?,65,58,0.5351876020431519,False
+I would like to know why my purchases from this morning are still pending.,45,45,0.4983074367046356,True
+I know I have enough funds in my account but my card payment hasn't worked for some reason. What do I do?,25,14,0.5940948724746704,False
+Can I use the system Google Pay for top-ups?,2,58,0.5353771448135376,False
+I would like to not have to do the identity verification.,74,69,0.6741788387298584,False
+I took cash and got charged a fee,19,19,0.6286195516586304,True
+What does it mean by pending payment?,45,45,0.6846546530723572,True
+Is there a charge for a foreign currency exchange?,31,31,0.6312673687934875,True
+My bags were stolen. I need a new card but need to cancel the stolen one.,41,41,0.6021530628204346,True
+It looks like this week I was double charged for a couple things. Is there any way that you can look into this for me and return the double charged items back to my card?,63,63,0.549514651298523,True
+What are the limits to using disposable virtual cards?,29,37,0.7688443064689636,False
+There is a transaction from my account that I don't recognize can you trace back the information so I can make sure it's something I did or not?,28,65,0.46705710887908936,False
+There's a direct debit on my account that I didn't authorize,28,28,0.6550842523574829,True
+"I need a new card, my current card is nearly expired.",9,9,0.657128095626831,True
+When will I see my new balance after making my bank transfer?,5,5,0.6933627724647522,True
+How do I use the top up app with my apple watch?,2,4,0.5213208198547363,False
+"When I made a purchase last Saturday, I was charged extra. Did I receive the right exchange rate?",17,17,0.6061532497406006,True
+The app made a mistake and said I made a cash withdrawal.,20,19,0.6626962423324585,False
+I can't get my card to work.,14,14,0.7645730972290039,True
+How come my disposable virtual card used to pay for a gym subscription got rejected?,72,37,0.6725053787231445,False
+Is it possible to also get a disposable virtual card?,37,37,0.8022648096084595,True
+Is there a way I can get my ATM card back from the machine?,18,18,0.5230734348297119,True
+The conversion rate on the ATM that I used with foreign currency was wrong.,76,17,0.5937865376472473,False
+I need my card quickly,12,41,0.5223386883735657,False
+I have exceeded the number of times I can try my PIN,49,21,0.5173006057739258,False
+Can I use this to receive my salary?,50,50,0.4916103482246399,True
+"Something went wrong, I was charged an extra pound?",34,34,0.5231879949569702,True
+"My beneficiary has been denied, is this normal?",7,7,0.47507748007774353,True
+What exchange rate do you use?,32,32,0.682198166847229,True
+Why didn't my balance update after my cash or checque deposit?,6,6,0.8137070536613464,True
+How come I can't take money out of the ATM?,26,18,0.4739533066749573,False
+Show me how to change my pin?,21,21,0.6453817486763,True
+Why is my top up still pending?,47,47,0.8270511031150818,True
+Why is my payment pending?,45,45,0.7436457872390747,True
+For how long will my transfer be pending?,48,48,0.7280054688453674,True
+I bought something overseas and the wrong exchange rate is on my statement.,17,17,0.6218745708465576,True
+How can I resolve a problem where my card won't go through at all?,14,14,0.6201866865158081,True
+How long until my friend receives my transaction?,66,50,0.5114511251449585,False
+What should I do to get transactions off of my account if I didn't make them?  My card must have been compromised and I need to freeze it asap!,16,22,0.5188190937042236,False
+Can my card be used everywhere?,10,29,0.5141233801841736,False
+"I have been waiting longer than expected for my bank card, could you provide information on when it will arrive?",11,11,0.6163305640220642,True
+How can I stop fraud on my account right now?,22,55,0.4098977744579315,False
+If I make a top-up are there charges applied?,56,57,0.5884525775909424,False
+"new customer and filling gas today, it's not working, the thing shows pending half an hour!",47,45,0.4112771153450012,False
+I have paid by my card but payment is still its coming as pending. I think there is some issue please check and let me know when the status will complete.,45,45,0.7268035411834717,True
+Can I get a real card?,43,38,0.6057300567626953,False
+"I'm not sure why my card payment was cancelled, can you find out why?",53,25,0.6127834916114807,False
+I see that I have been charged multiple times for the same transaction.,63,63,0.7869370579719543,True
+I tryed to make a top-up with cryptocurrency but the payment was referted.,61,58,0.5352922677993774,False
+I'm pretty sure my top up failed. How do I fix this?,59,59,0.7593187689781189,True
+Can I hold money in multiple currencies?,36,54,0.45715171098709106,False
+Why am I required to verify my identity?,74,74,0.768561840057373,True
+This Direct Debit payment may not be right.,28,28,0.7351686358451843,True
+How long will it take for my ID to verify?,68,69,0.5467683672904968,False
+How young can I be to open my own account?,1,1,0.39718788862228394,True
+Can I use Apple Pay to top up?,2,58,0.5909008979797363,False
+I need it delivered on a certain date.,12,12,0.5142459273338318,True
+"I see my top-up was canceled, but why?",61,59,0.554594874382019,False
+Can you freeze my card because someone used it while I was out of town. I did not make these purchases.,22,22,0.49357491731643677,True
+Is there an option to top up a with cheque?,58,58,0.7150320410728455,True
+"I need to cancel my recent transfer immediately, I made a mistake there, please help quickly before it goes through",8,8,0.560009241104126,True
+"I see random purchases to my account, was it hacked?",22,22,0.416806697845459,True
+How do I find my card PIN?,38,21,0.5118570327758789,False
+I wish to close my account. I do not like the service you provide.,55,55,0.6424007415771484,True
+My transfer got declined.,27,27,0.7847304940223694,True
+I'm looking for the cash deposit top up option but can't find it. Can you help me?,58,58,0.5945227146148682,True
+How can my friend send me money?,50,50,0.6104518175125122,True
+Can I make online purchases with my card?,10,43,0.5425751805305481,False
+How can I lookup where funds came from?,70,70,0.6001983284950256,True
+Are there any hindrances to using a disposable virtual card?,29,37,0.7412311434745789,False
+Can you explain what this random $1 charge is?,34,34,0.4596254825592041,True
+I receive my salary in GBP. Do I need to configure this somehwere?,50,2,0.3685990869998932,False
+Exchange rate for my cash withdrawal is wrong,76,76,0.777483344078064,True
+How do I link a new card?,13,13,0.7088856101036072,True
+"If I want to exchange currency, will there be extras?",31,31,0.5431567430496216,True
+What will I be charged for a physical card?,43,38,0.641930341720581,False
+Why did I only get $20 when I tried to get $100,75,75,0.43418821692466736,True
+Why do I have to verify the top-up that I started?,71,71,0.6950293779373169,True
+I want to reverse my transaction from earlier,8,53,0.49828025698661804,False
+Why was a transfer to an account not allowed?,7,27,0.6228423714637756,False
+I think something may have happened that caused a charge to show up twice.,63,63,0.6483674049377441,True
+"I tried topping up but my funds seem to be pending. I want to buy something right now, what do I do?",47,47,0.432730108499527,True
+Can you tell me how to link one of your cards that I already have?,13,13,0.6378508806228638,True
+Payments from my disposable virtual card don't work,72,72,0.6956335306167603,True
+What ATMs will accept this type of card?,3,10,0.5510338544845581,False
+"Is there something wrong with your website? I tried topping up my account and it's been close to two hours now and it's still at ""pending"" for some reason. I just joined with you guys and this is the first attempt at this, so maybe I'm wrong, but shouldn't this be instant?",47,47,0.5198206901550293,True
+What is the fee charged with this card payment?,15,15,0.7327185273170471,True
+The exchange rate would be?,32,32,0.6342082023620605,True
+From where can I withdraw?,3,46,0.44792890548706055,False
+How can I top-up my card?,58,62,0.6060253381729126,False
+I need to reorder my virtual card!,40,40,0.5462955236434937,True
+Please check payments on my card. There is a duplicate and I only bought it once.,63,63,0.5513973832130432,True
+Are there any restrictions causing my transfer to be declined?,27,27,0.6429498791694641,True
+How can someone add money to my account?,62,50,0.5662268996238708,False
+I need help with activating my card,0,0,0.7100903391838074,True
+"What do I do if an ATM ""stole"" my card?",18,18,0.6432210803031921,True
+What fee is included if I top up by card?,57,57,0.7064642906188965,True
+How do I make contactless work,23,23,0.6131782531738281,True
+"My recent transfer needs to be cancelled immediately; it was a mistake, please can you cancel it before it goes through?",8,8,0.6118971109390259,True
+I was supposed to get a purchase refunded but I don't see the money in my account,51,51,0.6844596862792969,True
+My card doesn't accept any transaction at all. What's wrong??,14,14,0.5428733825683594,True
+I had a payment that I made and it's been some amount of time and would like to know when it's suppose to go though.,45,67,0.4061564803123474,False
+My card payment did not work.,25,16,0.6577515006065369,False
+How do disposable cards work?,37,29,0.6787075400352478,False
+Cash I didn't get shows in my app.,20,51,0.45911818742752075,False
+What is the code I need to get into the app?,44,33,0.430784672498703,False
+I need some spare physical cards.,39,39,0.6224783658981323,True
+Please give me both a visa and a master card.,73,73,0.6041414737701416,True
+The account transfer I was trying to do failed.,7,35,0.6953967809677124,False
+I have a payment listed in error.,16,75,0.4972686767578125,False
+"I tried verifying my ID, but it won't let me.",68,68,0.6520289778709412,True
+Can you freeze my account?  I just saw there are transactions on my account that I don't recognize.  How can I fix this?,16,65,0.47334542870521545,False
+Why can't I get cash?,26,46,0.49881333112716675,False
+How do I change my information?,30,30,0.5354561805725098,True
+My card payment was reverted.  Why?,53,53,0.8133649826049805,True
+Why did I get a fee?,19,15,0.5091866254806519,False
+Help me reset the passcode.,44,44,0.694802463054657,True
+Why would my topup not go through?,59,59,0.6434351205825806,True
+Is there a limit on how much I can withdraw from my account without being charged?,19,19,0.5427970886230469,True
+Are the top-ups limited?,60,60,0.632005512714386,True
+Is their a fee for top ups?,57,57,0.5738152265548706,True
+Is there a limit on top-ups?,60,60,0.7289595007896423,True
+"Salary in GBP has been received, does it need to be configured elsewhere?",50,50,0.3702750504016876,True
+My card is about to expire and I need to know how much it costs and how long it takes to get a new one.,9,9,0.6650831699371338,True
+"Once my card expires, what should I do?",9,9,0.6507673859596252,True
+what do i do if my verification failed,68,68,0.5026835799217224,True
+Are you able to locate my card?,41,41,0.5624439716339111,True
+I want a refund for my purchase,52,52,0.6235803961753845,True
+Can you tell me what currency I can have?,36,54,0.4922049045562744,False
+I'd like to make a new PIN selection.,21,21,0.594224214553833,True
+Why did I receive an error message saying that my transfer was not possible?,7,35,0.5863019227981567,False
+Can you explain the virtual cards limit?,29,40,0.6475006341934204,False
+My contactless is not working,23,23,0.7107285857200623,True
+"I just finished sending money, but it's not logging on the recipient side.",66,66,0.5296865701675415,True
+Can you please make my top up go through as soon as possible. I really need the money and it has been pending for an hour already.,47,47,0.6242260932922363,True
+How can I get my physical card to work?,14,38,0.6659488081932068,False
+I need help resetting my passcode to access my app.,44,44,0.5577480792999268,True
+How do I get the Top Up feature on my apple watch working?,2,4,0.5600703358650208,False
+Will there be any extra fees for European bank card for top up?,57,57,0.5798470377922058,True
+My disposable virtual card has been rejected by the merchant earlier today. What should I do?,72,37,0.6507561802864075,False
+how do i get a card if i am in the usa,24,38,0.536615788936615,False
+When do I receive my PIN,38,49,0.5321151614189148,False
+How can the recipient see my money transaction?,66,50,0.6015731692314148,False
+Can you help me sign up for a virtual card?,40,40,0.7213593125343323,True
+Is there a way to transfer funds directly from my card?,62,70,0.44161832332611084,False
+Can I change my currency from USD to EUR?,33,33,0.48407182097435,True
+What cards and currencies are supported?,54,54,0.7681207656860352,True
+Where does all this money come from though?,70,50,0.4331386089324951,False
+Is there any limit to the amount I can add to a card at a time?,60,29,0.5233283042907715,False
+Are there any sort of fees involved for top of transfers?,56,64,0.5449947118759155,False
+I can't transfer money from my account.,27,65,0.6161003112792969,False
+How do i cancel my transaction?,8,8,0.5922874808311462,True
+"If I am overseas, how do I change my pin?",21,21,0.6130867600440979,True
+"I think I want AUD and not GBP, can you help?",33,33,0.34743326902389526,True
+"My pin was blocked, how do I make it so I can use it?",49,49,0.6645999550819397,True
+"I asked for a refund last week but nothing has happened yet, can you help me please?",51,51,0.5507433414459229,True
+I just lost my wallet and I see that they are already withdrawing money from my account. How can I stop this?,20,41,0.48048722743988037,False
+Causes of top-up cancellation,61,59,0.5731425285339355,False
+I bought this item and was charged the wrong amount can I get a refund?,52,75,0.4978181719779968,False
+I received my card but not my PIN.,38,21,0.5298460125923157,False
+I can't find my phone.,42,42,0.5995696187019348,True
+Will I need to order a new card since mine expires next month?,9,9,0.543255090713501,True
+for some reason I am having a problem with verifying my identity.,68,68,0.7095628976821899,True
+How do I fix a reverted top up?,61,61,0.7312546372413635,True
+"I need to order a  new card, mine is about to expire and I need to know how much it will cost and how long until I receive it.",9,9,0.6813218593597412,True
+Why has my payment not gone through?,45,23,0.5498531460762024,False
+"Do ATM cash withdrawals carry a charge now? They've been free in the past, but all of a sudden I have to pay to make ATM withdrawals?",19,19,0.5869766473770142,True
+How do I top up? Can I use my apple watch?,2,4,0.4976804256439209,False
+"I've now been trying to do a really standard transfer 5 times already. What's going on, is your system broken or something?!",35,35,0.5338903665542603,True

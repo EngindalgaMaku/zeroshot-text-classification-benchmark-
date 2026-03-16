@@ -12,7 +12,7 @@ evaluation:
 experiment_name: ag_news_jina_task
 models:
   biencoder:
-    name: jinaai/jina-embeddings-v3
+    name: jinaai/jina-embeddings-v2-base-en
     provider: hf
     task: classification
   reranker: null

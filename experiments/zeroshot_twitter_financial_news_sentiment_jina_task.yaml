@@ -2,7 +2,6 @@ dataset:
   label_column: label
   max_samples: 1000
   name: zeroshot/twitter-financial-news-sentiment
-  # Note: Using validation split because test split is not available for this dataset
   split: validation
   text_column: text
 evaluation:
@@ -13,7 +12,7 @@ evaluation:
 experiment_name: zeroshot_twitter_financial_news_sentiment_jina_task
 models:
   biencoder:
-    name: jinaai/jina-embeddings-v3
+    name: jinaai/jina-embeddings-v2-base-en
     provider: hf
     task: classification
   reranker: null

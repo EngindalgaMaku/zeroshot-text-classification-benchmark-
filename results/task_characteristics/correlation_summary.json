@@ -1,0 +1,54 @@
+{
+  "overall_correlations": [
+    {
+      "characteristic": "num_classes",
+      "label": "Number of Classes",
+      "pearson_r": -0.22538791376933937,
+      "pearson_p": 0.07818262822490057,
+      "spearman_r": -0.5081964201249988,
+      "spearman_p": 2.4789245410110584e-05
+    },
+    {
+      "characteristic": "avg_text_length",
+      "label": "Average Text Length",
+      "pearson_r": 0.27741159787844893,
+      "pearson_p": 0.029041095758497427,
+      "spearman_r": 0.5152429262811409,
+      "spearman_p": 1.826417780222875e-05
+    },
+    {
+      "characteristic": "label_similarity",
+      "label": "Label Semantic Similarity",
+      "pearson_r": 0.4256252352115362,
+      "pearson_p": 0.000563176320998893,
+      "spearman_r": 0.18139329407366003,
+      "spearman_p": 0.15825623326784036
+    }
+  ],
+  "dataset_level_correlations": [
+    {
+      "characteristic": "num_classes",
+      "label": "Number of Classes",
+      "pearson_r": -0.2357010728211136,
+      "pearson_p": 0.5415113726278598,
+      "spearman_r": -0.5941474602165634,
+      "spearman_p": 0.09158336570110653
+    },
+    {
+      "characteristic": "avg_text_length",
+      "label": "Average Text Length",
+      "pearson_r": 0.2714959006297894,
+      "pearson_p": 0.47976954763840746,
+      "spearman_r": 0.6,
+      "spearman_p": 0.0876228290414025
+    },
+    {
+      "characteristic": "label_similarity",
+      "label": "Label Semantic Similarity",
+      "pearson_r": 0.44693336972669934,
+      "pearson_p": 0.22777973180754216,
+      "spearman_r": 0.2928895930645031,
+      "spearman_p": 0.4443546956852246
+    }
+  ]
+}

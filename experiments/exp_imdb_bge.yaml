@@ -1,4 +1,4 @@
-experiment_name: imdb_bge_m3
+experiment_name: exp_imdb_bge
 dataset:
   name: imdb
   split: test
@@ -17,7 +17,7 @@ models:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 16
+  batch_size: 32
 evaluation:
   metrics:
   - accuracy

@@ -1,0 +1,89 @@
+{
+  "correlation_f1_cv": -0.3126870646814935,
+  "models": [
+    {
+      "model": "Qwen3",
+      "mean_f1": 68.93059512989576,
+      "std_f1": 23.530244947716227,
+      "cv": 34.13614071280659,
+      "min_f1": 20.980256990282207,
+      "max_f1": 89.9063453646217,
+      "stability_rank": 4,
+      "performance_rank": 1,
+      "composite_rank": 1,
+      "category": "High Perf + High Stability (IDEAL)"
+    },
+    {
+      "model": "INSTRUCTOR",
+      "mean_f1": 66.51844718614717,
+      "std_f1": 21.706772926512254,
+      "cv": 32.632711442838385,
+      "min_f1": 20.410344994785092,
+      "max_f1": 88.92914653784219,
+      "stability_rank": 1,
+      "performance_rank": 2,
+      "composite_rank": 2,
+      "category": "High Perf + High Stability (IDEAL)"
+    },
+    {
+      "model": "Jina v5",
+      "mean_f1": 62.582109266526714,
+      "std_f1": 21.30201672081234,
+      "cv": 34.03850872154312,
+      "min_f1": 22.44141567117999,
+      "max_f1": 87.24273262676154,
+      "stability_rank": 3,
+      "performance_rank": 4,
+      "composite_rank": 3,
+      "category": "High Perf + High Stability (IDEAL)"
+    },
+    {
+      "model": "E5-large",
+      "mean_f1": 62.76132019519011,
+      "std_f1": 24.280978941503328,
+      "cv": 38.68780781855537,
+      "min_f1": 17.424274886960927,
+      "max_f1": 90.54246032863944,
+      "stability_rank": 7,
+      "performance_rank": 3,
+      "composite_rank": 4,
+      "category": "High Perf + Low Stability"
+    },
+    {
+      "model": "BGE-M3",
+      "mean_f1": 61.18824574086435,
+      "std_f1": 22.298072065313708,
+      "cv": 36.44175739201168,
+      "min_f1": 20.154417634796985,
+      "max_f1": 85.98787189092077,
+      "stability_rank": 6,
+      "performance_rank": 5,
+      "composite_rank": 5,
+      "category": "Low Perf + Low Stability"
+    },
+    {
+      "model": "Nomic-MoE",
+      "mean_f1": 59.4400018955923,
+      "std_f1": 21.249688273875226,
+      "cv": 35.749810895364334,
+      "min_f1": 14.520033370603096,
+      "max_f1": 80.36964473806611,
+      "stability_rank": 5,
+      "performance_rank": 6,
+      "composite_rank": 6,
+      "category": "Low Perf + Low Stability"
+    },
+    {
+      "model": "MPNet",
+      "mean_f1": 58.34715840264144,
+      "std_f1": 19.818686236036605,
+      "cv": 33.966840508790554,
+      "min_f1": 14.762546162639168,
+      "max_f1": 82.88604697054294,
+      "stability_rank": 2,
+      "performance_rank": 7,
+      "composite_rank": 7,
+      "category": "Low Perf + High Stability"
+    }
+  ]
+}

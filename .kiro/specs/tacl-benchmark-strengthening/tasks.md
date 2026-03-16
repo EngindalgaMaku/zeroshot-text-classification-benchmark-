@@ -31,7 +31,7 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
     - Verify all configs use label_mode: description
     - _Requirements: 2.3, 2.4, 17.1, 17.2, 17.3_
   
-  - [ ] 1.5 Document GoEmotions multi-label handling
+  - [x] 1.5 Document GoEmotions multi-label handling
     - Add detailed comment block in GoEmotions configs explaining multi-label to single-label conversion
     - Document the "first emotion" strategy and its justification
     - Add configuration option to exclude GoEmotions from benchmark
@@ -77,75 +77,75 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
 - [ ] 5. Checkpoint - Verify experiment completion
   - Ensure all tests pass, ask the user if questions arise.
 
-- [-] 6. Implement label formulation analysis
-  - [-] 6.1 Create label mode comparison configs
+- [x] 6. Implement label formulation analysis
+  - [x] 6.1 Create label mode comparison configs
     - Duplicate 3 diverse dataset configs (AG News, Banking77, GoEmotions)
     - Create name_only variants for each selected dataset
     - Ensure configs are identical except for label_mode parameter
     - _Requirements: 7.1, 7.2_
   
-  - [ ] 6.2 Run label formulation experiments
+  - [x] 6.2 Run label formulation experiments
     - Execute experiments for both name_only and description modes
     - Collect results for comparison analysis
     - _Requirements: 7.2_
   
-  - [ ] 6.3 Generate label formulation analysis script
+  - [x] 6.3 Generate label formulation analysis script
     - Write Python script to compare Macro-F1 between label modes
     - Create comparison table showing differences across datasets and models
     - Generate bar chart visualization showing label mode impact
     - Analyze which task types benefit most from descriptions
     - _Requirements: 7.3, 7.4, 7.5_
 
-- [ ] 7. Implement task characteristics analysis
-  - [ ] 7.1 Create task characteristics computation script
+- [x] 7. Implement task characteristics analysis
+  - [x] 7.1 Create task characteristics computation script
     - Compute number of classes for each dataset
     - Calculate average text length for each dataset
     - Compute label semantic similarity scores using sentence embeddings
     - Store characteristics in structured CSV file
     - _Requirements: 8.1, 8.2, 8.3_
   
-  - [ ] 7.2 Generate task characteristics correlation analysis
+  - [x] 7.2 Generate task characteristics correlation analysis
     - Correlate number of classes with model performance
     - Correlate text length with model performance
     - Correlate label similarity with model performance
     - Identify strongest predictors of performance
     - _Requirements: 8.1, 8.2, 8.5_
   
-  - [ ] 7.3 Create task characteristics visualizations
+  - [x] 7.3 Create task characteristics visualizations
     - Generate scatter plots: num_classes vs Macro-F1
     - Generate scatter plots: text_length vs Macro-F1
     - Generate scatter plots: label_similarity vs Macro-F1
     - Use different colors for different models
     - _Requirements: 8.4_
 
-- [ ] 8. Implement model stability analysis
-  - [ ] 8.1 Create stability computation script
+- [x] 8. Implement model stability analysis
+  - [x] 8.1 Create stability computation script
     - Calculate coefficient of variation for each model across datasets
     - Compute mean and standard deviation of Macro-F1 per model
     - Generate stability ranking table
     - _Requirements: 9.1, 9.2_
   
-  - [ ] 8.2 Generate stability visualizations
+  - [x] 8.2 Generate stability visualizations
     - Create scatter plot: mean performance vs stability (CV)
     - Identify and annotate models with best stability-performance trade-offs
     - Add quadrant lines to show high/low performance and stability regions
     - _Requirements: 9.3, 9.4, 9.5_
 
-- [ ] 9. Implement error analysis and confusion matrices
-  - [ ] 9.1 Create confusion matrix generation script
+- [x] 9. Implement error analysis and confusion matrices
+  - [x] 9.1 Create confusion matrix generation script
     - Load prediction files for 3 representative datasets (AG News, Banking77, GoEmotions)
     - Generate confusion matrices for each model-dataset combination
     - Save matrices as publication-quality heatmaps
     - _Requirements: 10.1_
   
-  - [ ] 9.2 Implement error pattern analysis
+  - [x] 9.2 Implement error pattern analysis
     - Identify top 5 most confused class pairs for each dataset
     - Analyze GoEmotions fine-grained emotion confusions
     - Analyze Yahoo Answers broad category confusions
     - Generate summary tables of common error patterns
     - _Requirements: 10.2, 10.3, 10.4_
   
-  - [ ] 9.3 Create error pattern visualizations
+  - [x] 9.3 Create error pattern visualizations
     - Generate bar charts showing most confused class pairs
     - Create error pattern comparison across models
     - Visualize error patterns specific to each dataset type
@@ -224,95 +224,95 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
 - [ ] 13. Checkpoint - Verify expanded benchmark
   - Ensure all tests pass, ask the user if questions arise.
 
-- [ ] 14. Enhance publication-quality visualizations
-  - [ ] 14.1 Update critical difference diagram script
+- [x] 14. Enhance publication-quality visualizations
+  - [x] 14.1 Update critical difference diagram script
     - Ensure vector format output (PDF and EPS)
     - Apply consistent publication styling (Times New Roman, 11pt)
     - Verify figure readability at publication scale
     - Add self-explanatory caption and labels
     - _Requirements: 13.1, 13.2, 13.3, 13.5_
   
-  - [ ] 14.2 Create comprehensive heatmap visualization
+  - [x] 14.2 Create comprehensive heatmap visualization
     - Generate model × dataset Macro-F1 heatmap
     - Use publication-quality color scheme and fonts
     - Add row/column averages and annotations
     - Export in PDF and EPS formats
     - _Requirements: 13.1, 13.2, 13.3, 13.5_
   
-  - [ ] 14.3 Create task type analysis visualization
+  - [x] 14.3 Create task type analysis visualization
     - Generate grouped bar chart comparing models across task types
     - Use consistent colors and styling with other figures
     - Ensure all text is readable at publication scale
     - Export in vector formats
     - _Requirements: 13.1, 13.2, 13.3, 13.5_
   
-  - [ ] 14.4 Create label formulation comparison figure
+  - [x] 14.4 Create label formulation comparison figure
     - Generate side-by-side comparison of name_only vs description
     - Show performance differences across datasets
     - Use publication-quality styling
     - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5_
   
-  - [ ] 14.5 Create stability-performance scatter plot
+  - [x] 14.5 Create stability-performance scatter plot
     - Generate scatter plot with model annotations
     - Add quadrant lines and trade-off curve
     - Use publication-quality styling
     - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5_
   
-  - [ ] 14.6 Create error pattern visualization
+  - [x] 14.6 Create error pattern visualization
     - Generate confusion matrix heatmaps for key datasets
     - Create error pattern comparison figure
     - Use publication-quality styling
     - _Requirements: 13.1, 13.2, 13.3, 13.4, 13.5_
 
-- [ ] 15. Enhance statistical analysis
-  - [ ] 15.1 Verify Friedman test implementation
+- [x] 15. Enhance statistical analysis
+  - [x] 15.1 Verify Friedman test implementation
     - Confirm test correctly handles 7 models × 7 datasets
     - Verify p-value calculation and interpretation
     - Add effect size computation
     - _Requirements: 14.1, 14.4_
   
-  - [ ] 15.2 Verify Nemenyi post-hoc test implementation
+  - [x] 15.2 Verify Nemenyi post-hoc test implementation
     - Confirm critical distance calculation is correct
     - Verify pairwise comparison logic
     - Ensure clique detection works properly
     - _Requirements: 14.2, 14.4_
   
-  - [ ] 15.3 Add statistical power analysis
+  - [x] 15.3 Add statistical power analysis
     - Compute statistical power given sample sizes
     - Verify sample sizes are sufficient for reliable conclusions
     - Document power analysis in supplementary materials
     - _Requirements: 14.5_
 
-- [ ] 16. Create reproducibility documentation
-  - [ ] 16.1 Create comprehensive README
+- [x] 16. Create reproducibility documentation
+  - [x] 16.1 Create comprehensive README
     - Document all software dependencies with exact versions
     - Provide step-by-step setup instructions
     - Document hardware requirements and expected runtime
     - Include troubleshooting section
     - _Requirements: 15.1, 15.2, 15.3_
   
-  - [ ] 16.2 Create experiment execution guide
+  - [x] 16.2 Create experiment execution guide
     - Document how to run individual experiments
     - Document how to run batch experiments
     - Document how to regenerate all analyses
     - Include example commands and expected outputs
     - _Requirements: 15.2, 15.5_
   
-  - [ ] 16.3 Create analysis regeneration script
+  - [x] 16.3 Create analysis regeneration script
     - Write master script that regenerates all figures and tables
     - Ensure script runs in correct dependency order
     - Add progress logging and timing information
     - _Requirements: 15.5, 19.4_
   
-  - [ ] 16.4 Document methodological choices
+  - [x] 16.4 Document methodological choices
     - Document GoEmotions multi-label handling rationale
     - Document Twitter Financial validation split usage
     - Document batch size choices and constraints
     - Document sample size choices
     - _Requirements: 3.2, 17.4_
 
-- [ ] 17. Prepare TACL submission package
-  - [ ] 17.1 Organize code repository structure
+- [x] 17. Prepare TACL submission package
+  - [x] 17.1 Organize code repository structure
     - Ensure all code is properly organized in src/, scripts/, experiments/
     - Remove unnecessary files and clean up repository
     - Verify all 49 config files are included

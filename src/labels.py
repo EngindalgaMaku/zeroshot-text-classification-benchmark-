@@ -17,6 +17,28 @@ LABEL_SETS = {
             2: ["This text is about business, markets, finance, companies, trade, or the economy."],
             3: ["This text is about science, technology, computers, innovation, research, or digital products."],
         },
+        "multi_description": {
+            0: [
+                "News about international events, global politics, or world affairs.",
+                "Reports on international relations, diplomacy, or geopolitical developments.",
+                "Coverage of global news, conflicts, or political events around the world.",
+            ],
+            1: [
+                "News related to sports teams, athletes, or sporting events.",
+                "Coverage of matches, competitions, or sports tournaments.",
+                "Articles about sports performance, teams, or athletic competitions.",
+            ],
+            2: [
+                "News about companies, markets, finance, or the global economy.",
+                "Reports on business activity, corporations, or financial markets.",
+                "Coverage of economic developments, companies, or business strategies.",
+            ],
+            3: [
+                "News related to science, technology, computers, or innovation.",
+                "Articles about scientific discoveries, research, or technological advances.",
+                "Coverage of technology companies, software, or new scientific developments.",
+            ],
+        },
     },
     
     "dbpedia_14": {
@@ -431,3 +453,60 @@ def flatten_label_texts(label_dict: Dict[int, List[str]]) -> tuple:
             label_ids.append(label_id)
     
     return texts, label_ids
+
+
+def build_multi_description_embeddings(
+    label_dict: Dict[int, List[str]],
+    encoder,
+    normalize: bool = True,
+    batch_size: int = 32,
+) -> tuple:
+    """Build label embeddings for multi_description mode using mean pooling.
+
+    Each label has multiple descriptions. Their embeddings are averaged (mean pooled)
+    to produce a single representative embedding per class.
+
+    Args:
+        label_dict: Dict mapping label_id -> list of 3 description strings
+        encoder: BiEncoder instance with .encode() method
+        normalize: Whether to L2-normalize the final pooled embeddings
+        batch_size: Batch size for encoding
+
+    Returns:
+        Tuple of (label_embeddings, label_ids)
+        - label_embeddings: np.ndarray of shape (num_classes, dim)
+        - label_ids: List[int] of class IDs in sorted order
+    """
+    import numpy as np
+
+    label_embeddings = []
+    label_ids = []
+
+    for label_id in sorted(label_dict.keys()):
+        descriptions = label_dict[label_id]
+        if not descriptions:
+            raise ValueError(f"Label {label_id} has no descriptions in multi_description mode.")
+
+        # Encode all descriptions for this class: shape (k, dim)
+        desc_embs = encoder.encode(
+            descriptions,
+            batch_size=batch_size,
+            normalize=normalize,
+            show_progress=False,
+            text_type="label",
+        )
+        desc_embs = np.asarray(desc_embs, dtype=np.float32)
+
+        # Mean pool across descriptions
+        pooled = desc_embs.mean(axis=0)  # shape (dim,)
+
+        # Re-normalize after pooling
+        if normalize:
+            norm = np.linalg.norm(pooled)
+            if norm > 1e-12:
+                pooled = pooled / norm
+
+        label_embeddings.append(pooled)
+        label_ids.append(label_id)
+
+    return np.stack(label_embeddings, axis=0), label_ids

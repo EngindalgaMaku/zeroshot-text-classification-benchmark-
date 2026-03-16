@@ -1,4 +1,4 @@
-experiment_name: imdb_e5_large
+experiment_name: exp_imdb_e5
 dataset:
   name: imdb
   split: test
@@ -17,7 +17,7 @@ models:
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 16
+  batch_size: 32
 evaluation:
   metrics:
   - accuracy

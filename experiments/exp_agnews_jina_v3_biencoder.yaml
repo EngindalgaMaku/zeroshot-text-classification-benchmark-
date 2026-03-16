@@ -12,7 +12,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: jinaai/jina-embeddings-v3
+    name: jinaai/jina-embeddings-v2-base-en
     task: classification
   reranker: null
 pipeline:
