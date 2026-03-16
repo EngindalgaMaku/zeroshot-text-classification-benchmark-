@@ -1,0 +1,19 @@
+dataset:
+  label_column: label
+  max_samples: 1000
+  name: ag_news
+  split: test
+  text_column: text
+experiment_name: ag_news_instructor_v4_test
+models:
+  biencoder:
+    name: hkunlp/instructor-base
+output:
+  output_dir: scripts/prompt_engineering/results
+  save_metrics: true
+  save_predictions: true
+pipeline:
+  normalize_embeddings: true
+  random_seed: 42
+task:
+  label_mode: l2

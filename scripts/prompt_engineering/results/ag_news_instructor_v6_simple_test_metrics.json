@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.805,
+  "macro_f1": 0.7995671949258311,
+  "weighted_f1": 0.8009852127609733,
+  "macro_precision": 0.8143829697835416,
+  "macro_recall": 0.8041152695283866,
+  "classification_report": {
+    "0": {
+      "precision": 0.891213389121339,
+      "recall": 0.8007518796992481,
+      "f1-score": 0.8435643564356435,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.9,
+      "recall": 0.9878048780487805,
+      "f1-score": 0.9418604651162791,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.660436137071651,
+      "recall": 0.8617886178861789,
+      "f1-score": 0.7477954144620811,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.8058823529411765,
+      "recall": 0.5661157024793388,
+      "f1-score": 0.6650485436893204,
+      "support": 242.0
+    },
+    "accuracy": 0.805,
+    "macro avg": {
+      "precision": 0.8143829697835416,
+      "recall": 0.8041152695283866,
+      "f1-score": 0.7995671949258311,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.815953580637667,
+      "recall": 0.805,
+      "f1-score": 0.8009852127609733,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      213,
+      13,
+      18,
+      22
+    ],
+    [
+      1,
+      243,
+      1,
+      1
+    ],
+    [
+      15,
+      9,
+      212,
+      10
+    ],
+    [
+      10,
+      5,
+      90,
+      137
+    ]
+  ],
+  "mean_confidence": 0.8880461828708649,
+  "std_confidence": 0.01553718938502516,
+  "mean_confidence_correct": 0.8886382992963613,
+  "mean_confidence_incorrect": 0.885601804806636,
+  "experiment_name": "ag_news_instructor_v6_simple_test",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-base",
+  "top_errors": [
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.923000693321228
+    },
+    {
+      "text": "Amazon.com net sales jump 29; Google reports \\$52M in net income OCTOBER 22, 2004 (IDG NEWS SERVICE) - Amazon.com Inc. fell a penny short of analysts #39; per-share earnings expectations, while report",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9205775260925293
+    },
+    {
+      "text": "Internet Pharmacies: Good or Bad? An investigation into the practice of Internet Pharmacies and how they are changing the U.S. pharmaceutical industry.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9143927097320557
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9134186506271362
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9127677083015442
+    },
+    {
+      "text": "Microsoft Browser Market Share Slips Slightly Microsoft Corp. #39;s (MSFT.O: Quote, Profile, Research) share of the browser market slipped slightly in recent months but still dominated with 92.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9116583466529846
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9111158847808838
+    },
+    {
+      "text": "Apple to give its stores a Mini Me look The Mac maker has big plans to expand its network of retail outlets by creating small versions of its stores.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9111019968986511
+    },
+    {
+      "text": "PeopleSoft revises third-quarter profit Oracle target adds \\$2.6 million to bottom line after tax adjustment related to ex-CEO's severance package.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9109286069869995
+    },
+    {
+      "text": "Football: Spanish FA apologises The Spanish FA apologises to its English counterparts following racist chanting.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9104583263397217
+    },
+    {
+      "text": "AOL drops Microsoft antispam technology com September 16, 2004, 1:15 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9097474813461304
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9091381430625916
+    },
+    {
+      "text": "EU, US Talks on Aircraft Aid Grounded US and EU negotiators disagreed on Thursday about state aid for aircraft rivals Airbus and Boeing, winding up no closer on a sensitive issue that has gathered ste",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.9090627431869507
+    },
+    {
+      "text": "Ballmer strikes big rivals from Microsoft shopping list LISBON - Customers watching for Microsoft Corp. to make a headline-grabbing buy in the business applications market faced disappointment Tuesday",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9079474210739136
+    },
+    {
+      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9079242944717407
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9078846573829651
+    },
+    {
+      "text": "Calif. Mental Health Services May Expand (AP) AP - As pressures increase on California's mental health system, its workers and advocates say they are forced to do more with a supply of money that seem",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9072315692901611
+    },
+    {
+      "text": "SCO Postpones Legal Web Site (NewsFactor) NewsFactor - The SCO Group is delaying the launch of a Web site focusing on the details of ongoing litigation concerning the company's intellectual property.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9071958661079407
+    },
+    {
+      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9059261083602905
+    },
+    {
+      "text": "Half.com to continue at full speed This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half. Online auction giant eBay won #39;t be closi",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9053893089294434
+    }
+  ]
+}

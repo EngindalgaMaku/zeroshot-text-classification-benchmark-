@@ -1,0 +1,16 @@
+{
+  "ag_news": {
+    "0": {
+      "l2": "This text is about conflicts, elections, humanitarian crises, international relations, trade agreements, or peace negotiations."
+    },
+    "1": {
+      "l2": "This text is about athletes, championships, scores, leagues, endorsements, or rivalries."
+    },
+    "2": {
+      "l2": "This text is about mergers, acquisitions, investments, stock markets, earnings reports, or corporate strategies."
+    },
+    "3": {
+      "l2": "This text is about artificial intelligence, quantum computing, biotechnology, cybersecurity, renewable energy, or space exploration."
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.844,
+  "macro_f1": 0.8418139927538536,
+  "weighted_f1": 0.8422897810169595,
+  "macro_precision": 0.8414644639140073,
+  "macro_recall": 0.8435715877074262,
+  "classification_report": {
+    "0": {
+      "precision": 0.8587786259541985,
+      "recall": 0.8458646616541353,
+      "f1-score": 0.8522727272727273,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.9067164179104478,
+      "recall": 0.9878048780487805,
+      "f1-score": 0.9455252918287937,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.7959183673469388,
+      "recall": 0.7926829268292683,
+      "f1-score": 0.7942973523421588,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.8044444444444444,
+      "recall": 0.7479338842975206,
+      "f1-score": 0.7751605995717344,
+      "support": 242.0
+    },
+    "accuracy": 0.844,
+    "macro avg": {
+      "precision": 0.8414644639140073,
+      "recall": 0.8435715877074262,
+      "f1-score": 0.8418139927538536,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.8419588272326893,
+      "recall": 0.844,
+      "f1-score": 0.8422897810169595,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      225,
+      11,
+      21,
+      9
+    ],
+    [
+      2,
+      243,
+      1,
+      0
+    ],
+    [
+      9,
+      7,
+      195,
+      35
+    ],
+    [
+      26,
+      7,
+      28,
+      181
+    ]
+  ],
+  "mean_confidence": 0.8887396904826165,
+  "std_confidence": 0.01591670940426849,
+  "mean_confidence_correct": 0.8891067616464967,
+  "mean_confidence_incorrect": 0.8867537413652127,
+  "experiment_name": "ag_news_instructor_manual_test",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-base",
+  "top_errors": [
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.924489438533783
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9234276413917542
+    },
+    {
+      "text": "ASEAN moves closer to single market with  #39;road map #39;, global trade &lt;b&gt;...&lt;/b&gt; JAKARTA : ASEAN finance ministers ended a meeting which saw Southeast Asia edge closer to a Europe-styl",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9186170697212219
+    },
+    {
+      "text": "I.B.M. Sought a China Partnership, Not Just a Sale Inside I.B.M., the issue of whether to stay in the personal computer business has been debated for a decade. The issue was put to rest last week.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9176503419876099
+    },
+    {
+      "text": "Playing with the traumas of war Are games based on the Vietnam conflict making us immune to realities of history?",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9166490435600281
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.915947437286377
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9152044057846069
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9122938513755798
+    },
+    {
+      "text": "Oracle Fails to Inspire Tech Rally Oracle Corp. handed the software industry some positive earnings news after the bell on Tuesday, but investors pulled cash from the sector on concerns that informati",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9118747711181641
+    },
+    {
+      "text": "Smart phones to make up 16 of market LONDON-A new study shows that the market for smart phones will continue to increase during the next several years, with global shipments growing from 14.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9115444421768188
+    },
+    {
+      "text": "Football: Brazil legend's UK debut Brazil football great Socrates is set to make his debut for non-league Garforth Town on Saturday.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9110994338989258
+    },
+    {
+      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9109793901443481
+    },
+    {
+      "text": "US economic growth slips to 2.8 Annual US economic growth fell to 2.8 in the second quarter of 2004, marking a slowdown from the 3 estimated a month ago.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9088131189346313
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9078767895698547
+    },
+    {
+      "text": "Amazon.com net sales jump 29; Google reports \\$52M in net income OCTOBER 22, 2004 (IDG NEWS SERVICE) - Amazon.com Inc. fell a penny short of analysts #39; per-share earnings expectations, while report",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.907872200012207
+    },
+    {
+      "text": "Football: Spanish FA apologises The Spanish FA apologises to its English counterparts following racist chanting.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9075542688369751
+    },
+    {
+      "text": "IBM, LG Electronics to End Joint Venture International Business Machines Corp. and LG Electronics Inc. will end an eight-year alliance that helped expand the US computer maker #39;s presence in the bo",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9058452844619751
+    },
+    {
+      "text": "Calif. Mental Health Services May Expand (AP) AP - As pressures increase on California's mental health system, its workers and advocates say they are forced to do more with a supply of money that seem",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9052045345306396
+    },
+    {
+      "text": "Google #39;s New PC Search Tool Poses Risks NEW YORK Oct. 18, 2004 - People who use public or workplace computers for e-mail, instant messaging and Web searching have a new privacy risk to worry about",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9052010774612427
+    },
+    {
+      "text": "US consumers unaware of spyware The findings come in a report from the newly formed Consumer Spyware Initiative, a joint effort by Dell and the non-profit Internet Education Foundation that aims to in",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9049206972122192
+    }
+  ]
+}

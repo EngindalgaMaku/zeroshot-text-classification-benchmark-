@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.782,
+  "macro_f1": 0.7681693093573216,
+  "weighted_f1": 0.7694369452853733,
+  "macro_precision": 0.7951634831318769,
+  "macro_recall": 0.7789047805969267,
+  "classification_report": {
+    "0": {
+      "precision": 0.7301587301587301,
+      "recall": 0.8646616541353384,
+      "f1-score": 0.7917383820998278,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.9372549019607843,
+      "recall": 0.9715447154471545,
+      "f1-score": 0.9540918163672655,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.6864686468646864,
+      "recall": 0.8455284552845529,
+      "f1-score": 0.7577413479052824,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.8267716535433071,
+      "recall": 0.43388429752066116,
+      "f1-score": 0.5691056910569106,
+      "support": 242.0
+    },
+    "accuracy": 0.782,
+    "macro avg": {
+      "precision": 0.7951634831318769,
+      "recall": 0.7789047805969267,
+      "f1-score": 0.7681693093573216,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.7937369553907684,
+      "recall": 0.782,
+      "f1-score": 0.7694369452853733,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      230,
+      9,
+      15,
+      12
+    ],
+    [
+      5,
+      239,
+      2,
+      0
+    ],
+    [
+      24,
+      4,
+      208,
+      10
+    ],
+    [
+      56,
+      3,
+      78,
+      105
+    ]
+  ],
+  "mean_confidence": 0.8896359338164329,
+  "std_confidence": 0.014761183154941985,
+  "mean_confidence_correct": 0.8901853104076727,
+  "mean_confidence_incorrect": 0.8876652343010684,
+  "experiment_name": "ag_news_instructor_v4_test",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-base",
+  "top_errors": [
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9268561601638794
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9197712540626526
+    },
+    {
+      "text": "Amazon.com net sales jump 29; Google reports \\$52M in net income OCTOBER 22, 2004 (IDG NEWS SERVICE) - Amazon.com Inc. fell a penny short of analysts #39; per-share earnings expectations, while report",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9190926551818848
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9173398017883301
+    },
+    {
+      "text": "America #39;s curse There is an all but unanswerable case for asserting that the biggest story out of the United States this week has nothing to do with the presidential election, has no connection wi",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9165935516357422
+    },
+    {
+      "text": "Football: Spanish FA apologises The Spanish FA apologises to its English counterparts following racist chanting.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.914944052696228
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9148973226547241
+    },
+    {
+      "text": "Smart phones to make up 16 of market LONDON-A new study shows that the market for smart phones will continue to increase during the next several years, with global shipments growing from 14.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.913887083530426
+    },
+    {
+      "text": "Apple to give its stores a Mini Me look The Mac maker has big plans to expand its network of retail outlets by creating small versions of its stores.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9138636589050293
+    },
+    {
+      "text": "Football: Brazil legend's UK debut Brazil football great Socrates is set to make his debut for non-league Garforth Town on Saturday.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9126642942428589
+    },
+    {
+      "text": "Tracking Service Aims to Ease Product Returns (Ziff Davis) Ziff Davis - A Texas company tries to take a little bit of the sting out of the biggest online retail nightmare: returns.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9125311374664307
+    },
+    {
+      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9125062227249146
+    },
+    {
+      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9120059013366699
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9110214710235596
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9108896851539612
+    },
+    {
+      "text": "PeopleSoft revises third-quarter profit Oracle target adds \\$2.6 million to bottom line after tax adjustment related to ex-CEO's severance package.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9105544090270996
+    },
+    {
+      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9094626903533936
+    },
+    {
+      "text": "Playing with the traumas of war Are games based on the Vietnam conflict making us immune to realities of history?",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9089689254760742
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9087857007980347
+    },
+    {
+      "text": "Half.com to continue at full speed This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half. Online auction giant eBay won #39;t be closi",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9079160690307617
+    }
+  ]
+}

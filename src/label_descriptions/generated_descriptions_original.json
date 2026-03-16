@@ -1,0 +1,1300 @@
+{
+  "ag_news": {
+    "0": {
+      "l2": "Content related to global events, international relations, geopolitical issues, and significant occurrences affecting multiple countries or regions.",
+      "l3": [
+        "Global events and international affairs shape societies, influencing politics, economies, and cultures across various nations and regions.",
+        "Coverage includes significant developments, diplomatic relations, and humanitarian issues impacting countries and their citizens worldwide.",
+        "This category highlights stories about global conflicts, environmental challenges, and cultural exchanges that resonate beyond national borders."
+      ]
+    },
+    "1": {
+      "l2": "Content related to athletic events, competitions, teams, players, and the broader culture surrounding physical activities and games.",
+      "l3": [
+        "Coverage of athletic events, competitions, and achievements, highlighting athletes' performances and team dynamics in various disciplines.",
+        "Analysis of game strategies, player statistics, and the impact of sports on culture and society, fostering community engagement.",
+        "Updates on major tournaments, player transfers, and emerging trends, showcasing the excitement and passion surrounding physical competitions."
+      ]
+    },
+    "2": {
+      "l2": "Content related to commercial activities, financial markets, corporate strategies, economic trends, and industry developments impacting organizations and consumers.",
+      "l3": [
+        "Focuses on financial markets, corporate strategies, and economic trends impacting various industries and consumer behavior.",
+        "Covers topics related to entrepreneurship, investment opportunities, and the dynamics of global trade and commerce.",
+        "Explores innovations, market analysis, and the influence of regulations on companies and their operational environments."
+      ]
+    },
+    "3": {
+      "l2": "Content related to advancements, discoveries, and innovations in scientific fields and technological developments impacting society and industry.",
+      "l3": [
+        "Innovations and discoveries in various fields, impacting daily life and shaping the future of human understanding.",
+        "Exploration of advancements in research, engineering, and digital solutions that drive progress and enhance societal development.",
+        "Examination of emerging trends and breakthroughs that influence industries, education, and the environment in modern society."
+      ]
+    }
+  },
+  "dbpedia_14": {
+    "0": {
+      "l2": "An organization engaged in commercial, industrial, or professional activities, typically aiming to generate profit through goods or services.",
+      "l3": [
+        "An organization engaged in commercial, industrial, or professional activities, often aiming to generate profit through various services or products.",
+        "A legal entity formed by individuals or groups to conduct business, characterized by its structure, governance, and operational goals.",
+        "A collective of resources and personnel working together to achieve specific economic objectives, typically involving market competition and innovation."
+      ]
+    },
+    "1": {
+      "l2": "An organization dedicated to teaching and learning, offering structured programs and courses for students at various levels.",
+      "l3": [
+        "A place where individuals acquire knowledge and skills through structured learning programs and academic courses.",
+        "An organization dedicated to teaching and research, often offering degrees and certifications in various fields.",
+        "A facility that fosters intellectual growth, providing resources and support for students and educators alike."
+      ]
+    },
+    "2": {
+      "l2": "A creator of visual, auditory, or performance works, often recognized for their unique style and contributions to culture.",
+      "l3": [
+        "A creative individual who produces visual, auditory, or performance works, often expressing personal or cultural themes.",
+        "A skilled practitioner in various mediums, contributing to cultural heritage through innovative and imaginative expressions.",
+        "An individual recognized for their unique style and contributions to the arts, influencing trends and inspiring audiences."
+      ]
+    },
+    "3": {
+      "l2": "An individual who competes in sports or physical activities, often recognized for their skills and achievements in a specific discipline.",
+      "l3": [
+        "Individuals who engage in physical sports, showcasing exceptional skills and competing at various levels, often achieving notable recognition.",
+        "Competitors in athletic events, known for their rigorous training, discipline, and dedication to achieving peak physical performance.",
+        "Professionals who participate in organized sports, often representing teams or countries, and inspiring others through their achievements."
+      ]
+    },
+    "4": {
+      "l2": "A person who holds a position of authority or responsibility within a government or organization, often elected or appointed.",
+      "l3": [
+        "An individual who occupies a position of authority within a governmental or organizational structure, influencing decision-making processes.",
+        "A person designated to perform specific duties and responsibilities, often representing constituents or stakeholders in formal settings.",
+        "Someone appointed or elected to a role, typically involving leadership, governance, or administrative functions within an institution."
+      ]
+    },
+    "5": {
+      "l2": "This category encompasses various methods and vehicles used for moving people or goods from one location to another.",
+      "l3": [
+        "Various methods utilized for moving people or goods from one location to another efficiently and effectively.",
+        "Includes vehicles such as cars, trains, and planes, each serving unique travel needs and purposes.",
+        "Encompasses both traditional and modern options, highlighting advancements in technology and sustainability in travel solutions."
+      ]
+    },
+    "6": {
+      "l2": "A structure designed for human use, typically providing shelter, workspace, or facilities for various activities.",
+      "l3": [
+        "Structures designed for various purposes, including residential, commercial, and institutional, showcasing architectural styles and engineering techniques.",
+        "Physical constructions that provide shelter and space for human activities, often reflecting cultural and historical significance.",
+        "Man-made edifices that serve functional roles, ranging from homes to offices, often characterized by unique designs and materials."
+      ]
+    },
+    "7": {
+      "l2": "A location characterized by its natural features, such as landscapes, ecosystems, and geographical formations, often untouched by human development.",
+      "l3": [
+        "A location characterized by its untouched landscapes, ecosystems, and biodiversity, often serving as a habitat for wildlife.",
+        "Areas formed by geological processes, showcasing unique features like mountains, rivers, and forests, vital for environmental balance.",
+        "Regions that provide recreational opportunities and aesthetic beauty, promoting conservation and appreciation of the Earth's natural heritage."
+      ]
+    },
+    "8": {
+      "l2": "A small, typically rural community characterized by a close-knit population, often featuring limited infrastructure and local governance.",
+      "l3": [
+        "A small community typically located in rural areas, often characterized by close-knit social structures and local traditions.",
+        "A settlement smaller than a town, usually featuring residential homes, local businesses, and communal spaces for residents.",
+        "An inhabited area with limited infrastructure, often surrounded by agricultural land, fostering a unique cultural identity among its residents."
+      ]
+    },
+    "9": {
+      "l2": "This category encompasses living organisms that are multicellular, eukaryotic, and primarily heterotrophic, often exhibiting mobility and complex behaviors.",
+      "l3": [
+        "Multicellular organisms that primarily consume organic material, exhibiting diverse forms and behaviors across various ecosystems.",
+        "Living beings characterized by mobility, sensory perception, and complex interactions within their environments and communities.",
+        "Eukaryotic life forms that reproduce sexually or asexually, playing crucial roles in ecological balance and food webs."
+      ]
+    },
+    "10": {
+      "l2": "Organisms that typically photosynthesize, have a cellular structure, and are primarily found in terrestrial or aquatic environments.",
+      "l3": [
+        "Organisms that typically photosynthesize, contributing to ecosystems by producing oxygen and serving as food sources for various species.",
+        "Living entities characterized by their ability to grow, reproduce, and adapt, often found in diverse habitats worldwide.",
+        "Essential components of the environment, playing crucial roles in carbon cycling and providing habitat for numerous organisms."
+      ]
+    },
+    "11": {
+      "l2": "A collection of musical tracks released together, typically by an artist, showcasing a specific theme or concept.",
+      "l3": [
+        "A collection of musical tracks, often featuring various artists or a single performer, typically released for public enjoyment.",
+        "A curated set of songs, usually organized around a theme or concept, showcasing artistic expression and creativity.",
+        "A medium for distributing music, often accompanied by artwork and promotional materials, reflecting cultural trends and influences."
+      ]
+    },
+    "12": {
+      "l2": "A narrative work primarily intended for entertainment, typically presented through moving images and sound, often featuring actors.",
+      "l3": [
+        "A visual storytelling medium that combines moving images, sound, and narrative to entertain and engage audiences worldwide.",
+        "A collaborative art form involving directors, actors, and crew, creating immersive experiences through various genres and styles.",
+        "A cultural artifact reflecting societal values, emotions, and historical contexts, often influencing public perception and trends."
+      ]
+    },
+    "13": {
+      "l2": "A creative or scholarly composition, typically in the form of text, intended for publication or dissemination.",
+      "l3": [
+        "A creative expression captured in text, encompassing various genres like fiction, poetry, and non-fiction narratives.",
+        "A structured collection of ideas and themes, often published to convey knowledge, stories, or artistic expression.",
+        "An intellectual product that reflects cultural, historical, or personal insights, typically shared through print or digital media."
+      ]
+    }
+  },
+  "yahoo_answers_topics": {
+    "0": {
+      "l2": "This category encompasses discussions about social norms, cultural practices, community issues, and human interactions within various societies.",
+      "l3": [
+        "Explores human interactions, traditions, and shared values that shape communities and influence individual identities across diverse populations.",
+        "Examines the impact of social norms, cultural practices, and historical contexts on everyday life and collective experiences.",
+        "Investigates the dynamics of relationships, societal structures, and cultural expressions that define human existence and social cohesion."
+      ]
+    },
+    "1": {
+      "l2": "This category encompasses inquiries and discussions related to scientific principles, mathematical concepts, research findings, and problem-solving techniques.",
+      "l3": [
+        "This category encompasses inquiries related to natural phenomena, mathematical theories, and experimental methodologies across various disciplines.",
+        "Focused on logical reasoning and empirical evidence, this area explores quantitative analysis and scientific principles in everyday life.",
+        "Engaging with complex concepts, this field encourages critical thinking and problem-solving through the study of numbers and the universe."
+      ]
+    },
+    "2": {
+      "l2": "This category encompasses inquiries and discussions related to physical well-being, medical conditions, treatments, nutrition, and overall wellness.",
+      "l3": [
+        "This category encompasses inquiries related to physical well-being, medical conditions, and lifestyle choices impacting overall wellness.",
+        "Focused on topics surrounding nutrition, exercise, mental health, and preventive care for maintaining a balanced life.",
+        "Covers discussions about diseases, treatments, and health-related advice, emphasizing the importance of informed decision-making for individuals."
+      ]
+    },
+    "3": {
+      "l2": "Content related to learning, academic subjects, study resources, and inquiries about knowledge or information sources.",
+      "l3": [
+        "A category encompassing inquiries related to academic subjects, learning resources, and scholarly advice for students and educators.",
+        "This classification includes discussions on study techniques, educational tools, and guidance for personal and professional development.",
+        "Focused on knowledge acquisition, this area covers topics ranging from school curricula to research methodologies and informational resources."
+      ]
+    },
+    "4": {
+      "l2": "This category encompasses topics related to technology, digital devices, online services, and internet usage or issues.",
+      "l3": [
+        "Explore the vast realm of digital technology, encompassing hardware, software, and online connectivity for everyday users.",
+        "Delve into the world of online resources, communication tools, and innovative applications that shape modern life.",
+        "Discover the impact of technology on society, including advancements in networking, data management, and user experiences."
+      ]
+    },
+    "5": {
+      "l2": "Content related to physical activities, competitions, athletic events, fitness, and discussions about teams, players, and game strategies.",
+      "l3": [
+        "Competitive physical activities that involve skill, strategy, and teamwork, often enjoyed by participants and spectators alike.",
+        "A diverse range of games and events that promote fitness, entertainment, and community engagement through athletic performance.",
+        "Activities encompassing various disciplines, from individual pursuits to team competitions, fostering passion and camaraderie among enthusiasts."
+      ]
+    },
+    "6": {
+      "l2": "Content related to economic activities, financial management, investment strategies, market trends, and corporate practices or issues.",
+      "l3": [
+        "This category encompasses inquiries related to economic strategies, investment opportunities, and corporate management practices.",
+        "Focused on monetary matters, it includes discussions about personal finance, market trends, and entrepreneurial ventures.",
+        "This area covers topics such as budgeting, financial planning, and the impact of global markets on local economies."
+      ]
+    },
+    "7": {
+      "l2": "Content related to leisure activities, artistic expressions, performances, and discussions about various forms of music and entertainment.",
+      "l3": [
+        "A vibrant realm encompassing various forms of artistic expression, including films, concerts, and popular culture discussions.",
+        "A diverse category featuring discussions on favorite artists, genres, and the latest trends in the music industry.",
+        "An engaging space for exploring hobbies related to performances, events, and the enjoyment of creative media."
+      ]
+    },
+    "8": {
+      "l2": "Discussions related to interpersonal connections, familial dynamics, parenting, romantic partnerships, and social interactions among individuals.",
+      "l3": [
+        "Explore the dynamics of interpersonal connections, including parenting, partnerships, and the complexities of familial bonds.",
+        "Delve into the emotional and social aspects of human connections, highlighting love, support, and communication within households.",
+        "Examine the various roles and responsibilities individuals hold in nurturing relationships, emphasizing growth, conflict resolution, and shared experiences."
+      ]
+    },
+    "9": {
+      "l2": "Discussions related to political systems, governance, public policy, political parties, elections, and societal issues affecting governance.",
+      "l3": [
+        "Discussions surrounding governance, political ideologies, and the functioning of institutions that shape societal structures and policies.",
+        "Topics related to leadership, public policy, and the impact of governmental decisions on citizens and communities.",
+        "Exploration of political theories, electoral processes, and the role of citizens in shaping their nation's future."
+      ]
+    }
+  },
+  "banking77": {
+    "0": {
+      "l2": "Requesting the initiation or enabling of a financial card for use in transactions or purchases.",
+      "l3": [
+        "Initiate the process to enable your payment card for transactions and access to funds.",
+        "Complete the necessary steps to start using your newly issued financial card for purchases.",
+        "Unlock your card's functionality, allowing you to make purchases and manage your account effectively."
+      ]
+    },
+    "1": {
+      "l2": "This category pertains to restrictions or guidelines regarding the minimum or maximum age for certain banking services or products.",
+      "l3": [
+        "A restriction defining the minimum or maximum age for eligibility in financial services and products.",
+        "Guidelines determining the appropriate age range for customers to access specific banking services and benefits.",
+        "Criteria that establish age boundaries affecting account openings, loans, and other financial transactions."
+      ]
+    },
+    "2": {
+      "l2": "A digital payment method that allows users to make transactions using their mobile devices or smartwatches.",
+      "l3": [
+        "Mobile payment solutions enabling users to make secure transactions using smartphones and smartwatches at various retailers.",
+        "Digital wallets that facilitate quick and convenient purchases, enhancing the shopping experience with contactless technology.",
+        "Innovative financial tools allowing seamless integration with bank accounts, promoting cashless transactions and easy fund management."
+      ]
+    },
+    "3": {
+      "l2": "Assistance related to automated cash withdrawal machines, including operational issues, transaction inquiries, and user guidance.",
+      "l3": [
+        "Assistance for automated cash withdrawal machines, ensuring users can access funds and resolve transaction issues efficiently.",
+        "Guidance on using cash dispensers, including troubleshooting common problems and understanding transaction limits and fees.",
+        "Help with locating machines, managing card issues, and navigating withdrawal processes for seamless banking experiences."
+      ]
+    },
+    "4": {
+      "l2": "A process where funds are automatically replenished in an account or service when they fall below a specified threshold.",
+      "l3": [
+        "A feature that replenishes account balances automatically, ensuring uninterrupted access to funds for transactions and services.",
+        "This service allows users to set predefined thresholds, triggering instant fund transfers when balances fall below a specified level.",
+        "A convenient solution for maintaining account liquidity, minimizing the risk of overdrafts and enhancing financial management efficiency."
+      ]
+    },
+    "5": {
+      "l2": "A situation where a customer's account reflects an outdated amount following a recent transaction, indicating a processing delay.",
+      "l3": [
+        "Transaction completion fails to reflect in account totals, causing discrepancies in available funds for users.",
+        "Users experience delays in seeing recent transfers, leading to confusion about their current financial status.",
+        "Account statements remain unchanged post-transfer, resulting in potential mismanagement of personal finances and budgeting."
+      ]
+    },
+    "6": {
+      "l2": "The text discusses issues related to account balances not reflecting recent deposits, causing discrepancies in available funds.",
+      "l3": [
+        "Delays in reflecting recent transactions can lead to confusion about available funds and financial planning.",
+        "Customers may experience frustration when their account statements do not accurately show recent deposits made.",
+        "Inaccurate account balances can hinder effective budgeting and spending decisions for individuals relying on timely updates."
+      ]
+    },
+    "7": {
+      "l2": "Indicates a situation where a recipient is prohibited from receiving funds or benefits due to specific regulations or policies.",
+      "l3": [
+        "Transactions involving unauthorized recipients are prohibited, ensuring compliance with financial regulations and safeguarding against fraud.",
+        "Certain individuals are restricted from receiving funds, maintaining security and integrity within banking operations.",
+        "Restrictions apply to specific parties, preventing them from benefiting from financial transactions to mitigate risk and ensure accountability."
+      ]
+    },
+    "8": {
+      "l2": "A request to halt or reverse a previously initiated monetary transaction between accounts or financial institutions.",
+      "l3": [
+        "Request to halt a monetary transaction before it is completed, ensuring funds remain with the sender.",
+        "Action taken to reverse or stop a scheduled payment, preventing the transfer of money to the recipient.",
+        "Procedure for discontinuing a financial transfer, allowing users to maintain control over their funds and transactions."
+      ]
+    },
+    "9": {
+      "l2": "Indicates a notification regarding an upcoming expiration date for a payment card, prompting potential renewal or replacement actions.",
+      "l3": [
+        "Notification indicating that a payment card's validity is nearing its end, prompting users to renew or replace it soon.",
+        "Alert for customers to take action as their payment card's expiration date approaches, ensuring uninterrupted access to funds.",
+        "Reminder for users that their financial card will soon be invalid, encouraging timely renewal to avoid service disruptions."
+      ]
+    },
+    "10": {
+      "l2": "This category pertains to the approval and processing of payment transactions using various types of cards in financial services.",
+      "l3": [
+        "The ability of merchants to process transactions using various payment cards, enhancing customer convenience and sales opportunities.",
+        "A crucial aspect of retail operations, enabling businesses to accept credit and debit cards for seamless financial transactions.",
+        "Facilitates electronic payments, allowing customers to use their cards for purchases, thus improving overall shopping experiences."
+      ]
+    },
+    "11": {
+      "l2": "Inquiries or updates regarding the delivery status and expected arrival time of a financial transaction card.",
+      "l3": [
+        "Notification regarding the expected delivery date of a new payment card to the customer’s registered address.",
+        "Update on the status of a financial card being processed and its anticipated arrival for user access.",
+        "Information about the timeline and logistics involved in receiving a newly issued banking card."
+      ]
+    },
+    "12": {
+      "l2": "Information regarding the expected timeframe for receiving a payment card after application or request submission.",
+      "l3": [
+        "An anticipated timeframe for when a new payment card will arrive at the customer's designated address.",
+        "The projected duration from order placement to the arrival of a financial card at the recipient's location.",
+        "An estimation of how long it will take for a requested card to be delivered to the user."
+      ]
+    },
+    "13": {
+      "l2": "Connecting a payment card to an account or service for seamless transactions and enhanced financial management.",
+      "l3": [
+        "A process that connects payment cards to digital wallets for seamless transactions and enhanced user convenience.",
+        "This feature allows users to associate their bank cards with various online services for easier payment management.",
+        "A method enabling users to link their financial accounts to apps, streamlining purchases and tracking expenses efficiently."
+      ]
+    },
+    "14": {
+      "l2": "Issues related to a payment card's functionality, including problems with transactions, activation, or technical malfunctions affecting usage.",
+      "l3": [
+        "Issues arise when a payment method fails to process transactions, causing inconvenience for users during purchases.",
+        "Users experience frustration when their payment card is declined, impacting their ability to complete financial transactions.",
+        "A common problem occurs when a card is temporarily unusable, leading to disruptions in everyday spending activities."
+      ]
+    },
+    "15": {
+      "l2": "A charge applied to a customer's account for processing a transaction made using a payment card.",
+      "l3": [
+        "A charge applied to transactions made using a credit or debit card, impacting overall purchase costs.",
+        "An additional cost incurred when processing payments through cards, often varying by merchant or transaction type.",
+        "A fee that consumers may encounter when utilizing card services, influencing budgeting and spending decisions."
+      ]
+    },
+    "16": {
+      "l2": "A situation where a transaction made with a payment card is not acknowledged or recorded by the financial institution.",
+      "l3": [
+        "Transaction appears unfamiliar to the user, leading to confusion and potential concerns about unauthorized charges.",
+        "Customer reports a payment that does not match their records, indicating possible errors or fraudulent activity.",
+        "User experiences issues with a recent charge, prompting inquiries into the legitimacy and source of the transaction."
+      ]
+    },
+    "17": {
+      "l2": "A situation where a customer is charged an incorrect currency conversion rate during a card transaction, leading to financial discrepancies.",
+      "l3": [
+        "Incorrect currency conversion during card transactions can lead to unexpected charges and financial discrepancies for consumers.",
+        "Customers may experience unfavorable rates when using cards abroad, resulting in higher costs than anticipated for purchases.",
+        "Miscalculations in exchange rates during card payments can cause significant financial losses and dissatisfaction among users."
+      ]
+    },
+    "18": {
+      "l2": "Indicates a situation where a payment card is retained by an ATM or card reader, preventing retrieval by the user.",
+      "l3": [
+        "A situation where an automated teller machine retains a user's card, often requiring assistance to retrieve it.",
+        "Occurs when a bank card is captured by a machine, typically due to user error or machine malfunction.",
+        "An incident involving the retention of a card by an ATM, leading to potential inconvenience for the cardholder."
+      ]
+    },
+    "19": {
+      "l2": "A fee applied when a customer takes out money from their account, often at ATMs or bank branches.",
+      "l3": [
+        "A fee applied when customers withdraw funds from their accounts, impacting overall banking costs and budgeting.",
+        "An expense incurred during ATM or teller transactions, often varying by institution and withdrawal method.",
+        "A financial charge that reduces the amount received during cash withdrawals, influencing consumer spending behavior."
+      ]
+    },
+    "20": {
+      "l2": "A customer reports an unrecognized transaction involving the removal of funds from their account, seeking clarification or resolution.",
+      "l3": [
+        "Unfamiliar transactions involving cash removal from accounts, leading to potential fraud concerns and customer confusion.",
+        "Instances where account holders notice unauthorized deductions, prompting inquiries about security and transaction verification.",
+        "Situations where individuals report unexpected cash removals, highlighting issues in transaction tracking and account management."
+      ]
+    },
+    "21": {
+      "l2": "Requesting the process or instructions for updating a personal identification number associated with a banking account.",
+      "l3": [
+        "Update your security code to enhance account protection and maintain privacy during online transactions and banking activities.",
+        "Modify your access code regularly to prevent unauthorized access and ensure the safety of your financial information.",
+        "Secure your account by selecting a new numeric code, improving overall security and safeguarding personal banking details."
+      ]
+    },
+    "22": {
+      "l2": "A situation where a payment card's security is breached, leading to unauthorized access or fraudulent transactions.",
+      "l3": [
+        "A payment card that has been unlawfully accessed, leading to unauthorized transactions and potential financial loss for the owner.",
+        "A financial instrument at risk due to theft or fraud, often resulting in immediate account security measures and alerts.",
+        "A card that has been breached, exposing sensitive information and requiring prompt action to prevent further misuse."
+      ]
+    },
+    "23": {
+      "l2": "Issues related to the inability to use tap-to-pay features or mobile payment options effectively.",
+      "l3": [
+        "Users experience issues with tap-to-pay features, preventing seamless transactions at retail locations and online platforms.",
+        "Customers report difficulties in using mobile or card-based payment methods, leading to frustration during purchases.",
+        "Problems arise when attempting to make payments without physical contact, disrupting the convenience of modern financial transactions."
+      ]
+    },
+    "24": {
+      "l2": "Assistance or resources provided to individuals or entities based on their geographical location or national affiliation.",
+      "l3": [
+        "Assistance provided to individuals or businesses based on their geographical location and specific regional needs.",
+        "Resources and services tailored to meet the unique financial requirements of various nations and their economies.",
+        "Guidance and aid offered to clients, reflecting the cultural and regulatory contexts of different regions worldwide."
+      ]
+    },
+    "25": {
+      "l2": "A transaction attempt that was not approved, resulting in the inability to complete a purchase or service.",
+      "l3": [
+        "Transaction was unsuccessful due to insufficient funds or exceeded credit limit, preventing the purchase from being completed.",
+        "Payment attempt failed, often resulting from security measures or account restrictions, leading to customer frustration.",
+        "Financial institution rejected the transaction, which may indicate potential fraud or issues with the cardholder's account status."
+      ]
+    },
+    "26": {
+      "l2": "A request for cash was not approved, indicating insufficient funds, account restrictions, or other banking policies.",
+      "l3": [
+        "Transaction request was unsuccessful due to insufficient funds or account restrictions, preventing the user from accessing cash.",
+        "A customer's attempt to withdraw money was not approved, often resulting from bank policies or account limitations.",
+        "The process of accessing funds was interrupted, indicating potential issues with account status or withdrawal limits."
+      ]
+    },
+    "27": {
+      "l2": "A request for moving funds that has been rejected due to insufficient balance, policy restrictions, or other reasons.",
+      "l3": [
+        "A transaction request that fails to proceed due to insufficient funds or account restrictions, preventing money movement.",
+        "An attempt to send funds that is halted, often due to compliance issues or limits set by the financial institution.",
+        "A financial action that is not completed, typically resulting from errors or conditions that violate banking policies."
+      ]
+    },
+    "28": {
+      "l2": "A transaction that was expected to be automatically withdrawn from an account but is unaccounted for or disputed.",
+      "l3": [
+        "Unauthorized transaction where a customer's account is charged without prior consent or notification, leading to confusion and disputes.",
+        "A situation where a bank account is debited unexpectedly, causing potential financial discrepancies and customer dissatisfaction.",
+        "An instance of a payment being withdrawn from an account without the account holder's acknowledgment or approval, raising concerns."
+      ]
+    },
+    "29": {
+      "l2": "Temporary spending restrictions set on a prepaid card, allowing users to control their expenditures for specific transactions.",
+      "l3": [
+        "Temporary spending caps on virtual cards, designed to enhance security and control over online transactions.",
+        "Flexible financial boundaries for short-term use, allowing users to manage expenses without affecting their main accounts.",
+        "Adjustable thresholds for one-time or limited-use cards, promoting responsible spending while minimizing fraud risks."
+      ]
+    },
+    "30": {
+      "l2": "Requests or actions related to modifying or updating an individual's personal information within a banking system.",
+      "l3": [
+        "Update your account information to ensure accurate communication and personalized service from your financial institution.",
+        "Modify your contact information and preferences to enhance your banking experience and maintain security.",
+        "Change essential personal information to reflect life events, ensuring your account remains current and accessible."
+      ]
+    },
+    "31": {
+      "l2": "A fee applied when converting one currency to another during a financial transaction or service.",
+      "l3": [
+        "A fee applied when converting one currency to another, impacting overall transaction costs for customers.",
+        "This cost arises during currency conversion, affecting international transactions and travel expenses for users.",
+        "A financial charge incurred during the process of exchanging currencies, influencing budgeting and spending decisions."
+      ]
+    },
+    "32": {
+      "l2": "The value at which one currency can be exchanged for another, influencing international trade and investment decisions.",
+      "l3": [
+        "The value of one currency relative to another, influencing international trade and investment decisions.",
+        "A critical financial indicator that fluctuates based on economic conditions, impacting travel and foreign transactions.",
+        "A measure determining how much of one currency can be exchanged for another, affecting global markets."
+      ]
+    },
+    "33": {
+      "l2": "Transactions or communications conducted through a mobile application, facilitating the transfer or conversion of currency or assets.",
+      "l3": [
+        "Conduct transactions seamlessly through mobile platforms, enabling quick transfers and payments at your fingertips.",
+        "Utilize digital tools for effortless currency conversion and financial exchanges, enhancing convenience and accessibility for users.",
+        "Engage in real-time financial interactions through user-friendly applications, streamlining the process of sending and receiving funds."
+      ]
+    },
+    "34": {
+      "l2": "An unexpected fee or cost listed on a financial account summary, often requiring clarification or dispute.",
+      "l3": [
+        "Unexplained fees appearing on account summaries, often leading to customer confusion and inquiries for clarification.",
+        "Additional costs reflected in financial statements, typically associated with transactions or services, impacting overall account balance.",
+        "Unexpected financial deductions listed in monthly reports, prompting users to review their spending and service agreements closely."
+      ]
+    },
+    "35": {
+      "l2": "A transaction attempt that did not complete successfully, often due to insufficient funds, incorrect details, or technical issues.",
+      "l3": [
+        "A transaction that could not be completed due to insufficient funds or incorrect account details.",
+        "An unsuccessful attempt to move funds between accounts, often resulting in delays or additional fees.",
+        "A situation where a monetary transfer does not go through, impacting the sender and recipient's financial plans."
+      ]
+    },
+    "36": {
+      "l2": "Support for traditional government-issued money that is not backed by a physical commodity, facilitating everyday transactions and economic stability.",
+      "l3": [
+        "Endorsement of traditional money systems, facilitating transactions and savings through government-backed financial instruments and notes.",
+        "Acceptance of government-issued money for various financial services, ensuring stability and trust in economic exchanges.",
+        "Integration of state-backed monetary systems into banking services, promoting secure and reliable financial interactions for users."
+      ]
+    },
+    "37": {
+      "l2": "Requesting a temporary digital payment method that can be used for online transactions without revealing personal card details.",
+      "l3": [
+        "Obtain a temporary digital payment solution for secure online transactions without exposing your primary card details.",
+        "Access a one-time-use card designed to enhance privacy and reduce fraud risk during online purchases.",
+        "Generate a virtual payment method that offers flexibility and control over spending while protecting your financial information."
+      ]
+    },
+    "38": {
+      "l2": "Requesting a tangible payment card for transactions, typically involving personal identification and account verification processes.",
+      "l3": [
+        "Request a tangible payment card for in-person transactions and secure access to your banking services.",
+        "Obtain a card that allows for direct purchases and enhances your financial management through physical access.",
+        "Acquire a physical payment method to facilitate everyday transactions and improve your shopping experience."
+      ]
+    },
+    "39": {
+      "l2": "Requesting a replacement payment card due to loss, damage, or the need for an additional card for convenience.",
+      "l3": [
+        "Requesting a replacement card due to loss, damage, or theft to ensure continued access to banking services.",
+        "The process of obtaining an additional card for convenience, often linked to the same account for easy transactions.",
+        "Seeking a backup card to enhance security and provide a fallback option for financial transactions when needed."
+      ]
+    },
+    "40": {
+      "l2": "Requesting information or assistance related to obtaining a digital payment card for online transactions and purchases.",
+      "l3": [
+        "Acquiring a digital payment method that allows secure online transactions without using a physical card.",
+        "The process of obtaining a temporary card number for safer online purchases and enhanced financial privacy.",
+        "Securing a virtual payment option that provides convenience and flexibility for online shopping and subscriptions."
+      ]
+    },
+    "41": {
+      "l2": "A situation where a payment card is misplaced or taken without permission, requiring immediate reporting and potential replacement.",
+      "l3": [
+        "A situation where a payment card is misplaced or taken without authorization, requiring immediate reporting to prevent fraud.",
+        "An incident involving a financial card that is no longer in the owner's possession, necessitating urgent action for security.",
+        "A scenario where a cardholder discovers their card is missing or has been compromised, prompting a need for replacement."
+      ]
+    },
+    "42": {
+      "l2": "A situation where a mobile device is misplaced or taken without permission, requiring assistance or reporting for recovery.",
+      "l3": [
+        "A device that is misplaced or taken without permission, potentially compromising personal information and security.",
+        "An incident involving a mobile device that is no longer in the owner's possession, requiring immediate action to protect data.",
+        "A situation where a personal communication device is unaccounted for, leading to concerns about unauthorized access and privacy breaches."
+      ]
+    },
+    "43": {
+      "l2": "Requesting the issuance of a tangible payment card for banking transactions and account access.",
+      "l3": [
+        "Request a tangible payment card for in-person transactions and secure access to your banking services.",
+        "Initiate the process to receive a new card for convenient shopping and account management at physical locations.",
+        "Obtain a physical card to enhance your banking experience, enabling easy withdrawals and purchases at various merchants."
+      ]
+    },
+    "44": {
+      "l2": "A user is unable to recall their secure access code for an account, requiring assistance to regain access.",
+      "l3": [
+        "Users are unable to recall their security code, hindering access to their financial accounts and services.",
+        "A common issue where individuals cannot remember their authentication key, requiring assistance to regain account access.",
+        "This situation arises when a user misplaces their confidential access number, prompting a need for recovery options."
+      ]
+    },
+    "45": {
+      "l2": "A transaction awaiting confirmation or completion, typically involving a debit or credit card, affecting account balance temporarily.",
+      "l3": [
+        "A transaction awaiting confirmation, where funds are reserved but not yet fully processed for the cardholder's account.",
+        "An ongoing payment process that has been initiated but is not yet completed, affecting available account balance.",
+        "A temporary status indicating that a card transaction is in progress, requiring further action for finalization."
+      ]
+    },
+    "46": {
+      "l2": "A request for funds to be taken from an account that has not yet been processed or completed.",
+      "l3": [
+        "A request for funds that has not yet been processed, awaiting approval or completion by the financial institution.",
+        "An initiated transaction where money is expected to be withdrawn, but is still in the processing stage.",
+        "A temporary status indicating that a cash withdrawal is in progress, pending final confirmation from the bank."
+      ]
+    },
+    "47": {
+      "l2": "A request or situation where additional funds are expected to be added to an account but are not yet available.",
+      "l3": [
+        "Awaiting additional funds to be added to an account, enhancing available balance for transactions and purchases.",
+        "A temporary status indicating that a request for increased account funds is in process and not yet completed.",
+        "Represents a situation where a user has initiated a request to increase their account balance, pending approval."
+      ]
+    },
+    "48": {
+      "l2": "A transaction that has been initiated but not yet completed, awaiting confirmation or processing by the financial institution.",
+      "l3": [
+        "A transaction awaiting completion, often involving the movement of funds between accounts or institutions.",
+        "An initiated money transfer that has not yet been finalized, typically requiring additional processing time.",
+        "A financial operation in progress, where the sender's funds are temporarily held before reaching the recipient's account."
+      ]
+    },
+    "49": {
+      "l2": "The account access code has been disabled due to security concerns or multiple incorrect entry attempts.",
+      "l3": [
+        "Access to the account is restricted due to multiple incorrect attempts at entering the security code.",
+        "User's ability to perform transactions is halted, requiring verification to regain access to their financial services.",
+        "Security measures are activated after failed login attempts, necessitating user intervention to restore account functionality."
+      ]
+    },
+    "50": {
+      "l2": "Involves transactions where funds are transferred to an individual or account, indicating an increase in financial resources.",
+      "l3": [
+        "The process of obtaining funds from various sources, enhancing financial stability and enabling future transactions.",
+        "Involves transactions where individuals or businesses acquire monetary assets, often through deposits or transfers.",
+        "Refers to the act of gaining financial resources, crucial for personal budgeting and business operations."
+      ]
+    },
+    "51": {
+      "l2": "A situation where a customer expects a reimbursement but it has not been processed or reflected in their account.",
+      "l3": [
+        "Customers report issues with expected reimbursements failing to appear in their accounts, causing frustration and confusion.",
+        "Delays in processing refunds lead to customer dissatisfaction, as individuals await their money without clear communication from the bank.",
+        "Users experience uncertainty when anticipated financial returns are missing, highlighting the need for improved transaction tracking and support."
+      ]
+    },
+    "52": {
+      "l2": "A customer seeks the return of funds previously paid, often due to dissatisfaction or an error in transaction.",
+      "l3": [
+        "Customers seek reimbursement for a transaction due to dissatisfaction or error, aiming to recover their funds promptly.",
+        "Individuals initiate a process to reclaim money spent, often citing issues like defective products or service dissatisfaction.",
+        "A formal appeal is made to retrieve funds, typically involving customer service interaction and adherence to company policies."
+      ]
+    },
+    "53": {
+      "l2": "A transaction that has been canceled or reversed, resulting in the return of funds to the customer’s account.",
+      "l3": [
+        "A transaction reversal initiated by the bank, returning funds to the customer’s account after a payment dispute.",
+        "A financial process where a previously completed payment is canceled, ensuring the customer receives their money back.",
+        "An action taken to undo a card transaction, often due to errors or customer requests for refunds."
+      ]
+    },
+    "54": {
+      "l2": "Information regarding the types of payment methods accepted, including various credit cards and currencies for transactions.",
+      "l3": [
+        "Various payment methods and international currencies accepted for transactions, enhancing customer flexibility and convenience in financial services.",
+        "A diverse range of credit and debit options, along with multiple currencies, facilitating seamless global transactions for users.",
+        "Inclusion of numerous card types and currency options, ensuring accessibility and ease of use for diverse clientele."
+      ]
+    },
+    "55": {
+      "l2": "A request or action to end a customer's banking relationship, resulting in the closure of their financial account.",
+      "l3": [
+        "Closing a financial account involves ceasing all transactions and relinquishing access to funds and services associated with it.",
+        "The process of ending an account typically requires customer verification and may involve settling any outstanding balances.",
+        "This action results in the permanent removal of account privileges, impacting future banking activities and financial records."
+      ]
+    },
+    "56": {
+      "l2": "A fee incurred when adding funds to an account through a bank transfer method, impacting overall account balance.",
+      "l3": [
+        "A fee applied when adding funds to an account via bank transfer, impacting overall transaction costs.",
+        "This charge occurs during the process of increasing account balance through bank transfers, affecting user expenses.",
+        "An additional cost incurred for funding accounts through bank transfers, influencing financial management and budgeting strategies."
+      ]
+    },
+    "57": {
+      "l2": "A transaction involving the addition of funds to an account using a credit or debit card, often incurring fees.",
+      "l3": [
+        "A payment method allowing users to add funds to their accounts using credit or debit cards seamlessly.",
+        "This process involves increasing account balances through direct card transactions, enhancing user convenience and accessibility.",
+        "Users can easily replenish their accounts by initiating charges from their cards, streamlining financial management."
+      ]
+    },
+    "58": {
+      "l2": "This category involves adding funds to an account using physical currency or a written payment order.",
+      "l3": [
+        "Adding funds to an account using physical currency or a written payment instrument for immediate availability.",
+        "A method of increasing account balance through in-person transactions involving cash or traditional payment methods.",
+        "Enhancing financial resources by depositing physical money or checks at a banking location for account use."
+      ]
+    },
+    "59": {
+      "l2": "An unsuccessful attempt to add funds to an account, often due to technical issues or insufficient information.",
+      "l3": [
+        "Transaction attempt to add funds was unsuccessful, preventing account balance increase and causing user frustration.",
+        "An error occurred during the process of adding money, resulting in an incomplete transaction and no balance change.",
+        "User's effort to recharge their account was unsuccessful, leading to potential service disruption and dissatisfaction."
+      ]
+    },
+    "60": {
+      "l2": "Restrictions on the maximum amount that can be added to an account or prepaid card within a specified period.",
+      "l3": [
+        "Maximum allowable amount for adding funds to an account, ensuring secure and manageable transactions for users.",
+        "Restrictions on the amount that can be added to a balance, designed to prevent fraud and maintain account integrity.",
+        "Guidelines determining how much money can be deposited into an account, balancing user convenience with financial safety."
+      ]
+    },
+    "61": {
+      "l2": "A transaction that was intended to increase an account balance but was canceled or reversed, resulting in no change.",
+      "l3": [
+        "A transaction where funds added to an account are reversed, often due to errors or customer requests.",
+        "An action involving the cancellation of a recent deposit, typically initiated by the account holder or due to issues.",
+        "A financial adjustment that removes previously added funds from an account, reflecting changes in user preferences or mistakes."
+      ]
+    },
+    "62": {
+      "l2": "Refilling an account balance using a credit or debit card, typically for payment or service access.",
+      "l3": [
+        "Adding funds to an account using a debit or credit card for seamless transactions and enhanced financial management.",
+        "A convenient method for increasing account balances, allowing users to quickly access funds for various banking needs.",
+        "Utilizing a card to replenish account resources, facilitating smooth payments and improving overall financial flexibility."
+      ]
+    },
+    "63": {
+      "l2": "A situation where a customer is billed for the same financial transaction on two separate occasions, causing potential confusion or error.",
+      "l3": [
+        "A situation where a customer is billed for the same transaction on two separate occasions, causing confusion.",
+        "An error in financial processing leading to duplicate deductions from a customer's account for a single purchase.",
+        "An issue where a payment is mistakenly recorded twice, resulting in an unexpected reduction of available funds."
+      ]
+    },
+    "64": {
+      "l2": "A cost incurred when moving funds between accounts or institutions, often applied as a percentage or fixed amount.",
+      "l3": [
+        "A cost incurred when moving funds between accounts or institutions, impacting overall transaction expenses for customers.",
+        "An additional charge applied during the movement of money, influencing the net amount received by the recipient.",
+        "A financial penalty associated with executing a money transfer, often varying based on the service provider or transaction type."
+      ]
+    },
+    "65": {
+      "l2": "This category involves actions or requests related to depositing funds into a financial account, enhancing the account balance.",
+      "l3": [
+        "Movement of funds from one account to another, enhancing liquidity and facilitating financial transactions for users.",
+        "Process of depositing money into an account, often used for personal savings or business operations.",
+        "Action that increases account balance, allowing for better management of finances and supporting various payment needs."
+      ]
+    },
+    "66": {
+      "l2": "A situation where a sender's funds have not been successfully credited to the intended recipient's account.",
+      "l3": [
+        "A situation where funds sent to another account fail to arrive, causing potential financial discrepancies for the sender.",
+        "Occurs when a transaction intended for a recipient does not reflect in their account, leading to customer dissatisfaction.",
+        "An issue where a money transfer is delayed or lost, impacting the expected financial transaction between parties involved."
+      ]
+    },
+    "67": {
+      "l2": "Indicates the specific period or schedule for moving funds between accounts or institutions, highlighting urgency or planning.",
+      "l3": [
+        "The period during which funds are moved between accounts, impacting transaction speed and availability for users.",
+        "Refers to the specific moment when a monetary transaction is executed, influencing processing times and user experience.",
+        "The scheduling of monetary movements, which can affect liquidity and financial planning for individuals and businesses alike."
+      ]
+    },
+    "68": {
+      "l2": "The text indicates challenges or failures in confirming a person's identity, often due to insufficient or incorrect information.",
+      "l3": [
+        "Users face challenges confirming their personal information, leading to potential access issues and security concerns.",
+        "Authentication processes fail due to insufficient documentation or discrepancies, hindering account access and service utilization.",
+        "Individuals struggle to provide necessary proof of identity, resulting in delays and complications in financial transactions."
+      ]
+    },
+    "69": {
+      "l2": "Requesting confirmation of personal information or credentials to ensure the authenticity of an individual's identity in a transaction.",
+      "l3": [
+        "Confirming personal details to ensure secure access to accounts and services, protecting against unauthorized use.",
+        "The process of validating an individual's credentials to maintain security and trust in financial transactions.",
+        "Establishing authenticity through various methods, ensuring that the right person is accessing sensitive information."
+      ]
+    },
+    "70": {
+      "l2": "Assessing the legitimacy and origin of financial resources to ensure compliance and prevent fraud in transactions.",
+      "l3": [
+        "Assessing the legitimacy of financial resources to ensure compliance with regulations and prevent fraudulent activities.",
+        "Evaluating the origin of monetary assets to confirm their authenticity and support responsible lending practices.",
+        "Investigating the background of funds to mitigate risks and uphold transparency in financial transactions."
+      ]
+    },
+    "71": {
+      "l2": "Confirming the addition of funds to an account, ensuring the transaction's accuracy and legitimacy before processing.",
+      "l3": [
+        "Confirming the addition of funds to an account, ensuring the transaction's accuracy and legitimacy for user security.",
+        "Process of checking and validating the successful increase of account balance, often involving transaction details and user authentication.",
+        "Assessing the completion of a fund increase request, ensuring that all necessary conditions and requirements are met."
+      ]
+    },
+    "72": {
+      "l2": "Issues related to the functionality or accessibility of a digital payment card, affecting online transactions and user experience.",
+      "l3": [
+        "Issues arise when a digital payment method fails to process transactions, causing inconvenience for online purchases.",
+        "Users experience difficulties accessing funds or completing transactions due to technical glitches with their electronic payment options.",
+        "Problems occur when a temporary payment solution malfunctions, hindering users from making secure online transactions effectively."
+      ]
+    },
+    "73": {
+      "l2": "This category pertains to discussions or inquiries related to specific credit card brands commonly used for transactions.",
+      "l3": [
+        "Widely accepted credit cards offering various benefits, including rewards programs and travel perks for users worldwide.",
+        "Popular payment options that provide secure transactions and flexible spending, catering to both consumers and businesses alike.",
+        "Financial tools enabling easy online and in-store purchases, often linked to personal accounts for convenient management."
+      ]
+    },
+    "74": {
+      "l2": "This category addresses the importance of confirming personal information to ensure security and prevent fraud in financial transactions.",
+      "l3": [
+        "Ensures security by confirming user authenticity, preventing fraud and unauthorized access to sensitive financial information.",
+        "Protects personal data and financial assets, fostering trust between customers and institutions in digital transactions.",
+        "Complies with regulations and enhances customer experience by streamlining account access and safeguarding against identity theft."
+      ]
+    },
+    "75": {
+      "l2": "A situation where the customer reports receiving an incorrect sum of money during a transaction or withdrawal.",
+      "l3": [
+        "Customer reports receiving an incorrect sum during a transaction, leading to discrepancies in their account balance.",
+        "A situation where the cash dispensed differs from the expected amount, causing confusion and potential financial issues.",
+        "An error occurs when the total cash given to a customer does not match the transaction details provided."
+      ]
+    },
+    "76": {
+      "l2": "Inaccurate currency conversion information affecting cash withdrawal transactions, leading to potential financial discrepancies for customers.",
+      "l3": [
+        "Incorrect currency conversion applied during cash withdrawal, leading to unexpected charges and financial discrepancies for customers.",
+        "Customers experience unfavorable transaction amounts due to inaccurate foreign exchange rates during cash withdrawal processes.",
+        "Miscalculated exchange rates result in higher costs for users withdrawing cash in foreign currencies, affecting overall satisfaction."
+      ]
+    }
+  },
+  "zeroshot/twitter-financial-news-sentiment": {
+    "0": {
+      "l2": "Indicates a negative outlook on market trends, suggesting a decline in asset values or pessimism about future performance.",
+      "l3": [
+        "Indicates a pessimistic outlook on market trends, suggesting potential declines in stock prices and investor confidence.",
+        "Reflects negative sentiment towards financial assets, often leading to increased selling pressure and cautious investment strategies.",
+        "Characterizes a market environment where investors anticipate downturns, influencing trading behaviors and overall economic sentiment."
+      ]
+    },
+    "1": {
+      "l2": "Indicates a positive outlook on market trends, suggesting confidence in rising asset values and favorable economic conditions.",
+      "l3": [
+        "Optimistic market sentiment indicating confidence in rising stock prices and positive economic outlook among investors.",
+        "A favorable perspective suggesting increased buying activity, often driven by strong earnings reports or positive news.",
+        "Enthusiastic investor sentiment reflecting expectations of growth, often leading to heightened trading volumes and market enthusiasm."
+      ]
+    },
+    "2": {
+      "l2": "The content presents information without expressing strong emotions or opinions, maintaining an objective and balanced perspective.",
+      "l3": [
+        "Content that neither expresses positive nor negative emotions, maintaining an objective and balanced perspective on financial news.",
+        "Information presented without bias, offering straightforward facts and insights without leaning towards optimism or pessimism.",
+        "A tone that remains impartial, providing a clear analysis of financial events without emotional influence or subjective interpretation."
+      ]
+    }
+  },
+  "SetFit/20_newsgroups": {
+    "0": {
+      "l2": "Discussions centered around non-belief in deities, skepticism towards religion, and philosophical inquiries about existence and spirituality.",
+      "l3": [
+        "A community discussing skepticism towards religious beliefs, emphasizing reason, science, and secular perspectives on existence and morality.",
+        "An online forum where individuals share thoughts and debates about non-belief, spirituality, and the implications of atheism.",
+        "A space for exchanging ideas on philosophy, ethics, and the impact of religion on society from a non-theistic viewpoint."
+      ]
+    },
+    "1": {
+      "l2": "Content related to computer-generated imagery, visual design, graphic software, and discussions about digital art and technology.",
+      "l3": [
+        "A category focused on discussions about computer-generated imagery, visual effects, and graphic design techniques in digital media.",
+        "This classification encompasses topics related to software, hardware, and tools used for creating and manipulating visual content.",
+        "A forum for sharing knowledge on rendering, animation, and artistic expression through technology in the visual arts field."
+      ]
+    },
+    "2": {
+      "l2": "This category encompasses discussions and information related to various aspects of the Microsoft Windows operating system, including troubleshooting and user experiences.",
+      "l3": [
+        "A forum for discussing various topics related to Microsoft Windows operating systems and their functionalities.",
+        "A space for users to share tips, troubleshoot issues, and explore software related to Windows environments.",
+        "A community focused on miscellaneous inquiries and insights about Microsoft’s operating systems and associated applications."
+      ]
+    },
+    "3": {
+      "l2": "Discussions related to personal computer components, specifications, troubleshooting, and hardware advancements specifically for IBM PC systems.",
+      "l3": [
+        "This category encompasses discussions about personal computer components, including upgrades, troubleshooting, and hardware specifications for IBM-compatible systems.",
+        "Focused on technical inquiries, this group shares insights on peripherals, motherboards, and performance enhancements for IBM PC hardware.",
+        "A hub for enthusiasts and professionals, this space covers innovations, reviews, and comparisons of IBM-compatible computer equipment."
+      ]
+    },
+    "4": {
+      "l2": "Discussions and inquiries related to Apple Macintosh hardware, including components, peripherals, and technical specifications.",
+      "l3": [
+        "Discussions revolve around Apple computer components, peripherals, and hardware troubleshooting for Mac users and enthusiasts.",
+        "This category features inquiries and advice on upgrading, repairing, and optimizing Macintosh hardware systems.",
+        "Users share experiences and solutions related to compatibility, performance, and maintenance of Mac hardware products."
+      ]
+    },
+    "5": {
+      "l2": "Discussions related to the X Window System, including software, development, troubleshooting, and user experiences in graphical environments.",
+      "l3": [
+        "A forum dedicated to discussions about the X Window System and its applications in computing environments.",
+        "This category encompasses topics related to graphical user interfaces and window management in Unix-like operating systems.",
+        "Users share insights, troubleshooting tips, and software recommendations for enhancing desktop experiences on compatible platforms."
+      ]
+    },
+    "6": {
+      "l2": "Content related to the buying, selling, or trading of various items, often including personal advertisements or listings.",
+      "l3": [
+        "A marketplace for various items, where individuals can buy, sell, or trade goods and services online.",
+        "An online platform featuring diverse listings, including collectibles, electronics, and household items available for purchase.",
+        "A community-driven space for advertising and discovering unique products, often including personal sales and local offers."
+      ]
+    },
+    "7": {
+      "l2": "Content related to automobiles, including discussions on vehicles, maintenance, industry news, and automotive technology.",
+      "l3": [
+        "A community dedicated to discussions about vehicles, automotive technology, and industry trends, fostering knowledge sharing among enthusiasts.",
+        "An online forum where individuals exchange insights on car maintenance, performance, and innovations in the automotive sector.",
+        "A platform for enthusiasts to explore topics related to driving experiences, vehicle reviews, and automotive events worldwide."
+      ]
+    },
+    "8": {
+      "l2": "Content related to motorcycles, including discussions on models, maintenance, riding experiences, safety tips, and industry news.",
+      "l3": [
+        "A community passionate about two-wheeled vehicles, sharing tips, experiences, and maintenance advice for enthusiasts and riders alike.",
+        "Discussions centered around motorcycle culture, including safety, travel, and the latest industry trends and innovations.",
+        "A hub for riders to connect, exchange stories, and explore the thrill of motorcycling adventures and events."
+      ]
+    },
+    "9": {
+      "l2": "Discussions and information related to the sport of baseball, including teams, players, games, and statistics.",
+      "l3": [
+        "A vibrant community discussing game strategies, player statistics, and team performances in the world of baseball.",
+        "Enthusiasts share news, opinions, and analyses about major leagues, players, and upcoming matches in this popular sport.",
+        "A hub for fans to engage in lively debates, share memorabilia, and celebrate the history of America's pastime."
+      ]
+    },
+    "10": {
+      "l2": "Content related to ice hockey, including discussions on teams, players, games, strategies, and related news or events.",
+      "l3": [
+        "A vibrant community discussing ice hockey, including game strategies, player statistics, and team performances across various leagues.",
+        "Enthusiasts share insights on hockey events, player trades, and fan experiences, fostering a passionate dialogue about the sport.",
+        "A hub for fans to analyze matches, celebrate victories, and debate rules, enhancing the overall appreciation of the game."
+      ]
+    },
+    "11": {
+      "l2": "This category encompasses discussions and information related to cryptography, encryption techniques, security protocols, and related technologies.",
+      "l3": [
+        "This category encompasses discussions on encryption methods, security protocols, and cryptographic techniques used to protect information.",
+        "Focused on the study and application of codes, this area explores secure communication and data protection strategies.",
+        "This classification includes topics related to cryptography, including algorithms, key management, and the implications for privacy and security."
+      ]
+    },
+    "12": {
+      "l2": "This category encompasses discussions and information related to electronic devices, circuits, components, and technological advancements in the field.",
+      "l3": [
+        "A field exploring electronic devices, circuits, and systems, emphasizing innovation and technological advancements in consumer and industrial applications.",
+        "This domain covers topics related to electrical components, design principles, and practical applications in various electronic systems.",
+        "Focused on the study and development of electronic technologies, including hardware, software, and emerging trends in the industry."
+      ]
+    },
+    "13": {
+      "l2": "Content related to medical science, healthcare practices, research findings, and discussions on health-related topics and issues.",
+      "l3": [
+        "A collection of discussions and articles related to medical science, health issues, and advancements in healthcare practices.",
+        "This category encompasses topics on medical research, treatments, and the latest findings in health and wellness.",
+        "Focused on the intersection of medicine and science, featuring expert opinions, patient experiences, and clinical studies."
+      ]
+    },
+    "14": {
+      "l2": "Content related to astronomy, space exploration, celestial phenomena, and scientific discussions about the universe and its components.",
+      "l3": [
+        "Explore topics related to astronomy, space exploration, and celestial phenomena in this engaging collection of discussions.",
+        "Delve into the latest advancements in space technology, missions, and scientific discoveries beyond Earth's atmosphere.",
+        "Engage with a community passionate about astrophysics, planetary science, and the future of human space travel."
+      ]
+    },
+    "15": {
+      "l2": "Discussions and writings related to Christian beliefs, practices, theology, and the impact of Christianity on society.",
+      "l3": [
+        "A community discussing beliefs, practices, and interpretations of Christianity, fostering dialogue among diverse perspectives and traditions.",
+        "An online forum where individuals share insights, questions, and experiences related to faith, spirituality, and religious teachings.",
+        "A platform for exploring theological concepts, scripture analysis, and the impact of Christianity on culture and society."
+      ]
+    },
+    "16": {
+      "l2": "Discussions centered on firearms legislation, gun rights, and the political implications surrounding weapon ownership and regulation.",
+      "l3": [
+        "Discussions surrounding firearm regulations, political ideologies, and the impact of gun ownership on society and safety.",
+        "Debates on the intersection of politics and firearms, including legislation, rights, and public opinion on gun control.",
+        "Conversations about the influence of guns in political discourse, encompassing advocacy, policy-making, and societal implications."
+      ]
+    },
+    "17": {
+      "l2": "Discussions and opinions regarding political issues, conflicts, and events related to the Middle Eastern region and its governance.",
+      "l3": [
+        "Discussions surrounding Middle Eastern political issues, including conflicts, governance, and international relations among various nations in the region.",
+        "A forum for analyzing and debating political events, policies, and historical contexts affecting the Middle East and its global impact.",
+        "Conversations focused on the dynamics of power, diplomacy, and social movements within Middle Eastern countries and their interactions."
+      ]
+    },
+    "18": {
+      "l2": "Discussions related to political issues, events, or opinions that do not fit into specific political party categories or mainstream topics.",
+      "l3": [
+        "A forum for discussing various political issues, opinions, and events that don't fit into mainstream categories.",
+        "Conversations centered around diverse political topics, including lesser-known movements, policies, and grassroots initiatives.",
+        "A space for sharing insights and debates on unconventional political matters, fostering dialogue beyond traditional party lines."
+      ]
+    },
+    "19": {
+      "l2": "Discussions encompassing various beliefs, practices, and philosophical questions related to spirituality and faith, without adhering to a specific doctrine.",
+      "l3": [
+        "A diverse online community discussing various spiritual beliefs, practices, and philosophical questions related to faith and religion.",
+        "A platform for exchanging ideas and perspectives on religious topics, including theology, ethics, and personal experiences.",
+        "An interactive space for exploring unconventional and lesser-known religious viewpoints, fostering dialogue among different belief systems."
+      ]
+    }
+  },
+  "imdb": {
+    "0": {
+      "l2": "Content expressing dissatisfaction, disappointment, or unfavorable opinions about a subject, often highlighting flaws or shortcomings.",
+      "l3": [
+        "Characterized by poor storytelling and lackluster performances, this type often leaves audiences feeling disappointed and unfulfilled.",
+        "Films in this category typically feature weak plots and uninspired dialogue, resulting in a frustrating viewing experience.",
+        "Often marked by unconvincing characters and dull pacing, this genre fails to engage or entertain its audience effectively."
+      ]
+    },
+    "1": {
+      "l2": "This category includes texts expressing favorable opinions, highlighting enjoyment, satisfaction, or approval of a subject or experience.",
+      "l3": [
+        "Characters and storytelling evoke strong emotions, leaving audiences uplifted and satisfied by the film's conclusion.",
+        "Engaging performances and compelling narratives create an enjoyable experience, resonating well with viewers and critics alike.",
+        "The film's vibrant energy and optimistic themes inspire a sense of joy, making it a memorable cinematic experience."
+      ]
+    }
+  },
+  "sst2": {
+    "0": {
+      "l2": "Indicates a sentiment or opinion that expresses discontent, disappointment, or unfavorable feelings towards a subject or experience.",
+      "l3": [
+        "Characterized by unfavorable sentiments, this category reflects disappointment, dissatisfaction, and adverse emotional responses in various contexts.",
+        "This classification encompasses expressions of discontent, highlighting critical viewpoints and pessimistic attitudes towards subjects or experiences.",
+        "Representing a lack of positivity, this group captures feelings of sadness, frustration, and overall unfavorable evaluations."
+      ]
+    },
+    "1": {
+      "l2": "Indicates a favorable sentiment or approval towards a subject, expressing enjoyment, satisfaction, or appreciation in the text.",
+      "l3": [
+        "Characterized by favorable sentiments, this category reflects uplifting emotions and optimistic perspectives in expressed opinions.",
+        "This classification highlights expressions of joy, satisfaction, and approval, showcasing a generally affirmative outlook on experiences.",
+        "Representing an encouraging viewpoint, this group emphasizes constructive feedback and appreciation in various contexts and interactions."
+      ]
+    }
+  },
+  "go_emotions": {
+    "0": {
+      "l2": "A feeling of deep respect and approval for someone's qualities, achievements, or actions, often inspiring positive emotions.",
+      "l3": [
+        "A feeling of deep respect and approval, often inspired by someone's achievements or qualities.",
+        "An emotional response characterized by appreciation and reverence, typically towards someone’s talents or actions.",
+        "A positive sentiment reflecting joy and pride in another's success, fostering a sense of connection and inspiration."
+      ]
+    },
+    "1": {
+      "l2": "A feeling of enjoyment or lightheartedness, often expressed through laughter or a sense of fun in various situations.",
+      "l3": [
+        "A lighthearted feeling often triggered by humor, joy, or playful situations, bringing smiles and laughter to interactions.",
+        "An emotional response characterized by delight and enjoyment, frequently experienced during entertaining moments or funny experiences.",
+        "A positive state of mind that enhances social connections, often arising from jokes, playful banter, or amusing events."
+      ]
+    },
+    "2": {
+      "l2": "A strong emotional response characterized by feelings of frustration, irritation, or hostility towards a person, situation, or event.",
+      "l3": [
+        "A strong emotional response often triggered by perceived injustice or frustration, leading to heightened physiological reactions.",
+        "This feeling can motivate assertive actions or conflict, reflecting deep-seated values and personal boundaries being challenged.",
+        "Characterized by intense displeasure, it can manifest in various ways, influencing behavior and interpersonal relationships significantly."
+      ]
+    },
+    "3": {
+      "l2": "A feeling of irritation or displeasure caused by a situation, action, or behavior that disrupts one's peace.",
+      "l3": [
+        "A feeling of irritation often triggered by minor inconveniences or disruptions in daily life experiences.",
+        "An emotional response characterized by frustration, typically arising from unmet expectations or bothersome situations.",
+        "A state of displeasure that can escalate from trivial annoyances to significant stressors in interpersonal interactions."
+      ]
+    },
+    "4": {
+      "l2": "A positive sentiment expressing agreement, support, or validation towards an idea, action, or individual, often fostering encouragement.",
+      "l3": [
+        "A positive response indicating acceptance or validation of someone's actions, thoughts, or feelings within a social context.",
+        "An expression of support or endorsement, often reflecting agreement and fostering a sense of belonging among individuals.",
+        "Acknowledgment of worthiness or merit, typically enhancing self-esteem and encouraging further positive behavior or expression."
+      ]
+    },
+    "5": {
+      "l2": "Demonstrates concern for others' well-being, expressing empathy, kindness, and support in various situations and interactions.",
+      "l3": [
+        "Demonstrating empathy and concern for others' well-being, fostering supportive relationships and emotional connections in various situations.",
+        "Exhibiting kindness and compassion, often prioritizing the needs and feelings of others over personal interests or desires.",
+        "Engaging in nurturing behaviors that promote emotional health, creating a safe environment for open communication and understanding."
+      ]
+    },
+    "6": {
+      "l2": "A state of uncertainty or lack of clarity, often resulting in mixed feelings or difficulty in understanding a situation.",
+      "l3": [
+        "A state of uncertainty where thoughts and feelings become tangled, leading to difficulty in decision-making or understanding.",
+        "An emotional response characterized by a lack of clarity, often resulting in mixed feelings and hesitation.",
+        "A mental condition marked by disorientation, causing challenges in processing information and forming coherent judgments."
+      ]
+    },
+    "7": {
+      "l2": "A strong desire to learn or know more about a subject, often leading to exploration and questioning.",
+      "l3": [
+        "A strong desire to explore and learn, often driving individuals to seek new experiences and knowledge.",
+        "An emotional state characterized by questioning and a thirst for understanding, leading to deeper engagement with the world.",
+        "A motivational force that encourages investigation and discovery, fostering creativity and innovation in various contexts."
+      ]
+    },
+    "8": {
+      "l2": "A strong feeling of wanting or wishing for something, often accompanied by anticipation or longing for fulfillment.",
+      "l3": [
+        "A strong feeling that motivates individuals to pursue goals, aspirations, or experiences they find appealing or fulfilling.",
+        "An emotional state characterized by longing or craving for something perceived as beneficial or enjoyable in life.",
+        "A powerful urge that drives people to seek out specific outcomes, relationships, or possessions they deeply yearn for."
+      ]
+    },
+    "9": {
+      "l2": "A feeling of sadness or dissatisfaction arising from unmet expectations or unfulfilled desires in a situation or experience.",
+      "l3": [
+        "A feeling of sadness or dissatisfaction when expectations are not met, often leading to a sense of loss.",
+        "An emotional response triggered by unmet hopes, resulting in a profound sense of letdown and frustration.",
+        "A complex reaction characterized by regret and disillusionment, often stemming from unfulfilled desires or aspirations."
+      ]
+    },
+    "10": {
+      "l2": "A negative sentiment expressing dissatisfaction or disagreement with a situation, action, or opinion, often highlighting criticism or rejection.",
+      "l3": [
+        "A negative reaction characterized by dissatisfaction or disagreement with a situation, action, or opinion expressed by others.",
+        "An emotional response reflecting a lack of approval, often accompanied by criticism or rejection of certain behaviors.",
+        "A sentiment indicating strong disagreement, often manifesting as disappointment or frustration towards specific actions or decisions."
+      ]
+    },
+    "11": {
+      "l2": "A strong feeling of aversion or repulsion towards something perceived as unpleasant, offensive, or morally objectionable.",
+      "l3": [
+        "A strong emotional response characterized by aversion, often triggered by unpleasant stimuli or experiences.",
+        "A reaction that signifies distaste or revulsion, frequently linked to moral or physical violations.",
+        "An instinctive feeling that prompts avoidance, commonly associated with foul odors, sights, or unethical behavior."
+      ]
+    },
+    "12": {
+      "l2": "A feeling of self-consciousness or awkwardness in response to a socially uncomfortable situation or perceived mistake.",
+      "l3": [
+        "A feeling of self-consciousness or awkwardness, often triggered by social situations or perceived mistakes.",
+        "An emotional response characterized by discomfort, often arising from a fear of judgment or negative evaluation by others.",
+        "A complex reaction involving shame and vulnerability, typically experienced when one feels exposed or ridiculed in public."
+      ]
+    },
+    "13": {
+      "l2": "A strong feeling of enthusiasm and eagerness, often associated with anticipation or joy about upcoming events or experiences.",
+      "l3": [
+        "A feeling of intense enthusiasm and eagerness, often accompanied by a rush of energy and anticipation.",
+        "An emotional state characterized by heightened positivity, often leading to joyful expressions and a desire for engagement.",
+        "A vibrant response to anticipated events, marked by a sense of thrill and an uplifting spirit."
+      ]
+    },
+    "14": {
+      "l2": "A feeling of anxiety or apprehension about potential danger or harm, often leading to avoidance behavior.",
+      "l3": [
+        "An emotional response to perceived threats, often leading to heightened alertness and avoidance behaviors in individuals.",
+        "A complex feeling that can trigger physiological reactions, influencing decision-making and social interactions in various situations.",
+        "A fundamental human experience that can motivate protective actions, shaping responses to danger and uncertainty in life."
+      ]
+    },
+    "15": {
+      "l2": "A feeling of thankfulness and appreciation towards someone or something, often expressed in response to kindness or support.",
+      "l3": [
+        "A positive emotional response characterized by appreciation and thankfulness towards others or specific situations in life.",
+        "An uplifting feeling that fosters connection, often expressed through kind words or gestures towards those who have helped.",
+        "A profound sense of recognition for kindness received, enhancing relationships and promoting a cycle of generosity and support."
+      ]
+    },
+    "16": {
+      "l2": "A deep emotional response to loss, often characterized by sadness, longing, and a sense of emptiness or sorrow.",
+      "l3": [
+        "A profound emotional response to loss, often characterized by sadness, longing, and a sense of emptiness.",
+        "An intense feeling that arises from the absence of a loved one, impacting daily life and mental well-being.",
+        "A complex reaction involving sorrow and reflection, frequently accompanied by memories and a desire for connection."
+      ]
+    },
+    "17": {
+      "l2": "A positive emotional state characterized by feelings of happiness, contentment, and pleasure, often expressed through enthusiasm or delight.",
+      "l3": [
+        "A feeling of great pleasure and happiness, often accompanied by laughter and a sense of well-being.",
+        "An emotional state characterized by positivity, enthusiasm, and a lighthearted spirit, enhancing overall life satisfaction.",
+        "A vibrant response to uplifting experiences, fostering connections and promoting a sense of fulfillment and contentment."
+      ]
+    },
+    "18": {
+      "l2": "A strong positive emotional response characterized by deep affection, attachment, and a sense of connection towards someone or something.",
+      "l3": [
+        "A profound affection that fosters deep connections and emotional bonds between individuals, enhancing relationships and personal fulfillment.",
+        "An intense feeling of warmth and attachment, often characterized by care, compassion, and a desire for closeness.",
+        "A powerful emotion that inspires joy and happiness, often driving acts of kindness and selflessness towards others."
+      ]
+    },
+    "19": {
+      "l2": "A feeling of unease or apprehension, often accompanied by physical symptoms, in response to uncertain or stressful situations.",
+      "l3": [
+        "A feeling of unease characterized by apprehension and heightened awareness, often triggered by uncertain situations or expectations.",
+        "An emotional state marked by restlessness and anxiety, frequently experienced before important events or decisions.",
+        "A psychological response involving tension and worry, typically arising from fear of potential negative outcomes or social interactions."
+      ]
+    },
+    "20": {
+      "l2": "A positive outlook characterized by hopefulness and confidence about future outcomes, often reflecting a cheerful and encouraging attitude.",
+      "l3": [
+        "A positive outlook on life, fostering hope and resilience in challenging situations, encouraging a brighter future.",
+        "An emotional state characterized by confidence in favorable outcomes, promoting motivation and enthusiasm in daily activities.",
+        "A mindset that embraces positivity, often leading to increased well-being and stronger relationships through hopeful perspectives."
+      ]
+    },
+    "21": {
+      "l2": "A feeling of deep satisfaction and self-respect derived from personal achievements or the accomplishments of others.",
+      "l3": [
+        "A feeling of deep satisfaction and self-respect, often arising from personal achievements or the accomplishments of loved ones.",
+        "An emotional response characterized by a sense of fulfillment and joy, typically linked to success or recognition.",
+        "A positive sentiment reflecting confidence and self-worth, frequently associated with overcoming challenges or reaching significant milestones."
+      ]
+    },
+    "22": {
+      "l2": "A moment of understanding or awareness, often leading to a new perspective or insight about oneself or a situation.",
+      "l3": [
+        "A sudden understanding or insight that transforms one's perspective, often leading to personal growth or change.",
+        "The moment when clarity strikes, revealing hidden truths and prompting deeper reflection on experiences and emotions.",
+        "An awakening to new possibilities, fostering awareness and encouraging individuals to reassess their beliefs and choices."
+      ]
+    },
+    "23": {
+      "l2": "A feeling of reassurance and comfort following the alleviation of stress, anxiety, or discomfort in a situation.",
+      "l3": [
+        "A feeling of comfort and release, often experienced after overcoming stress or anxiety in challenging situations.",
+        "An emotional state characterized by the alleviation of tension, leading to a sense of peace and contentment.",
+        "The joyful sensation that arises when burdens are lifted, allowing for a renewed sense of freedom and ease."
+      ]
+    },
+    "24": {
+      "l2": "A feeling of deep regret or guilt for a past action, often accompanied by a desire to make amends.",
+      "l3": [
+        "A deep sense of regret for past actions, often accompanied by a desire to make amends.",
+        "An emotional response reflecting guilt and sorrow, typically arising from recognizing one's mistakes or wrongdoings.",
+        "A complex feeling that combines sadness and self-reproach, highlighting the impact of one's choices on others."
+      ]
+    },
+    "25": {
+      "l2": "A feeling characterized by sorrow, disappointment, or loss, often accompanied by a sense of emotional heaviness or despair.",
+      "l3": [
+        "A profound emotional state characterized by feelings of loss, disappointment, and a sense of hopelessness.",
+        "An experience often accompanied by tears, withdrawal, and a longing for connection or understanding from others.",
+        "A complex reaction to adverse events, reflecting deep emotional pain and often leading to introspection and personal growth."
+      ]
+    },
+    "26": {
+      "l2": "An unexpected reaction to an event or information, often characterized by astonishment or disbelief, leading to heightened awareness.",
+      "l3": [
+        "An unexpected reaction to an event, often characterized by a sudden shift in emotions and heightened awareness.",
+        "A feeling triggered by unforeseen circumstances, leading to astonishment and a sense of wonder or disbelief.",
+        "An emotional response that arises from the unexpected, often resulting in joy, confusion, or excitement."
+      ]
+    },
+    "27": {
+      "l2": "This category encompasses expressions that lack strong emotional content, conveying a sense of indifference or neutrality in sentiment.",
+      "l3": [
+        "A state characterized by the absence of strong feelings, often reflecting calmness or indifference in emotional responses.",
+        "Represents a balanced emotional stance, where neither positive nor negative sentiments dominate one's thoughts or reactions.",
+        "Indicates a lack of emotional engagement, often seen in situations where feelings are subdued or not expressed."
+      ]
+    }
+  }
+}

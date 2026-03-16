@@ -1,0 +1,16 @@
+{
+  "ag_news": {
+    "0": {
+      "l2": "This text is about countries, cultures, events, news, politics, or global issues."
+    },
+    "1": {
+      "l2": "This text is about games, players, scores, teams, events, or competitions."
+    },
+    "2": {
+      "l2": "This text is about companies, profits, investments, markets, sales, or finance."
+    },
+    "3": {
+      "l2": "This text is about science, technology, research, inventions, gadgets, or innovations."
+    }
+  }
+}

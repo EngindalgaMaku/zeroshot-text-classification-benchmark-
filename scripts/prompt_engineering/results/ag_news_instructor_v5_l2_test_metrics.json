@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.775,
+  "macro_f1": 0.7616446390170416,
+  "weighted_f1": 0.7635234697339749,
+  "macro_precision": 0.7915139590445852,
+  "macro_recall": 0.7733435458228316,
+  "classification_report": {
+    "0": {
+      "precision": 0.854251012145749,
+      "recall": 0.793233082706767,
+      "f1-score": 0.8226120857699805,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.805921052631579,
+      "recall": 0.9959349593495935,
+      "f1-score": 0.8909090909090909,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.6520376175548589,
+      "recall": 0.8455284552845529,
+      "f1-score": 0.736283185840708,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.8538461538461538,
+      "recall": 0.45867768595041325,
+      "f1-score": 0.5967741935483871,
+      "support": 242.0
+    },
+    "accuracy": 0.775,
+    "macro avg": {
+      "precision": 0.7915139590445852,
+      "recall": 0.7733435458228316,
+      "f1-score": 0.7616446390170416,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.7925193713274021,
+      "recall": 0.775,
+      "f1-score": 0.7635234697339749,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      211,
+      23,
+      23,
+      9
+    ],
+    [
+      0,
+      245,
+      1,
+      0
+    ],
+    [
+      15,
+      13,
+      208,
+      10
+    ],
+    [
+      21,
+      23,
+      87,
+      111
+    ]
+  ],
+  "mean_confidence": 0.8806913385987282,
+  "std_confidence": 0.01568275891918548,
+  "mean_confidence_correct": 0.8818835145427335,
+  "mean_confidence_incorrect": 0.8765849547915988,
+  "experiment_name": "ag_news_instructor_v5_l2_test",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-base",
+  "top_errors": [
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9169751405715942
+    },
+    {
+      "text": "Amazon.com net sales jump 29; Google reports \\$52M in net income OCTOBER 22, 2004 (IDG NEWS SERVICE) - Amazon.com Inc. fell a penny short of analysts #39; per-share earnings expectations, while report",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9162552952766418
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9117339849472046
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.91060471534729
+    },
+    {
+      "text": "Microsoft Browser Market Share Slips Slightly Microsoft Corp. #39;s (MSFT.O: Quote, Profile, Research) share of the browser market slipped slightly in recent months but still dominated with 92.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9084203243255615
+    },
+    {
+      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9057061672210693
+    },
+    {
+      "text": "Football: Brazil legend's UK debut Brazil football great Socrates is set to make his debut for non-league Garforth Town on Saturday.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9044194221496582
+    },
+    {
+      "text": "Internet Ad Revenues Jump 40 Percent Internet advertising revenues jumped 40 percent in the first half of this year, driven largely by the growing popularity of keyword ads tied to search results.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9041133522987366
+    },
+    {
+      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9035788774490356
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9030399322509766
+    },
+    {
+      "text": "US economic growth slips to 2.8 Annual US economic growth fell to 2.8 in the second quarter of 2004, marking a slowdown from the 3 estimated a month ago.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9030344486236572
+    },
+    {
+      "text": "AOL drops Microsoft antispam technology com September 16, 2004, 1:15 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9030117392539978
+    },
+    {
+      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.902228593826294
+    },
+    {
+      "text": "Ballmer strikes big rivals from Microsoft shopping list LISBON - Customers watching for Microsoft Corp. to make a headline-grabbing buy in the business applications market faced disappointment Tuesday",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9022265672683716
+    },
+    {
+      "text": "Smart phones to make up 16 of market LONDON-A new study shows that the market for smart phones will continue to increase during the next several years, with global shipments growing from 14.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9017155170440674
+    },
+    {
+      "text": "Health Highlights: Aug. 28, 2004 A new drug that fights a form of age-related macular degeneration (AMD), a leading cause of blindness in the elderly, won applause if not approval from a panel of advi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9008978605270386
+    },
+    {
+      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9007869958877563
+    },
+    {
+      "text": "PeopleSoft revises third-quarter profit Oracle target adds \\$2.6 million to bottom line after tax adjustment related to ex-CEO's severance package.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9005852937698364
+    },
+    {
+      "text": "EU, US Talks on Aircraft Aid Grounded US and EU negotiators disagreed on Thursday about state aid for aircraft rivals Airbus and Boeing, winding up no closer on a sensitive issue that has gathered ste",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.8998874425888062
+    },
+    {
+      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8995369076728821
+    }
+  ]
+}
