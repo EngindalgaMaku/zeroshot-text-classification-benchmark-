@@ -135,6 +135,8 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
         biencoder_name = biencoder_cfg["name"]
         biencoder_task = biencoder_cfg.get("task")
         allow_gte = biencoder_cfg.get("allow_gte", False)
+        use_fp16 = biencoder_cfg.get("use_fp16", False)
+        max_seq_length = biencoder_cfg.get("max_seq_length", None)
 
         # Get device for encoder
         import torch
@@ -145,6 +147,8 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
             device=device,
             task=biencoder_task,
             allow_gte=allow_gte,
+            use_fp16=use_fp16,
+            max_seq_length=max_seq_length,
         )
         
         # Determine batch size based on model size

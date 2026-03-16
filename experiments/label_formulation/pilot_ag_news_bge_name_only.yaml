@@ -1,24 +1,23 @@
-experiment_name: exp_yahoo_answers_topics_qwen3
+experiment_name: pilot_ag_news_bge_name_only
 dataset:
-  name: yahoo_answers_topics
+  name: ag_news
   split: test
-  text_column: best_answer
-  label_column: topic
+  text_column: text
+  label_column: label
   max_samples: 1000
 task:
   type: zero_shot_classification
-  label_mode: description
+  label_mode: name_only
   language: en
 models:
   biencoder:
     provider: hf
-    name: Qwen/Qwen3-Embedding-4B
-    max_seq_length: 512
+    name: BAAI/bge-m3
   reranker: null
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 4
+  batch_size: 8
 evaluation:
   metrics:
   - accuracy
@@ -27,4 +26,4 @@ evaluation:
 output:
   save_predictions: true
   save_metrics: true
-  output_dir: results/raw
+  output_dir: results/label_semantics

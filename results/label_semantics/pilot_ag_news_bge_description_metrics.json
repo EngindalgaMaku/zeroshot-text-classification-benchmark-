@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.776,
+  "macro_f1": 0.7709118510002961,
+  "weighted_f1": 0.7708973917172514,
+  "macro_precision": 0.7909036796300651,
+  "macro_recall": 0.7778421057683516,
+  "classification_report": {
+    "0": {
+      "precision": 0.8969072164948454,
+      "recall": 0.6541353383458647,
+      "f1-score": 0.7565217391304347,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.7838709677419354,
+      "recall": 0.9878048780487805,
+      "f1-score": 0.8741007194244604,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.6720257234726688,
+      "recall": 0.8495934959349594,
+      "f1-score": 0.7504488330341114,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.8108108108108109,
+      "recall": 0.6198347107438017,
+      "f1-score": 0.702576112412178,
+      "support": 242.0
+    },
+    "accuracy": 0.776,
+    "macro avg": {
+      "precision": 0.7909036796300651,
+      "recall": 0.7778421057683516,
+      "f1-score": 0.7709118510002961,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.7929441218426377,
+      "recall": 0.776,
+      "f1-score": 0.7708973917172514,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      174,
+      36,
+      48,
+      8
+    ],
+    [
+      1,
+      243,
+      2,
+      0
+    ],
+    [
+      5,
+      5,
+      209,
+      27
+    ],
+    [
+      14,
+      26,
+      52,
+      150
+    ]
+  ],
+  "mean_confidence": 0.44098663854599,
+  "std_confidence": 0.046854284736392256,
+  "mean_confidence_correct": 0.44519346625995393,
+  "mean_confidence_incorrect": 0.4264129853940436,
+  "experiment_name": "pilot_ag_news_bge_description",
+  "dataset": "ag_news",
+  "label_mode": "description",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "BAAI/bge-m3",
+  "top_errors": [
+    {
+      "text": "Google #39;s New PC Search Tool Poses Risks NEW YORK Oct. 18, 2004 - People who use public or workplace computers for e-mail, instant messaging and Web searching have a new privacy risk to worry about",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5958594083786011
+    },
+    {
+      "text": "Stocks Climb on Drop in Consumer Prices NEW YORK - Stocks rose for a second straight session Tuesday as a drop in consumer prices allowed investors to put aside worries about inflation, at least for t",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5319457650184631
+    },
+    {
+      "text": "Movies in a snap: Netflix and TiVo discuss downloads Bee Staff Writer. The high-tech ground is shifting underfoot again, amid rumblings of a new Silicon Valley alliance that would let owners of TiVo I",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5316259860992432
+    },
+    {
+      "text": "September Retail Sales Up by 1.5 Percent WASHINGTON - Shoppers got their buying groove back last month, propelling sales at the nation's retailers by a strong 1.5 percent. It was the best showing sinc",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5294855237007141
+    },
+    {
+      "text": "US consumers unaware of spyware The findings come in a report from the newly formed Consumer Spyware Initiative, a joint effort by Dell and the non-profit Internet Education Foundation that aims to in",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.525636613368988
+    },
+    {
+      "text": "ASEAN moves closer to single market with  #39;road map #39;, global trade &lt;b&gt;...&lt;/b&gt; JAKARTA : ASEAN finance ministers ended a meeting which saw Southeast Asia edge closer to a Europe-styl",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5199958086013794
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5181028246879578
+    },
+    {
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.513726532459259
+    },
+    {
+      "text": "Rivals Try to Turn Tables on Charles Schwab By MICHAEL LIEDTKE     SAN FRANCISCO (AP) -- With its low prices and iconoclastic attitude, discount stock broker Charles Schwab Corp. (SCH) represented an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5095624923706055
+    },
+    {
+      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5083775520324707
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5070745348930359
+    },
+    {
+      "text": "Symantec Said to Be in Talks for Veritas Symantec, which produces the Norton line of computer products, is in talks to acquire Veritas Software, a maker of data backup programs.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5068299770355225
+    },
+    {
+      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5066526532173157
+    },
+    {
+      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5065156817436218
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.5064975023269653
+    },
+    {
+      "text": "Monster Mashes Attract Masses Kaiju Big Battel -- a multimedia event in which costumed combatants spew toxic ooze on audience members -- is growing in popularity. There are already dedicated websites ",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5027687549591064
+    },
+    {
+      "text": "2004 Signals More Global Warming, Extreme Weather: UN (Reuters) Reuters - Global warming is set to continue, and\\bring with it an increase in extreme weather such as hurricanes\\and droughts, scientist",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.49960681796073914
+    },
+    {
+      "text": "Toys Will Be Toys Trust me, you don #39;t want to see desperate parents shopping over the holidays. I was at Circuit City (NYSE: CC) last week and saw a mother pleading with a sales clerk for a Ninten",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.49633991718292236
+    },
+    {
+      "text": "Supreme Court Hears Wine Sales Case Winemakers who want to ship directly to consumers across state lines got a sympathetic hearing at the Supreme Court today, as the justices heard oral arguments in a",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.494759202003479
+    },
+    {
+      "text": "Special to ESPN.com It #39;s the age old question:  quot;What do you give to the man who #39;s been everything? quot;. Only time will tell whether Phil Knight #39;s retirement will be as long-lived as",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.49405360221862793
+    }
+  ]
+}

@@ -130,3 +130,36 @@ Mevcut altyapı L1 (`name_only`) ve L2 (`description`) label modlarını destekl
 4. WHEN bir analiz scripti çalıştırıldığında, THE script SHALL hangi input dosyalarını kullandığını ve hangi output dosyalarını ürettiğini loglamalıdır.
 5. THE tüm üretilen görseller, en az 300 DPI çözünürlükte PNG formatında kaydedilmelidir.
 6. THE tüm üretilen tablolar, CSV formatında kaydedilmelidir; böylece bağımsız doğrulama mümkün olsun.
+
+---
+
+### Requirement 8: Label Description Objektivitesi ve Standardizasyonu
+
+**User Story:** Araştırmacı olarak, L2 ve L3 label description'larının araştırmacı tarafından elle yazılmak yerine standart bir protokolle üretilmesini istiyorum; böylece "description'lar yöntemi kayırmak için ayarlandı" şeklindeki akademik itirazları önleyebileyim.
+
+#### Acceptance Criteria
+
+1. THE `Description_Generator` SHALL GPT-4o veya Claude 3.5 Sonnet modelini kullanarak label description'larını aşağıdaki sabit prompt şablonuyla üretmelidir: `"Define the following text classification label in 15-20 words, focusing only on its semantic core without using the label name itself. Dataset: [Dataset Name]. Label: [Label Name]."` — bu şablon tüm dataset ve label'lar için değiştirilmeden uygulanmalıdır.
+2. THE `Description_Generator` SHALL LLM çağrılarını `temperature=0` ile gerçekleştirmelidir; böylece üretilen description'lar deterministik ve tekrarlanabilir olsun.
+3. WHEN LLM tabanlı description üretimi tamamlandığında, THE `Description_Generator` SHALL kullanılan model adını, prompt şablonunu, temperature değerini ve üretim tarihini içeren bir `generation_metadata.json` dosyasını `src/label_descriptions/` dizinine kaydetmelidir.
+4. THE her dataset için otoriter kaynak eşlemesi aşağıdaki kurala göre yapılmalıdır: `ag_news`, `yahoo_answers_topics`, `SetFit/20_newsgroups` için L2 Wikipedia ilk cümlesi, L3 Wikidata tanımları; `banking77` için resmi `categories.json` veya dataset dokümantasyonu; `dbpedia_14` için DBpedia Ontology tanımları; `imdb`, `sst2`, `zeroshot/twitter-financial-news-sentiment` için psikoloji sözlüğü veya aspect-based standart tanımlar; `go_emotions` için Ekman veya Plutchik duygu teorisi standart tanımları.
+5. THE `Description_Generator` SHALL her description için kaynak bilgisini (`llm_generated`, `wikipedia`, `wikidata`, `dbpedia_ontology`, `dataset_documentation`, `psychology_dictionary`, `ekman_theory`, `plutchik_theory`) içeren bir provenance kaydı tutmalıdır; bu kayıt `src/label_descriptions/provenance.json` dosyasına yazılmalıdır.
+6. WHEN `provenance.json` oluşturulduğunda, THE `Description_Generator` SHALL her kayıt için en az şu alanları içermelidir: `dataset`, `label_id`, `label_mode` (`L2` veya `L3`), `source_type`, `source_url_or_reference`, `generated_at`.
+7. IF bir dataset için otoriter kaynak erişilemez durumdaysa, THEN THE `Description_Generator` SHALL LLM tabanlı üretimi fallback olarak kullanmalı ve bu durumu provenance kaydında `source_type: llm_fallback` olarak işaretlemelidir.
+8. THE paper metodoloji bölümü için `reports/methodology/description_protocol.md` dosyası üretilmelidir; bu dosya kullanılan LLM modelini, prompt şablonunu, temperature değerini ve her dataset için kaynak eşlemesini içermelidir.
+
+---
+
+### Requirement 9: Çok Kaynaklı Sağlamlık Testi (Multi-Source Robustness)
+
+**User Story:** Araştırmacı olarak, iki farklı description seti (GPT-4 üretimi ve Claude/sözlük kaynaklı) üzerinde aynı deneyleri çalıştırmak istiyorum; böylece sonuçların description ifadesine karşı robust olduğunu göstererek paper'a bağımsız bir bulgu bölümü ekleyebileyim.
+
+#### Acceptance Criteria
+
+1. THE `LABEL_SETS` yapısı, her dataset için `description_set_a` (GPT-4o üretimi) ve `description_set_b` (Claude 3.5 Sonnet üretimi veya sözlük kaynaklı) key'lerini desteklemelidir; bu key'ler mevcut `description` ve `multi_description` key'lerinin davranışını değiştirmemelidir.
+2. THE `experiments/robustness/` dizini, 9 dataset × 7 model × {`description_set_a`, `description_set_b`} kombinasyonları için YAML config dosyaları içermelidir.
+3. WHEN robustness deneyleri tamamlandığında, THE `Robustness_Analyzer` SHALL her (dataset, model) çifti için Set A ve Set B Macro-F1 değerleri arasındaki mutlak farkı `|ΔF1(A-B)|` olarak hesaplamalıdır.
+4. THE `Robustness_Analyzer` SHALL tüm (dataset, model) çiftleri üzerinden ortalama `|ΔF1(A-B)|` değerini raporlamalıdır; bu değer 0.02'nin (2 puan) altındaysa sonuçlar "description ifadesine karşı robust" olarak nitelendirilmelidir.
+5. WHEN robustness analizi tamamlandığında, THE `Robustness_Analyzer` SHALL sonuçları `reports/robustness/` dizinine hem CSV hem de görsel (heatmap) formatında kaydetmelidir.
+6. THE `reports/robustness/robustness_summary.md` dosyası, paper'ın robustness alt bölümüne doğrudan dahil edilebilecek şekilde bulguları özetlemelidir; bu özet ortalama `|ΔF1(A-B)|` değerini, en yüksek ve en düşük varyans gösteren (dataset, model) çiftlerini içermelidir.
+7. IF Set B description'larından herhangi biri eksikse, THEN THE `Robustness_Analyzer` SHALL eksik olan (dataset, label) çiftlerini loglamalı ve mevcut verilerle analizi tamamlamalıdır.

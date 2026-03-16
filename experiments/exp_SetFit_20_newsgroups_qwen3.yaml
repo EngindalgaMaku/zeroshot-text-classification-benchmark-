@@ -13,11 +13,12 @@ models:
   biencoder:
     provider: hf
     name: Qwen/Qwen3-Embedding-4B
+    max_seq_length: 512
   reranker: null
 pipeline:
   mode: biencoder
   normalize_embeddings: true
-  batch_size: 32
+  batch_size: 4
 evaluation:
   metrics:
   - accuracy

@@ -109,6 +109,8 @@ class BiEncoder:
         device: str = None,
         task: Optional[str] = None,
         allow_gte: bool = False,
+        use_fp16: bool = False,
+        max_seq_length: Optional[int] = None,
     ):
         """Initialize bi-encoder.
 
@@ -118,11 +120,20 @@ class BiEncoder:
             task: Optional task name (useful for Jina models)
             allow_gte: If True, enables GTE custom backend. Off by default because
                 GTE caused runtime instability in prior experiments.
+            use_fp16: If True, use float16 precision to reduce memory usage
+            max_seq_length: Maximum sequence length for truncation (None = model default)
         """
         print(f"Loading bi-encoder: {model_name}")
         self.model_name = model_name
         self.task = task
+        self.use_fp16 = use_fp16
+        self.max_seq_length = max_seq_length
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        
+        if use_fp16:
+            print(f"⚠️  Using FP16 precision for memory efficiency")
+        if max_seq_length:
+            print(f"⚠️  Truncating sequences to max_seq_length={max_seq_length}")
 
         name_lower = model_name.lower()
 
@@ -152,13 +163,19 @@ class BiEncoder:
                 # Only add default_task if not already in model name
                 model_kwargs['default_task'] = self.task
             
+            # Add FP16 support for memory efficiency
+            if use_fp16:
+                model_kwargs['torch_dtype'] = torch.float16
+            
             self.model = SentenceTransformer(
                 model_name,
                 device=self.device,
                 trust_remote_code=True,
                 model_kwargs=model_kwargs,
             )
-            print(f"Jina model loaded on device: {self.model.device} with task: {self.task}")
+            
+            fp16_msg = " (FP16)" if use_fp16 else ""
+            print(f"Jina model loaded on device: {self.model.device} with task: {self.task}{fp16_msg}")
 
         # -------- GTE backend (optional) --------
         elif "gte" in name_lower:
@@ -181,12 +198,24 @@ class BiEncoder:
         # -------- Standard sentence-transformers backend --------
         else:
             self.backend = "sentence_transformers"
+            
+            # Add FP16 support for memory efficiency
+            model_kwargs = {'trust_remote_code': True}
+            if use_fp16:
+                model_kwargs['torch_dtype'] = torch.float16
+            
             self.model = SentenceTransformer(
                 model_name,
                 device=self.device,
-                trust_remote_code=True,
+                model_kwargs=model_kwargs,
             )
-            print(f"Model loaded on device: {self.model.device}")
+            
+            # Set max_seq_length if specified
+            if max_seq_length:
+                self.model.max_seq_length = max_seq_length
+            
+            fp16_msg = " (FP16)" if use_fp16 else ""
+            print(f"Model loaded on device: {self.model.device}{fp16_msg}")
 
     def _build_instructor_inputs(
         self,
@@ -247,6 +276,11 @@ class BiEncoder:
                 show_progress_bar=show_progress,
                 convert_to_numpy=True,
             )
+            
+            # Clear GPU cache after encoding to prevent memory accumulation
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+            
             return embeddings
 
         # -------- GTE custom backends --------
@@ -267,6 +301,11 @@ class BiEncoder:
             show_progress_bar=show_progress,
             convert_to_numpy=True,
         )
+        
+        # Clear GPU cache after encoding to prevent memory accumulation
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        
         return embeddings
 
 

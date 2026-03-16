@@ -77,7 +77,7 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
 - [ ] 5. Checkpoint - Verify experiment completion
   - Ensure all tests pass, ask the user if questions arise.
 
-- [x] 6. Implement label formulation analysis
+- [ ] 6. Implement label formulation analysis
   - [x] 6.1 Create label mode comparison configs
     - Duplicate 3 diverse dataset configs (AG News, Banking77, GoEmotions)
     - Create name_only variants for each selected dataset
@@ -94,6 +94,27 @@ This plan addresses critical reproducibility issues and analysis gaps in a zero-
     - Create comparison table showing differences across datasets and models
     - Generate bar chart visualization showing label mode impact
     - Analyze which task types benefit most from descriptions
+    - _Requirements: 7.3, 7.4, 7.5_
+  
+  - [x] 6.4 Implement label embedding trajectory analysis (PCA/t-SNE)
+    - Encode all L1, L2, L3 label descriptions using each benchmark model
+    - Apply PCA and t-SNE dimensionality reduction to project embeddings to 2D
+    - Generate "semantic trajectory" visualization: draw arrows from L1→L2→L3 centroid for each class
+    - Export publication-quality figures (PDF and EPS) for each model
+    - _Requirements: 7.3, 7.5_
+  
+  - [x] 6.5 Compute centroid distance metrics (intra-label variance and inter-label separation)
+    - For each model and label level (L1/L2/L3), compute per-class embedding centroids
+    - Calculate intra-label variance: cosine distance between L1, L2, L3 centroids of the same class
+    - Calculate inter-label separation: mean pairwise cosine distance between different class centroids at each level
+    - Store results in structured CSV: model, dataset, label_level, intra_variance, inter_separation
+    - _Requirements: 7.3, 7.4, 7.5_
+  
+  - [x] 6.6 Generate centroid distance analysis report and visualization
+    - Create summary table comparing intra-label variance and inter-label separation across L1/L2/L3 levels
+    - Generate line plots showing how inter-label separation changes from L1 to L3 per model
+    - Identify models where L3 descriptions cause label collapse (inter-separation decreases)
+    - Export figures in PDF and EPS formats with publication-quality styling
     - _Requirements: 7.3, 7.4, 7.5_
 
 - [x] 7. Implement task characteristics analysis
