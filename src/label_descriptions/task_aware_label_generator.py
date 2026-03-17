@@ -175,28 +175,70 @@ class DatasetTaskTypeConfig:
         return self._mapping[dataset_id]
 
 
+BANNED_PATTERNS = (
+    "this category",
+    "in this context",
+    "examples include",
+    "this label",
+    "this class",
+    "this type",
+    "refers to",
+    "such as",
+    "for example",
+    "this text",
+    "this question",
+    "this request may",
+)
+
 class ValidationEngine:
     def __init__(
         self,
         generic_prefixes: Optional[Tuple[str, ...]] = None,
+        min_words: int = 10,
+        max_words: int = 25,
     ):
-        # These prefixes were used to block old generic outputs.
-        # The new task-aware prompts intentionally produce "This text is about..."
-        # and "This text describes..." patterns, so the default is now empty.
         self._generic_prefixes = generic_prefixes or ()
+        self._min_words = min_words
+        self._max_words = max_words
 
     def validate_single(self, label_text: str, description: str) -> None:
         if not isinstance(description, str) or not description.strip():
             raise ValidationError("Description must be a non-empty string")
 
-        # Case-insensitive substring search - removed strict check
-        # if label_text.lower() not in description.lower():
-        #     raise ValidationError("Description must contain the original label text")
+        desc = description.strip()
 
-        lowered = description.strip().lower()
+        # 1. Label must appear in description (case-insensitive)
+        label_variants = {label_text.lower(), label_text.lower().replace("_", " ")}
+        desc_lower = desc.lower()
+        if not any(v in desc_lower for v in label_variants):
+            raise ValidationError(
+                f"Description must contain label text '{label_text}'. Got: {desc[:80]!r}"
+            )
+
+        # 2. Word count check
+        word_count = len(desc.split())
+        if word_count < self._min_words:
+            raise ValidationError(
+                f"Description too short ({word_count} words, min={self._min_words}): {desc[:80]!r}"
+            )
+        if word_count > self._max_words:
+            raise ValidationError(
+                f"Description too long ({word_count} words, max={self._max_words}): {desc[:80]!r}"
+            )
+
+        # 3. Banned patterns
+        for pattern in BANNED_PATTERNS:
+            if pattern in desc_lower:
+                raise ValidationError(
+                    f"Description contains banned pattern '{pattern}': {desc[:80]!r}"
+                )
+
+        # 4. Generic prefix check
         for pfx in self._generic_prefixes:
-            if lowered.startswith(pfx):
-                raise ValidationError("Description must differ from the generic template format")
+            if desc_lower.startswith(pfx):
+                raise ValidationError(
+                    f"Description starts with generic prefix '{pfx}': {desc[:80]!r}"
+                )
 
     def validate_pair(self, label_text: str, l2: str, l3: str) -> None:
         self.validate_single(label_text, l2)
@@ -214,18 +256,17 @@ class ValidationEngine:
             except ValidationError as exc:
                 raise ValidationError(f"Invalid L3 description at index {idx}: {exc}") from exc
 
-        # Compare L2 with each individual L3 sentence (not joined)
+        # Each L3 sentence must differ from L2
         l2_stripped = l2.strip()
-        all_identical = True
-        for l3_sentence in l3_list:
-            if isinstance(l3_sentence, str) and l3_sentence.strip() != l2_stripped:
-                all_identical = False
-                break
-        
+        all_identical = all(
+            isinstance(s, str) and s.strip() == l2_stripped for s in l3_list
+        )
         if all_identical:
-            raise ValidationError("L2 and L3 descriptions must be distinct")
+            raise ValidationError("All L3 descriptions are identical to L2")
 
-        if len(set([x.strip() for x in l3_list])) != len([x.strip() for x in l3_list]):
+        # L3 sentences must be distinct from each other
+        stripped = [s.strip() for s in l3_list if isinstance(s, str)]
+        if len(set(stripped)) != len(stripped):
             raise ValidationError("L3 descriptions must be distinct from each other")
 
 
@@ -278,39 +319,54 @@ class TaskAwareLabelGenerator:
 
         return task_type, prompt_l2, prompt_l3
 
-    def generate_for_label(self, dataset_id: str, label_text: str) -> Tuple[str, List[str]]:
+    def generate_for_label(self, dataset_id: str, label_text: str, max_retries: int = 3) -> Tuple[str, List[str]]:
         task_type, prompt_l2, prompt_l3 = self.build_prompts(dataset_id=dataset_id, label_text=label_text)
 
-        try:
-            l2 = self._llm.generate(dataset_name=dataset_id, label_name=label_text, prompt_template=prompt_l2)
-        except Exception as exc:
-            raise GenerationError(
-                f"L2 generation failed for label={label_text!r} task_type={task_type!r}: {exc}"
-            ) from exc
+        last_error = None
+        for attempt in range(max_retries):
+            try:
+                l2 = self._llm.generate(dataset_name=dataset_id, label_name=label_text, prompt_template=prompt_l2)
+            except Exception as exc:
+                raise GenerationError(
+                    f"L2 generation failed for label={label_text!r} task_type={task_type!r}: {exc}"
+                ) from exc
 
-        try:
-            l3_list = self._llm.generate_multi(dataset_name=dataset_id, label_name=label_text, prompt_template=prompt_l3)
-        except Exception as exc:
-            raise GenerationError(
-                f"L3 generation failed for label={label_text!r} task_type={task_type!r}: {exc}"
-            ) from exc
+            try:
+                l3_list = self._llm.generate_multi(dataset_name=dataset_id, label_name=label_text, prompt_template=prompt_l3)
+            except Exception as exc:
+                raise GenerationError(
+                    f"L3 generation failed for label={label_text!r} task_type={task_type!r}: {exc}"
+                ) from exc
 
-        self._validator.validate_l3_list(label_text=label_text, l2=l2, l3_list=l3_list)
+            try:
+                self._validator.validate_l3_list(label_text=label_text, l2=l2, l3_list=l3_list)
+            except ValidationError as exc:
+                last_error = exc
+                import logging
+                logging.getLogger(__name__).warning(
+                    "Validation failed for label=%r (attempt %d/%d): %s",
+                    label_text, attempt + 1, max_retries, exc
+                )
+                continue  # retry
 
-        rec = GenerationRecord(
-            generation_id=str(uuid.uuid4()),
-            generated_at=datetime.now(timezone.utc).isoformat(),
-            dataset=dataset_id,
-            task_type=task_type,
-            label_text=label_text,
-            template_l2=prompt_l2,
-            template_l3=prompt_l3,
-            l2_description=l2,
-            l3_description=json.dumps(l3_list, ensure_ascii=False),
+            # Validation passed
+            rec = GenerationRecord(
+                generation_id=str(uuid.uuid4()),
+                generated_at=datetime.now(timezone.utc).isoformat(),
+                dataset=dataset_id,
+                task_type=task_type,
+                label_text=label_text,
+                template_l2=prompt_l2,
+                template_l3=prompt_l3,
+                l2_description=l2,
+                l3_description=json.dumps(l3_list, ensure_ascii=False),
+            )
+            self._logger.record(rec)
+            return l2, l3_list
+
+        raise GenerationError(
+            f"Validation failed after {max_retries} attempts for label={label_text!r}: {last_error}"
         )
-        self._logger.record(rec)
-
-        return l2, l3_list
 
     def generate_batch(self, dataset_id: str, labels: List[str]) -> Tuple[List[Optional[Dict[str, Any]]], List[Optional[str]]]:
         results: List[Optional[Dict[str, Any]]] = []
