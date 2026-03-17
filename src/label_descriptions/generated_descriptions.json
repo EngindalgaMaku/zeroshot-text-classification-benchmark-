@@ -276,5 +276,119 @@
         "talk.religion.misc: threads on scripture, interpretation, and the impact of religious texts on modern life."
       ]
     }
+  },
+  "dbpedia_14": {
+    "0": {
+      "l2": "Company: a legal entity that engages in commercial activities to generate profit and provide goods or services.",
+      "l3": [
+        "Company: a business organization that produces goods or services for profit.",
+        "Company: an entity that employs individuals and engages in commercial activities to generate revenue.",
+        "Company: a legal structure consisting of shareholders and management that operates within a specific industry."
+      ]
+    },
+    "1": {
+      "l2": "EducationalInstitution: a place that provides structured learning and educational programs for students.",
+      "l3": [
+        "EducationalInstitution: a place that provides structured learning experiences for students of various ages.",
+        "EducationalInstitution: an entity that offers academic programs and fosters intellectual growth in diverse fields.",
+        "EducationalInstitution: a system consisting of teachers, students, and administrative staff dedicated to education."
+      ]
+    },
+    "2": {
+      "l2": "Artist: a creative individual that produces original works of art to express ideas and emotions.",
+      "l3": [
+        "Artist: a creator that expresses emotions and ideas through various forms of media.",
+        "Artist: an entity that produces original works and engages with audiences through performances or exhibitions.",
+        "Artist: a professional consisting of musicians and visual creators who influence culture and inspire others."
+      ]
+    },
+    "3": {
+      "l2": "Athlete: a person who competes in sports and demonstrates physical skill and endurance.",
+      "l3": [
+        "Athlete: a competitor that participates in sports or physical activities to achieve excellence and recognition.",
+        "Athlete: an entity that trains rigorously and competes at various levels in their chosen sport.",
+        "Athlete: a professional individual consisting of skills and dedication to excel in athletic performance."
+      ]
+    },
+    "4": {
+      "l2": "OfficeHolder: a person who holds a position of authority in a government or organization.",
+      "l3": [
+        "OfficeHolder: a person that holds a position of authority within a government or organization.",
+        "OfficeHolder: an entity that represents the interests of constituents and makes decisions on their behalf.",
+        "OfficeHolder: a role consisting of responsibilities and duties related to governance and public service."
+      ]
+    },
+    "5": {
+      "l2": "MeanOfTransportation: a vehicle that facilitates the movement of people or goods from one location to another.",
+      "l3": [
+        "MeanOfTransportation: a vehicle that facilitates the movement of people or goods from one location to another.",
+        "MeanOfTransportation: an entity that operates on land, water, or air and varies in size and capacity.",
+        "MeanOfTransportation: a mode consisting of public transit options and private vehicles for commuting and travel."
+      ]
+    },
+    "6": {
+      "l2": "Building: a structure that provides shelter and space for various activities and functions.",
+      "l3": [
+        "Building: a structure that provides shelter and serves various purposes, including residential, commercial, and industrial uses.",
+        "Building: an entity that houses people and activities, facilitating social interaction and economic transactions.",
+        "Building: a physical space consisting of walls and a roof, designed to accommodate human needs and functions."
+      ]
+    },
+    "7": {
+      "l2": "NaturalPlace: a geographical area that features significant natural beauty or ecological importance.",
+      "l3": [
+        "NaturalPlace: a geographic area that features natural landscapes and diverse ecosystems.",
+        "NaturalPlace: an entity that encompasses mountains and rivers, providing habitats for various wildlife species.",
+        "NaturalPlace: a region consisting of forests and wetlands, supporting rich biodiversity and ecological balance."
+      ]
+    },
+    "8": {
+      "l2": "Village: a small community that typically consists of clustered homes and local amenities.",
+      "l3": [
+        "Village: a small community that typically features residential homes and local amenities.",
+        "Village: an entity that fosters social interaction and cultural traditions among its inhabitants.",
+        "Village: a settlement consisting of agricultural land and essential services for its residents."
+      ]
+    },
+    "9": {
+      "l2": "Animal: a living organism that can move, consume food, and reproduce.",
+      "l3": [
+        "Animal: a living organism that exhibits movement, growth, and reproduction throughout its life cycle.",
+        "Animal: an entity that consumes organic material and responds to stimuli in its environment.",
+        "Animal: a multicellular organism consisting of various systems and specialized cells that perform distinct functions."
+      ]
+    },
+    "10": {
+      "l2": "Plant: a living organism that photosynthesizes to produce energy and oxygen.",
+      "l3": [
+        "Plant: a living organism that performs photosynthesis to convert sunlight into energy.",
+        "Plant: an entity that grows, reproduces, and plays a crucial role in ecosystems.",
+        "Plant: a multicellular organism consisting of roots, stems, and leaves that support its life processes."
+      ]
+    },
+    "11": {
+      "l2": "Album: a collection of musical tracks that showcases an artist's work and creativity.",
+      "l3": [
+        "Album: a collection of musical tracks that showcases an artist's work or a specific theme.",
+        "Album: an entity that captures a series of songs and presents them in a cohesive format.",
+        "Album: a compilation consisting of original recordings and remixes that highlight diverse musical styles."
+      ]
+    },
+    "12": {
+      "l2": "Film: a visual storytelling medium that combines moving images, sound, and narrative to entertain or inform audiences.",
+      "l3": [
+        "Film: a visual narrative that combines storytelling, acting, and cinematography to entertain audiences.",
+        "Film: an entity that captures moments in time and evokes emotions through sound and imagery.",
+        "Film: a creative work consisting of scenes, dialogue, and music that convey a cohesive story."
+      ]
+    },
+    "13": {
+      "l2": "WrittenWork: a literary composition that conveys ideas, stories, or information through written language.",
+      "l3": [
+        "WrittenWork: a composition that conveys ideas, stories, or information through written language.",
+        "WrittenWork: an entity that encompasses novels, essays, and poetry, showcasing diverse literary forms and styles.",
+        "WrittenWork: a narrative consisting of chapters and sections that guide readers through its themes and messages."
+      ]
+    }
   }
 }

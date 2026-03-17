@@ -1,322 +1,226 @@
 [
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 0,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 0,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 1,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 1,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 2,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 2,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 3,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 3,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 4,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 4,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 5,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 5,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 6,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 6,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 7,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 7,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 8,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 8,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 9,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 9,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 10,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 10,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 11,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 11,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 12,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 12,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 13,
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   },
   {
-    "dataset": "SetFit/20_newsgroups",
+    "dataset": "dbpedia_14",
     "label_id": 13,
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 14,
-    "label_mode": "L2",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 14,
-    "label_mode": "L3",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 15,
-    "label_mode": "L2",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 15,
-    "label_mode": "L3",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 16,
-    "label_mode": "L2",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 16,
-    "label_mode": "L3",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 17,
-    "label_mode": "L2",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 17,
-    "label_mode": "L3",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 18,
-    "label_mode": "L2",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 18,
-    "label_mode": "L3",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 19,
-    "label_mode": "L2",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
-  },
-  {
-    "dataset": "SetFit/20_newsgroups",
-    "label_id": 19,
-    "label_mode": "L3",
-    "source_type": "llm_fallback",
-    "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:45:06.477584+00:00"
+    "generated_at": "2026-03-17T16:33:26.826933+00:00"
   }
 ]

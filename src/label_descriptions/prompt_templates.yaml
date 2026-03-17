@@ -43,10 +43,14 @@ templates:
       Output ONLY the completed sentence. Nothing else.
     l3: |
       Write exactly 3 sentences defining the entity type "{label_name}".
-      Each sentence MUST start with "{label_name}:" and be 10-20 words.
-      Use different angles for each sentence: (1) what it is, (2) what it does, (3) how it is structured.
+      Each sentence MUST start with "{label_name}:" followed by a compact phrase.
+      Use these patterns (one per sentence, each with different keywords):
+        "{label_name}: a ___ that ___."
+        "{label_name}: an entity that ___ and ___."
+        "{label_name}: a ___ consisting of ___ and ___."
       Rules:
       - Each sentence must use different keywords from the others.
+      - Each sentence must be 10-20 words.
       - Do NOT use phrases like "this category", "refers to", "such as", "for example".
       Output ONLY the 3 sentences, one per line. Nothing else.
 
