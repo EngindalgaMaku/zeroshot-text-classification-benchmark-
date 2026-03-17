@@ -1,0 +1,29 @@
+experiment_name: exp_20newsgroups_bge_l3_anchored
+dataset:
+  name: SetFit/20_newsgroups
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: 2000
+task:
+  type: zero_shot_classification
+  label_mode: l3_anchored
+  language: en
+models:
+  biencoder:
+    provider: hf
+    name: BAAI/bge-m3
+  reranker: null
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+  batch_size: 32
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+output:
+  save_predictions: true
+  save_metrics: true
+  output_dir: results/raw/label_semantics
