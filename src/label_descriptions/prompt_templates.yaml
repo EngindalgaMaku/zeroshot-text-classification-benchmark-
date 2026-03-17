@@ -1,0 +1,23 @@
+supported_task_types:
+  - topic
+  - entity
+  - sentiment
+  - emotion
+  - intent
+
+templates:
+  topic:
+    l2: 'You are generating an L2 label description for a topic classification task. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Use a topic frame (themes, subject matter). Dataset: {dataset_name}. Label: {label_name}.'
+    l3: 'You are generating an L3 label description for a topic classification task. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include the label text verbatim: "{label_name}" but focus on different topical aspects. Dataset: {dataset_name}. Label: {label_name}.'
+  entity:
+    l2: 'You are generating an L2 label description for an entity recognition/classification task. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Define the entity type and typical mentions. Dataset: {dataset_name}. Label: {label_name}.'
+    l3: 'You are generating an L3 label description for an entity recognition/classification task. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include "{label_name}" and highlight different identification cues or examples. Dataset: {dataset_name}. Label: {label_name}.'
+  sentiment:
+    l2: 'You are generating an L2 label description for sentiment analysis. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Describe the overall polarity and typical language. Dataset: {dataset_name}. Label: {label_name}.'
+    l3: 'You are generating an L3 label description for sentiment analysis. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include "{label_name}" and focus on different sentiment cues (tone, evaluation, intensity). Dataset: {dataset_name}. Label: {label_name}.'
+  emotion:
+    l2: 'You are generating an L2 label description for emotion detection. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Describe the emotion and common expressions. Dataset: {dataset_name}. Label: {label_name}.'
+    l3: 'You are generating an L3 label description for emotion detection. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include "{label_name}" and emphasize different emotional signals or contexts. Dataset: {dataset_name}. Label: {label_name}.'
+  intent:
+    l2: 'You are generating an L2 label description for intent classification. Write 1 sentence (12-25 words). You MUST include the exact label text "{label_name}" verbatim in your description - use underscores as shown. Describe the user goal/request. Dataset: {dataset_name}. Label: {label_name}. Example: For label "transfer_funds", write: "The user wants to transfer_funds between accounts securely."'
+    l3: 'You are generating an L3 label description for intent classification. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include the exact label text "{label_name}" verbatim with underscores. Cover different paraphrases or contexts. Dataset: {dataset_name}. Label: {label_name}.'
