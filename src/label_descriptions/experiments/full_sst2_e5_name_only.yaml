@@ -1,0 +1,29 @@
+experiment_name: full_sst2_e5_name_only
+dataset:
+  name: sst2
+  split: validation
+  text_column: sentence
+  label_column: label
+  max_samples: null
+task:
+  type: zero_shot_classification
+  label_mode: name_only
+  language: en
+models:
+  biencoder:
+    provider: hf
+    name: intfloat/multilingual-e5-large
+  reranker: null
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+  batch_size: 32
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+output:
+  save_predictions: false
+  save_metrics: true
+  output_dir: results/full_label_descriptions

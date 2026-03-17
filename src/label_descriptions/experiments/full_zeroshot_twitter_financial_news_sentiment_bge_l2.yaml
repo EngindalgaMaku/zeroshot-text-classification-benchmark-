@@ -1,0 +1,29 @@
+experiment_name: full_zeroshot_twitter_financial_news_sentiment_bge_l2
+dataset:
+  name: zeroshot/twitter-financial-news-sentiment
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: null
+task:
+  type: zero_shot_classification
+  label_mode: l2
+  language: en
+models:
+  biencoder:
+    provider: hf
+    name: BAAI/bge-large-en-v1.5
+  reranker: null
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+  batch_size: 32
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+output:
+  save_predictions: false
+  save_metrics: true
+  output_dir: results/full_label_descriptions

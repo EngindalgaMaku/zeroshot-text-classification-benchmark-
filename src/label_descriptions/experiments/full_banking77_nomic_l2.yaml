@@ -1,0 +1,29 @@
+experiment_name: full_banking77_nomic_l2
+dataset:
+  name: banking77
+  split: test
+  text_column: text
+  label_column: label
+  max_samples: null
+task:
+  type: zero_shot_classification
+  label_mode: l2
+  language: en
+models:
+  biencoder:
+    provider: hf
+    name: nomic-ai/nomic-embed-text-v1
+  reranker: null
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+  batch_size: 32
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+output:
+  save_predictions: false
+  save_metrics: true
+  output_dir: results/full_label_descriptions

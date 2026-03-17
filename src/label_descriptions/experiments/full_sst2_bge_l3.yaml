@@ -1,0 +1,29 @@
+experiment_name: full_sst2_bge_l3
+dataset:
+  name: sst2
+  split: validation
+  text_column: sentence
+  label_column: label
+  max_samples: null
+task:
+  type: zero_shot_classification
+  label_mode: l3
+  language: en
+models:
+  biencoder:
+    provider: hf
+    name: BAAI/bge-large-en-v1.5
+  reranker: null
+pipeline:
+  mode: biencoder
+  normalize_embeddings: true
+  batch_size: 32
+evaluation:
+  metrics:
+  - accuracy
+  - macro_f1
+  - per_class_f1
+output:
+  save_predictions: false
+  save_metrics: true
+  output_dir: results/full_label_descriptions
