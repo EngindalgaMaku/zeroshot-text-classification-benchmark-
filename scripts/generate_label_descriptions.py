@@ -181,7 +181,10 @@ class DescriptionGenerator:
             Generated description string.
         """
         prompt = prompt_template.format(dataset_name=dataset_name, label_name=label_name)
-        return self._call_with_retry(prompt)
+        result = self._call_with_retry(prompt)
+        # Strip wrapping quotes that some models add
+        result = result.strip().strip('"').strip("'").strip()
+        return result
 
     @staticmethod
     def _parse_l3_response(response: str) -> list:
@@ -200,6 +203,7 @@ class DescriptionGenerator:
         for line in lines:
             # Strip numbering like "1.", "2.", "3." or "1)", "2)", "3)"
             stripped = re.sub(r'^\d+[.)]\s*', '', line).strip()
+            stripped = stripped.strip('"').strip("'").strip()
             if stripped and len(stripped.split()) >= 5:
                 cleaned.append(stripped)
         

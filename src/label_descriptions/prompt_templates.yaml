@@ -1,10 +1,9 @@
-version: "final_v1"
+version: "final_v2"
 language: "en"
 notes:
   - "temperature=0 for reproducibility"
-  - "Each description MUST start with the exact label name"
-  - "Compact definitional style — no storytelling, no examples, no fluff"
-  - "Banned: 'this category', 'in this context', 'examples include', 'often', 'can be', 'refers to', 'such as'"
+  - "No content examples in prompts — format constraints only (avoids prompt leakage)"
+  - "Output MUST start with label name, be 10-25 words, no banned patterns"
 
 supported_task_types:
   - topic
@@ -16,95 +15,84 @@ supported_task_types:
 templates:
   topic:
     l2: |
-      Write one sentence (12-20 words) defining the topic category "{label_name}".
-      The sentence MUST start with "{label_name}:" followed by a compact definition.
-      Focus on the type of content. No examples. No storytelling. No fluff.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the sentence, nothing else.
-      Example format: "World: news about international politics, global events, diplomacy, and cross-country developments."
+      Complete this sentence for the news topic "{label_name}":
+      "{label_name}: news about ___"
+      Fill in the blank with 4-8 specific, distinct keywords (comma-separated noun phrases).
+      The output MUST start with "{label_name}:" and be a single compact sentence.
+      Output ONLY the completed sentence. Nothing else.
     l3: |
-      Write exactly 3 sentences (12-20 words each) defining the topic category "{label_name}".
-      Each sentence MUST start with "{label_name}:" followed by a compact definition from a different angle.
-      No examples. No storytelling. No fluff. Each sentence must be semantically distinct.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the 3 sentences, one per line, nothing else.
-      Example format:
-      World: news about international politics, global events, diplomacy, and cross-country developments.
-      World: coverage of conflicts, international organizations, and cross-border geopolitical issues.
-      World: reporting on foreign affairs, global crises, and worldwide political developments.
+      Write exactly 3 sentences for the news topic "{label_name}".
+      Each sentence MUST start with "{label_name}:" followed by a compact phrase.
+      Use these patterns (one per sentence, each with different keywords):
+        "{label_name}: news about X, Y, and Z."
+        "{label_name}: coverage of X, Y, and Z."
+        "{label_name}: reporting on X, Y, and Z."
+      Rules:
+      - Each sentence must use different keywords from the others.
+      - Each sentence must be 10-20 words.
+      - Do NOT repeat keywords across sentences.
+      Output ONLY the 3 sentences, one per line. Nothing else.
 
   entity:
     l2: |
-      Write one sentence (12-20 words) defining the entity type "{label_name}".
-      The sentence MUST start with "{label_name}:" followed by a compact definition.
-      Focus on what kind of real-world object or concept it is. No examples. No storytelling.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the sentence, nothing else.
-      Example format: "Company: a commercial organization that produces goods or services for profit."
+      Complete this sentence for the entity type "{label_name}":
+      "{label_name}: a ___ that ___"
+      Fill in with a compact noun phrase + verb phrase (total sentence 10-20 words).
+      The output MUST start with "{label_name}:" and be a single compact definitional sentence.
+      Output ONLY the completed sentence. Nothing else.
     l3: |
-      Write exactly 3 sentences (12-20 words each) defining the entity type "{label_name}".
-      Each sentence MUST start with "{label_name}:" followed by a compact definition from a different angle.
-      No examples. No storytelling. Each sentence must be semantically distinct.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the 3 sentences, one per line, nothing else.
-      Example format:
-      Company: a commercial organization that produces goods or services for profit.
-      Company: a legal entity engaged in business activities, trade, or manufacturing.
-      Company: an incorporated business structure with employees, assets, and financial operations.
+      Write exactly 3 sentences defining the entity type "{label_name}".
+      Each sentence MUST start with "{label_name}:" and be 10-20 words.
+      Use different angles for each sentence: (1) what it is, (2) what it does, (3) how it is structured.
+      Rules:
+      - Each sentence must use different keywords from the others.
+      - Do NOT use phrases like "this category", "refers to", "such as", "for example".
+      Output ONLY the 3 sentences, one per line. Nothing else.
 
   sentiment:
     l2: |
-      Write one sentence (12-20 words) defining the sentiment "{label_name}".
-      The sentence MUST start with "{label_name}:" followed by a compact definition.
-      Focus on emotional tone and polarity. No examples. No storytelling.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the sentence, nothing else.
-      Example format: "Positive: text expressing approval, satisfaction, happiness, or favorable evaluation."
+      Complete this sentence for the sentiment label "{label_name}":
+      "{label_name}: text expressing ___"
+      Fill in with 4-7 specific emotional or evaluative keywords (comma-separated).
+      The output MUST start with "{label_name}:" and be a single compact sentence.
+      Output ONLY the completed sentence. Nothing else.
     l3: |
-      Write exactly 3 sentences (12-20 words each) defining the sentiment "{label_name}".
-      Each sentence MUST start with "{label_name}:" followed by a compact definition from a different angle.
-      No examples. No storytelling. Each sentence must be semantically distinct.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the 3 sentences, one per line, nothing else.
-      Example format:
-      Positive: text expressing approval, satisfaction, happiness, or favorable evaluation.
-      Positive: language conveying optimism, praise, enthusiasm, or positive emotional tone.
-      Positive: writing that reflects contentment, agreement, or affirmative sentiment toward a subject.
+      Write exactly 3 sentences for the sentiment label "{label_name}".
+      Each sentence MUST start with "{label_name}:" and be 10-20 words.
+      Use different angles for each sentence: (1) emotional tone, (2) linguistic markers, (3) evaluative stance.
+      Rules:
+      - Each sentence must use different keywords from the others.
+      - Do NOT use phrases like "this category", "refers to", "such as", "for example".
+      Output ONLY the 3 sentences, one per line. Nothing else.
 
   emotion:
     l2: |
-      Write one sentence (12-20 words) defining the emotion "{label_name}".
-      The sentence MUST start with "{label_name}:" followed by a compact definition.
-      Focus on the psychological state and feeling. No examples. No storytelling.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the sentence, nothing else.
-      Example format: "Joy: an intense feeling of happiness, pleasure, and positive emotional arousal."
+      Complete this sentence for the emotion "{label_name}":
+      "{label_name}: an emotional state of ___"
+      Fill in with 4-7 specific psychological or affective keywords (comma-separated).
+      The output MUST start with "{label_name}:" and be a single compact sentence.
+      Output ONLY the completed sentence. Nothing else.
     l3: |
-      Write exactly 3 sentences (12-20 words each) defining the emotion "{label_name}".
-      Each sentence MUST start with "{label_name}:" followed by a compact definition from a different angle.
-      No examples. No storytelling. Each sentence must be semantically distinct.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the 3 sentences, one per line, nothing else.
-      Example format:
-      Joy: an intense feeling of happiness, pleasure, and positive emotional arousal.
-      Joy: a state of delight, contentment, and emotional well-being expressed outwardly.
-      Joy: the emotional experience of elation, cheerfulness, and enthusiastic positive affect.
+      Write exactly 3 sentences for the emotion "{label_name}".
+      Each sentence MUST start with "{label_name}:" and be 10-20 words.
+      Use different angles for each sentence: (1) internal feeling, (2) outward expression, (3) situational trigger.
+      Rules:
+      - Each sentence must use different keywords from the others.
+      - Do NOT use phrases like "this category", "refers to", "such as", "for example".
+      Output ONLY the 3 sentences, one per line. Nothing else.
 
   intent:
     l2: |
-      Write one sentence (12-20 words) defining the user intent "{label_name}".
-      The sentence MUST start with "{label_name}:" followed by a compact definition.
-      Focus on what the user wants to achieve. No examples. No storytelling.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the sentence, nothing else.
-      Example format: "activate_my_card: the user wants to activate a new or replacement bank card."
+      Complete this sentence for the user intent "{label_name}":
+      "{label_name}: the user wants to ___"
+      Fill in with a specific action description (total sentence 10-20 words).
+      The output MUST start with "{label_name}:" and be a single compact sentence.
+      Output ONLY the completed sentence. Nothing else.
     l3: |
-      Write exactly 3 sentences (12-20 words each) defining the user intent "{label_name}".
-      Each sentence MUST start with "{label_name}:" followed by a compact definition from a different angle.
-      No examples. No storytelling. Each sentence must be semantically distinct.
-      Banned phrases: "this category", "in this context", "refers to", "such as", "often", "can be".
-      Output only the 3 sentences, one per line, nothing else.
-      Example format:
-      activate_my_card: the user wants to activate a new or replacement bank card.
-      activate_my_card: the user is requesting card activation to enable payment functionality.
-      activate_my_card: the user needs their newly issued card enabled for transactions.
+      Write exactly 3 sentences for the user intent "{label_name}".
+      Each sentence MUST start with "{label_name}:" and be 10-20 words.
+      Use different angles for each sentence: (1) user goal, (2) specific action taken, (3) context or reason.
+      Rules:
+      - Each sentence must use different keywords from the others.
+      - Do NOT use phrases like "this category", "refers to", "such as", "for example".
+      Output ONLY the 3 sentences, one per line. Nothing else.

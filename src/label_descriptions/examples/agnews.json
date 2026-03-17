@@ -1,0 +1,36 @@
+{
+  "ag_news": {
+    "0": {
+      "l2": "World: news about international politics, diplomacy, conflicts, global affairs, and cross-country developments.",
+      "l3": [
+        "World: news about international relations, diplomacy, and global political events.",
+        "World: coverage of conflicts, international organizations, and cross-border issues.",
+        "World: reporting on foreign affairs, global crises, and worldwide developments."
+      ]
+    },
+    "1": {
+      "l2": "Sports: news about athletes, teams, matches, tournaments, competitions, and sporting events.",
+      "l3": [
+        "Sports: news about teams, athletes, matches, and competitive events.",
+        "Sports: coverage of tournaments, leagues, game results, and player performance.",
+        "Sports: reporting on athletic competitions, sporting events, and related outcomes."
+      ]
+    },
+    "2": {
+      "l2": "Business: news about companies, markets, finance, investments, trade, and economic activity.",
+      "l3": [
+        "Business: news about companies, corporate activity, and financial markets.",
+        "Business: coverage of trade, investments, economic trends, and market developments.",
+        "Business: reporting on finance, industry, commerce, and business performance."
+      ]
+    },
+    "3": {
+      "l2": "Science and Technology: news about scientific research, inventions, computing, technology, and innovation.",
+      "l3": [
+        "Science and Technology: news about research, technological innovation, and scientific progress.",
+        "Science and Technology: coverage of computing, engineering, discoveries, and new technologies.",
+        "Science and Technology: reporting on science, digital systems, inventions, and technical developments."
+      ]
+    }
+  }
+}

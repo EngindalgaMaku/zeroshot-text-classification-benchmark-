@@ -1,0 +1,36 @@
+{
+  "ag_news": {
+    "0": {
+      "l2": "World: news about international relations, global economies, climate change, humanitarian crises, geopolitical conflicts, cultural exchanges, technological advancements.",
+      "l3": [
+        "World: news about climate change, global health, and international trade agreements.",
+        "World: coverage of humanitarian crises, refugee movements, and economic recovery efforts.",
+        "World: reporting on technological advancements, cultural exchanges, and geopolitical tensions."
+      ]
+    },
+    "1": {
+      "l2": "Sports: news about athletes, competitions, game results, injuries, team standings, player trades, and event highlights.",
+      "l3": [
+        "Sports: news about basketball playoffs, soccer championships, and tennis tournaments.",
+        "Sports: coverage of Olympic athletes, world records, and international competitions.",
+        "Sports: reporting on football injuries, coaching changes, and player trades."
+      ]
+    },
+    "2": {
+      "l2": "Business: news about market trends, corporate earnings, mergers and acquisitions, startup funding, economic indicators, industry regulations, consumer behavior.",
+      "l3": [
+        "Business: news about mergers, acquisitions, and market trends shaping the global economy.",
+        "Business: coverage of startups, venture capital, and innovation driving technological advancements in various industries.",
+        "Business: reporting on employment rates, wage growth, and consumer spending influencing economic recovery post-pandemic."
+      ]
+    },
+    "3": {
+      "l2": "Sci/Tech: news about artificial intelligence, quantum computing, renewable energy, biotechnology, space exploration, cybersecurity, virtual reality.",
+      "l3": [
+        "Sci/Tech: news about artificial intelligence, quantum computing, and renewable energy advancements.",
+        "Sci/Tech: coverage of cybersecurity threats, blockchain technology, and space exploration missions.",
+        "Sci/Tech: reporting on biotechnology innovations, 5G networks, and virtual reality applications."
+      ]
+    }
+  }
+}
