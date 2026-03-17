@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.702,
+  "macro_f1": 0.7002736315188005,
+  "weighted_f1": 0.6998192534144997,
+  "macro_precision": 0.710878212804159,
+  "macro_recall": 0.7047355336537272,
+  "classification_report": {
+    "0": {
+      "precision": 0.8076923076923077,
+      "recall": 0.5526315789473685,
+      "f1-score": 0.65625,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.8302583025830258,
+      "recall": 0.9146341463414634,
+      "f1-score": 0.8704061895551257,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.6425992779783394,
+      "recall": 0.7235772357723578,
+      "f1-score": 0.6806883365200764,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.562962962962963,
+      "recall": 0.628099173553719,
+      "f1-score": 0.59375,
+      "support": 242.0
+    },
+    "accuracy": 0.702,
+    "macro avg": {
+      "precision": 0.710878212804159,
+      "recall": 0.7047355336537272,
+      "f1-score": 0.7002736315188005,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.7134061557012867,
+      "recall": 0.702,
+      "f1-score": 0.6998192534144997,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      147,
+      34,
+      28,
+      57
+    ],
+    [
+      4,
+      225,
+      9,
+      8
+    ],
+    [
+      9,
+      6,
+      178,
+      53
+    ],
+    [
+      22,
+      6,
+      62,
+      152
+    ]
+  ],
+  "mean_confidence": 0.1289606467364356,
+  "std_confidence": 0.08231937335582964,
+  "mean_confidence_correct": 0.13265471027214132,
+  "mean_confidence_incorrect": 0.12025852391071268,
+  "experiment_name": "exp_ag_news_mpnet_l3_anchored",
+  "dataset": "ag_news",
+  "label_mode": "l3_anchored",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.4362161159515381
+    },
+    {
+      "text": "Lucent's history a case study in wild rides If you've ever wondered what ignited America's late-1990s obsession with telecom and tech stocks, you could well argue it all started with Lucent Technologi",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.37608802318573
+    },
+    {
+      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.36389991641044617
+    },
+    {
+      "text": "Mars water tops science honours The discovery that salty, acidic water once flowed across the surface of Mars has topped a list of the 10 key scientific advances of 2004.",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.36245161294937134
+    },
+    {
+      "text": "King Pong Draws Fans Spike TV's Video Game Awards Show attracts big-name celebrities and bands but gives the fans the votes.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.33036690950393677
+    },
+    {
+      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.32026463747024536
+    },
+    {
+      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3156778812408447
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.3070088028907776
+    },
+    {
+      "text": "Ballmer: Microsoft is listening to customers Microsoft chief executive Steve Ballmer says the software giant is listening to customers, and wants to make the company and its employees more accountable",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.29516535997390747
+    },
+    {
+      "text": "Stocks to Watch on Dec. 1  NEW YORK (Reuters) - U.S. stocks to watch on Wednesday: IBM  CORP. &lt;A HREF=\"http://www.investor.reuters.com/FullQuote.aspx?ticker=IBM.N target=/stocks/quickinfo/fullquote",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.29323217272758484
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.28375497460365295
+    },
+    {
+      "text": "ObjectWeb adds portal content management middleware Using open-source modules instead of commercial alternatives -- even standards-based ones -- could save businesses money.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.27806299924850464
+    },
+    {
+      "text": "UN organizes open-source software day across Asia The United Nations, through its International Open Source Network (IOSN) will organize the first annual Software Freedom Day on Saturday in an effort ",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.27745959162712097
+    },
+    {
+      "text": "2004 Signals More Global Warming, Extreme Weather: UN (Reuters) Reuters - Global warming is set to continue, and\\bring with it an increase in extreme weather such as hurricanes\\and droughts, scientist",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.2684633433818817
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.2673858404159546
+    },
+    {
+      "text": "Ballmer strikes big rivals from Microsoft shopping list LISBON - Customers watching for Microsoft Corp. to make a headline-grabbing buy in the business applications market faced disappointment Tuesday",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.26104536652565
+    },
+    {
+      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.2552464008331299
+    },
+    {
+      "text": "September Retail Sales Up by 1.5 Percent WASHINGTON - Shoppers got their buying groove back last month, propelling sales at the nation's retailers by a strong 1.5 percent. It was the best showing sinc",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.25249552726745605
+    },
+    {
+      "text": "India, Russia must join hands to develop new tech: Putin Mr Vladimir V. Putin, President of the Russian Federation, Mr NR Narayana Murthy, Chief Mentor and Chairman, Infosys, and Mr Nandan Nilekani, C",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.2518119215965271
+    },
+    {
+      "text": "AMD's Q3 led by strong Opteron, Athlon 64 sales SAN FRANCISCO - As expected, Advanced Micro Devices Inc.'s (AMD's) third-quarter revenue came in a little under the company's earlier predictions, but s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.2511892318725586
+    }
+  ]
+}

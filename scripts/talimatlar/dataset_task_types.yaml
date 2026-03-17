@@ -1,0 +1,103 @@
+version: "final_v1"
+datasets:
+  ag_news:
+    task_type: topic
+    hf_name: ag_news
+    text_fields: [title, description]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Join title and description with a single space for text embedding."
+      - "Use class names: World, Sports, Business, Science and Technology."
+
+  yahoo_answers_topics:
+    task_type: topic
+    hf_name: yahoo_answers_topics
+    text_fields: [question_title, question_content, best_answer]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Concatenate available text fields with spaces."
+      - "Drop empty fields safely."
+
+  SetFit/20_newsgroups:
+    task_type: topic
+    hf_name: SetFit/20_newsgroups
+    text_fields: [text]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Use the raw text field only."
+
+  dbpedia_14:
+    task_type: entity
+    hf_name: dbpedia_14
+    text_fields: [title, content]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Join title and content with a single space."
+
+  banking77:
+    task_type: intent
+    hf_name: banking77
+    text_fields: [text]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Intent descriptions should reflect the user's goal or request."
+      - "Avoid generic banking glosses."
+
+  imdb:
+    task_type: sentiment
+    hf_name: imdb
+    text_fields: [text]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Use the review text field only."
+
+  sst2:
+    task_type: sentiment
+    hf_name: sst2
+    text_fields: [sentence]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Use the sentence field only."
+
+  zeroshot/twitter-financial-news-sentiment:
+    task_type: sentiment
+    hf_name: zeroshot/twitter-financial-news-sentiment
+    text_fields: [text]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Focus on financial market sentiment."
+
+  go_emotions:
+    task_type: emotion
+    hf_name: go_emotions
+    text_fields: [text]
+    label_mode_input_format:
+      l1: "{label_name}"
+      l2: "{label_name}: {description}"
+      l3: "{label_name}: {description}"
+    notes:
+      - "Emotion descriptions should capture internal feeling, expression, or situational trigger."

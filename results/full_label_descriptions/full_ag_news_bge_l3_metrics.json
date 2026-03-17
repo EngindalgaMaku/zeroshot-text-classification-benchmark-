@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.7531578947368421,
+  "macro_f1": 0.746438707577184,
+  "weighted_f1": 0.746438707577184,
+  "macro_precision": 0.7589471466018374,
+  "macro_recall": 0.7531578947368421,
+  "classification_report": {
+    "0": {
+      "precision": 0.7689530685920578,
+      "recall": 0.7847368421052632,
+      "f1-score": 0.7767647824954416,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.7160446325509812,
+      "recall": 0.9794736842105263,
+      "f1-score": 0.8272949544343188,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.764525993883792,
+      "recall": 0.6578947368421053,
+      "f1-score": 0.7072135785007072,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.7862648913805186,
+      "recall": 0.5905263157894737,
+      "f1-score": 0.6744815148782687,
+      "support": 1900.0
+    },
+    "accuracy": 0.7531578947368421,
+    "macro avg": {
+      "precision": 0.7589471466018374,
+      "recall": 0.7531578947368421,
+      "f1-score": 0.746438707577184,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.7589471466018374,
+      "recall": 0.7531578947368421,
+      "f1-score": 0.746438707577184,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1491,
+      231,
+      76,
+      102
+    ],
+    [
+      18,
+      1861,
+      15,
+      6
+    ],
+    [
+      297,
+      156,
+      1250,
+      197
+    ],
+    [
+      133,
+      351,
+      294,
+      1122
+    ]
+  ],
+  "mean_confidence": 0.4722661795780847,
+  "std_confidence": 0.044006831009882307,
+  "mean_confidence_correct": 0.47642275804535317,
+  "mean_confidence_incorrect": 0.4595837408005556,
+  "experiment_name": "full_ag_news_bge_l3",
+  "dataset": "ag_news",
+  "label_mode": "l3",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "BAAI/bge-large-en-v1.5",
+  "top_errors": [
+    {
+      "text": "Boeing, Airbus competition escalates into trade war A decades-long struggle between the world's two largest aircraft makers escalated into a trade war between the United States and Europe, just as Fra",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.6347978711128235
+    },
+    {
+      "text": "New trade war erupts over Boeing, Airbus A decades-long struggle between the world #39;s two largest aircraft makers escalated into a new trade war between the United States and Europe, just as France",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.6305357217788696
+    },
+    {
+      "text": "IMF urged to assist countries in prevention of financial crisis Developing countries on Friday urged the International Monetary Fund (IMF to develop effective lending facilities to assist countries in",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.628305196762085
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.6159080266952515
+    },
+    {
+      "text": "No quick fix in Boeing-Airbus talks World Trade Organization (WTO) talks on a transatlantic row over plane subsidies will bring no quick fix for what could be the biggest commercial dispute in WTO his",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.6108857989311218
+    },
+    {
+      "text": "Alternative Energy: Ready or not? Even with a boost from higher oil prices and growing concern about global warming, the payoff on most alternative energy technologies seems a ways off.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.605526328086853
+    },
+    {
+      "text": "Trading blows When a can of worms is opened, all manner of slimy things crawl out. So it was when the US government fired the first shots in a fusillade against the European Union - by complaining to ",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.6011661887168884
+    },
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6004641056060791
+    },
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5990555882453918
+    },
+    {
+      "text": "Research Is Definitely in Motion The Blackberry wireless device maker is straining to exceed expectations.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5982860922813416
+    },
+    {
+      "text": "Stocks Close Higher on Brokerage Earnings NEW YORK - Stocks dashed higher Tuesday as investors welcomed strong earnings from financial services companies, upbeat economic data and some reassuring news",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5923329591751099
+    },
+    {
+      "text": "Optimism Drives Google Shares to New Highs (Reuters) Reuters - Stock of Google Inc.  powered\\to new highs on Friday, buoyed by the web search leader's new\\products and growth prospects, which compleme",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5876736640930176
+    },
+    {
+      "text": "TheStreet.com May Be Up for Sale -- Report (Reuters) Reuters - TheStreet.com Inc. , the\\financial news and commentary Web site, may be up for sale,\\according to a report in Business Week, sparking a 7",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5876674652099609
+    },
+    {
+      "text": "Bounties For Spammers Win  Limited FTC Backing The FTC gave limited endorsement to the notion of cash rewards for people who help track down e-mail spammers, but suggested that the measure might work ",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5876432061195374
+    },
+    {
+      "text": "Stocks Climb on Drop in Consumer Prices NEW YORK - Stocks rose for a second straight session Tuesday as a drop in consumer prices allowed investors to put aside worries about inflation, at least for t",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5848715305328369
+    },
+    {
+      "text": "Stocks Sink on Coke's Gloomy Forecast NEW YORK - Stocks headed lower Wednesday after beverage giant Coca-Cola Co. issued a gloomy forecast, and a lower-than-expected reading on industrial production f",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5808005928993225
+    },
+    {
+      "text": "IMF, World Bank look to keep global recovery strong (AFP) AFP - Facing a global economy on the mend but threatened by surging oil prices and other factors, IMF and World Bank policymakers opened two d",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5804361701011658
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.578899085521698
+    },
+    {
+      "text": "Crunch Time for Biotech Companies Washington area biotech companies will face pivotal moments this year, finding out whether key products work before money dries up, fending off competition from bigge",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5771240592002869
+    },
+    {
+      "text": "China at G-7 Meeting for First Time China made its debut last night in the club of the world's leading economic powers, asinternational pressure mounts to change a decade-old currency peg that critics",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5769732594490051
+    }
+  ]
+}

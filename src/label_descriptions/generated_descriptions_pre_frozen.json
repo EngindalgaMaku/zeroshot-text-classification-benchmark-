@@ -1,0 +1,46 @@
+{
+  "dbpedia_14": {
+    "0": {
+      "error": "L3 generation failed for label='Company' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'A company is an organized group of individuals working together to produce goods or provide services for profit. Structurally, it can take various forms, such as corporations, partnerships, or sole proprietorships, each with distinct legal implications. Examples of companies range from multinational corporations like Apple and Google to small local businesses like family-owned restaurants or shops.'"
+    },
+    "1": {
+      "error": "L3 generation failed for label='EducationalInstitution' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'Educational institutions are organizations dedicated to providing structured learning environments for students of various ages. They typically include schools, colleges, and universities, each offering different levels of education and specialized programs. Examples of educational institutions range from primary schools that teach foundational skills to prestigious universities that conduct advanced research and offer graduate degrees.'"
+    },
+    "2": {
+      "error": "L3 generation failed for label='Artist' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'An artist is a creative individual who produces visual, auditory, or performance works to express ideas and emotions. Structurally, artists may work in various mediums, including painting, sculpture, music, and dance, showcasing their unique styles. Examples of renowned artists include Vincent van Gogh, Frida Kahlo, and Pablo Picasso, each contributing significantly to their respective fields.'"
+    },
+    "3": {
+      "error": "L3 generation failed for label='Athlete' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'Athletes are individuals who engage in physical sports or activities, often competing at various levels of skill and intensity. They typically possess specialized training, discipline, and physical attributes that enhance their performance in their chosen sport. Examples of athletes include professional football players, Olympic swimmers, and amateur runners who participate in local competitions.'"
+    },
+    "4": {
+      "error": "L3 generation failed for label='OfficeHolder' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'An OfficeHolder is an individual who occupies a position of authority within a governmental or organizational structure. Typically, they are responsible for making decisions, implementing policies, and representing their constituents or organization. Examples of OfficeHolders include mayors, senators, and corporate executives who hold significant leadership roles.'"
+    },
+    "5": {
+      "error": "L3 generation failed for label='MeanOfTransportation' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'Mean of transportation refers to various methods used to move people or goods from one location to another. This category includes vehicles such as cars, buses, trains, bicycles, and airplanes, each designed for specific travel needs. The structure of these means can vary significantly, ranging from simple, human-powered designs to complex, motorized systems with advanced technology.'"
+    },
+    "6": {
+      "error": "L3 generation failed for label='Building' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'A building serves as a physical structure designed for various human activities, such as living, working, or recreation. Typically composed of materials like concrete, steel, and glass, buildings can vary in height, shape, and architectural style. Examples of buildings include residential homes, office towers, schools, and shopping malls, each serving distinct purposes within a community.'"
+    },
+    "7": {
+      "error": "L3 generation failed for label='NaturalPlace' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'NaturalPlaces are locations in the environment that are primarily shaped by natural processes rather than human intervention. These areas often feature diverse ecosystems, including forests, mountains, rivers, and oceans, showcasing the beauty of nature. Examples of NaturalPlaces include national parks, wildlife reserves, and pristine beaches that provide habitats for various species.'"
+    },
+    "8": {
+      "error": "L3 generation failed for label='Village' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'A village is a small community typically located in a rural area, often characterized by close-knit social ties. Structurally, villages usually consist of residential homes, local businesses, and communal spaces like parks or squares. Examples of villages can be found worldwide, ranging from quaint English hamlets to traditional Indian settlements.'"
+    },
+    "9": {
+      "error": "L3 generation failed for label='Animal' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'Animals are living organisms that exhibit movement, growth, reproduction, and response to stimuli in their environments. Structurally, they are composed of cells that lack cell walls, distinguishing them from plants and fungi. Common examples of animals include mammals like dogs and cats, birds such as eagles and sparrows, and aquatic creatures like fish and whales.'"
+    },
+    "10": {
+      "error": "L3 generation failed for label='Plant' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'Plants are living organisms that perform photosynthesis, converting sunlight into energy to sustain their growth. Structurally, they consist of roots, stems, leaves, and reproductive organs, each serving a specific function in their life cycle. Common examples of plants include trees, shrubs, flowers, and grasses, showcasing the diversity of this vital kingdom.'"
+    },
+    "11": {
+      "error": "L3 generation failed for label='Album' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'An album is a collection of audio tracks, typically organized around a central theme or concept. Structurally, albums can vary in format, including digital downloads, vinyl records, or CDs, each offering a unique listening experience. Examples of popular albums include \"Thriller\" by Michael Jackson, \"The Dark Side of the Moon\" by Pink Floyd, and \"Lemonade\" by Beyoncé.'"
+    },
+    "12": {
+      "error": "L3 generation failed for label='Film' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: \"Films are visual storytelling mediums that combine moving images, sound, and narrative to entertain or inform audiences. Structurally, films are typically composed of scenes and sequences, utilizing techniques like editing, cinematography, and sound design to enhance the viewer's experience. Examples of films range from feature-length blockbusters and independent productions to documentaries and animated shorts, showcasing diverse genres and themes.\""
+    },
+    "13": {
+      "error": "L3 generation failed for label='WrittenWork' task_type='entity': L3 generation returned fewer than 3 descriptions after retry (got 1). Raw response: 'A WrittenWork is a structured composition of text that conveys ideas, stories, or information to an audience. It can take various forms, including novels, essays, articles, and poems, each serving distinct purposes. Common examples of WrittenWorks include classic literature like \"Pride and Prejudice,\" academic papers, and contemporary blog posts.'"
+    }
+  }
+}

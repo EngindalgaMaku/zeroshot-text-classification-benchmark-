@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.8807339449541285,
+  "macro_f1": 0.8803405270463553,
+  "weighted_f1": 0.8804664207768428,
+  "macro_precision": 0.8834080241276044,
+  "macro_recall": 0.8799781089500716,
+  "classification_report": {
+    "0": {
+      "precision": 0.9111675126903553,
+      "recall": 0.8387850467289719,
+      "f1-score": 0.8734793187347932,
+      "support": 428.0
+    },
+    "1": {
+      "precision": 0.8556485355648535,
+      "recall": 0.9211711711711712,
+      "f1-score": 0.8872017353579176,
+      "support": 444.0
+    },
+    "accuracy": 0.8807339449541285,
+    "macro avg": {
+      "precision": 0.8834080241276044,
+      "recall": 0.8799781089500716,
+      "f1-score": 0.8803405270463553,
+      "support": 872.0
+    },
+    "weighted avg": {
+      "precision": 0.882898675713609,
+      "recall": 0.8807339449541285,
+      "f1-score": 0.8804664207768428,
+      "support": 872.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      359,
+      69
+    ],
+    [
+      35,
+      409
+    ]
+  ],
+  "mean_confidence": 0.904589936752385,
+  "std_confidence": 0.018285893770339432,
+  "mean_confidence_correct": 0.9044737825946262,
+  "mean_confidence_incorrect": 0.9054476905327576,
+  "experiment_name": "full_sst2_instructor_large_name_only",
+  "dataset": "sst2",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 872,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "as unseemly as its title suggests . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9533912539482117
+    },
+    {
+      "text": "that 's a cheat . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9514533877372742
+    },
+    {
+      "text": "directed in a paint-by-numbers manner . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9504064917564392
+    },
+    {
+      "text": "that 's pure pr hype . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9444797039031982
+    },
+    {
+      "text": "one long string of cliches . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9434280395507812
+    },
+    {
+      "text": "funny but perilously slight . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9399003982543945
+    },
+    {
+      "text": "a by-the-numbers patient/doctor pic that covers all the usual ground ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9387015104293823
+    },
+    {
+      "text": "minority report is exactly what the title indicates , a report . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9366368055343628
+    },
+    {
+      "text": "how do you spell cliché ? ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9352128505706787
+    },
+    {
+      "text": "good film , but very glum . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.934569776058197
+    },
+    {
+      "text": "a painfully funny ode to bad behavior . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9326992034912109
+    },
+    {
+      "text": "hilariously inept and ridiculous . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9324774742126465
+    },
+    {
+      "text": "and the lesson , in the end , is nothing new . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9316030740737915
+    },
+    {
+      "text": "but it still jingles in the pocket . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9311321377754211
+    },
+    {
+      "text": "holden caulfield did it better . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9308450222015381
+    },
+    {
+      "text": "among the year 's most intriguing explorations of alientation . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9285584688186646
+    },
+    {
+      "text": "it has all the excitement of eating oatmeal . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.925346314907074
+    },
+    {
+      "text": "plays like a volatile and overlong w magazine fashion spread . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9248124361038208
+    },
+    {
+      "text": "jones ... does offer a brutal form of charisma . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9236063957214355
+    },
+    {
+      "text": "basically a static series of semi-improvised ( and semi-coherent ) raps between the stars . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9229646921157837
+    }
+  ]
+}

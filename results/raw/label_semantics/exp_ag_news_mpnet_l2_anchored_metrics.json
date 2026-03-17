@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.722,
+  "macro_f1": 0.7184327063586006,
+  "weighted_f1": 0.7183319354197949,
+  "macro_precision": 0.7217547946572552,
+  "macro_recall": 0.7231109420396384,
+  "classification_report": {
+    "0": {
+      "precision": 0.7544642857142857,
+      "recall": 0.6353383458646616,
+      "f1-score": 0.689795918367347,
+      "support": 266.0
+    },
+    "1": {
+      "precision": 0.8458646616541353,
+      "recall": 0.9146341463414634,
+      "f1-score": 0.87890625,
+      "support": 246.0
+    },
+    "2": {
+      "precision": 0.6421404682274248,
+      "recall": 0.7804878048780488,
+      "f1-score": 0.7045871559633028,
+      "support": 246.0
+    },
+    "3": {
+      "precision": 0.6445497630331753,
+      "recall": 0.5619834710743802,
+      "f1-score": 0.6004415011037527,
+      "support": 242.0
+    },
+    "accuracy": 0.722,
+    "macro avg": {
+      "precision": 0.7217547946572552,
+      "recall": 0.7231109420396384,
+      "f1-score": 0.7184327063586006,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.7227178046048922,
+      "recall": 0.722,
+      "f1-score": 0.7183319354197949,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      169,
+      25,
+      31,
+      41
+    ],
+    [
+      9,
+      225,
+      9,
+      3
+    ],
+    [
+      15,
+      8,
+      192,
+      31
+    ],
+    [
+      31,
+      8,
+      67,
+      136
+    ]
+  ],
+  "mean_confidence": 0.13309190196020063,
+  "std_confidence": 0.08021646802162584,
+  "mean_confidence_correct": 0.13350408504281058,
+  "mean_confidence_incorrect": 0.13202141208378196,
+  "experiment_name": "exp_ag_news_mpnet_l2_anchored",
+  "dataset": "ag_news",
+  "label_mode": "l2_anchored",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.513521671295166
+    },
+    {
+      "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.38394695520401
+    },
+    {
+      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.36287057399749756
+    },
+    {
+      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.35601693391799927
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.34995967149734497
+    },
+    {
+      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3441588282585144
+    },
+    {
+      "text": "Boeing, IBM Strategic Alliance Boosts Net-Centric Technology From the 1950 #39;s until the present, one of the dominant companies in the world #39;s computer industry. Offers a variety of data process",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3401828110218048
+    },
+    {
+      "text": "Mars water tops science honours The discovery that salty, acidic water once flowed across the surface of Mars has topped a list of the 10 key scientific advances of 2004.",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.3277222514152527
+    },
+    {
+      "text": "UN organizes open-source software day across Asia The United Nations, through its International Open Source Network (IOSN) will organize the first annual Software Freedom Day on Saturday in an effort ",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.3200153112411499
+    },
+    {
+      "text": "September Retail Sales Up by 1.5 Percent WASHINGTON - Shoppers got their buying groove back last month, propelling sales at the nation's retailers by a strong 1.5 percent. It was the best showing sinc",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.29378649592399597
+    },
+    {
+      "text": "IBM to report on computer security threats IBM on Monday plans to begin releasing a monthly report of threats to computer networks in an effort to establish an indicator similar to the US government #",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.2863103747367859
+    },
+    {
+      "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.28490501642227173
+    },
+    {
+      "text": "ObjectWeb adds portal content management middleware Using open-source modules instead of commercial alternatives -- even standards-based ones -- could save businesses money.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.27706652879714966
+    },
+    {
+      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.2768072485923767
+    },
+    {
+      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.275446355342865
+    },
+    {
+      "text": "Ballmer: Microsoft is listening to customers Microsoft chief executive Steve Ballmer says the software giant is listening to customers, and wants to make the company and its employees more accountable",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.27355292439460754
+    },
+    {
+      "text": "IT Heavies Launch  quot;MegaGrid quot; Project SAN FRANCISCO -- Four mainstream IT companies are pooling resources to launch a standardized enterprise grid infrastructure based on their products.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.2693336308002472
+    },
+    {
+      "text": "IBM Updates WebSphere Application Server The Express version of the new WebSphere server is targeted at the small and midsized business market.  quot;The SMB market has become much more pivotal and cr",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.26343658566474915
+    },
+    {
+      "text": "Collaboration suite to help secure tonight's Bush-Kerry debate The U.S. Secret Service and a throng of police and emergency management officials in Missouri will for the first time use a customized Mi",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.25771045684814453
+    },
+    {
+      "text": "Ballmer strikes big rivals from Microsoft shopping list LISBON - Customers watching for Microsoft Corp. to make a headline-grabbing buy in the business applications market faced disappointment Tuesday",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.2551283538341522
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.715,
+  "macro_f1": 0.7133878064110623,
+  "weighted_f1": 0.7118830923947204,
+  "macro_precision": 0.734026902059689,
+  "macro_recall": 0.7237966033564466,
+  "classification_report": {
+    "0": {
+      "precision": 0.6475409836065574,
+      "recall": 0.8494623655913979,
+      "f1-score": 0.7348837209302326,
+      "support": 93.0
+    },
+    "1": {
+      "precision": 0.8205128205128205,
+      "recall": 0.5981308411214953,
+      "f1-score": 0.6918918918918919,
+      "support": 107.0
+    },
+    "accuracy": 0.715,
+    "macro avg": {
+      "precision": 0.734026902059689,
+      "recall": 0.7237966033564466,
+      "f1-score": 0.7133878064110623,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.7400809163514082,
+      "recall": 0.715,
+      "f1-score": 0.7118830923947204,
+      "support": 200.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      79,
+      14
+    ],
+    [
+      43,
+      64
+    ]
+  ],
+  "mean_confidence": 0.20807998726144433,
+  "std_confidence": 0.08258384276686864,
+  "mean_confidence_correct": 0.20735258648132945,
+  "mean_confidence_incorrect": 0.20990486992032906,
+  "experiment_name": "quick_test_sst2_mpnet_l3",
+  "dataset": "sst2",
+  "label_mode": "l3",
+  "pipeline_mode": "biencoder",
+  "num_samples": 200,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "travels a fascinating arc from hope and euphoria to reality and disillusionment . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.5323606729507446
+    },
+    {
+      "text": "it offers little beyond the momentary joys of pretty and weightless intellectual entertainment . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.36678603291511536
+    },
+    {
+      "text": "a spellbinding african film about the modern condition of rootlessness , a state experienced by millions around the globe . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3465659022331238
+    },
+    {
+      "text": "it 's inoffensive , cheerful , built to inspire the young people , set to an unending soundtrack of beach party pop numbers and aside from its remarkable camerawork and awesome scenery , it 's about a",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.34636569023132324
+    },
+    {
+      "text": "about a manga-like heroine who fights back at her abusers , it 's energetic and satisfying if not deep and psychological . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3415141701698303
+    },
+    {
+      "text": "it 's a stunning lyrical work of considerable force and truth . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3316865563392639
+    },
+    {
+      "text": "majidi is an unconventional storyteller , capable of finding beauty in the most depressing places . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.31848740577697754
+    },
+    {
+      "text": "brilliantly explores the conflict between following one 's heart and following the demands of tradition . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3181653916835785
+    },
+    {
+      "text": "what the film lacks in general focus it makes up for in compassion , as corcuera manages to find the seeds of hope in the form of collective action . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.316852331161499
+    },
+    {
+      "text": "a tender , heartfelt family drama . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3025018274784088
+    },
+    {
+      "text": "there 's something auspicious , and daring , too , about the artistic instinct that pushes a majority-oriented director like steven spielberg to follow a.i. with this challenging report so liable to u",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3018949031829834
+    },
+    {
+      "text": "seldahl 's barbara is a precise and moving portrait of someone whose world is turned upside down , first by passion and then by illness . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2896316945552826
+    },
+    {
+      "text": "miller is playing so free with emotions , and the fact that children are hostages to fortune , that he makes the audience hostage to his swaggering affectation of seriousness . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.28302034735679626
+    },
+    {
+      "text": "while the ideas about techno-saturation are far from novel , they 're presented with a wry dark humor . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.27575579285621643
+    },
+    {
+      "text": "a movie with a real anarchic flair . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2667396664619446
+    },
+    {
+      "text": "you 'll gasp appalled and laugh outraged and possibly , watching the spectacle of a promising young lad treading desperately in a nasty sea , shed an errant tear . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2644737660884857
+    },
+    {
+      "text": "morton uses her face and her body language to bring us morvern 's soul , even though the character is almost completely deadpan . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2563099265098572
+    },
+    {
+      "text": "building slowly and subtly , the film , sporting a breezy spontaneity and realistically drawn characterizations , develops into a significant character study that is both moving and wise . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.25530773401260376
+    },
+    {
+      "text": "not far beneath the surface , this reconfigured tale asks disturbing questions about those things we expect from military epics . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2447718232870102
+    },
+    {
+      "text": "an effectively creepy , fear-inducing ( not fear-reducing ) film from japanese director hideo nakata , who takes the superstitious curse on chain letters and actually applies it . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.24421462416648865
+    }
+  ]
+}

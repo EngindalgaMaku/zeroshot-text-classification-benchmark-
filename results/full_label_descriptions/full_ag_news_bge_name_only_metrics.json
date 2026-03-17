@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.729078947368421,
+  "macro_f1": 0.7245522484211708,
+  "weighted_f1": 0.7245522484211708,
+  "macro_precision": 0.7283788179015289,
+  "macro_recall": 0.729078947368421,
+  "classification_report": {
+    "0": {
+      "precision": 0.6964190272581507,
+      "recall": 0.6857894736842105,
+      "f1-score": 0.6910633784142137,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.888728323699422,
+      "recall": 0.9710526315789474,
+      "f1-score": 0.9280684104627767,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.7084769124741558,
+      "recall": 0.5410526315789473,
+      "f1-score": 0.6135481945687854,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.6198910081743869,
+      "recall": 0.718421052631579,
+      "f1-score": 0.6655290102389079,
+      "support": 1900.0
+    },
+    "accuracy": 0.729078947368421,
+    "macro avg": {
+      "precision": 0.7283788179015289,
+      "recall": 0.729078947368421,
+      "f1-score": 0.7245522484211708,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.7283788179015288,
+      "recall": 0.729078947368421,
+      "f1-score": 0.7245522484211708,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1303,
+      144,
+      93,
+      360
+    ],
+    [
+      24,
+      1845,
+      9,
+      22
+    ],
+    [
+      380,
+      37,
+      1028,
+      455
+    ],
+    [
+      164,
+      50,
+      321,
+      1365
+    ]
+  ],
+  "mean_confidence": 0.4778326580046039,
+  "std_confidence": 0.03898208858549971,
+  "mean_confidence_correct": 0.4829569149266897,
+  "mean_confidence_incorrect": 0.46404270773492085,
+  "experiment_name": "full_ag_news_bge_name_only",
+  "dataset": "ag_news",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "BAAI/bge-large-en-v1.5",
+  "top_errors": [
+    {
+      "text": "(B)old new frontiers Northrop Grumman Corp. and Boeing Co. yesterday announced plans to team up to design a vehicle to take astronauts back to the moon and even beyond, but they #39;ve got to make one",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6007897853851318
+    },
+    {
+      "text": "Techs extend Nikkei #39;s rally Technology shares edged up in Asia on Tuesday, as crude oil prices hovered near \\$44 a barrel and the dollar languished ahead of key US economic data.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6003453731536865
+    },
+    {
+      "text": "Alternative Energy: Ready or not? Even with a boost from higher oil prices and growing concern about global warming, the payoff on most alternative energy technologies seems a ways off.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5750147104263306
+    },
+    {
+      "text": "Reed on track despite science outlook Reed Elsevier on Thursday reiterated that it remained on track to deliver mid to high single-digit earnings-per-share growth this year despite concerns over its s",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5666536688804626
+    },
+    {
+      "text": "Special to ESPN.com It #39;s the age old question:  quot;What do you give to the man who #39;s been everything? quot;. Only time will tell whether Phil Knight #39;s retirement will be as long-lived as",
+      "true_label": 2,
+      "pred_label": 1,
+      "confidence": 0.559628963470459
+    },
+    {
+      "text": "Giga counters They #39;re bold, brash and break most rules of business -- so why are the Google guys multi-billionaires? GOOGLE Inc had plenty to celebrate at its recent annual summer picnic -- its de",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5589094161987305
+    },
+    {
+      "text": "Before the Bell - ESS Technology drops 4.4 pct Shares of ESS Technology (ESST.O: Quote, Profile, Research) , a maker of computer chips for DVD equipment, fell 4.4 percent in premarket trading on Monda",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5585960149765015
+    },
+    {
+      "text": "Strongwoman hoists 100th gold for Chinese delegation Tang Gonghong lifted a world record to claim in Athens the 100th Olympic gold for China since its participation in 1984 Olympic Games on Saturday w",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.5577822923660278
+    },
+    {
+      "text": "South Korea, Singapore seal free-trade pact Korea and Singapore sealed a free-trade agreement yesterday that covers nine broad areas, including electronics, finance and intellectual property rights.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5576221346855164
+    },
+    {
+      "text": "Austrian Panel OKs Siemens Takeover Bid Austrian regulators have approved Siemens AG #39;s bid to takeover engineering competitor VA Technologie AG, Austrian radio said Friday.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5570836067199707
+    },
+    {
+      "text": "Take-Two Sees Higher Sports Prices for New Consoles  NEW YORK (Reuters) - Take-Two Interactive Software Inc.  &lt;A HREF=\"http://www.reuters.co.uk/financeQuoteLookup.jhtml?ticker=TTWO.O qtype=sym info",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5557749271392822
+    },
+    {
+      "text": "Microsoft, Amazon to combine forces Individually theyve been unstoppable in their respective industries. Theyre both legends that have survived the dot com burst and came out winners.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.554101824760437
+    },
+    {
+      "text": "Rumors Suggest Photo Ability To Be Added to iPod  quot;Apple has invested heavily in technology to edit pictures. Not having a portable device to show them seemed an obvious oversight that would be co",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5535420179367065
+    },
+    {
+      "text": "Oragenics Shares Up on FDA Clearance Shares of Oragenics Inc. jumped after the biotechnology company reported Tuesday that the Food and Drug Administration allowed it to proceed with safety trials on ",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5525006651878357
+    },
+    {
+      "text": "Argentina Beats U.S. Men's Basketball Team Argentina defeated the United States team of National Basketball Association stars 89-81 here Friday in the Olympic semi-finals, dethroning the three-time de",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.5521456003189087
+    },
+    {
+      "text": "This week in the state Legislature The Senate is expected to vote on the overall \\$3.3 billion spending plan for the state Department of Transportation, which supports state and local highway programs",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.551689863204956
+    },
+    {
+      "text": "Grid bids to save the world Hoping to harness a few million of the personal computers not already running the SETIhome screensaver, IBM and United Devices yesterday launched the World Community Grid t",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.5508245825767517
+    },
+    {
+      "text": "Techs lead gains on Wall Street Shares surged on Wall Street on Friday night, pushing the Dow over 100 points higher, as tech stocks rallied and drug giant Merck staged a 1 per cent rebound following ",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5494625568389893
+    },
+    {
+      "text": "Swedes beam poetry into outer space (Reuters) Reuters - Swedish poets have broadcast their work into outer space by radio to give alien life forms -- if they exist -- a taste\\of earthling literature.",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.5490928888320923
+    },
+    {
+      "text": "Atlas Copco to Sell Electric Tool Business Swedish engineering company Atlas Copco said Monday it will sell its electric tool business to Hong Kong-based Techtronic Industries Co.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5490288734436035
+    }
+  ]
+}

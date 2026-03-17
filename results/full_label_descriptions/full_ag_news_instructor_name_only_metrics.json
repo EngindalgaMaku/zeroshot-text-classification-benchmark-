@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.743421052631579,
+  "macro_f1": 0.73199061001581,
+  "weighted_f1": 0.7319906100158102,
+  "macro_precision": 0.7704096280591661,
+  "macro_recall": 0.743421052631579,
+  "classification_report": {
+    "0": {
+      "precision": 0.8320767649074708,
+      "recall": 0.6389473684210526,
+      "f1-score": 0.7228341768383447,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.8354767184035476,
+      "recall": 0.991578947368421,
+      "f1-score": 0.9068592057761733,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.5966772711205373,
+      "recall": 0.888421052631579,
+      "f1-score": 0.7138930006343835,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.8174077578051088,
+      "recall": 0.45473684210526316,
+      "f1-score": 0.5843760568143389,
+      "support": 1900.0
+    },
+    "accuracy": 0.743421052631579,
+    "macro avg": {
+      "precision": 0.7704096280591661,
+      "recall": 0.743421052631579,
+      "f1-score": 0.73199061001581,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.7704096280591662,
+      "recall": 0.743421052631579,
+      "f1-score": 0.7319906100158102,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1214,
+      222,
+      346,
+      118
+    ],
+    [
+      4,
+      1884,
+      10,
+      2
+    ],
+    [
+      95,
+      44,
+      1688,
+      73
+    ],
+    [
+      146,
+      105,
+      785,
+      864
+    ]
+  ],
+  "mean_confidence": 0.8773356995770806,
+  "std_confidence": 0.015286901457948593,
+  "mean_confidence_correct": 0.8774842177555624,
+  "mean_confidence_incorrect": 0.8769053776753254,
+  "experiment_name": "full_ag_news_instructor_name_only",
+  "dataset": "ag_news",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "Sidebar: Oracle Adds Software for Managing Supplier Contracts SEPTEMBER 06, 2004 (COMPUTERWORLD) - As part of an ongoing upgrade of its E-Business Suite 11i business applications, Oracle Corp.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9343835115432739
+    },
+    {
+      "text": "Open Source Ingres Swings At Oracle, SQL Server The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way. Not SQL-type competition.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9279924631118774
+    },
+    {
+      "text": "Revolving Door  &lt;em&gt; IN&lt;/em&gt;&lt;br&gt;   Aylwin B. Lewis,  president of Yum Brands, as chief executive of Kmart.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9268639087677002
+    },
+    {
+      "text": "Microsoft adds to Visual Studio tools line 2005 Standard Edition targets developers working in small organizations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9266417026519775
+    },
+    {
+      "text": "PeopleSoft goes a bundle on IBM 'Most Significant Enterprise Applications Alliance in History,'it sez here...",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9235061407089233
+    },
+    {
+      "text": "First Look: Intuit's QuickBooks for Newbies New Simple Start Edition accounting software targets small businesses still using pencil and paper.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9227352738380432
+    },
+    {
+      "text": "Grand Central spiffs up integration service Company enhances online service for moving business information between corporations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9225397109985352
+    },
+    {
+      "text": "SAP software exposes shipper's financial errors The installation of SAP financial software at a major London-based container transport firm exposed flaws in the company's accounting systems and proces",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9215026497840881
+    },
+    {
+      "text": "An Interview with Bill Baker, SQL Server BI General Manager This article is the first in a new, regular series of articles and interviews with top Microsoft program managers. Our goal is to give you a",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9213194847106934
+    },
+    {
+      "text": "Hosted E-Mail Service Leaves Windows for Linux Company outsources e-mail for small to medium businesses.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9211856126785278
+    },
+    {
+      "text": "Icing call Out of money, out of patience, out of time, and for the foreseeable future, out of business.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.9208264350891113
+    },
+    {
+      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9204157590866089
+    },
+    {
+      "text": "A  #39;Plan B #39; for PeopleSoft customers com September 20, 2004, 6:13 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.919694185256958
+    },
+    {
+      "text": "Does Nick Carr matter? Strategybusiness concludes that a controversial new book on the strategic value of information technology is flawed--but correct.\\",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9195878505706787
+    },
+    {
+      "text": "Siebel looks to midmarket to bolster revenues CRM software giant Siebel Systems said yesterday that it is launching a new program that will cater to small and midsize businesses in a bid to help it bo",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9195287227630615
+    },
+    {
+      "text": "Cray promotes two execs Ly-Huong Pham becomes the supercomputer maker's senior vice president of operations, and Peter Ungaro is made senior vice president for sales, marketing and services.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9193505048751831
+    },
+    {
+      "text": "Yahoo: Internet withdrawal anguishing com September 22, 2004, 12:36 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9184514284133911
+    },
+    {
+      "text": "Strong Server, PC Sales Boost Microsoft Revenue The company's earnings beat Wall Street expectations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9181988835334778
+    },
+    {
+      "text": "Epiphany looks to beef up call center CRM software maker Epiphany Inc. this week is rolling out new analytical software, including two new products and vertical-specific bundles aimed at the communica",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9181325435638428
+    },
+    {
+      "text": "IBM expands data centers, on-demand service Big Blue enhances its \"on demand\" offering for companies through its data centers.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9181203842163086
+    }
+  ]
+}

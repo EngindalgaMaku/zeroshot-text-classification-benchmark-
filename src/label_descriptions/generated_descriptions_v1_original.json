@@ -1,0 +1,615 @@
+{
+  "banking77": {
+    "0": {
+      "l2": "The user wants to activate their card to enable transactions and access their account services.",
+      "l3": [
+        "The user wants to initiate the activation process for their new bank card to start using it for transactions.",
+        "The intent involves the customer requesting assistance or instructions on how to activate their debit or credit card.",
+        "The individual is seeking confirmation that their card is ready for use after completing the activation steps provided by the bank."
+      ]
+    },
+    "1": {
+      "l2": "The user wants to inquire about the age limit for opening a bank account.",
+      "l3": [
+        "The user is inquiring about the minimum or maximum age requirements for opening a bank account or applying for financial products.",
+        "The intent focuses on understanding the age restrictions imposed by the bank for various services, such as loans or credit cards.",
+        "The user seeks clarification on age-related policies that may affect their eligibility for specific banking services or promotions."
+      ]
+    },
+    "2": {
+      "l2": "The user wants to inquire about using Apple Pay or Google Pay for their transactions.",
+      "l3": [
+        "Users are seeking information on whether to use Apple Pay or Google Pay for their mobile payment transactions.",
+        "The intent involves comparing the features, benefits, and compatibility of Apple Pay and Google Pay for seamless digital payments.",
+        "Customers may inquire about the security measures and user experiences associated with Apple Pay versus Google Pay for online purchases."
+      ]
+    },
+    "3": {
+      "l2": "The user seeks assistance with ATM-related issues or inquiries to resolve their banking needs.",
+      "l3": [
+        "Users seeking \"atm support\" typically require assistance with ATM transactions, including withdrawals, deposits, and troubleshooting issues with the machine.",
+        "This intent encompasses inquiries about ATM locations, operational hours, and any fees associated with using specific ATMs.",
+        "Customers may also express concerns regarding lost cards or technical malfunctions, indicating a need for immediate support related to ATM services."
+      ]
+    },
+    "4": {
+      "l2": "The user wants to set up an automatic top up for their account to ensure sufficient funds are always available.",
+      "l3": [
+        "The \"automatic top up\" intent refers to the user's request to enable or manage automatic fund replenishment for their account or service.",
+        "Users expressing this intent typically seek to ensure their balance remains sufficient for recurring payments or subscriptions without manual intervention.",
+        "This intent may involve inquiries about setting thresholds, frequency of top-ups, or adjusting linked payment methods for seamless transactions."
+      ]
+    },
+    "5": {
+      "l2": "The user is seeking assistance because their balance has not been updated after a bank transfer.",
+      "l3": [
+        "Users are reporting issues where their account balance does not reflect recent bank transfers, causing confusion and concern about transaction status.",
+        "Customers express frustration when their bank balance remains unchanged after completing a transfer, indicating a potential delay or error in processing.",
+        "The intent highlights the need for timely updates to account balances following transfers, as users rely on accurate information for financial management."
+      ]
+    },
+    "6": {
+      "l2": "The user wants to resolve an issue where their balance has not been updated after a cheque or cash deposit.",
+      "l3": [
+        "Customers are reporting issues where their account balance fails to reflect recent cheque or cash deposits, causing confusion and frustration.",
+        "Users express concerns about delayed updates to their account balances following cheque or cash deposits, impacting their ability to manage finances effectively.",
+        "The intent highlights the need for clarification on why account balances do not immediately update after a cheque or cash deposit transaction."
+      ]
+    },
+    "7": {
+      "l2": "The user is inquiring about a situation where a beneficiary is not allowed to receive funds or benefits.",
+      "l3": [
+        "The user is inquiring about restrictions on certain beneficiaries, indicating that specific individuals or entities are not permitted to receive funds.",
+        "The intent reflects a concern regarding compliance with banking regulations, where certain beneficiaries may be flagged as ineligible for transactions.",
+        "The user seeks clarification on policies that prevent designated beneficiaries from accessing financial services or receiving monetary transfers."
+      ]
+    },
+    "8": {
+      "l2": "The user wants to cancel a transfer they previously initiated in their banking account.",
+      "l3": [
+        "The user wants to reverse or stop a previously initiated money transfer, indicating a change in their financial plans.",
+        "The intent involves the user requesting assistance to halt a transaction that may have been mistakenly initiated or is no longer needed.",
+        "The user seeks to cancel a scheduled transfer, possibly due to concerns about timing or the recipient's information."
+      ]
+    },
+    "9": {
+      "l2": "The user wants to check the status of their card because it is about to expire.",
+      "l3": [
+        "The user is inquiring about a credit or debit card that is nearing its expiration date and seeks guidance on renewal.",
+        "The intent reflects a concern regarding the upcoming expiration of a payment card, prompting the user to request information on replacement options.",
+        "The user expresses the need to confirm the expiration status of their card, indicating urgency in ensuring uninterrupted access to their banking services."
+      ]
+    },
+    "10": {
+      "l2": "The user wants to confirm that their card is accepted for transactions at various merchants or service providers.",
+      "l3": [
+        "Card acceptance refers to the ability of merchants to process payments made through credit or debit cards during transactions.",
+        "This intent encompasses inquiries about which card types are accepted at various retail locations or online platforms.",
+        "Customers may seek information on the security measures in place for card acceptance to ensure safe and reliable payment processing."
+      ]
+    },
+    "11": {
+      "l2": "The user wants to inquire about the arrival status of their new bank card.",
+      "l3": [
+        "Customers inquire about the status and expected delivery date of their new bank cards after completing the application process.",
+        "Users express concerns regarding delays or issues with the arrival of their debit or credit cards, seeking timely updates.",
+        "Individuals request confirmation of their card shipment and tracking information to ensure they receive their banking cards promptly."
+      ]
+    },
+    "12": {
+      "l2": "The user wants to inquire about the estimated delivery time for their bank card.",
+      "l3": [
+        "Customers inquire about the expected delivery timeframe for their new bank cards, seeking clarity on when they will receive them.",
+        "Users express concerns regarding the status of their card delivery, wanting updates on any potential delays or issues.",
+        "Individuals request information on the estimated arrival date of their replacement or newly issued bank cards for planning purposes."
+      ]
+    },
+    "13": {
+      "l2": "The user wants to link their bank card to an account or service for seamless transactions.",
+      "l3": [
+        "Card linking refers to the process of connecting a payment card to a digital wallet or banking app for seamless transactions.",
+        "Users often seek assistance with card linking to enable features like online purchases, bill payments, and rewards tracking through their financial accounts.",
+        "This intent encompasses inquiries about troubleshooting issues, verifying successful connections, and understanding the benefits of linking cards to various platforms."
+      ]
+    },
+    "14": {
+      "l2": "The user is seeking assistance because their card is not working and they need help resolving the issue.",
+      "l3": [
+        "The user is experiencing issues with their debit or credit card, preventing them from completing transactions or accessing funds.",
+        "The intent indicates a problem where the card is declined or not recognized by payment systems, causing frustration for the user.",
+        "The user seeks assistance regarding their card's functionality, indicating it may be lost, stolen, or temporarily disabled for security reasons."
+      ]
+    },
+    "15": {
+      "l2": "The user is inquiring about the card payment fee charged for transactions made with their credit or debit card.",
+      "l3": [
+        "Customers inquire about the additional fees applied to their card payments, seeking clarification on the charges incurred during transactions.",
+        "Users express concerns regarding unexpected fees associated with card payments, wanting to understand the reasons behind these charges.",
+        "Individuals request information on the specific card payment fees that may be applied, aiming to manage their banking expenses effectively."
+      ]
+    },
+    "16": {
+      "l2": "The user is seeking assistance because their card payment was not recognised during a transaction.",
+      "l3": [
+        "The user is reporting an issue where their card payment was not recognized by the merchant, leading to transaction failure.",
+        "The intent reflects a customer's frustration when their card details are not accepted during a purchase, causing inconvenience and confusion.",
+        "This label indicates a situation where a customer seeks assistance after their card payment is declined or unrecognized by the payment system."
+      ]
+    },
+    "17": {
+      "l2": "The user is seeking clarification or resolution regarding a card payment that was processed with an incorrect exchange rate.",
+      "l3": [
+        "Customers express concerns about being charged an incorrect exchange rate during card payment transactions, leading to unexpected costs.",
+        "Users report discrepancies in the exchange rates applied to their card payments, questioning the accuracy and fairness of the rates provided.",
+        "Individuals seek clarification or resolution regarding card payments where they believe the exchange rate used was unfavorable or incorrect."
+      ]
+    },
+    "18": {
+      "l2": "The user is reporting that their card has been swallowed by an ATM and seeks assistance with the issue.",
+      "l3": [
+        "The user is reporting that their bank card has been swallowed by an ATM, indicating a need for immediate assistance.",
+        "This intent reflects a situation where the cardholder is concerned about retrieving their card after it was captured by a machine.",
+        "The user seeks guidance on the next steps to take after experiencing a card swallow incident, emphasizing urgency and potential security issues."
+      ]
+    },
+    "19": {
+      "l2": "The user seeks information about the cash withdrawal charge associated with their bank account transactions.",
+      "l3": [
+        "The intent of \"cash withdrawal charge\" refers to the fees incurred when withdrawing cash from an ATM or bank account.",
+        "Customers may inquire about the specific costs associated with cash withdrawals, including any applicable service fees or transaction charges.",
+        "Understanding the \"cash withdrawal charge\" helps users manage their finances by anticipating additional expenses when accessing their funds."
+      ]
+    },
+    "20": {
+      "l2": "The user is seeking assistance because their cash withdrawal was not recognised by the banking system.",
+      "l3": [
+        "The user is reporting an issue where a cash withdrawal transaction does not appear in their account statement or transaction history.",
+        "The intent indicates that the customer is seeking clarification or resolution for a withdrawal that they did not authorize or recognize.",
+        "This label reflects a situation where a customer is concerned about potential fraud or errors related to their cash withdrawal activities."
+      ]
+    },
+    "21": {
+      "l2": "The user wants to change their PIN for enhanced security and access to their banking account.",
+      "l3": [
+        "The user intends to update their personal identification number (PIN) for enhanced security and access to their banking account.",
+        "This request involves the process of modifying the existing PIN to ensure it meets current security standards and personal preferences.",
+        "The action of changing a PIN typically requires user authentication to verify identity and prevent unauthorized access to sensitive financial information."
+      ]
+    },
+    "22": {
+      "l2": "The user is seeking assistance regarding a compromised card to secure their account and prevent unauthorized transactions.",
+      "l3": [
+        "The user reports unauthorized transactions on their account, indicating that their card information may have been compromised by a third party.",
+        "A customer seeks assistance after receiving alerts about suspicious activity, suggesting their credit or debit card details have been breached.",
+        "The individual expresses concern over potential fraud, requesting immediate action to secure their compromised card and prevent further unauthorized use."
+      ]
+    },
+    "23": {
+      "l2": "The user is seeking assistance because their contactless payment feature is not working properly.",
+      "l3": [
+        "Users are experiencing issues with their contactless payment methods, leading to frustration and the need for assistance in resolving the problem.",
+        "Customers report that their contactless transactions are failing, prompting inquiries about potential technical glitches or card malfunctions.",
+        "Individuals seek support when their contactless features are unresponsive, indicating a desire for troubleshooting guidance or alternative payment solutions."
+      ]
+    },
+    "24": {
+      "l2": "The user seeks assistance regarding the availability of banking services and support in a specific country.",
+      "l3": [
+        "The \"country support\" intent focuses on inquiries related to banking services and regulations specific to a particular country or region.",
+        "Users expressing the \"country support\" intent seek assistance with transactions, compliance, or product availability tailored to their country's financial landscape.",
+        "This intent encompasses requests for information about international banking options, currency exchange rates, and country-specific financial policies."
+      ]
+    },
+    "25": {
+      "l2": "The user is seeking assistance regarding a declined card payment to resolve the issue and complete their transaction.",
+      "l3": [
+        "The user is reporting an issue where their card payment was declined during a transaction, causing frustration and confusion.",
+        "The intent involves a customer seeking assistance or clarification regarding a recent declined payment on their credit or debit card.",
+        "This scenario typically arises when a cardholder encounters unexpected payment rejections, prompting them to inquire about potential reasons or solutions."
+      ]
+    },
+    "26": {
+      "l2": "The user wants to report a declined cash withdrawal transaction and seek assistance to resolve the issue.",
+      "l3": [
+        "The customer is reporting an unsuccessful attempt to withdraw cash from their account, indicating that the transaction was declined by the bank.",
+        "This intent reflects a situation where a user seeks assistance after their cash withdrawal request was not approved due to insufficient funds or other reasons.",
+        "The individual may express frustration or confusion regarding the declined cash withdrawal, prompting a need for clarification or resolution from customer"
+      ]
+    },
+    "27": {
+      "l2": "The user wants to confirm that their request for a transfer has been declined and seeks clarification on the reason.",
+      "l3": [
+        "The customer expresses dissatisfaction with a recent request for a fund transfer that was ultimately denied by the bank.",
+        "The intent reflects a situation where a client seeks clarification on why their transfer request was not approved.",
+        "This label indicates a scenario where the user is frustrated due to the inability to complete a desired financial transaction."
+      ]
+    },
+    "28": {
+      "l2": "The user is seeking assistance because their direct debit payment was not recognised and they need clarification or resolution.",
+      "l3": [
+        "The user is reporting an issue where a direct debit payment has not been acknowledged or processed by their bank account.",
+        "The intent involves seeking clarification or resolution regarding a direct debit transaction that appears to be missing or unrecognized.",
+        "The customer is expressing concern over a direct debit that should have been deducted but is not reflected in their account statement."
+      ]
+    },
+    "29": {
+      "l2": "The user seeks information about the limits associated with their disposable card for managing spending effectively.",
+      "l3": [
+        "Users inquire about the maximum spending limits associated with their disposable cards for budgeting and security purposes.",
+        "Customers seek clarification on how disposable card limits are set and whether they can be adjusted for specific transactions.",
+        "Individuals want to understand the implications of disposable card limits on their overall financial management and transaction flexibility."
+      ]
+    },
+    "30": {
+      "l2": "The user wants to edit personal details associated with their account for accurate and up-to-date information.",
+      "l3": [
+        "Users may seek to update their personal information, such as address or phone number, to ensure accurate communication with their bank.",
+        "The intent involves modifying account-related details, which can include changing email addresses or updating beneficiary information for financial transactions.",
+        "Customers often request assistance in editing personal details to maintain the security and relevance of their banking profiles and services."
+      ]
+    },
+    "31": {
+      "l2": "The user wants to exchange a charge on their account for a different amount or transaction.",
+      "l3": [
+        "The user seeks to understand the process and fees associated with exchanging currency or transferring funds between accounts.",
+        "The intent involves inquiries about the rates and conditions for converting one currency to another within the banking system.",
+        "Customers may request assistance with charges applied during international transactions or currency exchanges, aiming for clarity on costs involved."
+      ]
+    },
+    "32": {
+      "l2": "The user wants to inquire about the current exchange rate for currency conversion purposes.",
+      "l3": [
+        "Users seeking information about the exchange rate are typically looking to understand the value of one currency relative to another for travel or investment purposes.",
+        "Inquiries about exchange rates often involve comparisons between different currencies, helping users make informed decisions on currency conversion and financial transactions.",
+        "Customers may request real-time exchange rate updates to assess market fluctuations and optimize their foreign currency exchanges for better financial outcomes"
+      ]
+    },
+    "33": {
+      "l2": "The user wants to exchange funds or services through the app for convenience and efficiency.",
+      "l3": [
+        "Users express the intent to conduct financial transactions or currency exchanges through a mobile application for convenience and efficiency.",
+        "The intent involves utilizing an app to swap currencies or transfer funds, highlighting the need for digital banking solutions.",
+        "Customers seek to manage their exchanges seamlessly via an app, emphasizing the importance of user-friendly interfaces and secure transactions."
+      ]
+    },
+    "34": {
+      "l2": "The user is seeking clarification regarding an extra charge on their statement and wants to understand its origin or validity.",
+      "l3": [
+        "Customers are inquiring about unexpected fees or additional charges that appear on their bank statements, seeking clarification on their origin.",
+        "Users express concerns regarding discrepancies in their account statements, specifically related to extra charges that were not previously communicated.",
+        "Individuals are looking for detailed explanations of specific line items on their statements, particularly those labeled as extra charges or fees."
+      ]
+    },
+    "35": {
+      "l2": "The user is seeking assistance because their recent transfer attempt has failed and they need help resolving the issue.",
+      "l3": [
+        "The customer expresses frustration over a failed transfer, indicating that their funds did not reach the intended recipient as expected.",
+        "The inquiry involves a request for assistance in resolving a transaction that did not complete successfully, leading to confusion and concern.",
+        "The user seeks clarification on the reasons behind a transfer failure, highlighting the need for timely support to rectify the issue."
+      ]
+    },
+    "36": {
+      "l2": "The user seeks assistance regarding the support and services available for fiat currency transactions.",
+      "l3": [
+        "Users seeking information about fiat currency support are interested in understanding how traditional currencies are managed and utilized within banking systems.",
+        "This intent reflects inquiries about the acceptance, regulation, and stability of fiat currencies in various financial transactions and services.",
+        "Customers may express a need for guidance on converting digital assets to fiat currencies or the implications of using fiat in their banking activities."
+      ]
+    },
+    "37": {
+      "l2": "The user wants to obtain a disposable virtual card for secure online transactions.",
+      "l3": [
+        "Users seeking a disposable virtual card intend to enhance their online shopping security by using temporary card numbers for transactions.",
+        "The intent to get a disposable virtual card often arises from a desire to protect personal financial information during online purchases.",
+        "Customers may request a disposable virtual card to manage their spending more effectively while minimizing the risk of fraud or unauthorized charges."
+      ]
+    },
+    "38": {
+      "l2": "The user wants to request a physical card to be issued for their banking account.",
+      "l3": [
+        "The user is requesting to obtain a physical debit or credit card for their banking account.",
+        "The intent involves the user seeking information on how to apply for or receive a tangible card.",
+        "The user expresses a need to replace a lost or damaged physical card associated with their bank account."
+      ]
+    },
+    "39": {
+      "l2": "The user wants to request a spare card to replace a lost or damaged one for continued access to their account.",
+      "l3": [
+        "The user is seeking assistance in obtaining a replacement card due to loss, damage, or expiration of their current card.",
+        "The intent involves inquiring about the process and requirements for requesting a spare card from their banking institution.",
+        "The user may express urgency in receiving a spare card to ensure continued access to their banking services without interruption."
+      ]
+    },
+    "40": {
+      "l2": "The user wants to obtain a virtual card for online transactions and secure payments.",
+      "l3": [
+        "Users seeking to obtain a virtual card often inquire about the application process and required documentation for digital banking services.",
+        "Customers may express interest in understanding the benefits and security features associated with using a virtual card for online transactions.",
+        "Individuals might request assistance in activating or managing their virtual card after successfully applying for it through their banking platform."
+      ]
+    },
+    "41": {
+      "l2": "The user wants to report their card as lost or stolen to prevent unauthorized transactions.",
+      "l3": [
+        "Customers report their credit or debit card as lost or stolen, seeking immediate assistance to prevent unauthorized transactions.",
+        "Users inquire about the process to block a card that has been misplaced or potentially compromised, emphasizing the urgency of the situation.",
+        "Individuals express concern over recent transactions made with a card they believe is no longer in their possession, requesting guidance on next steps."
+      ]
+    },
+    "42": {
+      "l2": "The user wants to report their phone as lost or stolen to prevent unauthorized access and seek assistance in recovering it.",
+      "l3": [
+        "Users reporting a lost or stolen phone often seek assistance in securing their accounts and preventing unauthorized access to sensitive information.",
+        "Individuals may inquire about the steps to take after losing their phone, including how to remotely lock or wipe their device.",
+        "Customers might express concerns about potential financial fraud resulting from their lost or stolen phone and request guidance on monitoring their accounts."
+      ]
+    },
+    "43": {
+      "l2": "The user wants to order a physical card to access their banking services conveniently.",
+      "l3": [
+        "Customers express the desire to request a physical debit or credit card for their banking needs and transactions.",
+        "Users indicate their intent to obtain a tangible card, often for convenience in making purchases or accessing funds.",
+        "Individuals seek assistance in ordering a physical card, highlighting the importance of having a card for everyday financial activities."
+      ]
+    },
+    "44": {
+      "l2": "The user is seeking assistance because they have forgotten their passcode and need help recovering or resetting it.",
+      "l3": [
+        "The user is seeking assistance because they cannot remember their passcode, which is necessary for accessing their banking account.",
+        "This intent indicates that the individual requires help with resetting or recovering their forgotten passcode to regain account access.",
+        "The request typically involves verifying the user's identity to ensure secure recovery of the forgotten passcode for their banking services."
+      ]
+    },
+    "45": {
+      "l2": "The user wants to inquire about the status of a pending card payment to ensure it has been processed correctly.",
+      "l3": [
+        "The user is inquiring about the status of a card payment that has not yet been processed or completed.",
+        "The intent reflects a concern regarding a transaction that is still awaiting confirmation or finalization in the banking system.",
+        "The individual seeks information on a delayed payment made with their card, indicating a need for updates or resolution."
+      ]
+    },
+    "46": {
+      "l2": "The user wants to inquire about the status of their pending cash withdrawal transaction.",
+      "l3": [
+        "The user is inquiring about the status of a cash withdrawal that has not yet been processed or completed.",
+        "The intent reflects a customer's concern regarding a delay in receiving funds from a recent withdrawal request.",
+        "This label indicates a request for information on when a pending cash withdrawal will be finalized and available for use."
+      ]
+    },
+    "47": {
+      "l2": "The user wants to inquire about or initiate a pending top up to their account balance.",
+      "l3": [
+        "The user is inquiring about the status of a top-up transaction that has not yet been completed or confirmed.",
+        "The intent reflects a customer's need for information regarding a pending deposit or balance increase in their account.",
+        "This label indicates that the user is awaiting the processing of funds that are expected to be added to their account soon."
+      ]
+    },
+    "48": {
+      "l2": "The user wants to inquire about the status of a pending transfer to ensure it is processed correctly.",
+      "l3": [
+        "The \"pending transfer\" intent indicates that a user is inquiring about the status of a money transfer that has not yet been completed.",
+        "Users expressing the \"pending transfer\" intent may seek clarification on the expected time frame for their funds to be available in the recipient's account.",
+        "This intent often arises when customers want to confirm whether a transfer initiated earlier is still processing"
+      ]
+    },
+    "49": {
+      "l2": "The user wants to resolve an issue where their pin is blocked and needs assistance to regain access.",
+      "l3": [
+        "The user is seeking assistance because their debit or credit card has been temporarily disabled due to security measures or incorrect PIN entries.",
+        "The intent indicates that the customer needs help unlocking their card, which has been blocked to prevent unauthorized transactions.",
+        "The inquiry may involve verifying identity and understanding the steps required to reactivate a blocked card for future use."
+      ]
+    },
+    "50": {
+      "l2": "The user wants to receive money from another person or entity into their account.",
+      "l3": [
+        "The user seeks assistance or information regarding the process of receiving funds from various sources, such as bank transfers or digital wallets.",
+        "The intent involves inquiries about notifications or confirmations related to incoming payments, ensuring the user is aware of received money.",
+        "The user may request details on fees, limits, or timelines associated with receiving money, highlighting their interest in managing financial transactions effectively."
+      ]
+    },
+    "51": {
+      "l2": "The user is seeking assistance because their refund is not showing up in their account.",
+      "l3": [
+        "The customer is inquiring about a refund that they expected to receive but has not yet appeared in their account.",
+        "There is a concern regarding the status of a refund, as the customer is unable to locate it in their transaction history.",
+        "The individual is seeking assistance to resolve an issue where a promised refund has not been credited to their account as anticipated."
+      ]
+    },
+    "52": {
+      "l2": "The user wants to request a refund for a recent transaction or purchase they are dissatisfied with.",
+      "l3": [
+        "The user seeks to initiate a refund process for a recent transaction that they believe was incorrect or unauthorized.",
+        "The individual expresses dissatisfaction with a product or service, requesting a reimbursement to resolve their financial concerns.",
+        "The customer is inquiring about the steps necessary to obtain a refund for a purchase made through the bank's platform."
+      ]
+    },
+    "53": {
+      "l2": "The user is inquiring about the status of a reverted card payment to understand if their transaction has been successfully reversed.",
+      "l3": [
+        "The user is inquiring about the status of a previously reversed card payment transaction and seeks clarification on the process.",
+        "The intent reflects a customer's concern regarding a card payment that was reverted, prompting them to seek further information or confirmation.",
+        "This label indicates a request for assistance related to a card payment that has been canceled or refunded, highlighting the user's need for support."
+      ]
+    },
+    "54": {
+      "l2": "The user seeks information about the supported cards and currencies for transactions within their banking services.",
+      "l3": [
+        "Users inquire about the specific types of credit and debit cards accepted for transactions within the banking services offered.",
+        "Customers seek information on the various currencies supported for international transactions and exchanges through the banking platform.",
+        "The intent focuses on clarifying which payment methods and currencies can be utilized for seamless banking experiences."
+      ]
+    },
+    "55": {
+      "l2": "The user wants to terminate their account and discontinue all associated services with the bank.",
+      "l3": [
+        "The user expresses a desire to close their account, indicating dissatisfaction with the bank's services or a change in personal circumstances.",
+        "The intent to terminate an account may arise from financial reasons, such as high fees or better offers from competing institutions.",
+        "Customers seeking to terminate their account often require assistance with the process, including understanding any potential penalties or remaining balances."
+      ]
+    },
+    "56": {
+      "l2": "The user wants to top up their account balance by initiating a bank transfer charge.",
+      "l3": [
+        "The user intends to add funds to their account using a bank transfer, while inquiring about any associated charges.",
+        "This intent reflects a customer's desire to understand the fees involved when topping up their account via bank transfer.",
+        "The individual seeks clarification on the process and costs related to increasing their account balance through a bank transfer method."
+      ]
+    },
+    "57": {
+      "l2": "The user wants to top up their account balance by making a charge using their card.",
+      "l3": [
+        "The user intends to add funds to their account using a credit or debit card transaction for immediate access.",
+        "This intent involves processing a payment through a card to increase the balance available for transactions or services.",
+        "The request signifies a desire to recharge an account by utilizing a card payment method for convenience and efficiency."
+      ]
+    },
+    "58": {
+      "l2": "The user wants to top up their account using cash or cheque as a payment method.",
+      "l3": [
+        "Customers seeking to add funds to their accounts using physical cash or a cheque typically express the intent to \"top up by cash or cheque.\"",
+        "This intent involves transactions where individuals prefer traditional payment methods, such as cash deposits or cheque payments, for account replenishment.",
+        "Users indicating a desire to increase their account balance through cash or cheque transactions demonstrate a preference for non-digital"
+      ]
+    },
+    "59": {
+      "l2": "The user is seeking assistance because their attempt to top up their account has failed and they need help resolving the issue.",
+      "l3": [
+        "The user is experiencing an issue where their attempt to add funds to their account has been unsuccessful.",
+        "A transaction meant to increase the account balance has not been completed, leading to frustration for the user.",
+        "The intent indicates a need for assistance due to a failed attempt to top up their banking account."
+      ]
+    },
+    "60": {
+      "l2": "The user wants to increase their top up limits for their account to enable larger transactions.",
+      "l3": [
+        "Users inquire about the maximum amount they can add to their accounts, seeking clarity on top-up limits for various services.",
+        "Customers express concerns regarding restrictions on their account funding, wanting to understand the policies governing top-up limits.",
+        "Individuals request information on how to increase their top-up limits, aiming to enhance their account's funding capabilities."
+      ]
+    },
+    "61": {
+      "l2": "The user wants to reverse a recent top-up transaction on their account.",
+      "l3": [
+        "The \"top up reverted\" intent indicates a request to reverse a recent funds addition to a bank account or prepaid card.",
+        "Customers expressing this intent typically seek assistance in canceling or undoing a top-up transaction due to errors or changes in their plans.",
+        "This intent may arise from concerns about unauthorized transactions or the need to reclaim funds for personal budgeting purposes."
+      ]
+    },
+    "62": {
+      "error": "L3 descriptions must be distinct from each other"
+    },
+    "63": {
+      "l2": "The user is seeking assistance to resolve an issue where a transaction has been charged twice to their account.",
+      "l3": [
+        "The customer is reporting an issue where a single transaction has been processed and charged to their account two times.",
+        "The intent indicates a concern regarding duplicate charges on a bank statement, leading to potential financial discrepancies for the customer.",
+        "The user seeks clarification or resolution for a transaction that appears to have been billed twice, impacting their account balance."
+      ]
+    },
+    "64": {
+      "l2": "The user wants to inquire about the transfer fee charged for sending money to another account.",
+      "l3": [
+        "Customers inquire about the specific fees associated with transferring funds between accounts or to other banks, seeking clarity on costs involved.",
+        "Users express concerns regarding unexpected charges that may arise during the transfer process, wanting to understand the fee structure better.",
+        "Individuals request detailed information on how transfer fees are calculated, including any conditions that might affect the total amount charged."
+      ]
+    },
+    "65": {
+      "l2": "The user wants to transfer funds into their account for easier access and management of their finances.",
+      "l3": [
+        "The user intends to move funds from one account to another, ensuring their financial resources are allocated as needed.",
+        "This intent involves initiating a transaction that transfers money into a specified account, often for savings or bill payments.",
+        "Customers may seek assistance with transferring funds to manage their accounts effectively, reflecting their financial planning and budgeting strategies."
+      ]
+    },
+    "66": {
+      "l2": "The user is inquiring about a transfer not received by the recipient and seeks assistance in resolving the issue.",
+      "l3": [
+        "The customer is inquiring about a money transfer that has not been credited to the recipient's account as expected.",
+        "The user expresses concern regarding a delayed transfer, seeking clarification on why the recipient has not received the funds.",
+        "The individual reports an issue with a recent transaction, indicating that the intended recipient has not received the transferred amount."
+      ]
+    },
+    "67": {
+      "l2": "The user wants to inquire about the timing for transferring funds between accounts.",
+      "l3": [
+        "Customers inquire about the expected duration for transferring funds between accounts or to external recipients, seeking clarity on processing times.",
+        "Users express concerns regarding delays in their money transfers, wanting to understand the factors that influence transfer timing.",
+        "Clients request information on the fastest methods available for completing transfers, aiming to optimize their financial transactions efficiently."
+      ]
+    },
+    "68": {
+      "l2": "The user is seeking assistance because they are unable to verify their identity for account access or transactions.",
+      "l3": [
+        "The user expresses frustration over being unable to complete a transaction due to identity verification issues with their banking account.",
+        "The inquiry highlights concerns about security protocols, as the user struggles to provide the necessary information to confirm their identity.",
+        "The individual seeks assistance in resolving a verification problem, indicating a need for support in accessing their banking services securely."
+      ]
+    },
+    "69": {
+      "l2": "The user wants to verify their identity to access their account securely and perform transactions.",
+      "l3": [
+        "Users seeking to verify their identity often request assistance to confirm their account ownership and access secure banking services.",
+        "This intent involves customers providing personal information or answering security questions to authenticate their identity for transactions.",
+        "Individuals may express the need to verify their identity when encountering issues with account access or suspicious activity alerts."
+      ]
+    },
+    "70": {
+      "l2": "The user wants to verify the source of funds to ensure compliance and assess the legitimacy of their financial transactions.",
+      "l3": [
+        "Users seek to confirm the legitimacy and origin of their funds to ensure compliance with financial regulations and prevent fraud.",
+        "The intent involves investigating the source of funds for transactions, often required for large deposits or suspicious activity alerts.",
+        "Customers may request assistance in providing documentation or evidence to verify the source of their funds during account opening or loan applications."
+      ]
+    },
+    "71": {
+      "l2": "The user wants to verify the successful completion of their top-up transaction in their banking account.",
+      "l3": [
+        "The user seeks confirmation regarding the successful processing of a recent top-up transaction in their banking account.",
+        "The intent involves checking the status of a top-up to ensure the funds have been credited correctly.",
+        "The individual wants to verify that their requested top-up amount has been accurately reflected in their account balance."
+      ]
+    },
+    "72": {
+      "l2": "The user is seeking assistance because their virtual card is not working and they need help resolving the issue.",
+      "l3": [
+        "Users are experiencing issues with their virtual card transactions, leading to frustration and the need for immediate assistance.",
+        "Customers report that their virtual card is declining payments unexpectedly, causing inconvenience during online purchases.",
+        "Individuals seek support when their virtual card fails to activate or is not recognized by merchants, impacting their shopping experience."
+      ]
+    },
+    "73": {
+      "l2": "The user is seeking information or assistance regarding the use of a Visa or Mastercard for transactions.",
+      "l3": [
+        "Users seeking information about payment options often inquire specifically about using Visa or Mastercard for transactions and services.",
+        "Customers may express a preference for Visa or Mastercard when discussing credit card benefits, rewards, or acceptance at various merchants.",
+        "Inquiries about transaction fees or security features frequently lead users to compare Visa and Mastercard as their primary payment methods."
+      ]
+    },
+    "74": {
+      "l2": "The user wants to understand the reasons behind the need to verify their identity during banking transactions.",
+      "l3": [
+        "Users inquire about the necessity of identity verification to ensure the security of their financial transactions and personal information.",
+        "Customers seek clarification on how verifying their identity helps prevent fraud and unauthorized access to their banking accounts.",
+        "Individuals want to understand the benefits of identity verification in maintaining trust and compliance with regulatory requirements in the banking sector."
+      ]
+    },
+    "75": {
+      "l2": "The user is reporting that they received a wrong amount of cash during a transaction and seeks assistance to resolve the issue.",
+      "l3": [
+        "The customer reports receiving an incorrect amount of cash during a transaction, leading to confusion and a request for clarification.",
+        "A discrepancy in the cash received prompts the customer to seek assistance in resolving the issue with their recent banking activity.",
+        "The individual expresses concern over being shortchanged or overcharged, indicating a need for a review of the cash handling process."
+      ]
+    },
+    "76": {
+      "l2": "The user is seeking clarification or assistance regarding the wrong exchange rate applied to their cash withdrawal transaction.",
+      "l3": [
+        "The user is reporting an issue where the exchange rate applied during a cash withdrawal was incorrect, leading to unexpected charges.",
+        "Customers are expressing concerns about discrepancies in the exchange rate used for their cash withdrawals compared to the advertised rates.",
+        "The intent highlights a situation where individuals seek clarification or resolution regarding unfavorable exchange rates encountered during international cash withdrawals."
+      ]
+    }
+  }
+}

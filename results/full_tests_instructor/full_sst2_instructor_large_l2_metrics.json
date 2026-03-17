@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.8325688073394495,
+  "macro_f1": 0.8325688073394495,
+  "weighted_f1": 0.8325688073394495,
+  "macro_precision": 0.8328492043445315,
+  "macro_recall": 0.8328492043445315,
+  "classification_report": {
+    "0": {
+      "precision": 0.8175675675675675,
+      "recall": 0.8481308411214953,
+      "f1-score": 0.8325688073394495,
+      "support": 428.0
+    },
+    "1": {
+      "precision": 0.8481308411214953,
+      "recall": 0.8175675675675675,
+      "f1-score": 0.8325688073394495,
+      "support": 444.0
+    },
+    "accuracy": 0.8325688073394495,
+    "macro avg": {
+      "precision": 0.8328492043445315,
+      "recall": 0.8328492043445315,
+      "f1-score": 0.8325688073394495,
+      "support": 872.0
+    },
+    "weighted avg": {
+      "precision": 0.8331296013496132,
+      "recall": 0.8325688073394495,
+      "f1-score": 0.8325688073394495,
+      "support": 872.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      363,
+      65
+    ],
+    [
+      81,
+      363
+    ]
+  ],
+  "mean_confidence": 0.9120259328036133,
+  "std_confidence": 0.01480649912035142,
+  "mean_confidence_correct": 0.9123029685874288,
+  "mean_confidence_incorrect": 0.9106483439060107,
+  "experiment_name": "full_sst2_instructor_large_l2",
+  "dataset": "sst2",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 872,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "good film , but very glum . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.945494532585144
+    },
+    {
+      "text": "travels a fascinating arc from hope and euphoria to reality and disillusionment . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9448434114456177
+    },
+    {
+      "text": "it has all the excitement of eating oatmeal . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9447465538978577
+    },
+    {
+      "text": "huston nails both the glad-handing and the choking sense of hollow despair . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9406569004058838
+    },
+    {
+      "text": "oh come on . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9391769170761108
+    },
+    {
+      "text": "as unseemly as its title suggests . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.938373327255249
+    },
+    {
+      "text": "all that 's missing is the spontaneity , originality and delight . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.937893271446228
+    },
+    {
+      "text": "a painfully funny ode to bad behavior . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9366689920425415
+    },
+    {
+      "text": "that 's pure pr hype . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9364705085754395
+    },
+    {
+      "text": "not exactly the bees knees ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9320888519287109
+    },
+    {
+      "text": "a poignant , artfully crafted meditation on mortality . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9317446947097778
+    },
+    {
+      "text": "the lower your expectations , the more you 'll enjoy it . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9316874742507935
+    },
+    {
+      "text": "that 's a cheat . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9311524629592896
+    },
+    {
+      "text": "it 's made with deftly unsettling genre flair . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9310622215270996
+    },
+    {
+      "text": "the emotions are raw and will strike a nerve with anyone who 's ever had family trauma . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9305939674377441
+    },
+    {
+      "text": "a deep and meaningful film . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9280994534492493
+    },
+    {
+      "text": "directed in a paint-by-numbers manner . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.927595853805542
+    },
+    {
+      "text": "it proves quite compelling as an intense , brooding character study . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9275184869766235
+    },
+    {
+      "text": "how do you spell cliché ? ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9272326231002808
+    },
+    {
+      "text": "it offers little beyond the momentary joys of pretty and weightless intellectual entertainment . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9270650744438171
+    }
+  ]
+}

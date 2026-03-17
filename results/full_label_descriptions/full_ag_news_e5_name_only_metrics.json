@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.3771052631578947,
+  "macro_f1": 0.32054934694107906,
+  "weighted_f1": 0.3205493469410791,
+  "macro_precision": 0.6972135277817777,
+  "macro_recall": 0.3771052631578947,
+  "classification_report": {
+    "0": {
+      "precision": 0.574025974025974,
+      "recall": 0.2326315789473684,
+      "f1-score": 0.3310861423220974,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.9893617021276596,
+      "recall": 0.24473684210526317,
+      "f1-score": 0.3924050632911392,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.9285714285714286,
+      "recall": 0.05473684210526316,
+      "f1-score": 0.10337972166998012,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.29689500640204863,
+      "recall": 0.9763157894736842,
+      "f1-score": 0.45532646048109965,
+      "support": 1900.0
+    },
+    "accuracy": 0.3771052631578947,
+    "macro avg": {
+      "precision": 0.6972135277817777,
+      "recall": 0.3771052631578947,
+      "f1-score": 0.32054934694107906,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.6972135277817778,
+      "recall": 0.3771052631578947,
+      "f1-score": 0.3205493469410791,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      442,
+      4,
+      5,
+      1449
+    ],
+    [
+      162,
+      465,
+      3,
+      1270
+    ],
+    [
+      121,
+      1,
+      104,
+      1674
+    ],
+    [
+      45,
+      0,
+      0,
+      1855
+    ]
+  ],
+  "mean_confidence": 0.7348512597225214,
+  "std_confidence": 0.01949082769383952,
+  "mean_confidence_correct": 0.7429409987928147,
+  "mean_confidence_incorrect": 0.729953669486894,
+  "experiment_name": "full_ag_news_e5_name_only",
+  "dataset": "ag_news",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "intfloat/multilingual-e5-large",
+  "top_errors": [
+    {
+      "text": "webcrawler: A9.com is cool NOW heres something else thats off the mind. Theres no more need to make mental or computer notes while searching the Internet.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.797272801399231
+    },
+    {
+      "text": "Highlights of What Congress Has Done (AP) AP - Highlights of what Congress has done  #151; and has not done  #151; this year.",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.7924536466598511
+    },
+    {
+      "text": "Lazarus-like virus hits computers A new computer virus is catching people out by coming back from the dead.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7864105105400085
+    },
+    {
+      "text": "Five Times for the Fed Plus, Intel's still straining, revenge of the nerds, and a \\$13 billion Christmas present?",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7853078842163086
+    },
+    {
+      "text": "STOCKS  amp; BONDS Technology Issues Lead Rally as the 4th Quarter &lt;b&gt;...&lt;/b&gt; tocks rose yesterday amid heavy trading on the first day of the fourth quarter as PeopleSoft and chip-related ",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7836854457855225
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.78301602602005
+    },
+    {
+      "text": "Slowing population 'lacks funds' Rich countries are giving only half the amount they promised to help to slow world population growth, the UN says.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7824082374572754
+    },
+    {
+      "text": "Microsoft Lawyer Says Company Able To Comply with EU Antitrust &lt;b&gt;...&lt;/b&gt; Microsoft attorney Brad Smith, said:  quot;We will certainly be prepared to comply with the court #39;s order what",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7821763753890991
+    },
+    {
+      "text": "On average, quarter was a loser (USATODAY.com) USATODAY.com - In the great race between stock mutual funds and the mattress, the mattress won.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7820276021957397
+    },
+    {
+      "text": "Why 2004 was the year of the blog A US dictionary publisher declares \"blog\" as one of the words of the year.",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.7819773554801941
+    },
+    {
+      "text": "Boxer Begs Bush to Back Bum Bill Members of California's congressional team make one last effort to look good for the tech industry back home.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7815971970558167
+    },
+    {
+      "text": "We Are Using 20 More Resources Than The Earth Can Produce The human race is plundering the planet at a pace that outstrips its capacity to support life, according to a report by WWF. The Living Planet",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.7814375162124634
+    },
+    {
+      "text": "Sole Survivor Making sneakers in America is so yesterday. How can New Balance do it -- and still thrive?",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7806366682052612
+    },
+    {
+      "text": "World ; Bigley: I want to live a simple life, the final plea World News, The nearly five-minute tape was released two days after Bigley #39;s family said it had the proof that the 62-year-old engineer",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.7796405553817749
+    },
+    {
+      "text": "Fortune's 100 Most Doomed? Your company made it to Fortune's 100 Fastest Growing Companies list. Is that a good thing?",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7795137166976929
+    },
+    {
+      "text": "Alternative Energy: Ready or not? Even with a boost from higher oil prices and growing concern about global warming, the payoff on most alternative energy technologies seems a ways off.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7792712450027466
+    },
+    {
+      "text": "Crunch Time for Biotech Companies Washington area biotech companies will face pivotal moments this year, finding out whether key products work before money dries up, fending off competition from bigge",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7779618501663208
+    },
+    {
+      "text": "BlueGene sneaks past Earth Simulator The Earth Simulator, an NEC supercomputer, is surpassed, at last. IBM announced yesterday that its Blue Gene/L supercomputer had achieved a sustained performance o",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7778732776641846
+    },
+    {
+      "text": "Click Here for a Free Credit Report Really. We mean it. Finally, a legit way to peek into your personal financial file.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7777556777000427
+    },
+    {
+      "text": "Microsoft Profit, Revenue Rises  SEATTLE (Reuters) - Microsoft Corp. &lt;A HREF=\"http://www.investor.reuters.com/FullQuote.aspx?ticker=MSFT.O target=/stocks/quickinfo/fullquote\"&gt;MSFT.O&lt;/A&gt;, t",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.7771666049957275
+    }
+  ]
+}

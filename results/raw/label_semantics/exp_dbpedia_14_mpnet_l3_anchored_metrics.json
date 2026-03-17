@@ -1,0 +1,465 @@
+{
+  "accuracy": 0.747,
+  "macro_f1": 0.7350273197894385,
+  "weighted_f1": 0.7337957455442065,
+  "macro_precision": 0.755301050486847,
+  "macro_recall": 0.7536589871770305,
+  "classification_report": {
+    "0": {
+      "precision": 0.7536231884057971,
+      "recall": 0.5909090909090909,
+      "f1-score": 0.6624203821656051,
+      "support": 88.0
+    },
+    "1": {
+      "precision": 0.7428571428571429,
+      "recall": 0.9397590361445783,
+      "f1-score": 0.8297872340425532,
+      "support": 83.0
+    },
+    "2": {
+      "precision": 0.6941176470588235,
+      "recall": 0.7662337662337663,
+      "f1-score": 0.7283950617283951,
+      "support": 77.0
+    },
+    "3": {
+      "precision": 0.8,
+      "recall": 0.875,
+      "f1-score": 0.835820895522388,
+      "support": 64.0
+    },
+    "4": {
+      "precision": 0.8426966292134831,
+      "recall": 0.9259259259259259,
+      "f1-score": 0.8823529411764706,
+      "support": 81.0
+    },
+    "5": {
+      "precision": 0.5853658536585366,
+      "recall": 0.375,
+      "f1-score": 0.45714285714285713,
+      "support": 64.0
+    },
+    "6": {
+      "precision": 0.825,
+      "recall": 0.6470588235294118,
+      "f1-score": 0.7252747252747253,
+      "support": 51.0
+    },
+    "7": {
+      "precision": 0.5943396226415094,
+      "recall": 0.7875,
+      "f1-score": 0.6774193548387096,
+      "support": 80.0
+    },
+    "8": {
+      "precision": 0.6266666666666667,
+      "recall": 0.9791666666666666,
+      "f1-score": 0.7642276422764228,
+      "support": 48.0
+    },
+    "9": {
+      "precision": 0.7931034482758621,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7244094488188977,
+      "support": 69.0
+    },
+    "10": {
+      "precision": 0.9104477611940298,
+      "recall": 0.782051282051282,
+      "f1-score": 0.8413793103448276,
+      "support": 78.0
+    },
+    "11": {
+      "precision": 0.7037037037037037,
+      "recall": 0.9827586206896551,
+      "f1-score": 0.8201438848920863,
+      "support": 58.0
+    },
+    "12": {
+      "precision": 0.8313253012048193,
+      "recall": 0.9078947368421053,
+      "f1-score": 0.8679245283018868,
+      "support": 76.0
+    },
+    "13": {
+      "precision": 0.8709677419354839,
+      "recall": 0.3253012048192771,
+      "f1-score": 0.47368421052631576,
+      "support": 83.0
+    },
+    "accuracy": 0.747,
+    "macro avg": {
+      "precision": 0.755301050486847,
+      "recall": 0.7536589871770305,
+      "f1-score": 0.7350273197894385,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.7600719772633366,
+      "recall": 0.747,
+      "f1-score": 0.7337957455442065,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      52,
+      9,
+      1,
+      3,
+      0,
+      9,
+      0,
+      2,
+      1,
+      0,
+      0,
+      6,
+      5,
+      0
+    ],
+    [
+      0,
+      78,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      59,
+      3,
+      4,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      4,
+      1,
+      3
+    ],
+    [
+      0,
+      1,
+      5,
+      56,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      4,
+      1,
+      75,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      11,
+      2,
+      4,
+      1,
+      2,
+      24,
+      5,
+      2,
+      0,
+      4,
+      0,
+      7,
+      1,
+      1
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      1,
+      0,
+      33,
+      6,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      4,
+      0,
+      0,
+      1,
+      1,
+      1,
+      63,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      47,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      16,
+      0,
+      46,
+      4,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      13,
+      2,
+      2,
+      61,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      57,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      2,
+      69,
+      0
+    ],
+    [
+      5,
+      6,
+      11,
+      1,
+      1,
+      6,
+      1,
+      2,
+      6,
+      5,
+      2,
+      5,
+      5,
+      27
+    ]
+  ],
+  "mean_confidence": 0.18814556037075816,
+  "std_confidence": 0.06954492143735638,
+  "mean_confidence_correct": 0.19639169381135999,
+  "mean_confidence_incorrect": 0.16379828100265723,
+  "experiment_name": "exp_dbpedia_14_mpnet_l3_anchored",
+  "dataset": "dbpedia_14",
+  "label_mode": "l3_anchored",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": " The World's Greatest Athlete is a 1973 American feature film released by Walt Disney Productions. It starred John Amos Roscoe Lee Browne Tim Conway Dayle Haddon and Jan-Michael Vincent. It is one of ",
+      "true_label": 12,
+      "pred_label": 3,
+      "confidence": 0.4397512674331665
+    },
+    {
+      "text": " Bird migration is the regular seasonal movement often north and south along a flyway between breeding and wintering grounds undertaken by many species of birds. Migration which carries high costs in ",
+      "true_label": 9,
+      "pred_label": 5,
+      "confidence": 0.365691602230072
+    },
+    {
+      "text": " The Art of Dreaming is a book written by anthropologist Carlos Castaneda and published in 1993. It purportedly describes the events that took place during an apprenticeship with a self-proclaimed Yaq",
+      "true_label": 13,
+      "pred_label": 2,
+      "confidence": 0.3290659785270691
+    },
+    {
+      "text": " For Rent: One Grammy One Gramps is a young adult fiction novel by Ivy Duffy Doherty published 1982.",
+      "true_label": 13,
+      "pred_label": 11,
+      "confidence": 0.326824426651001
+    },
+    {
+      "text": " Champs Sports is a sports retail store that is a subsidiary of Foot Locker Inc.. Products sold at Champs Sports include apparel equipment footwear and accessories. As of March 2013 there are 552 stor",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.3251613676548004
+    },
+    {
+      "text": " The National Association for Special Educational Needs (NASEN) is an education and development charitable organisation based in the United Kingdom which aims to promote the education training advance",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3208330273628235
+    },
+    {
+      "text": " North Becket Village Historic District is a historic district encompassing the historic village of North Becket in the Berkshire hill town of Becket Massachusetts. The district encompasses 40 acres (",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.3204318583011627
+    },
+    {
+      "text": " Salix caroliniana commonly known as the coastal plain willow is a shrub or small tree native to the southeastern United States Mexico and parts of Central America and the Caribbean. It is an obligate",
+      "true_label": 10,
+      "pred_label": 7,
+      "confidence": 0.3169335126876831
+    },
+    {
+      "text": " L. T.'s Theory of Pets is a short story by Stephen King. It was originally published in the 1997 limited-edition collection Six Stories. In 2001 it was released as an audiobook with the recording of ",
+      "true_label": 13,
+      "pred_label": 9,
+      "confidence": 0.304298996925354
+    },
+    {
+      "text": " Bonsound is a Montreal-based company that manages books and promotes music. Bonsound also houses three records labels: Bonsound Records Blow The Fuse Records and Proxenett.",
+      "true_label": 0,
+      "pred_label": 11,
+      "confidence": 0.3039095103740692
+    },
+    {
+      "text": " Société de transport du Saguenay (STS) is the public transport company in Saguenay Quebec Canada formerly the Corporation intermunicipale de transport du Saguenay (CITS). They operate from three main",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.29829323291778564
+    },
+    {
+      "text": " The Seattle Film Institute (SFI) is a film school founded in Seattle WA in 1994. SFI offers part-time classes masters degrees and certificate programs in film and digital video production.",
+      "true_label": 1,
+      "pred_label": 12,
+      "confidence": 0.29759588837623596
+    },
+    {
+      "text": " The Littlehampton Community School (normally abbreviated to LCS) was a large mixed gender community comprehensive school located at the edge of Littlehampton in West Sussex England and was the main s",
+      "true_label": 1,
+      "pred_label": 8,
+      "confidence": 0.2935473918914795
+    },
+    {
+      "text": " Blandow's bogmoss (Helodium blandowii) also known as Blandow's feathermoss is a rare plant in the Western U.S. including Oregon and California. It occurs all around the northern hemisphere in higher ",
+      "true_label": 10,
+      "pred_label": 7,
+      "confidence": 0.2888864278793335
+    },
+    {
+      "text": " Arachis monticola is a close relative of the domesticated peanut (Arachis hypogaea). Besides the peanut it is the only other tetraploid species in the genus Arachis. It is thought to be the immediate",
+      "true_label": 10,
+      "pred_label": 9,
+      "confidence": 0.2875828146934509
+    },
+    {
+      "text": " Euphorbia analalavensis is a species of plant in the Euphorbiaceae family. It is endemic to Madagascar. Its natural habitats are subtropical or tropical dry forests and rocky areas. It is threatened ",
+      "true_label": 10,
+      "pred_label": 7,
+      "confidence": 0.2861711382865906
+    },
+    {
+      "text": " Sir Kingsley William Amis CBE (16 April 1922 – 22 October 1995) was an English novelist poet critic and teacher. He wrote more than 20 novels six volumes of poetry a memoir various short stories radi",
+      "true_label": 2,
+      "pred_label": 13,
+      "confidence": 0.28609251976013184
+    },
+    {
+      "text": " Men Microscopes and Living Things is a children's book written by the American author Katherine Shippen and illustrated by Anthony Ravielli. The book was first published in 1955 and is a 1956 Newbery",
+      "true_label": 13,
+      "pred_label": 9,
+      "confidence": 0.2849516272544861
+    },
+    {
+      "text": " SeeqPod was a search and recommendation engine specifically for indexing and finding playable search results including audio video podcasts and Wikipedia articles that were publicly accessible on the",
+      "true_label": 0,
+      "pred_label": 11,
+      "confidence": 0.2820826768875122
+    },
+    {
+      "text": " The NYC Teaching Fellows is an alternative certification program that aims to improve the quality of education in New York City public schools by attracting mid-career professionals recent graduates ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.27534928917884827
+    }
+  ]
+}

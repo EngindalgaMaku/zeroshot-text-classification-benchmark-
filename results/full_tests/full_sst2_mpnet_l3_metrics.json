@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.7465596330275229,
+  "macro_f1": 0.7432502468081478,
+  "weighted_f1": 0.7427153965100669,
+  "macro_precision": 0.7647567549413088,
+  "macro_recall": 0.7488949229603434,
+  "classification_report": {
+    "0": {
+      "precision": 0.6906077348066298,
+      "recall": 0.8761682242990654,
+      "f1-score": 0.772399588053553,
+      "support": 428.0
+    },
+    "1": {
+      "precision": 0.8389057750759878,
+      "recall": 0.6216216216216216,
+      "f1-score": 0.7141009055627425,
+      "support": 444.0
+    },
+    "accuracy": 0.7465596330275229,
+    "macro avg": {
+      "precision": 0.7647567549413088,
+      "recall": 0.7488949229603434,
+      "f1-score": 0.7432502468081478,
+      "support": 872.0
+    },
+    "weighted avg": {
+      "precision": 0.7661172874208442,
+      "recall": 0.7465596330275229,
+      "f1-score": 0.7427153965100669,
+      "support": 872.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      375,
+      53
+    ],
+    [
+      168,
+      276
+    ]
+  ],
+  "mean_confidence": 0.21609403066328564,
+  "std_confidence": 0.08396565293964114,
+  "mean_confidence_correct": 0.21746184664010176,
+  "mean_confidence_incorrect": 0.2120648532836146,
+  "experiment_name": "full_sst2_mpnet_l3",
+  "dataset": "sst2",
+  "label_mode": "l3",
+  "pipeline_mode": "biencoder",
+  "num_samples": 872,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "travels a fascinating arc from hope and euphoria to reality and disillusionment . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.5323607325553894
+    },
+    {
+      "text": "the emotions are raw and will strike a nerve with anyone who 's ever had family trauma . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.4516817033290863
+    },
+    {
+      "text": "the socio-histo-political treatise is told in earnest strides ... ( and ) personal illusion is deconstructed with poignancy . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.42578956484794617
+    },
+    {
+      "text": "a poignant , artfully crafted meditation on mortality . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.4257276654243469
+    },
+    {
+      "text": "there is a fabric of complex ideas here , and feelings that profoundly deepen them . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.4230557084083557
+    },
+    {
+      "text": "manages to show life in all of its banality when the intention is quite the opposite . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.4225963354110718
+    },
+    {
+      "text": "one of the best films of the year with its exploration of the obstacles to happiness faced by five contemporary individuals ... a psychological masterpiece . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.4133177399635315
+    },
+    {
+      "text": "uses sharp humor and insight into human nature to examine class conflict , adolescent yearning , the roots of friendship and sexual identity . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.410495400428772
+    },
+    {
+      "text": "tries to add some spice to its quirky sentiments but the taste is all too familiar . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.39325278997421265
+    },
+    {
+      "text": "very psychoanalytical -- provocatively so -- and also refreshingly literary . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3905258774757385
+    },
+    {
+      "text": "by candidly detailing the politics involved in the creation of an extraordinary piece of music , ( jones ) calls our attention to the inherent conflict between commerce and creativity . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3795654773712158
+    },
+    {
+      "text": "a painfully funny ode to bad behavior . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3762425482273102
+    },
+    {
+      "text": "it offers little beyond the momentary joys of pretty and weightless intellectual entertainment . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3667859435081482
+    },
+    {
+      "text": "it provides an honest look at a community striving to anchor itself in new grounds . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.356357216835022
+    },
+    {
+      "text": "a spellbinding african film about the modern condition of rootlessness , a state experienced by millions around the globe . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.34656596183776855
+    },
+    {
+      "text": "it 's inoffensive , cheerful , built to inspire the young people , set to an unending soundtrack of beach party pop numbers and aside from its remarkable camerawork and awesome scenery , it 's about a",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3463658094406128
+    },
+    {
+      "text": "about a manga-like heroine who fights back at her abusers , it 's energetic and satisfying if not deep and psychological . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3415141701698303
+    },
+    {
+      "text": "drops you into a dizzying , volatile , pressure-cooker of a situation that quickly snowballs out of control , while focusing on the what much more than the why . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3412533402442932
+    },
+    {
+      "text": "it 's a stunning lyrical work of considerable force and truth . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3316866457462311
+    },
+    {
+      "text": "majidi is an unconventional storyteller , capable of finding beauty in the most depressing places . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3184874951839447
+    }
+  ]
+}

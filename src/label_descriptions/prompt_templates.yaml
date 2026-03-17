@@ -1,3 +1,12 @@
+version: "final_v1"
+language: "en"
+notes:
+  - "Use deterministic decoding with temperature=0."
+  - "Generate concise, definitional descriptions."
+  - "Do not add numbering, bullets, or explanations."
+  - "Use the final embedding input as label + description."
+  - "For L3, generate 3 short sentences and average their embeddings."
+
 supported_task_types:
   - topic
   - entity
@@ -7,17 +16,85 @@ supported_task_types:
 
 templates:
   topic:
-    l2: 'You are generating an L2 label description for a topic classification task. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Use a topic frame (themes, subject matter). Dataset: {dataset_name}. Label: {label_name}.'
-    l3: 'You are generating an L3 label description for a topic classification task. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include the label text verbatim: "{label_name}" but focus on different topical aspects. Dataset: {dataset_name}. Label: {label_name}.'
+    l2: |
+      You are generating a label description for a topic classification task.
+
+      Define the following category in one clear sentence (12-20 words).
+      Focus on the type of content typically found in this category.
+
+      Do not include explanations. Do not use meta language.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for a topic classification task.
+
+      Write exactly 3 different sentences (12-20 words each).
+      Each sentence should describe the category from a slightly different perspective.
+
+      Do not include explanations or numbering.
+
+      Label: {label_name}
+
   entity:
-    l2: 'You are generating an L2 label description for an entity recognition/classification task. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Define the entity type and typical mentions. Dataset: {dataset_name}. Label: {label_name}.'
-    l3: 'You are generating an L3 label description for an entity recognition/classification task. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include "{label_name}" and highlight different identification cues or examples. Dataset: {dataset_name}. Label: {label_name}.'
+    l2: |
+      You are generating a label description for an entity classification task.
+
+      Define the type of entity represented by this label in one sentence (12-20 words).
+      Focus on what kind of real-world object or concept it refers to.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for an entity classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the entity type from a different angle (function, structure, or examples).
+
+      Label: {label_name}
+
   sentiment:
-    l2: 'You are generating an L2 label description for sentiment analysis. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Describe the overall polarity and typical language. Dataset: {dataset_name}. Label: {label_name}.'
-    l3: 'You are generating an L3 label description for sentiment analysis. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include "{label_name}" and focus on different sentiment cues (tone, evaluation, intensity). Dataset: {dataset_name}. Label: {label_name}.'
+    l2: |
+      You are generating a label description for a sentiment classification task.
+
+      Define the sentiment expressed by this label in one sentence (12-20 words).
+      Focus on emotional tone and polarity.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for a sentiment classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the sentiment from a different perspective (emotion, tone, or evaluation).
+
+      Label: {label_name}
+
   emotion:
-    l2: 'You are generating an L2 label description for emotion detection. Write 1 sentence (12-25 words) that MUST include the label text verbatim: "{label_name}". Describe the emotion and common expressions. Dataset: {dataset_name}. Label: {label_name}.'
-    l3: 'You are generating an L3 label description for emotion detection. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include "{label_name}" and emphasize different emotional signals or contexts. Dataset: {dataset_name}. Label: {label_name}.'
+    l2: |
+      You are generating a label description for an emotion classification task.
+
+      Define the emotional state represented by this label in one sentence (12-20 words).
+      Focus on feelings, reactions, and psychological state.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for an emotion classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the emotion from a different perspective (internal feeling, expression, or situation).
+
+      Label: {label_name}
+
   intent:
-    l2: 'You are generating an L2 label description for intent classification. Write 1 sentence (12-25 words). You MUST include the exact label text "{label_name}" verbatim in your description - use underscores as shown. Describe the user goal/request. Dataset: {dataset_name}. Label: {label_name}. Example: For label "transfer_funds", write: "The user wants to transfer_funds between accounts securely."'
-    l3: 'You are generating an L3 label description for intent classification. Return EXACTLY 3 numbered sentences (12-25 words each). Each sentence MUST include the exact label text "{label_name}" verbatim with underscores. Cover different paraphrases or contexts. Dataset: {dataset_name}. Label: {label_name}.'
+    l2: |
+      You are generating a label description for an intent classification task.
+
+      Describe the user's goal or request in one sentence (12-20 words).
+      Focus on what the user is trying to achieve.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for an intent classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the user intent from a different angle (goal, action, or context).
+
+      Label: {label_name}

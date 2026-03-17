@@ -9,14 +9,17 @@ from pathlib import Path
 _GENERATED_DESC_CACHE = None
 
 
-def load_generated_descriptions():
+def load_generated_descriptions(force_reload=False):
     """Load LLM-generated descriptions from JSON file.
+    
+    Args:
+        force_reload: If True, bypass cache and reload from disk
     
     Returns:
         Dictionary with structure: {dataset: {label_id: {"l2": str, "l3": [str, str, str]}}}
     """
     global _GENERATED_DESC_CACHE
-    if _GENERATED_DESC_CACHE is None:
+    if _GENERATED_DESC_CACHE is None or force_reload:
         desc_file = Path(__file__).parent / "label_descriptions" / "generated_descriptions.json"
         if desc_file.exists():
             with open(desc_file, encoding="utf-8") as f:
@@ -1183,19 +1186,41 @@ def get_label_texts(dataset_name: str, label_mode: str) -> Dict[int, List[str]]:
     Returns:
         Dictionary mapping label IDs to list of text representations
     """
-    # Check for LLM-generated descriptions first (l2 and l3 modes)
-    if label_mode in ("l2", "l3"):
-        generated = load_generated_descriptions()
+    # Check for LLM-generated descriptions first (l2, l3, and variants)
+    # l2 and l3 are anchored by default: "{label_name}: {description}"
+    # l2_raw and l3_raw are non-anchored variants kept for ablation only
+    if label_mode in ("l2", "l3", "l2_anchored", "l3_anchored", "l2_raw", "l3_raw"):
+        # l2/l3/l2_anchored/l3_anchored are all anchored; l2_raw/l3_raw are not
+        anchored = label_mode not in ("l2_raw", "l3_raw")
+        base_mode = "l2" if label_mode in ("l2", "l2_anchored", "l2_raw") else "l3"
+
+        generated = load_generated_descriptions(force_reload=False)
         if dataset_name in generated:
+            # Get label names for anchoring (from name_only)
+            name_only = LABEL_SETS.get(dataset_name, {}).get("name_only", {})
+
             result = {}
             for label_id, data in generated[dataset_name].items():
                 label_id = int(label_id)
-                if label_mode == "l2":
-                    # L2: Single description -> wrap in list for consistency
-                    result[label_id] = [data["l2"]]
-                elif label_mode == "l3":
-                    # L3: Already a list of 3 descriptions
-                    result[label_id] = data["l3"]
+                if not isinstance(data, dict):
+                    print(f"ERROR: Label {label_id} data is not a dict: {type(data)}")
+                    continue
+                if base_mode not in data:
+                    print(f"ERROR: Label {label_id} missing {base_mode!r} key. Available: {list(data.keys())}")
+                    continue
+
+                label_name = name_only.get(label_id, [str(label_id)])[0] if name_only else str(label_id)
+
+                if base_mode == "l2":
+                    desc = data["l2"]
+                    if anchored:
+                        desc = f"{label_name}: {desc}"
+                    result[label_id] = [desc]
+                else:  # l3
+                    descs = data["l3"]
+                    if anchored:
+                        descs = [f"{label_name}: {d}" for d in descs]
+                    result[label_id] = descs
             return result
         else:
             raise ValueError(

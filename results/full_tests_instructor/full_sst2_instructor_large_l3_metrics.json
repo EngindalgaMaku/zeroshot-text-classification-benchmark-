@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.8371559633027523,
+  "macro_f1": 0.8364815753887762,
+  "weighted_f1": 0.8362888931276401,
+  "macro_precision": 0.8459569892473118,
+  "macro_recall": 0.8386166540372149,
+  "classification_report": {
+    "0": {
+      "precision": 0.786,
+      "recall": 0.9182242990654206,
+      "f1-score": 0.8469827586206896,
+      "support": 428.0
+    },
+    "1": {
+      "precision": 0.9059139784946236,
+      "recall": 0.759009009009009,
+      "f1-score": 0.8259803921568627,
+      "support": 444.0
+    },
+    "accuracy": 0.8371559633027523,
+    "macro avg": {
+      "precision": 0.8459569892473118,
+      "recall": 0.8386166540372149,
+      "f1-score": 0.8364815753887762,
+      "support": 872.0
+    },
+    "weighted avg": {
+      "precision": 0.8470571174903817,
+      "recall": 0.8371559633027523,
+      "f1-score": 0.8362888931276401,
+      "support": 872.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      393,
+      35
+    ],
+    [
+      107,
+      337
+    ]
+  ],
+  "mean_confidence": 0.9095012548319791,
+  "std_confidence": 0.01531933791282129,
+  "mean_confidence_correct": 0.910258116297526,
+  "mean_confidence_incorrect": 0.9056103472978296,
+  "experiment_name": "full_sst2_instructor_large_l3",
+  "dataset": "sst2",
+  "label_mode": "l3",
+  "pipeline_mode": "biencoder",
+  "num_samples": 872,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "good film , but very glum . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9467726945877075
+    },
+    {
+      "text": "travels a fascinating arc from hope and euphoria to reality and disillusionment . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9444384574890137
+    },
+    {
+      "text": "huston nails both the glad-handing and the choking sense of hollow despair . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9401448965072632
+    },
+    {
+      "text": "as unseemly as its title suggests . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9394177198410034
+    },
+    {
+      "text": "a painfully funny ode to bad behavior . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9349901676177979
+    },
+    {
+      "text": "my thoughts were focused on the characters . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9328397512435913
+    },
+    {
+      "text": "that 's pure pr hype . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9309113025665283
+    },
+    {
+      "text": "a poignant , artfully crafted meditation on mortality . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9308364391326904
+    },
+    {
+      "text": "it has all the excitement of eating oatmeal . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9295821189880371
+    },
+    {
+      "text": "it 's made with deftly unsettling genre flair . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.929182231426239
+    },
+    {
+      "text": "the emotions are raw and will strike a nerve with anyone who 's ever had family trauma . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9277275800704956
+    },
+    {
+      "text": "a deep and meaningful film . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9275305271148682
+    },
+    {
+      "text": "challenging , intermittently engrossing and unflaggingly creative . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9263016581535339
+    },
+    {
+      "text": "a solid examination of the male midlife crisis . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9255530834197998
+    },
+    {
+      "text": "it proves quite compelling as an intense , brooding character study . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9252632856369019
+    },
+    {
+      "text": "the lower your expectations , the more you 'll enjoy it . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9239039421081543
+    },
+    {
+      "text": "it offers little beyond the momentary joys of pretty and weightless intellectual entertainment . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9238288402557373
+    },
+    {
+      "text": "we root for ( clara and paul ) , even like them , though perhaps it 's an emotion closer to pity . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9229655265808105
+    },
+    {
+      "text": "directed in a paint-by-numbers manner . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9228599667549133
+    },
+    {
+      "text": "hilariously inept and ridiculous . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.9225738644599915
+    }
+  ]
+}

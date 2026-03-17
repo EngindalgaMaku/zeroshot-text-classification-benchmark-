@@ -1,0 +1,465 @@
+{
+  "accuracy": 0.68,
+  "macro_f1": 0.635799549224527,
+  "weighted_f1": 0.6474790333246735,
+  "macro_precision": 0.6438155631078475,
+  "macro_recall": 0.6825300338691971,
+  "classification_report": {
+    "0": {
+      "precision": 0.7894736842105263,
+      "recall": 0.6818181818181818,
+      "f1-score": 0.7317073170731707,
+      "support": 88.0
+    },
+    "1": {
+      "precision": 0.6788990825688074,
+      "recall": 0.891566265060241,
+      "f1-score": 0.7708333333333334,
+      "support": 83.0
+    },
+    "2": {
+      "precision": 0.6986301369863014,
+      "recall": 0.6623376623376623,
+      "f1-score": 0.68,
+      "support": 77.0
+    },
+    "3": {
+      "precision": 0.810126582278481,
+      "recall": 1.0,
+      "f1-score": 0.8951048951048951,
+      "support": 64.0
+    },
+    "4": {
+      "precision": 0.8837209302325582,
+      "recall": 0.9382716049382716,
+      "f1-score": 0.9101796407185628,
+      "support": 81.0
+    },
+    "5": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 64.0
+    },
+    "6": {
+      "precision": 0.4,
+      "recall": 0.39215686274509803,
+      "f1-score": 0.39603960396039606,
+      "support": 51.0
+    },
+    "7": {
+      "precision": 0.4423076923076923,
+      "recall": 0.2875,
+      "f1-score": 0.3484848484848485,
+      "support": 80.0
+    },
+    "8": {
+      "precision": 0.3533834586466165,
+      "recall": 0.9791666666666666,
+      "f1-score": 0.5193370165745856,
+      "support": 48.0
+    },
+    "9": {
+      "precision": 0.7843137254901961,
+      "recall": 0.5797101449275363,
+      "f1-score": 0.6666666666666666,
+      "support": 69.0
+    },
+    "10": {
+      "precision": 0.8191489361702128,
+      "recall": 0.9871794871794872,
+      "f1-score": 0.8953488372093024,
+      "support": 78.0
+    },
+    "11": {
+      "precision": 0.6867469879518072,
+      "recall": 0.9827586206896551,
+      "f1-score": 0.8085106382978723,
+      "support": 58.0
+    },
+    "12": {
+      "precision": 0.8518518518518519,
+      "recall": 0.9078947368421053,
+      "f1-score": 0.8789808917197452,
+      "support": 76.0
+    },
+    "13": {
+      "precision": 0.8148148148148148,
+      "recall": 0.26506024096385544,
+      "f1-score": 0.4,
+      "support": 83.0
+    },
+    "accuracy": 0.68,
+    "macro avg": {
+      "precision": 0.6438155631078475,
+      "recall": 0.6825300338691971,
+      "f1-score": 0.635799549224527,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.6660063063776709,
+      "recall": 0.68,
+      "f1-score": 0.6474790333246735,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      60,
+      10,
+      1,
+      2,
+      0,
+      0,
+      0,
+      4,
+      2,
+      0,
+      0,
+      5,
+      4,
+      0
+    ],
+    [
+      0,
+      74,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      6,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      51,
+      8,
+      7,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      3,
+      2,
+      4
+    ],
+    [
+      0,
+      0,
+      0,
+      64,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      76,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      13,
+      7,
+      4,
+      0,
+      1,
+      0,
+      27,
+      3,
+      3,
+      3,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      1,
+      0,
+      2,
+      0,
+      20,
+      4,
+      22,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      0,
+      0,
+      0,
+      3,
+      1,
+      23,
+      45,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      47,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      13,
+      1,
+      40,
+      14,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      77,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      57,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      2,
+      69,
+      0
+    ],
+    [
+      3,
+      8,
+      14,
+      2,
+      0,
+      2,
+      1,
+      2,
+      7,
+      2,
+      3,
+      13,
+      4,
+      22
+    ]
+  ],
+  "mean_confidence": 0.23878932644426823,
+  "std_confidence": 0.07448881948740632,
+  "mean_confidence_correct": 0.26248017042217886,
+  "mean_confidence_incorrect": 0.18844628299120814,
+  "experiment_name": "exp_dbpedia_14_mpnet_name_only",
+  "dataset": "dbpedia_14",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": " The World's Greatest Athlete is a 1973 American feature film released by Walt Disney Productions. It starred John Amos Roscoe Lee Browne Tim Conway Dayle Haddon and Jan-Michael Vincent. It is one of ",
+      "true_label": 12,
+      "pred_label": 3,
+      "confidence": 0.42823082208633423
+    },
+    {
+      "text": " The National Association for Special Educational Needs (NASEN) is an education and development charitable organisation based in the United Kingdom which aims to promote the education training advance",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.390458881855011
+    },
+    {
+      "text": " For Rent: One Grammy One Gramps is a young adult fiction novel by Ivy Duffy Doherty published 1982.",
+      "true_label": 13,
+      "pred_label": 11,
+      "confidence": 0.36342597007751465
+    },
+    {
+      "text": " The Seattle Film Institute (SFI) is a film school founded in Seattle WA in 1994. SFI offers part-time classes masters degrees and certificate programs in film and digital video production.",
+      "true_label": 1,
+      "pred_label": 12,
+      "confidence": 0.35891592502593994
+    },
+    {
+      "text": " L. T.'s Theory of Pets is a short story by Stephen King. It was originally published in the 1997 limited-edition collection Six Stories. In 2001 it was released as an audiobook with the recording of ",
+      "true_label": 13,
+      "pred_label": 9,
+      "confidence": 0.34500259160995483
+    },
+    {
+      "text": " Stenopetala is a quarterly periodical and the official publication of The New Zealand Carnivorous Plant Society. Typical articles include matters of horticultural interest field reports literature re",
+      "true_label": 13,
+      "pred_label": 10,
+      "confidence": 0.3312075138092041
+    },
+    {
+      "text": " The Littlehampton Community School (normally abbreviated to LCS) was a large mixed gender community comprehensive school located at the edge of Littlehampton in West Sussex England and was the main s",
+      "true_label": 1,
+      "pred_label": 8,
+      "confidence": 0.3295055031776428
+    },
+    {
+      "text": " The NYC Teaching Fellows is an alternative certification program that aims to improve the quality of education in New York City public schools by attracting mid-career professionals recent graduates ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3278626799583435
+    },
+    {
+      "text": " Isaac Cox Cobblestone Farmstead also known as the Letson Farm is a historic home and farm complex located in the town of Wheatland near Scottsville in Monroe County New York. The complex includes a F",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.3216131627559662
+    },
+    {
+      "text": " The Leona Group LLC is a Lansing Michigan-based operator of charter schools in Arizona Florida Michigan and Ohio. It started in Michigan in the early 1990s as a think tank called MPNE (Michigan Partn",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.31530308723449707
+    },
+    {
+      "text": " The Art of Dreaming is a book written by anthropologist Carlos Castaneda and published in 1993. It purportedly describes the events that took place during an apprenticeship with a self-proclaimed Yaq",
+      "true_label": 13,
+      "pred_label": 2,
+      "confidence": 0.3145313858985901
+    },
+    {
+      "text": " Yesspeak is a film chronicling the then current lineup of the progressive rock group Yes (featuring Jon Anderson Steve Howe Rick Wakeman Chris Squire and Alan White) directed by Robert Garofalo and n",
+      "true_label": 11,
+      "pred_label": 12,
+      "confidence": 0.31152284145355225
+    },
+    {
+      "text": " Melanotaenia affinis the New Guinea rainbow fish is found in north Papua New Guinea. Of the three known varieties the so-called standard variety has the widest range. It is commonly found in the Mark",
+      "true_label": 9,
+      "pred_label": 7,
+      "confidence": 0.30290406942367554
+    },
+    {
+      "text": " North Becket Village Historic District is a historic district encompassing the historic village of North Becket in the Berkshire hill town of Becket Massachusetts. The district encompasses 40 acres (",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.30053550004959106
+    },
+    {
+      "text": " Justin Tokimitsu Nozuka (born September 29 1988) is an Canadian-American singer and songwriter. His debut album Holly has been released in Europe Canada Japan and the United States. He has licensed t",
+      "true_label": 2,
+      "pred_label": 11,
+      "confidence": 0.30051541328430176
+    },
+    {
+      "text": " Beggars Group is a British record company that owns or distributes several other labels including 4AD Rough Trade Records Matador Records and XL Recordings. The companies’ roots stem from the Beggars",
+      "true_label": 0,
+      "pred_label": 11,
+      "confidence": 0.2970312833786011
+    },
+    {
+      "text": " Narotam Sekhsaria Foundation is a non-profit initiative created to support enterprising individuals and innovative organizations. It empowers Non profit organisation and social entrepreneurs to make ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.2969740033149719
+    },
+    {
+      "text": " The White Giraffe is a children's novel by Lauren St. John first published in 2006. It is the first in the African Adventures series. Lauren St. John picked out a giraffe for the story because she al",
+      "true_label": 13,
+      "pred_label": 9,
+      "confidence": 0.2954390048980713
+    },
+    {
+      "text": " For Those About to Rock is the name of a video containing live performances by AC/DC Metallica The Black Crowes Pantera and E.S.T. in the Tushino Airfield in Moscow during the implosion of the Soviet",
+      "true_label": 12,
+      "pred_label": 11,
+      "confidence": 0.29122525453567505
+    },
+    {
+      "text": " Elaine Corvidae is an American fantasy author.Corvidae says when she was eight years old she came home from school and declared she would be a writer. She has published many novels including three tr",
+      "true_label": 2,
+      "pred_label": 13,
+      "confidence": 0.2907906174659729
+    }
+  ]
+}

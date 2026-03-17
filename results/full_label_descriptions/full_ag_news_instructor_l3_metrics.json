@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.8028947368421052,
+  "macro_f1": 0.799638385482922,
+  "weighted_f1": 0.7996383854829219,
+  "macro_precision": 0.8136556915679686,
+  "macro_recall": 0.8028947368421053,
+  "classification_report": {
+    "0": {
+      "precision": 0.857060849598163,
+      "recall": 0.7857894736842105,
+      "f1-score": 0.8198791872597474,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.8867745004757374,
+      "recall": 0.9810526315789474,
+      "f1-score": 0.9315342328835582,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.667360532889259,
+      "recall": 0.8436842105263158,
+      "f1-score": 0.7452347745234774,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.843426883308715,
+      "recall": 0.6010526315789474,
+      "f1-score": 0.7019053472649047,
+      "support": 1900.0
+    },
+    "accuracy": 0.8028947368421052,
+    "macro avg": {
+      "precision": 0.8136556915679686,
+      "recall": 0.8028947368421053,
+      "f1-score": 0.799638385482922,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8136556915679686,
+      "recall": 0.8028947368421052,
+      "f1-score": 0.7996383854829219,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1493,
+      145,
+      186,
+      76
+    ],
+    [
+      5,
+      1864,
+      30,
+      1
+    ],
+    [
+      138,
+      24,
+      1603,
+      135
+    ],
+    [
+      106,
+      69,
+      583,
+      1142
+    ]
+  ],
+  "mean_confidence": 0.8827887756887235,
+  "std_confidence": 0.016563849593554853,
+  "mean_confidence_correct": 0.883338602536313,
+  "mean_confidence_incorrect": 0.8805490938302513,
+  "experiment_name": "full_ag_news_instructor_l3",
+  "dataset": "ag_news",
+  "label_mode": "l3",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9331051707267761
+    },
+    {
+      "text": "Sidebar: Oracle Adds Software for Managing Supplier Contracts SEPTEMBER 06, 2004 (COMPUTERWORLD) - As part of an ongoing upgrade of its E-Business Suite 11i business applications, Oracle Corp.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9330563545227051
+    },
+    {
+      "text": "IDC: Software sales to hit \\$189 billion The market researcher has predicted a 6.2 percent increase in software revenues during 2004.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9282732009887695
+    },
+    {
+      "text": "This week in merger news This week saw three merger deals worth about \\$60 billion--including one that ranks as the largest software merger in history.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9279581308364868
+    },
+    {
+      "text": "Strong Server, PC Sales Boost Microsoft Revenue The company's earnings beat Wall Street expectations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9269326329231262
+    },
+    {
+      "text": "Internet Pharmacies: Good or Bad? An investigation into the practice of Internet Pharmacies and how they are changing the U.S. pharmaceutical industry.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9266490936279297
+    },
+    {
+      "text": "Grand Central spiffs up integration service Company enhances online service for moving business information between corporations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9262181520462036
+    },
+    {
+      "text": "Pharma Groups Work on EPC Issues Sept. 30, 2004Reacting to calls from pharmaceutical retailers, distributors and manufacturers, EPCglobal has added a new action group to specifically study the pharmac",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9247853755950928
+    },
+    {
+      "text": "German investor confidence slumped in September BERLIN - German investor confidence dropped sharply in September, a key economic indicator released Tuesday showed amid concerns about the impact of hig",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9239423274993896
+    },
+    {
+      "text": "Red Hat replaces CFO Charles Peters Jr. is taking over as the company deals with the aftereffects of restating its earnings for the past three fiscal years.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9236040115356445
+    },
+    {
+      "text": "Stocks Close Higher on Brokerage Earnings NEW YORK - Stocks dashed higher Tuesday as investors welcomed strong earnings from financial services companies, upbeat economic data and some reassuring news",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9232836961746216
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.923198401927948
+    },
+    {
+      "text": "Show lights up Paralympics The XII Paralympics begins in Athens, after a spectacular opening ceremony.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9230242371559143
+    },
+    {
+      "text": "PeopleSoft goes a bundle on IBM 'Most Significant Enterprise Applications Alliance in History,'it sez here...",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9222530126571655
+    },
+    {
+      "text": "Epiphany looks to beef up call center CRM software maker Epiphany Inc. this week is rolling out new analytical software, including two new products and vertical-specific bundles aimed at the communica",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9218286871910095
+    },
+    {
+      "text": "Yahoo: Internet withdrawal anguishing com September 22, 2004, 12:36 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.921818196773529
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.9217203855514526
+    },
+    {
+      "text": "Does Nick Carr matter? Strategybusiness concludes that a controversial new book on the strategic value of information technology is flawed--but correct.\\",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9215077757835388
+    },
+    {
+      "text": "Revolving Door  &lt;em&gt; IN&lt;/em&gt;&lt;br&gt;   Aylwin B. Lewis,  president of Yum Brands, as chief executive of Kmart.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9213536977767944
+    },
+    {
+      "text": "The Bahamas - the real medal winner of the Athens Olympics A different way of calculating the medal standings brings some interesting results.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.92116779088974
+    }
+  ]
+}

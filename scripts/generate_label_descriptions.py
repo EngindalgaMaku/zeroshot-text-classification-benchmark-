@@ -34,25 +34,9 @@ log = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-PROMPT_L2 = """Define the following text classification label in 15–20 words.
-
-Focus on the semantic meaning of the label.
-Do NOT repeat the label word itself.
-Write a neutral description that could help classify a text belonging to this category.
-
-Dataset: {dataset_name}
-Label: {label_name}"""
-
-PROMPT_L3 = """Generate three different short descriptions of the following classification label.
-
-Each description should focus on slightly different aspects of the concept.
-Keep each description between 15–20 words.
-Do not repeat the label word itself.
-
-Dataset: {dataset_name}
-Label: {label_name}
-
-Return exactly 3 descriptions, numbered 1-3."""
+# NOTE: Legacy PROMPT_L2 / PROMPT_L3 constants have been removed.
+# All prompts are loaded from src/label_descriptions/prompt_templates.yaml
+# via TaskAwareLabelGenerator. Those YAML templates are the single source of truth.
 
 OUTPUT_DIR = Path("src/label_descriptions")
 
@@ -149,7 +133,7 @@ class DescriptionGenerator:
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
             temperature=0,
-            max_tokens=80,
+            max_tokens=300,
         )
         return response.choices[0].message.content.strip()
 
@@ -157,7 +141,7 @@ class DescriptionGenerator:
         client = self._get_anthropic_client()
         response = client.messages.create(
             model=self.model,
-            max_tokens=80,
+            max_tokens=300,
             temperature=0,
             messages=[{"role": "user", "content": prompt}],
         )
@@ -199,63 +183,66 @@ class DescriptionGenerator:
         prompt = prompt_template.format(dataset_name=dataset_name, label_name=label_name)
         return self._call_with_retry(prompt)
 
-    def generate_multi(self, dataset_name: str, label_name: str) -> list:
+    @staticmethod
+    def _parse_l3_response(response: str) -> list:
+        """Parse L3 response into a list of sentences.
+        
+        Handles two formats:
+        1. Newline-separated (one sentence per line, optionally numbered)
+        2. Single paragraph (sentences separated by '. ')
+        """
+        import re
+        text = response.strip()
+        
+        # Try newline-based split first (numbered or plain lines)
+        lines = [l.strip() for l in text.split('\n') if l.strip()]
+        cleaned = []
+        for line in lines:
+            # Strip numbering like "1.", "2.", "3." or "1)", "2)", "3)"
+            stripped = re.sub(r'^\d+[.)]\s*', '', line).strip()
+            if stripped and len(stripped.split()) >= 5:
+                cleaned.append(stripped)
+        
+        if len(cleaned) >= 3:
+            return cleaned[:3]
+        
+        # Fallback: split on sentence boundaries
+        sentences = re.split(r'(?<=[.!?])\s+(?=[A-Z])', text)
+        sentences = [s.strip() for s in sentences if s.strip() and len(s.split()) >= 5]
+        
+        if len(sentences) >= 3:
+            return sentences[:3]
+        
+        # Last resort: return whatever we have
+        return cleaned if cleaned else sentences
+
+    def generate_multi(self, dataset_name: str, label_name: str, prompt_template: str) -> list:
         """Generate 3 different descriptions for a single label (L3).
 
         Args:
             dataset_name: Dataset identifier.
             label_name: Human-readable label name.
+            prompt_template: Prompt template string (from prompt_templates.yaml via TaskAwareLabelGenerator).
 
         Returns:
             List of 3 description strings.
         """
-        prompt = PROMPT_L3.format(dataset_name=dataset_name, label_name=label_name)
+        prompt = prompt_template.format(dataset_name=dataset_name, label_name=label_name)
         response = self._call_with_retry(prompt)
+        descriptions = self._parse_l3_response(response)
         
-        # Parse the response to extract 3 descriptions
-        lines = response.strip().split('\n')
-        descriptions = []
-        
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
-            # Remove numbering like "1.", "2.", "3." or "1)", "2)", "3)"
-            if line[0].isdigit() and len(line) > 2 and line[1] in '.):':
-                line = line[2:].strip()
-            if line:
-                descriptions.append(line)
-        
-        # Ensure we have exactly 3 descriptions
         if len(descriptions) < 3:
-            log.warning("  L3 returned fewer than 3 descriptions, padding with duplicates")
-            while len(descriptions) < 3:
-                descriptions.append(descriptions[0] if descriptions else "Description not available")
+            log.warning("  L3 returned fewer than 3 descriptions (%d), retrying once...", len(descriptions))
+            retry_response = self._call_with_retry(prompt)
+            descriptions = self._parse_l3_response(retry_response)
+            if len(descriptions) < 3:
+                raise ValueError(
+                    f"L3 generation returned fewer than 3 descriptions after retry "
+                    f"(got {len(descriptions)}). Raw response: {retry_response!r}"
+                )
         
-        return descriptions[:3]  # Take only first 3
+        return descriptions[:3]
 
-    def generate_for_dataset(
-        self,
-        dataset_name: str,
-        label_dict: dict,
-        label_names: dict,
-    ) -> dict:
-        """Generate descriptions for all labels in a dataset.
-
-        Args:
-            dataset_name: Dataset identifier.
-            label_dict: ``{label_id: [text, ...]}`` — used only to iterate IDs.
-            label_names: ``{label_id: str}`` — human-readable label names.
-
-        Returns:
-            ``{label_id: description_string}``
-        """
-        results = {}
-        for label_id in sorted(label_dict.keys()):
-            label_name = label_names[label_id]
-            log.info("  [%s] label %d: %r", dataset_name, label_id, label_name)
-            results[label_id] = self.generate(dataset_name, label_name)
-        return results
 
 
 # ---------------------------------------------------------------------------
@@ -390,12 +377,28 @@ def generate_descriptions(
     # Build generator (only if not dry-run)
     generator = DescriptionGenerator(model) if not dry_run else None
 
+    from src.label_descriptions.task_aware_label_generator import (  # noqa: PLC0415
+        DatasetTaskTypeConfig,
+        TaskAwareLabelGenerator,
+        TemplateStore,
+    )
+
+    template_path = Path("src/label_descriptions/prompt_templates.yaml")
+    dataset_cfg_path = Path("src/label_descriptions/dataset_task_types.yaml")
+
+    template_store = TemplateStore.load(template_path)
+    dataset_cfg = DatasetTaskTypeConfig.load(dataset_cfg_path)
+    task_aware = (
+        TaskAwareLabelGenerator(template_store=template_store, dataset_config=dataset_cfg, llm_generator=generator)
+        if not dry_run
+        else TaskAwareLabelGenerator(template_store=template_store, dataset_config=dataset_cfg, llm_generator=None)
+    )
+
     source_mapper = AuthoritativeSourceMapper()
     provenance = ProvenanceRecorder()
-    
-    # Metadata for both levels
-    meta_l2 = GenerationMetadata(model, PROMPT_L2, temperature=0)
-    meta_l3 = GenerationMetadata(model, PROMPT_L3, temperature=0)
+
+    meta_l2 = GenerationMetadata(model, "task_aware", temperature=0)
+    meta_l3 = GenerationMetadata(model, "task_aware", temperature=0)
 
     results: dict = {}
     datasets = (
@@ -419,19 +422,22 @@ def generate_descriptions(
             entry: dict = {}
 
             if dry_run:
-                prompt_l2 = PROMPT_L2.format(dataset_name=dataset_name, label_name=label_name)
-                prompt_l3 = PROMPT_L3.format(dataset_name=dataset_name, label_name=label_name)
+                task_type, prompt_l2, prompt_l3 = task_aware.build_prompts(dataset_id=dataset_name, label_text=label_name)
                 log.info("  [DRY-RUN] label %d %r", label_id, label_name)
                 if level in ("l2", "both"):
-                    entry["l2"] = f"[DRY-RUN] {prompt_l2}"
+                    entry["l2"] = f"[DRY-RUN] task_type={task_type} prompt={prompt_l2}"
                 if level in ("l3", "both"):
-                    entry["l3"] = [f"[DRY-RUN] {prompt_l3}"]
+                    entry["l3"] = [f"[DRY-RUN] task_type={task_type} prompt={prompt_l3}"]
             else:
-                # Generate L2
+                try:
+                    l2, l3_list = task_aware.generate_for_label(dataset_id=dataset_name, label_text=label_name)
+                except Exception as exc:
+                    log.error("  Generation failed for dataset=%s label_id=%s label=%r: %s", dataset_name, label_id, label_name, exc)
+                    results[dataset_name][label_id] = {"error": str(exc)}
+                    continue
+
                 if level in ("l2", "both"):
-                    log.info("  L2 — label %d: %r", label_id, label_name)
-                    desc_l2 = generator.generate(dataset_name, label_name, PROMPT_L2)
-                    entry["l2"] = desc_l2
+                    entry["l2"] = l2
                     provenance.record(
                         dataset=dataset_name,
                         label_id=label_id,
@@ -441,11 +447,8 @@ def generate_descriptions(
                         generated_at=generated_at,
                     )
 
-                # Generate L3 (3 descriptions)
                 if level in ("l3", "both"):
-                    log.info("  L3 — label %d: %r", label_id, label_name)
-                    desc_l3 = generator.generate_multi(dataset_name, label_name)
-                    entry["l3"] = desc_l3
+                    entry["l3"] = l3_list
                     provenance.record(
                         dataset=dataset_name,
                         label_id=label_id,
@@ -460,6 +463,8 @@ def generate_descriptions(
     # Persist outputs
     if not dry_run:
         provenance.save(str(OUTPUT_DIR / "provenance.json"))
+
+        task_aware.metadata_logger.save_json(OUTPUT_DIR / "generation_operations.json")
 
         # Build generation_metadata.json
         combined_meta: dict = {}

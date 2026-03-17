@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.7348684210526316,
+  "macro_f1": 0.7308783882156837,
+  "weighted_f1": 0.7308783882156837,
+  "macro_precision": 0.7649952692516828,
+  "macro_recall": 0.7348684210526316,
+  "classification_report": {
+    "0": {
+      "precision": 0.9087136929460581,
+      "recall": 0.5763157894736842,
+      "f1-score": 0.7053140096618358,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.913312693498452,
+      "recall": 0.9315789473684211,
+      "f1-score": 0.9223553934340802,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.5904401650618982,
+      "recall": 0.9036842105263158,
+      "f1-score": 0.7142262895174709,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.6475145255003227,
+      "recall": 0.5278947368421053,
+      "f1-score": 0.5816178602493476,
+      "support": 1900.0
+    },
+    "accuracy": 0.7348684210526316,
+    "macro avg": {
+      "precision": 0.7649952692516828,
+      "recall": 0.7348684210526316,
+      "f1-score": 0.7308783882156837,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.7649952692516827,
+      "recall": 0.7348684210526316,
+      "f1-score": 0.7308783882156837,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1095,
+      110,
+      314,
+      381
+    ],
+    [
+      11,
+      1770,
+      75,
+      44
+    ],
+    [
+      46,
+      16,
+      1717,
+      121
+    ],
+    [
+      53,
+      42,
+      802,
+      1003
+    ]
+  ],
+  "mean_confidence": 0.7553724778325934,
+  "std_confidence": 0.018106400282705246,
+  "mean_confidence_correct": 0.7552167101960793,
+  "mean_confidence_incorrect": 0.7558042208846686,
+  "experiment_name": "full_ag_news_e5_l2",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "intfloat/multilingual-e5-large",
+  "top_errors": [
+    {
+      "text": "This week in merger news This week saw three merger deals worth about \\$60 billion--including one that ranks as the largest software merger in history.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.830568253993988
+    },
+    {
+      "text": "Ofcom's review of telecoms due this week &lt;strong&gt;Analysis&lt;/strong&gt; That'll be the circus in town, then",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8161496520042419
+    },
+    {
+      "text": "The Digital Transition If my car died tomorrow, I'd have a lot less angst picking its successor than I would if my TV conked out. &lt;FONT face=\"verdana,MS Sans Serif,arial,helvetica\" size=\"-2\"\\ color",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8161066174507141
+    },
+    {
+      "text": "Alternative Energy: Ready or not? Even with a boost from higher oil prices and growing concern about global warming, the payoff on most alternative energy technologies seems a ways off.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8141323328018188
+    },
+    {
+      "text": "Icing call Out of money, out of patience, out of time, and for the foreseeable future, out of business.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.8133916854858398
+    },
+    {
+      "text": "Tech Giants Declare, 'United We Stand' Tough times often make for strange bedfellows, and the explosion of viruses, computer worms and spyware programs on the Internet is producing unique alliances am",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8130193948745728
+    },
+    {
+      "text": "Washington Contractors' Sales Increase Companies that provide federal agencies with network integration and payroll accounting technologies are benefiting from a government trying to bolster its defen",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.812953770160675
+    },
+    {
+      "text": "Biography of a Worm Can anything stop the next global virus outbreak? We follow the trail of one recent worm to see how the security system works--and whether it can be fixed.",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.8128893375396729
+    },
+    {
+      "text": "Does Nick Carr matter? Strategybusiness concludes that a controversial new book on the strategic value of information technology is flawed--but correct.\\",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8103668689727783
+    },
+    {
+      "text": "Highlights of What Congress Has Done (AP) AP - Highlights of what Congress has done  #151; and has not done  #151; this year.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.810247540473938
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.8100392818450928
+    },
+    {
+      "text": "Service packs, senators and civil liberties &lt;strong&gt;Letters:&lt;/strong&gt; The bulging postbag gives up its secrets",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.8097856044769287
+    },
+    {
+      "text": "Internet Pharmacies: Good or Bad? An investigation into the practice of Internet Pharmacies and how they are changing the U.S. pharmaceutical industry.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.80877685546875
+    },
+    {
+      "text": "Digital home entertainment hits the road Theater-quality entertainment systems are coming to the car. Is rush hour ready for wireless file swapping?\\&lt;br /&gt; Photo gallery: Consumer gear takes a t",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8078979253768921
+    },
+    {
+      "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.8073875308036804
+    },
+    {
+      "text": "Surviving Biotech's Downturns Charly Travers offers advice on withstanding the volatility of the biotech sector.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.806322455406189
+    },
+    {
+      "text": "Crunch Time for Biotech Companies Washington area biotech companies will face pivotal moments this year, finding out whether key products work before money dries up, fending off competition from bigge",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.8053951859474182
+    },
+    {
+      "text": "Steal SpongeBob, buy a PC museum We've got two more entries this week in the category of \"What weird, useless stuff is for sale on eBay that I just have to have?\"",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8041157722473145
+    },
+    {
+      "text": "Hall of Shame   Hall of Fame We spotlight people and products that pester us...and the heroes saving us from annoyances.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.8039754629135132
+    },
+    {
+      "text": "Sony Shift to Support MP3 &lt;a href=\"http://arstechnica.com/news/posts/20040923-4222.html\"&gt;Sony considers adding native mp3 support to its players&lt;/a&gt; &lt;font size=-1 color=#6f6f6f&gt;&lt;n",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.8028424978256226
+    }
+  ]
+}

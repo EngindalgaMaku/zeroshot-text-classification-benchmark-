@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.675,
+  "macro_f1": 0.6698412698412699,
+  "weighted_f1": 0.666952380952381,
+  "macro_precision": 0.7074420677361855,
+  "macro_recall": 0.687116872676113,
+  "classification_report": {
+    "0": {
+      "precision": 0.6060606060606061,
+      "recall": 0.8602150537634409,
+      "f1-score": 0.7111111111111111,
+      "support": 93.0
+    },
+    "1": {
+      "precision": 0.8088235294117647,
+      "recall": 0.514018691588785,
+      "f1-score": 0.6285714285714286,
+      "support": 107.0
+    },
+    "accuracy": 0.675,
+    "macro avg": {
+      "precision": 0.7074420677361855,
+      "recall": 0.687116872676113,
+      "f1-score": 0.6698412698412699,
+      "support": 200.0
+    },
+    "weighted avg": {
+      "precision": 0.7145387700534759,
+      "recall": 0.675,
+      "f1-score": 0.666952380952381,
+      "support": 200.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      80,
+      13
+    ],
+    [
+      52,
+      55
+    ]
+  ],
+  "mean_confidence": 0.18746214511804282,
+  "std_confidence": 0.08964551324594526,
+  "mean_confidence_correct": 0.1785144281194166,
+  "mean_confidence_incorrect": 0.20604586503826655,
+  "experiment_name": "quick_test_sst2_mpnet_l2",
+  "dataset": "sst2",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 200,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "travels a fascinating arc from hope and euphoria to reality and disillusionment . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.5528593063354492
+    },
+    {
+      "text": "about a manga-like heroine who fights back at her abusers , it 's energetic and satisfying if not deep and psychological . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3653314411640167
+    },
+    {
+      "text": "it 's a stunning lyrical work of considerable force and truth . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3467065393924713
+    },
+    {
+      "text": "a difficult , absorbing film that manages to convey more substance despite its repetitions and inconsistencies than do most films than are far more pointed and clear . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3425384759902954
+    },
+    {
+      "text": "majidi is an unconventional storyteller , capable of finding beauty in the most depressing places . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3380092680454254
+    },
+    {
+      "text": "all that 's missing is the spontaneity , originality and delight . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3367564380168915
+    },
+    {
+      "text": "a spellbinding african film about the modern condition of rootlessness , a state experienced by millions around the globe . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3345174491405487
+    },
+    {
+      "text": "a tender , heartfelt family drama . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.32172244787216187
+    },
+    {
+      "text": "what the film lacks in general focus it makes up for in compassion , as corcuera manages to find the seeds of hope in the form of collective action . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3177047371864319
+    },
+    {
+      "text": "brilliantly explores the conflict between following one 's heart and following the demands of tradition . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3129703998565674
+    },
+    {
+      "text": "seldahl 's barbara is a precise and moving portrait of someone whose world is turned upside down , first by passion and then by illness . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.30974504351615906
+    },
+    {
+      "text": "you 'll gasp appalled and laugh outraged and possibly , watching the spectacle of a promising young lad treading desperately in a nasty sea , shed an errant tear . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3025887906551361
+    },
+    {
+      "text": "there 's something auspicious , and daring , too , about the artistic instinct that pushes a majority-oriented director like steven spielberg to follow a.i. with this challenging report so liable to u",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.30051153898239136
+    },
+    {
+      "text": "it 's inoffensive , cheerful , built to inspire the young people , set to an unending soundtrack of beach party pop numbers and aside from its remarkable camerawork and awesome scenery , it 's about a",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.2972630262374878
+    },
+    {
+      "text": "an effectively creepy , fear-inducing ( not fear-reducing ) film from japanese director hideo nakata , who takes the superstitious curse on chain letters and actually applies it . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2803380787372589
+    },
+    {
+      "text": "building slowly and subtly , the film , sporting a breezy spontaneity and realistically drawn characterizations , develops into a significant character study that is both moving and wise . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2731655538082123
+    },
+    {
+      "text": "not far beneath the surface , this reconfigured tale asks disturbing questions about those things we expect from military epics . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2667600214481354
+    },
+    {
+      "text": "a movie with a real anarchic flair . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.266446053981781
+    },
+    {
+      "text": "filmmakers who can deftly change moods are treasures and even marvels . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.26025012135505676
+    },
+    {
+      "text": "the film tunes into a grief that could lead a man across centuries . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2589300870895386
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+version: "final_v1"
+language: "en"
+notes:
+  - "Use deterministic decoding with temperature=0."
+  - "Generate concise, definitional descriptions."
+  - "Do not add numbering, bullets, or explanations."
+  - "Use the final embedding input as label + description."
+  - "For L3, generate 3 short sentences and average their embeddings."
+
+global_rules:
+  l2:
+    output_constraints:
+      - "Return exactly 1 sentence."
+      - "Target length: 12-20 words."
+      - "No numbering."
+      - "No meta language."
+      - "No explanations outside the sentence."
+  l3:
+    output_constraints:
+      - "Return exactly 3 sentences."
+      - "Each sentence should be 12-20 words."
+      - "No numbering."
+      - "No bullets."
+      - "No explanations outside the 3 sentences."
+
+task_prompts:
+  topic:
+    l2: |
+      You are generating a label description for a topic classification task.
+
+      Define the following category in one clear sentence (12-20 words).
+      Focus on the type of content typically found in this category.
+
+      Do not include explanations. Do not use meta language.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for a topic classification task.
+
+      Write exactly 3 different sentences (12-20 words each).
+      Each sentence should describe the category from a slightly different perspective.
+
+      Do not include explanations or numbering.
+
+      Label: {label_name}
+
+  entity:
+    l2: |
+      You are generating a label description for an entity classification task.
+
+      Define the type of entity represented by this label in one sentence (12-20 words).
+      Focus on what kind of real-world object or concept it refers to.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for an entity classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the entity type from a different angle (function, structure, or examples).
+
+      Label: {label_name}
+
+  sentiment:
+    l2: |
+      You are generating a label description for a sentiment classification task.
+
+      Define the sentiment expressed by this label in one sentence (12-20 words).
+      Focus on emotional tone and polarity.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for a sentiment classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the sentiment from a different perspective (emotion, tone, or evaluation).
+
+      Label: {label_name}
+
+  emotion:
+    l2: |
+      You are generating a label description for an emotion classification task.
+
+      Define the emotional state represented by this label in one sentence (12-20 words).
+      Focus on feelings, reactions, and psychological state.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for an emotion classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the emotion from a different perspective (internal feeling, expression, or situation).
+
+      Label: {label_name}
+
+  intent:
+    l2: |
+      You are generating a label description for an intent classification task.
+
+      Describe the user's goal or request in one sentence (12-20 words).
+      Focus on what the user is trying to achieve.
+
+      Label: {label_name}
+    l3: |
+      You are generating label descriptions for an intent classification task.
+
+      Write exactly 3 sentences (12-20 words each).
+      Each sentence should describe the user intent from a different angle (goal, action, or context).
+
+      Label: {label_name}

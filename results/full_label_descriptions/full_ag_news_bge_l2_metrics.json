@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.7388157894736842,
+  "macro_f1": 0.7291028279055964,
+  "weighted_f1": 0.7291028279055966,
+  "macro_precision": 0.7518828511967337,
+  "macro_recall": 0.7388157894736842,
+  "classification_report": {
+    "0": {
+      "precision": 0.833041447752481,
+      "recall": 0.7510526315789474,
+      "f1-score": 0.789925269858843,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.6729241877256318,
+      "recall": 0.9810526315789474,
+      "f1-score": 0.798286937901499,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.7293388429752066,
+      "recall": 0.7431578947368421,
+      "f1-score": 0.7361835245046924,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.7722269263336156,
+      "recall": 0.48,
+      "f1-score": 0.5920155793573515,
+      "support": 1900.0
+    },
+    "accuracy": 0.7388157894736842,
+    "macro avg": {
+      "precision": 0.7518828511967337,
+      "recall": 0.7388157894736842,
+      "f1-score": 0.7291028279055964,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.7518828511967337,
+      "recall": 0.7388157894736842,
+      "f1-score": 0.7291028279055966,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1427,
+      282,
+      104,
+      87
+    ],
+    [
+      16,
+      1864,
+      17,
+      3
+    ],
+    [
+      148,
+      161,
+      1412,
+      179
+    ],
+    [
+      122,
+      463,
+      403,
+      912
+    ]
+  ],
+  "mean_confidence": 0.45937697465090377,
+  "std_confidence": 0.04371343199615103,
+  "mean_confidence_correct": 0.4646096025581139,
+  "mean_confidence_incorrect": 0.4445753596891985,
+  "experiment_name": "full_ag_news_bge_l2",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "BAAI/bge-large-en-v1.5",
+  "top_errors": [
+    {
+      "text": "This week in merger news This week saw three merger deals worth about \\$60 billion--including one that ranks as the largest software merger in history.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.6418375968933105
+    },
+    {
+      "text": "(B)old new frontiers Northrop Grumman Corp. and Boeing Co. yesterday announced plans to team up to design a vehicle to take astronauts back to the moon and even beyond, but they #39;ve got to make one",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.6002175807952881
+    },
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5991395711898804
+    },
+    {
+      "text": "Alternative Energy: Ready or not? Even with a boost from higher oil prices and growing concern about global warming, the payoff on most alternative energy technologies seems a ways off.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5938077569007874
+    },
+    {
+      "text": "Microsoft/Sun documents If you #39;re up for some light reading, see the links below for the underlying documents that formed Microsoft #39;s April settlement with Sun Microsystems.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5707932710647583
+    },
+    {
+      "text": "On Google's Horizon ... Microsoft (washingtonpost.com) washingtonpost.com - Careful followers of search-engine giant Google surely took note this morning of reports that the company is reiterating an ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.568926990032196
+    },
+    {
+      "text": "Ready to Bet on Alternative Energy? Well, Think Again When oil prices rise, public interest in alternative energy often does, too. But the logic is evidently escaping Wall Street.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5683081746101379
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.567537248134613
+    },
+    {
+      "text": "Microsoft CFO: Expect more acquisitions Microsoft may seek to become a more distributed company as it eyes future large acquisitions, CFO John Connors said yesterday.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5654326677322388
+    },
+    {
+      "text": "Will Hutton There were two stories last week that will have world-shaping implications. The first was in a Paris hospital and a compound in Ramallah.",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5622028112411499
+    },
+    {
+      "text": "Crunch Time for Biotech Companies Washington area biotech companies will face pivotal moments this year, finding out whether key products work before money dries up, fending off competition from bigge",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.5613211393356323
+    },
+    {
+      "text": "Washington Contractors' Sales Increase Companies that provide federal agencies with network integration and payroll accounting technologies are benefiting from a government trying to bolster its defen",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5596418976783752
+    },
+    {
+      "text": "No quick fix in Boeing-Airbus talks World Trade Organization (WTO) talks on a transatlantic row over plane subsidies will bring no quick fix for what could be the biggest commercial dispute in WTO his",
+      "true_label": 2,
+      "pred_label": 0,
+      "confidence": 0.5582543611526489
+    },
+    {
+      "text": "Ofcom's review of telecoms due this week &lt;strong&gt;Analysis&lt;/strong&gt; That'll be the circus in town, then",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5577446222305298
+    },
+    {
+      "text": "TheStreet.com May Be Up for Sale -- Report (Reuters) Reuters - TheStreet.com Inc. , the\\financial news and commentary Web site, may be up for sale,\\according to a report in Business Week, sparking a 7",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.5558479428291321
+    },
+    {
+      "text": "Toughest athlete is female and unknown You probably haven't heard about one of the toughest endurance sports around: the deca-ironman. That's 38 km swimming, immediately followed by an 1800 km bicycle",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5540436506271362
+    },
+    {
+      "text": "Take-Two Sees Higher Sports Prices for New Consoles  NEW YORK (Reuters) - Take-Two Interactive Software Inc.  &lt;A HREF=\"http://www.reuters.co.uk/financeQuoteLookup.jhtml?ticker=TTWO.O qtype=sym info",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5530709028244019
+    },
+    {
+      "text": "Dow Jones Agrees to Buy MarketWatch in \\$519 Million Deal Dow Jones   Company, the publisher of The Wall Street Journal, has agreed to buy MarketWatch, the parent company of the financial news Web sit",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5525052547454834
+    },
+    {
+      "text": "EU Head Office Trims 2005 Growth Forecast (AP) AP - The European Union's head office issued a bleak economic report Tuesday, warning that the sharp rise in oil prices will \"take its toll\" on economic ",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.5506377816200256
+    },
+    {
+      "text": "Copy, rip, or import? If you #39;ve been using the new Windows Media Player 10 for Windows XP, you may have noticed that Microsoft shifted from some of the more formal language that it used in Windows",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.5502463579177856
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.6011842105263158,
+  "macro_f1": 0.5955359101859402,
+  "weighted_f1": 0.5955359101859402,
+  "macro_precision": 0.6050647232585167,
+  "macro_recall": 0.6011842105263158,
+  "classification_report": {
+    "0": {
+      "precision": 0.5461901550910316,
+      "recall": 0.4263157894736842,
+      "f1-score": 0.47886491279929055,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.7796086508753862,
+      "recall": 0.7968421052631579,
+      "f1-score": 0.7881311816762103,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.5118912797281994,
+      "recall": 0.7136842105263158,
+      "f1-score": 0.59617498351286,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.5825688073394495,
+      "recall": 0.46789473684210525,
+      "f1-score": 0.5189725627553999,
+      "support": 1900.0
+    },
+    "accuracy": 0.6011842105263158,
+    "macro avg": {
+      "precision": 0.6050647232585167,
+      "recall": 0.6011842105263158,
+      "f1-score": 0.5955359101859402,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.6050647232585166,
+      "recall": 0.6011842105263158,
+      "f1-score": 0.5955359101859402,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      810,
+      264,
+      506,
+      320
+    ],
+    [
+      266,
+      1514,
+      74,
+      46
+    ],
+    [
+      212,
+      61,
+      1356,
+      271
+    ],
+    [
+      195,
+      103,
+      713,
+      889
+    ]
+  ],
+  "mean_confidence": 0.12445713176869934,
+  "std_confidence": 0.06840253442047575,
+  "mean_confidence_correct": 0.13345115026176277,
+  "mean_confidence_incorrect": 0.11089933879779641,
+  "experiment_name": "full_ag_news_mpnet_name_only",
+  "dataset": "ag_news",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "Livewire: Fantasy Sports Leagues Thrive Online (Reuters) Reuters - Take 15 million armchair athletes,\\add a steady stream of statistics and mix in a healthy dollop\\of trash talk. Post it all on the In",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.42098963260650635
+    },
+    {
+      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.39578336477279663
+    },
+    {
+      "text": "U.S. Men's Hoops Team Finally Gets a Rout ATHENS, Greece - The Americans got a taste of what it was like in the good ol' days. They finally played an opponent they were able to beat easily, routing An",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3853467106819153
+    },
+    {
+      "text": "How an L.A. city department  fought off user resistance An administrator with the Los Angeles municipal government explains how his department was able to turn user resistance from the police and fire",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3831208348274231
+    },
+    {
+      "text": "Business News for Technology Leaders Microsoft Makes Deal with &lt;b&gt;...&lt;/b&gt; A  quot;landmark agreement quot; between Microsoft and England #39;s Department of Health to renew the agency #39;",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3820509910583496
+    },
+    {
+      "text": "Icing call Out of money, out of patience, out of time, and for the foreseeable future, out of business.",
+      "true_label": 1,
+      "pred_label": 2,
+      "confidence": 0.38121557235717773
+    },
+    {
+      "text": "An Interview with Bill Baker, SQL Server BI General Manager This article is the first in a new, regular series of articles and interviews with top Microsoft program managers. Our goal is to give you a",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.35762113332748413
+    },
+    {
+      "text": "Miss Peru takes Miss World crown Twenty-year-old Miss Peru has been crowned Miss World in a southern Chinese resort town, as China looks to become the regular host of an event that would have once bee",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.3500206172466278
+    },
+    {
+      "text": "Barrett: Good business models vary widely BANGALORE, INDIA - Peer-to-peer (P2P) sharing would never have gathered momentum if the music industry had adopted models for distribution over the Internet, ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.348447322845459
+    },
+    {
+      "text": "U.S. Softball Team Wins, Closes in on Gold ATHENS, Greece - Right now, the Americans aren't just a Dream Team - they're more like the Perfect Team. Lisa Fernandez pitched a three-hitter Sunday and Cry",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.34608617424964905
+    },
+    {
+      "text": "Toughest athlete is female and unknown You probably haven't heard about one of the toughest endurance sports around: the deca-ironman. That's 38 km swimming, immediately followed by an 1800 km bicycle",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.34376829862594604
+    },
+    {
+      "text": "A  #39;Plan B #39; for PeopleSoft customers com September 20, 2004, 6:13 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3432144522666931
+    },
+    {
+      "text": "Dream Team Leads Spain 44-42 at Halftime ATHENS, Greece - As expected, the U.S. men's basketball team had its hands full in a quarterfinal game against Spain on Thursday...",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.34262752532958984
+    },
+    {
+      "text": "It #39;s Time for Tech Firms to Bet on Growth Industry leaders have been offering too few innovations and too many marginal upgradesat not-so-marginal prices. There #39;s a joke going around that our ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.33933383226394653
+    },
+    {
+      "text": "Not quite high Tech Virginia Tech just couldn't seem to get going. There were turnovers. There were botched plays. There were missed opportunities. Then, in the last 5 1/2 minutes, Bryan Randall and t",
+      "true_label": 1,
+      "pred_label": 3,
+      "confidence": 0.3372664749622345
+    },
+    {
+      "text": "Ballmer: Microsoft is listening to customers Microsoft chief executive Steve Ballmer says the software giant is listening to customers, and wants to make the company and its employees more accountable",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.33713585138320923
+    },
+    {
+      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.33683454990386963
+    },
+    {
+      "text": "IBM expands data centers, on-demand service Big Blue enhances its \"on demand\" offering for companies through its data centers.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.33373671770095825
+    },
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.33089765906333923
+    },
+    {
+      "text": "Surviving Biotech's Downturns Charly Travers offers advice on withstanding the volatility of the biotech sector.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.3299950957298279
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "experiment": "full_ag_news_jina_l2",
+    "error": "ed(loading_info)\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 4605, in mark_tied_weights_as_initialized\n    for tied_param in self.all_tied_weights_keys.keys():\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1964, in __getattr__\n    raise AttributeError(\nAttributeError: 'XLMRobertaLoRA' object has no attribute 'all_tied_weights_keys'. Did you mean: '_tied_weights_keys'?\n"
+  },
+  {
+    "experiment": "full_ag_news_jina_l3",
+    "error": "ed(loading_info)\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 4605, in mark_tied_weights_as_initialized\n    for tied_param in self.all_tied_weights_keys.keys():\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1964, in __getattr__\n    raise AttributeError(\nAttributeError: 'XLMRobertaLoRA' object has no attribute 'all_tied_weights_keys'. Did you mean: '_tied_weights_keys'?\n"
+  },
+  {
+    "experiment": "full_ag_news_jina_name_only",
+    "error": "ed(loading_info)\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 4605, in mark_tied_weights_as_initialized\n    for tied_param in self.all_tied_weights_keys.keys():\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1964, in __getattr__\n    raise AttributeError(\nAttributeError: 'XLMRobertaLoRA' object has no attribute 'all_tied_weights_keys'. Did you mean: '_tied_weights_keys'?\n"
+  },
+  {
+    "experiment": "full_ag_news_nomic_l2",
+    "error": "ion_auto.py\", line 1448, in from_pretrained\n    trust_remote_code = resolve_trust_remote_code(\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 749, in resolve_trust_remote_code\n    raise ValueError(\nValueError: nomic-ai/nomic-bert-2048 You can inspect the repository content at https://hf.co/nomic-ai/nomic-embed-text-v1.\nPlease pass the argument `trust_remote_code=True` to allow custom code to be run.\n"
+  },
+  {
+    "experiment": "full_ag_news_nomic_l3",
+    "error": "ion_auto.py\", line 1448, in from_pretrained\n    trust_remote_code = resolve_trust_remote_code(\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 749, in resolve_trust_remote_code\n    raise ValueError(\nValueError: nomic-ai/nomic-bert-2048 You can inspect the repository content at https://hf.co/nomic-ai/nomic-embed-text-v1.\nPlease pass the argument `trust_remote_code=True` to allow custom code to be run.\n"
+  },
+  {
+    "experiment": "full_ag_news_nomic_name_only",
+    "error": "ion_auto.py\", line 1448, in from_pretrained\n    trust_remote_code = resolve_trust_remote_code(\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\dynamic_module_utils.py\", line 749, in resolve_trust_remote_code\n    raise ValueError(\nValueError: nomic-ai/nomic-bert-2048 You can inspect the repository content at https://hf.co/nomic-ai/nomic-embed-text-v1.\nPlease pass the argument `trust_remote_code=True` to allow custom code to be run.\n"
+  },
+  {
+    "experiment": "full_ag_news_qwen3_l2",
+    "error": "   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\utils\\hub.py\", line 450, in cached_files\n    raise OSError(\nOSError: Qwen/Qwen3-Embedding is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`\n"
+  },
+  {
+    "experiment": "full_ag_news_qwen3_l3",
+    "error": "   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\utils\\hub.py\", line 450, in cached_files\n    raise OSError(\nOSError: Qwen/Qwen3-Embedding is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`\n"
+  },
+  {
+    "experiment": "full_ag_news_qwen3_name_only",
+    "error": "   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\utils\\hub.py\", line 450, in cached_files\n    raise OSError(\nOSError: Qwen/Qwen3-Embedding is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'\nIf this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`\n"
+  },
+  {
+    "experiment": "full_banking77_jina_l2",
+    "error": "ed(loading_info)\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 4605, in mark_tied_weights_as_initialized\n    for tied_param in self.all_tied_weights_keys.keys():\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1964, in __getattr__\n    raise AttributeError(\nAttributeError: 'XLMRobertaLoRA' object has no attribute 'all_tied_weights_keys'. Did you mean: '_tied_weights_keys'?\n"
+  },
+  {
+    "experiment": "full_banking77_jina_l3",
+    "error": "ed(loading_info)\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\transformers\\modeling_utils.py\", line 4605, in mark_tied_weights_as_initialized\n    for tied_param in self.all_tied_weights_keys.keys():\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\conda\\envs\\zeroshot\\Lib\\site-packages\\torch\\nn\\modules\\module.py\", line 1964, in __getattr__\n    raise AttributeError(\nAttributeError: 'XLMRobertaLoRA' object has no attribute 'all_tied_weights_keys'. Did you mean: '_tied_weights_keys'?\n"
+  }
+]

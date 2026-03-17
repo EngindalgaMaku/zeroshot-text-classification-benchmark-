@@ -1,0 +1,177 @@
+{
+  "accuracy": 0.6605504587155964,
+  "macro_f1": 0.6596032009790733,
+  "weighted_f1": 0.6592737200272394,
+  "macro_precision": 0.6642055775189657,
+  "macro_recall": 0.6617411804327693,
+  "classification_report": {
+    "0": {
+      "precision": 0.6346938775510204,
+      "recall": 0.7266355140186916,
+      "f1-score": 0.6775599128540305,
+      "support": 428.0
+    },
+    "1": {
+      "precision": 0.693717277486911,
+      "recall": 0.5968468468468469,
+      "f1-score": 0.6416464891041163,
+      "support": 444.0
+    },
+    "accuracy": 0.6605504587155964,
+    "macro avg": {
+      "precision": 0.6642055775189657,
+      "recall": 0.6617411804327693,
+      "f1-score": 0.6596032009790733,
+      "support": 872.0
+    },
+    "weighted avg": {
+      "precision": 0.6647470766009463,
+      "recall": 0.6605504587155964,
+      "f1-score": 0.6592737200272394,
+      "support": 872.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      311,
+      117
+    ],
+    [
+      179,
+      265
+    ]
+  ],
+  "mean_confidence": 0.11854479677436891,
+  "std_confidence": 0.049197738225539286,
+  "mean_confidence_correct": 0.11714578593900013,
+  "mean_confidence_incorrect": 0.12126719623778921,
+  "experiment_name": "full_sst2_mpnet_name_only",
+  "dataset": "sst2",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 872,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "bad . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.3982105553150177
+    },
+    {
+      "text": "good film , but very glum . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.27629756927490234
+    },
+    {
+      "text": "one of the best films of the year with its exploration of the obstacles to happiness faced by five contemporary individuals ... a psychological masterpiece . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.255509614944458
+    },
+    {
+      "text": "a deep and meaningful film . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2328885793685913
+    },
+    {
+      "text": "a warm , funny , engaging film . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.2248745858669281
+    },
+    {
+      "text": "a good piece of work more often than not . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.22476834058761597
+    },
+    {
+      "text": "if you believe any of this , i can make you a real deal on leftover enron stock that will double in value a week from friday . ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.21440328657627106
+    },
+    {
+      "text": "a poignant , artfully crafted meditation on mortality . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.21406951546669006
+    },
+    {
+      "text": "uses sharp humor and insight into human nature to examine class conflict , adolescent yearning , the roots of friendship and sexual identity . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.20877434313297272
+    },
+    {
+      "text": "a warm but realistic meditation on friendship , family and affection . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.20797914266586304
+    },
+    {
+      "text": "a tender , witty , captivating film about friendship , love , memory , trust and loyalty . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.20558863878250122
+    },
+    {
+      "text": "overall very good for what it 's trying to do . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.20156580209732056
+    },
+    {
+      "text": "a spellbinding african film about the modern condition of rootlessness , a state experienced by millions around the globe . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.20023444294929504
+    },
+    {
+      "text": "a tender , heartfelt family drama . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.1994355022907257
+    },
+    {
+      "text": "intriguing documentary which is emotionally diluted by focusing on the story 's least interesting subject . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.1985636055469513
+    },
+    {
+      "text": "a gripping movie , played with performances that are all understated and touching . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.19852125644683838
+    },
+    {
+      "text": "a painfully funny ode to bad behavior . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.19745409488677979
+    },
+    {
+      "text": "a compelling spanish film about the withering effects of jealousy in the life of a young monarch whose sexual passion for her husband becomes an obsession . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.1922294795513153
+    },
+    {
+      "text": "an effectively creepy , fear-inducing ( not fear-reducing ) film from japanese director hideo nakata , who takes the superstitious curse on chain letters and actually applies it . ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.1914396584033966
+    },
+    {
+      "text": "based on a devilishly witty script by heather mcgowan and niels mueller , the film gets great laughs , but never at the expense of its characters ",
+      "true_label": 1,
+      "pred_label": 0,
+      "confidence": 0.19087113440036774
+    }
+  ]
+}

@@ -166,7 +166,7 @@ def run_experiment(cfg: Dict[str, Any], skip_existing: bool = False):
                 batch_size = 32  # Default
 
         print("\nRunning biencoder pipeline\n")
-        if label_mode == "multi_description":
+        if label_mode in ("multi_description", "l3", "l3_anchored", "l3_raw"):
             # L3: mean-pool multiple descriptions per class
             from src.labels import build_multi_description_embeddings
             from src.encoders import compute_similarities

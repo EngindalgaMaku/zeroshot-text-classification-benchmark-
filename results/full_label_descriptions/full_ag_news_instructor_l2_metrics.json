@@ -1,0 +1,205 @@
+{
+  "accuracy": 0.7926315789473685,
+  "macro_f1": 0.7887551458808564,
+  "weighted_f1": 0.7887551458808565,
+  "macro_precision": 0.8213105657496899,
+  "macro_recall": 0.7926315789473684,
+  "classification_report": {
+    "0": {
+      "precision": 0.8911819887429644,
+      "recall": 0.75,
+      "f1-score": 0.8145184338382395,
+      "support": 1900.0
+    },
+    "1": {
+      "precision": 0.8747022391615055,
+      "recall": 0.9663157894736842,
+      "f1-score": 0.9182295573893473,
+      "support": 1900.0
+    },
+    "2": {
+      "precision": 0.62999633296663,
+      "recall": 0.9042105263157895,
+      "f1-score": 0.7425977955478712,
+      "support": 1900.0
+    },
+    "3": {
+      "precision": 0.8893617021276595,
+      "recall": 0.55,
+      "f1-score": 0.6796747967479675,
+      "support": 1900.0
+    },
+    "accuracy": 0.7926315789473685,
+    "macro avg": {
+      "precision": 0.8213105657496899,
+      "recall": 0.7926315789473684,
+      "f1-score": 0.7887551458808564,
+      "support": 7600.0
+    },
+    "weighted avg": {
+      "precision": 0.8213105657496899,
+      "recall": 0.7926315789473685,
+      "f1-score": 0.7887551458808565,
+      "support": 7600.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1425,
+      164,
+      252,
+      59
+    ],
+    [
+      7,
+      1836,
+      53,
+      4
+    ],
+    [
+      86,
+      29,
+      1718,
+      67
+    ],
+    [
+      81,
+      70,
+      704,
+      1045
+    ]
+  ],
+  "mean_confidence": 0.8804220410710887,
+  "std_confidence": 0.017348251464729056,
+  "mean_confidence_correct": 0.8813659480784044,
+  "mean_confidence_incorrect": 0.8768141122563237,
+  "experiment_name": "full_ag_news_instructor_l2",
+  "dataset": "ag_news",
+  "label_mode": "l2",
+  "pipeline_mode": "biencoder",
+  "num_samples": 7600,
+  "random_seed": 42,
+  "biencoder": "hkunlp/instructor-large",
+  "top_errors": [
+    {
+      "text": "Sidebar: Oracle Adds Software for Managing Supplier Contracts SEPTEMBER 06, 2004 (COMPUTERWORLD) - As part of an ongoing upgrade of its E-Business Suite 11i business applications, Oracle Corp.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9321768283843994
+    },
+    {
+      "text": "This week in merger news This week saw three merger deals worth about \\$60 billion--including one that ranks as the largest software merger in history.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9308989644050598
+    },
+    {
+      "text": "IDC: Software sales to hit \\$189 billion The market researcher has predicted a 6.2 percent increase in software revenues during 2004.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9304378628730774
+    },
+    {
+      "text": "Strong Server, PC Sales Boost Microsoft Revenue The company's earnings beat Wall Street expectations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9272585511207581
+    },
+    {
+      "text": "The Bahamas - the real medal winner of the Athens Olympics A different way of calculating the medal standings brings some interesting results.",
+      "true_label": 3,
+      "pred_label": 1,
+      "confidence": 0.9269447326660156
+    },
+    {
+      "text": "Let a Thousand Ideas Flower: China Is a New Hotbed of Research In recent years, hundreds of multinational companies have set up research laboratories in China.",
+      "true_label": 2,
+      "pred_label": 3,
+      "confidence": 0.9266331195831299
+    },
+    {
+      "text": "Stocks Climb on Strong Economic Data NEW YORK - Newly optimistic investors sent stocks sharply higher Friday, propelling the Dow Jones industrials up more than 100 points, after economic data showed s",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9253661036491394
+    },
+    {
+      "text": "German investor confidence slumped in September BERLIN - German investor confidence dropped sharply in September, a key economic indicator released Tuesday showed amid concerns about the impact of hig",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9246050715446472
+    },
+    {
+      "text": "Show lights up Paralympics The XII Paralympics begins in Athens, after a spectacular opening ceremony.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9234037399291992
+    },
+    {
+      "text": "Red Hat replaces CFO Charles Peters Jr. is taking over as the company deals with the aftereffects of restating its earnings for the past three fiscal years.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9230970144271851
+    },
+    {
+      "text": "Grand Central spiffs up integration service Company enhances online service for moving business information between corporations.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9219838380813599
+    },
+    {
+      "text": "Yahoo: Internet withdrawal anguishing com September 22, 2004, 12:36 PM PT. This fourth priority #39;s main focus has been improving or obtaining CRM and ERP software for the past year and a half.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9213064908981323
+    },
+    {
+      "text": "Open Source Ingres Swings At Oracle, SQL Server The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way. Not SQL-type competition.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9206739664077759
+    },
+    {
+      "text": "PeopleSoft goes a bundle on IBM 'Most Significant Enterprise Applications Alliance in History,'it sez here...",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9194912314414978
+    },
+    {
+      "text": "Cisco Reaches High And Low NEW YORK - Cisco Systems is aggressively trying to build its presence in key growth markets, and it #39;s using both new products and new acquisitions to do it.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.919418454170227
+    },
+    {
+      "text": "Epiphany looks to beef up call center CRM software maker Epiphany Inc. this week is rolling out new analytical software, including two new products and vertical-specific bundles aimed at the communica",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9194130897521973
+    },
+    {
+      "text": "Football: Azerbaijan 0-1 England Michael Owen heads England's winner in the World Cup qualifier against Azerbaijan.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.9193146228790283
+    },
+    {
+      "text": "It #39;s Time for Tech Firms to Bet on Growth Industry leaders have been offering too few innovations and too many marginal upgradesat not-so-marginal prices. There #39;s a joke going around that our ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9190945625305176
+    },
+    {
+      "text": "E-commerce still booming Online retail sales continue to show significant growth, according to the latest figures released by the US Department of Commerce.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.9190219044685364
+    },
+    {
+      "text": "Revolving Door  &lt;em&gt; IN&lt;/em&gt;&lt;br&gt;   Aylwin B. Lewis,  president of Yum Brands, as chief executive of Kmart.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.9176695346832275
+    }
+  ]
+}
