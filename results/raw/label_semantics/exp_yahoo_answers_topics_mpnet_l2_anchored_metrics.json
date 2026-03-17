@@ -1,0 +1,337 @@
+{
+  "accuracy": 0.428,
+  "macro_f1": 0.4272106004533742,
+  "weighted_f1": 0.42573834236571245,
+  "macro_precision": 0.4383978626636519,
+  "macro_recall": 0.4320274258815318,
+  "classification_report": {
+    "0": {
+      "precision": 0.21323529411764705,
+      "recall": 0.25217391304347825,
+      "f1-score": 0.23107569721115537,
+      "support": 115.0
+    },
+    "1": {
+      "precision": 0.45614035087719296,
+      "recall": 0.5360824742268041,
+      "f1-score": 0.4928909952606635,
+      "support": 97.0
+    },
+    "2": {
+      "precision": 0.5638297872340425,
+      "recall": 0.5578947368421052,
+      "f1-score": 0.5608465608465608,
+      "support": 95.0
+    },
+    "3": {
+      "precision": 0.27722772277227725,
+      "recall": 0.35443037974683544,
+      "f1-score": 0.3111111111111111,
+      "support": 79.0
+    },
+    "4": {
+      "precision": 0.5083333333333333,
+      "recall": 0.5213675213675214,
+      "f1-score": 0.5147679324894515,
+      "support": 117.0
+    },
+    "5": {
+      "precision": 0.5178571428571429,
+      "recall": 0.6041666666666666,
+      "f1-score": 0.5576923076923077,
+      "support": 96.0
+    },
+    "6": {
+      "precision": 0.48,
+      "recall": 0.22429906542056074,
+      "f1-score": 0.3057324840764331,
+      "support": 107.0
+    },
+    "7": {
+      "precision": 0.47297297297297297,
+      "recall": 0.3431372549019608,
+      "f1-score": 0.3977272727272727,
+      "support": 102.0
+    },
+    "8": {
+      "precision": 0.4,
+      "recall": 0.5116279069767442,
+      "f1-score": 0.4489795918367347,
+      "support": 86.0
+    },
+    "9": {
+      "precision": 0.4943820224719101,
+      "recall": 0.41509433962264153,
+      "f1-score": 0.4512820512820513,
+      "support": 106.0
+    },
+    "accuracy": 0.428,
+    "macro avg": {
+      "precision": 0.4383978626636519,
+      "recall": 0.4320274258815318,
+      "f1-score": 0.4272106004533742,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.4398295160844125,
+      "recall": 0.428,
+      "f1-score": 0.42573834236571245,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      29,
+      20,
+      3,
+      22,
+      4,
+      3,
+      2,
+      4,
+      21,
+      7
+    ],
+    [
+      5,
+      52,
+      6,
+      11,
+      5,
+      6,
+      0,
+      1,
+      1,
+      10
+    ],
+    [
+      7,
+      1,
+      53,
+      7,
+      6,
+      5,
+      3,
+      3,
+      7,
+      3
+    ],
+    [
+      7,
+      8,
+      7,
+      28,
+      4,
+      6,
+      4,
+      3,
+      6,
+      6
+    ],
+    [
+      11,
+      6,
+      1,
+      7,
+      61,
+      9,
+      5,
+      14,
+      1,
+      2
+    ],
+    [
+      9,
+      8,
+      0,
+      3,
+      6,
+      58,
+      2,
+      4,
+      2,
+      4
+    ],
+    [
+      14,
+      7,
+      8,
+      10,
+      15,
+      8,
+      24,
+      6,
+      7,
+      8
+    ],
+    [
+      16,
+      5,
+      6,
+      2,
+      8,
+      8,
+      2,
+      35,
+      16,
+      4
+    ],
+    [
+      9,
+      3,
+      6,
+      5,
+      8,
+      6,
+      2,
+      2,
+      44,
+      1
+    ],
+    [
+      29,
+      4,
+      4,
+      6,
+      3,
+      3,
+      6,
+      2,
+      5,
+      44
+    ]
+  ],
+  "mean_confidence": 0.11436936208116821,
+  "std_confidence": 0.08394100692764991,
+  "mean_confidence_correct": 0.12444768301439776,
+  "mean_confidence_incorrect": 0.10682824082343702,
+  "experiment_name": "exp_yahoo_answers_topics_mpnet_l2_anchored",
+  "dataset": "yahoo_answers_topics",
+  "label_mode": "l2_anchored",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "Gun control causes more deaths than it saves.\\n\\nGood topic, controversial, and easy to research, both sides.",
+      "true_label": 3,
+      "pred_label": 9,
+      "confidence": 0.3916654586791992
+    },
+    {
+      "text": "www.indiatimes.com",
+      "true_label": 4,
+      "pred_label": 5,
+      "confidence": 0.3788420557975769
+    },
+    {
+      "text": "I would like a detailed knowledge of Gerontology(The study of ageing). This interests me, because it`s a process that happens to us all-if we are fortunate.\\nI think, in some societies, older people (",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.3770391345024109
+    },
+    {
+      "text": "With my dad it's religion AND politics.  He's pretty rigidly conservative republican and I can't understand it.  I don't want to change his views, but I'd like him to accept that mine are valid.  We h",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.37143152952194214
+    },
+    {
+      "text": "definitely info + comms tech.. this is because IT is not enough by itself these days - it's all about communication incorporated via media such as the Internet, Mobile technology, etc etc. so if you g",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.3464217185974121
+    },
+    {
+      "text": "this one & comics n animations. i used to answer in religion & sprituality but it's so complex so i can't take it lol. but at least it's motivating me to learn more about it.",
+      "true_label": 7,
+      "pred_label": 2,
+      "confidence": 0.3369397521018982
+    },
+    {
+      "text": "You could start here:\\nhttp://www.cs.wustl.edu/~doc/RandD/CORBA/Research/realtime.html",
+      "true_label": 1,
+      "pred_label": 4,
+      "confidence": 0.32845574617385864
+    },
+    {
+      "text": "reading e-mails is a better option",
+      "true_label": 6,
+      "pred_label": 4,
+      "confidence": 0.32082247734069824
+    },
+    {
+      "text": "Family Home Evening is one of LDS's public relation's tools to make Mormonism look good and wholesome.  What lurks behind this cloak is a false gospel of works-based salvation.",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.32025235891342163
+    },
+    {
+      "text": "google",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.30716830492019653
+    },
+    {
+      "text": "If you have a man who is faithful to his wife or vv, that child will grow up to learn what faithfulness is. If a child sees parents smoke, do drugs, curse, etc..they will do that... Children learn lov",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.3060442805290222
+    },
+    {
+      "text": "The best place to ask is probably the MP3 newsgroup linked below.",
+      "true_label": 4,
+      "pred_label": 7,
+      "confidence": 0.3045802116394043
+    },
+    {
+      "text": "Yahoo answers is.",
+      "true_label": 7,
+      "pred_label": 4,
+      "confidence": 0.3015221357345581
+    },
+    {
+      "text": "Most of the browsers allow users to open more than one window. So you can have different sites open at the same time.",
+      "true_label": 6,
+      "pred_label": 4,
+      "confidence": 0.29710742831230164
+    },
+    {
+      "text": "George W. Bush is the current president and Richard M. Daley is the mayor of Chicago.",
+      "true_label": 3,
+      "pred_label": 9,
+      "confidence": 0.29222971200942993
+    },
+    {
+      "text": "The .....government office maybE?! lol",
+      "true_label": 0,
+      "pred_label": 9,
+      "confidence": 0.28310149908065796
+    },
+    {
+      "text": "Getting to see my new great nephew...he si 5 months old and the first baby we have had in our family in 19 years...",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.2829153537750244
+    },
+    {
+      "text": "It doesn't sound like they actually want to know how unionization resulted from immigration and migration.  They just want to know how unionization of industrialization was a part of coal mining.  Jus",
+      "true_label": 3,
+      "pred_label": 0,
+      "confidence": 0.2814924418926239
+    },
+    {
+      "text": "Ohio has a pennant.",
+      "true_label": 9,
+      "pred_label": 5,
+      "confidence": 0.2796376943588257
+    },
+    {
+      "text": "Yes. Please refer to the following link : \\nhttp://www.askonline.net/technology/ \\n\\nYou can also search for : \"online tutoring\"",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.27894115447998047
+    }
+  ]
+}

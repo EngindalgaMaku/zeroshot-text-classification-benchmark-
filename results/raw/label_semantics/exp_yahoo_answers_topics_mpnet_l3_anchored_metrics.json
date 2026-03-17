@@ -1,0 +1,337 @@
+{
+  "accuracy": 0.455,
+  "macro_f1": 0.45126584303454403,
+  "weighted_f1": 0.45267910637078207,
+  "macro_precision": 0.4627613727275343,
+  "macro_recall": 0.456694572209571,
+  "classification_report": {
+    "0": {
+      "precision": 0.26595744680851063,
+      "recall": 0.21739130434782608,
+      "f1-score": 0.23923444976076555,
+      "support": 115.0
+    },
+    "1": {
+      "precision": 0.5137614678899083,
+      "recall": 0.5773195876288659,
+      "f1-score": 0.5436893203883495,
+      "support": 97.0
+    },
+    "2": {
+      "precision": 0.5656565656565656,
+      "recall": 0.5894736842105263,
+      "f1-score": 0.5773195876288659,
+      "support": 95.0
+    },
+    "3": {
+      "precision": 0.24761904761904763,
+      "recall": 0.3291139240506329,
+      "f1-score": 0.2826086956521739,
+      "support": 79.0
+    },
+    "4": {
+      "precision": 0.5036496350364964,
+      "recall": 0.5897435897435898,
+      "f1-score": 0.5433070866141733,
+      "support": 117.0
+    },
+    "5": {
+      "precision": 0.4672897196261682,
+      "recall": 0.5208333333333334,
+      "f1-score": 0.49261083743842365,
+      "support": 96.0
+    },
+    "6": {
+      "precision": 0.5370370370370371,
+      "recall": 0.27102803738317754,
+      "f1-score": 0.36024844720496896,
+      "support": 107.0
+    },
+    "7": {
+      "precision": 0.5679012345679012,
+      "recall": 0.45098039215686275,
+      "f1-score": 0.5027322404371585,
+      "support": 102.0
+    },
+    "8": {
+      "precision": 0.352,
+      "recall": 0.5116279069767442,
+      "f1-score": 0.41706161137440756,
+      "support": 86.0
+    },
+    "9": {
+      "precision": 0.6067415730337079,
+      "recall": 0.5094339622641509,
+      "f1-score": 0.5538461538461539,
+      "support": 106.0
+    },
+    "accuracy": 0.455,
+    "macro avg": {
+      "precision": 0.4627613727275343,
+      "recall": 0.456694572209571,
+      "f1-score": 0.45126584303454403,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.4674815632814225,
+      "recall": 0.455,
+      "f1-score": 0.45267910637078207,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      25,
+      13,
+      3,
+      19,
+      7,
+      5,
+      2,
+      4,
+      26,
+      11
+    ],
+    [
+      7,
+      56,
+      6,
+      15,
+      7,
+      2,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      5,
+      2,
+      56,
+      8,
+      4,
+      1,
+      4,
+      2,
+      11,
+      2
+    ],
+    [
+      8,
+      8,
+      7,
+      26,
+      6,
+      6,
+      4,
+      3,
+      6,
+      5
+    ],
+    [
+      3,
+      5,
+      1,
+      10,
+      69,
+      12,
+      5,
+      12,
+      0,
+      0
+    ],
+    [
+      7,
+      9,
+      2,
+      4,
+      6,
+      50,
+      4,
+      6,
+      2,
+      6
+    ],
+    [
+      10,
+      5,
+      11,
+      8,
+      19,
+      3,
+      29,
+      6,
+      12,
+      4
+    ],
+    [
+      5,
+      3,
+      4,
+      2,
+      4,
+      16,
+      1,
+      46,
+      16,
+      5
+    ],
+    [
+      5,
+      6,
+      5,
+      6,
+      8,
+      9,
+      2,
+      0,
+      44,
+      1
+    ],
+    [
+      19,
+      2,
+      4,
+      7,
+      7,
+      3,
+      2,
+      1,
+      7,
+      54
+    ]
+  ],
+  "mean_confidence": 0.12266074961144477,
+  "std_confidence": 0.08722682883187433,
+  "mean_confidence_correct": 0.13162539104296528,
+  "mean_confidence_incorrect": 0.11517650768237718,
+  "experiment_name": "exp_yahoo_answers_topics_mpnet_l3_anchored",
+  "dataset": "yahoo_answers_topics",
+  "label_mode": "l3_anchored",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "reading e-mails is a better option",
+      "true_label": 6,
+      "pred_label": 4,
+      "confidence": 0.4003463387489319
+    },
+    {
+      "text": "If you have a man who is faithful to his wife or vv, that child will grow up to learn what faithfulness is. If a child sees parents smoke, do drugs, curse, etc..they will do that... Children learn lov",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.39652329683303833
+    },
+    {
+      "text": "With my dad it's religion AND politics.  He's pretty rigidly conservative republican and I can't understand it.  I don't want to change his views, but I'd like him to accept that mine are valid.  We h",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.39203348755836487
+    },
+    {
+      "text": "Family Home Evening is one of LDS's public relation's tools to make Mormonism look good and wholesome.  What lurks behind this cloak is a false gospel of works-based salvation.",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.38530591130256653
+    },
+    {
+      "text": "Gun control causes more deaths than it saves.\\n\\nGood topic, controversial, and easy to research, both sides.",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.37006258964538574
+    },
+    {
+      "text": "Ohio has a pennant.",
+      "true_label": 9,
+      "pred_label": 5,
+      "confidence": 0.3699338436126709
+    },
+    {
+      "text": "definitely info + comms tech.. this is because IT is not enough by itself these days - it's all about communication incorporated via media such as the Internet, Mobile technology, etc etc. so if you g",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.364128977060318
+    },
+    {
+      "text": "I would like a detailed knowledge of Gerontology(The study of ageing). This interests me, because it`s a process that happens to us all-if we are fortunate.\\nI think, in some societies, older people (",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.3610711693763733
+    },
+    {
+      "text": "George W. Bush is the current president and Richard M. Daley is the mayor of Chicago.",
+      "true_label": 3,
+      "pred_label": 9,
+      "confidence": 0.34640464186668396
+    },
+    {
+      "text": "Yes. Please refer to the following link : \\nhttp://www.askonline.net/technology/ \\n\\nYou can also search for : \"online tutoring\"",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.34578096866607666
+    },
+    {
+      "text": "www.indiatimes.com",
+      "true_label": 4,
+      "pred_label": 6,
+      "confidence": 0.33720749616622925
+    },
+    {
+      "text": "The .....government office maybE?! lol",
+      "true_label": 0,
+      "pred_label": 9,
+      "confidence": 0.31981390714645386
+    },
+    {
+      "text": "Yahoo answers is.",
+      "true_label": 7,
+      "pred_label": 4,
+      "confidence": 0.3139965534210205
+    },
+    {
+      "text": "The Inspiration for a Classic Tune by the Association!",
+      "true_label": 6,
+      "pred_label": 7,
+      "confidence": 0.3101296126842499
+    },
+    {
+      "text": "The best place to ask is probably the MP3 newsgroup linked below.",
+      "true_label": 4,
+      "pred_label": 7,
+      "confidence": 0.30866575241088867
+    },
+    {
+      "text": "this one & comics n animations. i used to answer in religion & sprituality but it's so complex so i can't take it lol. but at least it's motivating me to learn more about it.",
+      "true_label": 7,
+      "pred_label": 0,
+      "confidence": 0.3076219856739044
+    },
+    {
+      "text": "just accept that you are under surveillance,\\neven your emails ,and all your answers are Analised to built up your profile,\\nthe TV has a built in hidden web cam that transmits what you do to the gove",
+      "true_label": 1,
+      "pred_label": 4,
+      "confidence": 0.3046700358390808
+    },
+    {
+      "text": "This sounds interesting.What is it?",
+      "true_label": 6,
+      "pred_label": 0,
+      "confidence": 0.304249107837677
+    },
+    {
+      "text": "Since you're the one writing the book, why not do some research online?  That way, you'll get a broad perspective and can use what you want to.  You need to do the research if you want it to be accura",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.3020932376384735
+    },
+    {
+      "text": "Most of the browsers allow users to open more than one window. So you can have different sites open at the same time.",
+      "true_label": 6,
+      "pred_label": 4,
+      "confidence": 0.2960386872291565
+    }
+  ]
+}

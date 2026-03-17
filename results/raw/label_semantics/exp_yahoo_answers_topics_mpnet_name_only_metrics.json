@@ -1,0 +1,337 @@
+{
+  "accuracy": 0.465,
+  "macro_f1": 0.4578337220760086,
+  "weighted_f1": 0.46282530582862147,
+  "macro_precision": 0.46685707268901144,
+  "macro_recall": 0.46358151879725396,
+  "classification_report": {
+    "0": {
+      "precision": 0.2972972972972973,
+      "recall": 0.19130434782608696,
+      "f1-score": 0.2328042328042328,
+      "support": 115.0
+    },
+    "1": {
+      "precision": 0.5221238938053098,
+      "recall": 0.6082474226804123,
+      "f1-score": 0.5619047619047619,
+      "support": 97.0
+    },
+    "2": {
+      "precision": 0.5221238938053098,
+      "recall": 0.6210526315789474,
+      "f1-score": 0.5673076923076923,
+      "support": 95.0
+    },
+    "3": {
+      "precision": 0.18584070796460178,
+      "recall": 0.26582278481012656,
+      "f1-score": 0.21875,
+      "support": 79.0
+    },
+    "4": {
+      "precision": 0.6328125,
+      "recall": 0.6923076923076923,
+      "f1-score": 0.6612244897959184,
+      "support": 117.0
+    },
+    "5": {
+      "precision": 0.53,
+      "recall": 0.5520833333333334,
+      "f1-score": 0.5408163265306123,
+      "support": 96.0
+    },
+    "6": {
+      "precision": 0.5194805194805194,
+      "recall": 0.37383177570093457,
+      "f1-score": 0.43478260869565216,
+      "support": 107.0
+    },
+    "7": {
+      "precision": 0.5714285714285714,
+      "recall": 0.39215686274509803,
+      "f1-score": 0.46511627906976744,
+      "support": 102.0
+    },
+    "8": {
+      "precision": 0.33064516129032256,
+      "recall": 0.47674418604651164,
+      "f1-score": 0.3904761904761905,
+      "support": 86.0
+    },
+    "9": {
+      "precision": 0.5568181818181818,
+      "recall": 0.46226415094339623,
+      "f1-score": 0.5051546391752577,
+      "support": 106.0
+    },
+    "accuracy": 0.465,
+    "macro avg": {
+      "precision": 0.46685707268901144,
+      "recall": 0.46358151879725396,
+      "f1-score": 0.4578337220760086,
+      "support": 1000.0
+    },
+    "weighted avg": {
+      "precision": 0.4753657962428371,
+      "recall": 0.465,
+      "f1-score": 0.46282530582862147,
+      "support": 1000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      22,
+      11,
+      9,
+      23,
+      1,
+      8,
+      3,
+      5,
+      23,
+      10
+    ],
+    [
+      2,
+      59,
+      9,
+      11,
+      5,
+      1,
+      2,
+      2,
+      1,
+      5
+    ],
+    [
+      6,
+      4,
+      59,
+      9,
+      5,
+      2,
+      4,
+      1,
+      5,
+      0
+    ],
+    [
+      4,
+      14,
+      5,
+      21,
+      7,
+      4,
+      8,
+      2,
+      6,
+      8
+    ],
+    [
+      2,
+      3,
+      0,
+      6,
+      81,
+      7,
+      9,
+      8,
+      1,
+      0
+    ],
+    [
+      3,
+      5,
+      8,
+      10,
+      4,
+      53,
+      2,
+      2,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      6,
+      12,
+      12,
+      4,
+      40,
+      3,
+      14,
+      4
+    ],
+    [
+      3,
+      4,
+      7,
+      7,
+      6,
+      8,
+      3,
+      40,
+      18,
+      6
+    ],
+    [
+      7,
+      3,
+      8,
+      6,
+      4,
+      8,
+      3,
+      5,
+      41,
+      1
+    ],
+    [
+      20,
+      3,
+      2,
+      8,
+      3,
+      5,
+      3,
+      2,
+      11,
+      49
+    ]
+  ],
+  "mean_confidence": 0.1367022655500332,
+  "std_confidence": 0.09097214897229405,
+  "mean_confidence_correct": 0.1430461283873326,
+  "mean_confidence_incorrect": 0.13118844084097855,
+  "experiment_name": "exp_yahoo_answers_topics_mpnet_name_only",
+  "dataset": "yahoo_answers_topics",
+  "label_mode": "name_only",
+  "pipeline_mode": "biencoder",
+  "num_samples": 1000,
+  "random_seed": 42,
+  "biencoder": "sentence-transformers/all-mpnet-base-v2",
+  "top_errors": [
+    {
+      "text": "reading e-mails is a better option",
+      "true_label": 6,
+      "pred_label": 4,
+      "confidence": 0.4431612491607666
+    },
+    {
+      "text": "With my dad it's religion AND politics.  He's pretty rigidly conservative republican and I can't understand it.  I don't want to change his views, but I'd like him to accept that mine are valid.  We h",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.4162602126598358
+    },
+    {
+      "text": "Brazil",
+      "true_label": 8,
+      "pred_label": 5,
+      "confidence": 0.3793889880180359
+    },
+    {
+      "text": "money.",
+      "true_label": 4,
+      "pred_label": 6,
+      "confidence": 0.3664851188659668
+    },
+    {
+      "text": "Family Home Evening is one of LDS's public relation's tools to make Mormonism look good and wholesome.  What lurks behind this cloak is a false gospel of works-based salvation.",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.3598443865776062
+    },
+    {
+      "text": "Yahoo answers is.",
+      "true_label": 7,
+      "pred_label": 4,
+      "confidence": 0.35981160402297974
+    },
+    {
+      "text": "definitely info + comms tech.. this is because IT is not enough by itself these days - it's all about communication incorporated via media such as the Internet, Mobile technology, etc etc. so if you g",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.3552441895008087
+    },
+    {
+      "text": "If you have a man who is faithful to his wife or vv, that child will grow up to learn what faithfulness is. If a child sees parents smoke, do drugs, curse, etc..they will do that... Children learn lov",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.3492102324962616
+    },
+    {
+      "text": "I guess working towards an MBA ultimately is one thing thats pretty common. Which means you do a regular BCA or BBM, and then jump into MBA. I'm not from the commerce stream, so I'm not really to sure",
+      "true_label": 3,
+      "pred_label": 6,
+      "confidence": 0.3482464551925659
+    },
+    {
+      "text": "google",
+      "true_label": 3,
+      "pred_label": 4,
+      "confidence": 0.33807462453842163
+    },
+    {
+      "text": "Ohio has a pennant.",
+      "true_label": 9,
+      "pred_label": 5,
+      "confidence": 0.3316594064235687
+    },
+    {
+      "text": "Thats between You and God.",
+      "true_label": 0,
+      "pred_label": 8,
+      "confidence": 0.3282838463783264
+    },
+    {
+      "text": "dont bother coz u'll spend all of it asking the same question, trust me, only God knows it so enjoy your present and leave the future to come to you as it is",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.327386736869812
+    },
+    {
+      "text": "France",
+      "true_label": 9,
+      "pred_label": 0,
+      "confidence": 0.32371771335601807
+    },
+    {
+      "text": "Since you're the one writing the book, why not do some research online?  That way, you'll get a broad perspective and can use what you want to.  You need to do the research if you want it to be accura",
+      "true_label": 0,
+      "pred_label": 3,
+      "confidence": 0.32168853282928467
+    },
+    {
+      "text": "The .....government office maybE?! lol",
+      "true_label": 0,
+      "pred_label": 9,
+      "confidence": 0.3205069899559021
+    },
+    {
+      "text": "I would like a detailed knowledge of Gerontology(The study of ageing). This interests me, because it`s a process that happens to us all-if we are fortunate.\\nI think, in some societies, older people (",
+      "true_label": 3,
+      "pred_label": 8,
+      "confidence": 0.319587767124176
+    },
+    {
+      "text": "Study (even online courses) things that are related to your job... \\n\\nread read read\\n\\nget generally useful skills, such as Languages or others...\\n\\nI dont know more at the moment, it is all I can ",
+      "true_label": 6,
+      "pred_label": 3,
+      "confidence": 0.3193020820617676
+    },
+    {
+      "text": "It has to do with out physical and social development as human beings.\\n\\nWe categorize as a means of being able to understand.  It is a base learning practice we develop from infancy.\\n\\nThe hard par",
+      "true_label": 9,
+      "pred_label": 0,
+      "confidence": 0.30912989377975464
+    },
+    {
+      "text": "The Inspiration for a Classic Tune by the Association!",
+      "true_label": 6,
+      "pred_label": 7,
+      "confidence": 0.306898832321167
+    }
+  ]
+}
