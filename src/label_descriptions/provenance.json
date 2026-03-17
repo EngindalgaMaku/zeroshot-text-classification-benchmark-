@@ -5,7 +5,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -13,7 +13,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -21,7 +21,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -29,7 +29,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -37,7 +37,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -45,7 +45,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -53,7 +53,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -61,7 +61,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -69,7 +69,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -77,7 +77,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -85,7 +85,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -93,7 +93,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -101,7 +101,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -109,7 +109,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -117,7 +117,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -125,7 +125,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -133,7 +133,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -141,7 +141,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -149,7 +149,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -157,7 +157,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -165,7 +165,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -173,7 +173,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -181,7 +181,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -189,7 +189,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -197,7 +197,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -205,7 +205,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -213,7 +213,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -221,7 +221,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -229,7 +229,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -237,7 +237,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -245,7 +245,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -253,7 +253,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -261,7 +261,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -269,7 +269,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -277,7 +277,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -285,7 +285,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -293,7 +293,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -301,7 +301,7 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -309,7 +309,7 @@
     "label_mode": "L2",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   },
   {
     "dataset": "SetFit/20_newsgroups",
@@ -317,6 +317,6 @@
     "label_mode": "L3",
     "source_type": "llm_fallback",
     "source_url_or_reference": "model:openai/gpt-4o-mini",
-    "generated_at": "2026-03-17T14:21:49.360345+00:00"
+    "generated_at": "2026-03-17T14:45:06.477584+00:00"
   }
 ]
