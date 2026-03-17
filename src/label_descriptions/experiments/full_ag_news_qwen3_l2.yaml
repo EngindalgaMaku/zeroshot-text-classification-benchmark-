@@ -12,7 +12,7 @@ task:
 models:
   biencoder:
     provider: hf
-    name: Qwen/Qwen3-Embedding
+    name: Qwen/Qwen3-Embedding-4B
   reranker: null
 pipeline:
   mode: biencoder
