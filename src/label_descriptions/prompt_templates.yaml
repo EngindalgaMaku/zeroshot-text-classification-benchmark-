@@ -3,7 +3,7 @@ language: "en"
 notes:
   - "temperature=0 for reproducibility"
   - "No content examples in prompts — format constraints only (avoids prompt leakage)"
-  - "Output MUST start with label name, be 10-25 words, no banned patterns"
+  - "Output MUST start with label name, be 10-35 words, no banned patterns"
 
 supported_task_types:
   - topic
@@ -11,6 +11,7 @@ supported_task_types:
   - sentiment
   - emotion
   - intent
+  - newsgroup
 
 templates:
   topic:
@@ -95,4 +96,24 @@ templates:
       Rules:
       - Each sentence must use different keywords from the others.
       - Do NOT use phrases like "this category", "refers to", "such as", "for example".
+      Output ONLY the 3 sentences, one per line. Nothing else.
+
+  newsgroup:
+    l2: |
+      Complete this sentence for the online discussion group "{label_name}":
+      "{label_name}: posts about ___"
+      Fill in the blank with 4-8 specific, distinct keywords (comma-separated noun phrases).
+      The output MUST start with "{label_name}:" and be a single compact sentence.
+      Output ONLY the completed sentence. Nothing else.
+    l3: |
+      Write exactly 3 sentences for the online discussion group "{label_name}".
+      Each sentence MUST start with "{label_name}:" followed by a compact phrase.
+      Use these patterns (one per sentence, each with different keywords):
+        "{label_name}: posts about X, Y, and Z."
+        "{label_name}: discussions of X, Y, and Z."
+        "{label_name}: threads on X, Y, and Z."
+      Rules:
+      - Each sentence must use different keywords from the others.
+      - Each sentence must be 10-20 words.
+      - Do NOT repeat keywords across sentences.
       Output ONLY the 3 sentences, one per line. Nothing else.

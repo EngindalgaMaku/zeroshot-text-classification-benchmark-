@@ -1,78 +1,78 @@
 {
-  "accuracy": 0.722,
-  "macro_f1": 0.7184327063586006,
-  "weighted_f1": 0.7183319354197949,
-  "macro_precision": 0.7217547946572552,
-  "macro_recall": 0.7231109420396384,
+  "accuracy": 0.768,
+  "macro_f1": 0.7632352791216124,
+  "weighted_f1": 0.763681403617703,
+  "macro_precision": 0.7678063300006434,
+  "macro_recall": 0.7684407046643014,
   "classification_report": {
     "0": {
-      "precision": 0.7544642857142857,
-      "recall": 0.6353383458646616,
-      "f1-score": 0.689795918367347,
+      "precision": 0.8173913043478261,
+      "recall": 0.706766917293233,
+      "f1-score": 0.7580645161290323,
       "support": 266.0
     },
     "1": {
-      "precision": 0.8458646616541353,
-      "recall": 0.9146341463414634,
-      "f1-score": 0.87890625,
+      "precision": 0.8925925925925926,
+      "recall": 0.9796747967479674,
+      "f1-score": 0.9341085271317829,
       "support": 246.0
     },
     "2": {
-      "precision": 0.6421404682274248,
-      "recall": 0.7804878048780488,
-      "f1-score": 0.7045871559633028,
+      "precision": 0.6677740863787376,
+      "recall": 0.8170731707317073,
+      "f1-score": 0.7349177330895795,
       "support": 246.0
     },
     "3": {
-      "precision": 0.6445497630331753,
-      "recall": 0.5619834710743802,
-      "f1-score": 0.6004415011037527,
+      "precision": 0.6934673366834171,
+      "recall": 0.5702479338842975,
+      "f1-score": 0.6258503401360545,
       "support": 242.0
     },
-    "accuracy": 0.722,
+    "accuracy": 0.768,
     "macro avg": {
-      "precision": 0.7217547946572552,
-      "recall": 0.7231109420396384,
-      "f1-score": 0.7184327063586006,
+      "precision": 0.7678063300006434,
+      "recall": 0.7684407046643014,
+      "f1-score": 0.7632352791216124,
       "support": 1000.0
     },
     "weighted avg": {
-      "precision": 0.7227178046048922,
-      "recall": 0.722,
-      "f1-score": 0.7183319354197949,
+      "precision": 0.769095385460856,
+      "recall": 0.768,
+      "f1-score": 0.763681403617703,
       "support": 1000.0
     }
   },
   "confusion_matrix": [
     [
-      169,
-      25,
-      31,
-      41
+      188,
+      20,
+      22,
+      36
     ],
     [
-      9,
-      225,
-      9,
-      3
+      3,
+      241,
+      2,
+      0
     ],
     [
-      15,
-      8,
-      192,
-      31
+      16,
+      4,
+      201,
+      25
     ],
     [
-      31,
-      8,
-      67,
-      136
+      23,
+      5,
+      76,
+      138
     ]
   ],
-  "mean_confidence": 0.13309190196020063,
-  "std_confidence": 0.08021646802162584,
-  "mean_confidence_correct": 0.13350408504281058,
-  "mean_confidence_incorrect": 0.13202141208378196,
+  "mean_confidence": 0.1710600113561377,
+  "std_confidence": 0.08336169641533642,
+  "mean_confidence_correct": 0.1708393922005295,
+  "mean_confidence_incorrect": 0.17179033683677172,
   "experiment_name": "exp_ag_news_mpnet_l2_anchored",
   "dataset": "ag_news",
   "label_mode": "l2_anchored",
@@ -82,124 +82,124 @@
   "biencoder": "sentence-transformers/all-mpnet-base-v2",
   "top_errors": [
     {
-      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
-      "true_label": 3,
-      "pred_label": 0,
-      "confidence": 0.513521671295166
-    },
-    {
       "text": "Wonkette: Blogs force quick action from major media Plus: Row brewing over peer-to-peer ads. News.com Extra",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.38394695520401
+      "confidence": 0.46678656339645386
     },
     {
-      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "text": "BLOG That #39;s the most look-ed up world on Merriam-Webster #39;s &lt;b&gt;...&lt;/b&gt; A FOUR-LETTER term that came to symbolise the difference between old and new media tops US dictionary publishe",
       "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.36287057399749756
-    },
-    {
-      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.35601693391799927
+      "pred_label": 0,
+      "confidence": 0.4523300528526306
     },
     {
       "text": "Lackluster Jobs Report Pushes Stocks Down NEW YORK - Investors pushed stocks lower Friday as a surprisingly lackluster job creation report deepened Wall Street's pessimism over the health of the econo",
       "true_label": 0,
       "pred_label": 2,
-      "confidence": 0.34995967149734497
+      "confidence": 0.4287284016609192
     },
     {
-      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.3441588282585144
-    },
-    {
-      "text": "Boeing, IBM Strategic Alliance Boosts Net-Centric Technology From the 1950 #39;s until the present, one of the dominant companies in the world #39;s computer industry. Offers a variety of data process",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.3401828110218048
-    },
-    {
-      "text": "Mars water tops science honours The discovery that salty, acidic water once flowed across the surface of Mars has topped a list of the 10 key scientific advances of 2004.",
-      "true_label": 0,
-      "pred_label": 3,
-      "confidence": 0.3277222514152527
-    },
-    {
-      "text": "UN organizes open-source software day across Asia The United Nations, through its International Open Source Network (IOSN) will organize the first annual Software Freedom Day on Saturday in an effort ",
-      "true_label": 3,
+      "text": "America #39;s curse There is an all but unanswerable case for asserting that the biggest story out of the United States this week has nothing to do with the presidential election, has no connection wi",
+      "true_label": 1,
       "pred_label": 0,
-      "confidence": 0.3200153112411499
+      "confidence": 0.3970874547958374
     },
     {
-      "text": "September Retail Sales Up by 1.5 Percent WASHINGTON - Shoppers got their buying groove back last month, propelling sales at the nation's retailers by a strong 1.5 percent. It was the best showing sinc",
-      "true_label": 0,
-      "pred_label": 2,
-      "confidence": 0.29378649592399597
-    },
-    {
-      "text": "IBM to report on computer security threats IBM on Monday plans to begin releasing a monthly report of threats to computer networks in an effort to establish an indicator similar to the US government #",
+      "text": "Oracle launches Business Integlligence 10g Oracle introduced a new BI platform yesterday, Business Intelligence 10g that rolls up into one solution all of their BI tools. However, more interesting tha",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.2863103747367859
+      "confidence": 0.3907451927661896
+    },
+    {
+      "text": "Dell rides the wave to consumer gadgets (USATODAY.com) USATODAY.com - Dell will set out Thursday to conquer markets dominated by Apple, Hewlett-Packard and others with products that include its first ",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.37959015369415283
+    },
+    {
+      "text": "Top exec shares business lessons Jeff Raikes was working at Apple Computer in the early 1980s when a guy named Steve Ballmer called and asked him to interview for a product-management job at a small s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.36017829179763794
     },
     {
       "text": "Oracle Overhauls Sales-Side Apps for CRM Suite (NewsFactor) NewsFactor - Oracle (Nasdaq: ORCL) has revamped its sales-side CRM applications in version 11i.10 of its sales, marketing, partner relations",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.28490501642227173
+      "confidence": 0.3545380234718323
     },
     {
-      "text": "ObjectWeb adds portal content management middleware Using open-source modules instead of commercial alternatives -- even standards-based ones -- could save businesses money.",
+      "text": "Lockheed Profit Jumps on IT, Jet Demand &lt;p&gt;\\&lt;/p&gt;&lt;p&gt; NEW YORK (Reuters) - No. 1 U.S. defense contractor Lockheed\\Martin Corp. &lt;LMT.N&gt; reported a 41 percent rise in quarterly\\pro",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.27706652879714966
+      "confidence": 0.33655357360839844
     },
     {
-      "text": "Soldiers' War Blogs Detail Life in Iraq Iraq war blogs are as varied as the soldiers who write them. Some sites feature practical news, war pictures and advice. Some are overtly political, with more s",
+      "text": "AMD's Q3 led by strong Opteron, Athlon 64 sales SAN FRANCISCO - As expected, Advanced Micro Devices Inc.'s (AMD's) third-quarter revenue came in a little under the company's earlier predictions, but s",
+      "true_label": 3,
+      "pred_label": 2,
+      "confidence": 0.3263095021247864
+    },
+    {
+      "text": "2004 Signals More Global Warming, Extreme Weather: UN (Reuters) Reuters - Global warming is set to continue, and\\bring with it an increase in extreme weather such as hurricanes\\and droughts, scientist",
       "true_label": 3,
       "pred_label": 0,
-      "confidence": 0.2768072485923767
-    },
-    {
-      "text": "Crooks slither into Net's shady nooks and crannies (USATODAY.com) USATODAY.com - Organized crime rings and petty thieves are flocking to the Internet like start-ups in the go-go '90s, establishing a m",
-      "true_label": 3,
-      "pred_label": 2,
-      "confidence": 0.275446355342865
+      "confidence": 0.3252353072166443
     },
     {
       "text": "Ballmer: Microsoft is listening to customers Microsoft chief executive Steve Ballmer says the software giant is listening to customers, and wants to make the company and its employees more accountable",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.27355292439460754
+      "confidence": 0.32323721051216125
     },
     {
-      "text": "IT Heavies Launch  quot;MegaGrid quot; Project SAN FRANCISCO -- Four mainstream IT companies are pooling resources to launch a standardized enterprise grid infrastructure based on their products.",
+      "text": "Travelocity Says Speed Is the Ticket For Growth Sam Gilliand, the chief executive of Travelocity, talks about the online travel industry, the Cendant-Orbitz merger and the woes of the airline industry",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.2693336308002472
+      "confidence": 0.31650716066360474
     },
     {
-      "text": "IBM Updates WebSphere Application Server The Express version of the new WebSphere server is targeted at the small and midsized business market.  quot;The SMB market has become much more pivotal and cr",
+      "text": "SCO Postpones Legal Web Site (NewsFactor) NewsFactor - The SCO Group is delaying the launch of a Web site focusing on the details of ongoing litigation concerning the company's intellectual property.",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.26343658566474915
+      "confidence": 0.3101244866847992
     },
     {
-      "text": "Collaboration suite to help secure tonight's Bush-Kerry debate The U.S. Secret Service and a throng of police and emergency management officials in Missouri will for the first time use a customized Mi",
+      "text": "Stocks Climb on Drop in Consumer Prices NEW YORK - Stocks rose for a second straight session Tuesday as a drop in consumer prices allowed investors to put aside worries about inflation, at least for t",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.3095417022705078
+    },
+    {
+      "text": "A Bit of Wall St. on the Tigris The 150 brokers and traders on the Iraq Stock Exchange are not waiting for the war to end, buying and selling orders a few hundred yards away from the fighting.",
+      "true_label": 0,
+      "pred_label": 2,
+      "confidence": 0.30484631657600403
+    },
+    {
+      "text": "'Cities in crisis' leaders warn World leaders warn that rapid urbanisation will become one of the biggest challenges of the 21st Century.",
       "true_label": 3,
       "pred_label": 0,
-      "confidence": 0.25771045684814453
+      "confidence": 0.29724612832069397
     },
     {
-      "text": "Ballmer strikes big rivals from Microsoft shopping list LISBON - Customers watching for Microsoft Corp. to make a headline-grabbing buy in the business applications market faced disappointment Tuesday",
+      "text": "Men Set for Sizzling Duel in 100 Meters ATHENS, Greece - The preliminaries in the 100 meters were perhaps just a sample of what's to come Sunday, when a talented group of qualifiers - including Americ",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.2928696572780609
+    },
+    {
+      "text": "Internet Ad Revenues Jump 40 Percent Internet advertising revenues jumped 40 percent in the first half of this year, driven largely by the growing popularity of keyword ads tied to search results.",
       "true_label": 3,
       "pred_label": 2,
-      "confidence": 0.2551283538341522
+      "confidence": 0.29140573740005493
+    },
+    {
+      "text": "US edge out Brazil for gold The United States beat Brazil 2-1 in extra time to win the women's Olympic football tournament.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.2857400178909302
     }
   ]
 }

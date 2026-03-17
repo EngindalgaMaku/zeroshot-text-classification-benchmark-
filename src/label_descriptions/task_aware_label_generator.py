@@ -10,7 +10,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import yaml
 
 
-SUPPORTED_TASK_TYPES = ("topic", "entity", "sentiment", "emotion", "intent")
+SUPPORTED_TASK_TYPES = ("topic", "entity", "sentiment", "emotion", "intent", "newsgroup")
 
 
 class TemplateConfigError(ValueError):
@@ -194,8 +194,8 @@ class ValidationEngine:
     def __init__(
         self,
         generic_prefixes: Optional[Tuple[str, ...]] = None,
-        min_words: int = 10,
-        max_words: int = 25,
+        min_words: int = 7,
+        max_words: int = 35,
     ):
         self._generic_prefixes = generic_prefixes or ()
         self._min_words = min_words

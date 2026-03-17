@@ -2,7 +2,7 @@ version: "final_v1"
 datasets:
   ag_news: topic
   yahoo_answers_topics: topic
-  SetFit/20_newsgroups: topic
+  SetFit/20_newsgroups: newsgroup
   dbpedia_14: entity
   banking77: intent
   imdb: sentiment
