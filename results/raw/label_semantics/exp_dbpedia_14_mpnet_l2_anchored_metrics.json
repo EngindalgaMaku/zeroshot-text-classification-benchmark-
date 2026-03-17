@@ -1,338 +1,338 @@
 {
-  "accuracy": 0.671,
-  "macro_f1": 0.656066191171704,
-  "weighted_f1": 0.6546891220208546,
-  "macro_precision": 0.6942851810905022,
-  "macro_recall": 0.6765433911236177,
+  "accuracy": 0.645,
+  "macro_f1": 0.6145804432091022,
+  "weighted_f1": 0.6212722557451477,
+  "macro_precision": 0.6455866553802118,
+  "macro_recall": 0.6454662414764137,
   "classification_report": {
     "0": {
-      "precision": 0.8367346938775511,
-      "recall": 0.4659090909090909,
-      "f1-score": 0.5985401459854015,
+      "precision": 0.7377049180327869,
+      "recall": 0.5113636363636364,
+      "f1-score": 0.6040268456375839,
       "support": 88.0
     },
     "1": {
-      "precision": 0.6440677966101694,
-      "recall": 0.9156626506024096,
-      "f1-score": 0.7562189054726368,
+      "precision": 0.6198347107438017,
+      "recall": 0.9036144578313253,
+      "f1-score": 0.7352941176470589,
       "support": 83.0
     },
     "2": {
-      "precision": 0.6551724137931034,
-      "recall": 0.7402597402597403,
-      "f1-score": 0.6951219512195121,
+      "precision": 0.65,
+      "recall": 0.5064935064935064,
+      "f1-score": 0.5693430656934306,
       "support": 77.0
     },
     "3": {
-      "precision": 0.7402597402597403,
-      "recall": 0.890625,
-      "f1-score": 0.8085106382978723,
+      "precision": 0.7468354430379747,
+      "recall": 0.921875,
+      "f1-score": 0.8251748251748252,
       "support": 64.0
     },
     "4": {
-      "precision": 0.8352941176470589,
-      "recall": 0.8765432098765432,
-      "f1-score": 0.8554216867469879,
+      "precision": 0.8271604938271605,
+      "recall": 0.8271604938271605,
+      "f1-score": 0.8271604938271605,
       "support": 81.0
     },
     "5": {
-      "precision": 0.45714285714285713,
-      "recall": 0.25,
-      "f1-score": 0.32323232323232326,
+      "precision": 0.4,
+      "recall": 0.15625,
+      "f1-score": 0.2247191011235955,
       "support": 64.0
     },
     "6": {
-      "precision": 0.5208333333333334,
-      "recall": 0.49019607843137253,
-      "f1-score": 0.5050505050505051,
+      "precision": 0.5238095238095238,
+      "recall": 0.43137254901960786,
+      "f1-score": 0.4731182795698925,
       "support": 51.0
     },
     "7": {
-      "precision": 0.4117647058823529,
-      "recall": 0.7875,
-      "f1-score": 0.5407725321888412,
+      "precision": 0.5045045045045045,
+      "recall": 0.7,
+      "f1-score": 0.5863874345549738,
       "support": 80.0
     },
     "8": {
-      "precision": 0.6197183098591549,
-      "recall": 0.9166666666666666,
-      "f1-score": 0.7394957983193278,
+      "precision": 0.47368421052631576,
+      "recall": 0.75,
+      "f1-score": 0.5806451612903226,
       "support": 48.0
     },
     "9": {
-      "precision": 0.7755102040816326,
-      "recall": 0.5507246376811594,
-      "f1-score": 0.6440677966101694,
+      "precision": 0.7368421052631579,
+      "recall": 0.4057971014492754,
+      "f1-score": 0.5233644859813084,
       "support": 69.0
     },
     "10": {
-      "precision": 0.8163265306122449,
-      "recall": 0.5128205128205128,
-      "f1-score": 0.6299212598425197,
+      "precision": 0.7816091954022989,
+      "recall": 0.8717948717948718,
+      "f1-score": 0.8242424242424242,
       "support": 78.0
     },
     "11": {
-      "precision": 0.8153846153846154,
-      "recall": 0.9137931034482759,
-      "f1-score": 0.8617886178861789,
+      "precision": 0.49122807017543857,
+      "recall": 0.9655172413793104,
+      "f1-score": 0.6511627906976745,
       "support": 58.0
     },
     "12": {
-      "precision": 0.7840909090909091,
-      "recall": 0.9078947368421053,
-      "f1-score": 0.8414634146341463,
+      "precision": 0.825,
+      "recall": 0.868421052631579,
+      "f1-score": 0.8461538461538461,
       "support": 76.0
     },
     "13": {
-      "precision": 0.8076923076923077,
-      "recall": 0.25301204819277107,
-      "f1-score": 0.3853211009174312,
+      "precision": 0.72,
+      "recall": 0.21686746987951808,
+      "f1-score": 0.3333333333333333,
       "support": 83.0
     },
-    "accuracy": 0.671,
+    "accuracy": 0.645,
     "macro avg": {
-      "precision": 0.6942851810905022,
-      "recall": 0.6765433911236177,
-      "f1-score": 0.656066191171704,
+      "precision": 0.6455866553802118,
+      "recall": 0.6454662414764137,
+      "f1-score": 0.6145804432091022,
       "support": 1000.0
     },
     "weighted avg": {
-      "precision": 0.7021866529400093,
-      "recall": 0.671,
-      "f1-score": 0.6546891220208546,
+      "precision": 0.6593821208876731,
+      "recall": 0.645,
+      "f1-score": 0.6212722557451477,
       "support": 1000.0
     }
   },
   "confusion_matrix": [
     [
-      41,
-      16,
-      2,
+      45,
+      11,
+      1,
       3,
       0,
       9,
       1,
-      7,
-      2,
-      1,
-      0,
       4,
-      2,
+      3,
+      0,
+      0,
+      8,
+      3,
       0
     ],
     [
-      0,
-      76,
+      1,
+      75,
       0,
       1,
       0,
       0,
-      2,
-      2,
-      1,
-      0,
-      1,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      1,
-      57,
-      4,
-      6,
-      0,
       1,
       1,
-      0,
-      0,
-      0,
-      2,
-      1,
-      4
-    ],
-    [
+      3,
       0,
       1,
-      4,
-      57,
-      2,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
       0,
       0,
       0
     ],
     [
+      0,
       1,
+      39,
+      3,
+      5,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0,
+      22,
+      2,
+      3
+    ],
+    [
+      0,
+      0,
+      4,
+      59,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
       5,
       3,
+      2,
+      67,
+      0,
+      0,
+      0,
+      3,
       1,
-      71,
-      0,
-      0,
-      0,
-      0,
-      0,
       0,
       0,
       0,
       0
     ],
     [
+      9,
       6,
-      6,
-      2,
-      2,
-      0,
-      16,
-      18,
+      3,
       3,
       1,
+      10,
+      13,
+      2,
+      2,
+      2,
+      0,
+      6,
+      5,
+      2
+    ],
+    [
+      1,
+      4,
       2,
       0,
       3,
-      4,
+      1,
+      22,
+      8,
+      9,
+      0,
+      0,
+      0,
+      0,
       1
     ],
     [
-      0,
-      2,
-      2,
-      0,
-      2,
-      2,
-      25,
-      9,
-      9,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      3,
-      0,
-      1,
-      0,
-      2,
-      0,
-      63,
-      10,
-      1,
-      0,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      3,
-      44,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      1,
-      1,
-      1,
-      0,
-      25,
-      0,
-      38,
-      3,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      35,
-      0,
-      3,
-      40,
-      0,
-      0,
-      0
-    ],
-    [
-      0,
-      1,
-      2,
-      0,
-      0,
-      0,
-      1,
-      0,
-      0,
-      0,
-      0,
-      53,
-      1,
-      0
-    ],
-    [
-      0,
-      1,
-      1,
-      3,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1,
-      1,
-      69,
-      0
-    ],
-    [
       1,
       6,
-      14,
-      4,
-      2,
-      5,
       0,
+      1,
+      1,
+      2,
+      1,
+      56,
+      11,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      1,
+      3,
+      0,
+      0,
+      1,
+      0,
+      0,
+      7,
+      36,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      21,
+      3,
+      28,
+      14,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      2,
+      0,
+      68,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      56,
+      1,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      2,
+      66,
+      1
+    ],
+    [
+      3,
+      7,
+      8,
+      3,
+      1,
+      2,
+      3,
+      3,
+      4,
       5,
       4,
-      4,
-      4,
-      2,
-      11,
-      21
+      19,
+      3,
+      18
     ]
   ],
-  "mean_confidence": 0.17214106850605457,
-  "std_confidence": 0.05928758789794292,
-  "mean_confidence_correct": 0.17932150139849518,
-  "mean_confidence_incorrect": 0.15749647740931405,
+  "mean_confidence": 0.17623580283205956,
+  "std_confidence": 0.06258459375450062,
+  "mean_confidence_correct": 0.1880172045136145,
+  "mean_confidence_incorrect": 0.1548301575233189,
   "experiment_name": "exp_dbpedia_14_mpnet_l2_anchored",
   "dataset": "dbpedia_14",
   "label_mode": "l2_anchored",
@@ -345,121 +345,121 @@
       "text": " The World's Greatest Athlete is a 1973 American feature film released by Walt Disney Productions. It starred John Amos Roscoe Lee Browne Tim Conway Dayle Haddon and Jan-Michael Vincent. It is one of ",
       "true_label": 12,
       "pred_label": 3,
-      "confidence": 0.45188772678375244
+      "confidence": 0.44686514139175415
     },
     {
       "text": " Bird migration is the regular seasonal movement often north and south along a flyway between breeding and wintering grounds undertaken by many species of birds. Migration which carries high costs in ",
       "true_label": 9,
       "pred_label": 5,
-      "confidence": 0.3904118835926056
+      "confidence": 0.39678695797920227
     },
     {
-      "text": " Champs Sports is a sports retail store that is a subsidiary of Foot Locker Inc.. Products sold at Champs Sports include apparel equipment footwear and accessories. As of March 2013 there are 552 stor",
-      "true_label": 0,
-      "pred_label": 3,
-      "confidence": 0.3276572823524475
-    },
-    {
-      "text": " The National Association for Special Educational Needs (NASEN) is an education and development charitable organisation based in the United Kingdom which aims to promote the education training advance",
-      "true_label": 0,
-      "pred_label": 1,
-      "confidence": 0.3176201581954956
-    },
-    {
-      "text": " The Art of Dreaming is a book written by anthropologist Carlos Castaneda and published in 1993. It purportedly describes the events that took place during an apprenticeship with a self-proclaimed Yaq",
-      "true_label": 13,
-      "pred_label": 2,
-      "confidence": 0.31352508068084717
-    },
-    {
-      "text": " Bonsound is a Montreal-based company that manages books and promotes music. Bonsound also houses three records labels: Bonsound Records Blow The Fuse Records and Proxenett.",
-      "true_label": 0,
+      "text": " Marc Béziat (born September 12 1975 in Aix en Provence France) is a music composer.Béziat has always been a music enthusiast he began his career as a composer at the age of 28.To assess the competenc",
+      "true_label": 2,
       "pred_label": 11,
-      "confidence": 0.3127326965332031
-    },
-    {
-      "text": " Drift Tengoku (ドリフト天国 Dorifuto Tengoku Drift Paradise) is a monthly automobile magazine dedicated to drifting and was the first of its kind. Published by San-Ei Shobo Publishing in both print and vid",
-      "true_label": 13,
-      "pred_label": 5,
-      "confidence": 0.2939252555370331
-    },
-    {
-      "text": " Salix caroliniana commonly known as the coastal plain willow is a shrub or small tree native to the southeastern United States Mexico and parts of Central America and the Caribbean. It is an obligate",
-      "true_label": 10,
-      "pred_label": 7,
-      "confidence": 0.2890588939189911
-    },
-    {
-      "text": " North Becket Village Historic District is a historic district encompassing the historic village of North Becket in the Berkshire hill town of Becket Massachusetts. The district encompasses 40 acres (",
-      "true_label": 6,
-      "pred_label": 8,
-      "confidence": 0.2882700562477112
-    },
-    {
-      "text": " Lupinus microcarpus the wide-bannered lupine or chick lupine is a species of lupine native to western North America from southwestern British Columbia south through Oregon and California including th",
-      "true_label": 10,
-      "pred_label": 7,
-      "confidence": 0.2874950170516968
-    },
-    {
-      "text": " Men Microscopes and Living Things is a children's book written by the American author Katherine Shippen and illustrated by Anthony Ravielli. The book was first published in 1955 and is a 1956 Newbery",
-      "true_label": 13,
-      "pred_label": 9,
-      "confidence": 0.27821701765060425
-    },
-    {
-      "text": " Société de transport du Saguenay (STS) is the public transport company in Saguenay Quebec Canada formerly the Corporation intermunicipale de transport du Saguenay (CITS). They operate from three main",
-      "true_label": 0,
-      "pred_label": 5,
-      "confidence": 0.27795282006263733
-    },
-    {
-      "text": " The NYC Teaching Fellows is an alternative certification program that aims to improve the quality of education in New York City public schools by attracting mid-career professionals recent graduates ",
-      "true_label": 0,
-      "pred_label": 1,
-      "confidence": 0.2775910794734955
-    },
-    {
-      "text": " Euphorbia analalavensis is a species of plant in the Euphorbiaceae family. It is endemic to Madagascar. Its natural habitats are subtropical or tropical dry forests and rocky areas. It is threatened ",
-      "true_label": 10,
-      "pred_label": 7,
-      "confidence": 0.2737811803817749
+      "confidence": 0.34641948342323303
     },
     {
       "text": " The Littlehampton Community School (normally abbreviated to LCS) was a large mixed gender community comprehensive school located at the edge of Littlehampton in West Sussex England and was the main s",
       "true_label": 1,
       "pred_label": 8,
-      "confidence": 0.27128317952156067
+      "confidence": 0.3272300958633423
     },
     {
-      "text": " The Leona Group LLC is a Lansing Michigan-based operator of charter schools in Arizona Florida Michigan and Ohio. It started in Michigan in the early 1990s as a think tank called MPNE (Michigan Partn",
+      "text": " Wes Benscoter is an American artist who is best known for his work album covers especially heavy metal albums. He also has made covers for magazines and books and shirt designs and his art is feature",
+      "true_label": 2,
+      "pred_label": 11,
+      "confidence": 0.3255630135536194
+    },
+    {
+      "text": " Champs Sports is a sports retail store that is a subsidiary of Foot Locker Inc.. Products sold at Champs Sports include apparel equipment footwear and accessories. As of March 2013 there are 552 stor",
       "true_label": 0,
-      "pred_label": 1,
-      "confidence": 0.2711195647716522
+      "pred_label": 3,
+      "confidence": 0.31966930627822876
     },
     {
-      "text": " The Pennsylvania North is a high-rise building located in Washington D.C. United States. The building was constructed in 1990. The building rises to 160 feet (49 m) containing 14 floors. The architec",
-      "true_label": 6,
-      "pred_label": 7,
-      "confidence": 0.27028536796569824
-    },
-    {
-      "text": " Leptolejeunea tridentata is a species of liverwort in the Lejeuneaceae family. It is endemic to Colombia. Its natural habitat is subtropical or tropical moist lowland forests. It is threatened by hab",
-      "true_label": 10,
-      "pred_label": 7,
-      "confidence": 0.2696739435195923
+      "text": " Bonsound is a Montreal-based company that manages books and promotes music. Bonsound also houses three records labels: Bonsound Records Blow The Fuse Records and Proxenett.",
+      "true_label": 0,
+      "pred_label": 11,
+      "confidence": 0.3119640052318573
     },
     {
       "text": " For Rent: One Grammy One Gramps is a young adult fiction novel by Ivy Duffy Doherty published 1982.",
       "true_label": 13,
       "pred_label": 11,
-      "confidence": 0.2677997350692749
+      "confidence": 0.3116857409477234
+    },
+    {
+      "text": " The Art of Dreaming is a book written by anthropologist Carlos Castaneda and published in 1993. It purportedly describes the events that took place during an apprenticeship with a self-proclaimed Yaq",
+      "true_label": 13,
+      "pred_label": 2,
+      "confidence": 0.302456259727478
+    },
+    {
+      "text": " North Becket Village Historic District is a historic district encompassing the historic village of North Becket in the Berkshire hill town of Becket Massachusetts. The district encompasses 40 acres (",
+      "true_label": 6,
+      "pred_label": 8,
+      "confidence": 0.29746270179748535
+    },
+    {
+      "text": " L. T.'s Theory of Pets is a short story by Stephen King. It was originally published in the 1997 limited-edition collection Six Stories. In 2001 it was released as an audiobook with the recording of ",
+      "true_label": 13,
+      "pred_label": 9,
+      "confidence": 0.2873949408531189
+    },
+    {
+      "text": " The National Association for Special Educational Needs (NASEN) is an education and development charitable organisation based in the United Kingdom which aims to promote the education training advance",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.2815648317337036
+    },
+    {
+      "text": " Exakt Entertainment is an American video game developer based out of Los Angeles California. It was founded in 1994.",
+      "true_label": 0,
+      "pred_label": 1,
+      "confidence": 0.27937281131744385
+    },
+    {
+      "text": " The Inguri (Georgian: ენგური Enguri; Abkhaz: Егры Egry Russian: Ингур Ingur) is a river in western Georgia.",
+      "true_label": 7,
+      "pred_label": 1,
+      "confidence": 0.26695677638053894
     },
     {
       "text": " SeeqPod was a search and recommendation engine specifically for indexing and finding playable search results including audio video podcasts and Wikipedia articles that were publicly accessible on the",
       "true_label": 0,
       "pred_label": 11,
-      "confidence": 0.2664546072483063
+      "confidence": 0.26690784096717834
+    },
+    {
+      "text": " Yesspeak is a film chronicling the then current lineup of the progressive rock group Yes (featuring Jon Anderson Steve Howe Rick Wakeman Chris Squire and Alan White) directed by Robert Garofalo and n",
+      "true_label": 11,
+      "pred_label": 12,
+      "confidence": 0.26369136571884155
+    },
+    {
+      "text": " Salix caroliniana commonly known as the coastal plain willow is a shrub or small tree native to the southeastern United States Mexico and parts of Central America and the Caribbean. It is an obligate",
+      "true_label": 10,
+      "pred_label": 7,
+      "confidence": 0.26272666454315186
+    },
+    {
+      "text": " Business Day is a national daily newspaper in South Africa published from Monday to Friday and also available as an e-paper. Based in Rosebank Johannesburg.",
+      "true_label": 13,
+      "pred_label": 0,
+      "confidence": 0.26193246245384216
+    },
+    {
+      "text": " Drift Tengoku (ドリフト天国 Dorifuto Tengoku Drift Paradise) is a monthly automobile magazine dedicated to drifting and was the first of its kind. Published by San-Ei Shobo Publishing in both print and vid",
+      "true_label": 13,
+      "pred_label": 5,
+      "confidence": 0.26017996668815613
+    },
+    {
+      "text": " Société de transport du Saguenay (STS) is the public transport company in Saguenay Quebec Canada formerly the Corporation intermunicipale de transport du Saguenay (CITS). They operate from three main",
+      "true_label": 0,
+      "pred_label": 5,
+      "confidence": 0.2543155550956726
     }
   ]
 }
